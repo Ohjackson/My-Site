@@ -43,6 +43,13 @@ export function OtherProjectsSection({
     ja: { title: "他のプロジェクト" }
   };
 
+  const handleProjectClick = (projectId: string) => {
+    // 상단으로 스크롤
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // 프로젝트 클릭 핸들러 호출
+    onProjectClick(projectId);
+  };
+
   return (
     <section className="py-16 pb-24 bg-bg">
       <div className="w-full">
@@ -55,7 +62,7 @@ export function OtherProjectsSection({
             {otherProjects.map((project) => (
               <div
                 key={project.id}
-                onClick={() => onProjectClick(project.id)}
+                onClick={() => handleProjectClick(project.id)}
                 className="group cursor-pointer flex-shrink-0 w-80 bg-surface rounded-2xl border border-border p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-2xl"
               >
                 <div className="space-y-4">
