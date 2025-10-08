@@ -243,6 +243,19 @@
       "ja": "Firebase Authenticationでユーザー認証、Firestore/Realtime Databaseで運動記録と計画を保存、Cloud Functionsでバックエンドロジックを処理。"
     }
   },
+  "preview_screenshots": {
+    "screenshots": [
+      "assets/acon/shot-01-dashboard.png",
+      "assets/acon/shot-02-exercise.png",
+      "assets/acon/shot-03-analysis.png",
+      "assets/acon/shot-04-nutrition.png"
+    ],
+    "description": {
+      "ko": "Flutter 앱 프리뷰",
+      "en": "Flutter App Preview",
+      "ja": "Flutterアプリプレビュー"
+    }
+  },
   "architecture": {
     "components": "Flutter App (Dart) · Firebase (Auth, Firestore, Cloud Functions) · ML Model (TensorFlow Lite/Core ML)",
     "dataFlow": {
