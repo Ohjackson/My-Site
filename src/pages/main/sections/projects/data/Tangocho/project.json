@@ -280,10 +280,10 @@
   },
   "preview_screenshots": {
     "screenshots": [
-      "./src/assets/tangocho/shot-1.png",
-      "./src/assets/tangocho/shot-2.png",
-      "./src/assets/tangocho/shot-3.png",
-      "./src/assets/tangocho/shot-4.png"
+      "/assets/tangocho/shot-1.png",
+      "/assets/tangocho/shot-2.png",
+      "/assets/tangocho/shot-3.png",
+      "/assets/tangocho/shot-4.png"
     ],
     "description": {
       "ko": "iOS 앱 프리뷰",

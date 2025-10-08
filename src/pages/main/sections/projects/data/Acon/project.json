@@ -280,10 +280,11 @@
   },
   "preview_screenshots": {
     "screenshots": [
-      "./src/assets/acon/shot-1.png",
-      "./src/assets/acon/shot-2.png",
-      "./src/assets/acon/shot-3.png",
-      "./src/assets/acon/shot-4.png"
+      "/assets/acon/shot-1.png",
+      "/assets/acon/shot-2.png",
+      "/assets/acon/shot-3.png",
+      "/assets/acon/shot-4.png",
+      "/assets/acon/shot-5.png"
     ],
     "description": {
       "ko": "Flutter 앱 프리뷰",

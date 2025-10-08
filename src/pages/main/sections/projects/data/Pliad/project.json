@@ -279,9 +279,9 @@
   },
   "preview_screenshots": {
     "screenshots": [
-      "./src/assets/pliad/shot-1.png",
-      "./src/assets/pliad/shot-2.png",
-      "./src/assets/pliad/shot-3.png"
+      "/assets/pliad/shot-1.png",
+      "/assets/pliad/shot-2.png",
+      "/assets/pliad/shot-3.png"
     ],
     "description": {
       "ko": "학습 대시보드, 적응형 퀴즈, 개인화된 경로 화면 프리뷰",

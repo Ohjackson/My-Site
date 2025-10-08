@@ -279,9 +279,9 @@
   },
   "preview_screenshots": {
     "screenshots": [
-      "./src/assets/loventure/shot-1.png",
-      "./src/assets/loventure/shot-2.png",
-      "./src/assets/loventure/shot-3.png"
+      "/assets/loventure/shot-1.png",
+      "/assets/loventure/shot-2.png",
+      "/assets/loventure/shot-3.png"
     ],
     "description": {
       "ko": "여행 계획 편집기, AI 추천 화면, 소셜 공유 화면 프리뷰",
