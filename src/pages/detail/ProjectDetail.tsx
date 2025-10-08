@@ -121,16 +121,140 @@ export function ProjectDetail({ projectId, language, onBack }: ProjectDetailProp
       </section>
 
       {/* Conditionally render sections based on available data */}
-      {project.detail?.overview && <OverviewSection data={project.detail.overview} language={language} />}
-      <ServiceSection data={undefined} language={language} />
-      <FeaturesSection data={project} language={language} />
-      <PreviewSection data={undefined} language={language} />
-      <ArchitectureSection data={undefined} language={language} />
-      <TechStackSection data={undefined} language={language} />
-      {project.detail?.responsibilities && <ResponsibilitiesSection data={project.detail} language={language} />}
-      <DeploymentSection data={undefined} language={language} />
-      {project.detail?.metrics && <ResultsSection data={project.detail} language={language} />}
-      <AdditionalSection data={undefined} language={language} />
+      {(() => {
+        const sections = [];
+        let sectionIndex = 0;
+
+        // Overview Section
+        if (project.detail?.overview) {
+          sections.push(
+            <OverviewSection 
+              key="overview" 
+              data={project.detail.overview} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // Service Section
+        if ((project as any).danggocho?.service) {
+          sections.push(
+            <ServiceSection 
+              key="service" 
+              data={(project as any).danggocho.service} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // Features Section (always render)
+        sections.push(
+          <FeaturesSection 
+            key="features" 
+            data={project} 
+            language={language} 
+            backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+          />
+        );
+        sectionIndex++;
+
+        // Preview Section
+        if ((project as any).danggocho?.preview_screenshots) {
+          sections.push(
+            <PreviewSection 
+              key="preview" 
+              data={(project as any).danggocho.preview_screenshots} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // Architecture Section
+        if ((project as any).danggocho?.architecture) {
+          sections.push(
+            <ArchitectureSection 
+              key="architecture" 
+              data={(project as any).danggocho.architecture} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // TechStack Section
+        if ((project as any).danggocho?.techStack) {
+          sections.push(
+            <TechStackSection 
+              key="techstack" 
+              data={(project as any).danggocho.techStack} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // Responsibilities Section
+        if (project.detail?.responsibilities) {
+          sections.push(
+            <ResponsibilitiesSection 
+              key="responsibilities" 
+              data={project.detail} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // Deployment Section
+        if ((project as any).danggocho?.deployment) {
+          sections.push(
+            <DeploymentSection 
+              key="deployment" 
+              data={(project as any).danggocho.deployment} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // Results Section
+        if (project.detail?.metrics) {
+          sections.push(
+            <ResultsSection 
+              key="results" 
+              data={project.detail} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // Additional Section
+        if ((project as any).danggocho?.additional_links) {
+          sections.push(
+            <AdditionalSection 
+              key="additional" 
+              data={(project as any).danggocho.additional_links} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        return sections;
+      })()}
     </div>
   );
 }

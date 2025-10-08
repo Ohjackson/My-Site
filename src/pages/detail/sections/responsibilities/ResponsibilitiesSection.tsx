@@ -9,33 +9,28 @@ interface ResponsibilitiesData {
 interface ResponsibilitiesSectionProps {
   data: ResponsibilitiesData;
   language: 'ko' | 'en' | 'ja';
+  backgroundColor: string;
 }
 
-export function ResponsibilitiesSection({ data, language }: ResponsibilitiesSectionProps) {
+export function ResponsibilitiesSection({ data, language, backgroundColor }: ResponsibilitiesSectionProps) {
   if (!data?.responsibilities) return null;
 
   const content = {
-    ko: {
-      title: "주요 역할"
-    },
-    en: {
-      title: "Key Responsibilities"
-    },
-    ja: {
-      title: "主要な役割"
-    }
+    ko: { title: "내가 담당한 것" },
+    en: { title: "My Responsibilities" },
+    ja: { title: "私が担当したこと" }
   };
 
   return (
-    <section className="py-20 px-8 bg-bg">
+    <section className={`py-16 px-8 ${backgroundColor}`}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-12 text-center">{content[language].title}</h2>
-        
-        <div className="space-y-4">
-          {data.responsibilities[language].map((responsibility, index) => (
-            <div key={index} className="flex gap-3 p-4 rounded-lg bg-surface/50">
-              <span className="text-primary-500 font-bold">•</span>
-              <span className="text-text/90">{responsibility}</span>
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          {content[language].title}
+        </h2>
+        <div className="space-y-6">
+          {data.responsibilities[language].map((responsibility, idx) => (
+            <div key={idx}>
+              <p className="text-muted">{responsibility}</p>
             </div>
           ))}
         </div>

@@ -1,5 +1,3 @@
-import { Card, CardHeader, CardTitle } from '../../components/Card';
-
 interface OverviewData {
   purpose: {
     ko: string;
@@ -21,58 +19,39 @@ interface OverviewData {
 interface OverviewSectionProps {
   data: OverviewData;
   language: 'ko' | 'en' | 'ja';
+  backgroundColor: string;
 }
 
-export function OverviewSection({ data, language }: OverviewSectionProps) {
+export function OverviewSection({ data, language, backgroundColor }: OverviewSectionProps) {
   if (!data) return null;
 
   const content = {
-    ko: {
-      title: "프로젝트 개요",
-      purpose: "목적",
-      target: "타겟",
-      value: "가치"
-    },
-    en: {
-      title: "Project Overview",
-      purpose: "Purpose",
-      target: "Target",
-      value: "Value"
-    },
-    ja: {
-      title: "プロジェクト概要",
-      purpose: "目的",
-      target: "ターゲット",
-      value: "価値"
-    }
+    ko: { title: "개요" },
+    en: { title: "Overview" },
+    ja: { title: "概要" }
   };
 
   return (
-    <section className="py-20 px-8 bg-bg">
+    <section className={`py-16 px-8 ${backgroundColor}`}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-12 text-center">{content[language].title}</h2>
-        
-        <div className="grid md:grid-cols-3 gap-8">
-          <Card>
-            <CardHeader>
-              <CardTitle>{content[language].purpose}</CardTitle>
-            </CardHeader>
-            <p className="text-text/90">{data.purpose[language]}</p>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>{content[language].target}</CardTitle>
-            </CardHeader>
-            <p className="text-text/90">{data.target[language]}</p>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>{content[language].value}</CardTitle>
-            </CardHeader>
-            <p className="text-text/90">{data.value[language]}</p>
-          </Card>
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          {content[language].title}
+        </h2>
+        <div className="prose prose-lg max-w-none">
+          <div className="space-y-6">
+            <div>
+              <h3 className="font-semibold mb-2">목적</h3>
+              <p className="text-muted leading-relaxed">{data.purpose[language]}</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-2">타겟</h3>
+              <p className="text-muted leading-relaxed">{data.target[language]}</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-2">가치</h3>
+              <p className="text-muted leading-relaxed">{data.value[language]}</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

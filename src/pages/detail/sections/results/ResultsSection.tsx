@@ -26,74 +26,68 @@ interface ResultsData {
 interface ResultsSectionProps {
   data: ResultsData;
   language: 'ko' | 'en' | 'ja';
+  backgroundColor: string;
 }
 
-export function ResultsSection({ data, language }: ResultsSectionProps) {
+export function ResultsSection({ data, language, backgroundColor }: ResultsSectionProps) {
   if (!data) return null;
 
   const content = {
-    ko: {
-      title: "프로젝트 결과",
-      metrics: "주요 지표",
-      challenge: "도전과 해결",
-      problem: "문제",
-      solution: "해결책",
-      result: "결과"
+    ko: { 
+      title: "결과 & 배운 점",
+      achievements: "결과",
+      learnings: "배운 점",
+      nextSteps: "다음 단계"
     },
-    en: {
-      title: "Project Results",
-      metrics: "Key Metrics",
-      challenge: "Challenge & Solution",
-      problem: "Problem",
-      solution: "Solution",
-      result: "Result"
+    en: { 
+      title: "Results & Learnings",
+      achievements: "Results",
+      learnings: "Learnings",
+      nextSteps: "Next Steps"
     },
-    ja: {
-      title: "プロジェクト結果",
-      metrics: "主要指標",
-      challenge: "挑戦と解決",
-      problem: "問題",
-      solution: "解決策",
-      result: "結果"
+    ja: { 
+      title: "結果と学び",
+      achievements: "結果",
+      learnings: "学び",
+      nextSteps: "次のステップ"
     }
   };
 
   return (
-    <section className="py-20 px-8 bg-surface">
+    <section className={`py-16 px-8 ${backgroundColor}`}>
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-12 text-center">{content[language].title}</h2>
-        
-        <div className="space-y-12">
-          {/* Metrics */}
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          {content[language].title}
+        </h2>
+        <div className="space-y-8">
+          {/* Metrics as Achievements */}
           {data.metrics && (
             <div>
-              <h3 className="text-xl font-semibold mb-6">{content[language].metrics}</h3>
-              <div className="grid md:grid-cols-3 gap-4">
-                {data.metrics[language].map((metric, index) => (
-                  <div key={index} className="p-4 rounded-lg bg-bg/50 text-center">
-                    <span className="text-text/90">{metric}</span>
-                  </div>
+              <h3 className="font-semibold mb-3">{content[language].achievements}</h3>
+              <div className="space-y-2">
+                {data.metrics[language].map((metric, idx) => (
+                  <p key={idx} className="text-muted">• {metric}</p>
                 ))}
               </div>
             </div>
           )}
 
-          {/* Challenge */}
+          {/* Challenge as Learnings */}
           {data.challenge && (
             <div>
-              <h3 className="text-xl font-semibold mb-6">{content[language].challenge}</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="p-4 rounded-lg bg-bg/50">
-                  <h4 className="font-semibold text-primary-500 mb-2">{content[language].problem}</h4>
-                  <p className="text-text/90">{data.challenge.problem[language]}</p>
+              <h3 className="font-semibold mb-3">{content[language].learnings}</h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-medium mb-1">문제</h4>
+                  <p className="text-muted">{data.challenge.problem[language]}</p>
                 </div>
-                <div className="p-4 rounded-lg bg-bg/50">
-                  <h4 className="font-semibold text-primary-500 mb-2">{content[language].solution}</h4>
-                  <p className="text-text/90">{data.challenge.solution[language]}</p>
+                <div>
+                  <h4 className="font-medium mb-1">해결책</h4>
+                  <p className="text-muted">{data.challenge.solution[language]}</p>
                 </div>
-                <div className="p-4 rounded-lg bg-bg/50">
-                  <h4 className="font-semibold text-primary-500 mb-2">{content[language].result}</h4>
-                  <p className="text-text/90">{data.challenge.result[language]}</p>
+                <div>
+                  <h4 className="font-medium mb-1">결과</h4>
+                  <p className="text-muted">{data.challenge.result[language]}</p>
                 </div>
               </div>
             </div>
