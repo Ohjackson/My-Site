@@ -1,0 +1,288 @@
+{
+  "language": {
+    "label": "言語",
+    "english": "英語",
+    "korean": "韓国語",
+    "japanese": "日本語"
+  },
+  "theme": {
+    "toggle": "ダークモードを切り替え"
+  },
+  "nav": {
+    "home": "ホーム",
+    "about": "紹介",
+    "tech": "技術スタック",
+    "projects": "プロジェクト",
+    "history": "経歴",
+    "achievements": "実績",
+    "contact": "連絡先"
+  },
+  "header": {
+    "sectionIndex": "セクション一覧",
+    "backToHome": "ホームへ戻る"
+  },
+  "sectionIndex": {
+    "title": "Sections",
+    "subtitle": "必要な情報へ素早くアクセスできるセクション別インデックスです。",
+    "items": {
+      "hero": {
+        "title": "Hero",
+        "description": "ファーストビューで伝えるメッセージを確認します。",
+        "cta": "ヒーローへ"
+      },
+      "about": {
+        "title": "紹介",
+        "description": "ストーリーと価値観、背景情報をまとめています。",
+        "cta": "紹介を見る"
+      },
+      "tech": {
+        "title": "技術スタック",
+        "description": "使用している技術・ツール・デザインシステムを確認します。",
+        "cta": "スタックを見る"
+      },
+      "projects": {
+        "title": "プロジェクト",
+        "description": "代表的なプロジェクトと詳細なケーススタディをチェックします。",
+        "cta": "プロジェクトを見る"
+      },
+      "history": {
+        "title": "経歴",
+        "description": "役割や協業、マイルストーンを時系列で確認します。",
+        "cta": "経歴を見る"
+      },
+      "achievements": {
+        "title": "実績",
+        "description": "受賞歴や教育プログラムを一覧で把握します。",
+        "cta": "実績を見る"
+      },
+      "contact": {
+        "title": "連絡先",
+        "description": "コラボレーションや相談に最適な連絡方法を探します。",
+        "cta": "連絡先へ"
+      }
+    }
+  },
+  "sections": {
+    "hero": {
+      "headline": "人を理解し、技術で価値を創造する開発者、アン・ジェヒョンです。",
+      "subheadline": "多言語ユーザーのために、意図とスピードを両立した体験を設計します。",
+      "primaryCta": "プロジェクトを見る",
+      "secondaryCta": "連絡する",
+      "scrollHint": "スクロール"
+    },
+    "about": {
+      "title": "紹介",
+      "paragraphs": [
+        "学ぶことが好きで、協力を通じて新しい価値を生み出すことを楽しんでいます。",
+        "日本文化に惹かれ、韓日の若者を技術でつなぐことを目指しています。"
+      ],
+      "actions": {
+        "github": "GitHub",
+        "resume": "履歴書"
+      },
+      "imageAlt": "プロフィール"
+    },
+    "tech": {
+      "title": "技術スタック",
+      "categoryLabels": {
+        "mobile": "モバイル",
+        "frontend": "フロントエンド",
+        "backend": "バックエンド",
+        "data": "データ",
+        "infra": "インフラ",
+        "ai": "AI / ML",
+        "tools": "コラボツール",
+        "design": "デザイン"
+      }
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "labels": {
+        "period": "期間",
+        "role": "役割",
+        "coreFeatures": "核心機能"
+      },
+      "viewDetails": "詳細を見る",
+      "items": {
+        "danggocho": {
+          "name": "단고초",
+          "summary": "確実な日本語学習サービス",
+          "period": "2024.06 〜 現在",
+          "role": "個人事業",
+          "tags": ["#日韓ローンチ", "#オンデバイスAI", "#DX"],
+          "features": [
+            "日本語手書きを認識する LeNet-50 モデルを開発",
+            "バイリンガル学習者向けに最適化された SRS アルゴリズム",
+            "iOS ショートカット連携による瞬時の単語保存"
+          ],
+          "detail": {
+            "subtitle": "オンデバイスAI日本語学習サービス",
+            "overview": {
+              "purpose": "手書き認識と反復学習を組み合わせ、韓日学習者に最適な学習体験を提供",
+              "target": "迅速なフィードバックと反復学習を求めるモバイル学習者",
+              "value": "0.2秒未満の推論、科学的なSRSスケジューリング、即時単語保存"
+            },
+            "responsibilities": [
+              "iOSネイティブアプリの企画・開発",
+              "LeNet-50手書きモデルの学習と最適化",
+              "Spaced Repetitionアルゴリズムの設計",
+              "UI/UXデザインとプロトタイピング"
+            ],
+            "highlights": [
+              "95%精度で0.2秒以内の推論", "長期記憶転換率を30%向上", "ショートカット連携によるハンズフリー単語保存"
+            ],
+            "challenge": {
+              "problem": "初期バージョンで推論時間が1.5秒、バッテリー消費が大きい問題",
+              "solution": "Core ML最適化とバッチ処理、非同期パイプラインを適用",
+              "result": "推論時間を87%短縮(0.2秒)、バッテリー消費を40%削減"
+            },
+            "metrics": [
+              "累計2,500+ 学習者",
+              "手書き認識精度95%",
+              "30日残存率68%",
+              "評価 4.8 / 5.0"
+            ]
+          }
+        },
+        "acon": {
+          "name": "Acon",
+          "summary": "嗜好に基づくグルメ探索サービス",
+          "period": "2024.01 〜 現在",
+          "role": "iOS Developer",
+          "tags": ["#リリース", "#位置情報"],
+          "features": [
+            "初回から個別推薦を行うオンボーディングを開発",
+            "嗜好入力を活用したプロフィール学習",
+            "MapKitを用いた近隣検索と保存機能"
+          ],
+          "detail": {
+            "subtitle": "個人の嗜好に合わせたレストラン推薦",
+            "overview": {
+              "purpose": "ユーザーの嗜好を分析し、リアルタイムでレストランを推薦",
+              "target": "毎週新しい場所を探索する20〜30代",
+              "value": "嗜好ベースのパーソナライズ、直感的UI、素早い検索"
+            },
+            "responsibilities": [
+              "オンボーディングフローの設計・開発",
+              "主要UIフローと状態遷移の実装",
+              "MapKit連携の最適化"
+            ],
+            "highlights": [
+              "オンボーディング工程を7→3に短縮", "進行状況の可視化とスキップ導線", "共有とグループ計画機能"
+            ],
+            "challenge": {
+              "problem": "複雑なオンボーディングにより初期離脱率45%",
+              "solution": "フローを簡素化し、進行表示とスキップを追加",
+              "result": "離脱率を18%へ削減、完了率を85%に向上"
+            },
+            "metrics": [
+              "月間8,000+ ユーザー",
+              "オンボーディング完了率85%",
+              "4週目維持率72%",
+              "評価 4.6 / 5.0"
+            ]
+          }
+        },
+        "pliad": {
+          "name": "Pliad",
+          "summary": "ECデータパイプライン（社内PoC）",
+          "period": "2025.07 〜 現在",
+          "role": "AI Engineer",
+          "tags": ["#B2B", "#契約締結"],
+          "features": [
+            "30以上のエンドポイントを持つFastAPIゲートウェイ構築",
+            "LangGraphベースの自律データエージェント",
+            "リアルタイムビジネスメトリクスのダッシュボード"
+          ],
+          "detail": {
+            "subtitle": "ECチーム向けAIエージェントパイプライン",
+            "overview": {
+              "purpose": "データ収集・整形・洞察生成を自動化しB2B顧客を支援",
+              "target": "中小ECチームと社内データ分析チーム",
+              "value": "ノータッチのデータ処理とAIによる洞察、リアルタイムダッシュボード"
+            },
+            "responsibilities": [
+              "FastAPIバックエンドとデプロイ設計",
+              "LangGraph自律エージェントの開発",
+              "バッチとストリーミングETL実装",
+              "PostgreSQLスキーマとインデックス最適化"
+            ],
+            "highlights": [
+              "マルチソースデータの異常検知", "JWT認証とWebSocket通知", "AIによる週次インサイトレポート"
+            ],
+            "challenge": {
+              "problem": "10万件以上の処理に30分以上、メモリ不足が発生",
+              "solution": "ストリーミング処理とバッチ調整、Redisキャッシュ階層を導入",
+              "result": "処理時間を1.5分に短縮し、メモリ使用量を60%削減"
+            },
+            "metrics": [
+              "1分あたり10万件処理",
+              "1.5分 SLA",
+              "洞察精度92%",
+              "稼働率99.8%"
+            ]
+          }
+        }
+      }
+    },
+    "history": {
+      "title": "History",
+      "items": [
+        { "period": "2025.03 〜 2025.08", "activity": "inc - Pliad - Founder Developer", "description": "複数のB2Bプロトタイプを開発" },
+        { "period": "2025.01", "activity": "inc - Acon - iOS Developer", "description": "MVPを開発・リリース" },
+        { "period": "2024.10 〜 2024.11", "activity": "inc - Daon - フルスタック開発 Cofounder", "description": "DaonサービスMVP開発" },
+        { "period": "2024.08 〜 2024.09", "activity": "inc - Wiro - フルスタック開発 Cofounder", "description": "Wiroサービスを提供" },
+        { "period": "2024.01", "activity": "inc - Docent - インターン", "description": "iOSショートカット機能を開発" },
+        { "period": "2023.12", "activity": "兵役満期除隊", "description": "第30師団" },
+        { "period": "2021", "activity": "慶福高校 卒業", "description": "" }
+      ]
+    },
+    "achievements": {
+      "title": "Achievements & Education",
+      "achievementsTitle": "受賞・実績",
+      "educationTitle": "教育",
+      "achievements": [
+        "GCS - 第4期 全額奨学生",
+        "Artechné - 金賞"
+      ],
+      "education": [
+        "嘉泉大学 人工知能学科 第2期",
+        "GCS 第4期",
+        "SOPT 第35期 - iOS",
+        "カカオエンタープライズ SWアカデミー 第7期 - 進行中"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "thanks": "ありがとうございます",
+      "description": "人を中心に考えたプロダクトを一緒に作りましょう。",
+      "emailCta": "メールを送る",
+      "footer": "© 2025 JAEHYUN AHN"
+    }
+  },
+  "projectDetail": {
+    "labels": {
+      "overview": "プロジェクト概要",
+      "purpose": "目的",
+      "target": "対象ユーザー",
+      "value": "核心価値",
+      "responsibilities": "担当業務",
+      "highlights": "ハイライト",
+      "challenge": "解決した課題",
+      "problem": "問題",
+      "solution": "解決方法",
+      "result": "結果",
+      "metrics": "指標"
+    },
+    "actions": {
+      "back": "一覧へ戻る",
+      "github": "GitHub",
+      "demo": "デモを見る"
+    }
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "履歴書を見る"
+  }
+}

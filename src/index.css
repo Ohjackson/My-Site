@@ -1,0 +1,51 @@
+@import './styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-ui-kr: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', 'Segoe UI', sans-serif;
+  --font-ui-en: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-ui-ja: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+  --font-display: 'Playfair Display', 'Inter', serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--app-font-family, var(--font-ui-en));
+    background-color: rgb(var(--color-bg));
+    color: rgb(var(--color-text));
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+:lang(ja) {
+  font-family: var(--font-ui-ja) !important;
+}
+
+:lang(ja) h1,
+:lang(ja) h2,
+:lang(ja) h3 {
+  font-family: var(--font-ui-ja) !important;
+}
+
+:lang(ko) {
+  font-family: var(--font-ui-kr) !important;
+}
+
+:lang(ko) h1,
+:lang(ko) h2,
+:lang(ko) h3 {
+  font-family: var(--font-ui-kr) !important;
+}

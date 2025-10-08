@@ -1,0 +1,294 @@
+{
+  "language": {
+    "label": "Language",
+    "english": "English",
+    "korean": "Korean",
+    "japanese": "Japanese"
+  },
+  "theme": {
+    "toggle": "Toggle dark mode"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "tech": "Tech Stack",
+    "projects": "Projects",
+    "history": "History",
+    "achievements": "Achievements",
+    "contact": "Contact"
+  },
+  "header": {
+    "sectionIndex": "Section index",
+    "backToHome": "Back to home"
+  },
+  "sectionIndex": {
+    "title": "Sections",
+    "subtitle": "Jump straight to the area you need with a section-based overview of the site.",
+    "items": {
+      "hero": {
+        "title": "Hero",
+        "description": "Review the main headline and first impression above the fold.",
+        "cta": "Go to hero"
+      },
+      "about": {
+        "title": "About",
+        "description": "Learn about the story, values, and personal background.",
+        "cta": "Open about"
+      },
+      "tech": {
+        "title": "Tech Stack",
+        "description": "Check the technologies, tools, and design systems in use.",
+        "cta": "See tech stack"
+      },
+      "projects": {
+        "title": "Projects",
+        "description": "Browse highlighted work and jump into detailed case studies.",
+        "cta": "Review projects"
+      },
+      "history": {
+        "title": "History",
+        "description": "Follow the timeline of roles, collaborations, and milestones.",
+        "cta": "View history"
+      },
+      "achievements": {
+        "title": "Achievements",
+        "description": "Spotlight awards, programs, and education at a glance.",
+        "cta": "See achievements"
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Find the right channel to start a conversation or collaboration.",
+        "cta": "Go to contact"
+      }
+    }
+  },
+  "sections": {
+    "hero": {
+      "headline": "I'm Jaehyun Ahn, a developer who understands people and creates value through technology.",
+      "subheadline": "Designing multilingual products that feel intentional, inclusive, and fast.",
+      "primaryCta": "View projects",
+      "secondaryCta": "Get in touch",
+      "scrollHint": "Scroll down"
+    },
+    "about": {
+      "title": "About",
+      "paragraphs": [
+        "I love learning and creating new value through collaboration.",
+        "With a deep interest in Japanese culture, I dream of connecting Korean and Japanese youth through technology."
+      ],
+      "actions": {
+        "github": "GitHub",
+        "resume": "Resume"
+      },
+      "imageAlt": "Profile"
+    },
+    "tech": {
+      "title": "Tech Stack",
+      "categoryLabels": {
+        "mobile": "Mobile",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "data": "Data",
+        "infra": "Infra",
+        "ai": "AI / ML",
+        "tools": "Tools",
+        "design": "Design"
+      }
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "labels": {
+        "period": "Period",
+        "role": "Role",
+        "coreFeatures": "Core Features"
+      },
+      "viewDetails": "View details",
+      "items": {
+        "danggocho": {
+          "name": "단고초",
+          "summary": "The most certain Japanese learning service.",
+          "period": "2024.06 – Present",
+          "role": "Founder / Solo builder",
+          "tags": ["#KR/JP launch", "#On-device AI", "#DX"],
+          "features": [
+            "Developed a LeNet-50 handwriting recognition model for Japanese characters.",
+            "Implemented a spaced repetition algorithm tuned for bilingual learners.",
+            "Built instant vocabulary capture with iOS Shortcuts integration."
+          ],
+          "detail": {
+            "subtitle": "AI-powered Japanese learning service",
+            "overview": {
+              "purpose": "Deliver an optimized study flow for Korean and Japanese learners with on-device AI handwriting recognition.",
+              "target": "Mobile learners who need fast feedback and repeatable study loops.",
+              "value": "Low-latency on-device inference, science-backed SRS scheduling, instant word capture support."
+            },
+            "responsibilities": [
+              "Native iOS application development end to end.",
+              "Training and optimizing the LeNet-50 handwriting model.",
+              "Designing the spaced repetition algorithm and data flows.",
+              "Leading UI/UX design and interaction prototyping."
+            ],
+            "highlights": [
+              "On-device recognition under 0.2s with >95% accuracy.",
+              "Adaptive review scheduling that improves long-term retention by 30%.",
+              "Shortcut integration enabling hands-free vocabulary capture."
+            ],
+            "challenge": {
+              "problem": "Early builds consumed too much battery and required ~1.5s per inference.",
+              "solution": "Applied Core ML optimizations, batched processing, and tuned asynchronous pipelines.",
+              "result": "87% faster inference (0.2s) with 40% lower battery usage and 4.8/5.0 user satisfaction."
+            },
+            "metrics": [
+              "2,500+ learners",
+              "95% handwriting accuracy",
+              "68% 30-day retention",
+              "4.8 / 5.0 rating"
+            ]
+          }
+        },
+        "acon": {
+          "name": "Acon",
+          "summary": "Taste-based restaurant discovery service.",
+          "period": "2024.01 – Present",
+          "role": "iOS Developer",
+          "tags": ["#Launch", "#Location"],
+          "features": [
+            "Shipped an onboarding flow that customizes recommendations from the first session.",
+            "Implemented taste profiling with iterative preference inputs.",
+            "Integrated MapKit-powered nearby search with saved spots."
+          ],
+          "detail": {
+            "subtitle": "Personalized dining discovery",
+            "overview": {
+              "purpose": "Analyse user taste to recommend restaurants in real time.",
+              "target": "Food lovers in their 20s–30s who explore new places weekly.",
+              "value": "Taste-based personalization with intuitive UI and fast search."
+            },
+            "responsibilities": [
+              "Designed and developed the onboarding funnel.",
+              "Implemented core UI flows and interaction states.",
+              "Optimized MapKit integration for smooth navigation."
+            ],
+            "highlights": [
+              "Reduced onboarding steps from 7 to 3 while keeping context.",
+              "Improved completion rate to 85% with progress and skip options.",
+              "Enabled shareable recommendations and group planning."
+            ],
+            "challenge": {
+              "problem": "A complex onboarding caused a 45% drop-off on the first screen.",
+              "solution": "Condensed the journey, added progress cues, and introduced a skip path.",
+              "result": "Drop-off fell to 18% and onboarding completion reached 85%."
+            },
+            "metrics": [
+              "8,000+ monthly users",
+              "85% onboarding completion",
+              "72% week-4 retention",
+              "4.6 / 5.0 rating"
+            ]
+          }
+        },
+        "pliad": {
+          "name": "Pliad",
+          "summary": "E-commerce data pipeline (internal PoC).",
+          "period": "2025.07 – Present",
+          "role": "AI Engineer",
+          "tags": ["#B2B", "#Signed"],
+          "features": [
+            "Built a single FastAPI gateway powering 30+ endpoints.",
+            "Prototyped LangGraph agents for autonomous data operations.",
+            "Delivered dashboards with near real-time business metrics."
+          ],
+          "detail": {
+            "subtitle": "AI agent pipeline for e-commerce teams",
+            "overview": {
+              "purpose": "Automate data ingestion, cleaning, and insights for B2B commerce clients.",
+              "target": "SME commerce teams and internal data analysts.",
+              "value": "Hands-off data processing with AI-generated insights and live dashboards."
+            },
+            "responsibilities": [
+              "Architected the FastAPI backend and deployment pipeline.",
+              "Developed LangGraph-based autonomous agents.",
+              "Implemented batch + streaming ETL with monitoring.",
+              "Designed optimized PostgreSQL schemas and indexing strategies."
+            ],
+            "highlights": [
+              "Agent-driven anomaly detection across multi-source feeds.",
+              "JWT-secured APIs with WebSocket live updates.",
+              "AI-authored insight summaries for weekly reports."
+            ],
+            "challenge": {
+              "problem": "Processing 100k+ records took over 30 minutes and exhausted memory.",
+              "solution": "Introduced streaming pipelines, tuned batch sizes, and layered Redis caching.",
+              "result": "Processing time dropped to 1.5 minutes with 60% lower memory usage."
+            },
+            "metrics": [
+              "100K records per minute",
+              "1.5 minute SLA",
+              "92% insight accuracy",
+              "99.8% service uptime"
+            ]
+          }
+        }
+      }
+    },
+    "history": {
+      "title": "History",
+      "items": [
+        { "period": "2025.03 – 2025.08", "activity": "inc – Pliad – Founder Developer", "description": "Built multiple B2B prototypes." },
+        { "period": "2025.01", "activity": "inc – Acon – iOS Developer", "description": "Launched MVP." },
+        { "period": "2024.10 – 2024.11", "activity": "inc – Daon – Full-stack Developer, Co-founder", "description": "Developed Daon service MVP." },
+        { "period": "2024.08 – 2024.09", "activity": "inc – Wiro – Full-stack Developer, Co-founder", "description": "Delivered Wiro service." },
+        { "period": "2024.01", "activity": "inc – Docent – Intern", "description": "Built iOS Shortcut features." },
+        { "period": "2023.12", "activity": "Military discharge", "description": "30th Infantry Division." },
+        { "period": "2021", "activity": "Graduated from Kyungbok High School", "description": "" }
+      ]
+    },
+    "achievements": {
+      "title": "Achievements & Education",
+      "achievementsTitle": "Achievements",
+      "educationTitle": "Education",
+      "achievements": [
+        "GCS – 4th cohort full scholarship recipient",
+        "Artechné – Gold prize"
+      ],
+      "education": [
+        "Gachon University – AI major (2nd cohort)",
+        "GCS 4th cohort",
+        "SOPT 35th – iOS",
+        "Kakao Enterprise SW Academy 7th – In progress"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "thanks": "Thank you",
+      "description": "Let’s talk about building thoughtful products together.",
+      "emailCta": "Send email",
+      "footer": "© 2025 Jaehyun Ahn. All rights reserved."
+    }
+  },
+  "projectDetail": {
+    "labels": {
+      "overview": "Project overview",
+      "purpose": "Purpose",
+      "target": "Target users",
+      "value": "Core value",
+      "responsibilities": "Responsibilities",
+      "highlights": "Highlights",
+      "challenge": "Challenge solved",
+      "problem": "Problem",
+      "solution": "Solution",
+      "result": "Result",
+      "metrics": "Metrics"
+    },
+    "actions": {
+      "back": "Back to list",
+      "github": "GitHub",
+      "demo": "Live demo"
+    }
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "resume": "View resume"
+  }
+}

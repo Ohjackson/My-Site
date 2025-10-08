@@ -1,0 +1,288 @@
+{
+  "language": {
+    "label": "언어",
+    "english": "영어",
+    "korean": "한국어",
+    "japanese": "일본어"
+  },
+  "theme": {
+    "toggle": "다크 모드 전환"
+  },
+  "nav": {
+    "home": "홈",
+    "about": "소개",
+    "tech": "기술 스택",
+    "projects": "프로젝트",
+    "history": "연혁",
+    "achievements": "성과",
+    "contact": "연락처"
+  },
+  "header": {
+    "sectionIndex": "섹션 페이지",
+    "backToHome": "홈으로"
+  },
+  "sectionIndex": {
+    "title": "Sections",
+    "subtitle": "섹션별로 나뉜 페이지에서 필요한 영역으로 바로 이동하세요.",
+    "items": {
+      "hero": {
+        "title": "Hero",
+        "description": "첫 화면에서 전달하는 핵심 메시지를 확인합니다.",
+        "cta": "히어로 보기"
+      },
+      "about": {
+        "title": "소개",
+        "description": "이야기와 가치관, 배경 정보를 한 번에 파악하세요.",
+        "cta": "소개 열기"
+      },
+      "tech": {
+        "title": "기술 스택",
+        "description": "사용 중인 기술과 도구, 디자인 시스템을 살펴봅니다.",
+        "cta": "기술 스택 보기"
+      },
+      "projects": {
+        "title": "프로젝트",
+        "description": "대표 프로젝트와 상세 케이스 스터디를 탐색합니다.",
+        "cta": "프로젝트 보기"
+      },
+      "history": {
+        "title": "연혁",
+        "description": "역할과 협업, 마일스톤을 시간 순으로 확인하세요.",
+        "cta": "연혁 보기"
+      },
+      "achievements": {
+        "title": "성과",
+        "description": "수상, 프로그램, 교육 이력을 한눈에 확인합니다.",
+        "cta": "성과 보기"
+      },
+      "contact": {
+        "title": "연락처",
+        "description": "대화를 시작하거나 협업을 제안할 채널을 찾으세요.",
+        "cta": "연락처 이동"
+      }
+    }
+  },
+  "sections": {
+    "hero": {
+      "headline": "사람을 이해하고 기술로 가치를 만드는 개발자 안재현입니다.",
+      "subheadline": "다국어 사용자에게 의도적이고 빠른 경험을 설계합니다.",
+      "primaryCta": "프로젝트 보기",
+      "secondaryCta": "연락하기",
+      "scrollHint": "아래로 스크롤"
+    },
+    "about": {
+      "title": "소개",
+      "paragraphs": [
+        "배우는 것을 좋아하며 협업을 통해 새로운 가치를 창출하는 일을 즐깁니다.",
+        "일본 문화에 관심을 가지며 한일 청년을 기술로 잇는 꿈을 그리고 있습니다."
+      ],
+      "actions": {
+        "github": "깃허브",
+        "resume": "이력서"
+      },
+      "imageAlt": "프로필"
+    },
+    "tech": {
+      "title": "기술 스택",
+      "categoryLabels": {
+        "mobile": "모바일",
+        "frontend": "프론트엔드",
+        "backend": "백엔드",
+        "data": "데이터",
+        "infra": "인프라",
+        "ai": "AI / ML",
+        "tools": "협업 도구",
+        "design": "디자인"
+      }
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "labels": {
+        "period": "기간",
+        "role": "역할",
+        "coreFeatures": "핵심 기능"
+      },
+      "viewDetails": "상세보기",
+      "items": {
+        "danggocho": {
+          "name": "단고초",
+          "summary": "가장 확실한 일본어 학습 서비스",
+          "period": "2024.06 ~ 현재",
+          "role": "개인 창업",
+          "tags": ["#한일 동시 출시", "#온디바이스 AI", "#DX"],
+          "features": [
+            "일본어 손글씨 인식을 위한 LeNet-50 모델 개발",
+            "이중 언어 학습자를 위한 SRS 알고리즘 설계",
+            "iOS Shortcut 연동으로 인스턴트 단어 저장 구현"
+          ],
+          "detail": {
+            "subtitle": "온디바이스 AI 일본어 학습 서비스",
+            "overview": {
+              "purpose": "손글씨 인식과 반복 학습을 결합해 한일 학습자에게 최적화된 학습 경험 제공",
+              "target": "빠른 피드백과 반복 학습 루프가 필요한 모바일 학습자",
+              "value": "0.2초 미만의 온디바이스 추론, 과학적인 SRS 스케줄링, 즉시 단어 저장"
+            },
+            "responsibilities": [
+              "iOS 네이티브 앱 기획·개발 전반",
+              "LeNet-50 손글씨 모델 학습 및 최적화",
+              "Spaced Repetition 알고리즘 설계",
+              "UI/UX 디자인 및 프로토타이핑"
+            ],
+            "highlights": [
+              "95% 정확도로 0.2초 내 추론", "장기 기억 전환율 30% 개선", "Shortcut 연동으로 핸즈프리 단어 저장"
+            ],
+            "challenge": {
+              "problem": "초기 버전에서 추론 시간 1.5초, 배터리 소모 과다 문제 발생",
+              "solution": "Core ML 최적화와 배치 처리, 비동기 파이프라인을 적용",
+              "result": "추론 시간 87% 단축(0.2초), 배터리 소모 40% 감소, 사용자 만족도 4.8/5.0 달성"
+            },
+            "metrics": [
+              "누적 2,500+ 학습자",
+              "손글씨 인식 정확도 95%",
+              "30일 잔존율 68%",
+              "평점 4.8 / 5.0"
+            ]
+          }
+        },
+        "acon": {
+          "name": "Acon",
+          "summary": "취향 기반 맛집 탐색 서비스",
+          "period": "2024.01 ~ 현재",
+          "role": "iOS 개발자",
+          "tags": ["#출시", "#위치 기반"],
+          "features": [
+            "첫 세션부터 개인화 추천을 제공하는 온보딩 개발",
+            "선호도 입력 기반 취향 프로파일링",
+            "MapKit 기반 주변 검색과 저장 기능 구현"
+          ],
+          "detail": {
+            "subtitle": "개인 취향에 맞춘 맛집 추천",
+            "overview": {
+              "purpose": "사용자 취향을 분석해 실시간으로 맛집을 추천",
+              "target": "매주 새로운 장소를 탐색하는 20~30대",
+              "value": "취향 기반 개인화, 직관적인 UI, 빠른 검색 경험"
+            },
+            "responsibilities": [
+              "온보딩 퍼널 설계 및 개발",
+              "핵심 UI 흐름과 상태 구현",
+              "MapKit 연동 최적화"
+            ],
+            "highlights": [
+              "온보딩 단계를 7 → 3단계로 축소", "진행률 노출과 스킵 경로 제공", "추천 공유와 그룹 계획 기능 제공"
+            ],
+            "challenge": {
+              "problem": "복잡한 온보딩으로 첫 화면 이탈률 45% 발생",
+              "solution": "플로우 간소화, 진행률 표시, 스킵 경로 추가",
+              "result": "이탈률 18%로 감소, 온보딩 완료율 85% 달성"
+            },
+            "metrics": [
+              "월간 사용자 8,000+",
+              "온보딩 완료율 85%",
+              "4주 차 유지율 72%",
+              "평점 4.6 / 5.0"
+            ]
+          }
+        },
+        "pliad": {
+          "name": "Pliad",
+          "summary": "이커머스 데이터 파이프라인 (내부 PoC)",
+          "period": "2025.07 ~ 현재",
+          "role": "AI 엔지니어",
+          "tags": ["#B2B", "#계약 체결"],
+          "features": [
+            "30개 이상 엔드포인트를 다루는 FastAPI 게이트웨이 구축",
+            "LangGraph 기반 자율 데이터 에이전트 프로토타입",
+            "실시간 비즈니스 지표 대시보드 제공"
+          ],
+          "detail": {
+            "subtitle": "이커머스 팀을 위한 AI 에이전트 파이프라인",
+            "overview": {
+              "purpose": "데이터 수집·정제·인사이트 도출을 자동화하여 B2B 고객을 지원",
+              "target": "중소형 이커머스 팀과 내부 데이터 분석 조직",
+              "value": "핸즈프리 데이터 처리와 AI 기반 인사이트, 실시간 대시보드 제공"
+            },
+            "responsibilities": [
+              "FastAPI 백엔드 및 배포 아키텍처 설계",
+              "LangGraph 자율 에이전트 개발",
+              "배치·스트리밍 ETL 파이프라인 구현",
+              "PostgreSQL 스키마 및 인덱스 최적화"
+            ],
+            "highlights": [
+              "다중 소스 데이터를 아우르는 이상 탐지", "JWT 기반 보안과 WebSocket 실시간 알림", "AI가 작성하는 주간 인사이트 리포트"
+            ],
+            "challenge": {
+              "problem": "10만 건 이상 처리에 30분 이상 소요되고 메모리 부족 발생",
+              "solution": "스트리밍 파이프라인, 배치 크기 조정, Redis 캐시 계층 적용",
+              "result": "처리 시간 1.5분으로 단축, 메모리 사용량 60% 감소"
+            },
+            "metrics": [
+              "분당 10만 건 처리",
+              "1.5분 SLA",
+              "인사이트 정확도 92%",
+              "가용성 99.8%"
+            ]
+          }
+        }
+      }
+    },
+    "history": {
+      "title": "History",
+      "items": [
+        { "period": "2025.03 ~ 2025.08", "activity": "inc - Pliad - Founder Developer", "description": "B2B 프로토타입 다수 개발" },
+        { "period": "2025.01", "activity": "inc - Acon - iOS Developer", "description": "MVP 개발 및 출시" },
+        { "period": "2024.10 ~ 2024.11", "activity": "inc - Daon - 풀스택 개발자 Cofounder", "description": "Daon 서비스 MVP 개발" },
+        { "period": "2024.08 ~ 2024.09", "activity": "inc - Wiro - 풀스택 개발자 Cofounder", "description": "Wiro 서비스 개발" },
+        { "period": "2024.01", "activity": "inc - Docent - 인턴", "description": "iOS Shortcut 기능 개발" },
+        { "period": "2023.12", "activity": "병장 만기 전역", "description": "30사단" },
+        { "period": "2021", "activity": "경복고 졸업", "description": "" }
+      ]
+    },
+    "achievements": {
+      "title": "Achievements & Education",
+      "achievementsTitle": "성과",
+      "educationTitle": "교육",
+      "achievements": [
+        "GCS - 4기 우수 전액장학생",
+        "아르테크네 - 금상"
+      ],
+      "education": [
+        "가천대학교 인공지능학과 2기",
+        "GCS 4기",
+        "SOPT 35기 - iOS",
+        "카카오 엔터프라이즈 SW 아카데미 7기 - 진행 중"
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "thanks": "감사합니다",
+      "description": "사람 중심의 제품을 함께 만들어가요.",
+      "emailCta": "이메일 보내기",
+      "footer": "© 2025 JAEHYUN AHN"
+    }
+  },
+  "projectDetail": {
+    "labels": {
+      "overview": "프로젝트 개요",
+      "purpose": "프로젝트 목적",
+      "target": "대상 사용자",
+      "value": "핵심 가치",
+      "responsibilities": "담당 업무",
+      "highlights": "성과 하이라이트",
+      "challenge": "문제 해결 사례",
+      "problem": "문제",
+      "solution": "해결 방법",
+      "result": "결과",
+      "metrics": "지표"
+    },
+    "actions": {
+      "back": "목록으로",
+      "github": "GitHub",
+      "demo": "Demo"
+    }
+  },
+  "social": {
+    "github": "깃허브",
+    "linkedin": "링크드인",
+    "resume": "이력서 보기"
+  }
+}
