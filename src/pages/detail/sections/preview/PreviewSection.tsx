@@ -49,11 +49,6 @@ export function PreviewSection({ data, language, backgroundColor }: PreviewSecti
             );
           })}
         </div>
-        {data.description && (
-          <p className="text-center text-muted mt-4">
-            {typeof data.description === 'string' ? data.description : data.description[language]}
-          </p>
-        )}
       </div>
     </section>
   );
