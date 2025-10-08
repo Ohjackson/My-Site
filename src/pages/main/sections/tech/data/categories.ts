@@ -15,6 +15,17 @@ export const TECH_CATEGORIES: readonly TechCategory[] = [
     ]
   },
   {
+    id: 'infra',
+    badges: [
+      'https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white',
+      'https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000',
+      'https://img.shields.io/badge/iCloud-3693F3?style=for-the-badge&logo=icloud&logoColor=white',
+      'https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white',
+      'https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white',
+      'https://img.shields.io/badge/Kakao%20Cloud-FEE500?style=for-the-badge'
+    ]
+  },
+  {
     id: 'frontend',
     badges: [
       'https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
@@ -35,17 +46,6 @@ export const TECH_CATEGORIES: readonly TechCategory[] = [
     badges: [
       'https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white',
       'https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white'
-    ]
-  },
-  {
-    id: 'infra',
-    badges: [
-      'https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white',
-      'https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000',
-      'https://img.shields.io/badge/iCloud-3693F3?style=for-the-badge&logo=icloud&logoColor=white',
-      'https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white',
-      'https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white',
-      'https://img.shields.io/badge/Kakao%20Cloud-FEE500?style=for-the-badge'
     ]
   },
   {

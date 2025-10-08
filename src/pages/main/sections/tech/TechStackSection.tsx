@@ -9,18 +9,28 @@ export const TechStackSection = () => {
   return (
     <section id="tech" className="bg-bg py-32 px-8 text-text">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading tKey="sections.tech.title">
+        <div className="mb-20 text-center">
+          <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
+            Tech Stack
+          </h2>
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
-        </SectionHeading>
+        </div>
 
         <div className="grid gap-8 md:grid-cols-2">
           {TECH_CATEGORIES.map((category) => (
             <div
               key={category.id}
-              className="space-y-4 rounded-2xl border border-border bg-surface/80 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="space-y-4 p-6"
             >
-              <div className="text-xs font-semibold uppercase tracking-widest text-muted">
-                {labels[category.id] ?? category.id}
+              <div className="text-1.5xl font-semibold uppercase tracking-widest text-muted">
+                {category.id === 'mobile' ? 'Mobile' :
+                 category.id === 'frontend' ? 'Frontend' :
+                 category.id === 'backend' ? 'Backend' :
+                 category.id === 'data' ? 'Data' :
+                 category.id === 'infra' ? 'Infra' :
+                 category.id === 'ai' ? 'AI' :
+                 category.id === 'tools' ? 'Tools' :
+                 category.id === 'design' ? 'Design' : category.id}
               </div>
               <div className="flex flex-wrap gap-2">
                 {category.badges.map((badge, idx) => (
