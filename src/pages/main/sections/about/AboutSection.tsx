@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
-
+import profileImage from '@/shared/photos/IMG_0586.jpg';
 import { ImageWithFallback } from '@/shared/components/image';
+import { SectionHeading } from '@/shared/components/section-heading';
 
 export const AboutSection = () => {
   const { t } = useTranslation();
@@ -10,18 +11,15 @@ export const AboutSection = () => {
   return (
     <section id="about" className="bg-surface py-32 px-8 text-text">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-24 text-center">
-          <h2 className="text-5xl tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
-            {t('sections.about.title')}
-          </h2>
+        <SectionHeading tKey="sections.about.title">
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
-        </div>
+        </SectionHeading>
 
         <div className="grid gap-16 md:grid-cols-[0.45fr,0.55fr] md:items-start">
           <div className="flex justify-center">
             <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-3xl border border-border shadow-lg">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
+                src={profileImage}
                 alt={t('sections.about.imageAlt')}
                 className="h-full w-full object-cover"
               />

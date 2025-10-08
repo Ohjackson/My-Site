@@ -18,6 +18,5 @@ export const ContactLink = ({ href, label, value, icon: Icon }: ContactLinkProps
       <Icon className="h-6 w-6 text-text/80 transition-colors group-hover:text-white" />
     </div>
     <div className="text-xs uppercase tracking-widest text-muted">{label}</div>
-    <div className="mt-2 text-sm text-link transition-colors group-hover:text-linkHover">{value}</div>
   </a>
 );

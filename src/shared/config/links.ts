@@ -25,14 +25,14 @@ export const NAV_LINKS: readonly NavLink[] = [
 export const SOCIAL_LINKS: readonly SocialLink[] = [
   {
     id: 'github',
-    href: 'https://github.com/jack',
+    href: 'https://github.com/Ohjackson',
     labelKey: 'social.github',
     target: '_blank',
     rel: 'noopener noreferrer'
   },
   {
     id: 'linkedin',
-    href: 'https://www.linkedin.com/in/jack',
+    href: 'https://www.linkedin.com/in/jaehyun-ahn-937508303/',
     labelKey: 'social.linkedin',
     target: '_blank',
     rel: 'noopener noreferrer'

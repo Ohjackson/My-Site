@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-
+import { SectionHeading } from '@/shared/components/section-heading';
 import { HistoryItem } from './components/HistoryItem';
 
 interface HistoryEntry {
@@ -15,12 +15,9 @@ export const HistorySection = () => {
   return (
     <section id="history" className="bg-bg py-32 px-8 text-text">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-24 text-center">
-          <h2 className="text-5xl tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
-            {t('sections.history.title')}
-          </h2>
+        <SectionHeading tKey="sections.history.title">
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
-        </div>
+        </SectionHeading>
 
         <div className="mx-auto max-w-3xl">
           {items.map((item, index) => (
