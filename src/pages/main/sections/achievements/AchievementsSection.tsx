@@ -14,7 +14,7 @@ export const AchievementsSection = () => {
       <div className="mx-auto max-w-6xl">
         <div className="mb-20 text-center">
           <h2 className="text-5xl font-semibold tracking-tight md:text-6xl">
-            {data.title}
+            Achievements & Education
           </h2>
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
         </div>

@@ -14,8 +14,8 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCardProps) => {
   return (
-    <article className="group rounded-3xl border border-border bg-surface p-8 text-text shadow-sm transition hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-2xl">
-      <div className="space-y-6">
+    <article className="group flex flex-col rounded-3xl border border-border bg-surface p-8 text-text shadow-sm transition hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-2xl">
+      <div className="flex-1 space-y-6">
         {/* Project Icon */}
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-2xl border border-gray-200/50 flex-shrink-0">
@@ -88,16 +88,16 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
             ))}
           </ul>
         </div>
-
-        <button
-          type="button"
-          onClick={() => onSelect(project.id)}
-          className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition hover:border-primary-400 hover:text-primary-500 sm:w-auto"
-        >
-          {viewLabel}
-          <ArrowUpRightIcon className="h-4 w-4" />
-        </button>
       </div>
+
+      <button
+        type="button"
+        onClick={() => onSelect(project.id)}
+        className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition hover:border-primary-400 hover:text-primary-500 sm:w-auto"
+      >
+        {viewLabel}
+        <ArrowUpRightIcon className="h-4 w-4" />
+      </button>
     </article>
   );
 };

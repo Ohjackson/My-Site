@@ -10,6 +10,7 @@ import aconData from '../data/Acon/project.json';
 import popcoData from '../data/POPCO/project.json';
 import daonData from '../data/Daon/project.json';
 import pliadData from '../data/Pliad/project.json';
+import mysiteData from '../data/MySite/project.json';
 
 const projectData = {
   tangocho: tangochoData,
@@ -19,6 +20,7 @@ const projectData = {
   popco: popcoData,
   daon: daonData,
   pliad: pliadData,
+  mysite: mysiteData,
 };
 
 export const useProjectsContent = () => {
