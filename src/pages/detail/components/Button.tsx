@@ -5,6 +5,7 @@ const baseStyles = "inline-flex items-center justify-center gap-2 rounded-md px-
 const variantStyles: Record<NonNullable<ButtonProps["variant"]>, string> = {
   primary: "bg-primary-500 text-white hover:bg-primary-600",
   secondary: "bg-surface text-text border border-border hover:bg-surface/80",
+  outline: "border border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white",
   destructive: "bg-primary-700 text-white hover:bg-primary-800",
 };
 
@@ -13,7 +14,7 @@ function cx(...values: Array<string | false | null | undefined>) {
 }
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "destructive";
+  variant?: "primary" | "secondary" | "outline" | "destructive";
   fullWidth?: boolean;
   icon?: ReactNode;
 }

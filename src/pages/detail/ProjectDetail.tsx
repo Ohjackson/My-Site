@@ -54,17 +54,20 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
     ko: {
       back: "목록으로",
       github: "GitHub",
-      appStore: "App Store"
+      appStore: "App Store",
+      website: "Website"
     },
     en: {
       back: "Back to List",
       github: "GitHub",
-      appStore: "App Store"
+      appStore: "App Store",
+      website: "Website"
     },
     ja: {
       back: "リストに戻る",
       github: "GitHub",
-      appStore: "App Store"
+      appStore: "App Store",
+      website: "Website"
     }
   };
 
@@ -90,28 +93,28 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
                 e.currentTarget.style.display = 'none';
               }}
             />
-            <div>
+              <div>
               <h1 className="text-4xl font-bold mb-2">{project.name[language]}</h1>
               <p className="text-lg text-muted">{project.summary[language]}</p>
             </div>
-          </div>
+              </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="space-y-4">
-              <div className="flex items-center gap-3 text-text/90">
+              <div className="space-y-4">
+                <div className="flex items-center gap-3 text-text/90">
                 <Calendar className="h-4 w-4 text-primary-500" />
                 <span><strong>운영기간:</strong> {project.period[language]}</span>
-              </div>
-              <div className="flex items-center gap-3 text-text/90">
+                </div>
+                <div className="flex items-center gap-3 text-text/90">
                 <User className="h-4 w-4 text-primary-500" />
                 <span><strong>역할:</strong> {project.role[language]}</span>
               </div>
-            </div>
-            <div className="flex gap-4">
+              </div>
+            <div className="flex gap-4 items-stretch">
               {project.links?.appStore && (
                 <Button
                   icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                  className="px-6"
+                  className="px-6 flex-1 min-w-[120px] flex items-center justify-center"
                   onClick={() => window.open(project.links.appStore, '_blank')}
                 >
                   {content[language].appStore}
@@ -121,10 +124,20 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
                 <Button
                   variant="secondary"
                   icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                  className="px-6"
+                  className="px-6 flex-1 min-w-[120px] flex items-center justify-center"
                   onClick={() => window.open(project.links.github, '_blank')}
                 >
                   {content[language].github}
+                </Button>
+              )}
+              {project.links?.website && (
+                <Button
+                  variant="outline"
+                  icon={<ArrowUpRightIcon className="h-4 w-4" />}
+                  className="px-6 flex-1 min-w-[120px] flex items-center justify-center"
+                  onClick={() => window.open(project.links.website, '_blank')}
+                >
+                  {content[language].website}
                 </Button>
               )}
             </div>

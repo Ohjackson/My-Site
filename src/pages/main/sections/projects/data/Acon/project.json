@@ -152,8 +152,8 @@
   },
   "links": {
     "appStore": "https://apps.apple.com/app/id1234567890",
-    "googlePlay": "https://play.google.com/store/apps/details?id=com.acon.trainer",
-    "github": "https://github.com/YourUsername/Acon-AI-Trainer"
+    "github": "https://github.com/YourUsername/Acon-AI-Trainer",
+    "website": "https://play.google.com/store/apps/details?id=com.acon.trainer"
   },
   "service": {
     "problem": {
