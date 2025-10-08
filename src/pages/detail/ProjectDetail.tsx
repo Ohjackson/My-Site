@@ -55,19 +55,43 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       back: "목록으로",
       github: "GitHub",
       appStore: "App Store",
-      website: "Website"
+      website: "Website",
+      platform: "플랫폼",
+      releaseDate: "출시일자",
+      workPeriod: "작업일자",
+      endDate: "서비스종료일자",
+      role: "역할",
+      teamSize: "인원",
+      hashtags: "해시태그",
+      additionalFeatures: "기타 특징"
     },
     en: {
       back: "Back to List",
       github: "GitHub",
       appStore: "App Store",
-      website: "Website"
+      website: "Website",
+      platform: "Platform",
+      releaseDate: "Release Date",
+      workPeriod: "Work Period",
+      endDate: "End Date",
+      role: "Role",
+      teamSize: "Team Size",
+      hashtags: "Hashtags",
+      additionalFeatures: "Additional Features"
     },
     ja: {
       back: "リストに戻る",
       github: "GitHub",
       appStore: "App Store",
-      website: "Website"
+      website: "Website",
+      platform: "プラットフォーム",
+      releaseDate: "リリース日",
+      workPeriod: "作業期間",
+      endDate: "サービス終了日",
+      role: "役割",
+      teamSize: "人数",
+      hashtags: "ハッシュタグ",
+      additionalFeatures: "その他の特徴"
     }
   };
 
@@ -99,49 +123,96 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
             </div>
               </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 text-text/90">
-                <Calendar className="h-4 w-4 text-primary-500" />
-                <span><strong>운영기간:</strong> {project.period[language]}</span>
-                </div>
-                <div className="flex items-center gap-3 text-text/90">
-                <User className="h-4 w-4 text-primary-500" />
-                <span><strong>역할:</strong> {project.role[language]}</span>
-              </div>
-              </div>
-            <div className="flex gap-4 items-stretch">
-              {project.links?.appStore && (
-                <Button
-                  icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                  className="px-6 flex-1 min-w-[120px] flex items-center justify-center"
-                  onClick={() => window.open(project.links.appStore, '_blank')}
-                >
-                  {content[language].appStore}
-                </Button>
-              )}
-              {project.links?.github && (
-                <Button
-                  variant="secondary"
-                  icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                  className="px-6 flex-1 min-w-[120px] flex items-center justify-center"
-                  onClick={() => window.open(project.links.github, '_blank')}
-                >
-                  {content[language].github}
-                </Button>
-              )}
-              {project.links?.website && (
-                <Button
-                  variant="outline"
-                  icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                  className="px-6 flex-1 min-w-[120px] flex items-center justify-center"
-                  onClick={() => window.open(project.links.website, '_blank')}
-                >
-                  {content[language].website}
-                </Button>
-              )}
+          {/* Project Details Grid */}
+          <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="flex items-center gap-3 text-text/90">
+              <Calendar className="h-4 w-4 text-primary-500" />
+              <span><strong>{content[language].workPeriod}:</strong> {project.workPeriod?.[language] || project.period[language]}</span>
             </div>
+            <div className="flex items-center gap-3 text-text/90">
+              <User className="h-4 w-4 text-primary-500" />
+              <span><strong>{content[language].role}:</strong> {project.role[language]}</span>
+            </div>
+            {project.platform && (
+              <div className="flex items-center gap-3 text-text/90">
+                <Calendar className="h-4 w-4 text-primary-500" />
+                <span><strong>{content[language].platform}:</strong> {project.platform[language]}</span>
+              </div>
+            )}
+            {project.releaseDate && (
+              <div className="flex items-center gap-3 text-text/90">
+                <Calendar className="h-4 w-4 text-primary-500" />
+                <span><strong>{content[language].releaseDate}:</strong> {project.releaseDate[language]}</span>
+              </div>
+            )}
+            {project.endDate && (
+              <div className="flex items-center gap-3 text-text/90">
+                <Calendar className="h-4 w-4 text-primary-500" />
+                <span><strong>{content[language].endDate}:</strong> {project.endDate[language]}</span>
+              </div>
+            )}
+            {project.teamSize && (
+              <div className="flex items-center gap-3 text-text/90">
+                <Calendar className="h-4 w-4 text-primary-500" />
+                <span><strong>{content[language].teamSize}:</strong> {project.teamSize[language]}</span>
+              </div>
+            )}
           </div>
+
+          {/* Action Buttons */}
+          <div className="flex gap-4 items-stretch mb-8">
+            {project.links?.appStore && (
+              <Button
+                icon={<ArrowUpRightIcon className="h-4 w-4" />}
+                onClick={() => window.open(project.links.appStore, '_blank')}
+              >
+                {content[language].appStore}
+              </Button>
+            )}
+            {project.links?.github && (
+              <Button
+                variant="secondary"
+                icon={<ArrowUpRightIcon className="h-4 w-4" />}
+                onClick={() => window.open(project.links.github, '_blank')}
+              >
+                {content[language].github}
+              </Button>
+            )}
+            {project.links?.website && (
+              <Button
+                variant="outline"
+                icon={<ArrowUpRightIcon className="h-4 w-4" />}
+                onClick={() => window.open(project.links.website, '_blank')}
+              >
+                {content[language].website}
+              </Button>
+            )}
+          </div>
+          
+          {/* Hashtags Section */}
+          {project.hashtags && (
+            <div className="mt-6">
+              <h3 className="text-sm font-semibold text-text/70 mb-3">{content[language].hashtags}</h3>
+              <div className="flex flex-wrap gap-2">
+                {project.hashtags[language].map((tag, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium"
+                  >
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Additional Features Section */}
+          {project.additionalFeatures && (
+            <div className="mt-6">
+              <h3 className="text-sm font-semibold text-text/70 mb-3">{content[language].additionalFeatures}</h3>
+              <p className="text-text/80 leading-relaxed">{project.additionalFeatures[language]}</p>
+            </div>
+          )}
         </div>
       </section>
 

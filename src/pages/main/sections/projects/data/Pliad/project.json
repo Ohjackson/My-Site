@@ -24,6 +24,41 @@
     "en": ["Python", "TensorFlow", "React", "MongoDB"],
     "ja": ["Python", "TensorFlow", "React", "MongoDB"]
   },
+  "platform": {
+    "ko": "Web, Mobile",
+    "en": "Web, Mobile",
+    "ja": "Web, Mobile"
+  },
+  "workPeriod": {
+    "ko": "2024.09 - 2025.01",
+    "en": "2024.09 - 2025.01",
+    "ja": "2024.09 - 2025.01"
+  },
+  "releaseDate": {
+    "ko": "2025.01.20",
+    "en": "2025.01.20",
+    "ja": "2025.01.20"
+  },
+  "endDate": {
+    "ko": "진행중",
+    "en": "Ongoing",
+    "ja": "進行中"
+  },
+  "teamSize": {
+    "ko": "4명",
+    "en": "4 people",
+    "ja": "4人"
+  },
+  "hashtags": {
+    "ko": ["Education", "AI", "Learning", "Personalization", "ML"],
+    "en": ["Education", "AI", "Learning", "Personalization", "ML"],
+    "ja": ["Education", "AI", "Learning", "Personalization", "ML"]
+  },
+  "additionalFeatures": {
+    "ko": "개인화된 학습 경로 생성과 실시간 학습 진도 추적으로 맞춤형 교육을 제공합니다. 적응형 퀴즈 시스템과 학습 성과 분석을 통해 각 학습자의 최적화된 교육 경험을 보장합니다.",
+    "en": "Provides personalized education through customized learning path generation and real-time learning progress tracking. Ensures optimized educational experience for each learner through adaptive quiz systems and learning performance analysis.",
+    "ja": "個人化された学習パス生成とリアルタイム学習進捗追跡により、カスタマイズされた教育を提供します。適応型クイズシステムと学習成果分析により、各学習者の最適化された教育体験を保証します。"
+  },
   "features": {
     "ko": [
       "개인화된 학습 경로 생성",

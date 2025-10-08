@@ -24,6 +24,41 @@
     "en": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"],
     "ja": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"]
   },
+  "platform": {
+    "ko": "Web",
+    "en": "Web",
+    "ja": "Web"
+  },
+  "workPeriod": {
+    "ko": "2024.05 - 2024.10",
+    "en": "2024.05 - 2024.10",
+    "ja": "2024.05 - 2024.10"
+  },
+  "releaseDate": {
+    "ko": "2024.10.15",
+    "en": "2024.10.15",
+    "ja": "2024.10.15"
+  },
+  "endDate": {
+    "ko": "진행중",
+    "en": "Ongoing",
+    "ja": "進行中"
+  },
+  "teamSize": {
+    "ko": "5명",
+    "en": "5 people",
+    "ja": "5人"
+  },
+  "hashtags": {
+    "ko": ["Collaboration", "Creative", "WebRTC", "Next.js", "Content"],
+    "en": ["Collaboration", "Creative", "WebRTC", "Next.js", "Content"],
+    "ja": ["Collaboration", "Creative", "WebRTC", "Next.js", "Content"]
+  },
+  "additionalFeatures": {
+    "ko": "실시간 협업 편집 도구와 다양한 미디어 형식 지원으로 창의적 콘텐츠 제작을 혁신합니다. 버전 관리 및 히스토리 추적 기능으로 팀원 간의 원활한 협업을 지원합니다.",
+    "en": "Revolutionizes creative content production with real-time collaborative editing tools and support for various media formats. Supports seamless team collaboration through version control and history tracking features.",
+    "ja": "リアルタイム協力編集ツールと多様なメディア形式サポートにより、創造的コンテンツ制作を革新します。バージョン管理と履歴追跡機能により、チームメンバー間の円滑な協力をサポートします。"
+  },
   "features": {
     "ko": [
       "실시간 협업 편집 도구",

@@ -24,6 +24,41 @@
     "en": ["React", "Vite", "Node.js", "MongoDB", "AI/ML", "GCP"],
     "ja": ["React", "Vite", "Node.js", "MongoDB", "AI/ML", "GCP"]
   },
+  "platform": {
+    "ko": "Web",
+    "en": "Web",
+    "ja": "Web"
+  },
+  "workPeriod": {
+    "ko": "2025.10",
+    "en": "2025.10",
+    "ja": "2025.10"
+  },
+  "releaseDate": {
+    "ko": "2025.10.01",
+    "en": "2025.10.01",
+    "ja": "2025.10.01"
+  },
+  "endDate": {
+    "ko": "진행중",
+    "en": "Ongoing",
+    "ja": "進行中"
+  },
+  "teamSize": {
+    "ko": "1명 (Solo)",
+    "en": "1 person (Solo)",
+    "ja": "1人（ソロ）"
+  },
+  "hashtags": {
+    "ko": ["Portfolio", "Personal", "React", "Vite", "Showcase"],
+    "en": ["Portfolio", "Personal", "React", "Vite", "Showcase"],
+    "ja": ["Portfolio", "Personal", "React", "Vite", "Showcase"]
+  },
+  "additionalFeatures": {
+    "ko": "개인 포트폴리오 웹사이트로 React와 Vite를 활용한 현대적인 웹 개발 기술을 보여줍니다. 반응형 디자인과 다국어 지원을 통해 다양한 사용자에게 최적화된 경험을 제공합니다.",
+    "en": "Personal portfolio website showcasing modern web development technologies using React and Vite. Provides optimized experience for diverse users through responsive design and multilingual support.",
+    "ja": "ReactとViteを活用した現代的ウェブ開発技術を示す個人ポートフォリオウェブサイトです。レスポンシブデザインと多言語サポートにより、多様なユーザーに最適化された体験を提供します。"
+  },
   "features": {
     "ko": [
       "AI 기반 개인화 여행 추천",

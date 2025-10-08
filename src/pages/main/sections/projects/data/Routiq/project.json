@@ -24,6 +24,41 @@
     "en": ["React", "TypeScript", "Tailwind CSS", "PWA"],
     "ja": ["React", "TypeScript", "Tailwind CSS", "PWA"]
   },
+  "platform": {
+    "ko": "Web, PWA",
+    "en": "Web, PWA",
+    "ja": "Web, PWA"
+  },
+  "workPeriod": {
+    "ko": "2024.01 - 2024.06",
+    "en": "2024.01 - 2024.06",
+    "ja": "2024.01 - 2024.06"
+  },
+  "releaseDate": {
+    "ko": "2024.06.10",
+    "en": "2024.06.10",
+    "ja": "2024.06.10"
+  },
+  "endDate": {
+    "ko": "진행중",
+    "en": "Ongoing",
+    "ja": "進行中"
+  },
+  "teamSize": {
+    "ko": "1명 (Solo)",
+    "en": "1 person (Solo)",
+    "ja": "1人（ソロ）"
+  },
+  "hashtags": {
+    "ko": ["Productivity", "PWA", "React", "Routine", "Planning"],
+    "en": ["Productivity", "PWA", "React", "Routine", "Planning"],
+    "ja": ["Productivity", "PWA", "React", "Routine", "Planning"]
+  },
+  "additionalFeatures": {
+    "ko": "스마트 루틴 추천 시스템과 시간 기반 자동 스케줄링을 통해 사용자의 생산성을 극대화합니다. 습관 추적 및 분석 기능으로 개인의 성장 패턴을 파악하고, 최적의 일정 관리를 지원합니다.",
+    "en": "Maximizes user productivity through smart routine recommendation system and time-based automatic scheduling. Tracks and analyzes habits to understand personal growth patterns and supports optimal schedule management.",
+    "ja": "スマートルーティン推奨システムと時間ベースの自動スケジューリングにより、ユーザーの生産性を最大化します。習慣追跡・分析機能で個人の成長パターンを把握し、最適なスケジュール管理をサポートします。"
+  },
   "features": {
     "ko": [
       "스마트 루틴 추천 시스템",
