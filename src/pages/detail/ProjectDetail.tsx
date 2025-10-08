@@ -1,5 +1,5 @@
 import { ArrowUpRightIcon } from '@/shared/components/icons';
-import { Calendar, User } from 'lucide-react';
+import { Calendar, User, Smartphone, CalendarDays, Users, Clock } from 'lucide-react';
 import { Button } from "./components/Button";
 import { OverviewSection } from "./sections/overview";
 import { ServiceSection } from "./sections/service";
@@ -125,36 +125,42 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
 
           {/* Project Details Grid */}
           <div className="grid grid-cols-2 gap-4 mb-8">
-            <div className="flex items-center gap-3 text-text/90">
-              <Calendar className="h-4 w-4 text-primary-500" />
+                <div className="flex items-center gap-3 text-text/90">
+              <Clock className="h-4 w-4 text-primary-500" />
               <span><strong>{content[language].workPeriod}:</strong> {project.workPeriod?.[language] || project.period[language]}</span>
-            </div>
-            <div className="flex items-center gap-3 text-text/90">
+                </div>
+                <div className="flex items-center gap-3 text-text/90">
               <User className="h-4 w-4 text-primary-500" />
               <span><strong>{content[language].role}:</strong> {project.role[language]}</span>
             </div>
-            {project.platform && (
-              <div className="flex items-center gap-3 text-text/90">
-                <Calendar className="h-4 w-4 text-primary-500" />
-                <span><strong>{content[language].platform}:</strong> {project.platform[language]}</span>
-              </div>
-            )}
             {project.releaseDate && (
               <div className="flex items-center gap-3 text-text/90">
                 <Calendar className="h-4 w-4 text-primary-500" />
                 <span><strong>{content[language].releaseDate}:</strong> {project.releaseDate[language]}</span>
               </div>
             )}
+            {project.teamSize && (
+              <div className="flex items-center gap-3 text-text/90">
+                <Users className="h-4 w-4 text-primary-500" />
+                <span><strong>{content[language].teamSize}:</strong> {project.teamSize[language]}</span>
+              </div>
+            )}
+            {project.platform && (
+              <div className="flex items-center gap-3 text-text/90">
+                <Smartphone className="h-4 w-4 text-primary-500" />
+                <span><strong>{content[language].platform}:</strong> {project.platform[language]}</span>
+              </div>
+            )}
             {project.endDate && (
               <div className="flex items-center gap-3 text-text/90">
-                <Calendar className="h-4 w-4 text-primary-500" />
+                <CalendarDays className="h-4 w-4 text-primary-500" />
                 <span><strong>{content[language].endDate}:</strong> {project.endDate[language]}</span>
               </div>
             )}
-            {project.teamSize && (
+            {project.platform && (
               <div className="flex items-center gap-3 text-text/90">
-                <Calendar className="h-4 w-4 text-primary-500" />
-                <span><strong>{content[language].teamSize}:</strong> {project.teamSize[language]}</span>
+                <Smartphone className="h-4 w-4 text-primary-500" />
+                <span><strong>{content[language].platform}:</strong> {project.platform[language]}</span>
               </div>
             )}
           </div>
@@ -170,13 +176,13 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
               </Button>
             )}
             {project.links?.github && (
-              <Button
+                <Button
                 variant="secondary"
                 icon={<ArrowUpRightIcon className="h-4 w-4" />}
                 onClick={() => window.open(project.links.github, '_blank')}
-              >
-                {content[language].github}
-              </Button>
+                >
+                  {content[language].github}
+                </Button>
             )}
             {project.links?.website && (
               <Button
@@ -203,7 +209,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
                   </span>
                 ))}
               </div>
-            </div>
+          </div>
           )}
 
           {/* Additional Features Section */}
