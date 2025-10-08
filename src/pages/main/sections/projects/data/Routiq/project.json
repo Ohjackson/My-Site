@@ -1,0 +1,142 @@
+{
+  "name": {
+    "ko": "루틱",
+    "en": "Routiq",
+    "ja": "ルーティック"
+  },
+  "summary": {
+    "ko": "효율적인 일상 루틴 관리를 위한 스마트 플래너",
+    "en": "Smart planner for efficient daily routine management",
+    "ja": "効率的な日常ルーチン管理のためのスマートプランナー"
+  },
+  "period": {
+    "ko": "2024.01 - 2024.06",
+    "en": "2024.01 - 2024.06",
+    "ja": "2024.01 - 2024.06"
+  },
+  "role": {
+    "ko": "Full-Cycle Solo Project",
+    "en": "Full-Cycle Solo Project",
+    "ja": "Full-Cycle Solo Project"
+  },
+  "tags": {
+    "ko": ["React", "TypeScript", "Tailwind CSS", "PWA"],
+    "en": ["React", "TypeScript", "Tailwind CSS", "PWA"],
+    "ja": ["React", "TypeScript", "Tailwind CSS", "PWA"]
+  },
+  "features": {
+    "ko": [
+      "스마트 루틴 추천 시스템",
+      "시간 기반 자동 스케줄링",
+      "습관 추적 및 분석",
+      "오프라인 동기화"
+    ],
+    "en": [
+      "Smart routine recommendation system",
+      "Time-based automatic scheduling",
+      "Habit tracking and analysis",
+      "Offline synchronization"
+    ],
+    "ja": [
+      "スマートルーチン推奨システム",
+      "時間ベースの自動スケジューリング",
+      "習慣追跡と分析",
+      "オフライン同期"
+    ]
+  },
+  "detail": {
+    "subtitle": {
+      "ko": "똑똑한 일상 관리의 시작",
+      "en": "The Beginning of Smart Daily Management",
+      "ja": "賢い日常管理の始まり"
+    },
+    "overview": {
+      "purpose": {
+        "ko": "사용자의 생활 패턴을 학습하여 최적의 루틴을 제안하는 지능형 플래너",
+        "en": "Intelligent planner that learns user's lifestyle patterns to suggest optimal routines",
+        "ja": "ユーザーの生活パターンを学習し、最適なルーチンを提案する知能型プランナー"
+      },
+      "target": {
+        "ko": "생산성 향상을 원하는 모든 연령대 사용자",
+        "en": "Users of all ages who want to improve productivity",
+        "ja": "生産性向上を望む全年代のユーザー"
+      },
+      "value": {
+        "ko": "데이터 기반 개인화된 루틴 최적화",
+        "en": "Data-driven personalized routine optimization",
+        "ja": "データベースのパーソナライズされたルーチン最適化"
+      }
+    },
+    "responsibilities": {
+      "ko": [
+        "React + TypeScript 프론트엔드 개발",
+        "PWA 기능 구현",
+        "사용자 인터페이스 설계",
+        "상태 관리 및 데이터 흐름 최적화"
+      ],
+      "en": [
+        "React + TypeScript frontend development",
+        "PWA feature implementation",
+        "User interface design",
+        "State management and data flow optimization"
+      ],
+      "ja": [
+        "React + TypeScriptフロントエンド開発",
+        "PWA機能実装",
+        "ユーザーインターフェース設計",
+        "状態管理とデータフロー最適化"
+      ]
+    },
+    "highlights": {
+      "ko": [
+        "머신러닝 기반 루틴 추천 엔진",
+        "직관적인 드래그 앤 드롭 인터페이스",
+        "사용자 생산성 35% 향상"
+      ],
+      "en": [
+        "Machine learning-based routine recommendation engine",
+        "Intuitive drag and drop interface",
+        "35% improvement in user productivity"
+      ],
+      "ja": [
+        "機械学習ベースのルーチン推奨エンジン",
+        "直感的なドラッグアンドドロップインターフェース",
+        "ユーザー生産性35%向上"
+      ]
+    },
+    "challenge": {
+      "problem": {
+        "ko": "개인별로 다른 생활 패턴을 효율적으로 학습하고 적용하는 복잡성",
+        "en": "Complexity of efficiently learning and applying different lifestyle patterns for each individual",
+        "ja": "個人ごとに異なる生活パターンを効率的に学習し適用する複雑さ"
+      },
+      "solution": {
+        "ko": "적응형 학습 알고리즘과 사용자 피드백 루프 구현",
+        "en": "Implementation of adaptive learning algorithms and user feedback loops",
+        "ja": "適応型学習アルゴリズムとユーザーフィードバックループの実装"
+      },
+      "result": {
+        "ko": "사용자 만족도 4.7/5.0, 루틴 완성률 82% 달성",
+        "en": "Achieved user satisfaction 4.7/5.0, routine completion rate 82%",
+        "ja": "ユーザー満足度4.7/5.0、ルーチン完成率82%達成"
+      }
+    },
+    "metrics": {
+      "ko": [
+        "월 활성 사용자 18,000명",
+        "평균 루틴 완성률 82%",
+        "사용자 생산성 35% 향상"
+      ],
+      "en": [
+        "18,000 monthly active users",
+        "Average routine completion rate 82%",
+        "35% improvement in user productivity"
+      ],
+      "ja": [
+        "月間アクティブユーザー18,000人",
+        "平均ルーチン完成率82%",
+        "ユーザー生産性35%向上"
+      ]
+    }
+  }
+}

@@ -1,22 +1,27 @@
 import { useTranslation } from 'react-i18next';
-import { SectionHeading } from '@/shared/components/section-heading';
 import { AchievementList } from './components/AchievementList';
+import { achievementsData } from './data/achievementsData';
 
 export const AchievementsSection = () => {
-  const { t } = useTranslation();
-  const achievements = t('sections.achievements.achievements', { returnObjects: true }) as string[];
-  const education = t('sections.achievements.education', { returnObjects: true }) as string[];
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  const data = achievementsData[currentLanguage] || achievementsData.ko;
+  const achievements = data.achievements;
+  const education = data.education;
 
   return (
     <section id="achievements" className="bg-surface py-32 px-8 text-text">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading tKey="sections.achievements.title">
+        <div className="mb-20 text-center">
+          <h2 className="text-5xl font-semibold tracking-tight md:text-6xl">
+            {data.title}
+          </h2>
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
-        </SectionHeading>
+        </div>
 
         <div className="grid gap-10 md:grid-cols-2">
-          <AchievementList title={t('sections.achievements.achievementsTitle')} items={achievements} />
-          <AchievementList title={t('sections.achievements.educationTitle')} items={education} />
+          <AchievementList title={data.achievementsTitle} items={achievements} />
+          <AchievementList title={data.educationTitle} items={education} />
         </div>
       </div>
     </section>

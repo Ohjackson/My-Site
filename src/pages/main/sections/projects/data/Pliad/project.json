@@ -1,0 +1,142 @@
+{
+  "name": {
+    "ko": "플리아드",
+    "en": "Pliad",
+    "ja": "プリアド"
+  },
+  "summary": {
+    "ko": "개인화된 학습 경험을 위한 AI 교육 플랫폼",
+    "en": "AI education platform for personalized learning experiences",
+    "ja": "パーソナライズされた学習体験のためのAI教育プラットフォーム"
+  },
+  "period": {
+    "ko": "2024.09 - 2025.01",
+    "en": "2024.09 - 2025.01",
+    "ja": "2024.09 - 2025.01"
+  },
+  "role": {
+    "ko": "AI 개발자",
+    "en": "AI Developer",
+    "ja": "AI開発者"
+  },
+  "tags": {
+    "ko": ["Python", "TensorFlow", "React", "MongoDB"],
+    "en": ["Python", "TensorFlow", "React", "MongoDB"],
+    "ja": ["Python", "TensorFlow", "React", "MongoDB"]
+  },
+  "features": {
+    "ko": [
+      "개인화된 학습 경로 생성",
+      "실시간 학습 진도 추적",
+      "적응형 퀴즈 시스템",
+      "학습 성과 분석 대시보드"
+    ],
+    "en": [
+      "Personalized learning path generation",
+      "Real-time learning progress tracking",
+      "Adaptive quiz system",
+      "Learning performance analysis dashboard"
+    ],
+    "ja": [
+      "パーソナライズされた学習パス生成",
+      "リアルタイム学習進捗追跡",
+      "適応型クイズシステム",
+      "学習成果分析ダッシュボード"
+    ]
+  },
+  "detail": {
+    "subtitle": {
+      "ko": "AI가 함께하는 맞춤형 학습",
+      "en": "Personalized Learning with AI",
+      "ja": "AIと一緒のカスタマイズ学習"
+    },
+    "overview": {
+      "purpose": {
+        "ko": "학습자의 수준과 학습 스타일에 맞춘 개인화된 교육 콘텐츠와 학습 경험 제공",
+        "en": "Providing personalized educational content and learning experiences tailored to learner's level and learning style",
+        "ja": "学習者のレベルと学習スタイルに合わせたパーソナライズされた教育コンテンツと学習体験提供"
+      },
+      "target": {
+        "ko": "효과적인 학습을 원하는 모든 연령대 학습자",
+        "en": "Learners of all ages who want effective learning",
+        "ja": "効果的な学習を望む全年代の学習者"
+      },
+      "value": {
+        "ko": "AI 기반 개인화된 교육을 통한 학습 효과 극대화",
+        "en": "Maximizing learning effectiveness through AI-based personalized education",
+        "ja": "AIベースのパーソナライズされた教育を通じた学習効果の最大化"
+      }
+    },
+    "responsibilities": {
+      "ko": [
+        "Python 기반 AI 모델 개발",
+        "TensorFlow 딥러닝 모델 구현",
+        "MongoDB 데이터베이스 설계",
+        "학습 알고리즘 최적화"
+      ],
+      "en": [
+        "Python-based AI model development",
+        "TensorFlow deep learning model implementation",
+        "MongoDB database design",
+        "Learning algorithm optimization"
+      ],
+      "ja": [
+        "PythonベースのAIモデル開発",
+        "TensorFlow深層学習モデル実装",
+        "MongoDBデータベース設計",
+        "学習アルゴリズム最適化"
+      ]
+    },
+    "highlights": {
+      "ko": [
+        "딥러닝 기반 학습 패턴 분석",
+        "적응형 학습 알고리즘",
+        "학습 효과 40% 향상 달성"
+      ],
+      "en": [
+        "Deep learning-based learning pattern analysis",
+        "Adaptive learning algorithms",
+        "Achieved 40% improvement in learning effectiveness"
+      ],
+      "ja": [
+        "深層学習ベースの学習パターン分析",
+        "適応型学習アルゴリズム",
+        "学習効果40%向上達成"
+      ]
+    },
+    "challenge": {
+      "problem": {
+        "ko": "개인별 학습 스타일과 진도 차이를 고려한 정확한 학습 경로 설계의 어려움",
+        "en": "Difficulty in designing accurate learning paths considering individual learning styles and progress differences",
+        "ja": "個人ごとの学習スタイルと進捗差を考慮した正確な学習パス設計の困難"
+      },
+      "solution": {
+        "ko": "강화학습 기반 적응형 학습 시스템과 실시간 피드백 메커니즘 구현",
+        "en": "Implementation of reinforcement learning-based adaptive learning systems and real-time feedback mechanisms",
+        "ja": "強化学習ベースの適応型学習システムとリアルタイムフィードバックメカニズムの実装"
+      },
+      "result": {
+        "ko": "사용자 만족도 4.9/5.0, 학습 완성률 90% 달성",
+        "en": "Achieved user satisfaction 4.9/5.0, learning completion rate 90%",
+        "ja": "ユーザー満足度4.9/5.0、学習完成率90%達成"
+      }
+    },
+    "metrics": {
+      "ko": [
+        "월 활성 사용자 30,000명",
+        "평균 학습 완성률 90%",
+        "학습 효과 40% 향상"
+      ],
+      "en": [
+        "30,000 monthly active users",
+        "Average learning completion rate 90%",
+        "40% improvement in learning effectiveness"
+      ],
+      "ja": [
+        "月間アクティブユーザー30,000人",
+        "平均学習完成率90%",
+        "学習効果40%向上"
+      ]
+    }
+  }
+}

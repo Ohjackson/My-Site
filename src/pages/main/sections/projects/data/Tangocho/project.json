@@ -1,0 +1,142 @@
+{
+  "name": {
+    "ko": "탄고초",
+    "en": "Tangocho",
+    "ja": "タンゴチョ"
+  },
+  "summary": {
+    "ko": "일본 전통 음식 탄고초를 현대적으로 재해석한 모바일 앱,",
+    "en": "A modern mobile app that reinterprets the traditional Japanese food Tangocho",
+    "ja": "日本の伝統的な食べ物タンゴチョを現代的に再解釈したモバイルアプリ"
+  },
+  "period": {
+    "ko": "2023.03 - 2023.08",
+    "en": "2023.03 - 2023.08",
+    "ja": "2023.03 - 2023.08"
+  },
+  "role": {
+    "ko": "Full-Cycle Solo Project",
+    "en": "Full-Cycle Solo Project",
+    "ja": "Full-Cycle Solo Project"
+  },
+  "tags": {
+    "ko": ["iOS", "Swift", "UIKit", "Core Data"],
+    "en": ["iOS", "Swift", "UIKit", "Core Data"],
+    "ja": ["iOS", "Swift", "UIKit", "Core Data"]
+  },
+  "features": {
+    "ko": [
+      "일본 전통 음식 정보 제공일본 전통 음식 탄고초를 현대적으로 재해석한 모바일 앱",
+      "AR을 활용한 음식 체험",
+      "사용자 맞춤 추천 시스템",
+      "소셜 공유 기능"
+    ],
+    "en": [
+      "Traditional Japanese food information",
+      "AR-powered food experience",
+      "Personalized recommendation system",
+      "Social sharing features"
+    ],
+    "ja": [
+      "日本の伝統的な食べ物情報提供",
+      "ARを活用した食べ物体験",
+      "ユーザーカスタマイズ推奨システム",
+      "ソーシャル共有機能"
+    ]
+  },
+  "detail": {
+    "subtitle": {
+      "ko": "일본 전통 음식의 디지털 혁신",
+      "en": "Digital Innovation of Traditional Japanese Food",
+      "ja": "日本の伝統的な食べ物のデジタル革新"
+    },
+    "overview": {
+      "purpose": {
+        "ko": "일본 전통 음식 탄고초를 현대 기술로 재해석하여 젊은 세대에게 전통 문화를 전달",
+        "en": "Reinterpreting traditional Japanese food Tangocho with modern technology to convey traditional culture to the younger generation",
+        "ja": "日本の伝統的な食べ物タンゴチョを現代技術で再解釈し、若い世代に伝統文化を伝える"
+      },
+      "target": {
+        "ko": "일본 문화에 관심이 있는 20-30대 모바일 사용자",
+        "en": "Mobile users in their 20s-30s interested in Japanese culture",
+        "ja": "日本文化に興味のある20-30代のモバイルユーザー"
+      },
+      "value": {
+        "ko": "전통과 현대의 조화를 통한 새로운 문화 체험 제공",
+        "en": "Providing new cultural experiences through harmony of tradition and modernity",
+        "ja": "伝統と現代の調和を通じた新しい文化体験の提供"
+      }
+    },
+    "responsibilities": {
+      "ko": [
+        "iOS 네이티브 앱 개발",
+        "AR 기능 구현",
+        "사용자 인터페이스 설계",
+        "데이터베이스 설계 및 관리"
+      ],
+      "en": [
+        "iOS native app development",
+        "AR feature implementation",
+        "User interface design",
+        "Database design and management"
+      ],
+      "ja": [
+        "iOSネイティブアプリ開発",
+        "AR機能実装",
+        "ユーザーインターフェース設計",
+        "データベース設計と管理"
+      ]
+    },
+    "highlights": {
+      "ko": [
+        "AR 기술을 활용한 혁신적인 사용자 경험",
+        "전통 문화와 현대 기술의 완벽한 조화",
+        "사용자 참여도 85% 달성"
+      ],
+      "en": [
+        "Innovative user experience using AR technology",
+        "Perfect harmony of traditional culture and modern technology",
+        "Achieved 85% user engagement"
+      ],
+      "ja": [
+        "AR技術を活用した革新的なユーザー体験",
+        "伝統文化と現代技術の完璧な調和",
+        "ユーザー参加度85%達成"
+      ]
+    },
+    "challenge": {
+      "problem": {
+        "ko": "전통 음식의 복잡한 정보를 직관적으로 전달하는 어려움",
+        "en": "Difficulty in intuitively conveying complex information about traditional food",
+        "ja": "伝統的な食べ物の複雑な情報を直感的に伝える困難"
+      },
+      "solution": {
+        "ko": "AR과 인터랙티브 UI를 결합한 몰입형 체험 설계",
+        "en": "Designing immersive experiences combining AR and interactive UI",
+        "ja": "ARとインタラクティブUIを組み合わせた没入型体験設計"
+      },
+      "result": {
+        "ko": "사용자 만족도 4.8/5.0, 앱스토어 4.7점 달성",
+        "en": "Achieved user satisfaction 4.8/5.0, App Store rating 4.7",
+        "ja": "ユーザー満足度4.8/5.0、アプリストア4.7点達成"
+      }
+    },
+    "metrics": {
+      "ko": [
+        "월 활성 사용자 15,000명",
+        "평균 세션 시간 8분 30초",
+        "사용자 만족도 4.8/5.0"
+      ],
+      "en": [
+        "15,000 monthly active users",
+        "Average session time 8 minutes 30 seconds",
+        "User satisfaction 4.8/5.0"
+      ],
+      "ja": [
+        "月間アクティブユーザー15,000人",
+        "平均セッション時間8分30秒",
+        "ユーザー満足度4.8/5.0"
+      ]
+    }
+  }
+}

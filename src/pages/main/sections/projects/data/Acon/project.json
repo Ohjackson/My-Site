@@ -1,0 +1,142 @@
+{
+  "name": {
+    "ko": "아콘",
+    "en": "Acon",
+    "ja": "アコン"
+  },
+  "summary": {
+    "ko": "건강한 생활을 위한 AI 기반 개인 트레이너 앱",
+    "en": "AI-based personal trainer app for healthy living",
+    "ja": "健康的な生活のためのAIベースのパーソナルトレーナーアプリ"
+  },
+  "period": {
+    "ko": "2024.03 - 2024.08",
+    "en": "2024.03 - 2024.08",
+    "ja": "2024.03 - 2024.08"
+  },
+  "role": {
+    "ko": "모바일 앱 개발자",
+    "en": "Mobile App Developer",
+    "ja": "モバイルアプリ開発者"
+  },
+  "tags": {
+    "ko": ["Flutter", "Dart", "Firebase", "AI"],
+    "en": ["Flutter", "Dart", "Firebase", "AI"],
+    "ja": ["Flutter", "Dart", "Firebase", "AI"]
+  },
+  "features": {
+    "ko": [
+      "AI 기반 운동 계획 생성",
+      "실시간 운동 자세 분석",
+      "개인 맞춤형 식단 추천",
+      "건강 데이터 시각화"
+    ],
+    "en": [
+      "AI-based exercise plan generation",
+      "Real-time exercise posture analysis",
+      "Personalized diet recommendations",
+      "Health data visualization"
+    ],
+    "ja": [
+      "AIベースの運動計画生成",
+      "リアルタイム運動姿勢分析",
+      "個人カスタマイズ食事推奨",
+      "健康データ可視化"
+    ]
+  },
+  "detail": {
+    "subtitle": {
+      "ko": "AI가 함께하는 건강한 변화",
+      "en": "Healthy Change with AI",
+      "ja": "AIと一緒の健康的な変化"
+    },
+    "overview": {
+      "purpose": {
+        "ko": "사용자의 체력과 목표에 맞는 개인화된 운동 및 건강 관리 솔루션 제공",
+        "en": "Providing personalized exercise and health management solutions tailored to user's fitness and goals",
+        "ja": "ユーザーの体力と目標に合わせたパーソナライズされた運動と健康管理ソリューション提供"
+      },
+      "target": {
+        "ko": "건강한 생활을 원하는 20-50대 성인",
+        "en": "Adults aged 20-50 who want a healthy lifestyle",
+        "ja": "健康的な生活を望む20-50代の成人"
+      },
+      "value": {
+        "ko": "과학적 근거에 기반한 개인화된 건강 관리",
+        "en": "Personalized health management based on scientific evidence",
+        "ja": "科学的根拠に基づいたパーソナライズされた健康管理"
+      }
+    },
+    "responsibilities": {
+      "ko": [
+        "Flutter 크로스플랫폼 앱 개발",
+        "Firebase 백엔드 연동",
+        "AI 모델 통합 및 최적화",
+        "실시간 데이터 처리 및 분석"
+      ],
+      "en": [
+        "Flutter cross-platform app development",
+        "Firebase backend integration",
+        "AI model integration and optimization",
+        "Real-time data processing and analysis"
+      ],
+      "ja": [
+        "Flutterクロスプラットフォームアプリ開発",
+        "Firebaseバックエンド連携",
+        "AIモデル統合と最適化",
+        "リアルタイムデータ処理と分析"
+      ]
+    },
+    "highlights": {
+      "ko": [
+        "컴퓨터 비전 기반 실시간 자세 분석",
+        "개인화된 운동 계획 자동 생성",
+        "사용자 건강 개선률 78% 달성"
+      ],
+      "en": [
+        "Computer vision-based real-time posture analysis",
+        "Automated personalized exercise planning",
+        "Achieved 78% user health improvement rate"
+      ],
+      "ja": [
+        "コンピュータビジョンベースのリアルタイム姿勢分析",
+        "パーソナライズされた運動計画自動生成",
+        "ユーザー健康改善率78%達成"
+      ]
+    },
+    "challenge": {
+      "problem": {
+        "ko": "개인별 체력과 목표의 다양성을 고려한 정확한 운동 추천의 어려움",
+        "en": "Difficulty in providing accurate exercise recommendations considering individual fitness and goal diversity",
+        "ja": "個人ごとの体力と目標の多様性を考慮した正確な運動推奨の困難"
+      },
+      "solution": {
+        "ko": "머신러닝 기반 개인화 알고리즘과 실시간 피드백 시스템 구축",
+        "en": "Building machine learning-based personalization algorithms and real-time feedback systems",
+        "ja": "機械学習ベースのパーソナライゼーションアルゴリズムとリアルタイムフィードバックシステム構築"
+      },
+      "result": {
+        "ko": "사용자 만족도 4.8/5.0, 운동 지속률 85% 달성",
+        "en": "Achieved user satisfaction 4.8/5.0, exercise continuation rate 85%",
+        "ja": "ユーザー満足度4.8/5.0、運動継続率85%達成"
+      }
+    },
+    "metrics": {
+      "ko": [
+        "월 활성 사용자 22,000명",
+        "평균 운동 지속률 85%",
+        "사용자 건강 개선률 78%"
+      ],
+      "en": [
+        "22,000 monthly active users",
+        "Average exercise continuation rate 85%",
+        "78% user health improvement rate"
+      ],
+      "ja": [
+        "月間アクティブユーザー22,000人",
+        "平均運動継続率85%",
+        "ユーザー健康改善率78%"
+      ]
+    }
+  }
+}

@@ -13,11 +13,14 @@ export const ProjectsSection = ({ onProjectClick }: ProjectsSectionProps) => {
   return (
     <section id="projects" className="bg-surface py-32 px-8 text-text">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading tKey="sections.projects.title">
+        <div className="mb-20 text-center">
+          <h2 className="text-5xl font-semibold tracking-tight md:text-6xl">
+            Featured Projects
+          </h2>
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
-        </SectionHeading>
+        </div>
 
-        <div className="space-y-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}

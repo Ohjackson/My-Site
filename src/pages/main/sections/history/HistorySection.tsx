@@ -1,23 +1,21 @@
 import { useTranslation } from 'react-i18next';
-import { SectionHeading } from '@/shared/components/section-heading';
 import { HistoryItem } from './components/HistoryItem';
-
-interface HistoryEntry {
-  period: string;
-  activity: string;
-  description: string;
-}
+import { historyData } from './data/historyData';
 
 export const HistorySection = () => {
-  const { t } = useTranslation();
-  const items = t('sections.history.items', { returnObjects: true }) as HistoryEntry[];
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  const items = historyData[currentLanguage] || historyData.ko;
 
   return (
     <section id="history" className="bg-bg py-32 px-8 text-text">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading tKey="sections.history.title">
+        <div className="mb-20 text-center">
+          <h2 className="text-5xl font-semibold tracking-tight md:text-6xl">
+            History
+          </h2>
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
-        </SectionHeading>
+        </div>
 
         <div className="mx-auto max-w-3xl">
           {items.map((item, index) => (

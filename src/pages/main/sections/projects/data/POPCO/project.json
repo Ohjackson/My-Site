@@ -1,0 +1,142 @@
+{
+  "name": {
+    "ko": "팝코",
+    "en": "POPCO",
+    "ja": "ポップコ"
+  },
+  "summary": {
+    "ko": "창의적 콘텐츠 제작을 위한 협업 플랫폼",
+    "en": "Collaboration platform for creative content production",
+    "ja": "創造的なコンテンツ制作のためのコラボレーションプラットフォーム"
+  },
+  "period": {
+    "ko": "2024.05 - 2024.10",
+    "en": "2024.05 - 2024.10",
+    "ja": "2024.05 - 2024.10"
+  },
+  "role": {
+    "ko": "Full-Cycle Solo Project",
+    "en": "Full-Cycle Solo Project",
+    "ja": "Full-Cycle Solo Project"
+  },
+  "tags": {
+    "ko": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"],
+    "en": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"],
+    "ja": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"]
+  },
+  "features": {
+    "ko": [
+      "실시간 협업 편집 도구",
+      "다양한 미디어 형식 지원",
+      "버전 관리 및 히스토리 추적",
+      "팀 워크스페이스 관리"
+    ],
+    "en": [
+      "Real-time collaborative editing tools",
+      "Support for various media formats",
+      "Version control and history tracking",
+      "Team workspace management"
+    ],
+    "ja": [
+      "リアルタイム協力編集ツール",
+      "様々なメディア形式サポート",
+      "バージョン管理と履歴追跡",
+      "チームワークスペース管理"
+    ]
+  },
+  "detail": {
+    "subtitle": {
+      "ko": "함께 만드는 창의적 이야기",
+      "en": "Creative Stories Made Together",
+      "ja": "一緒に作る創造的な物語"
+    },
+    "overview": {
+      "purpose": {
+        "ko": "창작자들이 효율적으로 협업하여 고품질 콘텐츠를 제작할 수 있는 통합 플랫폼",
+        "en": "Integrated platform where creators can efficiently collaborate to produce high-quality content",
+        "ja": "クリエイターが効率的に協力して高品質コンテンツを制作できる統合プラットフォーム"
+      },
+      "target": {
+        "ko": "콘텐츠 제작자, 크리에이터, 마케터",
+        "en": "Content creators, creators, marketers",
+        "ja": "コンテンツ制作者、クリエイター、マーケター"
+      },
+      "value": {
+        "ko": "원활한 협업을 통한 창의적 아이디어 실현",
+        "en": "Realizing creative ideas through smooth collaboration",
+        "ja": "スムーズな協力を通じた創造的なアイデアの実現"
+      }
+    },
+    "responsibilities": {
+      "ko": [
+        "Next.js 풀스택 웹 애플리케이션 개발",
+        "PostgreSQL 데이터베이스 설계",
+        "WebRTC 실시간 통신 구현",
+        "파일 업로드 및 미디어 처리"
+      ],
+      "en": [
+        "Next.js full-stack web application development",
+        "PostgreSQL database design",
+        "WebRTC real-time communication implementation",
+        "File upload and media processing"
+      ],
+      "ja": [
+        "Next.jsフルスタックウェブアプリケーション開発",
+        "PostgreSQLデータベース設計",
+        "WebRTCリアルタイム通信実装",
+        "ファイルアップロードとメディア処理"
+      ]
+    },
+    "highlights": {
+      "ko": [
+        "실시간 다중 사용자 편집 기능",
+        "지능형 충돌 해결 시스템",
+        "콘텐츠 제작 효율성 60% 향상"
+      ],
+      "en": [
+        "Real-time multi-user editing functionality",
+        "Intelligent conflict resolution system",
+        "60% improvement in content production efficiency"
+      ],
+      "ja": [
+        "リアルタイムマルチユーザー編集機能",
+        "知能型競合解決システム",
+        "コンテンツ制作効率60%向上"
+      ]
+    },
+    "challenge": {
+      "problem": {
+        "ko": "다중 사용자 동시 편집 시 발생하는 데이터 충돌과 동기화 문제",
+        "en": "Data conflicts and synchronization issues during multi-user simultaneous editing",
+        "ja": "マルチユーザー同時編集時のデータ競合と同期問題"
+      },
+      "solution": {
+        "ko": "Operational Transform 알고리즘과 실시간 동기화 시스템 구현",
+        "en": "Implementation of Operational Transform algorithms and real-time synchronization systems",
+        "ja": "Operational Transformアルゴリズムとリアルタイム同期システムの実装"
+      },
+      "result": {
+        "ko": "사용자 만족도 4.6/5.0, 협업 효율성 60% 향상",
+        "en": "Achieved user satisfaction 4.6/5.0, 60% improvement in collaboration efficiency",
+        "ja": "ユーザー満足度4.6/5.0、協力効率60%向上"
+      }
+    },
+    "metrics": {
+      "ko": [
+        "월 활성 사용자 12,000명",
+        "평균 프로젝트 완성률 88%",
+        "협업 효율성 60% 향상"
+      ],
+      "en": [
+        "12,000 monthly active users",
+        "Average project completion rate 88%",
+        "60% improvement in collaboration efficiency"
+      ],
+      "ja": [
+        "月間アクティブユーザー12,000人",
+        "平均プロジェクト完成率88%",
+        "協力効率60%向上"
+      ]
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "name": {
+    "ko": "러벤처",
+    "en": "Loventure",
+    "ja": "ラベンチャー"
+  },
+  "summary": {
+    "ko": "커플을 위한 맞춤형 여행 계획 및 추천 서비스",
+    "en": "Personalized travel planning and recommendation service for couples",
+    "ja": "カップル向けのカスタマイズされた旅行計画と推奨サービス"
+  },
+  "period": {
+    "ko": "2023.09 - 2024.02",
+    "en": "2023.09 - 2024.02",
+    "ja": "2023.09 - 2024.02"
+  },
+  "role": {
+    "ko": "풀스택 개발자",
+    "en": "Full-stack Developer",
+    "ja": "フルスタック開発者"
+  },
+  "tags": {
+    "ko": ["React", "Node.js", "MongoDB", "AI"],
+    "en": ["React", "Node.js", "MongoDB", "AI"],
+    "ja": ["React", "Node.js", "MongoDB", "AI"]
+  },
+  "features": {
+    "ko": [
+      "AI 기반 여행지 추천",
+      "커플 취향 분석 및 매칭",
+      "실시간 여행 일정 관리",
+      "소셜 기능 및 추억 공유"
+    ],
+    "en": [
+      "AI-based destination recommendations",
+      "Couple preference analysis and matching",
+      "Real-time travel itinerary management",
+      "Social features and memory sharing"
+    ],
+    "ja": [
+      "AIベースの旅行先推奨",
+      "カップルの好み分析とマッチング",
+      "リアルタイム旅行スケジュール管理",
+      "ソーシャル機能と思い出共有"
+    ]
+  },
+  "detail": {
+    "subtitle": {
+      "ko": "AI가 만드는 완벽한 커플 여행",
+      "en": "Perfect Couple Travel Created by AI",
+      "ja": "AIが作る完璧なカップル旅行"
+    },
+    "overview": {
+      "purpose": {
+        "ko": "커플의 취향과 상황을 분석하여 최적의 여행 계획을 제공하는 AI 서비스",
+        "en": "AI service that analyzes couples' preferences and situations to provide optimal travel plans",
+        "ja": "カップルの好みと状況を分析し、最適な旅行計画を提供するAIサービス"
+      },
+      "target": {
+        "ko": "여행을 계획하는 20-40대 커플",
+        "en": "Couples in their 20s-40s planning trips",
+        "ja": "旅行を計画する20-40代のカップル"
+      },
+      "value": {
+        "ko": "개인화된 여행 경험을 통한 특별한 추억 창조",
+        "en": "Creating special memories through personalized travel experiences",
+        "ja": "パーソナライズされた旅行体験を通じた特別な思い出の創造"
+      }
+    },
+    "responsibilities": {
+      "ko": [
+        "프론트엔드 React 애플리케이션 개발",
+        "Node.js 백엔드 API 구축",
+        "MongoDB 데이터베이스 설계",
+        "AI 추천 알고리즘 구현"
+      ],
+      "en": [
+        "Frontend React application development",
+        "Node.js backend API construction",
+        "MongoDB database design",
+        "AI recommendation algorithm implementation"
+      ],
+      "ja": [
+        "フロントエンドReactアプリケーション開発",
+        "Node.jsバックエンドAPI構築",
+        "MongoDBデータベース設計",
+        "AI推奨アルゴリズム実装"
+      ]
+    },
+    "highlights": {
+      "ko": [
+        "머신러닝 기반 개인화 추천 시스템",
+        "실시간 협업 여행 계획 기능",
+        "사용자 만족도 92% 달성"
+      ],
+      "en": [
+        "Machine learning-based personalized recommendation system",
+        "Real-time collaborative travel planning features",
+        "Achieved 92% user satisfaction"
+      ],
+      "ja": [
+        "機械学習ベースのパーソナライズ推奨システム",
+        "リアルタイム協力旅行計画機能",
+        "ユーザー満足度92%達成"
+      ]
+    },
+    "challenge": {
+      "problem": {
+        "ko": "커플의 서로 다른 취향을 조화롭게 반영한 여행 계획의 어려움",
+        "en": "Difficulty in creating travel plans that harmoniously reflect couples' different preferences",
+        "ja": "カップルの異なる好みを調和よく反映した旅行計画の困難"
+      },
+      "solution": {
+        "ko": "AI 기반 취향 분석 및 절충안 제시 알고리즘 개발",
+        "en": "Development of AI-based preference analysis and compromise suggestion algorithm",
+        "ja": "AIベースの好み分析と妥協案提示アルゴリズムの開発"
+      },
+      "result": {
+        "ko": "커플 만족도 4.9/5.0, 재사용률 78% 달성",
+        "en": "Achieved couple satisfaction 4.9/5.0, reuse rate 78%",
+        "ja": "カップル満足度4.9/5.0、再利用率78%達成"
+      }
+    },
+    "metrics": {
+      "ko": [
+        "월 활성 사용자 25,000명",
+        "평균 여행 계획 완성률 89%",
+        "커플 만족도 4.9/5.0"
+      ],
+      "en": [
+        "25,000 monthly active users",
+        "Average travel plan completion rate 89%",
+        "Couple satisfaction 4.9/5.0"
+      ],
+      "ja": [
+        "月間アクティブユーザー25,000人",
+        "平均旅行計画完成率89%",
+        "カップル満足度4.9/5.0"
+      ]
+    }
+  }
+}

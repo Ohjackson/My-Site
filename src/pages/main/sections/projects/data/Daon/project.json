@@ -1,0 +1,142 @@
+{
+  "name": {
+    "ko": "다온",
+    "en": "Daon",
+    "ja": "ダオン"
+  },
+  "summary": {
+    "ko": "지속가능한 환경을 위한 스마트 에너지 관리 시스템",
+    "en": "Smart energy management system for sustainable environment",
+    "ja": "持続可能な環境のためのスマートエネルギー管理システム"
+  },
+  "period": {
+    "ko": "2024.07 - 2024.12",
+    "en": "2024.07 - 2024.12",
+    "ja": "2024.07 - 2024.12"
+  },
+  "role": {
+    "ko": "백엔드 개발자",
+    "en": "Backend Developer",
+    "ja": "バックエンド開発者"
+  },
+  "tags": {
+    "ko": ["Python", "FastAPI", "PostgreSQL", "IoT"],
+    "en": ["Python", "FastAPI", "PostgreSQL", "IoT"],
+    "ja": ["Python", "FastAPI", "PostgreSQL", "IoT"]
+  },
+  "features": {
+    "ko": [
+      "실시간 에너지 사용량 모니터링",
+      "AI 기반 에너지 절약 추천",
+      "스마트 그리드 연동",
+      "환경 영향 분석 대시보드"
+    ],
+    "en": [
+      "Real-time energy usage monitoring",
+      "AI-based energy saving recommendations",
+      "Smart grid integration",
+      "Environmental impact analysis dashboard"
+    ],
+    "ja": [
+      "リアルタイムエネルギー使用量モニタリング",
+      "AIベースのエネルギー節約推奨",
+      "スマートグリッド連携",
+      "環境影響分析ダッシュボード"
+    ]
+  },
+  "detail": {
+    "subtitle": {
+      "ko": "지구를 위한 스마트한 선택",
+      "en": "Smart Choices for the Earth",
+      "ja": "地球のためのスマートな選択"
+    },
+    "overview": {
+      "purpose": {
+        "ko": "IoT 센서와 AI를 활용하여 에너지 효율성을 극대화하고 환경 영향을 최소화하는 시스템",
+        "en": "System that maximizes energy efficiency and minimizes environmental impact using IoT sensors and AI",
+        "ja": "IoTセンサーとAIを活用してエネルギー効率を最大化し、環境影響を最小化するシステム"
+      },
+      "target": {
+        "ko": "에너지 절약에 관심 있는 가정 및 기업",
+        "en": "Households and businesses interested in energy saving",
+        "ja": "エネルギー節約に興味のある家庭と企業"
+      },
+      "value": {
+        "ko": "데이터 기반 지속가능한 에너지 관리 솔루션",
+        "en": "Data-driven sustainable energy management solutions",
+        "ja": "データベースの持続可能なエネルギー管理ソリューション"
+      }
+    },
+    "responsibilities": {
+      "ko": [
+        "Python FastAPI 백엔드 개발",
+        "PostgreSQL 데이터베이스 설계",
+        "IoT 센서 데이터 처리 및 분석",
+        "RESTful API 설계 및 구현"
+      ],
+      "en": [
+        "Python FastAPI backend development",
+        "PostgreSQL database design",
+        "IoT sensor data processing and analysis",
+        "RESTful API design and implementation"
+      ],
+      "ja": [
+        "Python FastAPIバックエンド開発",
+        "PostgreSQLデータベース設計",
+        "IoTセンサーデータ処理と分析",
+        "RESTful API設計と実装"
+      ]
+    },
+    "highlights": {
+      "ko": [
+        "머신러닝 기반 에너지 예측 모델",
+        "실시간 데이터 스트리밍 처리",
+        "에너지 사용량 25% 절약 달성"
+      ],
+      "en": [
+        "Machine learning-based energy prediction model",
+        "Real-time data streaming processing",
+        "Achieved 25% energy usage reduction"
+      ],
+      "ja": [
+        "機械学習ベースのエネルギー予測モデル",
+        "リアルタイムデータストリーミング処理",
+        "エネルギー使用量25%節約達成"
+      ]
+    },
+    "challenge": {
+      "problem": {
+        "ko": "대용량 IoT 센서 데이터의 실시간 처리와 정확한 에너지 예측의 복잡성",
+        "en": "Complexity of real-time processing of large-scale IoT sensor data and accurate energy prediction",
+        "ja": "大容量IoTセンサーデータのリアルタイム処理と正確なエネルギー予測の複雑さ"
+      },
+      "solution": {
+        "ko": "스트리밍 데이터 처리 파이프라인과 시계열 예측 모델 구축",
+        "en": "Building streaming data processing pipelines and time series prediction models",
+        "ja": "ストリーミングデータ処理パイプラインと時系列予測モデルの構築"
+      },
+      "result": {
+        "ko": "사용자 만족도 4.5/5.0, 에너지 절약률 25% 달성",
+        "en": "Achieved user satisfaction 4.5/5.0, 25% energy saving rate",
+        "ja": "ユーザー満足度4.5/5.0、エネルギー節約率25%達成"
+      }
+    },
+    "metrics": {
+      "ko": [
+        "월 활성 사용자 8,500명",
+        "평균 에너지 절약률 25%",
+        "환경 영향 감소 30%"
+      ],
+      "en": [
+        "8,500 monthly active users",
+        "Average energy saving rate 25%",
+        "30% reduction in environmental impact"
+      ],
+      "ja": [
+        "月間アクティブユーザー8,500人",
+        "平均エネルギー節約率25%",
+        "環境影響30%減少"
+      ]
+    }
+  }
+}

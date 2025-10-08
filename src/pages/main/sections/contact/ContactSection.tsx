@@ -4,11 +4,13 @@ import { CONTACT_EMAIL } from '@/shared/config/site';
 import { SOCIAL_LINKS } from '@/shared/config/links';
 import { ContactLink } from './components/ContactLink';
 import { GithubIcon, LinkedinIcon, MailIcon } from '@/shared/components/icons';
-import { SectionHeading } from '@/shared/components/section-heading';
+import { contactData } from './data/contactData';
 
 export const ContactSection = () => {
-  const { t } = useTranslation();
-  const emailLabel = t('sections.contact.emailCta');
+  const { i18n, t } = useTranslation();
+  const currentLanguage = i18n.language;
+  const data = contactData[currentLanguage] || contactData.ko;
+  const emailLabel = data.emailCta;
 
   const contactItems = [
     {
@@ -28,9 +30,15 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="bg-bg py-32 px-8 text-text">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading tKey="sections.contact.title" subtitleTKey="sections.contact.thanks">
+        <div className="mb-20 text-center">
+          <h2 className="text-5xl font-semibold tracking-tight md:text-6xl">
+            {data.title}
+          </h2>
+          <p className="mt-4 text-base leading-7 text-text/80 md:text-lg">
+            {data.thanks}
+          </p>
           <div className="mx-auto mt-6 h-px w-16 bg-text" />
-        </SectionHeading>
+        </div>
 
         <div className="mx-auto grid max-w-4xl gap-12 md:grid-cols-3">
           {contactItems.map((item) => (
@@ -39,7 +47,7 @@ export const ContactSection = () => {
         </div>
 
         <div className="mt-20 text-center text-xs uppercase tracking-[0.3em] text-muted/80">
-          {t('sections.contact.description')}
+          {data.description}
         </div>
       </div>
     </section>
