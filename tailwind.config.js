@@ -13,6 +13,9 @@ export default {
         link: 'rgb(var(--color-link) / <alpha-value>)',
         linkHover: 'rgb(var(--color-link-hover) / <alpha-value>)',
         accent: 'rgb(var(--color-accent) / <alpha-value>)',
+        card: 'rgb(var(--color-card) / <alpha-value>)',
+        'card-foreground': 'rgb(var(--color-card-foreground) / <alpha-value>)',
+        'muted-foreground': 'rgb(var(--color-muted-foreground) / <alpha-value>)',
         primary: {
           50: 'rgb(var(--color-primary-50) / <alpha-value>)',
           100: 'rgb(var(--color-primary-100) / <alpha-value>)',

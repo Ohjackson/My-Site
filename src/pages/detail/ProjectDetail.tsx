@@ -1,4 +1,5 @@
 import { ArrowUpRightIcon } from '@/shared/components/icons';
+import { Calendar, User } from 'lucide-react';
 import { Button } from "./components/Button";
 import { OverviewSection } from "./sections/overview";
 import { ServiceSection } from "./sections/service";
@@ -98,11 +99,11 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-text/90">
-                <span className="text-primary-500">📅</span>
+                <Calendar className="h-4 w-4 text-primary-500" />
                 <span><strong>운영기간:</strong> {project.period[language]}</span>
               </div>
               <div className="flex items-center gap-3 text-text/90">
-                <span className="text-primary-500">👤</span>
+                <User className="h-4 w-4 text-primary-500" />
                 <span><strong>역할:</strong> {project.role[language]}</span>
               </div>
             </div>

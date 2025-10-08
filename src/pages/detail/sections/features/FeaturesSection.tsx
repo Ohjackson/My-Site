@@ -1,9 +1,19 @@
+import { CheckCircle } from 'lucide-react';
+
 interface FeaturesData {
-  features: {
-    ko: string[];
-    en: string[];
-    ja: string[];
-  };
+  detail_features: Array<{
+    title: {
+      ko: string;
+      en: string;
+      ja: string;
+    };
+    description: {
+      ko: string;
+      en: string;
+      ja: string;
+    };
+    implemented: boolean;
+  }>;
 }
 
 interface FeaturesSectionProps {
@@ -13,7 +23,7 @@ interface FeaturesSectionProps {
 }
 
 export function FeaturesSection({ data, language, backgroundColor }: FeaturesSectionProps) {
-  if (!data?.features) return null;
+  if (!data?.detail_features) return null;
 
   const content = {
     ko: { 
@@ -33,17 +43,18 @@ export function FeaturesSection({ data, language, backgroundColor }: FeaturesSec
         <h2 className="text-3xl font-bold mb-8 text-center">
           {content[language].title}
         </h2>
-        <div className="space-y-3">
-          {data.features[language].map((feature, idx) => (
+        <div className="space-y-4">
+          {data.detail_features.map((feature, idx) => (
             <div
               key={idx}
-              className="flex items-start gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50"
+              className="rounded-xl border border-border bg-card text-card-foreground shadow p-6 h-24 flex items-center"
             >
-              <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span className="text-white text-sm">✓</span>
-              </div>
-              <div>
-                <p className="text-gray-700">{feature}</p>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold mb-1">{feature.title[language]}</h3>
+                  <p className="text-muted text-sm">{feature.description[language]}</p>
+                </div>
               </div>
             </div>
           ))}

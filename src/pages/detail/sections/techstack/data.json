@@ -1,7 +1,0 @@
-{
-  "frontend": "SwiftUI, Combine, UIKit 일부, PencilKit",
-  "ai": "CoreML(간단 OCR/분류), Vision",
-  "data": "CoreData 또는 SwiftData, CloudKit(iCloud)",
-  "devops": "Xcode Cloud / fastlane, TestFlight, Crashlytics(선택)",
-  "etc": "Shortcuts Intents, UserNotifications"
-}
