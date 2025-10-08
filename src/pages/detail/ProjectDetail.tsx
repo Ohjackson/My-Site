@@ -10,6 +10,7 @@ import { ResponsibilitiesSection } from "./sections/responsibilities";
 import { DeploymentSection } from "./sections/deployment";
 import { ResultsSection } from "./sections/results";
 import { AdditionalSection } from "./sections/additional";
+import { OtherProjectsSection } from "./sections/other-projects";
 
 // Import project data
 import tangochoData from '../main/sections/projects/data/Tangocho/project.json';
@@ -36,9 +37,10 @@ interface ProjectDetailProps {
   projectId: string;
   language: 'ko' | 'en' | 'ja';
   onBack: () => void;
+  onProjectClick: (projectId: string) => void;
 }
 
-export function ProjectDetail({ projectId, language, onBack }: ProjectDetailProps) {
+export function ProjectDetail({ projectId, language, onBack, onProjectClick }: ProjectDetailProps) {
   console.log('ProjectDetail rendered with:', { projectId, language });
   
   const project = projectData[projectId as keyof typeof projectData] || projectData.tangocho;
@@ -149,6 +151,16 @@ export function ProjectDetail({ projectId, language, onBack }: ProjectDetailProp
             />
           );
           sectionIndex++;
+        } else if ((project as any).service) {
+          sections.push(
+            <ServiceSection 
+              key="service" 
+              data={(project as any).service} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
         }
 
         // Features Section (always render)
@@ -173,6 +185,16 @@ export function ProjectDetail({ projectId, language, onBack }: ProjectDetailProp
             />
           );
           sectionIndex++;
+        } else if ((project as any).preview_screenshots) {
+          sections.push(
+            <PreviewSection 
+              key="preview" 
+              data={(project as any).preview_screenshots} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
         }
 
         // Architecture Section
@@ -186,6 +208,16 @@ export function ProjectDetail({ projectId, language, onBack }: ProjectDetailProp
             />
           );
           sectionIndex++;
+        } else if ((project as any).architecture) {
+          sections.push(
+            <ArchitectureSection 
+              key="architecture" 
+              data={(project as any).architecture} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
         }
 
         // TechStack Section
@@ -194,6 +226,16 @@ export function ProjectDetail({ projectId, language, onBack }: ProjectDetailProp
             <TechStackSection 
               key="techstack" 
               data={(project as any).danggocho.techStack} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        } else if ((project as any).techStack) {
+          sections.push(
+            <TechStackSection 
+              key="techstack" 
+              data={(project as any).techStack} 
               language={language} 
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
@@ -225,6 +267,16 @@ export function ProjectDetail({ projectId, language, onBack }: ProjectDetailProp
             />
           );
           sectionIndex++;
+        } else if ((project as any).deployment) {
+          sections.push(
+            <DeploymentSection 
+              key="deployment" 
+              data={(project as any).deployment} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
         }
 
         // Results Section
@@ -251,10 +303,33 @@ export function ProjectDetail({ projectId, language, onBack }: ProjectDetailProp
             />
           );
           sectionIndex++;
+        } else if ((project as any).additional_links) {
+          sections.push(
+            <AdditionalSection 
+              key="additional" 
+              data={(project as any).additional_links} 
+              language={language} 
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
         }
 
         return sections;
       })()}
+
+      {/* Other Projects Section */}
+      <OtherProjectsSection
+        projects={Object.entries(projectData).map(([id, data]) => ({
+          id,
+          name: data.name,
+          summary: data.summary,
+          tags: data.tags,
+        }))}
+        currentProjectId={projectId}
+        language={language}
+        onProjectClick={onProjectClick}
+      />
     </div>
   );
 }

@@ -69,6 +69,7 @@ export const App = () => {
           projectId={selectedProjectId}
           language={i18n.language as 'ko' | 'en' | 'ja'}
           onBack={handleNavigateHome}
+          onProjectClick={handleProjectClick}
         />
       </div>
     );
