@@ -28,9 +28,7 @@ const ThemeBridge = ({ children }: PropsWithChildren) => {
         shape: {
           borderRadius: 12
         },
-        typography: {
-          fontFamily: 'var(--app-font-family, Inter, Pretendard, Noto Sans JP, system-ui, -apple-system, BlinkMacSystemFont, sans-serif)'
-        }
+
       }),
     [mode]
   );

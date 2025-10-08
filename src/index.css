@@ -6,20 +6,14 @@
 
 @layer base {
   body {
-    /* English (Default) */
-    font-family: "Noto Sans", sans-serif;
     background-color: rgb(var(--color-bg));
     color: rgb(var(--color-text));
   }
 
   :lang(ko) body {
-    /* Korean */
-    font-family: "Gowun Dodum", sans-serif;
   }
 
   :lang(ja) body {
-    /* Japanese */
-    font-family: "Klee One", cursive;
   }
 
   a {
@@ -27,36 +21,3 @@
   }
 }
 
-/* Font Helper Classes */
-
-.gowun-dodum-regular {
-  font-family: "Gowun Dodum", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/*
-// Noto Sans: CSS class for a variable style
-// <weight>: Use a value from 100 to 900
-// <uniquifier>: Use a unique and descriptive class name
-.noto-sans-<uniquifier> {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-*/
-
-.klee-one-regular {
-  font-family: "Klee One", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.klee-one-semibold {
-  font-family: "Klee One", cursive;
-  font-weight: 600;
-  font-style: normal;
-}
