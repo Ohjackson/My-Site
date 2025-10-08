@@ -279,9 +279,9 @@
   },
   "preview_screenshots": {
     "screenshots": [
-      "assets/mysite/shot-01-planner.png",
-      "assets/mysite/shot-02-recommendation.png",
-      "assets/mysite/shot-03-analysis.png"
+      "./src/assets/mysite/shot-1.png",
+      "./src/assets/mysite/shot-2.png",
+      "./src/assets/mysite/shot-3.png"
     ],
     "description": {
       "ko": "여행 계획 편집기, AI 추천 화면, 성과 분석 대시보드 프리뷰",

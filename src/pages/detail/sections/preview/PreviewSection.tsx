@@ -1,3 +1,5 @@
+import { PreviewPhoto } from './PreviewPhoto';
+
 interface PreviewData {
   screenshots: string[];
   description: string | { ko: string; en: string; ja: string };
@@ -12,6 +14,9 @@ interface PreviewSectionProps {
 export function PreviewSection({ data, language, backgroundColor }: PreviewSectionProps) {
   if (!data) return null;
 
+  console.log('PreviewSection data:', data);
+  console.log('PreviewSection screenshots:', data.screenshots);
+
   const content = {
     ko: { title: "미리보기" },
     en: { title: "Preview" },
@@ -20,23 +25,29 @@ export function PreviewSection({ data, language, backgroundColor }: PreviewSecti
 
   return (
     <section className={`py-16 px-8 ${backgroundColor}`}>
-      <div className="max-w-4xl mx-auto">
+      <div className="w-full">
         <h2 className="text-3xl font-bold mb-8 text-center">
           {content[language].title}
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {data.screenshots.map((screenshot, idx) => (
-            <div key={idx} className="aspect-[9/16] rounded-lg overflow-hidden bg-bg/50">
-              <img 
-                src={screenshot} 
+        <div className="flex gap-6 justify-center">
+          {data.screenshots.map((screenshot, idx) => {
+            console.log(`Rendering screenshot ${idx + 1}:`, screenshot);
+            
+            return (
+              <PreviewPhoto
+                key={idx}
+                src={screenshot}
                 alt={`Screenshot ${idx + 1}`}
-                className="w-full h-full object-cover"
+                onLoad={() => {
+                  console.log(`Image loaded successfully: ${screenshot}`);
+                }}
                 onError={(e) => {
+                  console.error(`Image failed to load: ${screenshot}`, e);
                   e.currentTarget.style.display = 'none';
                 }}
               />
-            </div>
-          ))}
+            );
+          })}
         </div>
         {data.description && (
           <p className="text-center text-muted mt-4">

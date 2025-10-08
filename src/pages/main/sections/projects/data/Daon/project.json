@@ -279,9 +279,11 @@
   },
   "preview_screenshots": {
     "screenshots": [
-      "assets/daon/shot-01-monitoring.png",
-      "assets/daon/shot-02-prediction.png",
-      "assets/daon/shot-03-impact.png"
+      "/assets/daon/shot-1.png",
+      "/assets/daon/shot-2.png",
+      "/assets/daon/shot-3.png",
+      "/assets/daon/shot-4.png",
+      "/assets/daon/shot-5.png"
     ],
     "description": {
       "ko": "실시간 모니터링, 에너지 예측, 환경 영향 분석 대시보드 프리뷰",

@@ -279,9 +279,9 @@
   },
   "preview_screenshots": {
     "screenshots": [
-      "assets/popco/shot-01-editor.png",
-      "assets/popco/shot-02-workspace.png",
-      "assets/popco/shot-03-history.png"
+      "./src/assets/popco/shot-1.png",
+      "./src/assets/popco/shot-2.png",
+      "./src/assets/popco/shot-3.png"
     ],
     "description": {
       "ko": "협업 편집기 및 워크스페이스 대시보드 프리뷰",

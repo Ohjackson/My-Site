@@ -145,12 +145,6 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
                 <span><strong>{content[language].teamSize}:</strong> {project.teamSize[language]}</span>
               </div>
             )}
-            {project.platform && (
-              <div className="flex items-center gap-3 text-text/90">
-                <Smartphone className="h-4 w-4 text-primary-500" />
-                <span><strong>{content[language].platform}:</strong> {project.platform[language]}</span>
-              </div>
-            )}
             {project.endDate && (
               <div className="flex items-center gap-3 text-text/90">
                 <CalendarDays className="h-4 w-4 text-primary-500" />
@@ -275,7 +269,14 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         sectionIndex++;
 
         // Preview Section
+        console.log('Checking preview_screenshots:', {
+          danggocho: (project as any).danggocho?.preview_screenshots,
+          direct: (project as any).preview_screenshots,
+          projectId
+        });
+        
         if ((project as any).danggocho?.preview_screenshots) {
+          console.log('Using danggocho preview_screenshots:', (project as any).danggocho.preview_screenshots);
           sections.push(
             <PreviewSection 
               key="preview" 
@@ -286,6 +287,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           );
           sectionIndex++;
         } else if ((project as any).preview_screenshots) {
+          console.log('Using direct preview_screenshots:', (project as any).preview_screenshots);
           sections.push(
             <PreviewSection 
               key="preview" 

@@ -292,9 +292,9 @@
   },
   "preview_screenshots": {
     "screenshots": [
-      "assets/routiq/shot-01-dashboard.png",
-      "assets/routiq/shot-02-scheduler.png",
-      "assets/routiq/shot-03-analysis.png"
+      "./src/assets/routiq/shot-1.png",
+      "./src/assets/routiq/shot-2.png",
+      "./src/assets/routiq/shot-3.png"
     ],
     "description": {
       "ko": "반응형 웹/모바일 프리뷰",
