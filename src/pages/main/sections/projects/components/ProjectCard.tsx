@@ -92,7 +92,10 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
 
       <button
         type="button"
-        onClick={() => onSelect(project.id)}
+        onClick={() => {
+          console.log('ProjectCard button clicked:', project.id);
+          onSelect(project.id);
+        }}
         className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition hover:border-primary-400 hover:text-primary-500 sm:w-auto"
       >
         {viewLabel}

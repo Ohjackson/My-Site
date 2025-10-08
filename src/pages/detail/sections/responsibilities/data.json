@@ -1,0 +1,7 @@
+{
+  "planning": "학습 루틴 정의(단축어→SRS→클로즈→쓰기), 데일리/대시보드 설계",
+  "design": "도메인 모델(단어/예문/카드/SRS스케줄), 온디바이스 우선 아키텍처, 클로즈 생성 규칙",
+  "implementation": "SwiftUI 화면(홈/플래시카드/클로즈/쓰기/상용한자), Shortcuts Intent, iCloud 동기화, CoreML 연동",
+  "operations": "TestFlight 배포, 알림 스케줄링, 버전 마이그레이션",
+  "collaboration": "코드 규칙/이슈 템플릿, 릴리즈 노트, 사용자 피드백 양식"
+}

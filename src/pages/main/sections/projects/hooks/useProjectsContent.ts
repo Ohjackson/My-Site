@@ -26,6 +26,8 @@ const projectData = {
 export const useProjectsContent = () => {
   const { t } = useTranslation();
   
+  console.log('useProjectsContent called');
+  
   // Get labels from translation
   const labels = {
     period: t('sections.projects.labels.period'),
@@ -46,6 +48,8 @@ export const useProjectsContent = () => {
     features: data.features.ko,
     detail: data.detail,
   }));
+
+  console.log('Projects loaded:', projects.map(p => ({ id: p.id, name: p.name })));
 
   const getProjectById = (id: ProjectId) => {
     const data = projectData[id];

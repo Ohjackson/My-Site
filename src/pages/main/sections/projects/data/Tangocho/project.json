@@ -138,5 +138,118 @@
         "ユーザー満足度4.8/5.0"
       ]
     }
+  },
+  "danggocho": {
+    "id": "danggocho",
+    "title": "단고초(Dangocho)",
+    "subtitle": "iOS 일본어 손글씨 단어장 — 단축어로 단어 추가에 예문까지, 과학적인 암기 학습 알고리즘과 ai 눈에 편안한 나만의 단어장",
+    "links": {
+      "appStore": "https://apps.apple.com/app/id6764562766",
+      "github": "https://github.com/Ohjackson/Dangocho"
+    },
+    "overview": {
+      "description": "처음 한국인 일본어 학습자의 \"반복 노출 + 쓰기 연습\"에 집중한 iOS 단어장 앱이\n\n단축어로 모르는 단어를 바로 저장하고, 예문 기반 클로즈 테스트·SRS 플래시카드·손글씨 연습까지 한 흐름으로 이어지게 설계했어.\n\n개인정보는 원칙적으로 온디바이스 처리(옵션: 사용자 API Key 사용 시만 외부 호출)."
+    },
+    "service": {
+      "problem": "단어를 \"봤을 때 바로 저장→반복→쓰기\"로 이어지지 않아 금방 잊는 문제.",
+      "target": "통학/업무 중 모르는 일본어를 단축어로 즉시 저장→저녁에 플래시카드·클로즈·쓰기 10분 루틴.",
+      "value": "오프라인 친화(온디바이스), 초간편 입력(단축어/수동), 반복 스케줄 자동화(SRS), 손글씨 연습."
+    },
+    "detail_features": [
+      {
+        "title": "단축어 단어 추가",
+        "description": "한자/단어 입력 → 한국어 뜻, 후리가나, 예문 자동 채움(옵션: 사용자 API Key 기반).",
+        "implemented": true
+      },
+      {
+        "title": "SRS 플래시카드",
+        "description": "오늘 암기·복습 분리, 틀린 카드 6시간 후 재학습 큐 자동 편성.",
+        "implemented": true
+      },
+      {
+        "title": "예문 클로즈 테스트",
+        "description": "예문에서 빈칸 생성 → 텍스트 입력 또는 손글씨(OCR)로 정답 체크.",
+        "implemented": true
+      },
+      {
+        "title": "손글씨 학습(쓰기)",
+        "description": "iPad Pencil/ iPhone 캔버스에 한자 쓰기 → CoreML 간단 판독 피드백.",
+        "implemented": true
+      },
+      {
+        "title": "상용한자(常用漢字) 학습",
+        "description": "2,136자 진행도/훈독·음독·예시 단어·예문, 단원별 테스트로 진도 관리.",
+        "implemented": true
+      },
+      {
+        "title": "iCloud 동기화",
+        "description": "단어·진행도 동기화, 기기간 이어하기.",
+        "implemented": true
+      },
+      {
+        "title": "대시보드/알림",
+        "description": "방문일, 오늘 암기/복습 개수, SRS 단계, \"다음 복습까지 N시간\" 카운트다운.",
+        "implemented": true
+      },
+      {
+        "title": "홈 '오늘의 한자'",
+        "description": "데일리 한자+짧은 예문, 탭하면 상세로 이동.",
+        "implemented": true
+      },
+      {
+        "title": "관리/운영",
+        "description": "사용 통계(온디바이스), 크래시/로그(필요 시) 익명 전송 토글.",
+        "implemented": false
+      }
+    ],
+    "more_Detail_features": {
+      "shortcuts": "iOS Shortcuts Intent → 앱 딥링크 → 초안 단어 카드 자동 생성.",
+      "cloze": "자동 빈칸 룰(명사 우선, 길이/빈도 가중), 난이도별 빈칸 수 조절.",
+      "srs": "쉬움/보통/어려움 피드백 → 간격(예: 10m/6h/24h/3d/1w)로 재스케줄."
+    },
+    "preview_screenshots": {
+      "screenshots": [
+        "assets/dangocho/shot-01-home.png",
+        "assets/dangocho/shot-02-srs.png",
+        "assets/dangocho/shot-03-cloze.png",
+        "assets/dangocho/shot-04-handwriting.png"
+      ],
+      "description": "아이폰 프리뷰"
+    },
+    "architecture": {
+      "components": "iOS App(SwiftUI) · ML(CoreML OCR) · Local DB(CoreData/SwiftData) · Cloud(iCloud) · (옵션) LLM 호출",
+      "dataFlow": "단축어/수동 입력 → 메타추출(온디바이스/LLM옵션) → 저장 → SRS/클로즈/쓰기 → 진행도",
+      "deployment": "App Store/TestFlight · Xcode Cloud or GitHub Actions+fastlane",
+      "security": "기본 온디바이스 처리, 외부 호출은 사용자 API Key opt-in · iCloud 동기화 암호화",
+      "network": "Gemini 등 LLM API (사용자 Key) → 예문/후리가나/뜻 보강"
+    },
+    "techStack": {
+      "frontend": "SwiftUI, Combine, UIKit 일부, PencilKit",
+      "ai": "CoreML(간단 OCR/분류), Vision",
+      "data": "CoreData 또는 SwiftData, CloudKit(iCloud)",
+      "devops": "Xcode Cloud / fastlane, TestFlight, Crashlytics(선택)",
+      "etc": "Shortcuts Intents, UserNotifications"
+    },
+    "responsibilities": {
+      "planning": "학습 루틴 정의(단축어→SRS→클로즈→쓰기), 데일리/대시보드 설계",
+      "design": "도메인 모델(단어/예문/카드/SRS스케줄), 온디바이스 우선 아키텍처, 클로즈 생성 규칙",
+      "implementation": "SwiftUI 화면(홈/플래시카드/클로즈/쓰기/상용한자), Shortcuts Intent, iCloud 동기화, CoreML 연동",
+      "operations": "TestFlight 배포, 알림 스케줄링, 버전 마이그레이션",
+      "collaboration": "코드 규칙/이슈 템플릿, 릴리즈 노트, 사용자 피드백 양식"
+    },
+    "deployment": {
+      "environment": "internal alpha → TestFlight → App Store",
+      "pipeline": "GitHub Actions/Xcode Cloud → build/test → TestFlight 배포",
+      "signing": "Apple Developer Program",
+      "secrets": "사용자 입력형 API Key(키체인 저장), .xcconfig로 환경 분리"
+    },
+    "results": {
+      "achievements": "내부 알파에서 \"단축어 입력→저녁 10분 루틴\" 완주율 상승. 쓰기 결합 시 다음날 재인출률 체감상↑.",
+      "learnings": "입력 마찰↓가 학습 루틴 시작률을 좌우. 온디바이스 우선이 신뢰와 유지율에 도움. SRS는 \"틀린 것의 빠른 재노출\"이 핵심.",
+      "nextSteps": "상용한자 커리큘럼 고도화 · 클로즈 난이도 튜너 · 손글씨 평가 피드백 곡선 보정"
+    },
+    "additional_links": {
+      "blog": "www.dangocho.com"
+    }
   }
 }

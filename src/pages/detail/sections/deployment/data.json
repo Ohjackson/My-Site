@@ -1,0 +1,6 @@
+{
+  "environment": "internal alpha → TestFlight → App Store",
+  "pipeline": "GitHub Actions/Xcode Cloud → build/test → TestFlight 배포",
+  "signing": "Apple Developer Program",
+  "secrets": "사용자 입력형 API Key(키체인 저장), .xcconfig로 환경 분리"
+}

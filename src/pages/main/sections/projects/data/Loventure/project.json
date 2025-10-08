@@ -138,5 +138,208 @@
         "カップル満足度4.9/5.0"
       ]
     }
+  },
+  "id": "loventure",
+  "title": {
+    "ko": "러벤처 (Loventure)",
+    "en": "Loventure",
+    "ja": "ラベンチャー"
+  },
+  "subtitle": {
+    "ko": "AI 기반 커플 맞춤형 여행 플래너 — 취향 절충 알고리즘과 실시간 협업 기능으로 완벽한 여행 계획 제공",
+    "en": "AI-based Couple Personalized Travel Planner — Providing perfect travel plans with preference compromise algorithm and real-time collaboration features",
+    "ja": "AIベースのカップル向け旅行プランナー — 好み妥協アルゴリズムとリアルタイム協力機能で完璧な旅行計画を提供"
+  },
+  "links": {
+    "demo": "https://loventure.app",
+    "github": "https://github.com/YourUsername/Loventure-Couple-Travel-AI"
+  },
+  "service": {
+    "problem": {
+      "ko": "커플 간의 여행 취향 차이로 인한 계획 수립의 어려움과 시간 소모.",
+      "en": "Difficulty and time consumption in planning due to differences in travel preferences between couples.",
+      "ja": "カップル間の旅行の好みの違いによる計画立案の困難さと時間消費。"
+    },
+    "target": {
+      "ko": "여행 계획에 어려움을 겪거나, 특별하고 개인화된 경험을 원하는 20-40대 커플.",
+      "en": "Couples in their 20s-40s who struggle with travel planning or desire a special and personalized experience.",
+      "ja": "旅行計画に苦労している、または特別でパーソナライズされた体験を望む20-40代のカップル。"
+    },
+    "value": {
+      "ko": "AI가 두 사람의 취향을 모두 만족시키는 최적의 경로와 활동을 제안하여 갈등을 줄이고 만족도를 극대화.",
+      "en": "AI suggests optimal routes and activities that satisfy both partners' preferences, reducing conflict and maximizing satisfaction.",
+      "ja": "AIが二人の好みを両方満たす最適なルートとアクティビティを提案し、対立を減らし満足度を最大化。"
+    }
+  },
+  "detail_features": [
+    {
+      "title": {
+        "ko": "AI 기반 여행지 추천",
+        "en": "AI-based Destination Recommendations",
+        "ja": "AIベースの旅行先推奨"
+      },
+      "description": {
+        "ko": "머신러닝 모델이 개별 사용자 및 커플의 과거 활동, 선호도를 분석하여 맞춤형 여행지, 숙소, 활동을 추천.",
+        "en": "Machine learning model analyzes individual user and couple's past activities and preferences to recommend customized destinations, accommodations, and activities.",
+        "ja": "機械学習モデルが個別ユーザーおよびカップルの過去の活動、好みを分析し、カスタマイズされた旅行先、宿泊施設、アクティビティを推奨。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "커플 취향 절충 알고리즘",
+        "en": "Couple Preference Compromise Algorithm",
+        "ja": "カップルの好み妥協アルゴリズム"
+      },
+      "description": {
+        "ko": "두 사용자의 상반된 취향(예: 활동 vs 휴식)을 입력받아, 만족도를 최대화하는 절충안을 계산하여 여행 계획에 반영.",
+        "en": "Receives input on two users' conflicting preferences (e.g., activity vs. relaxation) and calculates a compromise that maximizes satisfaction, reflecting it in the travel plan.",
+        "ja": "二人のユーザーの相反する好み（例：活動 vs 休息）を入力として受け取り、満足度を最大化する妥協案を計算し、旅行計画に反映。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "실시간 협업 일정 관리",
+        "en": "Real-time Collaborative Itinerary Management",
+        "ja": "リアルタイム協力スケジュール管理"
+      },
+      "description": {
+        "ko": "두 사용자가 동시에 여행 일정을 편집하고, 변경 사항이 즉시 반영되는 실시간 동기화 기능 제공 (Socket.io 활용).",
+        "en": "Allows two users to simultaneously edit the travel itinerary, providing real-time synchronization where changes are instantly reflected (using Socket.io).",
+        "ja": "二人のユーザーが同時に旅行日程を編集し、変更が即座に反映されるリアルタイム同期機能を提供（Socket.io活用）。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "소셜 기능 및 추억 공유",
+        "en": "Social Features and Memory Sharing",
+        "ja": "ソーシャル機能と思い出共有"
+      },
+      "description": {
+        "ko": "여행 후기 작성, 사진 공유, 다른 커플의 추천 경로 탐색 등 소셜 기능 제공.",
+        "en": "Provides social features such as writing travel reviews, sharing photos, and exploring recommended routes from other couples.",
+        "ja": "旅行レビューの作成、写真共有、他のカップルの推奨ルートの探索など、ソーシャル機能を提供。"
+      },
+      "implemented": true
+    }
+  ],
+  "more_Detail_features": {
+    "ai_recommendation_model": {
+      "ko": "협업 필터링(Collaborative Filtering)과 딥러닝(DNN)을 결합한 하이브리드 추천 모델을 사용하여, 커플의 상호작용 패턴까지 고려한 추천 정확도 향상.",
+      "en": "Used a hybrid recommendation model combining Collaborative Filtering and Deep Learning (DNN) to improve recommendation accuracy by considering couple interaction patterns.",
+      "ja": "協調フィルタリング（Collaborative Filtering）と深層学習（DNN）を組み合わせたハイブリッド推奨モデルを使用し、カップルの相互作用パターンまで考慮した推奨精度を向上。"
+    },
+    "compromise_algorithm": {
+      "ko": "다중 목표 최적화(Multi-Objective Optimization) 기법을 적용하여, 두 사용자의 만족도 함수를 동시에 최대화하는 여행지/활동 조합을 탐색.",
+      "en": "Applied Multi-Objective Optimization techniques to search for a combination of destinations/activities that simultaneously maximizes the satisfaction functions of both users.",
+      "ja": "多目的最適化（Multi-Objective Optimization）手法を適用し、二人のユーザーの満足度関数を同時に最大化する旅行先/アクティビティの組み合わせを探索。"
+    },
+    "realtime_sync": {
+      "ko": "Socket.io를 사용하여 실시간 데이터 동기화 채널을 구축하고, MongoDB의 변경 스트림(Change Streams)을 활용하여 백엔드 데이터 변경을 즉시 클라이언트에 전파.",
+      "en": "Built a real-time data synchronization channel using Socket.io and utilized MongoDB's Change Streams to instantly propagate backend data changes to clients.",
+      "ja": "Socket.ioを使用してリアルタイムデータ同期チャネルを構築し、MongoDBの変更ストリーム（Change Streams）を活用してバックエンドデータの変更を即座にクライアントに伝播。"
+    }
+  },
+  "preview_screenshots": {
+    "screenshots": [
+      "assets/loventure/shot-01-planner.png",
+      "assets/loventure/shot-02-recommendation.png",
+      "assets/loventure/shot-03-social.png"
+    ],
+    "description": {
+      "ko": "여행 계획 편집기, AI 추천 화면, 소셜 공유 화면 프리뷰",
+      "en": "Travel Plan Editor, AI Recommendation Screen, Social Sharing Screen Preview",
+      "ja": "旅行計画エディタ、AI推奨画面、ソーシャル共有画面のプレビュー"
+    }
+  },
+  "architecture": {
+    "components": "React Frontend · Node.js/Express Backend · MongoDB · AI Service (Python/TensorFlow) · AWS/GCP (Deployment)",
+    "dataFlow": {
+      "ko": "사용자 입력 → React → Node.js API → MongoDB 저장/Python AI Service (추론) → React (추천 결과/계획 업데이트).",
+      "en": "User Input → React → Node.js API → MongoDB Storage/Python AI Service (Inference) → React (Recommendation Results/Plan Update).",
+      "ja": "ユーザー入力 → React → Node.js API → MongoDB保存/Python AI Service (推論) → React (推奨結果/計画更新)。"
+    },
+    "deployment": "Dockerized Node.js/Python → AWS EC2/GCP Compute Engine (Backend/AI) · Vercel/Netlify (Frontend)",
+    "security": {
+      "ko": "JWT 기반 인증, MongoDB 데이터 암호화, API Gateway를 통한 접근 제어.",
+      "en": "JWT-based authentication, MongoDB data encryption, access control via API Gateway.",
+      "ja": "JWTベースの認証、MongoDBデータ暗号化、API Gatewayを介したアクセス制御。"
+    },
+    "network": {
+      "ko": "RESTful API (주요 통신), Socket.io (실시간 협업 동기화).",
+      "en": "RESTful API (Main communication), Socket.io (Real-time collaboration synchronization).",
+      "ja": "RESTful API (主要通信)、Socket.io (リアルタイム協力同期)。"
+    }
+  },
+  "techStack": {
+    "frontend": "React, Redux/Zustand, JavaScript/TypeScript, Tailwind CSS, Socket.io-client",
+    "backend": "Node.js, Express, Socket.io, MongoDB, Mongoose",
+    "ai_ml": "Python, TensorFlow, Scikit-learn, Collaborative Filtering, DNN",
+    "data": "MongoDB, Redis (Caching)",
+    "devops": "Docker, AWS/GCP Compute Engine, GitHub Actions"
+  },
+  "responsibilities": {
+    "planning": {
+      "ko": "커플 취향 절충 알고리즘 로직 설계, 실시간 협업을 위한 데이터 동기화 전략 정의.",
+      "en": "Designed the logic for the couple preference compromise algorithm, defined data synchronization strategy for real-time collaboration.",
+      "ja": "カップルの好み妥協アルゴリズムのロジック設計、リアルタイム協力のためのデータ同期戦略の定義。"
+    },
+    "design": {
+      "ko": "React 컴포넌트 기반 UI/UX 설계, MongoDB 스키마 설계, Node.js API 엔드포인트 정의.",
+      "en": "Designed React component-based UI/UX, MongoDB schema design, defined Node.js API endpoints.",
+      "ja": "ReactコンポーネントベースのUI/UX設計、MongoDBスキーマ設計、Node.js APIエンドポイントの定義。"
+    },
+    "implementation": {
+      "ko": "React 프론트엔드 개발, Node.js 백엔드 API 및 Socket.io 서버 구현, Python 기반 AI 추천 모델 통합.",
+      "en": "Developed React frontend, implemented Node.js backend API and Socket.io server, integrated Python-based AI recommendation model.",
+      "ja": "Reactフロントエンドの開発、Node.jsバックエンドAPIおよびSocket.ioサーバーの実装、PythonベースのAI推奨モデルの統合。"
+    },
+    "operations": {
+      "ko": "Docker를 활용한 배포 환경 구축, CI/CD 파이프라인 관리, 서비스 모니터링 및 성능 최적화.",
+      "en": "Built deployment environment using Docker, managed CI/CD pipeline, service monitoring and performance optimization.",
+      "ja": "Dockerを活用したデプロイ環境の構築、CI/CDパイプラインの管理、サービス監視とパフォーマンス最適化。"
+    },
+    "collaboration": {
+      "ko": "없음 (Solo Project), 커플 사용자 대상 베타 테스트 및 피드백 반영.",
+      "en": "None (Solo Project), conducted beta testing with couple users and incorporated feedback.",
+      "ja": "なし（ソロプロジェクト）、カップルユーザーを対象としたベータテストとフィードバックの反映。"
+    }
+  },
+  "deployment": {
+    "environment": "Development → Staging → Production (AWS/GCP)",
+    "pipeline": {
+      "ko": "GitHub Actions → Docker Build → AWS/GCP 자동 배포",
+      "en": "GitHub Actions → Docker Build → AWS/GCP Automatic Deployment",
+      "ja": "GitHub Actions → Docker Build → AWS/GCP自動デプロイ"
+    },
+    "signing": "N/A (Web Service)",
+    "secrets": {
+      "ko": "환경 변수 및 클라우드 Secret Manager를 통한 MongoDB 연결 문자열 및 API 키 관리.",
+      "en": "Managed MongoDB connection string and API keys via environment variables and cloud Secret Manager.",
+      "ja": "環境変数およびクラウドSecret Managerを介したMongoDB接続文字列とAPIキーの管理。"
+    }
+  },
+  "results": {
+    "achievements": {
+      "ko": "AI 기반 취향 절충 알고리즘을 통해 커플 만족도 4.9/5.0 달성. 실시간 협업 기능으로 계획 수립 시간 단축.",
+      "en": "Achieved couple satisfaction of 4.9/5.0 through the AI-based preference compromise algorithm. Reduced planning time with real-time collaboration features.",
+      "ja": "AIベースの好み妥協アルゴリズムによりカップル満足度4.9/5.0を達成。リアルタイム協力機能で計画立案時間を短縮。"
+    },
+    "learnings": {
+      "ko": "다중 사용자 선호도를 조화시키는 복잡한 AI 알고리즘 설계 및 구현 경험 확보. Node.js와 Socket.io를 활용한 실시간 동기화 시스템 구축 방법 학습.",
+      "en": "Gained experience in designing and implementing complex AI algorithms to harmonize multi-user preferences. Learned how to build real-time synchronization systems using Node.js and Socket.io.",
+      "ja": "マルチユーザーの好みを調和させる複雑なAIアルゴリズムの設計と実装経験を獲得。Node.jsとSocket.ioを活用したリアルタイム同期システムの構築方法を学習。"
+    },
+    "nextSteps": {
+      "ko": "여행 중 실시간 위치 기반 추천 기능 추가, LLM을 활용한 여행 일지 자동 생성 기능 통합.",
+      "en": "Added real-time location-based recommendation feature during the trip, integrated LLM-based automatic travel journal generation feature.",
+      "ja": "旅行中のリアルタイム位置ベースの推奨機能の追加、LLMを活用した旅行日誌自動生成機能の統合。"
+    }
+  },
+  "additional_links": {
+    "website": "https://loventure.com",
+    "blog": "https://blog.loventure.app/ai-couple-travel"
   }
 }

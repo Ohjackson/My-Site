@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { Header } from '@/shared/components/header';
 import { HeroSection } from '@/pages/main/sections/hero';
@@ -8,6 +9,7 @@ import { ProjectsSection } from '@/pages/main/sections/projects';
 import { HistorySection } from '@/pages/main/sections/history';
 import { AchievementsSection } from '@/pages/main/sections/achievements';
 import { ContactSection } from '@/pages/main/sections/contact';
+import { ProjectDetail } from '@/pages/detail/ProjectDetail';
 import type { ProjectId } from '@/pages/main/sections/projects';
 
 type ViewState = 'main' | 'project';
@@ -16,8 +18,12 @@ const HEADER_OFFSET = 96;
 
 export const App = () => {
   const [currentView, setCurrentView] = useState<ViewState>('main');
+  const [selectedProjectId, setSelectedProjectId] = useState<ProjectId | null>(null);
+  const { i18n } = useTranslation();
 
   const handleProjectClick = (projectId: ProjectId) => {
+    console.log('Project clicked:', projectId);
+    setSelectedProjectId(projectId);
     setCurrentView('project');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -52,14 +58,18 @@ export const App = () => {
     requestAnimationFrame(scrollToSection);
   }, [currentView]);
 
-  if (currentView === 'project') {
+  if (currentView === 'project' && selectedProjectId) {
     return (
       <div className="min-h-screen bg-bg text-text transition-colors duration-300">
         <Header
           currentView={currentView}
           onNavigateHome={handleNavigateHome}
         />
-        <main className="min-h-[70vh]" />
+        <ProjectDetail
+          projectId={selectedProjectId}
+          language={i18n.language as 'ko' | 'en' | 'ja'}
+          onBack={handleNavigateHome}
+        />
       </div>
     );
   }

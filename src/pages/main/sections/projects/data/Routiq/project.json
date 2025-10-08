@@ -138,5 +138,221 @@
         "ユーザー生産性35%向上"
       ]
     }
+  },
+  "id": "routiq",
+  "title": {
+    "ko": "루틱 (Routiq)",
+    "en": "Routiq",
+    "ja": "ルーティック"
+  },
+  "subtitle": {
+    "ko": "AI 기반 개인화된 루틴 최적화 PWA — 시간 기반 자동 스케줄링과 오프라인 습관 추적을 통한 생산성 극대화",
+    "en": "AI-based Personalized Routine Optimization PWA — Maximizing productivity through time-based automatic scheduling and offline habit tracking",
+    "ja": "AIベースのパーソナライズされたルーチン最適化PWA — 時間ベースの自動スケジューリングとオフライン習慣追跡による生産性最大化"
+  },
+  "links": {
+    "demo": "https://routiq.vercel.app",
+    "github": "https://github.com/YourUsername/Routiq-Planner"
+  },
+  "service": {
+    "problem": {
+      "ko": "기존 플래너의 비유연성과 수동적인 스케줄링으로 인한 루틴 이탈 및 시간 관리 비효율성.",
+      "en": "Routine deviation and time management inefficiency due to the inflexibility and manual scheduling of existing planners.",
+      "ja": "従来のプランナーの柔軟性のなさや手動スケジューリングによるルーチンからの逸脱と時間管理の非効率性。"
+    },
+    "target": {
+      "ko": "바쁜 일상 속에서 시간을 효율적으로 관리하고, 데이터 기반으로 생산성을 높이고자 하는 사용자.",
+      "en": "Users who want to efficiently manage their time in a busy daily life and increase productivity based on data.",
+      "ja": "忙しい日常の中で時間を効率的に管理し、データに基づいて生産性を向上させたいユーザー。"
+    },
+    "value": {
+      "ko": "개인 생활 패턴을 학습하는 AI 추천 시스템, PWA를 통한 모든 기기에서의 접근성 및 오프라인 사용성.",
+      "en": "AI recommendation system that learns personal lifestyle patterns, accessibility on all devices via PWA, and offline usability.",
+      "ja": "個人の生活パターンを学習するAI推奨システム、PWAを介したすべてのデバイスでのアクセシビリティとオフラインでの利用可能性。"
+    }
+  },
+  "detail_features": [
+    {
+      "title": {
+        "ko": "스마트 루틴 추천",
+        "en": "Smart Routine Recommendation",
+        "ja": "スマートルーチン推奨"
+      },
+      "description": {
+        "ko": "사용자의 완료 기록, 선호 시간대, 작업 유형을 분석하여 최적의 루틴 순서와 시간을 제안.",
+        "en": "Analyzes user completion history, preferred time slots, and task types to suggest the optimal routine order and time.",
+        "ja": "ユーザーの完了履歴、好みの時間帯、タスクタイプを分析し、最適なルーチンの順序と時間を提案。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "시간 기반 자동 스케줄링",
+        "en": "Time-based Automatic Scheduling",
+        "ja": "時間ベースの自動スケジューリング"
+      },
+      "description": {
+        "ko": "할 일 목록과 예상 소요 시간을 입력하면, 남은 시간을 고려하여 자동으로 일과에 배치.",
+        "en": "When a to-do list and estimated time are entered, it automatically allocates them to the daily schedule considering the remaining time.",
+        "ja": "ToDoリストと予想所要時間を入力すると、残りの時間を考慮して自動的に日課に配置。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "습관 추적 및 분석 대시보드",
+        "en": "Habit Tracking and Analysis Dashboard",
+        "ja": "習慣追跡と分析ダッシュボード"
+      },
+      "description": {
+        "ko": "루틴 완료율, 평균 소요 시간, 생산성 변화를 시각화하여 제공.",
+        "en": "Provides visualization of routine completion rate, average time spent, and productivity changes.",
+        "ja": "ルーチン完了率、平均所要時間、生産性の変化を視覚化して提供。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "PWA 오프라인 동기화",
+        "en": "PWA Offline Synchronization",
+        "ja": "PWAオフライン同期"
+      },
+      "description": {
+        "ko": "Service Worker와 IndexedDB를 활용하여 네트워크 연결 없이도 루틴 확인 및 기록 가능.",
+        "en": "Enables routine checking and recording even without a network connection by utilizing Service Worker and IndexedDB.",
+        "ja": "Service WorkerとIndexedDBを活用し、ネットワーク接続なしでもルーチンの確認と記録が可能。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "직관적인 드래그 앤 드롭 UI",
+        "en": "Intuitive Drag and Drop UI",
+        "ja": "直感的なドラッグアンドドロップUI"
+      },
+      "description": {
+        "ko": "Tailwind CSS 기반의 반응형 디자인과 부드러운 드래그 앤 드롭으로 루틴 수정 용이성 극대화.",
+        "en": "Maximizes ease of routine modification with a Tailwind CSS-based responsive design and smooth drag and drop.",
+        "ja": "Tailwind CSSベースのレスポンシブデザインとスムーズなドラッグアンドドロップでルーチン修正の容易さを最大化。"
+      },
+      "implemented": true
+    }
+  ],
+  "more_Detail_features": {
+    "recommendation_engine": {
+      "ko": "사용자별 시간대별 작업 선호도 및 완료율을 기반으로 한 간단한 협업 필터링(Collaborative Filtering) 알고리즘 구현.",
+      "en": "Implemented a simple Collaborative Filtering algorithm based on user-specific time-slot task preferences and completion rates.",
+      "ja": "ユーザー別の時間帯別タスクの好みと完了率に基づいたシンプルな協調フィルタリング（Collaborative Filtering）アルゴリズムを実装。"
+    },
+    "scheduling_logic": {
+      "ko": "Constraint Satisfaction Problem (CSP) 접근 방식을 활용하여, 고정된 일정과 유동적인 할 일 간의 최적 시간 슬롯을 계산.",
+      "en": "Utilized a Constraint Satisfaction Problem (CSP) approach to calculate the optimal time slots between fixed schedules and flexible to-dos.",
+      "ja": "Constraint Satisfaction Problem (CSP)アプローチを活用し、固定されたスケジュールと流動的なToDo間の最適時間スロットを計算。"
+    },
+    "pwa_implementation": {
+      "ko": "Workbox를 사용하여 Service Worker를 구성하고, IndexedDB에 루틴 데이터 및 완료 기록을 저장하여 오프라인 접근성 확보.",
+      "en": "Configured Service Worker using Workbox and stored routine data and completion records in IndexedDB to ensure offline accessibility.",
+      "ja": "Workboxを使用してService Workerを構成し、IndexedDBにルーチンデータと完了記録を保存してオフラインアクセスを確保。"
+    }
+  },
+  "preview_screenshots": {
+    "screenshots": [
+      "assets/routiq/shot-01-dashboard.png",
+      "assets/routiq/shot-02-scheduler.png",
+      "assets/routiq/shot-03-analysis.png"
+    ],
+    "description": {
+      "ko": "반응형 웹/모바일 프리뷰",
+      "en": "Responsive Web/Mobile Preview",
+      "ja": "レスポンシブウェブ/モバイルプレビュー"
+    }
+  },
+  "architecture": {
+    "components": "React PWA (TypeScript) · State Management (Zustand) · Styling (Tailwind CSS) · Local Storage (IndexedDB)",
+    "dataFlow": {
+      "ko": "사용자 입력 → IndexedDB 저장 → React/Zustand 상태 관리 → 추천 엔진(클라이언트 측) → 최적화된 루틴 출력",
+      "en": "User Input → IndexedDB Storage → React/Zustand State Management → Recommendation Engine (Client-side) → Optimized Routine Output",
+      "ja": "ユーザー入力 → IndexedDB保存 → React/Zustand状態管理 → 推奨エンジン（クライアント側） → 最適化されたルーチン出力"
+    },
+    "deployment": "Vercel/Netlify (Static Hosting) · GitHub Actions (CI/CD)",
+    "security": {
+      "ko": "HTTPS 적용, 사용자 데이터는 클라이언트 측 IndexedDB에 저장 (온디바이스 우선), 민감 정보 서버 전송 최소화.",
+      "en": "Applied HTTPS, user data stored in client-side IndexedDB (on-device first), minimized sensitive information transmission to the server.",
+      "ja": "HTTPS適用、ユーザーデータはクライアント側のIndexedDBに保存（オンデバイス優先）、機密情報のサーバー送信を最小化。"
+    },
+    "network": {
+      "ko": "PWA Manifest 및 Service Worker를 통한 오프라인 캐싱 전략.",
+      "en": "Offline caching strategy via PWA Manifest and Service Worker.",
+      "ja": "PWA ManifestおよびService Workerを介したオフラインキャッシング戦略。"
+    }
+  },
+  "techStack": {
+    "frontend": "React, TypeScript, Zustand, Tailwind CSS, React-DnD",
+    "pwa": "Service Worker, Web Manifest, IndexedDB, Workbox",
+    "data": "IndexedDB (Local Storage), JSON (Configuration)",
+    "devops": "GitHub Actions, Vercel/Netlify",
+    "etc": "Framer Motion (Animation)"
+  },
+  "responsibilities": {
+    "planning": {
+      "ko": "AI 추천 로직 및 자동 스케줄링 규칙 정의, PWA 오프라인 사용 시나리오 설계.",
+      "en": "Defined AI recommendation logic and automatic scheduling rules, designed PWA offline usage scenarios.",
+      "ja": "AI推奨ロジックと自動スケジューリングルールの定義、PWAオフライン使用シナリオの設計。"
+    },
+    "design": {
+      "ko": "컴포넌트 기반 UI/UX 설계 (Tailwind), 데이터 모델링 (루틴, 습관, 완료 기록).",
+      "en": "Component-based UI/UX design (Tailwind), data modeling (routine, habit, completion record).",
+      "ja": "コンポーネントベースのUI/UX設計（Tailwind）、データモデリング（ルーチン、習慣、完了記録）。"
+    },
+    "implementation": {
+      "ko": "React 컴포넌트 개발, TypeScript 타입 정의, PWA Service Worker 및 IndexedDB 연동, 상태 관리 구현.",
+      "en": "Developed React components, defined TypeScript types, integrated PWA Service Worker and IndexedDB, implemented state management.",
+      "ja": "Reactコンポーネントの開発、TypeScriptの型定義、PWA Service WorkerとIndexedDBの連携、状態管理の実装。"
+    },
+    "operations": {
+      "ko": "Vercel 배포 및 CI/CD 파이프라인 관리, 성능 최적화 (Lighthouse 점수 관리).",
+      "en": "Managed Vercel deployment and CI/CD pipeline, performance optimization (Lighthouse score management).",
+      "ja": "VercelデプロイとCI/CDパイプラインの管理、パフォーマンス最適化（Lighthouseスコア管理）。"
+    },
+    "collaboration": {
+      "ko": "없음 (Solo Project), 사용자 피드백 수집 및 반영.",
+      "en": "None (Solo Project), collected and reflected user feedback.",
+      "ja": "なし（ソロプロジェクト）、ユーザーフィードバックの収集と反映。"
+    }
+  },
+  "deployment": {
+    "environment": "Development → Staging (Vercel Preview) → Production (Vercel/Netlify)",
+    "pipeline": {
+      "ko": "GitHub Actions → Build & Test → Vercel/Netlify 자동 배포",
+      "en": "GitHub Actions → Build & Test → Vercel/Netlify Automatic Deployment",
+      "ja": "GitHub Actions → Build & Test → Vercel/Netlify自動デプロイ"
+    },
+    "signing": "N/A (Web App/PWA)",
+    "secrets": {
+      "ko": "N/A (클라이언트 측 로직 중심)",
+      "en": "N/A (Client-side logic focused)",
+      "ja": "N/A (クライアント側ロジック中心)"
+    }
+  },
+  "results": {
+    "achievements": {
+      "ko": "PWA 구현으로 모바일 앱과 유사한 사용자 경험 제공. 자동 스케줄링 기능 도입 후 루틴 완성률 82% 달성.",
+      "en": "Provided a mobile app-like user experience through PWA implementation. Achieved an 82% routine completion rate after introducing the automatic scheduling feature.",
+      "ja": "PWA実装によりモバイルアプリに類似したユーザー体験を提供。自動スケジューリング機能導入後、ルーチン完了率82%を達成。"
+    },
+    "learnings": {
+      "ko": "클라이언트 측에서 복잡한 스케줄링 알고리즘을 효율적으로 처리하는 방법 학습. PWA의 오프라인 기능이 사용자 유지율에 긍정적 영향.",
+      "en": "Learned how to efficiently handle complex scheduling algorithms on the client side. PWA's offline capability positively impacted user retention.",
+      "ja": "クライアント側で複雑なスケジューリングアルゴリズムを効率的に処理する方法を学習。PWAのオフライン機能がユーザー維持率に肯定的な影響。"
+    },
+    "nextSteps": {
+      "ko": "사용자 간 루틴 공유 기능 추가, 백엔드 도입을 통한 정교한 머신러닝 모델 적용.",
+      "en": "Add routine sharing feature between users, apply a more sophisticated machine learning model through backend introduction.",
+      "ja": "ユーザー間のルーチン共有機能の追加、バックエンド導入による洗練された機械学習モデルの適用。"
+    }
+  },
+  "additional_links": {
+    "website": "https://routiq.com",
+    "blog": "https://blog.routiq.com/pwa-ml-routine"
   }
 }

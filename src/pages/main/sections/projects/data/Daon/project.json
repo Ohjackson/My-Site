@@ -20,9 +20,9 @@
     "ja": "バックエンド開発者"
   },
   "tags": {
-    "ko": ["Python", "FastAPI", "PostgreSQL", "IoT"],
-    "en": ["Python", "FastAPI", "PostgreSQL", "IoT"],
-    "ja": ["Python", "FastAPI", "PostgreSQL", "IoT"]
+    "ko": ["Python", "FastAPI", "PostgreSQL", "IoT", "Time-Series", "ML"],
+    "en": ["Python", "FastAPI", "PostgreSQL", "IoT", "Time-Series", "ML"],
+    "ja": ["Python", "FastAPI", "PostgreSQL", "IoT", "Time-Series", "ML"]
   },
   "features": {
     "ko": [
@@ -134,9 +134,212 @@
       ],
       "ja": [
         "月間アクティブユーザー8,500人",
-        "平均エネルギー節約率25%",
+        "平均エネルギー節약率25%",
         "環境影響30%減少"
       ]
     }
+  },
+  "id": "daon-energy-management",
+  "title": {
+    "ko": "다온 (Daon)",
+    "en": "Daon",
+    "ja": "ダオン"
+  },
+  "subtitle": {
+    "ko": "Python/FastAPI 기반 스마트 에너지 관리 시스템 — IoT 데이터 스트리밍 처리 및 시계열 ML 예측 모델 구현",
+    "en": "Python/FastAPI-based Smart Energy Management System — Implemented IoT data streaming processing and time series ML prediction model",
+    "ja": "Python/FastAPIベースのスマートエネルギー管理システム — IoTデータストリーミング処理と時系列ML予測モデルの実装"
+  },
+  "links": {
+    "demo": "https://daon-energy.com/dashboard",
+    "github": "https://github.com/YourUsername/Daon-Energy-System"
+  },
+  "service": {
+    "problem": {
+      "ko": "가정 및 기업의 에너지 사용 패턴에 대한 인지 부족과 비효율적인 수동 관리.",
+      "en": "Lack of awareness of energy usage patterns in households and businesses and inefficient manual management.",
+      "ja": "家庭や企業におけるエネルギー使用パターンへの認識不足と非効率な手動管理。"
+    },
+    "target": {
+      "ko": "에너지 비용 절감과 환경 보호에 기여하고자 하는 스마트 홈 사용자 및 중소기업.",
+      "en": "Smart home users and SMEs who want to reduce energy costs and contribute to environmental protection.",
+      "ja": "エネルギーコスト削減と環境保護に貢献したいスマートホームユーザーおよび中小企業。"
+    },
+    "value": {
+      "ko": "실시간 데이터 기반의 정확한 에너지 사용 예측 및 AI 추천을 통한 자동화된 절약 솔루션.",
+      "en": "Automated saving solutions through accurate energy usage prediction and AI recommendations based on real-time data.",
+      "ja": "リアルタイムデータに基づく正確なエネルギー使用予測とAI推奨による自動化された節約ソリューション。"
+    }
+  },
+  "detail_features": [
+    {
+      "title": {
+        "ko": "실시간 IoT 데이터 수집 및 처리",
+        "en": "Real-time IoT Data Collection and Processing",
+        "ja": "リアルタイムIoTデータ収集と処理"
+      },
+      "description": {
+        "ko": "수천 개의 IoT 센서로부터 초당 대용량 시계열 에너지 데이터를 수집하고 FastAPI 백엔드에서 비동기적으로 처리.",
+        "en": "Collects large-scale time-series energy data per second from thousands of IoT sensors and processes it asynchronously in the FastAPI backend.",
+        "ja": "数千のIoTセンサーから毎秒大容量の時系列エネルギーデータを収集し、FastAPIバックエンドで非同期的に処理。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "시계열 ML 기반 에너지 예측",
+        "en": "Time Series ML-based Energy Prediction",
+        "ja": "時系列MLベースのエネルギー予測"
+      },
+      "description": {
+        "ko": "과거 사용량, 날씨, 시간대 등의 요소를 기반으로 LSTM 또는 Prophet 모델을 사용하여 미래 에너지 사용량을 예측.",
+        "en": "Predicts future energy usage using LSTM or Prophet models based on factors like past usage, weather, and time of day.",
+        "ja": "過去の使用量、天気、時間帯などの要素に基づいてLSTMまたはProphetモデルを使用し、将来のエネルギー使用量を予測。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "PostgreSQL 시계열 데이터 관리",
+        "en": "PostgreSQL Time Series Data Management",
+        "ja": "PostgreSQL時系列データ管理"
+      },
+      "description": {
+        "ko": "PostgreSQL의 TimescaleDB 확장 기능을 활용하여 대용량 시계열 데이터를 효율적으로 저장, 쿼리 및 압축.",
+        "en": "Utilized PostgreSQL's TimescaleDB extension to efficiently store, query, and compress large-scale time-series data.",
+        "ja": "PostgreSQLのTimescaleDB拡張機能を活用し、大容量の時系列データを効率的に保存、クエリ、圧縮。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "스마트 그리드 연동 API",
+        "en": "Smart Grid Integration API",
+        "ja": "スマートグリッド連携API"
+      },
+      "description": {
+        "ko": "외부 스마트 그리드 시스템과의 데이터 교환을 위한 안전하고 표준화된 RESTful API 엔드포인트 설계 및 구현.",
+        "en": "Designed and implemented secure and standardized RESTful API endpoints for data exchange with external smart grid systems.",
+        "ja": "外部スマートグリッドシステムとのデータ交換のための安全で標準化されたRESTful APIエンドポイントの設計と実装。"
+      },
+      "implemented": true
+    }
+  ],
+  "more_Detail_features": {
+    "data_ingestion_pipeline": {
+      "ko": "Kafka 또는 RabbitMQ와 같은 메시지 큐를 사용하여 IoT 디바이스에서 FastAPI 백엔드로의 데이터 스트리밍 파이프라인 구축 (FastAPI의 비동기 처리 기능 활용).",
+      "en": "Built a data streaming pipeline from IoT devices to the FastAPI backend using a message queue like Kafka or RabbitMQ (utilizing FastAPI's asynchronous processing capabilities).",
+      "ja": "KafkaまたはRabbitMQのようなメッセージキューを使用して、IoTデバイスからFastAPIバックエンドへのデータストリーミングパイプラインを構築（FastAPIの非同期処理機能を活用）。"
+    },
+    "ml_deployment": {
+      "ko": "Python/FastAPI 내에 ML 모델을 통합하고, Gunicorn/Uvicorn을 사용하여 고성능 추론 API를 제공.",
+      "en": "Integrated the ML model within Python/FastAPI and provided a high-performance inference API using Gunicorn/Uvicorn.",
+      "ja": "Python/FastAPI内にMLモデルを統合し、Gunicorn/Uvicornを使用して高性能な推論APIを提供。"
+    },
+    "database_optimization": {
+      "ko": "PostgreSQL의 파티셔닝 및 인덱싱 전략을 최적화하여 시계열 데이터의 읽기/쓰기 성능을 극대화.",
+      "en": "Optimized PostgreSQL's partitioning and indexing strategies to maximize read/write performance for time-series data.",
+      "ja": "PostgreSQLのパーティショニングとインデックス戦略を最適化し、時系列データの読み取り/書き込み性能を最大化。"
+    }
+  },
+  "preview_screenshots": {
+    "screenshots": [
+      "assets/daon/shot-01-monitoring.png",
+      "assets/daon/shot-02-prediction.png",
+      "assets/daon/shot-03-impact.png"
+    ],
+    "description": {
+      "ko": "실시간 모니터링, 에너지 예측, 환경 영향 분석 대시보드 프리뷰",
+      "en": "Real-time Monitoring, Energy Prediction, Environmental Impact Analysis Dashboard Preview",
+      "ja": "リアルタイムモニタリング、エネルギー予測、環境影響分析ダッシュボードのプレビュー"
+    }
+  },
+  "architecture": {
+    "components": "Python/FastAPI Backend · PostgreSQL (TimescaleDB) · Message Queue (Kafka/RabbitMQ) · ML Model (LSTM/Prophet)",
+    "dataFlow": {
+      "ko": "IoT 센서 → Message Queue → FastAPI (데이터 수집/처리/ML 추론) → PostgreSQL 저장 → Frontend API 제공.",
+      "en": "IoT Sensor → Message Queue → FastAPI (Data Collection/Processing/ML Inference) → PostgreSQL Storage → Frontend API Provision.",
+      "ja": "IoTセンサー → メッセージキュー → FastAPI (データ収集/処理/ML推論) → PostgreSQL保存 → フロントエンドAPI提供。"
+    },
+    "deployment": "Docker/Kubernetes (FastAPI/ML Service) · AWS RDS/GCP Cloud SQL (PostgreSQL)",
+    "security": {
+      "ko": "OAuth 2.0/JWT 기반 API 인증, 데이터 전송 암호화 (TLS/SSL), PostgreSQL 접근 제어.",
+      "en": "OAuth 2.0/JWT based API authentication, data transmission encryption (TLS/SSL), PostgreSQL access control.",
+      "ja": "OAuth 2.0/JWTベースのAPI認証、データ転送暗号化 (TLS/SSL)、PostgreSQLアクセス制御。"
+    },
+    "network": {
+      "ko": "RESTful API (Frontend 통신), Message Queue Protocol (IoT 통신).",
+      "en": "RESTful API (Frontend communication), Message Queue Protocol (IoT communication).",
+      "ja": "RESTful API (フロントエンド通信)、メッセージキュープロトコル (IoT通信)。"
+    }
+  },
+  "techStack": {
+    "backend": "Python, FastAPI, Pydantic, SQLAlchemy",
+    "database": "PostgreSQL, TimescaleDB, Redis (Caching)",
+    "data_processing": "Kafka/RabbitMQ, Pandas, NumPy",
+    "ai_ml": "TensorFlow/PyTorch (LSTM), Prophet, Scikit-learn",
+    "devops": "Docker, Kubernetes, Prometheus/Grafana (Monitoring)"
+  },
+  "responsibilities": {
+    "planning": {
+      "ko": "대용량 IoT 데이터 처리를 위한 비동기 백엔드 아키텍처 설계, 시계열 데이터 모델링 전략 정의.",
+      "en": "Designed asynchronous backend architecture for large-scale IoT data processing, defined time-series data modeling strategy.",
+      "ja": "大容量IoTデータ処理のための非同期バックエンドアーキテクチャの設計、時系列データモデリング戦略の定義。"
+    },
+    "design": {
+      "ko": "FastAPI 기반 RESTful API 엔드포인트 설계, PostgreSQL/TimescaleDB 스키마 설계, 데이터 파이프라인 구성.",
+      "en": "Designed FastAPI-based RESTful API endpoints, PostgreSQL/TimescaleDB schema design, configured data pipeline.",
+      "ja": "FastAPIベースのRESTful APIエンドポイントの設計、PostgreSQL/TimescaleDBスキーマの設計、データパイプラインの構成。"
+    },
+    "implementation": {
+      "ko": "Python/FastAPI 백엔드 로직 구현, ML 모델 통합 및 추론 API 개발, PostgreSQL 데이터베이스 연동 및 최적화.",
+      "en": "Implemented Python/FastAPI backend logic, developed ML model integration and inference API, integrated and optimized PostgreSQL database.",
+      "ja": "Python/FastAPIバックエンドロジックの実装、MLモデル統合と推論APIの開発、PostgreSQLデータベースの連携と最適化。"
+    },
+    "operations": {
+      "ko": "Docker/Kubernetes를 활용한 고가용성 배포 환경 구축, 실시간 데이터 처리량 및 지연 시간 모니터링.",
+      "en": "Built high-availability deployment environment using Docker/Kubernetes, monitored real-time data throughput and latency.",
+      "ja": "Docker/Kubernetesを活用した高可用性デプロイ環境の構築、リアルタイムデータスループットと遅延時間の監視。"
+    },
+    "collaboration": {
+      "ko": "프론트엔드 개발팀과의 API 명세 공유 및 연동 지원, IoT 하드웨어팀과의 데이터 포맷 협의.",
+      "en": "Shared API specifications and provided integration support with the frontend development team, negotiated data format with the IoT hardware team.",
+      "ja": "フロントエンド開発チームとのAPI仕様共有と連携サポート、IoTハードウェアチームとのデータフォーマット協議。"
+    }
+  },
+  "deployment": {
+    "environment": "Development → Staging → Production (Cloud Environment)",
+    "pipeline": {
+      "ko": "GitHub Actions → Docker Build → Kubernetes 자동 배포",
+      "en": "GitHub Actions → Docker Build → Kubernetes Automatic Deployment",
+      "ja": "GitHub Actions → Docker Build → Kubernetes自動デプロイ"
+    },
+    "signing": "N/A (Backend Service)",
+    "secrets": {
+      "ko": "Kubernetes Secrets 또는 클라우드 Secret Manager를 통한 DB 연결 정보 및 API 키 관리.",
+      "en": "Managed DB connection information and API keys via Kubernetes Secrets or cloud Secret Manager.",
+      "ja": "Kubernetes SecretsまたはクラウドSecret Managerを介したDB接続情報とAPIキーの管理。"
+    }
+  },
+  "results": {
+    "achievements": {
+      "ko": "대용량 IoT 데이터의 실시간 처리를 위한 고성능 FastAPI 백엔드 구축. ML 예측 모델을 통해 25%의 에너지 절약률 달성.",
+      "en": "Built a high-performance FastAPI backend for real-time processing of large-scale IoT data. Achieved a 25% energy saving rate through the ML prediction model.",
+      "ja": "大容量IoTデータのリアルタイム処理のための高性能FastAPIバックエンドを構築。ML予測モデルを通じて25%のエネルギー節約率を達成。"
+    },
+    "learnings": {
+      "ko": "FastAPI의 비동기 처리와 Python의 ML 라이브러리를 결합한 고성능 백엔드 개발 경험 확보. TimescaleDB를 활용한 시계열 데이터베이스 최적화 방법 학습.",
+      "en": "Gained experience in developing a high-performance backend combining FastAPI's asynchronous processing with Python's ML libraries. Learned how to optimize time-series databases using TimescaleDB.",
+      "ja": "FastAPIの非同期処理とPythonのMLライブラリを組み合わせた高性能バックエンド開発経験を獲得。TimescaleDBを活用した時系列データベース最適化方法を学習。"
+    },
+    "nextSteps": {
+      "ko": "엣지 컴퓨팅(Edge Computing)을 활용한 IoT 디바이스에서의 로컬 데이터 처리 기능 추가, 강화학습 기반의 자동 에너지 제어 시스템 도입.",
+      "en": "Added local data processing functionality on IoT devices using Edge Computing, introduced a Reinforcement Learning-based automatic energy control system.",
+      "ja": "エッジコンピューティング（Edge Computing）を活用したIoTデバイスでのローカルデータ処理機能の追加、強化学習ベースの自動エネルギー制御システムの導入。"
+    }
+  },
+  "additional_links": {
+    "website": "https://daon.com",
+    "blog": "https://blog.daon-energy.com/fastapi-iot-timeseries"
   }
 }

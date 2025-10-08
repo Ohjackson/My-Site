@@ -1,0 +1,7 @@
+{
+  "components": "iOS App(SwiftUI) · ML(CoreML OCR) · Local DB(CoreData/SwiftData) · Cloud(iCloud) · (옵션) LLM 호출",
+  "dataFlow": "단축어/수동 입력 → 메타추출(온디바이스/LLM옵션) → 저장 → SRS/클로즈/쓰기 → 진행도",
+  "deployment": "App Store/TestFlight · Xcode Cloud or GitHub Actions+fastlane",
+  "security": "기본 온디바이스 처리, 외부 호출은 사용자 API Key opt-in · iCloud 동기화 암호화",
+  "network": "Gemini 등 LLM API (사용자 Key) → 예문/후리가나/뜻 보강"
+}
