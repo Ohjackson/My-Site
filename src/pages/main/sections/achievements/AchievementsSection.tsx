@@ -19,8 +19,9 @@ export const AchievementsSection = () => {
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
         </div>
 
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="relative grid gap-10 md:grid-cols-2">
           <AchievementList title={data.achievementsTitle} items={achievements} />
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-border -translate-x-1/2"></div>
           <AchievementList title={data.educationTitle} items={education} />
         </div>
       </div>
