@@ -1,8 +1,8 @@
 interface DeploymentData {
-  environment: string;
-  pipeline: string;
-  signing: string;
-  secrets: string;
+  environment: string | { ko: string; en: string; ja: string };
+  pipeline: string | { ko: string; en: string; ja: string };
+  signing: string | { ko: string; en: string; ja: string };
+  secrets: string | { ko: string; en: string; ja: string };
 }
 
 interface DeploymentSectionProps {
@@ -45,22 +45,38 @@ export function DeploymentSection({ data, language, backgroundColor }: Deploymen
           {content[language].title}
         </h2>
         <div className="space-y-6">
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].environment}</h3>
-            <p className="text-muted">{data.environment}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].pipeline}</h3>
-            <p className="text-muted">{data.pipeline}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].signing}</h3>
-            <p className="text-muted">{data.signing}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].secrets}</h3>
-            <p className="text-muted">{data.secrets}</p>
-          </div>
+          {data.environment && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].environment}</h3>
+              <p className="text-muted">
+                {typeof data.environment === 'string' ? data.environment : data.environment[language]}
+              </p>
+            </div>
+          )}
+          {data.pipeline && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].pipeline}</h3>
+              <p className="text-muted">
+                {typeof data.pipeline === 'string' ? data.pipeline : data.pipeline[language]}
+              </p>
+            </div>
+          )}
+          {data.signing && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].signing}</h3>
+              <p className="text-muted">
+                {typeof data.signing === 'string' ? data.signing : data.signing[language]}
+              </p>
+            </div>
+          )}
+          {data.secrets && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].secrets}</h3>
+              <p className="text-muted">
+                {typeof data.secrets === 'string' ? data.secrets : data.secrets[language]}
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>

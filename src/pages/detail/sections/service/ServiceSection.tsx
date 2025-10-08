@@ -1,7 +1,7 @@
 interface ServiceData {
-  problem: string;
-  target: string;
-  value: string;
+  problem: string | { ko: string; en: string; ja: string };
+  target: string | { ko: string; en: string; ja: string };
+  value: string | { ko: string; en: string; ja: string };
 }
 
 interface ServiceSectionProps {
@@ -41,18 +41,30 @@ export function ServiceSection({ data, language, backgroundColor }: ServiceSecti
           {content[language].title}
         </h2>
         <div className="space-y-6">
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].problem}</h3>
-            <p className="text-muted">{data.problem}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].target}</h3>
-            <p className="text-muted">{data.target}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].value}</h3>
-            <p className="text-muted">{data.value}</p>
-          </div>
+          {data.problem && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].problem}</h3>
+              <p className="text-muted">
+                {typeof data.problem === 'string' ? data.problem : data.problem[language]}
+              </p>
+            </div>
+          )}
+          {data.target && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].target}</h3>
+              <p className="text-muted">
+                {typeof data.target === 'string' ? data.target : data.target[language]}
+              </p>
+            </div>
+          )}
+          {data.value && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].value}</h3>
+              <p className="text-muted">
+                {typeof data.value === 'string' ? data.value : data.value[language]}
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>

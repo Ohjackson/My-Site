@@ -1,9 +1,9 @@
 interface ArchitectureData {
-  components: string;
-  dataFlow: string;
-  deployment: string;
-  security: string;
-  network: string;
+  components: string | { ko: string; en: string; ja: string };
+  dataFlow: string | { ko: string; en: string; ja: string };
+  deployment: string | { ko: string; en: string; ja: string };
+  security: string | { ko: string; en: string; ja: string };
+  network: string | { ko: string; en: string; ja: string };
 }
 
 interface ArchitectureSectionProps {
@@ -49,26 +49,46 @@ export function ArchitectureSection({ data, language, backgroundColor }: Archite
           {content[language].title}
         </h2>
         <div className="space-y-6">
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].components}</h3>
-            <p className="text-muted">{data.components}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].dataFlow}</h3>
-            <p className="text-muted">{data.dataFlow}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].deployment}</h3>
-            <p className="text-muted">{data.deployment}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].security}</h3>
-            <p className="text-muted">{data.security}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].network}</h3>
-            <p className="text-muted">{data.network}</p>
-          </div>
+          {data.components && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].components}</h3>
+              <p className="text-muted">
+                {typeof data.components === 'string' ? data.components : data.components[language]}
+              </p>
+            </div>
+          )}
+          {data.dataFlow && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].dataFlow}</h3>
+              <p className="text-muted">
+                {typeof data.dataFlow === 'string' ? data.dataFlow : data.dataFlow[language]}
+              </p>
+            </div>
+          )}
+          {data.deployment && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].deployment}</h3>
+              <p className="text-muted">
+                {typeof data.deployment === 'string' ? data.deployment : data.deployment[language]}
+              </p>
+            </div>
+          )}
+          {data.security && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].security}</h3>
+              <p className="text-muted">
+                {typeof data.security === 'string' ? data.security : data.security[language]}
+              </p>
+            </div>
+          )}
+          {data.network && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].network}</h3>
+              <p className="text-muted">
+                {typeof data.network === 'string' ? data.network : data.network[language]}
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>

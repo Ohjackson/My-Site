@@ -1,9 +1,9 @@
 interface TechStackData {
-  frontend: string;
-  ai: string;
-  data: string;
-  devops: string;
-  etc: string;
+  frontend: string | { ko: string; en: string; ja: string };
+  ai: string | { ko: string; en: string; ja: string };
+  data: string | { ko: string; en: string; ja: string };
+  devops: string | { ko: string; en: string; ja: string };
+  etc: string | { ko: string; en: string; ja: string };
 }
 
 interface TechStackSectionProps {
@@ -49,26 +49,46 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
           {content[language].title}
         </h2>
         <div className="space-y-6">
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].frontend}</h3>
-            <p className="text-muted">{data.frontend}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].ai}</h3>
-            <p className="text-muted">{data.ai}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].data}</h3>
-            <p className="text-muted">{data.data}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].devops}</h3>
-            <p className="text-muted">{data.devops}</p>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-2">{content[language].etc}</h3>
-            <p className="text-muted">{data.etc}</p>
-          </div>
+          {data.frontend && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].frontend}</h3>
+              <p className="text-muted">
+                {typeof data.frontend === 'string' ? data.frontend : data.frontend[language]}
+              </p>
+            </div>
+          )}
+          {data.ai && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].ai}</h3>
+              <p className="text-muted">
+                {typeof data.ai === 'string' ? data.ai : data.ai[language]}
+              </p>
+            </div>
+          )}
+          {data.data && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].data}</h3>
+              <p className="text-muted">
+                {typeof data.data === 'string' ? data.data : data.data[language]}
+              </p>
+            </div>
+          )}
+          {data.devops && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].devops}</h3>
+              <p className="text-muted">
+                {typeof data.devops === 'string' ? data.devops : data.devops[language]}
+              </p>
+            </div>
+          )}
+          {data.etc && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].etc}</h3>
+              <p className="text-muted">
+                {typeof data.etc === 'string' ? data.etc : data.etc[language]}
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 interface PreviewData {
   screenshots: string[];
-  description: string;
+  description: string | { ko: string; en: string; ja: string };
 }
 
 interface PreviewSectionProps {
@@ -38,7 +38,11 @@ export function PreviewSection({ data, language, backgroundColor }: PreviewSecti
             </div>
           ))}
         </div>
-        <p className="text-center text-muted mt-4">{data.description}</p>
+        {data.description && (
+          <p className="text-center text-muted mt-4">
+            {typeof data.description === 'string' ? data.description : data.description[language]}
+          </p>
+        )}
       </div>
     </section>
   );

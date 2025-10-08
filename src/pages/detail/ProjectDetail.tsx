@@ -45,6 +45,9 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
   
   const project = projectData[projectId as keyof typeof projectData] || projectData.tangocho;
   console.log('Selected project:', project);
+  console.log('Project keys:', Object.keys(project));
+  console.log('Project detail:', project.detail);
+  console.log('Project danggocho:', (project as any).danggocho);
 
   const content = {
     ko: {
@@ -315,6 +318,8 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           sectionIndex++;
         }
 
+        console.log('Rendered sections count:', sections.length);
+        console.log('Section keys:', sections.map(s => s.key));
         return sections;
       })()}
 

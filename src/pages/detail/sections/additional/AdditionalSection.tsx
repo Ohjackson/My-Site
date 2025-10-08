@@ -1,6 +1,6 @@
 interface AdditionalData {
-  blog?: string;
-  [key: string]: string | undefined;
+  blog?: string | { ko: string; en: string; ja: string };
+  [key: string]: string | { ko: string; en: string; ja: string } | undefined;
 }
 
 interface AdditionalSectionProps {
@@ -25,19 +25,23 @@ export function AdditionalSection({ data, language, backgroundColor }: Additiona
           {content[language].title}
         </h2>
         <div className="space-y-4">
-          {Object.entries(data).map(([key, value]) => (
-            <div key={key} className="flex items-center gap-4">
-              <span className="font-semibold capitalize">{key}:</span>
-              <a 
-                href={value} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-link hover:text-linkHover underline"
-              >
-                {value}
-              </a>
-            </div>
-          ))}
+          {Object.entries(data).map(([key, value]) => {
+            if (!value) return null;
+            const displayValue = typeof value === 'string' ? value : value?.[language] || '';
+            return (
+              <div key={key} className="flex items-center gap-4">
+                <span className="font-semibold capitalize">{key}:</span>
+                <a
+                  href={displayValue}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-link hover:text-linkHover underline"
+                >
+                  {displayValue}
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
