@@ -1,4 +1,5 @@
 import { ArrowUpRightIcon } from '@/shared/components/icons';
+import { useEffect, useRef } from 'react';
 
 interface Project {
   id: string;
@@ -34,8 +35,32 @@ export function OtherProjectsSection({
 }: OtherProjectsSectionProps) {
   // 현재 프로젝트를 제외한 다른 프로젝트들만 필터링
   const otherProjects = projects.filter(project => project.id !== currentProjectId);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   if (otherProjects.length === 0) return null;
+
+  // 무한 루프를 위해 프로젝트들을 복제
+  const duplicatedProjects = [...otherProjects, ...otherProjects];
+
+  // 무한 스크롤 로직
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (!scrollContainer) return;
+
+    const handleScroll = () => {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollContainer;
+      const singleSetWidth = scrollWidth / 2; // 원본 프로젝트들의 너비
+      
+      // 두 번째 세트의 끝에 도달했을 때 (복제된 부분의 끝)
+      if (scrollLeft >= singleSetWidth) {
+        // 첫 번째 세트의 같은 위치로 순간이동 (부드러운 애니메이션 없이)
+        scrollContainer.scrollTo({ left: scrollLeft - singleSetWidth, behavior: 'auto' });
+      }
+    };
+
+    scrollContainer.addEventListener('scroll', handleScroll);
+    return () => scrollContainer.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const content = {
     ko: { title: "다른 프로젝트" },
@@ -57,11 +82,11 @@ export function OtherProjectsSection({
           {content[language].title}
         </h2>
         
-        <div className="overflow-x-auto px-8">
+        <div className="overflow-x-auto px-8 scrollbar-hide" ref={scrollContainerRef}>
           <div className="flex gap-6 py-4" style={{ width: 'max-content' }}>
-            {otherProjects.map((project) => (
+            {duplicatedProjects.map((project, index) => (
               <div
-                key={project.id}
+                key={`${project.id}-${index}`}
                 onClick={() => handleProjectClick(project.id)}
                 className="group cursor-pointer flex-shrink-0 w-80 bg-surface rounded-2xl border border-border p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-2xl"
               >
