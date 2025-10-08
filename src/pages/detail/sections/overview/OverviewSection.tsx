@@ -37,21 +37,10 @@ export function OverviewSection({ data, language, backgroundColor }: OverviewSec
         <h2 className="text-3xl font-bold mb-8 text-center">
           {content[language].title}
         </h2>
-        <div className="prose prose-lg max-w-none">
-          <div className="space-y-6">
-            <div>
-              <h3 className="font-semibold mb-2">목적</h3>
-              <p className="text-muted leading-relaxed">{data.purpose[language]}</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2">타겟</h3>
-              <p className="text-muted leading-relaxed">{data.target[language]}</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2">가치</h3>
-              <p className="text-muted leading-relaxed">{data.value[language]}</p>
-            </div>
-          </div>
+        <div className="space-y-4 text-center">
+          <p className="text-lg text-gray-700 leading-relaxed">{data.purpose[language]}</p>
+          <p className="text-lg text-gray-700 leading-relaxed">{data.target[language]}</p>
+          <p className="text-lg text-gray-700 leading-relaxed">{data.value[language]}</p>
         </div>
       </div>
     </section>

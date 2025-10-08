@@ -69,10 +69,12 @@ export function OtherProjectsSection({
   };
 
   const handleProjectClick = (projectId: string) => {
-    // 상단으로 스크롤
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    // 프로젝트 클릭 핸들러 호출
+    // 프로젝트 클릭 핸들러 먼저 호출
     onProjectClick(projectId);
+    // 약간의 지연 후 상단으로 스크롤 (페이지 전환 후)
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
   };
 
   return (

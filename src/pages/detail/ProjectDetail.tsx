@@ -107,19 +107,25 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
               </div>
             </div>
             <div className="flex gap-4">
-              <Button
-                icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                className="px-6"
-              >
-                {content[language].appStore}
-              </Button>
-              <Button
-                variant="secondary"
-                icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                className="px-6"
-              >
-                {content[language].github}
-              </Button>
+              {project.links?.appStore && (
+                <Button
+                  icon={<ArrowUpRightIcon className="h-4 w-4" />}
+                  className="px-6"
+                  onClick={() => window.open(project.links.appStore, '_blank')}
+                >
+                  {content[language].appStore}
+                </Button>
+              )}
+              {project.links?.github && (
+                <Button
+                  variant="secondary"
+                  icon={<ArrowUpRightIcon className="h-4 w-4" />}
+                  className="px-6"
+                  onClick={() => window.open(project.links.github, '_blank')}
+                >
+                  {content[language].github}
+                </Button>
+              )}
             </div>
           </div>
         </div>

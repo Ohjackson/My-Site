@@ -33,15 +33,17 @@ export function FeaturesSection({ data, language, backgroundColor }: FeaturesSec
         <h2 className="text-3xl font-bold mb-8 text-center">
           {content[language].title}
         </h2>
-        <div className="space-y-4">
+        <div className="space-y-3">
           {data.features[language].map((feature, idx) => (
             <div
               key={idx}
-              className="flex items-start gap-4 p-4 rounded-lg border border-border bg-bg/50"
+              className="flex items-start gap-4 p-4 rounded-lg border border-gray-200 bg-gray-50"
             >
-              <span className="text-primary-500 font-bold mt-0.5 flex-shrink-0">•</span>
+              <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span className="text-white text-sm">✓</span>
+              </div>
               <div>
-                <p className="text-text/90">{feature}</p>
+                <p className="text-gray-700">{feature}</p>
               </div>
             </div>
           ))}
