@@ -30,7 +30,15 @@ export const App = () => {
 
   const handleNavigateHome = () => {
     setCurrentView('main');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Scroll to Featured Projects section
+    setTimeout(() => {
+      const projectsSection = document.getElementById('projects');
+      if (projectsSection) {
+        const elementTop = projectsSection.getBoundingClientRect().top + window.scrollY;
+        const scrollTarget = Math.max(elementTop - HEADER_OFFSET, 0);
+        window.scrollTo({ top: scrollTarget, behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   useEffect(() => {

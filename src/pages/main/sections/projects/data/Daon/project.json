@@ -145,8 +145,8 @@
       "- 구현",
       "iOS : 초기 셋팅 채팅 화면 구현, 및 출시 까지 connectivity 설정",
       "Fastapi : langgraph라우팅 설정 및 데이터베이스 설정",
-      "출시: TestFlight QA 배포 이후 출시",
-      "운영: App Store Connect Logging"
+      "- 출시: TestFlight QA 배포 이후 출시",
+      "- 운영: App Store Connect Logging"
     ],
     "en": [
       "Planning: defined the ‘capture→SRS→cloze→write’ loop",
@@ -192,7 +192,6 @@
     }
   },
   "additional_links": {
-    "website": "https://acon.app",
     "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
   }
 }
