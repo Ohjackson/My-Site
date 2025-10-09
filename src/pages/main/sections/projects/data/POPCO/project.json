@@ -69,100 +69,10 @@
       "チームワークスペース管理"
     ]
   },
-  "detail": {
-    "subtitle": {
-      "ko": "함께 만드는 창의적 이야기",
-      "en": "Creative Stories Made Together",
-      "ja": "一緒に作る創造的な物語"
-    },
-    "overview": {
-      "purpose": {
-        "ko": "창작자들이 효율적으로 협업하여 고품질 콘텐츠를 제작할 수 있는 통합 플랫폼",
-        "en": "Integrated platform where creators can efficiently collaborate to produce high-quality content",
-        "ja": "クリエイターが効率的に協力して高品質コンテンツを制作できる統合プラットフォーム"
-      },
-      "target": {
-        "ko": "콘텐츠 제작자, 크리에이터, 마케터",
-        "en": "Content creators, creators, marketers",
-        "ja": "コンテンツ制作者、クリエイター、マーケター"
-      },
-      "value": {
-        "ko": "원활한 협업을 통한 창의적 아이디어 실현",
-        "en": "Realizing creative ideas through smooth collaboration",
-        "ja": "スムーズな協力を通じた創造的なアイデアの実現"
-      }
-    },
-    "responsibilities": {
-      "ko": [
-        "Next.js 풀스택 웹 애플리케이션 개발",
-        "PostgreSQL 데이터베이스 설계",
-        "WebRTC 실시간 통신 구현",
-        "파일 업로드 및 미디어 처리"
-      ],
-      "en": [
-        "Next.js full-stack web application development",
-        "PostgreSQL database design",
-        "WebRTC real-time communication implementation",
-        "File upload and media processing"
-      ],
-      "ja": [
-        "Next.jsフルスタックウェブアプリケーション開発",
-        "PostgreSQLデータベース設計",
-        "WebRTCリアルタイム通信実装",
-        "ファイルアップロードとメディア処理"
-      ]
-    },
-    "highlights": {
-      "ko": [
-        "실시간 다중 사용자 편집 기능",
-        "지능형 충돌 해결 시스템",
-        "콘텐츠 제작 효율성 60% 향상"
-      ],
-      "en": [
-        "Real-time multi-user editing functionality",
-        "Intelligent conflict resolution system",
-        "60% improvement in content production efficiency"
-      ],
-      "ja": [
-        "リアルタイムマルチユーザー編集機能",
-        "知能型競合解決システム",
-        "コンテンツ制作効率60%向上"
-      ]
-    },
-    "challenge": {
-      "problem": {
-        "ko": "다중 사용자 동시 편집 시 발생하는 데이터 충돌과 동기화 문제",
-        "en": "Data conflicts and synchronization issues during multi-user simultaneous editing",
-        "ja": "マルチユーザー同時編集時のデータ競合と同期問題"
-      },
-      "solution": {
-        "ko": "Operational Transform 알고리즘과 실시간 동기화 시스템 구현",
-        "en": "Implementation of Operational Transform algorithms and real-time synchronization systems",
-        "ja": "Operational Transformアルゴリズムとリアルタイム同期システムの実装"
-      },
-      "result": {
-        "ko": "사용자 만족도 4.6/5.0, 협업 효율성 60% 향상",
-        "en": "Achieved user satisfaction 4.6/5.0, 60% improvement in collaboration efficiency",
-        "ja": "ユーザー満足度4.6/5.0、協力効率60%向上"
-      }
-    },
-    "metrics": {
-      "ko": [
-        "월 활성 사용자 12,000명",
-        "평균 프로젝트 완성률 88%",
-        "협업 효율성 60% 향상"
-      ],
-      "en": [
-        "12,000 monthly active users",
-        "Average project completion rate 88%",
-        "60% improvement in collaboration efficiency"
-      ],
-      "ja": [
-        "月間アクティブユーザー12,000人",
-        "平均プロジェクト完成率88%",
-        "協力効率60%向上"
-      ]
-    }
+  "overviewStory": {
+    "ko": "창작자들이 효율적으로 협업하여 고품질 콘텐츠를 제작할 수 있는 통합 플랫폼",
+    "en": "Integrated platform where creators can efficiently collaborate to produce high-quality content",
+    "ja": "クリエイターが効率的に協力して高品質コンテンツを制作できる統合プラットフォーム"
   },
   "links": {
     "demo": "https://popco.app",
@@ -239,23 +149,6 @@
       "implemented": true
     }
   ],
-  "more_Detail_features": {
-    "ot_implementation": {
-      "ko": "텍스트 및 미디어 요소의 동시 편집을 위한 Operational Transform (OT) 라이브러리 커스터마이징 및 Node.js 서버에 적용.",
-      "en": "Customization of the Operational Transform (OT) library for simultaneous editing of text and media elements and application on the Node.js server.",
-      "ja": "テキストおよびメディア要素の同時編集のためのOperational Transform (OT)ライブラリのカスタマイズとNode.jsサーバーへの適用。"
-    },
-    "webrtc_signaling": {
-      "ko": "Node.js/Socket.io를 활용한 WebRTC 시그널링 서버 구축 및 P2P 연결 관리 로직 구현.",
-      "en": "Built a WebRTC signaling server using Node.js/Socket.io and implemented P2P connection management logic.",
-      "ja": "Node.js/Socket.ioを活用したWebRTCシグナリングサーバーの構築とP2P接続管理ロジックの実装。"
-    },
-    "media_processing": {
-      "ko": "FFmpeg을 활용하여 서버 측에서 업로드된 미디어 파일의 형식 변환 및 최적화 파이프라인 구축 (Node.js Worker Threads 사용).",
-      "en": "Built a server-side media file format conversion and optimization pipeline using FFmpeg (utilizing Node.js Worker Threads).",
-      "ja": "FFmpegを活用し、サーバー側でアップロードされたメディアファイルの形式変換および最適化パイプラインを構築（Node.js Worker Threadsを使用）。"
-    }
-  },
   "preview_screenshots": {
     "screenshots": [
       "/assets/popco/shot-1.png",
@@ -293,33 +186,6 @@
     "realtime": "Operational Transform (OT), WebRTC, Socket.io",
     "data": "PostgreSQL, Redis (Caching/Session)",
     "devops": "GitHub Actions, Docker, AWS/DigitalOcean"
-  },
-  "responsibilities": {
-    "planning": {
-      "ko": "OT 알고리즘 기반의 실시간 동기화 데이터 모델 설계, WebRTC 시그널링 프로토콜 정의.",
-      "en": "Designed real-time synchronization data model based on the OT algorithm, defined WebRTC signaling protocol.",
-      "ja": "OTアルゴリズムに基づくリアルタイム同期データモデルの設計、WebRTCシグナリングプロトコルの定義。"
-    },
-    "design": {
-      "ko": "Next.js 풀스택 아키텍처 설계, PostgreSQL 스키마 설계, 반응형 협업 편집기 UI/UX 설계.",
-      "en": "Designed Next.js full-stack architecture, PostgreSQL schema design, responsive collaborative editor UI/UX design.",
-      "ja": "Next.jsフルスタックアーキテクチャの設計、PostgreSQLスキーマ設計、レスポンシブ協力編集者UI/UXの設計。"
-    },
-    "implementation": {
-      "ko": "OT 로직이 적용된 Node.js 서버 구현, WebRTC P2P 연결 및 미디어 스트리밍 기능 개발, Next.js 프론트엔드 개발.",
-      "en": "Implemented Node.js server with OT logic, developed WebRTC P2P connection and media streaming features, developed Next.js frontend.",
-      "ja": "OTロジックが適用されたNode.jsサーバーの実装、WebRTC P2P接続およびメディアストリーミング機能の開発、Next.jsフロントエンドの開発。"
-    },
-    "operations": {
-      "ko": "Docker를 활용한 배포 환경 구축, CI/CD 파이프라인 관리, 실시간 서버 모니터링 및 성능 최적화.",
-      "en": "Built deployment environment using Docker, managed CI/CD pipeline, real-time server monitoring and performance optimization.",
-      "ja": "Dockerを活用したデプロイ環境の構築、CI/CDパイプラインの管理、リアルタイムサーバー監視とパフォーマンス最適化。"
-    },
-    "collaboration": {
-      "ko": "없음 (Solo Project), 초기 사용자 피드백을 통한 기능 개선 반복.",
-      "en": "None (Solo Project), iterative feature improvement through initial user feedback.",
-      "ja": "なし（ソロプロジェクト）、初期ユーザーフィードバックを通じた機能改善の反復。"
-    }
   },
   "deployment": {
     "environment": "Development → Staging → Production (Vercel/AWS)",

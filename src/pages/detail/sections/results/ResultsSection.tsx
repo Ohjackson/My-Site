@@ -4,22 +4,10 @@ interface ResultsData {
     en: string[];
     ja: string[];
   };
-  challenge: {
-    problem: {
-      ko: string;
-      en: string;
-      ja: string;
-    };
-    solution: {
-      ko: string;
-      en: string;
-      ja: string;
-    };
-    result: {
-      ko: string;
-      en: string;
-      ja: string;
-    };
+  lessonsLearned: {
+    ko: string;
+    en: string;
+    ja: string;
   };
 }
 
@@ -61,7 +49,7 @@ export function ResultsSection({ data, language, backgroundColor }: ResultsSecti
         </h2>
         <div className="space-y-8">
           {/* Metrics as Achievements */}
-          {data.metrics && (
+          {data.metrics && data.metrics[language] && (
             <div>
               <h3 className="font-semibold mb-3">{content[language].achievements}</h3>
               <div className="space-y-2">
@@ -72,24 +60,11 @@ export function ResultsSection({ data, language, backgroundColor }: ResultsSecti
             </div>
           )}
 
-          {/* Challenge as Learnings */}
-          {data.challenge && (
+          {/* Lessons Learned */}
+          {data.lessonsLearned && data.lessonsLearned[language] && (
             <div>
               <h3 className="font-semibold mb-3">{content[language].learnings}</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-medium mb-1">문제</h4>
-                  <p className="text-muted">{data.challenge.problem[language]}</p>
-                </div>
-                <div>
-                  <h4 className="font-medium mb-1">해결책</h4>
-                  <p className="text-muted">{data.challenge.solution[language]}</p>
-                </div>
-                <div>
-                  <h4 className="font-medium mb-1">결과</h4>
-                  <p className="text-muted">{data.challenge.result[language]}</p>
-                </div>
-              </div>
+              <p className="text-muted">{data.lessonsLearned[language]}</p>
             </div>
           )}
         </div>

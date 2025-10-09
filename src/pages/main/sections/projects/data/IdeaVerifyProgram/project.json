@@ -5,168 +5,124 @@
     "ja": "アイデア検証プログラム"
   },
   "summary": {
-    "ko": "창업 아이디어의 실현 가능성을 검증하고 비즈니스 모델을 구축하는 종합 플랫폼",
-    "en": "Comprehensive platform for validating startup idea feasibility and building business models",
-    "ja": "スタートアップアイデアの実現可能性を検証し、ビジネスモデルを構築する総合プラットフォーム"
+    "ko": "창업 아이디어의 시장성과 실현 가능성을 데이터 기반으로 검증하는 종합 분석 플랫폼",
+    "en": "Comprehensive analysis platform that validates the marketability and feasibility of startup ideas based on data",
+    "ja": "スタートアップアイデアの市場性と実現可能性をデータベースで検証する総合分析プラットフォーム"
   },
   "role": {
-    "ko": "Product Manager & Developer",
-    "en": "Product Manager & Developer",
-    "ja": "Product Manager & Developer"
+    "ko": "Full-Stack Developer",
+    "en": "Full-Stack Developer",
+    "ja": "Full-Stack Developer"
   },
   "tags": {
-    "ko": ["React", "TypeScript", "Business Analysis", "Market Research", "AI"],
-    "en": ["React", "TypeScript", "Business Analysis", "Market Research", "AI"],
-    "ja": ["React", "TypeScript", "Business Analysis", "Market Research", "AI"]
+    "ko": ["React", "Python", "Data Analysis", "Startup", "AI"],
+    "en": ["React", "Python", "Data Analysis", "Startup", "AI"],
+    "ja": ["React", "Python", "Data Analysis", "Startup", "AI"]
   },
   "platform": {
-    "ko": "Web, API",
-    "en": "Web, API",
-    "ja": "Web, API"
+    "ko": "Web",
+    "en": "Web",
+    "ja": "Web"
   },
   "workPeriod": {
-    "ko": "2024.02 - 2024.07",
-    "en": "2024.02 - 2024.07",
-    "ja": "2024.02 - 2024.07"
+    "ko": "2024.01 - 2024.06",
+    "en": "2024.01 - 2024.06",
+    "ja": "2024.01 - 2024.06"
   },
   "releaseDate": {
-    "ko": "2024.07.20",
-    "en": "2024.07.20",
-    "ja": "2024.07.20"
+    "ko": "2024.06",
+    "en": "2024.06",
+    "ja": "2024.06"
   },
   "endDate": {
-    "ko": "진행중",
-    "en": "Ongoing",
-    "ja": "進行中"
+    "ko": "완료",
+    "en": "Completed",
+    "ja": "完了"
   },
   "teamSize": {
-    "ko": "2명",
-    "en": "2 people",
-    "ja": "2人"
-  },
-  "additionalFeatures": {
-    "ko": "창업자들이 아이디어의 시장성과 실현 가능성을 체계적으로 검증할 수 있도록 돕는 종합 플랫폼입니다. 시장 분석, 경쟁사 조사, 비즈니스 모델 캔버스 생성, 투자 유치 전략 수립까지 원스톱으로 지원합니다.",
-    "en": "Comprehensive platform that helps entrepreneurs systematically validate the marketability and feasibility of their ideas. One-stop support from market analysis, competitor research, business model canvas creation, to investment attraction strategy development.",
-    "ja": "起業家がアイデアの市場性と実現可能性を体系的に検証できるよう支援する総合プラットフォーム。市場分析、競合調査、ビジネスモデルキャンバス作成、投資誘致戦略立案までワンストップでサポート。"
+    "ko": "2",
+    "en": "2",
+    "ja": "2"
   },
   "features": {
     "ko": [
       "시장 분석 및 경쟁사 조사",
-      "비즈니스 모델 캔버스 자동 생성",
-      "투자 유치 전략 수립",
-      "AI 기반 아이디어 검증 리포트"
+      "사용자 피드백 수집 및 분석",
+      "비즈니스 모델 검증",
+      "투자 유치 가능성 평가"
     ],
     "en": [
       "Market analysis and competitor research",
-      "Automatic business model canvas generation",
-      "Investment attraction strategy development",
-      "AI-based idea validation reports"
+      "User feedback collection and analysis",
+      "Business model validation",
+      "Investment attraction possibility assessment"
     ],
     "ja": [
-      "市場分析と競合調査",
-      "ビジネスモデルキャンバス自動生成",
-      "投資誘致戦略立案",
-      "AIベースアイデア検証レポート"
+      "市場分析と競合他社調査",
+      "ユーザーフィードバック収集と分析",
+      "ビジネスモデル検証",
+      "投資誘致可能性評価"
     ]
   },
-  "detail": {
-    "subtitle": {
-      "ko": "창업 아이디어의 성공 확률을 높이는 검증 시스템",
-      "en": "Validation System to Increase Startup Idea Success Rate",
-      "ja": "スタートアップアイデアの成功確率を高める検証システム"
+  "links": {
+    "demo": "https://ideaverify-demo.vercel.app",
+    "github": "https://github.com/YourUsername/IdeaVerifyProgram"
+  },
+  "additionalFeatures": {
+    "ko": "창업자들이 아이디어의 성공 가능성을 높일 수 있는 데이터 기반 검증 도구",
+    "en": "Data-based validation tool that helps entrepreneurs increase the success probability of their ideas",
+    "ja": "起業家がアイデアの成功可能性を高められるデータベース検証ツール"
+  },
+  "overviewStory": {
+    "ko": "창업자들이 아이디어의 시장성과 실현 가능성을 데이터 기반으로 검증하고, 성공 가능성을 높일 수 있는 종합적인 비즈니스 분석 플랫폼",
+    "en": "Comprehensive business analysis platform that helps entrepreneurs validate the marketability and feasibility of their ideas based on data and increase their chances of success",
+    "ja": "起業家がアイデアの市場性と実現可能性をデータベースで検証し、成功可能性を高められる総合的なビジネス分析プラットフォーム"
+  },
+  "service": {
+    "problem": {
+      "ko": "창업 아이디어의 시장성과 실현 가능성을 객관적으로 검증할 수 있는 도구의 부족",
+      "en": "Lack of tools to objectively validate the marketability and feasibility of startup ideas",
+      "ja": "スタートアップアイデアの市場性と実現可能性を客観的に検証できるツールの不足"
     },
-    "overview": {
-      "purpose": {
-        "ko": "창업자들이 아이디어의 시장성과 실현 가능성을 데이터 기반으로 검증하고, 성공 가능성을 높일 수 있는 종합적인 비즈니스 분석 플랫폼",
-        "en": "Comprehensive business analysis platform that helps entrepreneurs validate the marketability and feasibility of their ideas based on data and increase their chances of success",
-        "ja": "起業家がアイデアの市場性と実現可能性をデータベースで検証し、成功可能性を高められる総合的なビジネス分析プラットフォーム"
-      },
-      "target": {
-        "ko": "창업을 준비하거나 초기 단계에 있는 창업자 및 예비 창업자",
-        "en": "Entrepreneurs preparing for or in the early stages of startup, and aspiring entrepreneurs",
-        "ja": "起業を準備中または初期段階にある起業家および起業志望者"
-      },
-      "value": {
-        "ko": "체계적인 아이디어 검증을 통한 창업 성공률 향상과 리스크 최소화",
-        "en": "Improved startup success rate and risk minimization through systematic idea validation",
-        "ja": "体系的なアイデア検証による起業成功率向上とリスク最小化"
-      }
+    "target": {
+      "ko": "데이터 기반으로 아이디어를 검증하고 싶은 창업자와 투자자",
+      "en": "Entrepreneurs and investors who want to validate ideas based on data",
+      "ja": "データベースでアイデアを検証したい起業家と投資家"
     },
-    "responsibilities": {
-      "ko": [
-        "React + TypeScript 프론트엔드 개발",
-        "비즈니스 분석 도구 설계 및 구현",
-        "시장 데이터 API 연동",
-        "AI 기반 분석 알고리즘 개발"
-      ],
-      "en": [
-        "React + TypeScript frontend development",
-        "Business analysis tool design and implementation",
-        "Market data API integration",
-        "AI-based analysis algorithm development"
-      ],
-      "ja": [
-        "React + TypeScriptフロントエンド開発",
-        "ビジネス分析ツール設計と実装",
-        "市場データAPI連携",
-        "AIベース分析アルゴリズム開発"
-      ]
-    },
-    "highlights": {
-      "ko": [
-        "AI 기반 시장 분석 및 경쟁사 조사 자동화",
-        "비즈니스 모델 캔버스 자동 생성 시스템",
-        "투자 유치 성공률 35% 향상",
-        "창업 아이디어 검증 정확도 90% 이상"
-      ],
-      "en": [
-        "AI-based automated market analysis and competitor research",
-        "Automatic business model canvas generation system",
-        "35% improvement in investment attraction success rate",
-        "Over 90% accuracy in startup idea validation"
-      ],
-      "ja": [
-        "AIベースの市場分析と競合調査自動化",
-        "ビジネスモデルキャンバス自動生成システム",
-        "投資誘致成功率35%向上",
-        "起業アイデア検証精度90%以上"
-      ]
-    },
-    "challenge": {
-      "problem": {
-        "ko": "다양한 산업 분야의 시장 데이터 수집과 정확한 경쟁사 분석, 그리고 개인화된 비즈니스 모델 추천의 복잡성",
-        "en": "Complexity of collecting market data across various industries, accurate competitor analysis, and personalized business model recommendations",
-        "ja": "様々な産業分野の市場データ収集と正確な競合分析、そしてパーソナライズされたビジネスモデル推奨の複雑さ"
-      },
-      "solution": {
-        "ko": "다중 데이터 소스 통합과 머신러닝 기반 시장 분석 엔진을 활용한 종합적인 검증 시스템 구축",
-        "en": "Built comprehensive validation system using multi-data source integration and machine learning-based market analysis engine",
-        "ja": "マルチデータソース統合と機械学習ベースの市場分析エンジンを活用した総合的な検証システム構築"
-      },
-      "result": {
-        "ko": "아이디어 검증 정확도 90% 이상, 투자 유치 성공률 35% 향상, 사용자 만족도 4.8/5.0 달성",
-        "en": "Achieved over 90% idea validation accuracy, 35% improvement in investment attraction success rate, user satisfaction 4.8/5.0",
-        "ja": "アイデア検証精度90%以上、投資誘致成功率35%向上、ユーザー満足度4.8/5.0達成"
-      }
-    },
-    "metrics": {
-      "ko": [
-        "월 활성 사용자 8,000명",
-        "검증된 아이디어 2,500개",
-        "투자 유치 성공률 35% 향상"
-      ],
-      "en": [
-        "8,000 monthly active users",
-        "2,500 validated ideas",
-        "35% improvement in investment attraction success rate"
-      ],
-      "ja": [
-        "月間アクティブユーザー8,000人",
-        "検証されたアイデア2,500個",
-        "投資誘致成功率35%向上"
-      ]
+    "value": {
+      "ko": "종합적인 데이터 분석을 통한 아이디어 검증 및 성공 가능성 향상",
+      "en": "Idea validation and success probability improvement through comprehensive data analysis",
+      "ja": "総合的なデータ分析によるアイデア検証と成功可能性向上"
     }
   },
+  "detail_features": [
+    {
+      "title": {
+        "ko": "시장 분석 엔진",
+        "en": "Market Analysis Engine",
+        "ja": "市場分析エンジン"
+      },
+      "description": {
+        "ko": "AI 기반 시장 규모 분석, 경쟁사 조사, 트렌드 분석을 통한 시장성 평가",
+        "en": "Marketability assessment through AI-based market size analysis, competitor research, and trend analysis",
+        "ja": "AIベースの市場規模分析、競合他社調査、トレンド分析による市場性評価"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "사용자 피드백 분석",
+        "en": "User Feedback Analysis",
+        "ja": "ユーザーフィードバック分析"
+      },
+      "description": {
+        "ko": "설문조사, 인터뷰, 소셜미디어 분석을 통한 사용자 니즈 파악",
+        "en": "Understanding user needs through surveys, interviews, and social media analysis",
+        "ja": "アンケート、インタビュー、ソーシャルメディア分析によるユーザーニーズ把握"
+      },
+      "implemented": true
+    }
+  ],
   "preview_screenshots": {
     "screenshots": [
       "/assets/ideaverifyprogram/shot-1.png",
@@ -180,9 +136,108 @@
       "ja": "レスポンシブウェブ/モバイルプレビュー"
     }
   },
-  "links": {
-    "demo": "https://ideaverify-demo.vercel.app",
-    "github": "https://github.com/YourUsername/IdeaVerifyProgram"
+  "techStack": {
+    "frontend": "React, TypeScript, Chart.js",
+    "backend": "Python, FastAPI, PostgreSQL",
+    "ai_ml": "Python, pandas, scikit-learn, NLP",
+    "data": "PostgreSQL, Redis, Elasticsearch",
+    "devops": "Docker, AWS, GitHub Actions"
+  },
+  "architecture": {
+    "components": "React Frontend · Python Backend · PostgreSQL Database · AI Analysis Engine",
+    "dataFlow": {
+      "ko": "아이디어 입력 → 데이터 수집 → AI 분석 → 검증 결과 → 리포트 생성",
+      "en": "Idea Input → Data Collection → AI Analysis → Validation Results → Report Generation",
+      "ja": "アイデア入力 → データ収集 → AI分析 → 検証結果 → レポート生成"
+    },
+    "deployment": "AWS EC2 · PostgreSQL RDS · Docker Containers",
+    "security": {
+      "ko": "JWT 인증, 데이터 암호화, GDPR 준수",
+      "en": "JWT authentication, data encryption, GDPR compliance",
+      "ja": "JWT認証、データ暗号化、GDPR準拠"
+    },
+    "network": {
+      "ko": "HTTPS, RESTful API, WebSocket 실시간 업데이트",
+      "en": "HTTPS, RESTful API, WebSocket real-time updates",
+      "ja": "HTTPS、RESTful API、WebSocketリアルタイム更新"
+    }
+  },
+  "responsibilities": {
+    "ko": [
+      "React 프론트엔드 개발",
+      "Python 백엔드 API 개발",
+      "데이터 분석 알고리즘 구현",
+      "데이터베이스 설계 및 최적화"
+    ],
+    "en": [
+      "React frontend development",
+      "Python backend API development",
+      "Data analysis algorithm implementation",
+      "Database design and optimization"
+    ],
+    "ja": [
+      "Reactフロントエンド開発",
+      "PythonバックエンドAPI開発",
+      "データ分析アルゴリズム実装",
+      "データベース設計と最適化"
+    ]
+  },
+  "lessonsLearned": {
+    "ko": "다양한 데이터 소스의 통합과 AI 기반 분석을 통해 창업 아이디어의 객관적 검증이 가능함을 확인",
+    "en": "Confirmed that objective validation of startup ideas is possible through integration of diverse data sources and AI-based analysis",
+    "ja": "多様なデータソースの統合とAIベース分析により、スタートアップアイデアの客観的検証が可能であることを確認"
+  },
+  "metrics": {
+    "ko": [
+      "월간 활성 사용자 8,000명",
+      "검증된 아이디어 2,500개",
+      "투자 유치 성공률 35% 향상"
+    ],
+    "en": [
+      "8,000 monthly active users",
+      "2,500 validated ideas",
+      "35% improvement in investment attraction success rate"
+    ],
+    "ja": [
+      "月間アクティブユーザー8,000人",
+      "検証されたアイデア2,500個",
+      "投資誘致成功率35%向上"
+    ]
+  },
+  "deployment": {
+    "environment": "Development → Staging → Production",
+    "pipeline": {
+      "ko": "GitHub Actions → Docker Build → AWS ECS 배포",
+      "en": "GitHub Actions → Docker Build → AWS ECS Deployment",
+      "ja": "GitHub Actions → Docker Build → AWS ECSデプロイ"
+    },
+    "signing": "AWS Certificate Manager",
+    "secrets": {
+      "ko": "AWS Secrets Manager를 통한 환경 변수 관리",
+      "en": "Environment variable management via AWS Secrets Manager",
+      "ja": "AWS Secrets Managerによる環境変数管理"
+    }
+  },
+  "results": {
+    "achievements": {
+      "ko": "창업 아이디어 검증 플랫폼으로 사용자 만족도 4.6/5.0 달성",
+      "en": "Achieved user satisfaction 4.6/5.0 with startup idea validation platform",
+      "ja": "スタートアップアイデア検証プラットフォームでユーザー満足度4.6/5.0達成"
+    },
+    "learnings": {
+      "ko": "대용량 데이터 처리와 실시간 분석 시스템 구축 경험을 얻음",
+      "en": "Gained experience in building large-scale data processing and real-time analysis systems",
+      "ja": "大容量データ処理とリアルタイム分析システム構築の経験を獲得"
+    },
+    "nextSteps": {
+      "ko": "블록체인 기반 아이디어 보호 시스템, 글로벌 시장 분석 확장",
+      "en": "Blockchain-based idea protection system, global market analysis expansion",
+      "ja": "ブロックチェーンベースアイデア保護システム、グローバル市場分析拡張"
+    }
+  },
+  "additional_links": {
+    "website": "https://ideaverify.com",
+    "blog": "https://blog.ideaverify.com/startup-validation"
   },
   "flag": "active"
 }

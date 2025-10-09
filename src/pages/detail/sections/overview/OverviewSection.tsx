@@ -1,5 +1,5 @@
 interface OverviewData {
-  purpose: {
+  overviewStory: {
     ko: string;
     en: string;
     ja: string;
@@ -28,7 +28,7 @@ export function OverviewSection({ data, language, backgroundColor }: OverviewSec
           {content[language].title}
         </h2>
         <div className="space-y-4 text-center">
-          <p className="text-lg text-gray-700 leading-relaxed">{data.purpose[language]}</p>
+          <p className="text-lg text-gray-700 leading-relaxed whitespace-pre-line">{data.overviewStory[language]}</p>
           
         </div>
       </div>

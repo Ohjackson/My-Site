@@ -69,100 +69,10 @@
       "学習成果分析ダッシュボード"
     ]
   },
-  "detail": {
-    "subtitle": {
-      "ko": "AI가 함께하는 맞춤형 학습",
-      "en": "Personalized Learning with AI",
-      "ja": "AIと一緒のカスタマイズ学習"
-    },
-    "overview": {
-      "purpose": {
-        "ko": "학습자의 수준과 학습 스타일에 맞춘 개인화된 교육 콘텐츠와 학습 경험 제공",
-        "en": "Providing personalized educational content and learning experiences tailored to learner's level and learning style",
-        "ja": "学習者のレベルと学習スタイルに合わせたパーソナライズされた教育コンテンツと学習体験提供"
-      },
-      "target": {
-        "ko": "효과적인 학습을 원하는 모든 연령대 학습자",
-        "en": "Learners of all ages who want effective learning",
-        "ja": "効果的な学習を望む全年代の学習者"
-      },
-      "value": {
-        "ko": "AI 기반 개인화된 교육을 통한 학습 효과 극대화",
-        "en": "Maximizing learning effectiveness through AI-based personalized education",
-        "ja": "AIベースのパーソナライズされた教育を通じた学習効果の最大化"
-      }
-    },
-    "responsibilities": {
-      "ko": [
-        "Python 기반 AI 모델 개발",
-        "TensorFlow 딥러닝 모델 구현",
-        "MongoDB 데이터베이스 설계",
-        "학습 알고리즘 최적화"
-      ],
-      "en": [
-        "Python-based AI model development",
-        "TensorFlow deep learning model implementation",
-        "MongoDB database design",
-        "Learning algorithm optimization"
-      ],
-      "ja": [
-        "PythonベースのAIモデル開発",
-        "TensorFlow深層学習モデル実装",
-        "MongoDBデータベース設計",
-        "学習アルゴリズム最適化"
-      ]
-    },
-    "highlights": {
-      "ko": [
-        "딥러닝 기반 학습 패턴 분석",
-        "적응형 학습 알고리즘",
-        "학습 효과 40% 향상 달성"
-      ],
-      "en": [
-        "Deep learning-based learning pattern analysis",
-        "Adaptive learning algorithms",
-        "Achieved 40% improvement in learning effectiveness"
-      ],
-      "ja": [
-        "深層学習ベースの学習パターン分析",
-        "適応型学習アルゴリズム",
-        "学習効果40%向上達成"
-      ]
-    },
-    "challenge": {
-      "problem": {
-        "ko": "개인별 학습 스타일과 진도 차이를 고려한 정확한 학습 경로 설계의 어려움",
-        "en": "Difficulty in designing accurate learning paths considering individual learning styles and progress differences",
-        "ja": "個人ごとの学習スタイルと進捗差を考慮した正確な学習パス設計の困難"
-      },
-      "solution": {
-        "ko": "강화학습 기반 적응형 학습 시스템과 실시간 피드백 메커니즘 구현",
-        "en": "Implementation of reinforcement learning-based adaptive learning systems and real-time feedback mechanisms",
-        "ja": "強化学習ベースの適応型学習システムとリアルタイムフィードバックメカニズムの実装"
-      },
-      "result": {
-        "ko": "사용자 만족도 4.9/5.0, 학습 완성률 90% 달성",
-        "en": "Achieved user satisfaction 4.9/5.0, learning completion rate 90%",
-        "ja": "ユーザー満足度4.9/5.0、学習完成率90%達成"
-      }
-    },
-    "metrics": {
-      "ko": [
-        "월 활성 사용자 30,000명",
-        "평균 학습 완성률 90%",
-        "학습 효과 40% 향상"
-      ],
-      "en": [
-        "30,000 monthly active users",
-        "Average learning completion rate 90%",
-        "40% improvement in learning effectiveness"
-      ],
-      "ja": [
-        "月間アクティブユーザー30,000人",
-        "平均学習完成率90%",
-        "学習効果40%向上"
-      ]
-    }
+  "overviewStory": {
+    "ko": "학습자의 수준과 학습 스타일에 맞춘 개인화된 교육 콘텐츠와 학습 경험 제공",
+    "en": "Providing personalized educational content and learning experiences tailored to learner's level and learning style",
+    "ja": "学習者のレベルと学習スタイルに合わせたパーソナライズされた教育コンテンツと学習体験提供"
   },
   "links": {
     "demo": "https://pliad.ai",
@@ -239,23 +149,6 @@
       "implemented": true
     }
   ],
-  "more_Detail_features": {
-    "rl_model": {
-      "ko": "DQN(Deep Q-Network) 또는 DDPG(Deep Deterministic Policy Gradient)와 같은 강화학습 알고리즘을 사용하여 학습 콘텐츠 추천을 '행동'으로 정의하고, 학습 성과를 '보상'으로 최적화.",
-      "en": "Used Reinforcement Learning algorithms like DQN (Deep Q-Network) or DDPG (Deep Deterministic Policy Gradient) to define learning content recommendation as 'action' and optimize learning performance as 'reward'.",
-      "ja": "DQN（Deep Q-Network）やDDPG（Deep Deterministic Policy Gradient）などの強化学習アルゴリズムを使用し、学習コンテンツの推奨を「行動」として定義し、学習成果を「報酬」として最適化。"
-    },
-    "dkt_implementation": {
-      "ko": "TensorFlow를 사용하여 LSTM 기반의 Deep Knowledge Tracing (DKT) 모델을 구현, 학습자의 지식 상태를 시계열 데이터로 추적.",
-      "en": "Implemented an LSTM-based Deep Knowledge Tracing (DKT) model using TensorFlow to track the learner's knowledge state as time-series data.",
-      "ja": "TensorFlowを使用してLSTMベースのDeep Knowledge Tracing (DKT)モデルを実装し、学習者の知識状態を時系列データとして追跡。"
-    },
-    "data_pipeline": {
-      "ko": "학습 로그 데이터를 MongoDB에 저장하고, Python/Pandas를 사용하여 전처리 후 AI 모델 학습 및 추론에 활용하는 데이터 파이프라인 구축.",
-      "en": "Stored learning log data in MongoDB and built a data pipeline using Python/Pandas for preprocessing, then utilized it for AI model training and inference.",
-      "ja": "学習ログデータをMongoDBに保存し、Python/Pandasを使用して前処理した後、AIモデルの学習と推論に活用するデータパイプラインを構築。"
-    }
-  },
   "preview_screenshots": {
     "screenshots": [
       "/assets/pliad/shot-1.png",
@@ -293,33 +186,6 @@
     "ai_ml": "TensorFlow, Keras, Scikit-learn, Reinforcement Learning (DQN/DDPG), DKT",
     "data": "MongoDB, Mongoose/PyMongo",
     "devops": "Docker, Kubernetes, AWS SageMaker/GCP AI Platform"
-  },
-  "responsibilities": {
-    "planning": {
-      "ko": "강화학습 기반 학습 경로 추천 모델 설계, DKT 모델을 활용한 지식 상태 추적 전략 정의.",
-      "en": "Designed Reinforcement Learning-based learning path recommendation model, defined knowledge state tracking strategy using the DKT model.",
-      "ja": "強化学習ベースの学習パス推奨モデルの設計、DKTモデルを活用した知識状態追跡戦略の定義。"
-    },
-    "design": {
-      "ko": "AI 모델 학습 및 추론을 위한 데이터 파이프라인 설계, MongoDB 스키마 설계, API 인터페이스 정의.",
-      "en": "Designed data pipeline for AI model training and inference, MongoDB schema design, defined API interfaces.",
-      "ja": "AIモデルの学習と推論のためのデータパイプラインの設計、MongoDBスキーマの設計、APIインターフェースの定義。"
-    },
-    "implementation": {
-      "ko": "Python/TensorFlow 기반 RL 및 DKT 모델 구현, Flask/Django를 사용한 AI 추론 API 개발, 학습 데이터 수집 및 전처리.",
-      "en": "Implemented RL and DKT models based on Python/TensorFlow, developed AI inference API using Flask/Django, collected and preprocessed learning data.",
-      "ja": "Python/TensorFlowベースのRLおよびDKTモデルの実装、Flask/Djangoを使用したAI推論APIの開発、学習データの収集と前処理。"
-    },
-    "operations": {
-      "ko": "Docker/Kubernetes를 활용한 AI 서비스 배포 및 관리, 모델 성능 모니터링 및 재학습 파이프라인 구축.",
-      "en": "Deployed and managed AI service using Docker/Kubernetes, built model performance monitoring and retraining pipeline.",
-      "ja": "Docker/Kubernetesを活用したAIサービスのデプロイと管理、モデル性能監視と再学習パイプラインの構築。"
-    },
-    "collaboration": {
-      "ko": "없음 (Solo Project), AI 모델의 정확도 및 학습 효과 검증.",
-      "en": "None (Solo Project), verified AI model accuracy and learning effectiveness.",
-      "ja": "なし（ソロプロジェクト）、AIモデルの精度と学習効果の検証。"
-    }
   },
   "deployment": {
     "environment": "Development → Staging → Production (AWS/GCP)",

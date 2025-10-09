@@ -1,11 +1,11 @@
 {
   "name": {
-    "ko": "아콘",
+    "ko": "Acon",
     "en": "Acon",
-    "ja": "アコン"
+    "ja": "Acon"
   },
   "summary": {
-    "ko": "건강한 생활을 위한 AI 기반 개인 트레이너 앱",
+    "ko": "더 이상 맛집을 찾느라 고민할 필요가 없는 지도 앱",
     "en": "AI-based personal trainer app for healthy living",
     "ja": "健康的な生活のためのAIベースのパーソナルトレーナーアプリ"
   },
@@ -30,24 +30,19 @@
     "ja": "2024.03 - 2024.08"
   },
   "releaseDate": {
-    "ko": "2024.08.15",
-    "en": "2024.08.15",
-    "ja": "2024.08.15"
+    "ko": "2024.08",
+    "en": "2024.08",
+    "ja": "2024.08"
   },
   "endDate": {
-    "ko": "진행중",
-    "en": "Ongoing",
-    "ja": "進行中"
+    "ko": "완료",
+    "en": "Completed",
+    "ja": "完了"
   },
   "teamSize": {
-    "ko": "1명 (Solo)",
-    "en": "1 person (Solo)",
-    "ja": "1人（ソロ）"
-  },
-  "additionalFeatures": {
-    "ko": "AI 기반 개인화 운동 계획 생성, 실시간 자세 분석을 통한 운동 품질 향상, 건강 데이터 시각화 및 트렌드 분석 기능을 제공합니다. 사용자의 운동 패턴을 학습하여 최적의 운동 루틴을 자동으로 추천합니다.",
-    "en": "Provides AI-based personalized workout plan generation, real-time posture analysis for improved exercise quality, and health data visualization with trend analysis. Learns user exercise patterns to automatically recommend optimal workout routines.",
-    "ja": "AIベースの個人化されたワークアウトプラン生成、リアルタイム姿勢分析による運動品質向上、健康データの可視化とトレンド分析機能を提供します。ユーザーの運動パターンを学習し、最適な運動ルーティンを自動で推奨します。"
+    "ko": "1",
+    "en": "1",
+    "ja": "1"
   },
   "features": {
     "ko": [
@@ -69,121 +64,36 @@
       "健康データ可視化"
     ]
   },
-  "detail": {
-    "subtitle": {
-      "ko": "AI가 함께하는 건강한 변화",
-      "en": "Healthy Change with AI",
-      "ja": "AIと一緒の健康的な変化"
-    },
-    "overview": {
-      "purpose": {
-        "ko": "사용자의 체력과 목표에 맞는 개인화된 운동 및 건강 관리 솔루션 제공",
-        "en": "Providing personalized exercise and health management solutions tailored to user's fitness and goals",
-        "ja": "ユーザーの体力と目標に合わせたパーソナライズされた運動と健康管理ソリューション提供"
-      },
-      "target": {
-        "ko": "건강한 생활을 원하는 20-50대 성인",
-        "en": "Adults aged 20-50 who want a healthy lifestyle",
-        "ja": "健康的な生活を望む20-50代の成人"
-      },
-      "value": {
-        "ko": "과학적 근거에 기반한 개인화된 건강 관리",
-        "en": "Personalized health management based on scientific evidence",
-        "ja": "科学的根拠に基づいたパーソナライズされた健康管理"
-      }
-    },
-    "responsibilities": {
-      "ko": [
-        "Flutter 크로스플랫폼 앱 개발",
-        "Firebase 백엔드 연동",
-        "AI 모델 통합 및 최적화",
-        "실시간 데이터 처리 및 분석"
-      ],
-      "en": [
-        "Flutter cross-platform app development",
-        "Firebase backend integration",
-        "AI model integration and optimization",
-        "Real-time data processing and analysis"
-      ],
-      "ja": [
-        "Flutterクロスプラットフォームアプリ開発",
-        "Firebaseバックエンド連携",
-        "AIモデル統合と最適化",
-        "リアルタイムデータ処理と分析"
-      ]
-    },
-    "highlights": {
-      "ko": [
-        "컴퓨터 비전 기반 실시간 자세 분석",
-        "개인화된 운동 계획 자동 생성",
-        "사용자 건강 개선률 78% 달성"
-      ],
-      "en": [
-        "Computer vision-based real-time posture analysis",
-        "Automated personalized exercise planning",
-        "Achieved 78% user health improvement rate"
-      ],
-      "ja": [
-        "コンピュータビジョンベースのリアルタイム姿勢分析",
-        "パーソナライズされた運動計画自動生成",
-        "ユーザー健康改善率78%達成"
-      ]
-    },
-    "challenge": {
-      "problem": {
-        "ko": "개인별 체력과 목표의 다양성을 고려한 정확한 운동 추천의 어려움",
-        "en": "Difficulty in providing accurate exercise recommendations considering individual fitness and goal diversity",
-        "ja": "個人ごとの体力と目標の多様性を考慮した正確な運動推奨の困難"
-      },
-      "solution": {
-        "ko": "머신러닝 기반 개인화 알고리즘과 실시간 피드백 시스템 구축",
-        "en": "Building machine learning-based personalization algorithms and real-time feedback systems",
-        "ja": "機械学習ベースのパーソナライゼーションアルゴリズムとリアルタイムフィードバックシステム構築"
-      },
-      "result": {
-        "ko": "사용자 만족도 4.8/5.0, 운동 지속률 85% 달성",
-        "en": "Achieved user satisfaction 4.8/5.0, exercise continuation rate 85%",
-        "ja": "ユーザー満足度4.8/5.0、運動継続率85%達成"
-      }
-    },
-    "metrics": {
-      "ko": [
-        "월 활성 사용자 22,000명",
-        "평균 운동 지속률 85%",
-        "사용자 건강 개선률 78%"
-      ],
-      "en": [
-        "22,000 monthly active users",
-        "Average exercise continuation rate 85%",
-        "78% user health improvement rate"
-      ],
-      "ja": [
-        "月間アクティブユーザー22,000人",
-        "平均運動継続率85%",
-        "ユーザー健康改善率78%"
-      ]
-    }
-  },
   "links": {
     "appStore": "https://apps.apple.com/app/id1234567890",
-    "github": "https://github.com/YourUsername/Acon-AI-Trainer",
-    "website": "https://play.google.com/store/apps/details?id=com.acon.trainer"
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.acon.trainer",
+    "github": "https://github.com/YourUsername/Acon-AI-Trainer"
+  },
+  "additionalFeatures": {
+    "ko": "AI 기반 개인화된 운동 계획과 실시간 자세 분석을 제공하는 건강 관리 앱",
+    "en": "Health management app providing AI-based personalized exercise plans and real-time posture analysis",
+    "ja": "AIベースの個人化された運動計画とリアルタイム姿勢分析を提供する健康管理アプリ"
+  },
+  "overviewStory": {
+    "ko": "사용자의 체력과 목표에 맞는 개인화된 운동 및 건강 관리 솔루션 제공",
+    "en": "Providing personalized exercise and health management solutions tailored to user's fitness and goals",
+    "ja": "ユーザーの体力と目標に合わせたパーソナライズされた運動と健康管理ソリューション提供"
   },
   "service": {
     "problem": {
-      "ko": "개인 트레이너의 높은 비용과 접근성 문제, 부정확한 운동 자세로 인한 부상 위험.",
-      "en": "High cost and accessibility issues of personal trainers, and risk of injury due to incorrect exercise posture.",
-      "ja": "パーソナルトレーナーの高コストとアクセス性の問題、不正確な運動姿勢による怪我のリスク。"
+      "ko": "개인 트레이너의 높은 비용과 접근성 문제, 부정확한 운동 자세로 인한 부상 위험",
+      "en": "High cost and accessibility issues of personal trainers, and risk of injury due to incorrect exercise posture",
+      "ja": "パーソナルトレーナーの高コストとアクセス性の問題、不正確な運動姿勢による怪我のリスク"
     },
     "target": {
-      "ko": "집에서 저렴하고 안전하게 개인화된 운동 코칭을 받고자 하는 사용자.",
-      "en": "Users who want affordable and safe personalized exercise coaching at home.",
-      "ja": "自宅で手頃な価格で安全にパーソナライズされた運動コーチングを受けたいユーザー。"
+      "ko": "집에서 저렴하고 안전하게 개인화된 운동 코칭을 받고자 하는 사용자",
+      "en": "Users who want affordable and safe personalized exercise coaching at home",
+      "ja": "自宅で手頃な価格で安全にパーソナライズされた運動コーチングを受けたいユーザー"
     },
     "value": {
-      "ko": "AI 기반 실시간 자세 교정 및 개인화된 운동/식단 계획을 통한 건강 목표 달성 지원.",
-      "en": "Support for achieving health goals through AI-based real-time posture correction and personalized exercise/diet plans.",
-      "ja": "AIベースのリアルタイム姿勢矯正とパーソナライズされた運動/食事計画を通じた健康目標達成のサポート。"
+      "ko": "AI 기반 실시간 자세 교정 및 개인화된 운동/식단 계획을 통한 건강 목표 달성 지원",
+      "en": "Support for achieving health goals through AI-based real-time posture correction and personalized exercise/diet plans",
+      "ja": "AIベースのリアルタイム姿勢矯正とパーソナライズされた運動/食事計画を通じた健康目標達成のサポート"
     }
   },
   "detail_features": [
@@ -194,9 +104,9 @@
         "ja": "AIベースの運動計画生成"
       },
       "description": {
-        "ko": "사용자의 체력 수준, 목표, 선호도를 분석하여 주간/월간 맞춤형 운동 루틴을 자동 생성.",
-        "en": "Analyzes user's fitness level, goals, and preferences to automatically generate weekly/monthly customized exercise routines.",
-        "ja": "ユーザーの体力レベル、目標、好みを分析し、週次/月次のカスタマイズされた運動ルーチンを自動生成。"
+        "ko": "사용자의 체력 수준, 목표, 선호도를 분석하여 주간/월간 맞춤형 운동 루틴을 자동 생성",
+        "en": "Analyzes user's fitness level, goals, and preferences to automatically generate weekly/monthly customized exercise routines",
+        "ja": "ユーザーの体力レベル、目標、好みを分析し、週次/月次のカスタマイズされた運動ルーチンを自動生成"
       },
       "implemented": true
     },
@@ -207,56 +117,13 @@
         "ja": "リアルタイム運動姿勢分析 (CV)"
       },
       "description": {
-        "ko": "모바일 카메라를 통해 사용자의 운동 자세를 실시간으로 분석하고, 잘못된 자세에 대해 즉각적인 음성/시각 피드백 제공 (TensorFlow Lite/Core ML 통합).",
-        "en": "Analyzes user's exercise posture in real-time via the mobile camera and provides immediate voice/visual feedback on incorrect posture (integrated with TensorFlow Lite/Core ML).",
-        "ja": "モバイルカメラを通じてユーザーの運動姿勢をリアルタイムで分析し、間違った姿勢について即座に音声/視覚フィードバックを提供（TensorFlow Lite/Core ML統合）。"
-      },
-      "implemented": true
-    },
-    {
-      "title": {
-        "ko": "개인 맞춤형 식단 추천",
-        "en": "Personalized Diet Recommendations",
-        "ja": "個人カスタマイズ食事推奨"
-      },
-      "description": {
-        "ko": "운동량, 목표 체중, 알레르기 등을 고려하여 영양 균형이 잡힌 식단과 레시피를 추천.",
-        "en": "Recommends nutritionally balanced diets and recipes considering exercise volume, target weight, and allergies.",
-        "ja": "運動量、目標体重、アレルギーなどを考慮し、栄養バランスの取れた食事とレシピを推奨。"
-      },
-      "implemented": true
-    },
-    {
-      "title": {
-        "ko": "건강 데이터 시각화 및 추적",
-        "en": "Health Data Visualization and Tracking",
-        "ja": "健康データ可視化と追跡"
-      },
-      "description": {
-        "ko": "운동 기록, 칼로리 소모, 체중 변화 등을 직관적인 차트로 시각화하고, Firebase에 안전하게 저장.",
-        "en": "Visualizes exercise records, calorie consumption, weight changes, etc., with intuitive charts and securely stores them in Firebase.",
-        "ja": "運動記録、カロリー消費、体重変化などを直感的なチャートで視覚化し、Firebaseに安全に保存。"
+        "ko": "모바일 카메라를 통해 사용자의 운동 자세를 실시간으로 분석하고, 잘못된 자세에 대해 즉각적인 음성/시각 피드백 제공",
+        "en": "Analyzes user's exercise posture in real-time via the mobile camera and provides immediate voice/visual feedback on incorrect posture",
+        "ja": "モバイルカメラを通じてユーザーの運動姿勢をリアルタイムで分析し、間違った姿勢について即座に音声/視覚フィードバックを提供"
       },
       "implemented": true
     }
   ],
-  "more_Detail_features": {
-    "cv_model": {
-      "ko": "MediaPipe Pose 또는 커스텀 경량 Pose Estimation 모델을 Flutter 앱에 TensorFlow Lite로 통합하여 온디바이스 실시간 자세 분석 구현.",
-      "en": "Implemented on-device real-time posture analysis by integrating MediaPipe Pose or a custom lightweight Pose Estimation model into the Flutter app using TensorFlow Lite.",
-      "ja": "MediaPipe Poseまたはカスタム軽量姿勢推定モデルをFlutterアプリにTensorFlow Liteで統合し、オンデバイスリアルタイム姿勢分析を実装。"
-    },
-    "ml_recommendation": {
-      "ko": "사용자 입력 및 운동 기록을 기반으로 한 협업 필터링(Collaborative Filtering) 또는 콘텐츠 기반 추천 알고리즘을 사용하여 운동/식단 추천.",
-      "en": "Used Collaborative Filtering or content-based recommendation algorithms based on user input and exercise records for exercise/diet recommendations.",
-      "ja": "ユーザー入力と運動記録に基づいた協調フィルタリング（Collaborative Filtering）またはコンテンツベースの推奨アルゴリズムを使用して運動/食事を推奨。"
-    },
-    "firebase_integration": {
-      "ko": "Firebase Authentication으로 사용자 인증, Firestore/Realtime Database로 운동 기록 및 계획 저장, Cloud Functions로 백엔드 로직 처리.",
-      "en": "Used Firebase Authentication for user authentication, Firestore/Realtime Database for storing exercise records and plans, and Cloud Functions for backend logic processing.",
-      "ja": "Firebase Authenticationでユーザー認証、Firestore/Realtime Databaseで運動記録と計画を保存、Cloud Functionsでバックエンドロジックを処理。"
-    }
-  },
   "preview_screenshots": {
     "screenshots": [
       "/assets/acon/shot-1.png",
@@ -266,63 +133,78 @@
       "/assets/acon/shot-5.png"
     ],
     "description": {
-      "ko": "Flutter 앱 프리뷰",
-      "en": "Flutter App Preview",
-      "ja": "Flutterアプリプレビュー"
+      "ko": "모바일 앱 프리뷰",
+      "en": "Mobile App Preview",
+      "ja": "モバイルアプリプレビュー"
     }
+  },
+  "techStack": {
+    "frontend": "Flutter, Dart, Provider/Riverpod",
+    "backend": "Firebase (Authentication, Firestore, Cloud Functions)",
+    "ai_ml": "TensorFlow Lite, Core ML, MediaPipe, Python",
+    "data": "Firebase Firestore/Realtime Database",
+    "devops": "Fastlane, Firebase CLI"
   },
   "architecture": {
     "components": "Flutter App (Dart) · Firebase (Auth, Firestore, Cloud Functions) · ML Model (TensorFlow Lite/Core ML)",
     "dataFlow": {
-      "ko": "사용자 활동 → Flutter (데이터 처리/CV 분석) → Firebase (저장/백엔드 로직) → Flutter (UI 업데이트/피드백).",
-      "en": "User Activity → Flutter (Data Processing/CV Analysis) → Firebase (Storage/Backend Logic) → Flutter (UI Update/Feedback).",
-      "ja": "ユーザー活動 → Flutter (データ処理/CV分析) → Firebase (保存/バックエンドロジック) → Flutter (UI更新/フィードバック)。"
+      "ko": "사용자 활동 → Flutter (데이터 처리/CV 분석) → Firebase (저장/백엔드 로직) → Flutter (UI 업데이트/피드백)",
+      "en": "User Activity → Flutter (Data Processing/CV Analysis) → Firebase (Storage/Backend Logic) → Flutter (UI Update/Feedback)",
+      "ja": "ユーザー活動 → Flutter (データ処理/CV分析) → Firebase (保存/バックエンドロジック) → Flutter (UI更新/フィードバック)"
     },
     "deployment": "App Store / Google Play Store (Flutter Build) · Firebase Hosting/Functions",
     "security": {
-      "ko": "Firebase Authentication을 통한 안전한 사용자 관리, Firestore 보안 규칙을 통한 데이터 접근 제어, 온디바이스 ML 모델 사용.",
-      "en": "Secure user management via Firebase Authentication, data access control via Firestore Security Rules, use of on-device ML model.",
-      "ja": "Firebase Authenticationによる安全なユーザー管理、Firestoreセキュリティルールによるデータアクセス制御、オンデバイスMLモデルの使用。"
+      "ko": "Firebase Authentication을 통한 안전한 사용자 관리, Firestore 보안 규칙을 통한 데이터 접근 제어",
+      "en": "Secure user management via Firebase Authentication, data access control via Firestore Security Rules",
+      "ja": "Firebase Authenticationによる安全なユーザー管理、Firestoreセキュリティルールによるデータアクセス制御"
     },
     "network": {
-      "ko": "HTTPS (Firebase API 통신), 실시간 데이터 동기화 (Firestore/Realtime DB).",
-      "en": "HTTPS (Firebase API communication), Real-time data synchronization (Firestore/Realtime DB).",
-      "ja": "HTTPS (Firebase API通信)、リアルタイムデータ同期 (Firestore/Realtime DB)。"
+      "ko": "HTTPS (Firebase API 통신), 실시간 데이터 동기화 (Firestore/Realtime DB)",
+      "en": "HTTPS (Firebase API communication), Real-time data synchronization (Firestore/Realtime DB)",
+      "ja": "HTTPS (Firebase API通信)、リアルタイムデータ同期 (Firestore/Realtime DB)"
     }
-  },
-  "techStack": {
-    "frontend": "Flutter, Dart, Provider/Riverpod (State Management)",
-    "backend": "Firebase (Authentication, Firestore, Cloud Functions)",
-    "ai_ml": "TensorFlow Lite, Core ML, MediaPipe, Python (Model Training)",
-    "data": "Firebase Firestore/Realtime Database",
-    "devops": "Fastlane (Deployment Automation), Firebase CLI"
   },
   "responsibilities": {
-    "planning": {
-      "ko": "컴퓨터 비전 기반 자세 분석 기능의 온디바이스 구현 전략 정의, 개인화 추천 알고리즘 설계.",
-      "en": "Defined on-device implementation strategy for computer vision-based posture analysis, designed personalization recommendation algorithm.",
-      "ja": "コンピュータビジョンベースの姿勢分析機能のオンデバイス実装戦略の定義、パーソナライズ推奨アルゴリズムの設計。"
-    },
-    "design": {
-      "ko": "Flutter 기반 크로스플랫폼 UI/UX 설계, Firebase 데이터 모델링, AI 모델 통합 인터페이스 설계.",
-      "en": "Designed Flutter-based cross-platform UI/UX, Firebase data modeling, designed AI model integration interface.",
-      "ja": "FlutterベースのクロスプラットフォームUI/UX設計、Firebaseデータモデリング、AIモデル統合インターフェースの設計。"
-    },
-    "implementation": {
-      "ko": "Flutter 앱 개발 (UI/로직), 카메라 연동 및 실시간 자세 분석 로직 구현, Firebase 연동 및 데이터 처리.",
-      "en": "Developed Flutter app (UI/Logic), implemented camera integration and real-time posture analysis logic, integrated Firebase and data processing.",
-      "ja": "Flutterアプリ開発（UI/ロジック）、カメラ連携とリアルタイム姿勢分析ロジックの実装、Firebase連携とデータ処理。"
-    },
-    "operations": {
-      "ko": "App Store/Google Play 배포 및 관리, Firebase Crashlytics를 통한 오류 모니터링, A/B 테스트 진행.",
-      "en": "Managed App Store/Google Play deployment, monitored errors via Firebase Crashlytics, conducted A/B testing.",
-      "ja": "App Store/Google Playデプロイと管理、Firebase Crashlyticsによるエラー監視、A/Bテストの実施。"
-    },
-    "collaboration": {
-      "ko": "없음 (Solo Project), 사용자 피드백 기반 기능 개선 반복.",
-      "en": "None (Solo Project), iterative feature improvement based on user feedback.",
-      "ja": "なし（ソロプロジェクト）、ユーザーフィードバックに基づく機能改善の反復。"
-    }
+    "ko": [
+      "Flutter 크로스플랫폼 앱 개발",
+      "Firebase 백엔드 연동",
+      "AI 모델 통합 및 최적화",
+      "실시간 데이터 처리 및 분석"
+    ],
+    "en": [
+      "Flutter cross-platform app development",
+      "Firebase backend integration",
+      "AI model integration and optimization",
+      "Real-time data processing and analysis"
+    ],
+    "ja": [
+      "Flutterクロスプラットフォームアプリ開発",
+      "Firebaseバックエンド連携",
+      "AIモデル統合と最適化",
+      "リアルタイムデータ処理と分析"
+    ]
+  },
+  "lessonsLearned": {
+    "ko": "Flutter 환경에서 TensorFlow Lite를 활용한 온디바이스 ML 모델 통합 및 최적화 경험 확보",
+    "en": "Gained experience in integrating and optimizing on-device ML models using TensorFlow Lite in a Flutter environment",
+    "ja": "Flutter環境でTensorFlow Liteを活用したオンデバイスMLモデルの統合と最適化経験を獲得"
+  },
+  "metrics": {
+    "ko": [
+      "월 활성 사용자 15,000명",
+      "평균 운동 지속률 80%",
+      "사용자 만족도 4.7/5.0"
+    ],
+    "en": [
+      "15,000 monthly active users",
+      "Average exercise continuation rate 80%",
+      "User satisfaction 4.7/5.0"
+    ],
+    "ja": [
+      "月間アクティブユーザー15,000人",
+      "平均運動継続率80%",
+      "ユーザー満足度4.7/5.0"
+    ]
   },
   "deployment": {
     "environment": "Development → TestFlight/Internal Testing → App Store/Google Play",
@@ -333,26 +215,26 @@
     },
     "signing": "Apple Developer Program / Google Play Console",
     "secrets": {
-      "ko": "Firebase 설정 파일 및 환경 변수를 통한 API 키 관리.",
-      "en": "Managed API keys via Firebase configuration files and environment variables.",
-      "ja": "Firebase設定ファイルおよび環境変数を介したAPIキーの管理。"
+      "ko": "Firebase 설정 파일 및 환경 변수를 통한 API 키 관리",
+      "en": "Managed API keys via Firebase configuration files and environment variables",
+      "ja": "Firebase設定ファイルおよび環境変数を介したAPIキーの管理"
     }
   },
   "results": {
     "achievements": {
-      "ko": "컴퓨터 비전 기반 실시간 자세 분석 기능을 성공적으로 구현하여 사용자 운동 지속률 85% 달성.",
-      "en": "Successfully implemented computer vision-based real-time posture analysis feature, achieving an 85% user exercise continuation rate.",
-      "ja": "コンピュータビジョンベースのリアルタイム姿勢分析機能の実装に成功し、ユーザー運動継続率85%を達成。"
+      "ko": "컴퓨터 비전 기반 실시간 자세 분석 기능을 성공적으로 구현하여 사용자 운동 지속률 80% 달성",
+      "en": "Successfully implemented computer vision-based real-time posture analysis feature, achieving an 80% user exercise continuation rate",
+      "ja": "コンピュータビジョンベースのリアルタイム姿勢分析機能の実装に成功し、ユーザー運動継続率80%を達成"
     },
     "learnings": {
-      "ko": "Flutter 환경에서 TensorFlow Lite를 활용한 온디바이스 ML 모델 통합 및 최적화 경험 확보. 모바일 앱의 성능과 사용자 경험을 고려한 데이터 처리 방법 학습.",
-      "en": "Gained experience in integrating and optimizing on-device ML models using TensorFlow Lite in a Flutter environment. Learned data processing methods considering mobile app performance and user experience.",
-      "ja": "Flutter環境でTensorFlow Liteを活用したオンデバイスMLモデルの統合と最適化経験を獲得。モバイルアプリの性能とユーザー体験を考慮したデータ処理方法を学習。"
+      "ko": "Flutter 환경에서 TensorFlow Lite를 활용한 온디바이스 ML 모델 통합 및 최적화 경험 확보",
+      "en": "Gained experience in integrating and optimizing on-device ML models using TensorFlow Lite in a Flutter environment",
+      "ja": "Flutter環境でTensorFlow Liteを活用したオンデバイスMLモデルの統合と最適化経験を獲得"
     },
     "nextSteps": {
-      "ko": "웨어러블 기기 연동을 통한 생체 데이터 기반 추천 고도화, LLM 기반의 운동 코칭 대화 기능 추가.",
-      "en": "Advanced recommendation based on biometric data through wearable device integration, added LLM-based exercise coaching conversation feature.",
-      "ja": "ウェアラブルデバイス連携による生体データベースの推奨の高度化、LLMベースの運動コーチング会話機能の追加。"
+      "ko": "웨어러블 기기 연동을 통한 생체 데이터 기반 추천 고도화, LLM 기반의 운동 코칭 대화 기능 추가",
+      "en": "Advanced recommendation based on biometric data through wearable device integration, added LLM-based exercise coaching conversation feature",
+      "ja": "ウェアラブルデバイス連携による生体データベースの推奨の高度化、LLMベースの運動コーチング会話機能の追加"
     }
   },
   "additional_links": {

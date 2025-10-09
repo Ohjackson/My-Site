@@ -69,100 +69,10 @@
       "ソーシャル機能と思い出共有"
     ]
   },
-  "detail": {
-    "subtitle": {
-      "ko": "AI가 만드는 완벽한 커플 여행",
-      "en": "Perfect Couple Travel Created by AI",
-      "ja": "AIが作る完璧なカップル旅行"
-    },
-    "overview": {
-      "purpose": {
-        "ko": "커플의 취향과 상황을 분석하여 최적의 여행 계획을 제공하는 AI 서비스",
-        "en": "AI service that analyzes couples' preferences and situations to provide optimal travel plans",
-        "ja": "カップルの好みと状況を分析し、最適な旅行計画を提供するAIサービス"
-      },
-      "target": {
-        "ko": "여행을 계획하는 20-40대 커플",
-        "en": "Couples in their 20s-40s planning trips",
-        "ja": "旅行を計画する20-40代のカップル"
-      },
-      "value": {
-        "ko": "개인화된 여행 경험을 통한 특별한 추억 창조",
-        "en": "Creating special memories through personalized travel experiences",
-        "ja": "パーソナライズされた旅行体験を通じた特別な思い出の創造"
-      }
-    },
-    "responsibilities": {
-      "ko": [
-        "프론트엔드 React 애플리케이션 개발",
-        "Node.js 백엔드 API 구축",
-        "MongoDB 데이터베이스 설계",
-        "AI 추천 알고리즘 구현"
-      ],
-      "en": [
-        "Frontend React application development",
-        "Node.js backend API construction",
-        "MongoDB database design",
-        "AI recommendation algorithm implementation"
-      ],
-      "ja": [
-        "フロントエンドReactアプリケーション開発",
-        "Node.jsバックエンドAPI構築",
-        "MongoDBデータベース設計",
-        "AI推奨アルゴリズム実装"
-      ]
-    },
-    "highlights": {
-      "ko": [
-        "머신러닝 기반 개인화 추천 시스템",
-        "실시간 협업 여행 계획 기능",
-        "사용자 만족도 92% 달성"
-      ],
-      "en": [
-        "Machine learning-based personalized recommendation system",
-        "Real-time collaborative travel planning features",
-        "Achieved 92% user satisfaction"
-      ],
-      "ja": [
-        "機械学習ベースのパーソナライズ推奨システム",
-        "リアルタイム協力旅行計画機能",
-        "ユーザー満足度92%達成"
-      ]
-    },
-    "challenge": {
-      "problem": {
-        "ko": "커플의 서로 다른 취향을 조화롭게 반영한 여행 계획의 어려움",
-        "en": "Difficulty in creating travel plans that harmoniously reflect couples' different preferences",
-        "ja": "カップルの異なる好みを調和よく反映した旅行計画の困難"
-      },
-      "solution": {
-        "ko": "AI 기반 취향 분석 및 절충안 제시 알고리즘 개발",
-        "en": "Development of AI-based preference analysis and compromise suggestion algorithm",
-        "ja": "AIベースの好み分析と妥協案提示アルゴリズムの開発"
-      },
-      "result": {
-        "ko": "커플 만족도 4.9/5.0, 재사용률 78% 달성",
-        "en": "Achieved couple satisfaction 4.9/5.0, reuse rate 78%",
-        "ja": "カップル満足度4.9/5.0、再利用率78%達成"
-      }
-    },
-    "metrics": {
-      "ko": [
-        "월 활성 사용자 25,000명",
-        "평균 여행 계획 완성률 89%",
-        "커플 만족도 4.9/5.0"
-      ],
-      "en": [
-        "25,000 monthly active users",
-        "Average travel plan completion rate 89%",
-        "Couple satisfaction 4.9/5.0"
-      ],
-      "ja": [
-        "月間アクティブユーザー25,000人",
-        "平均旅行計画完成率89%",
-        "カップル満足度4.9/5.0"
-      ]
-    }
+  "overviewStory": {
+    "ko": "커플의 취향과 상황을 분석하여 최적의 여행 계획을 제공하는 AI 서비스",
+    "en": "AI service that analyzes couples' preferences and situations to provide optimal travel plans",
+    "ja": "カップルの好みと状況を分析して最適な旅行計画を提供するAIサービス"
   },
   "links": {
     "demo": "https://loventure.app",
@@ -239,23 +149,6 @@
       "implemented": true
     }
   ],
-  "more_Detail_features": {
-    "ai_recommendation_model": {
-      "ko": "협업 필터링(Collaborative Filtering)과 딥러닝(DNN)을 결합한 하이브리드 추천 모델을 사용하여, 커플의 상호작용 패턴까지 고려한 추천 정확도 향상.",
-      "en": "Used a hybrid recommendation model combining Collaborative Filtering and Deep Learning (DNN) to improve recommendation accuracy by considering couple interaction patterns.",
-      "ja": "協調フィルタリング（Collaborative Filtering）と深層学習（DNN）を組み合わせたハイブリッド推奨モデルを使用し、カップルの相互作用パターンまで考慮した推奨精度を向上。"
-    },
-    "compromise_algorithm": {
-      "ko": "다중 목표 최적화(Multi-Objective Optimization) 기법을 적용하여, 두 사용자의 만족도 함수를 동시에 최대화하는 여행지/활동 조합을 탐색.",
-      "en": "Applied Multi-Objective Optimization techniques to search for a combination of destinations/activities that simultaneously maximizes the satisfaction functions of both users.",
-      "ja": "多目的最適化（Multi-Objective Optimization）手法を適用し、二人のユーザーの満足度関数を同時に最大化する旅行先/アクティビティの組み合わせを探索。"
-    },
-    "realtime_sync": {
-      "ko": "Socket.io를 사용하여 실시간 데이터 동기화 채널을 구축하고, MongoDB의 변경 스트림(Change Streams)을 활용하여 백엔드 데이터 변경을 즉시 클라이언트에 전파.",
-      "en": "Built a real-time data synchronization channel using Socket.io and utilized MongoDB's Change Streams to instantly propagate backend data changes to clients.",
-      "ja": "Socket.ioを使用してリアルタイムデータ同期チャネルを構築し、MongoDBの変更ストリーム（Change Streams）を活用してバックエンドデータの変更を即座にクライアントに伝播。"
-    }
-  },
   "preview_screenshots": {
     "screenshots": [
       "/assets/loventure/shot-1.png",
@@ -293,33 +186,6 @@
     "ai_ml": "Python, TensorFlow, Scikit-learn, Collaborative Filtering, DNN",
     "data": "MongoDB, Redis (Caching)",
     "devops": "Docker, AWS/GCP Compute Engine, GitHub Actions"
-  },
-  "responsibilities": {
-    "planning": {
-      "ko": "커플 취향 절충 알고리즘 로직 설계, 실시간 협업을 위한 데이터 동기화 전략 정의.",
-      "en": "Designed the logic for the couple preference compromise algorithm, defined data synchronization strategy for real-time collaboration.",
-      "ja": "カップルの好み妥協アルゴリズムのロジック設計、リアルタイム協力のためのデータ同期戦略の定義。"
-    },
-    "design": {
-      "ko": "React 컴포넌트 기반 UI/UX 설계, MongoDB 스키마 설계, Node.js API 엔드포인트 정의.",
-      "en": "Designed React component-based UI/UX, MongoDB schema design, defined Node.js API endpoints.",
-      "ja": "ReactコンポーネントベースのUI/UX設計、MongoDBスキーマ設計、Node.js APIエンドポイントの定義。"
-    },
-    "implementation": {
-      "ko": "React 프론트엔드 개발, Node.js 백엔드 API 및 Socket.io 서버 구현, Python 기반 AI 추천 모델 통합.",
-      "en": "Developed React frontend, implemented Node.js backend API and Socket.io server, integrated Python-based AI recommendation model.",
-      "ja": "Reactフロントエンドの開発、Node.jsバックエンドAPIおよびSocket.ioサーバーの実装、PythonベースのAI推奨モデルの統合。"
-    },
-    "operations": {
-      "ko": "Docker를 활용한 배포 환경 구축, CI/CD 파이프라인 관리, 서비스 모니터링 및 성능 최적화.",
-      "en": "Built deployment environment using Docker, managed CI/CD pipeline, service monitoring and performance optimization.",
-      "ja": "Dockerを活用したデプロイ環境の構築、CI/CDパイプラインの管理、サービス監視とパフォーマンス最適化。"
-    },
-    "collaboration": {
-      "ko": "없음 (Solo Project), 커플 사용자 대상 베타 테스트 및 피드백 반영.",
-      "en": "None (Solo Project), conducted beta testing with couple users and incorporated feedback.",
-      "ja": "なし（ソロプロジェクト）、カップルユーザーを対象としたベータテストとフィードバックの反映。"
-    }
   },
   "deployment": {
     "environment": "Development → Staging → Production (AWS/GCP)",

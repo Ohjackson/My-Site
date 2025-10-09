@@ -51,7 +51,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
   const project = projectData[projectId as keyof typeof projectData] || projectData.tangocho;
   console.log('Selected project:', project);
   console.log('Project keys:', Object.keys(project));
-  console.log('Project detail:', project.detail);
+  console.log('Project overviewStory:', project.overviewStory);
   console.log('Project danggocho:', (project as any).danggocho);
 
   const content = {
@@ -226,11 +226,11 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         let sectionIndex = 0;
 
         // Overview Section
-        if (project.detail?.overview) {
+        if (project.overviewStory) {
           sections.push(
             <OverviewSection 
               key="overview" 
-              data={project.detail.overview} 
+              data={project} 
               language={language} 
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
@@ -350,11 +350,11 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         }
 
         // Responsibilities Section
-        if (project.detail?.responsibilities) {
+        if ((project as any).responsibilities) {
           sections.push(
             <ResponsibilitiesSection 
               key="responsibilities" 
-              data={project.detail} 
+              data={project as any} 
               language={language} 
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
@@ -386,11 +386,11 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         }
 
         // Results Section
-        if (project.detail?.metrics) {
+        if ((project as any).metrics) {
           sections.push(
             <ResultsSection 
               key="results" 
-              data={project.detail} 
+              data={project as any} 
               language={language} 
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />

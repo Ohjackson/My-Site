@@ -13,7 +13,7 @@ interface ResponsibilitiesSectionProps {
 }
 
 export function ResponsibilitiesSection({ data, language, backgroundColor }: ResponsibilitiesSectionProps) {
-  if (!data?.responsibilities) return null;
+  if (!data?.responsibilities || !data.responsibilities[language]) return null;
 
   const content = {
     ko: { title: "내가 담당한 것" },
