@@ -140,7 +140,7 @@
     "techStack": {
       "frontend": "React, TypeScript, Tailwind CSS",
       "backend": "Node.js, Express, MongoDB",
-      "ai_ml": "Python, TensorFlow, scikit-learn",
+      "AI": "Python, TensorFlow, scikit-learn",
       "devops": "Docker, AWS, GitHub Actions"
     },
     "data": {
@@ -148,17 +148,6 @@
       "en": "MongoDB, Redis",
       "ja": "MongoDB, Redis"
     },
-    "deployment": {
-      "ko": "AWS EC2 · MongoDB Atlas · Docker Containers",
-      "en": "AWS EC2 · MongoDB Atlas · Docker Containers",
-      "ja": "AWS EC2 · MongoDB Atlas · Docker Containers"
-    },
-    "architecture": {
-      "frontend": {
-        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보, Tailwind CSS로 반응형 디자인",
-        "en": "React-based SPA with TypeScript for type safety, responsive design with Tailwind CSS",
-        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保、Tailwind CSSによるレスポンシブデザイン"
-      },
       "backend": {
         "ko": "Node.js + Express RESTful API, MongoDB 데이터베이스, Python AI/ML 파이프라인",
         "en": "Node.js + Express RESTful API, MongoDB database, Python AI/ML pipeline",
@@ -174,8 +163,7 @@
         "en": "JWT authentication, data encryption, HIPAA compliance",
         "ja": "JWT認証、データ暗号化、HIPAA準拠"
       }
-    }
-  },
+    },
   "responsibilities": {
     "ko": [
       "React 프론트엔드 개발",
@@ -218,20 +206,12 @@
       "投資収益率平均15%改善"
     ]
   },
-  "deployment": {
-    "environment": "Development → Staging → Production",
-    "pipeline": {
-      "ko": "GitHub Actions → Docker Build → AWS ECS 배포",
-      "en": "GitHub Actions → Docker Build → AWS ECS Deployment",
-      "ja": "GitHub Actions → Docker Build → AWS ECSデプロイ"
-    },
     "signing": "AWS Certificate Manager",
     "secrets": {
       "ko": "AWS Secrets Manager를 통한 환경 변수 관리",
       "en": "Environment variable management via AWS Secrets Manager",
       "ja": "AWS Secrets Managerによる環境変数管理"
-    }
-  },
+    },
   "results": {
     "achievements": {
       "ko": "건강과 금융을 연결하는 혁신적인 AI 서비스로 사용자 만족도 4.7/5.0 달성",

@@ -95,12 +95,12 @@
         "ko": "싱글 플레이(터치 카운트)",
         "en": "Single Play (Touch Count)",
         "ja": "シングルプレイ（タッチカウント）"
-      }
+      },
       "description": {
         "ko": "고양이를 터치해 입을 여닫으면 점수가 오르는 간단한 기록 모드. 개인 최고 기록 저장.",
         "en": "Tap to open/close the cat’s mouth and rack up points. Saves personal best.",
         "ja": "ネコをタップして口の開閉でスコア加算。自己ベストを保存。"
-      }
+      },
       "implemented": true
     },
     {
@@ -108,12 +108,12 @@
         "ko": "1대1 근거리 배틀",
         "en": "1v1 Nearby Battle",
         "ja": "1対1近距離バトル"
-      }
+      },
       "description": {
         "ko": "아이폰에서 페어링한 뒤 배틀은 워치에서 진행. 터치 카운트를 실시간 동기화해 승패 결정.",
         "en": "Pair on iPhone, then battle on Watch. Touch counts sync in real time to decide the winner.",
         "ja": "iPhoneでペアリング後、バトルはWatchで実施。タッチ数をリアルタイム同期して勝敗を決定。"
-      }
+      },
       "implemented": true
     },
     {
@@ -121,12 +121,12 @@
         "ko": "국가별 랭킹(한·일)",
         "en": "Country Rankings (KR/JP)",
         "ja": "国別ランキング（日・韓）"
-      }
+      },
       "description": {
         "ko": "누적 점수 기반 국가 대항전. 위치 기반 국가 분류 및 주간 리더보드 제공.",
         "en": "Nation-vs-nation ladder from cumulative scores; location-based country classification and weekly leaderboard.",
         "ja": "累計スコアによる国別対抗。位置情報で国を判定し、週間リーダーボードを提供。"
-      }
+      },
       "implemented": true
     },
     {
@@ -134,12 +134,12 @@
         "ko": "고양이 레벨업/업적",
         "en": "Cat Level-up & Achievements",
         "ja": "ネコのレベルアップ・実績"
-      }
+      },
       "description": {
         "ko": "개인 카운트 누적에 따라 고양이 스킨·이펙트 해금. 업적 배지 제공.",
         "en": "Unlock skins/effects as your personal count grows. Earn achievement badges.",
         "ja": "累計カウントに応じてスキンやエフェクトを解放。実績バッジを獲得。"
-      }
+      },
       "implemented": false
     }
   ],
@@ -155,41 +155,69 @@
       "ja": "Watchのバトル画面、iPhoneペアリング、国別ランキングのプレビュー"
     }
   },
+ 
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "React, TypeScript",
-      "backend": "Node.js, Express",
-      "ai_ml": "Python, TensorFlow",
-      "devops": "Docker, AWS"
+      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
+      "backend": "Swift, SwiftUI",
+      "database": "CoreData or SwiftData, CloudKit(iCloud)",
+      "AI": "Core ML(ResNet-50), Vision",
+      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
+      "infra": "iCloud"
+    }
+  },
+  "responsibilities": {
+    "ko": [
+      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
+      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
+      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
+      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
+    ],
+    "en": [
+      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
+      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
+      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
+      "Operations: TestFlight releases, notifications, data migration"
+    ],
+    "ja": [
+      "企画：『即保存→SRS→クローズ→書く』ループ定義",
+      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
+      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
+      "運用：TestFlight配信、通知、データ移行"
+    ]
+  },
+  "metrics": {
+    "ko": [
+      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
+        ],
+    "en": [
+      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
+      "Perceived next-day recall improved when handwriting practice is combined"
+    ],
+    "ja": [
+      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
+      "書き取り練習を併用すると翌日の再想起が向上（体感）"
+    ]
+  },
+  "lessonsLearned": {
+    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
+    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
+    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
+  },
+  "results": {
+    "achievements": {
+      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
+      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
+      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
     },
-    "data": {
-      "ko": "MongoDB, Redis",
-      "en": "MongoDB, Redis",
-      "ja": "MongoDB, Redis"
-    },
-    "deployment": {
-      "ko": "AWS EC2, Docker Containers",
-      "en": "AWS EC2, Docker Containers",
-      "ja": "AWS EC2, Docker Containers"
-    },
-    "architecture": {
-      "frontend": {
-        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보",
-        "en": "React-based SPA with TypeScript for type safety",
-        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保"
-      }
-      "backend": {
-        "ko": "Node.js + Express RESTful API, MongoDB 데이터베이스",
-        "en": "Node.js + Express RESTful API, MongoDB database",
-        "ja": "Node.js + Express RESTful API、MongoDBデータベース"
-      }
-      "dataFlow": {
-        "ko": "사용자 입력 → 백엔드 처리 → 데이터베이스 저장 → 프론트엔드 표시",
-        "en": "User Input → Backend Processing → Database Storage → Frontend Display",
-        "ja": "ユーザー入力 → バックエンド処理 → データベース保存 → フロントエンド表示"
-      }
-      "security": {
-        "ko": "JWT 인증, 데이터 암호화",
-        "en": "JWT authentication, data encryption",
-        "ja": "JWT認証、データ暗号化"
-      }
+    "nextSteps": {
+      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
+      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
+      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
+    }
+  },
+  "additional_links": {
+    "website": "https://acon.app",
+    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
+  }
+}

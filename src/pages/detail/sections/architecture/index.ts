@@ -1,1 +1,0 @@
-export { ArchitectureSection } from './ArchitectureSection';

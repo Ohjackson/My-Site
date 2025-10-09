@@ -1,9 +1,12 @@
 interface TechStackData {
-  frontend: string | { ko: string; en: string; ja: string };
-  ai: string | { ko: string; en: string; ja: string };
-  data: string | { ko: string; en: string; ja: string };
-  devops: string | { ko: string; en: string; ja: string };
-  etc: string | { ko: string; en: string; ja: string };
+  techStack: {
+    frontend?: string;
+    backend?: string;
+    ai_ml?: string;
+    devops?: string;
+    database?: string;
+    infra?: string;
+  };
 }
 
 interface TechStackSectionProps {
@@ -19,26 +22,29 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
     ko: { 
       title: "기술 스택",
       frontend: "프론트엔드",
-      ai: "AI/ML",
-      data: "데이터",
+      backend: "백엔드",
+      ai_ml: "AI/ML",
+      database: "데이터베이스",
       devops: "DevOps",
-      etc: "기타"
+      infra: "인프라"
     },
     en: { 
       title: "Tech Stack",
       frontend: "Frontend",
-      ai: "AI/ML",
-      data: "Data",
+      backend: "Backend",
+      ai_ml: "AI/ML",
+      database: "Database",
       devops: "DevOps",
-      etc: "Others"
+      infra: "Infrastructure"
     },
     ja: { 
       title: "技術スタック",
       frontend: "フロントエンド",
-      ai: "AI/ML",
-      data: "データ",
+      backend: "バックエンド",
+      ai_ml: "AI/ML",
+      database: "データベース",
       devops: "DevOps",
-      etc: "その他"
+      infra: "インフラ"
     }
   };
 
@@ -49,44 +55,40 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
           {content[language].title}
         </h2>
         <div className="space-y-6">
-          {data.frontend && (
+          {data.techStack?.frontend && (
             <div>
               <h3 className="font-semibold mb-2">{content[language].frontend}</h3>
-              <p className="text-muted">
-                {typeof data.frontend === 'string' ? data.frontend : data.frontend[language]}
-              </p>
+              <p className="text-muted">{data.techStack.frontend}</p>
             </div>
           )}
-          {data.ai && (
+          {data.techStack?.backend && (
             <div>
-              <h3 className="font-semibold mb-2">{content[language].ai}</h3>
-              <p className="text-muted">
-                {typeof data.ai === 'string' ? data.ai : data.ai[language]}
-              </p>
+              <h3 className="font-semibold mb-2">{content[language].backend}</h3>
+              <p className="text-muted">{data.techStack.backend}</p>
             </div>
           )}
-          {data.data && (
+          {data.techStack?.ai_ml && (
             <div>
-              <h3 className="font-semibold mb-2">{content[language].data}</h3>
-              <p className="text-muted">
-                {typeof data.data === 'string' ? data.data : data.data[language]}
-              </p>
+              <h3 className="font-semibold mb-2">{content[language].ai_ml}</h3>
+              <p className="text-muted">{data.techStack.ai_ml}</p>
             </div>
           )}
-          {data.devops && (
+          {data.techStack?.database && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].database}</h3>
+              <p className="text-muted">{data.techStack.database}</p>
+            </div>
+          )}
+          {data.techStack?.devops && (
             <div>
               <h3 className="font-semibold mb-2">{content[language].devops}</h3>
-              <p className="text-muted">
-                {typeof data.devops === 'string' ? data.devops : data.devops[language]}
-              </p>
+              <p className="text-muted">{data.techStack.devops}</p>
             </div>
           )}
-          {data.etc && (
+          {data.techStack?.infra && (
             <div>
-              <h3 className="font-semibold mb-2">{content[language].etc}</h3>
-              <p className="text-muted">
-                {typeof data.etc === 'string' ? data.etc : data.etc[language]}
-              </p>
+              <h3 className="font-semibold mb-2">{content[language].infra}</h3>
+              <p className="text-muted">{data.techStack.infra}</p>
             </div>
           )}
         </div>

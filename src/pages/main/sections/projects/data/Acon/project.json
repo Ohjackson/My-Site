@@ -164,7 +164,7 @@
     "techStack": {
       "frontend": "iOS (SwiftUI, UIKit, Combine)",
       "backend": "Python (FastAPI), PostgreSQL/SQLite, Nginx",
-      "ai_ml": "LLM API orchestration, Prompt templates, Safety filters",
+      "AI": "LLM API orchestration, Prompt templates, Safety filters",
       "devops": "Docker, GitHub Actions, Home-server (team-operated)"
     },
     "data": {
@@ -172,17 +172,6 @@
       "en": "PostgreSQL/SQLite, (Opt) Redis cache",
       "ja": "PostgreSQL/SQLite, (Opt) Redis cache"
     },
-    "deployment": {
-      "ko": "Dockerized FastAPI on home server (reverse-proxied by Nginx) · iOS via TestFlight/App Store",
-      "en": "Dockerized FastAPI on home server (reverse-proxied by Nginx) · iOS via TestFlight/App Store",
-      "ja": "Dockerized FastAPI on home server (reverse-proxied by Nginx) · iOS via TestFlight/App Store"
-    },
-    "architecture": {
-      "frontend": {
-        "ko": "SwiftUI 기반 iOS 앱, Combine을 통한 반응형 상태 관리, 멀티 페르소나 대화 인터페이스",
-        "en": "SwiftUI-based iOS app, reactive state management with Combine, multi-persona dialogue interface",
-        "ja": "SwiftUIベースのiOSアプリ、Combineによる反応型状態管理、マルチペルソナ対話インターフェース"
-      },
       "backend": {
         "ko": "FastAPI 기반 RESTful API, PostgreSQL/SQLite 데이터베이스, Nginx 리버스 프록시",
         "en": "FastAPI-based RESTful API, PostgreSQL/SQLite database, Nginx reverse proxy",
@@ -198,8 +187,7 @@
         "en": "JWT, anonymized IDs, TLS in transit, PII minimization",
         "ja": "JWT、匿名化ID、通信のTLS、PII最小化"
       }
-    }
-  },
+    },
   "responsibilities": {
     "ko": [
       "iOS 클라이언트(UI/상태)와 FastAPI 백엔드 핵심 엔드포인트 구현",
@@ -238,20 +226,6 @@
       "アルファ段階のフィードバック：セッション後の振り返り記入率が向上",
       "クラッシュフリーセッション率の改善"
     ]
-  },
-  "deployment": {
-    "environment": "Development → Staging → Production (home-server)",
-    "pipeline": {
-      "ko": "GitHub Actions → Docker Build → 홈서버 배포(Nginx 리버스 프록시, 수동 롤아웃)",
-      "en": "GitHub Actions → Docker build → Home-server deploy (Nginx reverse proxy, manual rollout)",
-      "ja": "GitHub Actions → Dockerビルド → ホームサーバー配備（Nginxリバースプロキシ、手動ロールアウト）"
-    },
-    "signing": "Apple Developer Program",
-    "secrets": {
-      "ko": ".env 분리, Keychain(iOS), 서버 환경변수로 민감값 관리",
-      "en": "Split .env, Keychain (iOS), and server env vars for sensitive keys",
-      "ja": "環境変数を分離し、iOSはKeychain、サーバーは環境変数で機微情報を管理"
-    }
   },
   "results": {
     "achievements": {

@@ -5,10 +5,8 @@ import { OverviewSection } from "./sections/overview";
 import { ServiceSection } from "./sections/service";
 import { FeaturesSection } from "./sections/features";
 import { PreviewSection } from "./sections/preview";
-import { ArchitectureSection } from "./sections/architecture";
 import { TechStackSection } from "./sections/techstack";
 import { ResponsibilitiesSection } from "./sections/responsibilities";
-import { DeploymentSection } from "./sections/deployment";
 import { ResultsSection } from "./sections/results";
 import { AdditionalSection } from "./sections/additional";
 import { OtherProjectsSection } from "./sections/other-projects";
@@ -20,7 +18,7 @@ import routiqData from '../main/sections/projects/data/Routiq/project.json';
 import aconData from '../main/sections/projects/data/Acon/project.json';
 import popcoData from '../main/sections/projects/data/POPCO/project.json';
 import daonData from '../main/sections/projects/data/Daon/project.json';
-import pliadData from '../main/sections/projects/data/Pliad/project.json';
+import wiroData from '../main/sections/projects/data/Wiro/project.json';
 import mySiteData from '../main/sections/projects/data/MySite/project.json';
 import healthfinbotData from '../main/sections/projects/data/healthFinBot/project.json';
 import ideaverifyprogramData from '../main/sections/projects/data/IdeaVerifyProgram/project.json';
@@ -32,7 +30,7 @@ const projectData = {
   acon: aconData,
   popco: popcoData,
   daon: daonData,
-  pliad: pliadData,
+  wiro: wiroData,
   mysite: mySiteData,
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
@@ -303,45 +301,12 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           sectionIndex++;
         }
 
-        // Architecture Section
-        if ((project as any).danggocho?.architecture) {
-          sections.push(
-            <ArchitectureSection 
-              key="architecture" 
-              data={(project as any).danggocho.architecture} 
-              language={language} 
-              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
-            />
-          );
-          sectionIndex++;
-        } else if ((project as any).architecture) {
-          sections.push(
-            <ArchitectureSection 
-              key="architecture" 
-              data={(project as any).architecture} 
-              language={language} 
-              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
-            />
-          );
-          sectionIndex++;
-        }
-
         // TechStack Section
-        if ((project as any).danggocho?.techStack) {
+        if ((project as any).stackAndArchitecture?.techStack) {
           sections.push(
             <TechStackSection 
               key="techstack" 
-              data={(project as any).danggocho.techStack} 
-              language={language} 
-              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
-            />
-          );
-          sectionIndex++;
-        } else if ((project as any).techStack) {
-          sections.push(
-            <TechStackSection 
-              key="techstack" 
-              data={(project as any).techStack} 
+              data={(project as any).stackAndArchitecture} 
               language={language} 
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
@@ -362,28 +327,6 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           sectionIndex++;
         }
 
-        // Deployment Section
-        if ((project as any).danggocho?.deployment) {
-          sections.push(
-            <DeploymentSection 
-              key="deployment" 
-              data={(project as any).danggocho.deployment} 
-              language={language} 
-              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
-            />
-          );
-          sectionIndex++;
-        } else if ((project as any).deployment) {
-          sections.push(
-            <DeploymentSection 
-              key="deployment" 
-              data={(project as any).deployment} 
-              language={language} 
-              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
-            />
-          );
-          sectionIndex++;
-        }
 
         // Results Section
         if ((project as any).metrics) {

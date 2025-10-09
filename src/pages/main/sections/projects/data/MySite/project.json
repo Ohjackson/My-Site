@@ -104,12 +104,12 @@
         "ko": "프로젝트 템플릿 렌더러",
         "en": "Project Template Renderer",
         "ja": "プロジェクトテンプレートレンダラー"
-      }
+      },
       "description": {
         "ko": "JSON 기반 템플릿을 받아 카드/상세 페이지를 자동으로 생성. 일관된 UI와 빠른 업데이트 지원.",
         "en": "Consumes JSON templates to generate cards and detail pages automatically, enabling consistent UI and fast updates.",
         "ja": "JSONテンプレートからカード/詳細ページを自動生成。統一UIと迅速な更新を実現。"
-      }
+      },
       "implemented": true
     },
     {
@@ -117,12 +117,12 @@
         "ko": "다국어(i18n) 동기화",
         "en": "Multilingual (i18n) Synchronization",
         "ja": "多言語(i18n)同期"
-      }
+      },
       "description": {
         "ko": "국/영/일 키 동기화와 폴백 전략을 적용해 번역 누락 최소화.",
         "en": "Synchronizes KR/EN/JA keys with fallback strategy to minimize missing translations.",
         "ja": "韓/英/日のキーを同期し、フォールバック戦略で翻訳抜けを最小化。"
-      }
+      },
       "implemented": true
     },
     {
@@ -130,12 +130,12 @@
         "ko": "성능 최적화",
         "en": "Performance Optimization",
         "ja": "パフォーマンス最適化"
-      }
+      },
       "description": {
         "ko": "Vite 번들 최적화, 코드 스플리팅, 이미지 지연 로딩으로 TTI/CLS 개선.",
         "en": "Vite bundle tuning, code-splitting, and image lazy-loading to improve TTI/CLS.",
         "ja": "Viteのバンドル調整、コード分割、画像遅延読み込みでTTI/CLSを改善。"
-      }
+      },
       "implemented": true
     },
     {
@@ -143,12 +143,12 @@
         "ko": "SEO/OG 자동 메타",
         "en": "SEO/OG Auto Meta",
         "ja": "SEO/OG自動メタ"
-      }
+      },
       "description": {
         "ko": "페이지별 제목·설명·OG 이미지 자동 생성으로 검색·공유 성과 향상.",
         "en": "Auto-generates per-page title, description, and OG images to enhance search and sharing.",
         "ja": "ページごとのタイトル・説明・OG画像を自動生成し、検索/共有効果を向上。"
-      }
+      },
       "implemented": true
     }
   ],
@@ -166,39 +166,66 @@
   },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "React, TypeScript",
-      "backend": "Node.js, Express",
-      "ai_ml": "Python, TensorFlow",
-      "devops": "Docker, AWS"
+      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
+      "backend": "Swift, SwiftUI",
+      "database": "CoreData or SwiftData, CloudKit(iCloud)",
+      "AI": "Core ML(ResNet-50), Vision",
+      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
+      "infra": "iCloud"
+    }
+  },
+  "responsibilities": {
+    "ko": [
+      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
+      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
+      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
+      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
+    ],
+    "en": [
+      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
+      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
+      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
+      "Operations: TestFlight releases, notifications, data migration"
+    ],
+    "ja": [
+      "企画：『即保存→SRS→クローズ→書く』ループ定義",
+      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
+      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
+      "運用：TestFlight配信、通知、データ移行"
+    ]
+  },
+  "metrics": {
+    "ko": [
+      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
+        ],
+    "en": [
+      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
+      "Perceived next-day recall improved when handwriting practice is combined"
+    ],
+    "ja": [
+      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
+      "書き取り練習を併用すると翌日の再想起が向上（体感）"
+    ]
+  },
+  "lessonsLearned": {
+    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
+    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
+    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
+  },
+  "results": {
+    "achievements": {
+      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
+      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
+      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
     },
-    "data": {
-      "ko": "MongoDB, Redis",
-      "en": "MongoDB, Redis",
-      "ja": "MongoDB, Redis"
-    },
-    "deployment": {
-      "ko": "AWS EC2, Docker Containers",
-      "en": "AWS EC2, Docker Containers",
-      "ja": "AWS EC2, Docker Containers"
-    },
-    "architecture": {
-      "frontend": {
-        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보",
-        "en": "React-based SPA with TypeScript for type safety",
-        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保"
-      }
-      "backend": {
-        "ko": "Node.js + Express RESTful API, MongoDB 데이터베이스",
-        "en": "Node.js + Express RESTful API, MongoDB database",
-        "ja": "Node.js + Express RESTful API、MongoDBデータベース"
-      }
-      "dataFlow": {
-        "ko": "사용자 입력 → 백엔드 처리 → 데이터베이스 저장 → 프론트엔드 표시",
-        "en": "User Input → Backend Processing → Database Storage → Frontend Display",
-        "ja": "ユーザー入力 → バックエンド処理 → データベース保存 → フロントエンド表示"
-      }
-      "security": {
-        "ko": "JWT 인증, 데이터 암호화",
-        "en": "JWT authentication, data encryption",
-        "ja": "JWT認証、データ暗号化"
-      }
+    "nextSteps": {
+      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
+      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
+      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
+    }
+  },
+  "additional_links": {
+    "website": "https://acon.app",
+    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
+  }
+}

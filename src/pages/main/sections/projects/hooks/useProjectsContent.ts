@@ -9,7 +9,7 @@ import routiqData from '../data/Routiq/project.json';
 import aconData from '../data/Acon/project.json';
 import popcoData from '../data/POPCO/project.json';
 import daonData from '../data/Daon/project.json';
-import pliadData from '../data/Pliad/project.json';
+import wiroData from '../data/Wiro/project.json';
 import mysiteData from '../data/MySite/project.json';
 import healthfinbotData from '../data/healthFinBot/project.json';
 import ideaverifyprogramData from '../data/IdeaVerifyProgram/project.json';
@@ -21,7 +21,7 @@ const projectData = {
   acon: aconData,
   popco: popcoData,
   daon: daonData,
-  pliad: pliadData,
+  wiro: wiroData,
   mysite: mysiteData,
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
@@ -50,7 +50,7 @@ export const useProjectsContent = () => {
     role: data.role.ko,
     tags: data.tags.ko,
     features: data.features.ko,
-    detail: data.detail,
+    detail: (data as any).detail,
     flag: (data as any).flag, // Include flag information
   }));
 
@@ -66,7 +66,7 @@ export const useProjectsContent = () => {
       role: data.role.ko,
       tags: data.tags.ko,
       features: data.features.ko,
-      detail: data.detail,
+      detail: (data as any).detail,
     };
   };
 

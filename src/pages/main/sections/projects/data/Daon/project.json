@@ -98,12 +98,12 @@
         "ko": "IoT 센서 기반 모니터링",
         "en": "IoT Sensor-based Monitoring",
         "ja": "IoTセンサーベース監視"
-      }
+      },    
       "description": {
         "ko": "다양한 IoT 센서를 통해 실시간 에너지 사용량을 모니터링하고 데이터를 수집",
         "en": "Monitors real-time energy consumption and collects data through various IoT sensors",
         "ja": "様々なIoTセンサーを通じてリアルタイムエネルギー使用量を監視し、データを収集"
-      }
+      },
       "implemented": true
     },
     {
@@ -111,12 +111,12 @@
         "ko": "AI 기반 예측 분석",
         "en": "AI-based Predictive Analysis",
         "ja": "AIベース予測分析"
-      }
+      },
       "description": {
         "ko": "머신러닝 알고리즘을 사용하여 에너지 사용 패턴을 분석하고 미래 사용량을 예측",
         "en": "Analyzes energy usage patterns and predicts future consumption using machine learning algorithms",
         "ja": "機械学習アルゴリズムを使用してエネルギー使用パターンを分析し、将来の使用量を予測"
-      }
+      },
       "implemented": true
     }
   ],
@@ -134,41 +134,69 @@
       "ja": "ウェブダッシュボードプレビュー"
     }
   },
+ 
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "React, TypeScript, Chart.js",
-      "backend": "Python, FastAPI, PostgreSQL",
-      "ai_ml": "Python, TensorFlow, scikit-learn",
-      "devops": "Docker, AWS, GitHub Actions"
+      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
+      "backend": "Swift, SwiftUI",
+      "database": "CoreData or SwiftData, CloudKit(iCloud)",
+      "AI": "Core ML(ResNet-50), Vision",
+      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
+      "infra": "iCloud"
+    }
+  },
+  "responsibilities": {
+    "ko": [
+      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
+      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
+      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
+      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
+    ],
+    "en": [
+      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
+      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
+      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
+      "Operations: TestFlight releases, notifications, data migration"
+    ],
+    "ja": [
+      "企画：『即保存→SRS→クローズ→書く』ループ定義",
+      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
+      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
+      "運用：TestFlight配信、通知、データ移行"
+    ]
+  },
+  "metrics": {
+    "ko": [
+      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
+        ],
+    "en": [
+      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
+      "Perceived next-day recall improved when handwriting practice is combined"
+    ],
+    "ja": [
+      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
+      "書き取り練習を併用すると翌日の再想起が向上（体感）"
+    ]
+  },
+  "lessonsLearned": {
+    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
+    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
+    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
+  },
+  "results": {
+    "achievements": {
+      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
+      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
+      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
     },
-    "data": {
-      "ko": "PostgreSQL, InfluxDB, Redis",
-      "en": "PostgreSQL, InfluxDB, Redis",
-      "ja": "PostgreSQL, InfluxDB, Redis"
-    },
-    "deployment": {
-      "ko": "AWS EC2 · PostgreSQL RDS · Docker Containers",
-      "en": "AWS EC2 · PostgreSQL RDS · Docker Containers",
-      "ja": "AWS EC2 · PostgreSQL RDS · Docker Containers"
-    },
-    "architecture": {
-      "frontend": {
-        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보, Chart.js를 활용한 IoT 데이터 시각화",
-        "en": "React-based SPA with TypeScript for type safety, IoT data visualization using Chart.js",
-        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保、Chart.jsによるIoTデータ可視化"
-      }
-      "backend": {
-        "ko": "Python FastAPI RESTful API, PostgreSQL/InfluxDB 데이터베이스, IoT 센서 연동",
-        "en": "Python FastAPI RESTful API, PostgreSQL/InfluxDB database, IoT sensor integration",
-        "ja": "Python FastAPI RESTful API、PostgreSQL/InfluxDBデータベース、IoTセンサー連携"
-      }
-      "dataFlow": {
-        "ko": "IoT 센서 → 데이터 수집 → AI 분석 → 최적화 제안 → 대시보드 표시",
-        "en": "IoT Sensors → Data Collection → AI Analysis → Optimization Suggestions → Dashboard Display",
-        "ja": "IoTセンサー → データ収集 → AI分析 → 最適化提案 → ダッシュボード表示"
-      }
-      "security": {
-        "ko": "JWT 인증, 데이터 암호화, IoT 보안 프로토콜",
-        "en": "JWT authentication, data encryption, IoT security protocols",
-        "ja": "JWT認証、データ暗号化、IoTセキュリティプロトコル"
-      }
+    "nextSteps": {
+      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
+      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
+      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
+    }
+  },
+  "additional_links": {
+    "website": "https://acon.app",
+    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
+  }
+}

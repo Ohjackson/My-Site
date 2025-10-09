@@ -140,7 +140,7 @@
     "techStack": {
       "frontend": "React, TypeScript, Chart.js",
       "backend": "Python, FastAPI, PostgreSQL",
-      "ai_ml": "Python, pandas, scikit-learn, NLP",
+      "AI": "Python, pandas, scikit-learn, NLP",
       "devops": "Docker, AWS, GitHub Actions"
     },
     "data": {
@@ -148,17 +148,6 @@
       "en": "PostgreSQL, Redis, Elasticsearch",
       "ja": "PostgreSQL, Redis, Elasticsearch"
     },
-    "deployment": {
-      "ko": "AWS EC2 · PostgreSQL RDS · Docker Containers",
-      "en": "AWS EC2 · PostgreSQL RDS · Docker Containers",
-      "ja": "AWS EC2 · PostgreSQL RDS · Docker Containers"
-    },
-    "architecture": {
-      "frontend": {
-        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보, Chart.js를 활용한 데이터 시각화",
-        "en": "React-based SPA with TypeScript for type safety, data visualization using Chart.js",
-        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保、Chart.jsによるデータ可視化"
-      },
       "backend": {
         "ko": "Python FastAPI RESTful API, PostgreSQL 데이터베이스, AI 분석 엔진",
         "en": "Python FastAPI RESTful API, PostgreSQL database, AI analysis engine",
@@ -173,4 +162,66 @@
         "ko": "JWT 인증, 데이터 암호화, GDPR 준수",
         "en": "JWT authentication, data encryption, GDPR compliance",
         "ja": "JWT認証、データ暗号化、GDPR準拠"
-      },
+      }
+    },
+  "responsibilities": {
+    "ko": [
+      "린 스타트업 방법론 기반 플랫폼 설계",
+      "시장 조사 및 검증 도구 개발",
+      "사용자 피드백 시스템 구축",
+      "비즈니스 모델 캔버스 구현"
+    ],
+    "en": [
+      "Platform design based on Lean Startup methodology",
+      "Development of market research and validation tools",
+      "User feedback system construction",
+      "Business Model Canvas implementation"
+    ],
+    "ja": [
+      "リーンスタートアップ手法に基づいたプラットフォーム設計",
+      "市場調査および検証ツールの開発",
+      "ユーザーフィードバックシステムの構築",
+      "ビジネスモデルキャンバスの実装"
+    ]
+  },
+  "lessonsLearned": {
+    "ko": "다양한 아이디어의 특성을 고려한 유연한 검증 프레임워크 설계의 어려움",
+    "en": "Difficulty in designing a flexible validation framework that considers the characteristics of various ideas",
+    "ja": "多様なアイデアの特性を考慮した柔軟な検証フレームワークの設計の難しさ"
+  },
+  "metrics": {
+    "ko": [
+      "월 활성 사용자 8,000명",
+      "검증된 아이디어 2,500개",
+      "투자 유치 성공률 35% 향상"
+    ],
+    "en": [
+      "8,000 monthly active users",
+      "2,500 validated ideas",
+      "35% improvement in investment attraction success rate"
+    ],
+    "ja": [
+      "月間アクティブユーザー8,000人",
+      "検証されたアイデア2,500個",
+      "投資誘致成功率35%向上"
+    ]
+  },
+  "results": {
+    "achievements": {
+      "ko": "아이디어 검증 시간 50% 단축, 초기 투자 유치 성공률 35% 증가",
+      "en": "50% reduction in idea validation time, 35% increase in initial investment attraction success rate",
+      "ja": "アイデア検証時間50%短縮、初期投資誘致成功率35%増加"
+    },
+    "learnings": {
+      "ko": "모듈형 검증 단계와 커스터마이징 가능한 템플릿 제공을 통한 유연성 확보 경험",
+      "en": "Experience in ensuring flexibility by providing modular validation stages and customizable templates",
+      "ja": "モジュール型検証段階とカスタマイズ可能なテンプレートの提供による柔軟性確保の経験"
+    },
+    "nextSteps": {
+      "ko": "AI 기반 아이디어 자동 생성 기능 추가, 글로벌 시장 진출 전략 수립",
+      "en": "Add AI-based idea generation feature, establish global market entry strategy",
+      "ja": "AIベースのアイデア自動生成機能追加、グローバル市場進出戦略策定"
+    }
+  },
+  "flag": "active"
+}

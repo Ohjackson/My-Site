@@ -101,12 +101,12 @@
         "ko": "AI 기반 여행지 추천",
         "en": "AI-based Destination Recommendations",
         "ja": "AIベースの旅行先推奨"
-      }
+      },
       "description": {
         "ko": "머신러닝 모델이 개별 사용자 및 커플의 과거 활동, 선호도를 분석하여 맞춤형 여행지, 숙소, 활동을 추천.",
         "en": "Machine learning model analyzes individual user and couple's past activities and preferences to recommend customized destinations, accommodations, and activities.",
         "ja": "機械学習モデルが個別ユーザーおよびカップルの過去の活動、好みを分析し、カスタマイズされた旅行先、宿泊施設、アクティビティを推奨。"
-      }
+      },
       "implemented": true
     },
     {
@@ -114,12 +114,12 @@
         "ko": "커플 취향 절충 알고리즘",
         "en": "Couple Preference Compromise Algorithm",
         "ja": "カップルの好み妥協アルゴリズム"
-      }
+      },
       "description": {
         "ko": "두 사용자의 상반된 취향(예: 활동 vs 휴식)을 입력받아, 만족도를 최대화하는 절충안을 계산하여 여행 계획에 반영.",
         "en": "Receives input on two users' conflicting preferences (e.g., activity vs. relaxation) and calculates a compromise that maximizes satisfaction, reflecting it in the travel plan.",
         "ja": "二人のユーザーの相反する好み（例：活動 vs 休息）を入力として受け取り、満足度を最大化する妥協案を計算し、旅行計画に反映。"
-      }
+      },
       "implemented": true
     },
     {
@@ -127,12 +127,12 @@
         "ko": "실시간 협업 일정 관리",
         "en": "Real-time Collaborative Itinerary Management",
         "ja": "リアルタイム協力スケジュール管理"
-      }
+      },
       "description": {
         "ko": "두 사용자가 동시에 여행 일정을 편집하고, 변경 사항이 즉시 반영되는 실시간 동기화 기능 제공 (Socket.io 활용).",
         "en": "Allows two users to simultaneously edit the travel itinerary, providing real-time synchronization where changes are instantly reflected (using Socket.io).",
         "ja": "二人のユーザーが同時に旅行日程を編集し、変更が即座に反映されるリアルタイム同期機能を提供（Socket.io活用）。"
-      }
+      },
       "implemented": true
     },
     {
@@ -140,12 +140,12 @@
         "ko": "소셜 기능 및 추억 공유",
         "en": "Social Features and Memory Sharing",
         "ja": "ソーシャル機能と思い出共有"
-      }
+      },
       "description": {
         "ko": "여행 후기 작성, 사진 공유, 다른 커플의 추천 경로 탐색 등 소셜 기능 제공.",
         "en": "Provides social features such as writing travel reviews, sharing photos, and exploring recommended routes from other couples.",
         "ja": "旅行レビューの作成、写真共有、他のカップルの推奨ルートの探索など、ソーシャル機能を提供。"
-      }
+      },
       "implemented": true
     }
   ],
@@ -161,41 +161,69 @@
       "ja": "旅行計画エディタ、AI推奨画面、ソーシャル共有画面のプレビュー"
     }
   },
+ 
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "React, TypeScript",
-      "backend": "Node.js, Express",
-      "ai_ml": "Python, TensorFlow",
-      "devops": "Docker, AWS"
+      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
+      "backend": "Swift, SwiftUI",
+      "database": "CoreData or SwiftData, CloudKit(iCloud)",
+      "AI": "Core ML(ResNet-50), Vision",
+      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
+      "infra": "iCloud"
+    }
+  },
+  "responsibilities": {
+    "ko": [
+      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
+      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
+      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
+      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
+    ],
+    "en": [
+      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
+      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
+      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
+      "Operations: TestFlight releases, notifications, data migration"
+    ],
+    "ja": [
+      "企画：『即保存→SRS→クローズ→書く』ループ定義",
+      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
+      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
+      "運用：TestFlight配信、通知、データ移行"
+    ]
+  },
+  "metrics": {
+    "ko": [
+      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
+        ],
+    "en": [
+      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
+      "Perceived next-day recall improved when handwriting practice is combined"
+    ],
+    "ja": [
+      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
+      "書き取り練習を併用すると翌日の再想起が向上（体感）"
+    ]
+  },
+  "lessonsLearned": {
+    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
+    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
+    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
+  },
+  "results": {
+    "achievements": {
+      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
+      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
+      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
     },
-    "data": {
-      "ko": "MongoDB, Redis",
-      "en": "MongoDB, Redis",
-      "ja": "MongoDB, Redis"
-    },
-    "deployment": {
-      "ko": "AWS EC2, Docker Containers",
-      "en": "AWS EC2, Docker Containers",
-      "ja": "AWS EC2, Docker Containers"
-    },
-    "architecture": {
-      "frontend": {
-        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보",
-        "en": "React-based SPA with TypeScript for type safety",
-        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保"
-      }
-      "backend": {
-        "ko": "Node.js + Express RESTful API, MongoDB 데이터베이스",
-        "en": "Node.js + Express RESTful API, MongoDB database",
-        "ja": "Node.js + Express RESTful API、MongoDBデータベース"
-      }
-      "dataFlow": {
-        "ko": "사용자 입력 → 백엔드 처리 → 데이터베이스 저장 → 프론트엔드 표시",
-        "en": "User Input → Backend Processing → Database Storage → Frontend Display",
-        "ja": "ユーザー入力 → バックエンド処理 → データベース保存 → フロントエンド表示"
-      }
-      "security": {
-        "ko": "JWT 인증, 데이터 암호화",
-        "en": "JWT authentication, data encryption",
-        "ja": "JWT認証、データ暗号化"
-      }
+    "nextSteps": {
+      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
+      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
+      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
+    }
+  },
+  "additional_links": {
+    "website": "https://acon.app",
+    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
+  }
+}
