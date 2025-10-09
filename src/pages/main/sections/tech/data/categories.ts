@@ -8,7 +8,8 @@ export const TECH_CATEGORIES: readonly TechCategory[] = [
     id: 'mobile',
     badges: [
       'https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white',
-      'https://img.shields.io/badge/UIKit-000000?style=for-the-badge&logo=apple&logoColor=white',
+      'https://img.shields.io/badge/SwiftUI-000000?style=for-the-badge&logo=swift&logoColor=white',
+      'https://img.shields.io/badge/UIKit-000000?style=for-the-badge&logo=swift&logoColor=white',
       'https://img.shields.io/badge/Core%20ML-000000?style=for-the-badge&logo=apple&logoColor=white',
       'https://img.shields.io/badge/Core%20Data-000000?style=for-the-badge&logo=apple&logoColor=white',
       'https://img.shields.io/badge/SwiftData-000000?style=for-the-badge&logo=apple&logoColor=white'
