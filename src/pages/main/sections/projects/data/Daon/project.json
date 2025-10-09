@@ -10,12 +10,12 @@
     "ja": "持続可能な環境のためのスマートエネルギー管理システム"
   },
   "role": {
-    "ko": "full-stack, co-founder",
+    "ko": "full-stack",
     "en": "Backend Developer",
     "ja": "バックエンド開発者"
   },
   "tags": {
-    "ko": ["iOS", "Fastapi", "Chat Bot"],
+    "ko": ["초기 스타트업 팀", "Fastapi", "iOS"],
     "en": ["IoT", "Python", "AI", "Energy", "Sustainability"],
     "ja": ["IoT", "Python", "AI", "Energy", "Sustainability"]
   },
@@ -46,7 +46,7 @@
   },
   "features": {
     "ko": [
-      "성격이 다 다른 현실형 쳇봇과 대화"
+      "- gpt fine-tuning된 여러 챗봇과의 대화"
     ],
     "en": [
       "IoT sensor-based energy monitoring",
@@ -63,15 +63,15 @@
   },
   "links": {
     "appStore": "https://apps.apple.com/kr/app/daon-ai-%EC%B1%84%ED%8C%85%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%82%98%EB%8A%94-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EB%82%98/id6741571279",
-    "github": "https://github.com/YourUsername/Daon-Energy"
+    "github": "https://github.com/orgs/daonchat/repositories"
   },
   "additionalFeatures": {
-    "ko": "IoT 센서와 AI를 활용하여 에너지 효율성을 극대화하고 환경 영향을 최소화하는 시스템",
+    "ko": "- 성격이 다 다른 현실형 쳇봇과 대화하며 나 자신을 알아가는 서비스",
     "en": "System that maximizes energy efficiency and minimizes environmental impact using IoT sensors and AI",
     "ja": "IoTセンサーとAIを活用してエネルギー効率を最大化し、環境影響を最小化するシステム"
   },
   "overviewStory": {
-    "ko": "IoT 센서와 AI를 활용하여 에너지 효율성을 극대화하고 환경 영향을 최소화하는 스마트 에너지 관리 시스템",
+    "ko": "wiro 프로젝트를 연장선으로 새로운 방식으로 프로젝트 전개",
     "en": "Smart energy management system that maximizes energy efficiency and minimizes environmental impact using IoT sensors and AI",
     "ja": "IoTセンサーとAIを活用してエネルギー効率を最大化し、環境影響を最小化するスマートエネルギー管理システム"
   },
@@ -95,12 +95,12 @@
   "detail_features": [
     {
       "title": {
-        "ko": "IoT 센서 기반 모니터링",
+        "ko": "챗봇 대화",
         "en": "IoT Sensor-based Monitoring",
         "ja": "IoTセンサーベース監視"
       },    
       "description": {
-        "ko": "다양한 IoT 센서를 통해 실시간 에너지 사용량을 모니터링하고 데이터를 수집",
+        "ko": "각각 파인튜닝된 5명의 챗봇과 대화",
         "en": "Monitors real-time energy consumption and collects data through various IoT sensors",
         "ja": "様々なIoTセンサーを通じてリアルタイムエネルギー使用量を監視し、データを収集"
       },
@@ -108,16 +108,16 @@
     },
     {
       "title": {
-        "ko": "AI 기반 예측 분석",
+        "ko": "상당사 연락 서비스",
         "en": "AI-based Predictive Analysis",
         "ja": "AIベース予測分析"
       },
       "description": {
-        "ko": "머신러닝 알고리즘을 사용하여 에너지 사용 패턴을 분석하고 미래 사용량을 예측",
+        "ko": "채팅 대화를 데이터를 기반하여 위급 하다고 판단시에 상당사 연락 서비스 제공",
         "en": "Analyzes energy usage patterns and predicts future consumption using machine learning algorithms",
         "ja": "機械学習アルゴリズムを使用してエネルギー使用パターンを分析し、将来の使用量を予測"
       },
-      "implemented": true
+      "implemented": false
     }
   ],
   "preview_screenshots": {
@@ -127,30 +127,26 @@
       "/assets/daon/shot-3.png",
       "/assets/daon/shot-4.png",
       "/assets/daon/shot-5.png"
-    ],
-    "description": {
-      "ko": "웹 대시보드 프리뷰",
-      "en": "Web Dashboard Preview",
-      "ja": "ウェブダッシュボードプレビュー"
-    }
+    ]
   },
- 
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
-      "backend": "Swift, SwiftUI",
-      "database": "CoreData or SwiftData, CloudKit(iCloud)",
-      "AI": "Core ML(ResNet-50), Vision",
-      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
-      "infra": "iCloud"
+      "frontend": "SwiftUI, UIKit(partial), Combine",
+      "backend": "Fastapi",
+      "database": "MongoDB",
+      "AI": "Langgraph",
+      "devops": "Docker",
+      "infra": "on premise(Home server)"
     }
   },
   "responsibilities": {
     "ko": [
-      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
-      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
-      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
-      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
+      "- 설계: 빠른 프로토타입 출시를 위한 fast api와 langgraph를 활용하여 프로토타입 출시",
+      "- 구현",
+      "iOS : 초기 셋팅 채팅 화면 구현, 및 출시 까지 connectivity 설정",
+      "Fastapi : langgraph라우팅 설정 및 데이터베이스 설정",
+      "출시: TestFlight QA 배포 이후 출시",
+      "운영: App Store Connect Logging"
     ],
     "en": [
       "Planning: defined the ‘capture→SRS→cloze→write’ loop",
@@ -167,7 +163,7 @@
   },
   "metrics": {
     "ko": [
-      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
+      "잠재고객 채널에 배포후 1주 안에 사용자 100명 이상 유입"
         ],
     "en": [
       "Observed improved completion of evening routine after Shortcut capture in internal alpha",
@@ -179,13 +175,13 @@
     ]
   },
   "lessonsLearned": {
-    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
+    "ko": "- 사업적인 배움 : B2C 에서 Ai 챗봇 서비스의 도메인 선정의 중요성 \n - 기술적인 배움 : Fastapi와 Langgraph를 활용하여 빠른 프로토타입 출시",
     "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
     "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
   },
   "results": {
     "achievements": {
-      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
+      "ko": "26명 사용자, 106번의 앱 활동",
       "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
       "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
     },

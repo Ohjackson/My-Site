@@ -37,7 +37,26 @@ export function ResponsibilitiesSection({ data, language, backgroundColor }: Res
             return (
               <div key={idx} className="space-y-2">
                 <h3 className="font-bold text-lg text-gray-800">{title}</h3>
-                <p className="text-gray-600 leading-relaxed">{content}</p>
+                {content && (
+                  <div className="text-gray-600 leading-relaxed">
+                    {content.split('\n').map((line, lineIdx) => {
+                      const trimmedLine = line.trim();
+                      if (trimmedLine.startsWith('-')) {
+                        return (
+                          <div key={lineIdx} className="flex items-start mb-2">
+                            <span className="w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>{trimmedLine.substring(1).trim()}</span>
+                          </div>
+                        );
+                      }
+                      return (
+                        <p key={lineIdx} className="mb-2">
+                          {trimmedLine}
+                        </p>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             );
           })}
