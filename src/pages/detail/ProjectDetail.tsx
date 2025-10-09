@@ -112,7 +112,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
 
           <div className="flex items-center gap-8 mb-8">
             <img 
-              src={`/assets/icons/${projectId}.png`}
+              src={`./src/pages/main/sections/projects/data/${projectId}/icon.png`}
               alt={project.name[language]}
               className="w-20 h-20 rounded-2xl object-cover shadow-2xl border border-gray-200/50"
               onError={(e) => {
