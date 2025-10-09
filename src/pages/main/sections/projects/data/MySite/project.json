@@ -44,11 +44,6 @@
     "en": "1 person (Solo)",
     "ja": "1人（ソロ）"
   },
-  "hashtags": {
-    "ko": ["Portfolio", "Personal", "React", "Vite", "Showcase"],
-    "en": ["Portfolio", "Personal", "React", "Vite", "Showcase"],
-    "ja": ["Portfolio", "Personal", "React", "Vite", "Showcase"]
-  },
   "additionalFeatures": {
     "ko": "개인 포트폴리오 웹사이트로 React와 Vite를 활용한 현대적인 웹 개발 기술을 보여줍니다. 반응형 디자인과 다국어 지원을 통해 다양한 사용자에게 최적화된 경험을 제공합니다.",
     "en": "Personal portfolio website showcasing modern web development technologies using React and Vite. Provides optimized experience for diverse users through responsive design and multilingual support.",

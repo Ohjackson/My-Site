@@ -4,16 +4,6 @@ interface OverviewData {
     en: string;
     ja: string;
   };
-  target: {
-    ko: string;
-    en: string;
-    ja: string;
-  };
-  value: {
-    ko: string;
-    en: string;
-    ja: string;
-  };
 }
 
 interface OverviewSectionProps {
@@ -26,9 +16,9 @@ export function OverviewSection({ data, language, backgroundColor }: OverviewSec
   if (!data) return null;
 
   const content = {
-    ko: { title: "개요" },
-    en: { title: "Overview" },
-    ja: { title: "概要" }
+    ko: { title: "스토리" },
+    en: { title: "Story" },
+    ja: { title: "ストーリー" }
   };
 
   return (
@@ -39,8 +29,7 @@ export function OverviewSection({ data, language, backgroundColor }: OverviewSec
         </h2>
         <div className="space-y-4 text-center">
           <p className="text-lg text-gray-700 leading-relaxed">{data.purpose[language]}</p>
-          <p className="text-lg text-gray-700 leading-relaxed">{data.target[language]}</p>
-          <p className="text-lg text-gray-700 leading-relaxed">{data.value[language]}</p>
+          
         </div>
       </div>
     </section>

@@ -1,53 +1,48 @@
 {
   "name": {
-    "ko": "아콘",
-    "en": "Acon",
-    "ja": "アコン"
+    "ko": "단고초",
+    "en": "Tangocho",
+    "ja": "単語帳"
   },
   "summary": {
-    "ko": "건강한 생활을 위한 AI 기반 개인 트레이너 앱",
+    "ko": "눈에 편안한 나만의 일본어 단어장과 과학적인 학습 알고리즘으로 일본어 학습을 쉽고 재밌게!",
     "en": "AI-based personal trainer app for healthy living",
     "ja": "健康的な生活のためのAIベースのパーソナルトレーナーアプリ"
   },
   "role": {
-    "ko": "모바일 앱 개발자",
-    "en": "Mobile App Developer",
-    "ja": "モバイルアプリ開発者"
+    "ko": "Full-Cycle Solo Project",
+    "en": "Full-Cycle Solo Project",
+    "ja": "Full-Cycle Solo Project"
   },
   "tags": {
-    "ko": ["Flutter", "Dart", "Firebase", "AI", "Computer Vision", "ML"],
-    "en": ["Flutter", "Dart", "Firebase", "AI", "Computer Vision", "ML"],
-    "ja": ["Flutter", "Dart", "Firebase", "AI", "Computer Vision", "ML"]
+    "ko": ["IOS", "LesNet", "icloud", "에빙하우스 망각 곡선", "Core ML"],
+    "en": ["IOS", "LesNet", "icloud", "Ebbinghaus Forgetting Curve", "Core ML"],
+    "ja": ["IOS", "LesNet", "icloud", "Ebbinghaus Forgetting Curve", "Core ML"]
   },
   "platform": {
-    "ko": "iOS, Android",
-    "en": "iOS, Android",
-    "ja": "iOS, Android"
+    "ko": "iPhone, iPad",
+    "en": "iPhone, iPad",
+    "ja": "iPhone, iPad"
   },
   "workPeriod": {
-    "ko": "2024.03 - 2024.08",
-    "en": "2024.03 - 2024.08",
-    "ja": "2024.03 - 2024.08"
+    "ko": "2024.06 ~ ",
+    "en": "2024.06 ~ ",
+    "ja": "2024.06 ~ "
   },
   "releaseDate": {
-    "ko": "2024.08.15",
-    "en": "2024.08.15",
-    "ja": "2024.08.15"
+    "ko": "2024.06",
+    "en": "2024.06",
+    "ja": "2024.06"
   },
   "endDate": {
-    "ko": "진행중",
-    "en": "Ongoing",
-    "ja": "進行中"
+    "ko": "지속적인 업데이트 중",
+    "en": "Ongoing updates",
+    "ja": "進行中更新"
   },
   "teamSize": {
-    "ko": "1명 (Solo)",
-    "en": "1 person (Solo)",
-    "ja": "1人"
-  },
-  "hashtags": {
-    "ko": ["AI", "Flutter", "Health", "Fitness", "Mobile"],
-    "en": ["AI", "Flutter", "Health", "Fitness", "Mobile"],
-    "ja": ["AI", "Flutter", "Health", "Fitness", "Mobile"]
+    "ko": "1",
+    "en": "1",
+    "ja": "1"
   },
   "additionalFeatures": {
     "ko": "AI 기반 개인화 운동 계획 생성, 실시간 자세 분석을 통한 운동 품질 향상, 건강 데이터 시각화 및 트렌드 분석 기능을 제공합니다. 사용자의 운동 패턴을 학습하여 최적의 운동 루틴을 자동으로 추천합니다.",

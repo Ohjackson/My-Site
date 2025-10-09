@@ -44,11 +44,6 @@
     "en": "3 people",
     "ja": "3人"
   },
-  "hashtags": {
-    "ko": ["Energy", "IoT", "Python", "Sustainability", "Analytics"],
-    "en": ["Energy", "IoT", "Python", "Sustainability", "Analytics"],
-    "ja": ["Energy", "IoT", "Python", "Sustainability", "Analytics"]
-  },
   "additionalFeatures": {
     "ko": "실시간 에너지 사용량 모니터링과 AI 기반 에너지 절약 추천 시스템을 통해 지속가능한 에너지 관리를 지원합니다. 스마트 그리드 연동으로 효율적인 에너지 분배와 비용 절감을 실현합니다.",
     "en": "Supports sustainable energy management through real-time energy usage monitoring and AI-based energy saving recommendations. Achieves efficient energy distribution and cost reduction through smart grid integration.",

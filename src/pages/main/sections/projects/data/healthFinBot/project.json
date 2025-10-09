@@ -44,11 +44,6 @@
     "en": "3 people",
     "ja": "3人"
   },
-  "hashtags": {
-    "ko": ["AI", "Health", "Finance", "React", "Node.js"],
-    "en": ["AI", "Health", "Finance", "React", "Node.js"],
-    "ja": ["AI", "Health", "Finance", "React", "Node.js"]
-  },
   "additionalFeatures": {
     "ko": "개인의 건강 데이터와 금융 상황을 분석하여 최적의 건강 관리 계획과 투자 전략을 제안하는 AI 기반 서비스입니다. 웨어러블 디바이스와 연동하여 실시간 건강 모니터링과 자동 투자 조정이 가능합니다.",
     "en": "AI-based service that analyzes personal health data and financial situation to suggest optimal health management plans and investment strategies. Real-time health monitoring and automatic investment adjustment through wearable device integration.",
@@ -170,6 +165,19 @@
         "平均健康目標達成率40%向上",
         "投資収益率平均15%改善"
       ]
+    }
+  },
+  "preview_screenshots": {
+    "screenshots": [
+      "/assets/healthfinbot/shot-1.png",
+      "/assets/healthfinbot/shot-2.png",
+      "/assets/healthfinbot/shot-3.png",
+      "/assets/healthfinbot/shot-4.png"
+    ],
+    "description": {
+      "ko": "반응형 웹/모바일 프리뷰",
+      "en": "Responsive Web/Mobile Preview",
+      "ja": "レスポンシブウェブ/モバイルプレビュー"
     }
   },
   "links": {

@@ -44,11 +44,6 @@
     "en": "1 person (Solo)",
     "ja": "1人（ソロ）"
   },
-  "hashtags": {
-    "ko": ["Productivity", "PWA", "React", "Routine", "Planning"],
-    "en": ["Productivity", "PWA", "React", "Routine", "Planning"],
-    "ja": ["Productivity", "PWA", "React", "Routine", "Planning"]
-  },
   "additionalFeatures": {
     "ko": "스마트 루틴 추천 시스템과 시간 기반 자동 스케줄링을 통해 사용자의 생산성을 극대화합니다. 습관 추적 및 분석 기능으로 개인의 성장 패턴을 파악하고, 최적의 일정 관리를 지원합니다.",
     "en": "Maximizes user productivity through smart routine recommendation system and time-based automatic scheduling. Tracks and analyzes habits to understand personal growth patterns and supports optimal schedule management.",

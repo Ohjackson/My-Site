@@ -44,11 +44,6 @@
     "en": "5 people",
     "ja": "5人"
   },
-  "hashtags": {
-    "ko": ["Collaboration", "Creative", "WebRTC", "Next.js", "Content"],
-    "en": ["Collaboration", "Creative", "WebRTC", "Next.js", "Content"],
-    "ja": ["Collaboration", "Creative", "WebRTC", "Next.js", "Content"]
-  },
   "additionalFeatures": {
     "ko": "실시간 협업 편집 도구와 다양한 미디어 형식 지원으로 창의적 콘텐츠 제작을 혁신합니다. 버전 관리 및 히스토리 추적 기능으로 팀원 간의 원활한 협업을 지원합니다.",
     "en": "Revolutionizes creative content production with real-time collaborative editing tools and support for various media formats. Supports seamless team collaboration through version control and history tracking features.",

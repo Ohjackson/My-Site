@@ -1,7 +1,7 @@
 import { CheckCircle } from 'lucide-react';
 
 interface FeaturesData {
-  detail_features: Array<{
+  detail_features?: Array<{
     title: {
       ko: string;
       en: string;
@@ -14,6 +14,11 @@ interface FeaturesData {
     };
     implemented: boolean;
   }>;
+  features?: {
+    ko: string[];
+    en: string[];
+    ja: string[];
+  };
 }
 
 interface FeaturesSectionProps {
@@ -23,7 +28,7 @@ interface FeaturesSectionProps {
 }
 
 export function FeaturesSection({ data, language, backgroundColor }: FeaturesSectionProps) {
-  if (!data?.detail_features) return null;
+  if (!data?.detail_features && !data?.features) return null;
 
   const content = {
     ko: { 
@@ -44,20 +49,36 @@ export function FeaturesSection({ data, language, backgroundColor }: FeaturesSec
           {content[language].title}
         </h2>
         <div className="space-y-4">
-          {data.detail_features.map((feature, idx) => (
-            <div
-              key={idx}
-              className="rounded-xl border border-border bg-card text-card-foreground shadow p-6 h-24 flex items-center"
-            >
-              <div className="flex items-start gap-4">
-                <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold mb-1">{feature.title[language]}</h3>
-                  <p className="text-muted text-sm">{feature.description[language]}</p>
+          {data.detail_features ? (
+            data.detail_features.map((feature, idx) => (
+              <div
+                key={idx}
+                className="rounded-xl border border-border bg-card text-card-foreground shadow p-6 h-24 flex items-center"
+              >
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold mb-1">{feature.title[language]}</h3>
+                    <p className="text-muted text-sm">{feature.description[language]}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            data.features?.[language]?.map((feature, idx) => (
+              <div
+                key={idx}
+                className="rounded-xl border border-border bg-card text-card-foreground shadow p-6 h-24 flex items-center"
+              >
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold mb-1">{feature}</h3>
+                  </div>
+                </div>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </section>

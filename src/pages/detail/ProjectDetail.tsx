@@ -67,7 +67,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       role: "역할",
       teamSize: "인원",
       hashtags: "해시태그",
-      additionalFeatures: "기타 특징"
+      additionalFeatures: "특징"
     },
     en: {
       back: "Back to List",
@@ -81,7 +81,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       role: "Role",
       teamSize: "Team Size",
       hashtags: "Hashtags",
-      additionalFeatures: "Additional Features"
+      additionalFeatures: "AdditioFeatures"
     },
     ja: {
       back: "リストに戻る",
@@ -131,7 +131,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="flex items-center gap-3 text-text/90">
               <Clock className="h-4 w-4 text-primary-500" />
-              <span><strong>{content[language].workPeriod}:</strong> {project.workPeriod?.[language] || project.period[language]}</span>
+              <span><strong>{content[language].workPeriod}:</strong> {project.workPeriod?.[language]}</span>
                 </div>
                 <div className="flex items-center gap-3 text-text/90">
               <User className="h-4 w-4 text-primary-500" />
@@ -165,10 +165,10 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
 
           {/* Action Buttons */}
           <div className="flex gap-4 items-stretch mb-8">
-            {project.links?.appStore && (
+            {(project.links as any)?.appStore && (
               <Button
                 icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                onClick={() => window.open(project.links.appStore, '_blank')}
+                onClick={() => window.open((project.links as any)?.appStore, '_blank')}
               >
                 {content[language].appStore}
               </Button>
@@ -177,28 +177,28 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
                 <Button
                 variant="secondary"
                 icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                onClick={() => window.open(project.links.github, '_blank')}
+                onClick={() => window.open(project.links?.github, '_blank')}
                 >
                   {content[language].github}
                 </Button>
             )}
-            {project.links?.website && (
+            {(project.links as any)?.website && (
               <Button
                 variant="outline"
                 icon={<ArrowUpRightIcon className="h-4 w-4" />}
-                onClick={() => window.open(project.links.website, '_blank')}
+                onClick={() => window.open((project.links as any)?.website, '_blank')}
               >
                 {content[language].website}
               </Button>
             )}
           </div>
           
-          {/* Hashtags Section */}
-          {project.hashtags && (
+          {/* Tags Section */}
+          {project.tags && (
             <div className="mt-6">
               <h3 className="text-sm font-semibold text-text/70 mb-3">{content[language].hashtags}</h3>
               <div className="flex flex-wrap gap-2">
-                {project.hashtags[language].map((tag, index) => (
+                {project.tags[language].map((tag, index) => (
                   <span
                     key={index}
                     className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium"
@@ -265,7 +265,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         sections.push(
           <FeaturesSection 
             key="features" 
-            data={project} 
+            data={project as any} 
             language={language} 
             backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
           />

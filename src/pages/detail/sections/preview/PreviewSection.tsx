@@ -42,7 +42,7 @@ export function PreviewSection({ data, language, backgroundColor }: PreviewSecti
                   console.log(`Image loaded successfully: ${screenshot}`);
                 }}
                 onError={(e) => {
-                  console.error(`Image failed to load: ${screenshot}`, e);
+                  console.warn(`Image failed to load: ${screenshot} - hiding image`);
                   e.currentTarget.style.display = 'none';
                 }}
               />

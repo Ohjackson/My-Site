@@ -44,11 +44,6 @@
     "en": "4 people",
     "ja": "4人"
   },
-  "hashtags": {
-    "ko": ["Education", "AI", "Learning", "Personalization", "ML"],
-    "en": ["Education", "AI", "Learning", "Personalization", "ML"],
-    "ja": ["Education", "AI", "Learning", "Personalization", "ML"]
-  },
   "additionalFeatures": {
     "ko": "개인화된 학습 경로 생성과 실시간 학습 진도 추적으로 맞춤형 교육을 제공합니다. 적응형 퀴즈 시스템과 학습 성과 분석을 통해 각 학습자의 최적화된 교육 경험을 보장합니다.",
     "en": "Provides personalized education through customized learning path generation and real-time learning progress tracking. Ensures optimized educational experience for each learner through adaptive quiz systems and learning performance analysis.",

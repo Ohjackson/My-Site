@@ -44,11 +44,6 @@
     "en": "2 people",
     "ja": "2人"
   },
-  "hashtags": {
-    "ko": ["Travel", "Couple", "AI", "Recommendation", "Social"],
-    "en": ["Travel", "Couple", "AI", "Recommendation", "Social"],
-    "ja": ["Travel", "Couple", "AI", "Recommendation", "Social"]
-  },
   "additionalFeatures": {
     "ko": "AI 기반 여행지 추천과 커플 취향 분석을 통해 맞춤형 여행 경험을 제공합니다. 실시간 여행 일정 관리와 소셜 기능을 통해 커플들이 함께하는 특별한 여행을 계획할 수 있습니다.",
     "en": "Provides personalized travel experiences through AI-based destination recommendations and couple preference analysis. Enables couples to plan special trips together through real-time travel schedule management and social features.",

@@ -44,11 +44,6 @@
     "en": "2 people",
     "ja": "2人"
   },
-  "hashtags": {
-    "ko": ["Startup", "Business Analysis", "Market Research", "React", "AI"],
-    "en": ["Startup", "Business Analysis", "Market Research", "React", "AI"],
-    "ja": ["Startup", "Business Analysis", "Market Research", "React", "AI"]
-  },
   "additionalFeatures": {
     "ko": "창업자들이 아이디어의 시장성과 실현 가능성을 체계적으로 검증할 수 있도록 돕는 종합 플랫폼입니다. 시장 분석, 경쟁사 조사, 비즈니스 모델 캔버스 생성, 투자 유치 전략 수립까지 원스톱으로 지원합니다.",
     "en": "Comprehensive platform that helps entrepreneurs systematically validate the marketability and feasibility of their ideas. One-stop support from market analysis, competitor research, business model canvas creation, to investment attraction strategy development.",
@@ -170,6 +165,19 @@
         "検証されたアイデア2,500個",
         "投資誘致成功率35%向上"
       ]
+    }
+  },
+  "preview_screenshots": {
+    "screenshots": [
+      "/assets/ideaverifyprogram/shot-1.png",
+      "/assets/ideaverifyprogram/shot-2.png",
+      "/assets/ideaverifyprogram/shot-3.png",
+      "/assets/ideaverifyprogram/shot-4.png"
+    ],
+    "description": {
+      "ko": "반응형 웹/모바일 프리뷰",
+      "en": "Responsive Web/Mobile Preview",
+      "ja": "レスポンシブウェブ/モバイルプレビュー"
     }
   },
   "links": {
