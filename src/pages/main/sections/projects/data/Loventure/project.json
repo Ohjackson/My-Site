@@ -1,6 +1,6 @@
 {
   "name": {
-    "ko": "러벤처",
+    "ko": "Loventure",
     "en": "Loventure",
     "ja": "ラベンチャー"
   },
@@ -10,42 +10,42 @@
     "ja": "カップル向けのカスタマイズされた旅行計画と推奨サービス"
   },
   "role": {
-    "ko": "풀스택 개발자",
+    "ko": "PM, Full-Stack",
     "en": "Full-stack Developer",
     "ja": "フルスタック開発者"
   },
   "tags": {
-    "ko": ["React", "Node.js", "MongoDB", "AI"],
+    "ko": ["자체 개발 추천 알고리즘", "Laggraph", "k8s", "MSA"],
     "en": ["React", "Node.js", "MongoDB", "AI"],
     "ja": ["React", "Node.js", "MongoDB", "AI"]
   },
   "platform": {
-    "ko": "Web, Mobile",
+    "ko": "Web",
     "en": "Web, Mobile",
     "ja": "Web, Mobile"
   },
   "workPeriod": {
-    "ko": "2023.09 - 2024.02",
+    "ko": "2025.09 - 2025.10",
     "en": "2023.09 - 2024.02",
     "ja": "2023.09 - 2024.02"
   },
   "releaseDate": {
-    "ko": "2024.02.14",
+    "ko": "진행중",
     "en": "2024.02.14",
     "ja": "2024.02.14"
   },
   "endDate": {
-    "ko": "2024.08.31",
+    "ko": "2025.10",
     "en": "2024.08.31",
     "ja": "2024.08.31"
   },
   "teamSize": {
-    "ko": "2명",
+    "ko": "8",
     "en": "2 people",
     "ja": "2人"
   },
   "additionalFeatures": {
-    "ko": "AI 기반 여행지 추천과 커플 취향 분석을 통해 맞춤형 여행 경험을 제공합니다. 실시간 여행 일정 관리와 소셜 기능을 통해 커플들이 함께하는 특별한 여행을 계획할 수 있습니다.",
+    "ko": "",
     "en": "Provides personalized travel experiences through AI-based destination recommendations and couple preference analysis. Enables couples to plan special trips together through real-time travel schedule management and social features.",
     "ja": "AIベースの旅行先推奨とカップル嗜好分析により、カスタマイズされた旅行体験を提供します。リアルタイム旅行スケジュール管理とソーシャル機能により、カップルが一緒に特別な旅行を計画できます。"
   },

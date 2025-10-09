@@ -1,244 +1,263 @@
 {
   "name": {
-    "ko": "Acon",
-    "en": "Acon",
-    "ja": "Acon"
+    "ko": "다온",
+    "en": "Daon",
+    "ja": "ダオン"
   },
   "summary": {
-    "ko": "더 이상 맛집을 찾느라 고민할 필요가 없는 지도 앱",
-    "en": "AI-based personal trainer app for healthy living",
-    "ja": "健康的な生活のためのAIベースのパーソナルトレーナーアプリ"
+    "ko": "자기공상법을 이용한 우울증 조기 발견 전문 ai 채팅앱",
+    "en": "An AI chat app for early depression risk spotting using a guided self-imagery method.",
+    "ja": "自己空想法を用いてうつ病リスクの早期発見を目指すAIチャットアプリ。"
   },
   "role": {
-    "ko": "모바일 앱 개발자",
-    "en": "Mobile App Developer",
-    "ja": "モバイルアプリ開発者"
+    "ko": "full-stack, co-founder",
+    "en": "Full-stack, Co-founder",
+    "ja": "フルスタック、共同創業者"
   },
   "tags": {
-    "ko": ["Flutter", "Dart", "Firebase", "AI", "Computer Vision", "ML"],
-    "en": ["Flutter", "Dart", "Firebase", "AI", "Computer Vision", "ML"],
-    "ja": ["Flutter", "Dart", "Firebase", "AI", "Computer Vision", "ML"]
+    "ko": ["iOS", "Fastapi", "Chat Bot"],
+    "en": ["iOS", "FastAPI", "Chatbot", "LLM", "Privacy"],
+    "ja": ["iOS", "FastAPI", "チャットボット", "LLM", "プライバシー"]
   },
   "platform": {
-    "ko": "iOS, Android",
-    "en": "iOS, Android",
-    "ja": "iOS, Android"
+    "ko": "iPhone",
+    "en": "iPhone",
+    "ja": "iPhone"
   },
   "workPeriod": {
-    "ko": "2024.03 - 2024.08",
-    "en": "2024.03 - 2024.08",
-    "ja": "2024.03 - 2024.08"
+    "ko": "2025.01",
+    "en": "2025.01",
+    "ja": "2025.01"
   },
   "releaseDate": {
-    "ko": "2024.08",
-    "en": "2024.08",
-    "ja": "2024.08"
+    "ko": "2025.01",
+    "en": "2025.01",
+    "ja": "2025.01"
   },
   "endDate": {
-    "ko": "완료",
-    "en": "Completed",
-    "ja": "完了"
+    "ko": "서버 종료",
+    "en": "Service retired",
+    "ja": "サーバー終了"
   },
   "teamSize": {
-    "ko": "1",
-    "en": "1",
-    "ja": "1"
+    "ko": "4",
+    "en": "4",
+    "ja": "4"
   },
   "features": {
     "ko": [
-      "AI 기반 운동 계획 생성",
-      "실시간 운동 자세 분석",
-      "개인 맞춤형 식단 추천",
-      "건강 데이터 시각화"
+      "성격이 다 다른 현실형 쳇봇과 대화"
     ],
     "en": [
-      "AI-based exercise plan generation",
-      "Real-time exercise posture analysis",
-      "Personalized diet recommendations",
-      "Health data visualization"
+      "Converse with multiple realistic personas",
+      "Early risk cues via guided self-imagery prompts",
+      "Session journaling & mood tagging",
+      "On-device privacy options and minimal data capture"
     ],
     "ja": [
-      "AIベースの運動計画生成",
-      "リアルタイム運動姿勢分析",
-      "個人カスタマイズ食事推奨",
-      "健康データ可視化"
+      "複数のリアル系ペルソナと対話",
+      "自己空想法プロンプトによる早期リスクの手がかり",
+      "セッション記録と気分タグ付け",
+      "端末内優先のプライバシーと最小限のデータ取得"
     ]
   },
   "links": {
-    "appStore": "https://apps.apple.com/app/id1234567890",
-    "googlePlay": "https://play.google.com/store/apps/details?id=com.acon.trainer",
-    "github": "https://github.com/YourUsername/Acon-AI-Trainer"
+    "appStore": "https://apps.apple.com/kr/app/daon-ai-%EC%B1%84%ED%8C%85%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%82%98%EB%8A%94-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EB%82%98/id6741571279",
+    "github": "https://github.com/YourUsername/Daon-Energy"
   },
   "additionalFeatures": {
-    "ko": "AI 기반 개인화된 운동 계획과 실시간 자세 분석을 제공하는 건강 관리 앱",
-    "en": "Health management app providing AI-based personalized exercise plans and real-time posture analysis",
-    "ja": "AIベースの個人化された運動計画とリアルタイム姿勢分析を提供する健康管理アプリ"
+    "ko": "iOS 클라이언트와 FastAPI 백엔드로 구성. 온보딩→대화→회고 루프, 최소 수집·익명화 원칙, 홈서버 운영(팀 배포).",
+    "en": "Built with an iOS client and FastAPI backend. Onboarding→dialogue→reflection loop, data-minimization/anonymization, and team-run home-server ops.",
+    "ja": "iOSクライアントとFastAPIバックエンド構成。オンボーディング→対話→振り返りのループ、最小収集・匿名化方針、ホームサーバー運用（チーム配備）。"
   },
   "overviewStory": {
-    "ko": "사용자의 체력과 목표에 맞는 개인화된 운동 및 건강 관리 솔루션 제공",
-    "en": "Providing personalized exercise and health management solutions tailored to user's fitness and goals",
-    "ja": "ユーザーの体力と目標に合わせたパーソナライズされた運動と健康管理ソリューション提供"
+    "ko": "일상의 대화를 통해 스스로 감정을 언어화·정리하도록 돕고, 자기공상법 기반 질문으로 우울 신호를 조기에 포착하려고 시작함. 의료행위가 아닌 자기 인식 지원 도구로 설계함.",
+    "en": "Started to help users verbalize and organize emotions in everyday chat, surfacing early depression signals with guided self-imagery questions. Designed as a self-awareness aid—not a medical device.",
+    "ja": "日常会話で感情の言語化・整理を支援し、自己空想法に基づく問いでうつの兆しを早期に気づけるように開始。医療行為ではなく自己認識支援ツールとして設計。"
   },
   "service": {
     "problem": {
-      "ko": "개인 트레이너의 높은 비용과 접근성 문제, 부정확한 운동 자세로 인한 부상 위험",
-      "en": "High cost and accessibility issues of personal trainers, and risk of injury due to incorrect exercise posture",
-      "ja": "パーソナルトレーナーの高コストとアクセス性の問題、不正確な運動姿勢による怪我のリスク"
+      "ko": "전문 상담 전 단계에서 감정 기록·점검이 어렵고, 도움을 청할 타이밍을 놓치기 쉬움.",
+      "en": "Before professional care, tracking feelings and knowing when to seek help is hard and easy to miss.",
+      "ja": "専門支援の前段階で感情記録・点検が難しく、支援を求めるタイミングを逃しやすい。"
     },
     "target": {
-      "ko": "집에서 저렴하고 안전하게 개인화된 운동 코칭을 받고자 하는 사용자",
-      "en": "Users who want affordable and safe personalized exercise coaching at home",
-      "ja": "自宅で手頃な価格で安全にパーソナライズされた運動コーチングを受けたいユーザー"
+      "ko": "비의료적 자기 점검 도구를 원하는 성인 사용자.",
+      "en": "Adults who want a non-clinical self-check tool.",
+      "ja": "非医療的なセルフチェックツールを求める成人ユーザー。"
     },
     "value": {
-      "ko": "AI 기반 실시간 자세 교정 및 개인화된 운동/식단 계획을 통한 건강 목표 달성 지원",
-      "en": "Support for achieving health goals through AI-based real-time posture correction and personalized exercise/diet plans",
-      "ja": "AIベースのリアルタイム姿勢矯正とパーソナライズされた運動/食事計画を通じた健康目標達成のサポート"
+      "ko": "현실형 페르소나와의 대화, 자기공상법 질문, 회고 저널링으로 자가 인식을 높이고 조기 신호를 놓치지 않게 함.",
+      "en": "Realistic personas, guided self-imagery prompts, and reflection journaling raise self-awareness and help catch early signals.",
+      "ja": "リアル系ペルソナ、自己空想法の問い、振り返りジャーナルで自己認識を高め、初期の兆候を見逃しにくくする。"
     }
   },
   "detail_features": [
     {
       "title": {
-        "ko": "AI 기반 운동 계획 생성",
-        "en": "AI-based Exercise Plan Generation",
-        "ja": "AIベースの運動計画生成"
+        "ko": "멀티 페르소나 대화",
+        "en": "Multi-persona Dialogue",
+        "ja": "マルチペルソナ対話"
       },
       "description": {
-        "ko": "사용자의 체력 수준, 목표, 선호도를 분석하여 주간/월간 맞춤형 운동 루틴을 자동 생성",
-        "en": "Analyzes user's fitness level, goals, and preferences to automatically generate weekly/monthly customized exercise routines",
-        "ja": "ユーザーの体力レベル、目標、好みを分析し、週次/月次のカスタマイズされた運動ルーチンを自動生成"
+        "ko": "성향이 다른 페르소나(현실형 톤)와 상황 맞춤 질문·피드백 제공.",
+        "en": "Realistic-tone personas provide situation-aware questions and feedback.",
+        "ja": "性格の異なるペルソナが状況に合わせた質問とフィードバックを提供。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "실시간 운동 자세 분석 (CV)",
-        "en": "Real-time Exercise Posture Analysis (CV)",
-        "ja": "リアルタイム運動姿勢分析 (CV)"
+        "ko": "자기공상법 가이드 프롬프트",
+        "en": "Guided Self-Imagery Prompts",
+        "ja": "自己空想法ガイドプロンプト"
       },
       "description": {
-        "ko": "모바일 카메라를 통해 사용자의 운동 자세를 실시간으로 분석하고, 잘못된 자세에 대해 즉각적인 음성/시각 피드백 제공",
-        "en": "Analyzes user's exercise posture in real-time via the mobile camera and provides immediate voice/visual feedback on incorrect posture",
-        "ja": "モバイルカメラを通じてユーザーの運動姿勢をリアルタイムで分析し、間違った姿勢について即座に音声/視覚フィードバックを提供"
+        "ko": "심상·상황 재구성을 유도하는 단계형 질문으로 자기 인식과 정서 명료화 지원.",
+        "en": "Stepwise prompts that elicit imagery and reframe situations to clarify emotions and self-awareness.",
+        "ja": "イメージ想起と状況の再構成を促す段階的な問いで自己認識と情動の明確化を支援。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "세션 저널·기분 태깅",
+        "en": "Session Journal & Mood Tags",
+        "ja": "セッション記録・気分タグ"
+      },
+      "description": {
+        "ko": "대화 종료 시 요약·메모·감정 태그 저장, 추세 확인.",
+        "en": "Save summaries, notes, and mood tags at end of chat; review trends later.",
+        "ja": "会話終了時に要約・メモ・感情タグを保存し、後で傾向を確認。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "프라이버시·데이터 최소 수집",
+        "en": "Privacy & Data Minimization",
+        "ja": "プライバシーと最小収集"
+      },
+      "description": {
+        "ko": "옵트인 기반 익명 ID·필요 최소 데이터만 저장. 외부 호출은 사용자 키 사용 시에만.",
+        "en": "Opt-in anonymous ID and minimal required data only; external calls only with user-provided keys.",
+        "ja": "オプトインの匿名IDと必要最小限のデータのみ保存。外部呼び出しはユーザー提供キー時のみ。"
       },
       "implemented": true
     }
   ],
   "preview_screenshots": {
     "screenshots": [
-      "/assets/acon/shot-1.png",
-      "/assets/acon/shot-2.png",
-      "/assets/acon/shot-3.png",
-      "/assets/acon/shot-4.png",
-      "/assets/acon/shot-5.png"
+      "/assets/daon/shot-1.png",
+      "/assets/daon/shot-2.png",
+      "/assets/daon/shot-3.png",
+      "/assets/daon/shot-4.png",
+      "/assets/daon/shot-5.png"
     ],
     "description": {
-      "ko": "모바일 앱 프리뷰",
-      "en": "Mobile App Preview",
-      "ja": "モバイルアプリプレビュー"
+      "ko": "iOS 앱 프리뷰(온보딩/대화/회고)",
+      "en": "iOS app preview (onboarding/dialogue/reflection)",
+      "ja": "iOSアプリのプレビュー（オンボーディング／対話／振り返り）"
     }
   },
   "techStack": {
-    "frontend": "Flutter, Dart, Provider/Riverpod",
-    "backend": "Firebase (Authentication, Firestore, Cloud Functions)",
-    "ai_ml": "TensorFlow Lite, Core ML, MediaPipe, Python",
-    "data": "Firebase Firestore/Realtime Database",
-    "devops": "Fastlane, Firebase CLI"
+    "frontend": "iOS (SwiftUI, UIKit, Combine)",
+    "backend": "Python (FastAPI), PostgreSQL/SQLite, Nginx",
+    "ai_ml": "LLM API orchestration, Prompt templates, Safety filters",
+    "data": "PostgreSQL/SQLite, (Opt) Redis cache",
+    "devops": "Docker, GitHub Actions, Home-server (team-operated)"
   },
   "architecture": {
-    "components": "Flutter App (Dart) · Firebase (Auth, Firestore, Cloud Functions) · ML Model (TensorFlow Lite/Core ML)",
+    "components": "iOS App · FastAPI · DB(PostgreSQL/SQLite) · (Opt) Redis · Nginx",
     "dataFlow": {
-      "ko": "사용자 활동 → Flutter (데이터 처리/CV 분석) → Firebase (저장/백엔드 로직) → Flutter (UI 업데이트/피드백)",
-      "en": "User Activity → Flutter (Data Processing/CV Analysis) → Firebase (Storage/Backend Logic) → Flutter (UI Update/Feedback)",
-      "ja": "ユーザー活動 → Flutter (データ処理/CV分析) → Firebase (保存/バックエンドロジック) → Flutter (UI更新/フィードバック)"
+      "ko": "iOS 클라이언트 → FastAPI(대화/요약) → DB 저장 → 통계/회고 뷰 응답",
+      "en": "iOS client → FastAPI (dialogue/summary) → DB storage → stats/reflection views",
+      "ja": "iOSクライアント → FastAPI（対話/要約） → DB保存 → 統計/振り返りビュー"
     },
-    "deployment": "App Store / Google Play Store (Flutter Build) · Firebase Hosting/Functions",
+    "deployment": "Dockerized FastAPI on home server (reverse-proxied by Nginx) · iOS via TestFlight/App Store",
     "security": {
-      "ko": "Firebase Authentication을 통한 안전한 사용자 관리, Firestore 보안 규칙을 통한 데이터 접근 제어",
-      "en": "Secure user management via Firebase Authentication, data access control via Firestore Security Rules",
-      "ja": "Firebase Authenticationによる安全なユーザー管理、Firestoreセキュリティルールによるデータアクセス制御"
+      "ko": "JWT, 익명화 ID, 전송 구간 TLS, PII 최소화",
+      "en": "JWT, anonymized IDs, TLS in transit, PII minimization",
+      "ja": "JWT、匿名化ID、通信のTLS、PII最小化"
     },
     "network": {
-      "ko": "HTTPS (Firebase API 통신), 실시간 데이터 동기화 (Firestore/Realtime DB)",
-      "en": "HTTPS (Firebase API communication), Real-time data synchronization (Firestore/Realtime DB)",
-      "ja": "HTTPS (Firebase API通信)、リアルタイムデータ同期 (Firestore/Realtime DB)"
+      "ko": "HTTPS REST API, (옵션) 스트리밍 응답",
+      "en": "HTTPS REST API, optional streaming responses",
+      "ja": "HTTPS REST API、ストリーミング応答（任意）"
     }
   },
   "responsibilities": {
     "ko": [
-      "Flutter 크로스플랫폼 앱 개발",
-      "Firebase 백엔드 연동",
-      "AI 모델 통합 및 최적화",
-      "실시간 데이터 처리 및 분석"
+      "iOS 클라이언트(UI/상태)와 FastAPI 백엔드 핵심 엔드포인트 구현",
+      "대화/요약 스키마·API 스펙 정의, 비동기 처리·에러 정책 수립",
+      "프라이버시 정책 반영(데이터 최소 수집·익명화)",
+      "배포 핸드오버 문서화(홈서버 팀 배포)"
     ],
     "en": [
-      "Flutter cross-platform app development",
-      "Firebase backend integration",
-      "AI model integration and optimization",
-      "Real-time data processing and analysis"
+      "Implemented iOS client (UI/state) and core FastAPI endpoints",
+      "Defined dialogue/summary schema & API specs; set async handling and error policies",
+      "Applied privacy policy (data minimization/anonymization)",
+      "Documented deployment handover for team-run home server"
     ],
     "ja": [
-      "Flutterクロスプラットフォームアプリ開発",
-      "Firebaseバックエンド連携",
-      "AIモデル統合と最適化",
-      "リアルタイムデータ処理と分析"
+      "iOSクライアント（UI/状態）とFastAPIの主要エンドポイントを実装",
+      "対話/要約スキーマとAPI仕様を定義、非同期処理とエラーポリシーを策定",
+      "プライバシーポリシー適用（最小収集・匿名化）",
+      "ホームサーバーのチーム運用に向けたデプロイ引き継ぎを文書化"
     ]
   },
   "lessonsLearned": {
-    "ko": "Flutter 환경에서 TensorFlow Lite를 활용한 온디바이스 ML 모델 통합 및 최적화 경험 확보",
-    "en": "Gained experience in integrating and optimizing on-device ML models using TensorFlow Lite in a Flutter environment",
-    "ja": "Flutter環境でTensorFlow Liteを活用したオンデバイスMLモデルの統合と最適化経験を獲得"
+    "ko": "클라이언트–백엔드 계약(스키마) 고정이 제품 속도를 좌우함. 프롬프트 설계와 안전 필터가 품질·책임에 직결됨.",
+    "en": "Locking client–backend contracts (schemas) dictates velocity. Prompt design and safety filters directly affect quality and responsibility.",
+    "ja": "クライアントとバックエンドの契約（スキーマ）を固定することが速度を左右。プロンプト設計と安全フィルタが品質と責任に直結。"
   },
   "metrics": {
     "ko": [
-      "월 활성 사용자 15,000명",
-      "평균 운동 지속률 80%",
-      "사용자 만족도 4.7/5.0"
+      "알파 사용자 피드백: 대화 종료 후 회고 작성률 상승",
+      "크래시-프리 세션 비율 개선"
     ],
     "en": [
-      "15,000 monthly active users",
-      "Average exercise continuation rate 80%",
-      "User satisfaction 4.7/5.0"
+      "Alpha feedback: higher reflection-note completion after sessions",
+      "Improved crash-free sessions ratio"
     ],
     "ja": [
-      "月間アクティブユーザー15,000人",
-      "平均運動継続率80%",
-      "ユーザー満足度4.7/5.0"
+      "アルファ段階のフィードバック：セッション後の振り返り記入率が向上",
+      "クラッシュフリーセッション率の改善"
     ]
   },
   "deployment": {
-    "environment": "Development → TestFlight/Internal Testing → App Store/Google Play",
+    "environment": "Development → Staging → Production (home-server)",
     "pipeline": {
-      "ko": "GitHub Actions/Fastlane → Flutter Build → App Store/Google Play 자동 배포",
-      "en": "GitHub Actions/Fastlane → Flutter Build → App Store/Google Play Automatic Deployment",
-      "ja": "GitHub Actions/Fastlane → Flutter Build → App Store/Google Play自動デプロイ"
+      "ko": "GitHub Actions → Docker Build → 홈서버 배포(Nginx 리버스 프록시, 수동 롤아웃)",
+      "en": "GitHub Actions → Docker build → Home-server deploy (Nginx reverse proxy, manual rollout)",
+      "ja": "GitHub Actions → Dockerビルド → ホームサーバー配備（Nginxリバースプロキシ、手動ロールアウト）"
     },
-    "signing": "Apple Developer Program / Google Play Console",
+    "signing": "Apple Developer Program",
     "secrets": {
-      "ko": "Firebase 설정 파일 및 환경 변수를 통한 API 키 관리",
-      "en": "Managed API keys via Firebase configuration files and environment variables",
-      "ja": "Firebase設定ファイルおよび環境変数を介したAPIキーの管理"
+      "ko": ".env 분리, Keychain(iOS), 서버 환경변수로 민감값 관리",
+      "en": "Split .env, Keychain (iOS), and server env vars for sensitive keys",
+      "ja": "環境変数を分離し、iOSはKeychain、サーバーは環境変数で機微情報を管理"
     }
   },
   "results": {
     "achievements": {
-      "ko": "컴퓨터 비전 기반 실시간 자세 분석 기능을 성공적으로 구현하여 사용자 운동 지속률 80% 달성",
-      "en": "Successfully implemented computer vision-based real-time posture analysis feature, achieving an 80% user exercise continuation rate",
-      "ja": "コンピュータビジョンベースのリアルタイム姿勢分析機能の実装に成功し、ユーザー運動継続率80%を達成"
+      "ko": "iOS–FastAPI 기반 대화/회고 루프 MVP 출시, App Store 등록 및 홈서버 운영",
+      "en": "Shipped an iOS–FastAPI MVP for the dialogue/reflection loop; listed on the App Store and operated on a home server",
+      "ja": "iOS–FastAPIによる対話/振り返りループMVPをリリース、App Store掲載とホームサーバー運用を実施"
     },
     "learnings": {
-      "ko": "Flutter 환경에서 TensorFlow Lite를 활용한 온디바이스 ML 모델 통합 및 최적화 경험 확보",
-      "en": "Gained experience in integrating and optimizing on-device ML models using TensorFlow Lite in a Flutter environment",
-      "ja": "Flutter環境でTensorFlow Liteを活用したオンデバイスMLモデルの統合と最適化経験を獲得"
+      "ko": "의료 대체가 아님을 명확히 안내하는 UX·문구가 신뢰 형성에 필수임.",
+      "en": "Clear UX copy that it is not a clinical tool is essential for user trust.",
+      "ja": "医療目的ではないことを明確に示すUXと文言が信頼形成に不可欠。"
     },
     "nextSteps": {
-      "ko": "웨어러블 기기 연동을 통한 생체 데이터 기반 추천 고도화, LLM 기반의 운동 코칭 대화 기능 추가",
-      "en": "Advanced recommendation based on biometric data through wearable device integration, added LLM-based exercise coaching conversation feature",
-      "ja": "ウェアラブルデバイス連携による生体データベースの推奨の高度化、LLMベースの運動コーチング会話機能の追加"
+      "ko": "서버 종료 이후 오프라인 우선 모델로 재구성 검토(온디바이스 요약·태깅)",
+      "en": "Post-retirement exploration of an offline-first model (on-device summarization/tagging)",
+      "ja": "サーバー終了後はオフライン優先モデル（端末内要約・タグ付け）の再構成を検討"
     }
   },
   "additional_links": {
-    "website": "https://acon.app",
-    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
+    "website": "https://apps.apple.com/kr/app/daon-ai-%EC%B1%84%ED%8C%85%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%82%98%EB%8A%94-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EB%82%98/id6741571279",
+    "blog": "https://github.com/YourUsername/Daon-Energy"
   }
 }

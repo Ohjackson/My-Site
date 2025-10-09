@@ -5,37 +5,37 @@
     "ja": "ダオン"
   },
   "summary": {
-    "ko": "지속 가능한 환경을 위한 스마트 에너지 관리 시스템",
+    "ko": "자기공상법을 이용한 우울증 조기 발견 전문 ai 채팅앱",
     "en": "Smart energy management system for sustainable environment",
     "ja": "持続可能な環境のためのスマートエネルギー管理システム"
   },
   "role": {
-    "ko": "백엔드 개발자",
+    "ko": "full-stack, co-founder",
     "en": "Backend Developer",
     "ja": "バックエンド開発者"
   },
   "tags": {
-    "ko": ["IoT", "Python", "AI", "Energy", "Sustainability"],
+    "ko": ["iOS", "Fastapi", "Chat Bot"],
     "en": ["IoT", "Python", "AI", "Energy", "Sustainability"],
     "ja": ["IoT", "Python", "AI", "Energy", "Sustainability"]
   },
   "platform": {
-    "ko": "Web, IoT Devices",
+    "ko": "iPhone",
     "en": "Web, IoT Devices",
     "ja": "Web, IoT Devices"
   },
   "workPeriod": {
-    "ko": "2024.07 - 2024.12",
+    "ko": "2025.01",
     "en": "2024.07 - 2024.12",
     "ja": "2024.07 - 2024.12"
   },
   "releaseDate": {
-    "ko": "2024.12",
+    "ko": "2025.01",
     "en": "2024.12",
     "ja": "2024.12"
   },
   "endDate": {
-    "ko": "완료",
+    "ko": "서버 종료",
     "en": "Completed",
     "ja": "完了"
   },
@@ -46,10 +46,7 @@
   },
   "features": {
     "ko": [
-      "IoT 센서 기반 에너지 모니터링",
-      "AI 기반 에너지 사용량 예측",
-      "자동 에너지 최적화",
-      "실시간 대시보드"
+      "성격이 다 다른 현실형 쳇봇과 대화"
     ],
     "en": [
       "IoT sensor-based energy monitoring",
@@ -65,7 +62,7 @@
     ]
   },
   "links": {
-    "demo": "https://daon-demo.vercel.app",
+    "appStore": "https://apps.apple.com/kr/app/daon-ai-%EC%B1%84%ED%8C%85%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%82%98%EB%8A%94-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EB%82%98/id6741571279",
     "github": "https://github.com/YourUsername/Daon-Energy"
   },
   "additionalFeatures": {

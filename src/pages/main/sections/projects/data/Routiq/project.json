@@ -1,13 +1,13 @@
 {
   "name": {
-    "ko": "루틱",
+    "ko": "Routiq",
     "en": "Routiq",
     "ja": "ルーティック"
   },
   "summary": {
-    "ko": "효율적인 일상 루틴 관리를 위한 스마트 플래너",
-    "en": "Smart planner for efficient daily routine management",
-    "ja": "効率的な日常ルーチン管理のためのスマートプランナー"
+    "ko": "루틴기반 운동 기록 자동화 및 통계 제공 애플워치 서비스",
+    "en": "Apple Watch service that automates routine-based workout logging and provides rich statistics.",
+    "ja": "ルーチンに基づくワークアウト記録を自動化し、統計を提供するApple Watch向けサービス。"
   },
   "role": {
     "ko": "Full-Cycle Solo Project",
@@ -15,64 +15,61 @@
     "ja": "Full-Cycle Solo Project"
   },
   "tags": {
-    "ko": ["React", "TypeScript", "Tailwind CSS", "PWA"],
-    "en": ["React", "TypeScript", "Tailwind CSS", "PWA"],
-    "ja": ["React", "TypeScript", "Tailwind CSS", "PWA"]
+    "ko": ["IoT","Apple Watch", "SwiftUI", "Swift"],
+    "en": ["Apple Watch", "watchOS", "SwiftUI", "Swift", "WatchConnectivity"],
+    "ja": ["Apple Watch", "watchOS", "SwiftUI", "Swift", "WatchConnectivity"]
   },
   "platform": {
-    "ko": "Web, PWA",
-    "en": "Web, PWA",
-    "ja": "Web, PWA"
+    "ko": "Apple Watch, iPhone",
+    "en": "Apple Watch, iPhone",
+    "ja": "Apple Watch, iPhone"
   },
   "workPeriod": {
-    "ko": "2024.01 - 2024.06",
-    "en": "2024.01 - 2024.06",
-    "ja": "2024.01 - 2024.06"
+    "ko": "2025.05 - 2024.09",
+    "en": "2025.05 - 2025.09",
+    "ja": "2025.05 - 2025.09"
   },
   "releaseDate": {
-    "ko": "2024.06.10",
-    "en": "2024.06.10",
-    "ja": "2024.06.10"
+    "ko": "2025.09",
+    "en": "2025.09",
+    "ja": "2025.09"
   },
   "endDate": {
-    "ko": "진행중",
-    "en": "Ongoing",
-    "ja": "進行中"
+    "ko": "업데이트 준비중",
+    "en": "Preparing updates",
+    "ja": "アップデート準備中"
   },
   "teamSize": {
-    "ko": "1명 (Solo)",
+    "ko": "1",
     "en": "1 person (Solo)",
     "ja": "1人（ソロ）"
   },
   "additionalFeatures": {
-    "ko": "스마트 루틴 추천 시스템과 시간 기반 자동 스케줄링을 통해 사용자의 생산성을 극대화합니다. 습관 추적 및 분석 기능으로 개인의 성장 패턴을 파악하고, 최적의 일정 관리를 지원합니다.",
-    "en": "Maximizes user productivity through smart routine recommendation system and time-based automatic scheduling. Tracks and analyzes habits to understand personal growth patterns and supports optimal schedule management.",
-    "ja": "スマートルーティン推奨システムと時間ベースの自動スケジューリングにより、ユーザーの生産性を最大化します。習慣追跡・分析機能で個人の成長パターンを把握し、最適なスケジュール管理をサポートします。"
+    "ko": "8개국 출시, 아이폰이 옆에 없어도 기록 가능",
+    "en": "Launched in 8 countries; records workouts even without the iPhone nearby.",
+    "ja": "8か国でリリース。iPhoneが近くになくても記録可能。"
   },
   "features": {
     "ko": [
-      "스마트 루틴 추천 시스템",
-      "시간 기반 자동 스케줄링",
-      "습관 추적 및 분석",
-      "오프라인 동기화"
+      "부위별 운동 기록",
+      "루틴별 통계 제공",
+      "칼로리 추정"
     ],
     "en": [
-      "Smart routine recommendation system",
-      "Time-based automatic scheduling",
-      "Habit tracking and analysis",
-      "Offline synchronization"
+      "Body-part specific workout logging",
+      "Per-routine statistics",
+      "Calorie estimation"
     ],
     "ja": [
-      "スマートルーチン推奨システム",
-      "時間ベースの自動スケジューリング",
-      "習慣追跡と分析",
-      "オフライン同期"
+      "部位別ワークアウト記録",
+      "ルーチン別の統計提供",
+      "消費カロリー推定"
     ]
   },
   "overviewStory": {
-    "ko": "사용자의 생활 패턴을 학습하여 최적의 루틴을 제안하는 지능형 플래너",
-    "en": "Intelligent planner that learns user's lifestyle patterns to suggest optimal routines",
-    "ja": "ユーザーの生活パターンを学習して最適なルーティンを提案するインテリジェントプランナー"
+    "ko": "애플워치만으로도 끊김 없이 운동을 기록하고, 아이폰에서 루틴 단위의 통계로 회고할 수 있게 설계함. 기록 마찰을 줄여 ‘매일 10분 루틴’을 꾸준히 이어가도록 돕는 것이 목표임.",
+    "en": "Designed to capture workouts seamlessly on Apple Watch alone and review routine-level stats on iPhone. The goal is to reduce logging friction and help sustain a daily 10-minute routine.",
+    "ja": "Apple Watch単体で途切れなく記録し、iPhoneでルーチン単位の統計を振り返れるよう設計。記録の摩擦を減らし、毎日10分のルーチン継続を支援することが目的。"
   },
   "links": {
     "demo": "https://routiq.vercel.app",
@@ -80,84 +77,71 @@
   },
   "service": {
     "problem": {
-      "ko": "기존 플래너의 비유연성과 수동적인 스케줄링으로 인한 루틴 이탈 및 시간 관리 비효율성.",
-      "en": "Routine deviation and time management inefficiency due to the inflexibility and manual scheduling of existing planners.",
-      "ja": "従来のプランナーの柔軟性のなさや手動スケジューリングによるルーチンからの逸脱と時間管理の非効率性。"
+      "ko": "운동 기록의 번거로움과 루틴 유지의 어려움으로 인해 꾸준한 습관 형성이 어려움.",
+      "en": "Manual logging and difficulty maintaining routines make consistent habit building hard.",
+      "ja": "手動記録の煩雑さとルーチン維持の難しさが、継続的な習慣化を妨げる。"
     },
     "target": {
-      "ko": "바쁜 일상 속에서 시간을 효율적으로 관리하고, 데이터 기반으로 생산성을 높이고자 하는 사용자.",
-      "en": "Users who want to efficiently manage their time in a busy daily life and increase productivity based on data.",
-      "ja": "忙しい日常の中で時間を効率的に管理し、データに基づいて生産性を向上させたいユーザー。"
+      "ko": "애플워치로 가벼운 루틴부터 체계적으로 기록·분석하고 싶은 사용자.",
+      "en": "Users who want structured logging and analysis of workouts via Apple Watch.",
+      "ja": "Apple Watchで体系的にワークアウトを記録・分析したいユーザー。"
     },
     "value": {
-      "ko": "개인 생활 패턴을 학습하는 AI 추천 시스템, PWA를 통한 모든 기기에서의 접근성 및 오프라인 사용성.",
-      "en": "AI recommendation system that learns personal lifestyle patterns, accessibility on all devices via PWA, and offline usability.",
-      "ja": "個人の生活パターンを学習するAI推奨システム、PWAを介したすべてのデバイスでのアクセシビリティとオフラインでの利用可能性。"
+      "ko": "워치 단독 기록, 루틴 중심 통계, 간단한 칼로리 추정으로 ‘기록→회고→개선’ 사이클을 쉽게 만듦.",
+      "en": "Watch-only logging, routine-centric stats, and simple calorie estimates make the log→reflect→improve cycle easy.",
+      "ja": "Watch単独記録・ルーチン中心の統計・簡易カロリー推定で「記録→振り返り→改善」の循環を容易にする。"
     }
   },
   "detail_features": [
     {
       "title": {
-        "ko": "스마트 루틴 추천",
-        "en": "Smart Routine Recommendation",
-        "ja": "スマートルーチン推奨"
+        "ko": "워치 단독 기록",
+        "en": "Watch-Only Logging",
+        "ja": "Watch単独記録"
       },
       "description": {
-        "ko": "사용자의 완료 기록, 선호 시간대, 작업 유형을 분석하여 최적의 루틴 순서와 시간을 제안.",
-        "en": "Analyzes user completion history, preferred time slots, and task types to suggest the optimal routine order and time.",
-        "ja": "ユーザーの完了履歴、好みの時間帯、タスクタイプを分析し、最適なルーチンの順序と時間を提案。"
+        "ko": "아이폰이 없어도 워치에서 세트/무게/횟수/휴식 시간을 빠르게 입력하고 저장.",
+        "en": "Log sets/weight/reps/rest quickly on the Watch—no iPhone required.",
+        "ja": "iPhoneなしでもWatch上でセット・重量・回数・休憩を素早く入力・保存。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "시간 기반 자동 스케줄링",
-        "en": "Time-based Automatic Scheduling",
-        "ja": "時間ベースの自動スケジューリング"
+        "ko": "루틴 기반 통계",
+        "en": "Routine-Based Analytics",
+        "ja": "ルーチン基盤の分析"
       },
       "description": {
-        "ko": "할 일 목록과 예상 소요 시간을 입력하면, 남은 시간을 고려하여 자동으로 일과에 배치.",
-        "en": "When a to-do list and estimated time are entered, it automatically allocates them to the daily schedule considering the remaining time.",
-        "ja": "ToDoリストと予想所要時間を入力すると、残りの時間を考慮して自動的に日課に配置。"
+        "ko": "루틴별 볼륨·빈도·소요 시간 추이를 iPhone에서 요약 차트로 제공.",
+        "en": "On iPhone, summary charts track volume, frequency, and time per routine.",
+        "ja": "iPhoneでルーチンごとのボリューム・頻度・所要時間の推移をサマリーチャートで提供。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "습관 추적 및 분석 대시보드",
-        "en": "Habit Tracking and Analysis Dashboard",
-        "ja": "習慣追跡と分析ダッシュボード"
+        "ko": "간편 칼로리 추정",
+        "en": "Lightweight Calorie Estimation",
+        "ja": "軽量なカロリー推定"
       },
       "description": {
-        "ko": "루틴 완료율, 평균 소요 시간, 생산성 변화를 시각화하여 제공.",
-        "en": "Provides visualization of routine completion rate, average time spent, and productivity changes.",
-        "ja": "ルーチン完了率、平均所要時間、生産性の変化を視覚化して提供。"
+        "ko": "운동 유형·세트·휴식 기반의 단순 모델로 대략적인 칼로리 소모를 산출.",
+        "en": "A simple model estimates calories from exercise type, sets, and rest.",
+        "ja": "種目・セット・休憩に基づく簡易モデルで概算カロリーを算出。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "PWA 오프라인 동기화",
-        "en": "PWA Offline Synchronization",
-        "ja": "PWAオフライン同期"
+        "ko": "알림·리마인더",
+        "en": "Reminders",
+        "ja": "リマインダー"
       },
       "description": {
-        "ko": "Service Worker와 IndexedDB를 활용하여 네트워크 연결 없이도 루틴 확인 및 기록 가능.",
-        "en": "Enables routine checking and recording even without a network connection by utilizing Service Worker and IndexedDB.",
-        "ja": "Service WorkerとIndexedDBを活用し、ネットワーク接続なしでもルーチンの確認と記録が可能。"
-      },
-      "implemented": true
-    },
-    {
-      "title": {
-        "ko": "직관적인 드래그 앤 드롭 UI",
-        "en": "Intuitive Drag and Drop UI",
-        "ja": "直感的なドラッグアンドドロップUI"
-      },
-      "description": {
-        "ko": "Tailwind CSS 기반의 반응형 디자인과 부드러운 드래그 앤 드롭으로 루틴 수정 용이성 극대화.",
-        "en": "Maximizes ease of routine modification with a Tailwind CSS-based responsive design and smooth drag and drop.",
-        "ja": "Tailwind CSSベースのレスポンシブデザインとスムーズなドラッグアンドドロップでルーチン修正の容易さを最大化。"
+        "ko": "정해둔 시간에 루틴 시작 알림을 제공하여 꾸준한 실행을 돕음.",
+        "en": "Sends start-time reminders to encourage consistent execution.",
+        "ja": "設定時間にルーチン開始を通知し、継続的な実行を促す。"
       },
       "implemented": true
     }
@@ -170,66 +154,66 @@
       "/assets/routiq/shot-4.png"
     ],
     "description": {
-      "ko": "반응형 웹/모바일 프리뷰",
-      "en": "Responsive Web/Mobile Preview",
-      "ja": "レスポンシブウェブ/モバイルプレビュー"
+      "ko": "워치 기록 화면, 아이폰 통계 대시보드, 루틴 편집 프리뷰",
+      "en": "Watch logging screen, iPhone stats dashboard, routine editor preview",
+      "ja": "Watchの記録画面、iPhone統計ダッシュボード、ルーチン編集プレビュー"
     }
   },
   "architecture": {
-    "components": "React PWA (TypeScript) · State Management (Zustand) · Styling (Tailwind CSS) · Local Storage (IndexedDB)",
+    "components": "watchOS App (SwiftUI) · iOS App (SwiftUI) · WatchConnectivity · (Opt) HealthKit · Local DB (SwiftData/CoreData) · iCloud",
     "dataFlow": {
-      "ko": "사용자 입력 → IndexedDB 저장 → React/Zustand 상태 관리 → 추천 엔진(클라이언트 측) → 최적화된 루틴 출력",
-      "en": "User Input → IndexedDB Storage → React/Zustand State Management → Recommendation Engine (Client-side) → Optimized Routine Output",
-      "ja": "ユーザー入力 → IndexedDB保存 → React/Zustand状態管理 → 推奨エンジン（クライアント側） → 最適化されたルーチン出力"
+      "ko": "워치 입력 → 로컬 저장 → (옵션) iPhone 동기화 → 통계 집계/표시",
+      "en": "Watch input → local store → (optional) iPhone sync → stats aggregation & display",
+      "ja": "Watch入力 → ローカル保存 → （任意）iPhone同期 → 統計集計・表示"
     },
-    "deployment": "Vercel/Netlify (Static Hosting) · GitHub Actions (CI/CD)",
+    "deployment": "TestFlight → App Store",
     "security": {
-      "ko": "HTTPS 적용, 사용자 데이터는 클라이언트 측 IndexedDB에 저장 (온디바이스 우선), 민감 정보 서버 전송 최소화.",
-      "en": "Applied HTTPS, user data stored in client-side IndexedDB (on-device first), minimized sensitive information transmission to the server.",
-      "ja": "HTTPS適用、ユーザーデータはクライアント側のIndexedDBに保存（オンデバイス優先）、機密情報のサーバー送信を最小化。"
+      "ko": "온디바이스 우선, iCloud 동기화 시 암호화, 민감 데이터 최소 저장",
+      "en": "On-device first; encrypted iCloud sync; minimal sensitive data storage",
+      "ja": "オンデバイス優先、iCloud同期は暗号化、機微データは最小限保存"
     },
     "network": {
-      "ko": "PWA Manifest 및 Service Worker를 통한 오프라인 캐싱 전략.",
-      "en": "Offline caching strategy via PWA Manifest and Service Worker.",
-      "ja": "PWA ManifestおよびService Workerを介したオフラインキャッシング戦略。"
+      "ko": "대부분 오프라인 동작, 필요 시 백그라운드 동기화",
+      "en": "Mostly offline; background sync when needed",
+      "ja": "基本はオフライン動作、必要に応じてバックグラウンド同期"
     }
   },
   "techStack": {
-    "frontend": "React, TypeScript, Zustand, Tailwind CSS, React-DnD",
-    "pwa": "Service Worker, Web Manifest, IndexedDB, Workbox",
-    "data": "IndexedDB (Local Storage), JSON (Configuration)",
-    "devops": "GitHub Actions, Vercel/Netlify",
-    "etc": "Framer Motion (Animation)"
+    "frontend": "SwiftUI, UIKit(partial), Combine",
+    "pwa": "N/A",
+    "data": "SwiftData/CoreData, iCloud",
+    "devops": "Xcode Cloud, fastlane, TestFlight",
+    "etc": "WatchConnectivity, (Opt) HealthKit"
   },
   "deployment": {
-    "environment": "Development → Staging (Vercel Preview) → Production (Vercel/Netlify)",
+    "environment": "Internal Alpha → TestFlight → App Store",
     "pipeline": {
-      "ko": "GitHub Actions → Build & Test → Vercel/Netlify 자동 배포",
-      "en": "GitHub Actions → Build & Test → Vercel/Netlify Automatic Deployment",
-      "ja": "GitHub Actions → Build & Test → Vercel/Netlify自動デプロイ"
+      "ko": "Xcode Cloud/fastlane → 빌드·테스트 → TestFlight 배포",
+      "en": "Xcode Cloud/fastlane → build & test → TestFlight release",
+      "ja": "Xcode Cloud/fastlane → ビルド・テスト → TestFlight配信"
     },
-    "signing": "N/A (Web App/PWA)",
+    "signing": "Apple Developer Program",
     "secrets": {
-      "ko": "N/A (클라이언트 측 로직 중심)",
-      "en": "N/A (Client-side logic focused)",
-      "ja": "N/A (クライアント側ロジック中心)"
+      "ko": "키체인과 .xcconfig로 키·환경 분리",
+      "en": "Separate keys/env via Keychain and .xcconfig",
+      "ja": "Keychainと.xcconfigでキー・環境を分離管理"
     }
   },
   "results": {
     "achievements": {
-      "ko": "PWA 구현으로 모바일 앱과 유사한 사용자 경험 제공. 자동 스케줄링 기능 도입 후 루틴 완성률 82% 달성.",
-      "en": "Provided a mobile app-like user experience through PWA implementation. Achieved an 82% routine completion rate after introducing the automatic scheduling feature.",
-      "ja": "PWA実装によりモバイルアプリに類似したユーザー体験を提供。自動スケジューリング機能導入後、ルーチン完了率82%を達成。"
+      "ko": "워치 단독 기록과 루틴 통계 흐름 구축, 내부 테스트에서 루틴 지속률 체감 향상 확인.",
+      "en": "Established watch-only logging and routine-centric analytics; internal tests indicated perceived improvement in routine adherence.",
+      "ja": "Watch単独記録とルーチン中心の分析を実装。内部テストでルーチン継続の体感向上を確認。"
     },
     "learnings": {
-      "ko": "클라이언트 측에서 복잡한 스케줄링 알고리즘을 효율적으로 처리하는 방법 학습. PWA의 오프라인 기능이 사용자 유지율에 긍정적 영향.",
-      "en": "Learned how to efficiently handle complex scheduling algorithms on the client side. PWA's offline capability positively impacted user retention.",
-      "ja": "クライアント側で複雑なスケジューリングアルゴリズムを効率的に処理する方法を学習。PWAのオフライン機能がユーザー維持率に肯定的な影響。"
+      "ko": "입력 마찰을 줄이는 UX가 루틴 시작률에 직접 영향. 워치↔아이폰 동기 타이밍과 충돌 처리 전략의 중요성 확인.",
+      "en": "Reducing input friction directly impacts routine start rate. Sync timing and conflict handling between Watch and iPhone are critical.",
+      "ja": "入力摩擦の低減が開始率に直結。WatchとiPhone間の同期タイミングと競合処理が重要であると確認。"
     },
     "nextSteps": {
-      "ko": "사용자 간 루틴 공유 기능 추가, 백엔드 도입을 통한 정교한 머신러닝 모델 적용.",
-      "en": "Add routine sharing feature between users, apply a more sophisticated machine learning model through backend introduction.",
-      "ja": "ユーザー間のルーチン共有機能の追加、バックエンド導入による洗練された機械学習モデルの適用。"
+      "ko": "더 정교한 칼로리 모델, 주간 리포트 자동 생성, 루틴 공유(코드) 기능 추가.",
+      "en": "Richer calorie model, automatic weekly reports, and routine sharing via codes.",
+      "ja": "より精緻なカロリーモデル、週次レポート自動生成、コードによるルーチン共有を追加。"
     }
   },
   "additional_links": {

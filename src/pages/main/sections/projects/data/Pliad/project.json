@@ -1,47 +1,47 @@
 {
   "name": {
-    "ko": "플리아드",
+    "ko": "B2B 스크립트 제공 프로그램",
     "en": "Pliad",
     "ja": "プリアド"
   },
   "summary": {
-    "ko": "개인화된 학습 경험을 위한 AI 교육 플랫폼",
+    "ko": "고객사 유저 관리를 위한 및 데이터 가공 및 제공 프로그램",
     "en": "AI education platform for personalized learning experiences",
     "ja": "パーソナライズされた学習体験のためのAI教育プラットフォーム"
   },
   "role": {
-    "ko": "AI 개발자",
+    "ko": "Forward developer",
     "en": "AI Developer",
     "ja": "AI開発者"
   },
   "tags": {
-    "ko": ["Python", "TensorFlow", "React", "MongoDB"],
+    "ko": ["Python", "Fastapi", "Langgraph"],
     "en": ["Python", "TensorFlow", "React", "MongoDB"],
     "ja": ["Python", "TensorFlow", "React", "MongoDB"]
   },
   "platform": {
-    "ko": "Web, Mobile",
+    "ko": "server",
     "en": "Web, Mobile",
     "ja": "Web, Mobile"
   },
   "workPeriod": {
-    "ko": "2024.09 - 2025.01",
+    "ko": "2025.08",
     "en": "2024.09 - 2025.01",
     "ja": "2024.09 - 2025.01"
   },
   "releaseDate": {
-    "ko": "2025.01.20",
+    "ko": "2025.08",
     "en": "2025.01.20",
     "ja": "2025.01.20"
   },
   "endDate": {
-    "ko": "진행중",
+    "ko": "2025.08",
     "en": "Ongoing",
     "ja": "進行中"
   },
   "teamSize": {
-    "ko": "4명",
-    "en": "4 people",
+    "ko": "개인 작업 (팀 6명)",
+    "en": "Individual work (Team 6 people)",
     "ja": "4人"
   },
   "additionalFeatures": {

@@ -1,13 +1,13 @@
 {
   "name": {
-    "ko": "팝코",
+    "ko": "POPCO",
     "en": "POPCO",
-    "ja": "ポップコ"
+    "ja": "POPCO"
   },
   "summary": {
-    "ko": "창의적 콘텐츠 제작을 위한 협업 플랫폼",
-    "en": "Collaboration platform for creative content production",
-    "ja": "創造的なコンテンツ制作のためのコラボレーションプラットフォーム"
+    "ko": "귀여운 고양이가 내 손목에",
+    "en": "A cute cat battle game on your wrist.",
+    "ja": "手首で楽しむかわいいネコのバトルゲーム。"
   },
   "role": {
     "ko": "Full-Cycle Solo Project",
@@ -15,138 +15,132 @@
     "ja": "Full-Cycle Solo Project"
   },
   "tags": {
-    "ko": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"],
+    "ko": ["IoT", "Apple Watch", "Swift"],
     "en": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"],
     "ja": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"]
   },
   "platform": {
-    "ko": "Web",
+    "ko": "Apple Watch, iPhone",
     "en": "Web",
     "ja": "Web"
   },
   "workPeriod": {
-    "ko": "2024.05 - 2024.10",
+    "ko": "2025.05 - 2025.09",
     "en": "2024.05 - 2024.10",
     "ja": "2024.05 - 2024.10"
   },
   "releaseDate": {
-    "ko": "2024.10.15",
+    "ko": "2025.09",
     "en": "2024.10.15",
     "ja": "2024.10.15"
   },
   "endDate": {
-    "ko": "진행중",
+    "ko": "업데이트 준비중",
     "en": "Ongoing",
     "ja": "進行中"
   },
   "teamSize": {
-    "ko": "5명",
+    "ko": "1",
     "en": "5 people",
     "ja": "5人"
   },
   "additionalFeatures": {
-    "ko": "실시간 협업 편집 도구와 다양한 미디어 형식 지원으로 창의적 콘텐츠 제작을 혁신합니다. 버전 관리 및 히스토리 추적 기능으로 팀원 간의 원활한 협업을 지원합니다.",
-    "en": "Revolutionizes creative content production with real-time collaborative editing tools and support for various media formats. Supports seamless team collaboration through version control and history tracking features.",
-    "ja": "リアルタイム協力編集ツールと多様なメディア形式サポートにより、創造的コンテンツ制作を革新します。バージョン管理と履歴追跡機能により、チームメンバー間の円滑な協力をサポートします。"
+    "ko": "한일 양국 동시 출시, 서비기반이 아닌 근거리 통신으로 고양이 1대1 배틀 진행",
+    "en": "Simultaneous launch in Korea and Japan; 1v1 cat battles using proximity communications rather than server relays.",
+    "ja": "韓日同時リリース。サーバー中継ではなく近距離通信で1対1のネコバトルを実現。"
   },
   "features": {
     "ko": [
-      "실시간 협업 편집 도구",
-      "다양한 미디어 형식 지원",
-      "버전 관리 및 히스토리 추적",
-      "팀 워크스페이스 관리"
+      "실시간 한일전",
+      "WatchConnectivity를 이용한 애플워치간 통신 배틀"
     ],
     "en": [
-      "Real-time collaborative editing tools",
-      "Support for various media formats",
-      "Version control and history tracking",
-      "Team workspace management"
+      "Real-time Korea–Japan ladder",
+      "Watch-to-Watch battle via WatchConnectivity"
     ],
     "ja": [
-      "リアルタイム協力編集ツール",
-      "様々なメディア形式サポート",
-      "バージョン管理と履歴追跡",
-      "チームワークスペース管理"
+      "リアルタイムの日韓対戦",
+      "WatchConnectivityを用いたWatch間バトル"
     ]
   },
   "overviewStory": {
-    "ko": "창작자들이 효율적으로 협업하여 고품질 콘텐츠를 제작할 수 있는 통합 플랫폼",
-    "en": "Integrated platform where creators can efficiently collaborate to produce high-quality content",
-    "ja": "クリエイターが効率的に協力して高品質コンテンツを制作できる統合プラットフォーム"
+    "ko": "애플워치간 통신이 가능할까? 라는 궁금증으로 실험적 시도가 기획까지 이어져 출시된 케이스입니다.",
+    "en": "Started from a simple question—can two Apple Watches battle directly? An experimental idea evolved into a shipped product.",
+    "ja": "「Apple Watch同士で直接バトルできるのか？」という疑問から始まり、実験が企画・リリースへと発展。"
   },
   "links": {
-    "demo": "https://popco.app",
+    "appStore": "https://apps.apple.com/kr/app/popco/id6744177061",
     "github": "https://github.com/YourUsername/POPCO-Platform"
   },
   "service": {
     "problem": {
-      "ko": "기존 도구들의 협업 기능 부족 및 실시간 동기화 문제로 인한 창작 과정의 비효율성.",
-      "en": "Inefficiency in the creative process due to lack of collaboration features in existing tools and real-time synchronization issues.",
-      "ja": "既存ツールの協力機能不足とリアルタイム同期問題による制作プロセスの非効率性。"
+      "ko": "간단하게 즐길 근거리 멀티플레이 게임의 부재와 서버 의존으로 인한 지연 문제.",
+      "en": "Lack of ultra-simple nearby multiplayer games and latency caused by server-dependent designs.",
+      "ja": "手軽に遊べる近距離マルチプレイの不足と、サーバー依存設計による遅延問題。"
     },
     "target": {
-      "ko": "영상, 문서, 디자인 등 다양한 콘텐츠를 팀 단위로 빠르고 정확하게 제작하려는 크리에이티브 팀.",
-      "en": "Creative teams aiming to produce various content such as video, documents, and design quickly and accurately as a team.",
-      "ja": "動画、ドキュメント、デザインなど、様々なコンテンツをチーム単位で迅速かつ正確に制作したいクリエイティブチーム。"
+      "ko": "애플워치로 짧고 가벼운 대전을 즐기고 싶은 사용자, 친구와 즉시 대결하고 싶은 사용자.",
+      "en": "Users who want quick, lightweight wrist battles and instant duels with friends.",
+      "ja": "Apple Watchで手軽に短時間の対戦を楽しみたいユーザー、すぐに友達と勝負したいユーザー。"
     },
     "value": {
-      "ko": "OT 알고리즘 기반의 충돌 없는 실시간 동시 편집, 통합된 미디어 관리 및 팀 워크플로우.",
-      "en": "Conflict-free real-time simultaneous editing based on the OT algorithm, integrated media management, and team workflow.",
-      "ja": "OTアルゴリズムに基づく競合のないリアルタイム同時編集、統合されたメディア管理とチームワークフロー。"
+      "ko": "아이폰 없이도 워치 단독 플레이 가능, 근거리 P2P 중심으로 지연 최소화, 국가 랭킹으로 동기부여 제공.",
+      "en": "Play on Watch without iPhone nearby, latency minimized via local P2P, and motivation through country rankings.",
+      "ja": "iPhoneなしでもWatch単体でプレイ可能。近距離P2Pで遅延を最小化し、国別ランキングでモチベーションを提供。"
     }
   },
   "detail_features": [
     {
       "title": {
-        "ko": "실시간 협업 편집 도구 (OT 기반)",
-        "en": "Real-time Collaborative Editor (OT-based)",
-        "ja": "リアルタイム協力編集ツール (OTベース)"
+        "ko": "싱글 플레이(터치 카운트)",
+        "en": "Single Play (Touch Count)",
+        "ja": "シングルプレイ（タッチカウント）"
       },
       "description": {
-        "ko": "Operational Transform (OT) 알고리즘을 적용하여 텍스트 및 미디어 요소의 다중 사용자 동시 편집을 충돌 없이 지원.",
-        "en": "Supports conflict-free multi-user simultaneous editing of text and media elements by applying the Operational Transform (OT) algorithm.",
-        "ja": "Operational Transform (OT)アルゴリズムを適用し、テキストおよびメディア要素のマルチユーザー同時編集を競合なしでサポート。"
+        "ko": "고양이를 터치해 입을 여닫으면 점수가 오르는 간단한 기록 모드. 개인 최고 기록 저장.",
+        "en": "Tap to open/close the cat’s mouth and rack up points. Saves personal best.",
+        "ja": "ネコをタップして口の開閉でスコア加算。自己ベストを保存。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "WebRTC 기반 실시간 통신",
-        "en": "WebRTC-based Real-time Communication",
-        "ja": "WebRTCベースのリアルタイム通信"
+        "ko": "1대1 근거리 배틀",
+        "en": "1v1 Nearby Battle",
+        "ja": "1対1近距離バトル"
       },
       "description": {
-        "ko": "WebRTC를 활용하여 협업 워크스페이스 내에서 음성 및 화상 채팅 기능을 제공.",
-        "en": "Provides voice and video chat functionality within the collaboration workspace using WebRTC.",
-        "ja": "WebRTCを活用し、協力ワークスペース内で音声およびビデオチャット機能を提供。"
+        "ko": "아이폰에서 페어링한 뒤 배틀은 워치에서 진행. 터치 카운트를 실시간 동기화해 승패 결정.",
+        "en": "Pair on iPhone, then battle on Watch. Touch counts sync in real time to decide the winner.",
+        "ja": "iPhoneでペアリング後、バトルはWatchで実施。タッチ数をリアルタイム同期して勝敗を決定。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "버전 관리 및 히스토리 추적",
-        "en": "Version Control and History Tracking",
-        "ja": "バージョン管理と履歴追跡"
+        "ko": "국가별 랭킹(한·일)",
+        "en": "Country Rankings (KR/JP)",
+        "ja": "国別ランキング（日・韓）"
       },
       "description": {
-        "ko": "모든 편집 이력을 저장하고, 특정 시점으로 롤백할 수 있는 기능을 제공하여 안전한 협업 환경 구축.",
-        "en": "Stores all editing history and provides the ability to roll back to a specific point in time, creating a secure collaboration environment.",
-        "ja": "すべての編集履歴を保存し、特定の時点にロールバックできる機能を提供し、安全な協力環境を構築。"
+        "ko": "누적 점수 기반 국가 대항전. 위치 기반 국가 분류 및 주간 리더보드 제공.",
+        "en": "Nation-vs-nation ladder from cumulative scores; location-based country classification and weekly leaderboard.",
+        "ja": "累計スコアによる国別対抗。位置情報で国を判定し、週間リーダーボードを提供。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "통합 미디어 자산 관리",
-        "en": "Integrated Media Asset Management",
-        "ja": "統合メディア資産管理"
+        "ko": "고양이 레벨업/업적",
+        "en": "Cat Level-up & Achievements",
+        "ja": "ネコのレベルアップ・実績"
       },
       "description": {
-        "ko": "다양한 형식의 미디어 파일(이미지, 비디오, 오디오)을 업로드, 변환, 관리하는 통합 시스템.",
-        "en": "An integrated system for uploading, converting, and managing various media file formats (images, video, audio).",
-        "ja": "様々な形式のメディアファイル（画像、ビデオ、オーディオ）をアップロード、変換、管理する統合システム。"
+        "ko": "개인 카운트 누적에 따라 고양이 스킨·이펙트 해금. 업적 배지 제공.",
+        "en": "Unlock skins/effects as your personal count grows. Earn achievement badges.",
+        "ja": "累計カウントに応じてスキンやエフェクトを解放。実績バッジを獲得。"
       },
-      "implemented": true
+      "implemented": false
     }
   ],
   "preview_screenshots": {
@@ -156,66 +150,66 @@
       "/assets/popco/shot-3.png"
     ],
     "description": {
-      "ko": "협업 편집기 및 워크스페이스 대시보드 프리뷰",
-      "en": "Collaborative Editor and Workspace Dashboard Preview",
-      "ja": "協力編集者とワークスペースダッシュボードのプレビュー"
+      "ko": "워치 배틀 화면, 아이폰 페어링, 국가 랭킹 프리뷰",
+      "en": "Watch battle screen, iPhone pairing, country ranking preview",
+      "ja": "Watchのバトル画面、iPhoneペアリング、国別ランキングのプレビュー"
     }
   },
   "architecture": {
-    "components": "Next.js (React) · Node.js (Express/Socket.io) · PostgreSQL · Cloud Storage (S3/Cloudinary) · WebRTC",
+    "components": "watchOS App (SwiftUI) · iOS App (SwiftUI/Swift) · WatchConnectivity · MultipeerConnectivity · (Opt) FastAPI Leaderboard",
     "dataFlow": {
-      "ko": "클라이언트 편집 액션 → Socket.io (OT) → Node.js 서버 (OT 적용/PostgreSQL 저장) → 다른 클라이언트 동기화.",
-      "en": "Client Edit Action → Socket.io (OT) → Node.js Server (OT Application/PostgreSQL Storage) → Synchronization to Other Clients.",
-      "ja": "クライアント編集アクション → Socket.io (OT) → Node.jsサーバー (OT適用/PostgreSQL保存) → 他のクライアントへの同期。"
+      "ko": "아이폰에서 상대 페어링(Multipeer) → 워치로 상태 전달(WatchConnectivity) → 배틀 진행/동기화 → (옵션) 서버로 랭킹 업로드",
+      "en": "Pair opponents on iPhone (Multipeer) → propagate state to Watch (WatchConnectivity) → battle & sync → (opt) upload ranking to server",
+      "ja": "iPhoneで相手ペアリング（Multipeer）→ Watchへ状態連携（WatchConnectivity）→ バトル実行・同期 →（任意）サーバーへランキング送信"
     },
-    "deployment": "Vercel (Next.js Frontend) · AWS EC2/DigitalOcean (Node.js Backend/DB)",
+    "deployment": "TestFlight → App Store (iOS/watchOS) · (Opt) FastAPI on home server for rankings",
     "security": {
-      "ko": "JWT 기반 사용자 인증, PostgreSQL Row-Level Security 적용, WebRTC 통신 암호화 (DTLS/SRTP).",
-      "en": "JWT-based user authentication, PostgreSQL Row-Level Security applied, WebRTC communication encryption (DTLS/SRTP).",
-      "ja": "JWTベースのユーザー認証、PostgreSQL Row-Level Security適用、WebRTC通信暗号化 (DTLS/SRTP)。"
+      "ko": "근거리 통신은 로컬 네트워크 한정, 사용자 식별자는 익명 ID. 서버 전송 시 TLS.",
+      "en": "Nearby comm limited to local network; users identified by anonymous IDs; TLS for any server transfer.",
+      "ja": "近距離通信はローカルネットワーク限定。匿名IDで識別し、サーバー送信時はTLS。"
     },
     "network": {
-      "ko": "WebSocket (Socket.io)을 통한 실시간 데이터 동기화, WebRTC를 통한 P2P 미디어 스트리밍.",
-      "en": "Real-time data synchronization via WebSocket (Socket.io), P2P media streaming via WebRTC.",
-      "ja": "WebSocket (Socket.io)を介したリアルタイムデータ同期、WebRTCを介したP2Pメディアストリーミング。"
+      "ko": "WatchConnectivity(WCSession), MultipeerConnectivity(P2P), (옵션) HTTPS FastAPI",
+      "en": "WatchConnectivity (WCSession), MultipeerConnectivity (P2P), (opt) HTTPS FastAPI",
+      "ja": "WatchConnectivity（WCSession）、MultipeerConnectivity（P2P）、（任意）HTTPS FastAPI"
     }
   },
   "techStack": {
-    "frontend": "Next.js, React, TypeScript, Tailwind CSS, Socket.io-client",
-    "backend": "Node.js, Express, Socket.io, PostgreSQL, Sequelize/Prisma",
-    "realtime": "Operational Transform (OT), WebRTC, Socket.io",
-    "data": "PostgreSQL, Redis (Caching/Session)",
-    "devops": "GitHub Actions, Docker, AWS/DigitalOcean"
+    "frontend": "SwiftUI, UIKit(partial), Combine",
+    "backend": "FastAPI (optional leaderboard), PostgreSQL (optional)",
+    "realtime": "WatchConnectivity, MultipeerConnectivity",
+    "data": "On-device store (UserDefaults/SQLite/SwiftData), (Opt) PostgreSQL",
+    "devops": "TestFlight, fastlane, (Opt) Docker for FastAPI"
   },
   "deployment": {
-    "environment": "Development → Staging → Production (Vercel/AWS)",
+    "environment": "Internal Alpha → TestFlight → App Store",
     "pipeline": {
-      "ko": "GitHub Actions → Docker Build → AWS EC2/Vercel 자동 배포",
-      "en": "GitHub Actions → Docker Build → AWS EC2/Vercel Automatic Deployment",
-      "ja": "GitHub Actions → Docker Build → AWS EC2/Vercel自動デプロイ"
+      "ko": "fastlane/Xcode Cloud → 빌드·테스트 → TestFlight 배포 → App Store 제출",
+      "en": "fastlane/Xcode Cloud → build & test → TestFlight release → App Store submission",
+      "ja": "fastlane/Xcode Cloud → ビルド・テスト → TestFlight配信 → App Store申請"
     },
-    "signing": "N/A (Web Service)",
+    "signing": "Apple Developer Program",
     "secrets": {
-      "ko": "환경 변수 및 AWS Secret Manager를 통한 DB/API 키 관리.",
-      "en": "Managed DB/API keys via environment variables and AWS Secret Manager.",
-      "ja": "環境変数およびAWS Secret Managerを介したDB/APIキーの管理。"
+      "ko": "앱 키·엔드포인트는 .xcconfig/Keychain으로 분리, 서버는 환경변수로 관리",
+      "en": "App keys/endpoints via .xcconfig/Keychain; server secrets via environment variables",
+      "ja": "アプリ鍵・エンドポイントは.xcconfig/Keychainで分離、サーバーは環境変数で管理"
     }
   },
   "results": {
     "achievements": {
-      "ko": "OT 알고리즘을 성공적으로 구현하여 60%의 협업 효율성 향상 달성. WebRTC를 통한 안정적인 실시간 통신 환경 제공.",
-      "en": "Successfully implemented the OT algorithm, achieving a 60% improvement in collaboration efficiency. Provided a stable real-time communication environment via WebRTC.",
-      "ja": "OTアルゴリズムの実装に成功し、協力効率60%向上を達成。WebRTCを介した安定したリアルタイム通信環境を提供。"
+      "ko": "아이폰 페어링→워치 배틀 흐름 안정화, KR/JP 랭킹 베타 운영.",
+      "en": "Stabilized iPhone pairing → Watch battle flow; operated KR/JP ranking in beta.",
+      "ja": "iPhoneペアリング→Watchバトルのフローを安定化。日韓ランキングのベータ運用を実施。"
     },
     "learnings": {
-      "ko": "Operational Transform과 같은 복잡한 분산 시스템의 동기화 로직을 설계하고 디버깅하는 심층적인 경험 확보. Next.js의 서버리스 기능과 Node.js 서버의 통합 방법 학습.",
-      "en": "Gained in-depth experience in designing and debugging synchronization logic for complex distributed systems like Operational Transform. Learned how to integrate Next.js serverless functions with a dedicated Node.js server.",
-      "ja": "Operational Transformのような複雑な分散システムの同期ロジックを設計およびデバッグする深い経験を獲得。Next.jsのサーバーレス機能と専用Node.jsサーバーの統合方法を学習。"
+      "ko": "근거리 P2P와 WatchConnectivity의 타이밍 관리가 핵심. 서버 의존을 줄이면 체감 지연이 크게 감소.",
+      "en": "Timing between P2P and WatchConnectivity is critical; reducing server dependence cuts perceived latency.",
+      "ja": "近距離P2PとWatchConnectivityのタイミング管理が肝要。サーバー依存を減らすと体感遅延が大きく低減。"
     },
     "nextSteps": {
-      "ko": "CRDT (Conflict-free Replicated Data Type)로의 동기화 알고리즘 전환 검토, AI 기반 콘텐츠 자동 생성 기능 추가.",
-      "en": "Reviewing synchronization algorithm transition to CRDT (Conflict-free Replicated Data Type), adding AI-based content auto-generation features.",
-      "ja": "CRDT (Conflict-free Replicated Data Type)への同期アルゴリズム移行の検討、AIベースのコンテンツ自動生成機能の追加。"
+      "ko": "워치 단독 페어링 연구, 레벨·업적 시스템 정식화, 안티치트(비정상 터치 패턴 감지).",
+      "en": "Explore watch-only pairing, formalize level/achievement systems, add anti-cheat (abnormal tap pattern detection).",
+      "ja": "Watch単独ペアリングの検討、レベル・実績の正式実装、不正対策（異常タップ検知）。"
     }
   },
   "additional_links": {
