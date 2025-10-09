@@ -20,7 +20,7 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-2xl border border-gray-200/50 flex-shrink-0">
             <img 
-              src={`./src/pages/main/sections/projects/data/${project.id}/icon.png`}
+              src={`/assets/icons/${project.id}.png`}
               alt={`${project.name} icon`}
               className="w-full h-full object-cover"
               onError={(e) => {
