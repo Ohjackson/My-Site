@@ -1,5 +1,6 @@
 import type { ProjectId, ProjectTranslation } from '../types';
 import { ArrowUpRightIcon } from '@/shared/components/icons';
+import { projectIcons } from '@/assets/icons';
 
 interface ProjectCardProps {
   project: ProjectTranslation & { id: ProjectId };
@@ -20,7 +21,7 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-2xl border border-gray-200/50 flex-shrink-0">
             <img 
-              src={`./src/pages/main/sections/projects/data/${project.id}/icon.png`}
+              src={projectIcons[project.id as keyof typeof projectIcons]}
               alt={`${project.name} icon`}
               className="w-full h-full object-cover"
               onError={(e) => {
