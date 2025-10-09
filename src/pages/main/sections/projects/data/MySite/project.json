@@ -104,12 +104,12 @@
         "ko": "프로젝트 템플릿 렌더러",
         "en": "Project Template Renderer",
         "ja": "プロジェクトテンプレートレンダラー"
-      },
+      }
       "description": {
         "ko": "JSON 기반 템플릿을 받아 카드/상세 페이지를 자동으로 생성. 일관된 UI와 빠른 업데이트 지원.",
         "en": "Consumes JSON templates to generate cards and detail pages automatically, enabling consistent UI and fast updates.",
         "ja": "JSONテンプレートからカード/詳細ページを自動生成。統一UIと迅速な更新を実現。"
-      },
+      }
       "implemented": true
     },
     {
@@ -117,12 +117,12 @@
         "ko": "다국어(i18n) 동기화",
         "en": "Multilingual (i18n) Synchronization",
         "ja": "多言語(i18n)同期"
-      },
+      }
       "description": {
         "ko": "국/영/일 키 동기화와 폴백 전략을 적용해 번역 누락 최소화.",
         "en": "Synchronizes KR/EN/JA keys with fallback strategy to minimize missing translations.",
         "ja": "韓/英/日のキーを同期し、フォールバック戦略で翻訳抜けを最小化。"
-      },
+      }
       "implemented": true
     },
     {
@@ -130,12 +130,12 @@
         "ko": "성능 최적화",
         "en": "Performance Optimization",
         "ja": "パフォーマンス最適化"
-      },
+      }
       "description": {
         "ko": "Vite 번들 최적화, 코드 스플리팅, 이미지 지연 로딩으로 TTI/CLS 개선.",
         "en": "Vite bundle tuning, code-splitting, and image lazy-loading to improve TTI/CLS.",
         "ja": "Viteのバンドル調整、コード分割、画像遅延読み込みでTTI/CLSを改善。"
-      },
+      }
       "implemented": true
     },
     {
@@ -143,12 +143,12 @@
         "ko": "SEO/OG 자동 메타",
         "en": "SEO/OG Auto Meta",
         "ja": "SEO/OG自動メタ"
-      },
+      }
       "description": {
         "ko": "페이지별 제목·설명·OG 이미지 자동 생성으로 검색·공유 성과 향상.",
         "en": "Auto-generates per-page title, description, and OG images to enhance search and sharing.",
         "ja": "ページごとのタイトル・説明・OG画像を自動生成し、検索/共有効果を向上。"
-      },
+      }
       "implemented": true
     }
   ],
@@ -164,65 +164,41 @@
       "ja": "ホーム（プロジェクトカード）、プロジェクト詳細、多言語トグルのプレビュー"
     }
   },
-  "architecture": {
-    "components": "React/Vite Frontend · i18n JSON Content · Cloudflare Pages · (Opt) Cloudflare Functions(Webhook)",
-    "dataFlow": {
-      "ko": "JSON 콘텐츠 → React 렌더러 → 라우팅/메타 생성 → Cloudflare Pages 배포.",
-      "en": "JSON content → React renderer → routing/meta generation → deployed on Cloudflare Pages.",
-      "ja": "JSONコンテンツ → Reactレンダラー → ルーティング/メタ生成 → Cloudflare Pagesにデプロイ。"
+  "stackAndArchitecture": {
+    "techStack": {
+      "frontend": "React, TypeScript",
+      "backend": "Node.js, Express",
+      "ai_ml": "Python, TensorFlow",
+      "devops": "Docker, AWS"
     },
-    "deployment": "Vite Build → Cloudflare Pages (GitHub 연결) · (Opt) Functions for form/webhook",
-    "security": {
-      "ko": "정적 사이트 우선, 폼·웹훅은 함수로 분리. 헤더 보안 정책( CSP/Referrer-Policy ) 적용.",
-      "en": "Static-first site; forms/webhooks isolated via Functions. Applies security headers (CSP/Referrer-Policy).",
-      "ja": "静的サイト優先。フォーム/WebhookはFunctionsに分離。セキュリティヘッダ（CSP/Referrer-Policy）適用。"
+    "data": {
+      "ko": "MongoDB, Redis",
+      "en": "MongoDB, Redis",
+      "ja": "MongoDB, Redis"
     },
-    "network": {
-      "ko": "정적 자산 CDN 캐시, 필요한 경우만 서버리스 호출.",
-      "en": "CDN caching for static assets; call serverless only when needed.",
-      "ja": "静的アセットはCDNキャッシュ。必要時のみサーバーレス呼び出し。"
-    }
-  },
-  "techStack": {
-    "frontend": "React, Vite, TypeScript, Tailwind CSS, i18next",
-    "backend": "N/A (Static, optional Cloudflare Functions)",
-    "ai_ml": "N/A",
-    "data": "JSON content, Markdown (optional)",
-    "devops": "Cloudflare Pages, GitHub Actions"
-  },
-  "deployment": {
-    "environment": "Development → Production (Cloudflare Pages)",
-    "pipeline": {
-      "ko": "GitHub Actions → Vite Build → Cloudflare Pages 자동 배포",
-      "en": "GitHub Actions → Vite Build → Cloudflare Pages automatic deployment",
-      "ja": "GitHub Actions → Vite Build → Cloudflare Pages自動デプロイ"
+    "deployment": {
+      "ko": "AWS EC2, Docker Containers",
+      "en": "AWS EC2, Docker Containers",
+      "ja": "AWS EC2, Docker Containers"
     },
-    "signing": "N/A (Web Service)",
-    "secrets": {
-      "ko": "필요 시 환경변수(Analytics/Webhook 키)만 Pages 프로젝트에 스코프 제한 저장.",
-      "en": "Store only necessary env vars (Analytics/Webhook keys) scoped to the Pages project.",
-      "ja": "必要な環境変数（Analytics/Webhookキー）のみをPagesプロジェクトにスコープ限定して保存。"
-    }
-  },
-  "results": {
-    "achievements": {
-      "ko": "프로젝트 카드 4개+상세 템플릿 1종 완성, 다국어 토글·SEO/OG 자동화 적용.",
-      "en": "Completed 4 project cards + 1 detail template; applied multilingual toggle and SEO/OG automation.",
-      "ja": "プロジェクトカード4件＋詳細テンプレート1種を完成。多言語トグルとSEO/OG自動化を適用。"
-    },
-    "learnings": {
-      "ko": "콘텐츠를 JSON·컴포넌트로 분리하면 유지보수가 쉬워짐. i18n 키 관리와 접근성 점검 체크리스트의 중요성 확인.",
-      "en": "Separating content into JSON and components eases maintenance. Confirmed the importance of i18n key management and accessibility checklists.",
-      "ja": "コンテンツをJSONとコンポーネントに分離すると保守性が向上。i18nキー管理とアクセシビリティチェックリストの重要性を再確認。"
-    },
-    "nextSteps": {
-      "ko": "프로젝트 검색/필터, 인쇄용 이력서 페이지, 블로그 연동(RSS/OG) 추가.",
-      "en": "Add project search/filter, print-friendly resume page, and blog integration (RSS/OG).",
-      "ja": "プロジェクト検索/フィルタ、印刷向け履歴書ページ、ブログ連携（RSS/OG）の追加。"
-    }
-  },
-  "additional_links": {
-    "website": "https://mysite.com",
-    "blog": "https://blog.mysite.com/ai-couple-travel"
-  }
-}
+    "architecture": {
+      "frontend": {
+        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보",
+        "en": "React-based SPA with TypeScript for type safety",
+        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保"
+      }
+      "backend": {
+        "ko": "Node.js + Express RESTful API, MongoDB 데이터베이스",
+        "en": "Node.js + Express RESTful API, MongoDB database",
+        "ja": "Node.js + Express RESTful API、MongoDBデータベース"
+      }
+      "dataFlow": {
+        "ko": "사용자 입력 → 백엔드 처리 → 데이터베이스 저장 → 프론트엔드 표시",
+        "en": "User Input → Backend Processing → Database Storage → Frontend Display",
+        "ja": "ユーザー入力 → バックエンド処理 → データベース保存 → フロントエンド表示"
+      }
+      "security": {
+        "ko": "JWT 인증, 데이터 암호화",
+        "en": "JWT authentication, data encryption",
+        "ja": "JWT認証、データ暗号化"
+      }

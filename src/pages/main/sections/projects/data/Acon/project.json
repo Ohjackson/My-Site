@@ -160,30 +160,44 @@
       "ja": "iOSアプリのプレビュー（オンボーディング／対話／振り返り）"
     }
   },
-  "techStack": {
-    "frontend": "iOS (SwiftUI, UIKit, Combine)",
-    "backend": "Python (FastAPI), PostgreSQL/SQLite, Nginx",
-    "ai_ml": "LLM API orchestration, Prompt templates, Safety filters",
-    "data": "PostgreSQL/SQLite, (Opt) Redis cache",
-    "devops": "Docker, GitHub Actions, Home-server (team-operated)"
-  },
-  "architecture": {
-    "components": "iOS App · FastAPI · DB(PostgreSQL/SQLite) · (Opt) Redis · Nginx",
-    "dataFlow": {
-      "ko": "iOS 클라이언트 → FastAPI(대화/요약) → DB 저장 → 통계/회고 뷰 응답",
-      "en": "iOS client → FastAPI (dialogue/summary) → DB storage → stats/reflection views",
-      "ja": "iOSクライアント → FastAPI（対話/要約） → DB保存 → 統計/振り返りビュー"
+  "stackAndArchitecture": {
+    "techStack": {
+      "frontend": "iOS (SwiftUI, UIKit, Combine)",
+      "backend": "Python (FastAPI), PostgreSQL/SQLite, Nginx",
+      "ai_ml": "LLM API orchestration, Prompt templates, Safety filters",
+      "devops": "Docker, GitHub Actions, Home-server (team-operated)"
     },
-    "deployment": "Dockerized FastAPI on home server (reverse-proxied by Nginx) · iOS via TestFlight/App Store",
-    "security": {
-      "ko": "JWT, 익명화 ID, 전송 구간 TLS, PII 최소화",
-      "en": "JWT, anonymized IDs, TLS in transit, PII minimization",
-      "ja": "JWT、匿名化ID、通信のTLS、PII最小化"
+    "data": {
+      "ko": "PostgreSQL/SQLite, (Opt) Redis cache",
+      "en": "PostgreSQL/SQLite, (Opt) Redis cache",
+      "ja": "PostgreSQL/SQLite, (Opt) Redis cache"
     },
-    "network": {
-      "ko": "HTTPS REST API, (옵션) 스트리밍 응답",
-      "en": "HTTPS REST API, optional streaming responses",
-      "ja": "HTTPS REST API、ストリーミング応答（任意）"
+    "deployment": {
+      "ko": "Dockerized FastAPI on home server (reverse-proxied by Nginx) · iOS via TestFlight/App Store",
+      "en": "Dockerized FastAPI on home server (reverse-proxied by Nginx) · iOS via TestFlight/App Store",
+      "ja": "Dockerized FastAPI on home server (reverse-proxied by Nginx) · iOS via TestFlight/App Store"
+    },
+    "architecture": {
+      "frontend": {
+        "ko": "SwiftUI 기반 iOS 앱, Combine을 통한 반응형 상태 관리, 멀티 페르소나 대화 인터페이스",
+        "en": "SwiftUI-based iOS app, reactive state management with Combine, multi-persona dialogue interface",
+        "ja": "SwiftUIベースのiOSアプリ、Combineによる反応型状態管理、マルチペルソナ対話インターフェース"
+      },
+      "backend": {
+        "ko": "FastAPI 기반 RESTful API, PostgreSQL/SQLite 데이터베이스, Nginx 리버스 프록시",
+        "en": "FastAPI-based RESTful API, PostgreSQL/SQLite database, Nginx reverse proxy",
+        "ja": "FastAPIベースのRESTful API、PostgreSQL/SQLiteデータベース、Nginxリバースプロキシ"
+      },
+      "dataFlow": {
+        "ko": "iOS 클라이언트 → FastAPI(대화/요약) → DB 저장 → 통계/회고 뷰 응답",
+        "en": "iOS client → FastAPI (dialogue/summary) → DB storage → stats/reflection views",
+        "ja": "iOSクライアント → FastAPI（対話/要約） → DB保存 → 統計/振り返りビュー"
+      },
+      "security": {
+        "ko": "JWT, 익명화 ID, 전송 구간 TLS, PII 최소화",
+        "en": "JWT, anonymized IDs, TLS in transit, PII minimization",
+        "ja": "JWT、匿名化ID、通信のTLS、PII最小化"
+      }
     }
   },
   "responsibilities": {

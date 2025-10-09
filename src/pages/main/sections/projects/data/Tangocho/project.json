@@ -206,30 +206,43 @@
       "ja": "iOSアプリプレビュー"
     }
   },
-  "techStack": {
-    "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
-    "backend": "(옵션) LLM API via user key",
-    "ai_ml": "Core ML(ResNet-50), Vision",
-    "data": "CoreData or SwiftData, CloudKit(iCloud)",
-    "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)"
-  },
-  "architecture": {
-    "components": "iOS App (Shortcuts/Views) · CoreData/SwiftData · Core ML · iCloud · (Opt) LLM API",
-    "dataFlow": {
-      "ko": "단축어/수동 입력 → 메타추출(온디바이스/옵션 LLM) → 저장 → SRS/클로즈/쓰기 → 진행도·동기화",
-      "en": "Shortcut/manual input → metadata extraction (on-device/optional LLM) → store → SRS/cloze/write → progress & sync",
-      "ja": "ショートカット/手動入力 → メタ抽出（端末内/任意LLM）→ 保存 → SRS/クローズ/書き取り → 進捗・同期"
+  "stackAndArchitecture": {
+    "techStack": {
+      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
+      "ai_ml": "Core ML(ResNet-50), Vision",
+      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)"
     },
-    "deployment": "App Store / TestFlight · Xcode Cloud or GitHub Actions + Fastlane",
-    "security": {
-      "ko": "온디바이스 우선 처리, 외부 호출은 사용자 API Key opt-in, iCloud 암호화",
-      "en": "On-device first; external calls only with user LLM key; iCloud encryption",
-      "ja": "オンデバイス優先。外部呼び出しはユーザーLLMキーのみ。iCloud暗号化。"
+    "data": {
+      "ko": "CoreData or SwiftData, CloudKit(iCloud)",
+      "en": "CoreData or SwiftData, CloudKit(iCloud)",
+      "ja": "CoreData or SwiftData, CloudKit(iCloud)"
     },
-    "network": {
-      "ko": "(옵션) LLM 호출, 기타는 로컬 우선",
-      "en": "(Optional) LLM calls; otherwise local-first",
-      "ja": "（任意）LLM呼び出し、基本はローカル優先"
+    "deployment": {
+      "ko": "App Store / TestFlight · Xcode Cloud or GitHub Actions + Fastlane",
+      "en": "App Store / TestFlight · Xcode Cloud or GitHub Actions + Fastlane",
+      "ja": "App Store / TestFlight · Xcode Cloud or GitHub Actions + Fastlane"
+    },
+    "architecture": {
+      "frontend": {
+        "ko": "SwiftUI 기반 네이티브 iOS 앱, PencilKit을 활용한 손글씨 입력, Combine을 통한 반응형 상태 관리",
+        "en": "Native iOS app based on SwiftUI, handwriting input using PencilKit, reactive state management with Combine",
+        "ja": "SwiftUIベースのネイティブiOSアプリ、PencilKitを活用した手書き入力、Combineによる反応型状態管理"
+      },
+      "backend": {
+        "ko": "온디바이스 우선 아키텍처, 옵션으로 사용자 제공 LLM API 키를 통한 외부 호출",
+        "en": "On-device first architecture, optional external calls via user-provided LLM API keys",
+        "ja": "オンデバイス優先アーキテクチャ、ユーザー提供LLM APIキーによる外部呼び出し（任意）"
+      },
+      "dataFlow": {
+        "ko": "단축어/수동 입력 → 메타추출(온디바이스/옵션 LLM) → 저장 → SRS/클로즈/쓰기 → 진행도·동기화",
+        "en": "Shortcut/manual input → metadata extraction (on-device/optional LLM) → store → SRS/cloze/write → progress & sync",
+        "ja": "ショートカット/手動入力 → メタ抽出（端末内/任意LLM）→ 保存 → SRS/クローズ/書き取り → 進捗・同期"
+      },
+      "security": {
+        "ko": "온디바이스 우선 처리, 외부 호출은 사용자 API Key opt-in, iCloud 암호화",
+        "en": "On-device first; external calls only with user LLM key; iCloud encryption",
+        "ja": "オンデバイス優先。外部呼び出しはユーザーLLMキーのみ。iCloud暗号化。"
+      }
     }
   },
   "responsibilities": {

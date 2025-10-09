@@ -136,30 +136,44 @@
       "ja": "レスポンシブウェブ/モバイルプレビュー"
     }
   },
-  "techStack": {
-    "frontend": "React, TypeScript, Tailwind CSS",
-    "backend": "Node.js, Express, MongoDB",
-    "ai_ml": "Python, TensorFlow, scikit-learn",
-    "data": "MongoDB, Redis",
-    "devops": "Docker, AWS, GitHub Actions"
-  },
-  "architecture": {
-    "components": "React Frontend · Node.js Backend · MongoDB Database · AI/ML Pipeline",
-    "dataFlow": {
-      "ko": "사용자 데이터 → AI 분석 엔진 → 개인화 추천 → 대시보드 표시",
-      "en": "User Data → AI Analysis Engine → Personalized Recommendations → Dashboard Display",
-      "ja": "ユーザーデータ → AI分析エンジン → 個人化推奨 → ダッシュボード表示"
+  "stackAndArchitecture": {
+    "techStack": {
+      "frontend": "React, TypeScript, Tailwind CSS",
+      "backend": "Node.js, Express, MongoDB",
+      "ai_ml": "Python, TensorFlow, scikit-learn",
+      "devops": "Docker, AWS, GitHub Actions"
     },
-    "deployment": "AWS EC2 · MongoDB Atlas · Docker Containers",
-    "security": {
-      "ko": "JWT 인증, 데이터 암호화, HIPAA 준수",
-      "en": "JWT authentication, data encryption, HIPAA compliance",
-      "ja": "JWT認証、データ暗号化、HIPAA準拠"
+    "data": {
+      "ko": "MongoDB, Redis",
+      "en": "MongoDB, Redis",
+      "ja": "MongoDB, Redis"
     },
-    "network": {
-      "ko": "HTTPS, RESTful API, WebSocket 실시간 통신",
-      "en": "HTTPS, RESTful API, WebSocket real-time communication",
-      "ja": "HTTPS、RESTful API、WebSocketリアルタイム通信"
+    "deployment": {
+      "ko": "AWS EC2 · MongoDB Atlas · Docker Containers",
+      "en": "AWS EC2 · MongoDB Atlas · Docker Containers",
+      "ja": "AWS EC2 · MongoDB Atlas · Docker Containers"
+    },
+    "architecture": {
+      "frontend": {
+        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보, Tailwind CSS로 반응형 디자인",
+        "en": "React-based SPA with TypeScript for type safety, responsive design with Tailwind CSS",
+        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保、Tailwind CSSによるレスポンシブデザイン"
+      },
+      "backend": {
+        "ko": "Node.js + Express RESTful API, MongoDB 데이터베이스, Python AI/ML 파이프라인",
+        "en": "Node.js + Express RESTful API, MongoDB database, Python AI/ML pipeline",
+        "ja": "Node.js + Express RESTful API、MongoDBデータベース、Python AI/MLパイプライン"
+      },
+      "dataFlow": {
+        "ko": "사용자 데이터 → AI 분석 엔진 → 개인화 추천 → 대시보드 표시",
+        "en": "User Data → AI Analysis Engine → Personalized Recommendations → Dashboard Display",
+        "ja": "ユーザーデータ → AI分析エンジン → 個人化推奨 → ダッシュボード表示"
+      },
+      "security": {
+        "ko": "JWT 인증, 데이터 암호화, HIPAA 준수",
+        "en": "JWT authentication, data encryption, HIPAA compliance",
+        "ja": "JWT認証、データ暗号化、HIPAA準拠"
+      }
     }
   },
   "responsibilities": {

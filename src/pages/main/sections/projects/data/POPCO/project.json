@@ -95,12 +95,12 @@
         "ko": "싱글 플레이(터치 카운트)",
         "en": "Single Play (Touch Count)",
         "ja": "シングルプレイ（タッチカウント）"
-      },
+      }
       "description": {
         "ko": "고양이를 터치해 입을 여닫으면 점수가 오르는 간단한 기록 모드. 개인 최고 기록 저장.",
         "en": "Tap to open/close the cat’s mouth and rack up points. Saves personal best.",
         "ja": "ネコをタップして口の開閉でスコア加算。自己ベストを保存。"
-      },
+      }
       "implemented": true
     },
     {
@@ -108,12 +108,12 @@
         "ko": "1대1 근거리 배틀",
         "en": "1v1 Nearby Battle",
         "ja": "1対1近距離バトル"
-      },
+      }
       "description": {
         "ko": "아이폰에서 페어링한 뒤 배틀은 워치에서 진행. 터치 카운트를 실시간 동기화해 승패 결정.",
         "en": "Pair on iPhone, then battle on Watch. Touch counts sync in real time to decide the winner.",
         "ja": "iPhoneでペアリング後、バトルはWatchで実施。タッチ数をリアルタイム同期して勝敗を決定。"
-      },
+      }
       "implemented": true
     },
     {
@@ -121,12 +121,12 @@
         "ko": "국가별 랭킹(한·일)",
         "en": "Country Rankings (KR/JP)",
         "ja": "国別ランキング（日・韓）"
-      },
+      }
       "description": {
         "ko": "누적 점수 기반 국가 대항전. 위치 기반 국가 분류 및 주간 리더보드 제공.",
         "en": "Nation-vs-nation ladder from cumulative scores; location-based country classification and weekly leaderboard.",
         "ja": "累計スコアによる国別対抗。位置情報で国を判定し、週間リーダーボードを提供。"
-      },
+      }
       "implemented": true
     },
     {
@@ -134,12 +134,12 @@
         "ko": "고양이 레벨업/업적",
         "en": "Cat Level-up & Achievements",
         "ja": "ネコのレベルアップ・実績"
-      },
+      }
       "description": {
         "ko": "개인 카운트 누적에 따라 고양이 스킨·이펙트 해금. 업적 배지 제공.",
         "en": "Unlock skins/effects as your personal count grows. Earn achievement badges.",
         "ja": "累計カウントに応じてスキンやエフェクトを解放。実績バッジを獲得。"
-      },
+      }
       "implemented": false
     }
   ],
@@ -155,65 +155,41 @@
       "ja": "Watchのバトル画面、iPhoneペアリング、国別ランキングのプレビュー"
     }
   },
-  "architecture": {
-    "components": "watchOS App (SwiftUI) · iOS App (SwiftUI/Swift) · WatchConnectivity · MultipeerConnectivity · (Opt) FastAPI Leaderboard",
-    "dataFlow": {
-      "ko": "아이폰에서 상대 페어링(Multipeer) → 워치로 상태 전달(WatchConnectivity) → 배틀 진행/동기화 → (옵션) 서버로 랭킹 업로드",
-      "en": "Pair opponents on iPhone (Multipeer) → propagate state to Watch (WatchConnectivity) → battle & sync → (opt) upload ranking to server",
-      "ja": "iPhoneで相手ペアリング（Multipeer）→ Watchへ状態連携（WatchConnectivity）→ バトル実行・同期 →（任意）サーバーへランキング送信"
+  "stackAndArchitecture": {
+    "techStack": {
+      "frontend": "React, TypeScript",
+      "backend": "Node.js, Express",
+      "ai_ml": "Python, TensorFlow",
+      "devops": "Docker, AWS"
     },
-    "deployment": "TestFlight → App Store (iOS/watchOS) · (Opt) FastAPI on home server for rankings",
-    "security": {
-      "ko": "근거리 통신은 로컬 네트워크 한정, 사용자 식별자는 익명 ID. 서버 전송 시 TLS.",
-      "en": "Nearby comm limited to local network; users identified by anonymous IDs; TLS for any server transfer.",
-      "ja": "近距離通信はローカルネットワーク限定。匿名IDで識別し、サーバー送信時はTLS。"
+    "data": {
+      "ko": "MongoDB, Redis",
+      "en": "MongoDB, Redis",
+      "ja": "MongoDB, Redis"
     },
-    "network": {
-      "ko": "WatchConnectivity(WCSession), MultipeerConnectivity(P2P), (옵션) HTTPS FastAPI",
-      "en": "WatchConnectivity (WCSession), MultipeerConnectivity (P2P), (opt) HTTPS FastAPI",
-      "ja": "WatchConnectivity（WCSession）、MultipeerConnectivity（P2P）、（任意）HTTPS FastAPI"
-    }
-  },
-  "techStack": {
-    "frontend": "SwiftUI, UIKit(partial), Combine",
-    "backend": "FastAPI (optional leaderboard), PostgreSQL (optional)",
-    "realtime": "WatchConnectivity, MultipeerConnectivity",
-    "data": "On-device store (UserDefaults/SQLite/SwiftData), (Opt) PostgreSQL",
-    "devops": "TestFlight, fastlane, (Opt) Docker for FastAPI"
-  },
-  "deployment": {
-    "environment": "Internal Alpha → TestFlight → App Store",
-    "pipeline": {
-      "ko": "fastlane/Xcode Cloud → 빌드·테스트 → TestFlight 배포 → App Store 제출",
-      "en": "fastlane/Xcode Cloud → build & test → TestFlight release → App Store submission",
-      "ja": "fastlane/Xcode Cloud → ビルド・テスト → TestFlight配信 → App Store申請"
+    "deployment": {
+      "ko": "AWS EC2, Docker Containers",
+      "en": "AWS EC2, Docker Containers",
+      "ja": "AWS EC2, Docker Containers"
     },
-    "signing": "Apple Developer Program",
-    "secrets": {
-      "ko": "앱 키·엔드포인트는 .xcconfig/Keychain으로 분리, 서버는 환경변수로 관리",
-      "en": "App keys/endpoints via .xcconfig/Keychain; server secrets via environment variables",
-      "ja": "アプリ鍵・エンドポイントは.xcconfig/Keychainで分離、サーバーは環境変数で管理"
-    }
-  },
-  "results": {
-    "achievements": {
-      "ko": "아이폰 페어링→워치 배틀 흐름 안정화, KR/JP 랭킹 베타 운영.",
-      "en": "Stabilized iPhone pairing → Watch battle flow; operated KR/JP ranking in beta.",
-      "ja": "iPhoneペアリング→Watchバトルのフローを安定化。日韓ランキングのベータ運用を実施。"
-    },
-    "learnings": {
-      "ko": "근거리 P2P와 WatchConnectivity의 타이밍 관리가 핵심. 서버 의존을 줄이면 체감 지연이 크게 감소.",
-      "en": "Timing between P2P and WatchConnectivity is critical; reducing server dependence cuts perceived latency.",
-      "ja": "近距離P2PとWatchConnectivityのタイミング管理が肝要。サーバー依存を減らすと体感遅延が大きく低減。"
-    },
-    "nextSteps": {
-      "ko": "워치 단독 페어링 연구, 레벨·업적 시스템 정식화, 안티치트(비정상 터치 패턴 감지).",
-      "en": "Explore watch-only pairing, formalize level/achievement systems, add anti-cheat (abnormal tap pattern detection).",
-      "ja": "Watch単独ペアリングの検討、レベル・実績の正式実装、不正対策（異常タップ検知）。"
-    }
-  },
-  "additional_links": {
-    "website": "https://popco.com",
-    "blog": "https://blog.popco.com/ot-webrtc-collaboration"
-  }
-}
+    "architecture": {
+      "frontend": {
+        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보",
+        "en": "React-based SPA with TypeScript for type safety",
+        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保"
+      }
+      "backend": {
+        "ko": "Node.js + Express RESTful API, MongoDB 데이터베이스",
+        "en": "Node.js + Express RESTful API, MongoDB database",
+        "ja": "Node.js + Express RESTful API、MongoDBデータベース"
+      }
+      "dataFlow": {
+        "ko": "사용자 입력 → 백엔드 처리 → 데이터베이스 저장 → 프론트엔드 표시",
+        "en": "User Input → Backend Processing → Database Storage → Frontend Display",
+        "ja": "ユーザー入力 → バックエンド処理 → データベース保存 → フロントエンド表示"
+      }
+      "security": {
+        "ko": "JWT 인증, 데이터 암호화",
+        "en": "JWT authentication, data encryption",
+        "ja": "JWT認証、データ暗号化"
+      }

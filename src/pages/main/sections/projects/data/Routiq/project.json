@@ -98,12 +98,12 @@
         "ko": "워치 단독 기록",
         "en": "Watch-Only Logging",
         "ja": "Watch単独記録"
-      },
+      }
       "description": {
         "ko": "아이폰이 없어도 워치에서 세트/무게/횟수/휴식 시간을 빠르게 입력하고 저장.",
         "en": "Log sets/weight/reps/rest quickly on the Watch—no iPhone required.",
         "ja": "iPhoneなしでもWatch上でセット・重量・回数・休憩を素早く入力・保存。"
-      },
+      }
       "implemented": true
     },
     {
@@ -111,12 +111,12 @@
         "ko": "루틴 기반 통계",
         "en": "Routine-Based Analytics",
         "ja": "ルーチン基盤の分析"
-      },
+      }
       "description": {
         "ko": "루틴별 볼륨·빈도·소요 시간 추이를 iPhone에서 요약 차트로 제공.",
         "en": "On iPhone, summary charts track volume, frequency, and time per routine.",
         "ja": "iPhoneでルーチンごとのボリューム・頻度・所要時間の推移をサマリーチャートで提供。"
-      },
+      }
       "implemented": true
     },
     {
@@ -124,12 +124,12 @@
         "ko": "간편 칼로리 추정",
         "en": "Lightweight Calorie Estimation",
         "ja": "軽量なカロリー推定"
-      },
+      }
       "description": {
         "ko": "운동 유형·세트·휴식 기반의 단순 모델로 대략적인 칼로리 소모를 산출.",
         "en": "A simple model estimates calories from exercise type, sets, and rest.",
         "ja": "種目・セット・休憩に基づく簡易モデルで概算カロリーを算出。"
-      },
+      }
       "implemented": true
     },
     {
@@ -137,12 +137,12 @@
         "ko": "알림·리마인더",
         "en": "Reminders",
         "ja": "リマインダー"
-      },
+      }
       "description": {
         "ko": "정해둔 시간에 루틴 시작 알림을 제공하여 꾸준한 실행을 돕음.",
         "en": "Sends start-time reminders to encourage consistent execution.",
         "ja": "設定時間にルーチン開始を通知し、継続的な実行を促す。"
-      },
+      }
       "implemented": true
     }
   ],
@@ -159,65 +159,41 @@
       "ja": "Watchの記録画面、iPhone統計ダッシュボード、ルーチン編集プレビュー"
     }
   },
-  "architecture": {
-    "components": "watchOS App (SwiftUI) · iOS App (SwiftUI) · WatchConnectivity · (Opt) HealthKit · Local DB (SwiftData/CoreData) · iCloud",
-    "dataFlow": {
-      "ko": "워치 입력 → 로컬 저장 → (옵션) iPhone 동기화 → 통계 집계/표시",
-      "en": "Watch input → local store → (optional) iPhone sync → stats aggregation & display",
-      "ja": "Watch入力 → ローカル保存 → （任意）iPhone同期 → 統計集計・表示"
+  "stackAndArchitecture": {
+    "techStack": {
+      "frontend": "iOS (SwiftUI, WatchKit)",
+      "backend": "CloudKit, HealthKit",
+      "ai_ml": "Core ML (optional)",
+      "devops": "Xcode Cloud, TestFlight"
     },
-    "deployment": "TestFlight → App Store",
-    "security": {
-      "ko": "온디바이스 우선, iCloud 동기화 시 암호화, 민감 데이터 최소 저장",
-      "en": "On-device first; encrypted iCloud sync; minimal sensitive data storage",
-      "ja": "オンデバイス優先、iCloud同期は暗号化、機微データは最小限保存"
+    "data": {
+      "ko": "CloudKit, HealthKit, Core Data",
+      "en": "CloudKit, HealthKit, Core Data",
+      "ja": "CloudKit, HealthKit, Core Data"
     },
-    "network": {
-      "ko": "대부분 오프라인 동작, 필요 시 백그라운드 동기화",
-      "en": "Mostly offline; background sync when needed",
-      "ja": "基本はオフライン動作、必要に応じてバックグラウンド同期"
-    }
-  },
-  "techStack": {
-    "frontend": "SwiftUI, UIKit(partial), Combine",
-    "pwa": "N/A",
-    "data": "SwiftData/CoreData, iCloud",
-    "devops": "Xcode Cloud, fastlane, TestFlight",
-    "etc": "WatchConnectivity, (Opt) HealthKit"
-  },
-  "deployment": {
-    "environment": "Internal Alpha → TestFlight → App Store",
-    "pipeline": {
-      "ko": "Xcode Cloud/fastlane → 빌드·테스트 → TestFlight 배포",
-      "en": "Xcode Cloud/fastlane → build & test → TestFlight release",
-      "ja": "Xcode Cloud/fastlane → ビルド・テスト → TestFlight配信"
+    "deployment": {
+      "ko": "App Store, TestFlight",
+      "en": "App Store, TestFlight",
+      "ja": "App Store, TestFlight"
     },
-    "signing": "Apple Developer Program",
-    "secrets": {
-      "ko": "키체인과 .xcconfig로 키·환경 분리",
-      "en": "Separate keys/env via Keychain and .xcconfig",
-      "ja": "Keychainと.xcconfigでキー・環境を分離管理"
-    }
-  },
-  "results": {
-    "achievements": {
-      "ko": "워치 단독 기록과 루틴 통계 흐름 구축, 내부 테스트에서 루틴 지속률 체감 향상 확인.",
-      "en": "Established watch-only logging and routine-centric analytics; internal tests indicated perceived improvement in routine adherence.",
-      "ja": "Watch単独記録とルーチン中心の分析を実装。内部テストでルーチン継続の体感向上を確認。"
-    },
-    "learnings": {
-      "ko": "입력 마찰을 줄이는 UX가 루틴 시작률에 직접 영향. 워치↔아이폰 동기 타이밍과 충돌 처리 전략의 중요성 확인.",
-      "en": "Reducing input friction directly impacts routine start rate. Sync timing and conflict handling between Watch and iPhone are critical.",
-      "ja": "入力摩擦の低減が開始率に直結。WatchとiPhone間の同期タイミングと競合処理が重要であると確認。"
-    },
-    "nextSteps": {
-      "ko": "더 정교한 칼로리 모델, 주간 리포트 자동 생성, 루틴 공유(코드) 기능 추가.",
-      "en": "Richer calorie model, automatic weekly reports, and routine sharing via codes.",
-      "ja": "より精緻なカロリーモデル、週次レポート自動生成、コードによるルーチン共有を追加。"
-    }
-  },
-  "additional_links": {
-    "website": "https://routiq.com",
-    "blog": "https://blog.routiq.com/pwa-ml-routine"
-  }
-}
+    "architecture": {
+      "frontend": {
+        "ko": "SwiftUI 기반 iOS 앱, WatchKit을 활용한 Apple Watch 앱, Combine을 통한 반응형 상태 관리",
+        "en": "SwiftUI-based iOS app, Apple Watch app using WatchKit, reactive state management with Combine",
+        "ja": "SwiftUIベースのiOSアプリ、WatchKitを活用したApple Watchアプリ、Combineによる反応型状態管理"
+      }
+      "backend": {
+        "ko": "CloudKit 기반 클라우드 동기화, HealthKit 연동, Core Data 로컬 저장소",
+        "en": "CloudKit-based cloud synchronization, HealthKit integration, Core Data local storage",
+        "ja": "CloudKitベースのクラウド同期、HealthKit連携、Core Dataローカルストレージ"
+      }
+      "dataFlow": {
+        "ko": "워치 입력 → iPhone 동기화 → CloudKit 저장 → 통계 분석",
+        "en": "Watch input → iPhone sync → CloudKit storage → Analytics",
+        "ja": "Watch入力 → iPhone同期 → CloudKit保存 → 分析"
+      }
+      "security": {
+        "ko": "iCloud 암호화, HealthKit 권한 관리",
+        "en": "iCloud encryption, HealthKit permissions",
+        "ja": "iCloud暗号化、HealthKit権限管理"
+      }

@@ -136,108 +136,41 @@
       "ja": "レスポンシブウェブ/モバイルプレビュー"
     }
   },
-  "techStack": {
-    "frontend": "React, TypeScript, Chart.js",
-    "backend": "Python, FastAPI, PostgreSQL",
-    "ai_ml": "Python, pandas, scikit-learn, NLP",
-    "data": "PostgreSQL, Redis, Elasticsearch",
-    "devops": "Docker, AWS, GitHub Actions"
-  },
-  "architecture": {
-    "components": "React Frontend · Python Backend · PostgreSQL Database · AI Analysis Engine",
-    "dataFlow": {
-      "ko": "아이디어 입력 → 데이터 수집 → AI 분석 → 검증 결과 → 리포트 생성",
-      "en": "Idea Input → Data Collection → AI Analysis → Validation Results → Report Generation",
-      "ja": "アイデア入力 → データ収集 → AI分析 → 検証結果 → レポート生成"
+  "stackAndArchitecture": {
+    "techStack": {
+      "frontend": "React, TypeScript, Chart.js",
+      "backend": "Python, FastAPI, PostgreSQL",
+      "ai_ml": "Python, pandas, scikit-learn, NLP",
+      "devops": "Docker, AWS, GitHub Actions"
     },
-    "deployment": "AWS EC2 · PostgreSQL RDS · Docker Containers",
-    "security": {
-      "ko": "JWT 인증, 데이터 암호화, GDPR 준수",
-      "en": "JWT authentication, data encryption, GDPR compliance",
-      "ja": "JWT認証、データ暗号化、GDPR準拠"
+    "data": {
+      "ko": "PostgreSQL, Redis, Elasticsearch",
+      "en": "PostgreSQL, Redis, Elasticsearch",
+      "ja": "PostgreSQL, Redis, Elasticsearch"
     },
-    "network": {
-      "ko": "HTTPS, RESTful API, WebSocket 실시간 업데이트",
-      "en": "HTTPS, RESTful API, WebSocket real-time updates",
-      "ja": "HTTPS、RESTful API、WebSocketリアルタイム更新"
-    }
-  },
-  "responsibilities": {
-    "ko": [
-      "React 프론트엔드 개발",
-      "Python 백엔드 API 개발",
-      "데이터 분석 알고리즘 구현",
-      "데이터베이스 설계 및 최적화"
-    ],
-    "en": [
-      "React frontend development",
-      "Python backend API development",
-      "Data analysis algorithm implementation",
-      "Database design and optimization"
-    ],
-    "ja": [
-      "Reactフロントエンド開発",
-      "PythonバックエンドAPI開発",
-      "データ分析アルゴリズム実装",
-      "データベース設計と最適化"
-    ]
-  },
-  "lessonsLearned": {
-    "ko": "다양한 데이터 소스의 통합과 AI 기반 분석을 통해 창업 아이디어의 객관적 검증이 가능함을 확인",
-    "en": "Confirmed that objective validation of startup ideas is possible through integration of diverse data sources and AI-based analysis",
-    "ja": "多様なデータソースの統合とAIベース分析により、スタートアップアイデアの客観的検証が可能であることを確認"
-  },
-  "metrics": {
-    "ko": [
-      "월간 활성 사용자 8,000명",
-      "검증된 아이디어 2,500개",
-      "투자 유치 성공률 35% 향상"
-    ],
-    "en": [
-      "8,000 monthly active users",
-      "2,500 validated ideas",
-      "35% improvement in investment attraction success rate"
-    ],
-    "ja": [
-      "月間アクティブユーザー8,000人",
-      "検証されたアイデア2,500個",
-      "投資誘致成功率35%向上"
-    ]
-  },
-  "deployment": {
-    "environment": "Development → Staging → Production",
-    "pipeline": {
-      "ko": "GitHub Actions → Docker Build → AWS ECS 배포",
-      "en": "GitHub Actions → Docker Build → AWS ECS Deployment",
-      "ja": "GitHub Actions → Docker Build → AWS ECSデプロイ"
+    "deployment": {
+      "ko": "AWS EC2 · PostgreSQL RDS · Docker Containers",
+      "en": "AWS EC2 · PostgreSQL RDS · Docker Containers",
+      "ja": "AWS EC2 · PostgreSQL RDS · Docker Containers"
     },
-    "signing": "AWS Certificate Manager",
-    "secrets": {
-      "ko": "AWS Secrets Manager를 통한 환경 변수 관리",
-      "en": "Environment variable management via AWS Secrets Manager",
-      "ja": "AWS Secrets Managerによる環境変数管理"
-    }
-  },
-  "results": {
-    "achievements": {
-      "ko": "창업 아이디어 검증 플랫폼으로 사용자 만족도 4.6/5.0 달성",
-      "en": "Achieved user satisfaction 4.6/5.0 with startup idea validation platform",
-      "ja": "スタートアップアイデア検証プラットフォームでユーザー満足度4.6/5.0達成"
-    },
-    "learnings": {
-      "ko": "대용량 데이터 처리와 실시간 분석 시스템 구축 경험을 얻음",
-      "en": "Gained experience in building large-scale data processing and real-time analysis systems",
-      "ja": "大容量データ処理とリアルタイム分析システム構築の経験を獲得"
-    },
-    "nextSteps": {
-      "ko": "블록체인 기반 아이디어 보호 시스템, 글로벌 시장 분석 확장",
-      "en": "Blockchain-based idea protection system, global market analysis expansion",
-      "ja": "ブロックチェーンベースアイデア保護システム、グローバル市場分析拡張"
-    }
-  },
-  "additional_links": {
-    "website": "https://ideaverify.com",
-    "blog": "https://blog.ideaverify.com/startup-validation"
-  },
-  "flag": "active"
-}
+    "architecture": {
+      "frontend": {
+        "ko": "React 기반 SPA, TypeScript로 타입 안전성 확보, Chart.js를 활용한 데이터 시각화",
+        "en": "React-based SPA with TypeScript for type safety, data visualization using Chart.js",
+        "ja": "ReactベースのSPA、TypeScriptによる型安全性確保、Chart.jsによるデータ可視化"
+      },
+      "backend": {
+        "ko": "Python FastAPI RESTful API, PostgreSQL 데이터베이스, AI 분석 엔진",
+        "en": "Python FastAPI RESTful API, PostgreSQL database, AI analysis engine",
+        "ja": "Python FastAPI RESTful API、PostgreSQLデータベース、AI分析エンジン"
+      },
+      "dataFlow": {
+        "ko": "아이디어 입력 → 데이터 수집 → AI 분석 → 검증 결과 → 리포트 생성",
+        "en": "Idea Input → Data Collection → AI Analysis → Validation Results → Report Generation",
+        "ja": "アイデア入力 → データ収集 → AI分析 → 検証結果 → レポート生成"
+      },
+      "security": {
+        "ko": "JWT 인증, 데이터 암호화, GDPR 준수",
+        "en": "JWT authentication, data encryption, GDPR compliance",
+        "ja": "JWT認証、データ暗号化、GDPR準拠"
+      },
