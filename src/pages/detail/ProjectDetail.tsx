@@ -22,6 +22,8 @@ import popcoData from '../main/sections/projects/data/POPCO/project.json';
 import daonData from '../main/sections/projects/data/Daon/project.json';
 import pliadData from '../main/sections/projects/data/Pliad/project.json';
 import mySiteData from '../main/sections/projects/data/MySite/project.json';
+import healthfinbotData from '../main/sections/projects/data/healthFinBot/project.json';
+import ideaverifyprogramData from '../main/sections/projects/data/IdeaVerifyProgram/project.json';
 
 const projectData = {
   tangocho: tangochoData,
@@ -32,6 +34,8 @@ const projectData = {
   daon: daonData,
   pliad: pliadData,
   mysite: mySiteData,
+  healthfinbot: healthfinbotData,
+  ideaverifyprogram: ideaverifyprogramData,
 };
 
 interface ProjectDetailProps {

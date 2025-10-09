@@ -9,11 +9,6 @@
     "en": "AI education platform for personalized learning experiences",
     "ja": "パーソナライズされた学習体験のためのAI教育プラットフォーム"
   },
-  "period": {
-    "ko": "2024.09 - 2025.01",
-    "en": "2024.09 - 2025.01",
-    "ja": "2024.09 - 2025.01"
-  },
   "role": {
     "ko": "AI 개발자",
     "en": "AI Developer",
@@ -173,17 +168,6 @@
         "学習効果40%向上"
       ]
     }
-  },
-  "id": "pliad",
-  "title": {
-    "ko": "플리아드 (Pliad)",
-    "en": "Pliad",
-    "ja": "プリアド"
-  },
-  "subtitle": {
-    "ko": "강화학습 기반 개인화된 학습 경로 추천 플랫폼 — 적응형 퀴즈와 실시간 진도 추적을 통한 학습 효과 40% 향상",
-    "en": "Reinforcement Learning-based Personalized Learning Path Recommendation Platform — 40% improvement in learning effectiveness through adaptive quizzes and real-time progress tracking",
-    "ja": "強化学習ベースのパーソナライズされた学習パス推奨プラットフォーム — 適応型クイズとリアルタイム進捗追跡による学習効果40%向上"
   },
   "links": {
     "demo": "https://pliad.ai",

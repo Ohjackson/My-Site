@@ -9,11 +9,6 @@
     "en": "AI-based personal trainer app for healthy living",
     "ja": "健康的な生活のためのAIベースのパーソナルトレーナーアプリ"
   },
-  "period": {
-    "ko": "2024.03 - 2024.08",
-    "en": "2024.03 - 2024.08",
-    "ja": "2024.03 - 2024.08"
-  },
   "role": {
     "ko": "모바일 앱 개발자",
     "en": "Mobile App Developer",
@@ -173,17 +168,6 @@
         "ユーザー健康改善率78%"
       ]
     }
-  },
-  "id": "acon-ai-trainer",
-  "title": {
-    "ko": "아콘 (Acon)",
-    "en": "Acon",
-    "ja": "アコン"
-  },
-  "subtitle": {
-    "ko": "Flutter 기반 AI 개인 트레이너 앱 — 컴퓨터 비전 자세 분석 및 개인화된 운동/식단 추천",
-    "en": "Flutter-based AI Personal Trainer App — Computer Vision Posture Analysis and Personalized Exercise/Diet Recommendations",
-    "ja": "FlutterベースのAIパーソナルトレーナーアプリ — コンピュータビジョン姿勢分析とパーソナライズされた運動/食事推奨"
   },
   "links": {
     "appStore": "https://apps.apple.com/app/id1234567890",

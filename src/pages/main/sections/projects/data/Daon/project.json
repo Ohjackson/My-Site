@@ -9,11 +9,6 @@
     "en": "Smart energy management system for sustainable environment",
     "ja": "持続可能な環境のためのスマートエネルギー管理システム"
   },
-  "period": {
-    "ko": "2024.07 - 2024.12",
-    "en": "2024.07 - 2024.12",
-    "ja": "2024.07 - 2024.12"
-  },
   "role": {
     "ko": "백엔드 개발자",
     "en": "Backend Developer",
@@ -173,17 +168,6 @@
         "環境影響30%減少"
       ]
     }
-  },
-  "id": "daon-energy-management",
-  "title": {
-    "ko": "다온 (Daon)",
-    "en": "Daon",
-    "ja": "ダオン"
-  },
-  "subtitle": {
-    "ko": "Python/FastAPI 기반 스마트 에너지 관리 시스템 — IoT 데이터 스트리밍 처리 및 시계열 ML 예측 모델 구현",
-    "en": "Python/FastAPI-based Smart Energy Management System — Implemented IoT data streaming processing and time series ML prediction model",
-    "ja": "Python/FastAPIベースのスマートエネルギー管理システム — IoTデータストリーミング処理と時系列ML予測モデルの実装"
   },
   "links": {
     "demo": "https://daon-energy.com/dashboard",

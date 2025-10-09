@@ -9,11 +9,6 @@
     "en": "AI-based smart planner that analyzes couples' preferences to provide optimal travel plans",
     "ja": "カップルの好みを分析し、最適な旅行計画を提供するAIベースのスマートプランナー"
   },
-  "period": {
-    "ko": "2025.10",
-    "en": "2025.10",
-    "ja": "2025.10"
-  },
   "role": {
     "ko": "Full-Cycle Solo Project",
     "en": "Full-Cycle Solo Project",
@@ -173,17 +168,6 @@
         "カップル満足度4.9/5.0"
       ]
     }
-  },
-  "id": "my-site-travel-ai",
-  "title": {
-    "ko": "트래블메이트 (TravelMate)",
-    "en": "TravelMate",
-    "ja": "トラベルメイト"
-  },
-  "subtitle": {
-    "ko": "AI 기반 커플 맞춤형 여행 플래너 — 취향 절충 알고리즘과 실시간 협업 기능으로 완벽한 여행 계획 제공",
-    "en": "AI-based Couple Personalized Travel Planner — Providing perfect travel plans with preference compromise algorithm and real-time collaboration features",
-    "ja": "AIベースのカップル向け旅行プランナー — 好み妥協アルゴリズムとリアルタイム協力機能で完璧な旅行計画を提供"
   },
   "links": {
     "demo": "https://travelmate.app",

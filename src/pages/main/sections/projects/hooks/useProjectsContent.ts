@@ -11,6 +11,8 @@ import popcoData from '../data/POPCO/project.json';
 import daonData from '../data/Daon/project.json';
 import pliadData from '../data/Pliad/project.json';
 import mysiteData from '../data/MySite/project.json';
+import healthfinbotData from '../data/healthFinBot/project.json';
+import ideaverifyprogramData from '../data/IdeaVerifyProgram/project.json';
 
 const projectData = {
   tangocho: tangochoData,
@@ -21,6 +23,8 @@ const projectData = {
   daon: daonData,
   pliad: pliadData,
   mysite: mysiteData,
+  healthfinbot: healthfinbotData,
+  ideaverifyprogram: ideaverifyprogramData,
 };
 
 export const useProjectsContent = () => {
@@ -38,15 +42,16 @@ export const useProjectsContent = () => {
   const viewDetails = t('sections.projects.viewDetails');
   
   // Convert project data to the expected format
-  const projects: Array<ProjectTranslation & { id: ProjectId }> = Object.entries(projectData).map(([id, data]) => ({
+  const projects: Array<ProjectTranslation & { id: ProjectId; flag?: string }> = Object.entries(projectData).map(([id, data]) => ({
     id: id as ProjectId,
     name: data.name.ko, // Use Korean for now, can be made dynamic later
     summary: data.summary.ko,
-    period: data.period.ko,
+    period: data.workPeriod.ko, // Use workPeriod instead of period
     role: data.role.ko,
     tags: data.tags.ko,
     features: data.features.ko,
     detail: data.detail,
+    flag: (data as any).flag, // Include flag information
   }));
 
   console.log('Projects loaded:', projects.map(p => ({ id: p.id, name: p.name })));
@@ -57,7 +62,7 @@ export const useProjectsContent = () => {
     return {
       name: data.name.ko,
       summary: data.summary.ko,
-      period: data.period.ko,
+      period: data.workPeriod.ko, // Use workPeriod instead of period
       role: data.role.ko,
       tags: data.tags.ko,
       features: data.features.ko,

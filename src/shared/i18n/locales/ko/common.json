@@ -103,6 +103,10 @@
         "coreFeatures": "핵심 기능"
       },
       "viewDetails": "상세보기",
+      "toggle": {
+        "showAll": "모든 프로젝트 보기",
+        "showFeatured": "주요 프로젝트만 보기"
+      },
       "items": {
         "danggocho": {
           "name": "단고초",

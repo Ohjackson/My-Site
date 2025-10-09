@@ -9,11 +9,6 @@
     "en": "Personalized travel planning and recommendation service for couples",
     "ja": "カップル向けのカスタマイズされた旅行計画と推奨サービス"
   },
-  "period": {
-    "ko": "2023.09 - 2024.02",
-    "en": "2023.09 - 2024.02",
-    "ja": "2023.09 - 2024.02"
-  },
   "role": {
     "ko": "풀스택 개발자",
     "en": "Full-stack Developer",
@@ -173,17 +168,6 @@
         "カップル満足度4.9/5.0"
       ]
     }
-  },
-  "id": "loventure",
-  "title": {
-    "ko": "러벤처 (Loventure)",
-    "en": "Loventure",
-    "ja": "ラベンチャー"
-  },
-  "subtitle": {
-    "ko": "AI 기반 커플 맞춤형 여행 플래너 — 취향 절충 알고리즘과 실시간 협업 기능으로 완벽한 여행 계획 제공",
-    "en": "AI-based Couple Personalized Travel Planner — Providing perfect travel plans with preference compromise algorithm and real-time collaboration features",
-    "ja": "AIベースのカップル向け旅行プランナー — 好み妥協アルゴリズムとリアルタイム協力機能で完璧な旅行計画を提供"
   },
   "links": {
     "demo": "https://loventure.app",

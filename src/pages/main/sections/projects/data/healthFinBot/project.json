@@ -1,0 +1,180 @@
+{
+  "name": {
+    "ko": "헬스핀봇",
+    "en": "healthFinBot",
+    "ja": "ヘルスフィンボット"
+  },
+  "summary": {
+    "ko": "AI 기반 개인 건강 관리 및 금융 최적화 서비스",
+    "en": "AI-based personal health management and financial optimization service",
+    "ja": "AIベースの個人健康管理と金融最適化サービス"
+  },
+  "role": {
+    "ko": "Full-Stack Developer",
+    "en": "Full-Stack Developer",
+    "ja": "Full-Stack Developer"
+  },
+  "tags": {
+    "ko": ["React", "Node.js", "AI", "Health", "Finance"],
+    "en": ["React", "Node.js", "AI", "Health", "Finance"],
+    "ja": ["React", "Node.js", "AI", "Health", "Finance"]
+  },
+  "platform": {
+    "ko": "Web, Mobile",
+    "en": "Web, Mobile",
+    "ja": "Web, Mobile"
+  },
+  "workPeriod": {
+    "ko": "2024.03 - 2024.08",
+    "en": "2024.03 - 2024.08",
+    "ja": "2024.03 - 2024.08"
+  },
+  "releaseDate": {
+    "ko": "2024.08.15",
+    "en": "2024.08.15",
+    "ja": "2024.08.15"
+  },
+  "endDate": {
+    "ko": "진행중",
+    "en": "Ongoing",
+    "ja": "進行中"
+  },
+  "teamSize": {
+    "ko": "3명",
+    "en": "3 people",
+    "ja": "3人"
+  },
+  "hashtags": {
+    "ko": ["AI", "Health", "Finance", "React", "Node.js"],
+    "en": ["AI", "Health", "Finance", "React", "Node.js"],
+    "ja": ["AI", "Health", "Finance", "React", "Node.js"]
+  },
+  "additionalFeatures": {
+    "ko": "개인의 건강 데이터와 금융 상황을 분석하여 최적의 건강 관리 계획과 투자 전략을 제안하는 AI 기반 서비스입니다. 웨어러블 디바이스와 연동하여 실시간 건강 모니터링과 자동 투자 조정이 가능합니다.",
+    "en": "AI-based service that analyzes personal health data and financial situation to suggest optimal health management plans and investment strategies. Real-time health monitoring and automatic investment adjustment through wearable device integration.",
+    "ja": "個人の健康データと金融状況を分析し、最適な健康管理計画と投資戦略を提案するAIベースサービス。ウェアラブルデバイス連携によりリアルタイム健康モニタリングと自動投資調整が可能。"
+  },
+  "features": {
+    "ko": [
+      "AI 기반 건강 분석",
+      "개인화된 투자 전략",
+      "웨어러블 디바이스 연동",
+      "실시간 금융 모니터링"
+    ],
+    "en": [
+      "AI-based health analysis",
+      "Personalized investment strategy",
+      "Wearable device integration",
+      "Real-time financial monitoring"
+    ],
+    "ja": [
+      "AIベース健康分析",
+      "パーソナライズされた投資戦略",
+      "ウェアラブルデバイス連携",
+      "リアルタイム金融モニタリング"
+    ]
+  },
+  "detail": {
+    "subtitle": {
+      "ko": "건강과 금융의 스마트한 연결",
+      "en": "Smart Connection of Health and Finance",
+      "ja": "健康と金融のスマートな接続"
+    },
+    "overview": {
+      "purpose": {
+        "ko": "개인의 건강 상태와 금융 목표를 종합적으로 분석하여 최적의 라이프스타일과 투자 전략을 제안하는 AI 기반 플랫폼",
+        "en": "AI-based platform that comprehensively analyzes personal health status and financial goals to suggest optimal lifestyle and investment strategies",
+        "ja": "個人の健康状態と金融目標を総合的に分析し、最適なライフスタイルと投資戦略を提案するAIベースプラットフォーム"
+      },
+      "target": {
+        "ko": "건강과 재정 관리를 동시에 최적화하고자 하는 현대인",
+        "en": "Modern people who want to optimize both health and financial management",
+        "ja": "健康と財務管理を同時に最適化したい現代人"
+      },
+      "value": {
+        "ko": "데이터 기반 개인화된 건강-금융 통합 솔루션을 통한 삶의 질 향상",
+        "en": "Improved quality of life through data-driven personalized health-finance integrated solutions",
+        "ja": "データベースのパーソナライズされた健康-金融統合ソリューションによる生活の質向上"
+      }
+    },
+    "responsibilities": {
+      "ko": [
+        "React 프론트엔드 개발",
+        "Node.js 백엔드 API 개발",
+        "AI 모델 연동 및 최적화",
+        "웨어러블 디바이스 API 통합"
+      ],
+      "en": [
+        "React frontend development",
+        "Node.js backend API development",
+        "AI model integration and optimization",
+        "Wearable device API integration"
+      ],
+      "ja": [
+        "Reactフロントエンド開発",
+        "Node.jsバックエンドAPI開発",
+        "AIモデル連携と最適化",
+        "ウェアラブルデバイスAPI統合"
+      ]
+    },
+    "highlights": {
+      "ko": [
+        "머신러닝 기반 건강-금융 상관관계 분석",
+        "실시간 웨어러블 데이터 처리",
+        "개인화된 투자 포트폴리오 추천",
+        "건강 목표 달성률 40% 향상"
+      ],
+      "en": [
+        "Machine learning-based health-finance correlation analysis",
+        "Real-time wearable data processing",
+        "Personalized investment portfolio recommendations",
+        "40% improvement in health goal achievement rate"
+      ],
+      "ja": [
+        "機械学習ベースの健康-金融相関分析",
+        "リアルタイムウェアラブルデータ処理",
+        "パーソナライズされた投資ポートフォリオ推奨",
+        "健康目標達成率40%向上"
+      ]
+    },
+    "challenge": {
+      "problem": {
+        "ko": "다양한 건강 데이터와 금융 데이터의 통합 분석 및 개인화된 추천 시스템 구현의 복잡성",
+        "en": "Complexity of integrated analysis of various health and financial data and implementation of personalized recommendation systems",
+        "ja": "様々な健康データと金融データの統合分析とパーソナライズされた推奨システム実装の複雑さ"
+      },
+      "solution": {
+        "ko": "다중 모달 AI 모델과 실시간 데이터 파이프라인을 활용한 통합 분석 플랫폼 구축",
+        "en": "Built integrated analysis platform using multi-modal AI models and real-time data pipelines",
+        "ja": "マルチモーダルAIモデルとリアルタイムデータパイプラインを活用した統合分析プラットフォーム構築"
+      },
+      "result": {
+        "ko": "사용자 만족도 4.9/5.0, 건강 목표 달성률 40% 향상, 투자 수익률 평균 15% 개선",
+        "en": "User satisfaction 4.9/5.0, 40% improvement in health goal achievement rate, average 15% improvement in investment returns",
+        "ja": "ユーザー満足度4.9/5.0、健康目標達成率40%向上、投資収益率平均15%改善"
+      }
+    },
+    "metrics": {
+      "ko": [
+        "월 활성 사용자 25,000명",
+        "평균 건강 목표 달성률 40% 향상",
+        "투자 수익률 평균 15% 개선"
+      ],
+      "en": [
+        "25,000 monthly active users",
+        "Average 40% improvement in health goal achievement rate",
+        "Average 15% improvement in investment returns"
+      ],
+      "ja": [
+        "月間アクティブユーザー25,000人",
+        "平均健康目標達成率40%向上",
+        "投資収益率平均15%改善"
+      ]
+    }
+  },
+  "links": {
+    "demo": "https://healthfinbot-demo.vercel.app",
+    "github": "https://github.com/YourUsername/healthFinBot"
+  },
+  "flag": "active"
+}

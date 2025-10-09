@@ -103,6 +103,10 @@
         "coreFeatures": "核心機能"
       },
       "viewDetails": "詳細を見る",
+      "toggle": {
+        "showAll": "すべてのプロジェクトを見る",
+        "showFeatured": "主要プロジェクトのみ表示"
+      },
       "items": {
         "danggocho": {
           "name": "단고초",

@@ -9,11 +9,6 @@
     "en": "Collaboration platform for creative content production",
     "ja": "創造的なコンテンツ制作のためのコラボレーションプラットフォーム"
   },
-  "period": {
-    "ko": "2024.05 - 2024.10",
-    "en": "2024.05 - 2024.10",
-    "ja": "2024.05 - 2024.10"
-  },
   "role": {
     "ko": "Full-Cycle Solo Project",
     "en": "Full-Cycle Solo Project",
@@ -173,17 +168,6 @@
         "協力効率60%向上"
       ]
     }
-  },
-  "id": "popco",
-  "title": {
-    "ko": "팝코 (POPCO)",
-    "en": "POPCO",
-    "ja": "ポップコ"
-  },
-  "subtitle": {
-    "ko": "Next.js 기반 실시간 협업 콘텐츠 제작 플랫폼 — Operational Transform을 활용한 다중 사용자 동시 편집 및 WebRTC 통신",
-    "en": "Next.js-based Real-time Collaborative Content Production Platform — Multi-user simultaneous editing and WebRTC communication using Operational Transform",
-    "ja": "Next.jsベースのリアルタイム協力コンテンツ制作プラットフォーム — Operational Transformを活用したマルチユーザー同時編集とWebRTC通信"
   },
   "links": {
     "demo": "https://popco.app",

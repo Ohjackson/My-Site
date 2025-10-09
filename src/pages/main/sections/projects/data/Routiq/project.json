@@ -9,11 +9,6 @@
     "en": "Smart planner for efficient daily routine management",
     "ja": "効率的な日常ルーチン管理のためのスマートプランナー"
   },
-  "period": {
-    "ko": "2024.01 - 2024.06",
-    "en": "2024.01 - 2024.06",
-    "ja": "2024.01 - 2024.06"
-  },
   "role": {
     "ko": "Full-Cycle Solo Project",
     "en": "Full-Cycle Solo Project",
@@ -173,17 +168,6 @@
         "ユーザー生産性35%向上"
       ]
     }
-  },
-  "id": "routiq",
-  "title": {
-    "ko": "루틱 (Routiq)",
-    "en": "Routiq",
-    "ja": "ルーティック"
-  },
-  "subtitle": {
-    "ko": "AI 기반 개인화된 루틴 최적화 PWA — 시간 기반 자동 스케줄링과 오프라인 습관 추적을 통한 생산성 극대화",
-    "en": "AI-based Personalized Routine Optimization PWA — Maximizing productivity through time-based automatic scheduling and offline habit tracking",
-    "ja": "AIベースのパーソナライズされたルーチン最適化PWA — 時間ベースの自動スケジューリングとオフライン習慣追跡による生産性最大化"
   },
   "links": {
     "demo": "https://routiq.vercel.app",

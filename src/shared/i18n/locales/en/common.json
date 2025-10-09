@@ -103,6 +103,10 @@
         "coreFeatures": "Core Features"
       },
       "viewDetails": "View details",
+      "toggle": {
+        "showAll": "View all projects",
+        "showFeatured": "Show featured projects only"
+      },
       "items": {
         "danggocho": {
           "name": "단고초",
