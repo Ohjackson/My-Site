@@ -95,12 +95,10 @@
     ]
   },
   "links": {
-    "appStore": "https://apps.apple.com/app/id1234567890",
-    "googlePlay": "https://play.google.com/store/apps/details?id=com.acon.trainer",
     "github": "https://github.com/YourUsername/Acon-AI-Trainer"
   },
   "additionalFeatures": {
-    "ko": "3차 스프린트 진행 중. 상용한자 커리큘럼·클로즈 난이도 튜너·손글씨 피드백 개선 예정.",
+    "ko": "- 3차 스프린트 진행 중. \n -상용한자 커리큘럼·클로즈 난이도 튜너·손글씨 피드백 개선 예정.",
     "en": "Currently in the 3rd sprint. Upcoming: Joyo-kanji curriculum polish, cloze difficulty tuner, improved handwriting feedback.",
     "ja": "第3スプリント進行中。常用漢字カリキュラム強化、クローズ難易度調整、手書きフィードバック改善を予定。"
   },

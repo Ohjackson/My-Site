@@ -212,7 +212,24 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           {project.additionalFeatures && (
             <div className="mt-6">
               <h3 className="text-sm font-semibold text-text/70 mb-3">{content[language].additionalFeatures}</h3>
-              <p className="text-text/80 leading-relaxed">{project.additionalFeatures[language]}</p>
+              <div className="text-text/80 leading-relaxed">
+                {project.additionalFeatures[language].split('\n').map((line, index) => {
+                  const trimmedLine = line.trim();
+                  if (trimmedLine.startsWith('-')) {
+                    return (
+                      <div key={index} className="flex items-start mb-2">
+                        <span className="w-2 h-2 bg-text/60 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>{trimmedLine.substring(1).trim()}</span>
+                      </div>
+                    );
+                  }
+                  return (
+                    <p key={index} className="mb-2">
+                      {trimmedLine}
+                    </p>
+                  );
+                })}
+              </div>
             </div>
           )}
         </div>
