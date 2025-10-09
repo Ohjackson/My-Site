@@ -5,39 +5,39 @@
     "ja": "ダオン"
   },
   "summary": {
-    "ko": "자기공상법을 이용한 우울증 조기 발견 전문 ai 채팅앱",
-    "en": "Smart energy management system for sustainable environment",
-    "ja": "持続可能な環境のためのスマートエネルギー管理システム"
+    "ko": "자기공상법을 이용한 우울증 조기 발견 전문 AI 채팅앱",
+    "en": "An AI chat app specialized in early depression detection using a guided self-imagery method.",
+    "ja": "自己空想法を用いてうつ病の早期発見を支援するAIチャットアプリ。"
   },
   "role": {
-    "ko": "full-stack",
-    "en": "Backend Developer",
-    "ja": "バックエンド開発者"
+    "ko": "Full-stack",
+    "en": "Full-stack",
+    "ja": "Full-stack"
   },
   "tags": {
-    "ko": ["초기 스타트업 팀", "Fastapi", "iOS"],
-    "en": ["IoT", "Python", "AI", "Energy", "Sustainability"],
-    "ja": ["IoT", "Python", "AI", "Energy", "Sustainability"]
+    "ko": ["초기 스타트업 팀", "FastAPI", "iOS"],
+    "en": ["Early-stage startup team", "FastAPI", "iOS"],
+    "ja": ["アーリーステージのスタートアップチーム", "FastAPI", "iOS"]
   },
   "platform": {
     "ko": "iPhone",
-    "en": "Web, IoT Devices",
-    "ja": "Web, IoT Devices"
+    "en": "iPhone",
+    "ja": "iPhone"
   },
   "workPeriod": {
     "ko": "2025.01",
-    "en": "2024.07 - 2024.12",
-    "ja": "2024.07 - 2024.12"
+    "en": "2025.01",
+    "ja": "2025.01"
   },
   "releaseDate": {
     "ko": "2025.01",
-    "en": "2024.12",
-    "ja": "2024.12"
+    "en": "2025.01",
+    "ja": "2025.01"
   },
   "endDate": {
     "ko": "서버 종료",
-    "en": "Completed",
-    "ja": "完了"
+    "en": "Service discontinued",
+    "ja": "サービス終了"
   },
   "teamSize": {
     "ko": "4",
@@ -46,19 +46,13 @@
   },
   "features": {
     "ko": [
-      "- gpt fine-tuning된 여러 챗봇과의 대화"
+      "- GPT 파인튜닝된 여러 챗봇과의 대화"
     ],
     "en": [
-      "IoT sensor-based energy monitoring",
-      "AI-based energy consumption prediction",
-      "Automatic energy optimization",
-      "Real-time dashboard"
+      "- Conversations with multiple GPT fine-tuned chatbots"
     ],
     "ja": [
-      "IoTセンサーベースのエネルギー監視",
-      "AIベースのエネルギー消費量予測",
-      "自動エネルギー最適化",
-      "リアルタイムダッシュボード"
+      "- 複数のGPT微調整チャットボットとの対話"
     ]
   },
   "links": {
@@ -66,56 +60,56 @@
     "github": "https://github.com/orgs/daonchat/repositories"
   },
   "additionalFeatures": {
-    "ko": "- 성격이 다 다른 현실형 쳇봇과 대화하며 나 자신을 알아가는 서비스",
-    "en": "System that maximizes energy efficiency and minimizes environmental impact using IoT sensors and AI",
-    "ja": "IoTセンサーとAIを活用してエネルギー効率を最大化し、環境影響を最小化するシステム"
+    "ko": "- 성격이 다른 현실형 챗봇과 대화하며 자기 이해를 높이는 서비스",
+    "en": "- A service that deepens self-understanding by conversing with realistic chatbots of varied personalities",
+    "ja": "- 性格の異なるリアル志向のチャットボットと対話し、自己理解を深めるサービス"
   },
   "overviewStory": {
-    "ko": "wiro 프로젝트를 연장선으로 새로운 방식으로 프로젝트 전개",
-    "en": "Smart energy management system that maximizes energy efficiency and minimizes environmental impact using IoT sensors and AI",
-    "ja": "IoTセンサーとAIを活用してエネルギー効率を最大化し、環境影響を最小化するスマートエネルギー管理システム"
+    "ko": "WIRO 프로젝트의 연장선에서 새로운 접근으로 전개",
+    "en": "An extension of the WIRO project, developed with a new approach",
+    "ja": "WIROプロジェクトの延長線上で、新たなアプローチで展開"
   },
   "service": {
     "problem": {
-      "ko": "에너지 사용량의 비효율성과 환경 오염 문제",
-      "en": "Inefficient energy usage and environmental pollution issues",
-      "ja": "エネルギー使用量の非効率性と環境汚染問題"
+      "ko": "우울증 조기 발견 및 치료 연결의 부재",
+      "en": "Lack of early depression detection and pathways to care",
+      "ja": "うつ病の早期発見と支援への導線が不足"
     },
     "target": {
-      "ko": "에너지 효율성을 높이고 환경 친화적인 생활을 원하는 사용자",
-      "en": "Users who want to increase energy efficiency and live environmentally friendly",
-      "ja": "エネルギー効率を高め、環境に優しい生活を望むユーザー"
+      "ko": "자존감과 감정 메타인지가 낮거나 우울 증상을 인지하지 못하는 사람",
+      "en": "People with low self-esteem or low emotional metacognition who may not recognize depressive symptoms",
+      "ja": "自己肯定感や感情のメタ認知が低く、うつ症状に気づきにくい人"
     },
     "value": {
-      "ko": "AI 기반 스마트 에너지 관리로 비용 절약과 환경 보호 동시 달성",
-      "en": "Achieving cost savings and environmental protection simultaneously through AI-based smart energy management",
-      "ja": "AIベースのスマートエネルギー管理でコスト削減と環境保護を同時達成"
+      "ko": "대화를 통해 감정 메타인지를 높이고, 우울 신호를 조기에 포착하여 상담사 연결",
+      "en": "Improve emotional metacognition through conversation, detect early warning signs, and connect users to counselors",
+      "ja": "対話で感情のメタ認知を高め、早期の兆候を捉えてカウンセラーにつなぐ"
     }
   },
   "detail_features": [
     {
       "title": {
         "ko": "챗봇 대화",
-        "en": "IoT Sensor-based Monitoring",
-        "ja": "IoTセンサーベース監視"
-      },    
+        "en": "Chatbot Conversations",
+        "ja": "チャットボット対話"
+      },
       "description": {
         "ko": "각각 파인튜닝된 5명의 챗봇과 대화",
-        "en": "Monitors real-time energy consumption and collects data through various IoT sensors",
-        "ja": "様々なIoTセンサーを通じてリアルタイムエネルギー使用量を監視し、データを収集"
+        "en": "Converse with five individually fine-tuned chatbots",
+        "ja": "個別に微調整された5体のチャットボットと対話"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "상당사 연락 서비스",
-        "en": "AI-based Predictive Analysis",
-        "ja": "AIベース予測分析"
+        "ko": "상담사 연결 서비스",
+        "en": "Counselor Connection",
+        "ja": "カウンセラー連携"
       },
       "description": {
-        "ko": "채팅 대화를 데이터를 기반하여 위급 하다고 판단시에 상당사 연락 서비스 제공",
-        "en": "Analyzes energy usage patterns and predicts future consumption using machine learning algorithms",
-        "ja": "機械学習アルゴリズムを使用してエネルギー使用パターンを分析し、将来の使用量を予測"
+        "ko": "채팅 데이터 분석으로 위기 징후가 감지되면 상담사 연결 옵션 제공",
+        "en": "When chat analysis flags potential crisis, offer an option to connect with a counselor",
+        "ja": "チャット分析で危機の可能性が検知された場合、カウンセラーへの接続オプションを提供"
       },
       "implemented": false
     }
@@ -131,67 +125,66 @@
   },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "SwiftUI, UIKit(partial), Combine",
-      "backend": "Fastapi",
+      "frontend": "SwiftUI, UIKit (partial), Combine",
+      "backend": "FastAPI",
       "database": "MongoDB",
-      "AI": "Langgraph",
+      "AI": "LangGraph",
       "devops": "Docker",
-      "infra": "on premise(Home server)"
+      "infra": "On-premise (home server)"
     }
   },
   "responsibilities": {
     "ko": [
-      "- 설계: 빠른 프로토타입 출시를 위한 fast api와 langgraph를 활용하여 프로토타입 출시",
-      "- 구현",
-      "iOS : 초기 셋팅 채팅 화면 구현, 및 출시 까지 connectivity 설정",
-      "Fastapi : langgraph라우팅 설정 및 데이터베이스 설정",
-      "- 출시: TestFlight QA 배포 이후 출시",
-      "- 운영: App Store Connect Logging"
+      "- 설계: FastAPI와 LangGraph 기반의 빠른 프로토타입 설계",
+      "- 구현:",
+      "  · iOS: 초기 세팅, 채팅 화면 구현, 출시까지 Connectivity 설정",
+      "  · FastAPI: LangGraph 라우팅 및 데이터베이스 설정",
+      "- 출시: TestFlight QA 배포 후 App Store 출시",
+      "- 운영: App Store Connect 로그 모니터링"
     ],
     "en": [
-      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
-      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
-      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
-      "Operations: TestFlight releases, notifications, data migration"
+      "- Design: Rapid prototyping architecture using FastAPI and LangGraph",
+      "- Implementation:",
+      "  · iOS: initial setup, chat UI, Connectivity configuration through release",
+      "  · FastAPI: LangGraph routing and database setup",
+      "- Release: TestFlight QA distribution followed by App Store launch",
+      "- Operations: App Store Connect log monitoring"
     ],
     "ja": [
-      "企画：『即保存→SRS→クローズ→書く』ループ定義",
-      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
-      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
-      "運用：TestFlight配信、通知、データ移行"
+      "- 設計：FastAPIとLangGraphによる迅速なプロトタイピング設計",
+      "- 実装：",
+      "  · iOS：初期セットアップ、チャット画面実装、リリースまでのConnectivity設定",
+      "  · FastAPI：LangGraphルーティングとデータベース設定",
+      "- リリース：TestFlightでQA配信後、App Storeで公開",
+      "- 運用：App Store Connectのログ監視"
     ]
   },
   "metrics": {
     "ko": [
-      "잠재고객 채널에 배포후 1주 안에 사용자 100명 이상 유입"
-        ],
+      "잠재고객 채널 배포 후 1주 내 사용자 100명 이상 유입"
+    ],
     "en": [
-      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
-      "Perceived next-day recall improved when handwriting practice is combined"
+      "Acquired 100+ users within one week after distribution to an early-adopter channel"
     ],
     "ja": [
-      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
-      "書き取り練習を併用すると翌日の再想起が向上（体感）"
+      "アーリーアダプター向け配信から1週間で100名以上を獲得"
     ]
   },
   "lessonsLearned": {
-    "ko": "- 사업적인 배움 : B2C 에서 Ai 챗봇 서비스의 도메인 선정의 중요성 \n - 기술적인 배움 : Fastapi와 Langgraph를 활용하여 빠른 프로토타입 출시",
-    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
-    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
+    "ko": "- 사업적 인사이트: B2C AI 챗봇 서비스는 도메인 선정이 핵심\n- 기술적 인사이트: FastAPI와 LangGraph로 신속히 프로토타입을 출시",
+    "en": "- Business: Domain selection is critical for B2C AI chatbot services.\n- Technical: Rapid prototyping and release with FastAPI and LangGraph.",
+    "ja": "- ビジネス：B2C向けAIチャットボットではドメイン選定が重要。\n- 技術：FastAPIとLangGraphで迅速にプロトタイプを公開。"
   },
   "results": {
     "achievements": {
-      "ko": "26명 사용자, 106번의 앱 활동",
-      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
-      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
+      "ko": "26명 사용자, 106회 앱 활동",
+      "en": "26 users with 106 in-app activities",
+      "ja": "ユーザー26名、アプリ内アクティビティ106回"
     },
     "nextSteps": {
-      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
-      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
-      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
+      "ko": "위기 감지 정밀도 개선(정·재현율 튜닝), 상담사 매칭 프로토콜 고도화, 개인정보 보호 강화를 위한 온디바이스 추론 검토",
+      "en": "Improve crisis-detection precision/recall, refine counselor-matching protocol, and explore on-device inference for stronger privacy",
+      "ja": "危機検知の適合率・再現率を改善、カウンセラーマッチングのプロトコル高度化、プライバシー強化のためオンデバイス推論を検討"
     }
-  },
-  "additional_links": {
-    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
   }
 }
