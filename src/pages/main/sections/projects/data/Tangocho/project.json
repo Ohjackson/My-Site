@@ -45,16 +45,16 @@
     "ja": "1"
   },
   "additionalFeatures": {
-    "ko": "AI 기반 개인화 운동 계획 생성, 실시간 자세 분석을 통한 운동 품질 향상, 건강 데이터 시각화 및 트렌드 분석 기능을 제공합니다. 사용자의 운동 패턴을 학습하여 최적의 운동 루틴을 자동으로 추천합니다.",
+    "ko": "3번의 스프린트 진행 후 현재 진행중인 프로젝트입니다.",
     "en": "Provides AI-based personalized workout plan generation, real-time posture analysis for improved exercise quality, and health data visualization with trend analysis. Learns user exercise patterns to automatically recommend optimal workout routines.",
     "ja": "AIベースの個人化されたワークアウトプラン生成、リアルタイム姿勢分析による運動品質向上、健康データの可視化とトレンド分析機能を提供します。ユーザーの運動パターンを学習し、最適な運動ルーティンを自動で推奨します。"
   },
   "features": {
     "ko": [
-      "AI 기반 운동 계획 생성",
-      "실시간 운동 자세 분석",
-      "개인 맞춤형 식단 추천",
-      "건강 데이터 시각화"
+      "ios native 기능인 shotcut과 llm 으로 모르는 단어를 즉시 단어장에 저장",
+      "일본 상용 한자를 모두 학습한 LesNet-50 모델 core ml로 온디바이스하여 손글씨 인식",
+      "망각 곡선 이론을 이용한 과학적 반복 학습 자동화 ",
+      "icloud를 이용한 데이터 동기화"
     ],
     "en": [
       "AI-based exercise plan generation",
@@ -68,28 +68,12 @@
       "個人カスタマイズ食事推奨",
       "健康データ可視化"
     ]
-  },
-  "detail": {
-    "subtitle": {
-      "ko": "AI가 함께하는 건강한 변화",
-      "en": "Healthy Change with AI",
-      "ja": "AIと一緒の健康的な変化"
-    },
+  },   
     "overview": {
       "purpose": {
         "ko": "사용자의 체력과 목표에 맞는 개인화된 운동 및 건강 관리 솔루션 제공",
         "en": "Providing personalized exercise and health management solutions tailored to user's fitness and goals",
         "ja": "ユーザーの体力と目標に合わせたパーソナライズされた運動と健康管理ソリューション提供"
-      },
-      "target": {
-        "ko": "건강한 생활을 원하는 20-50대 성인",
-        "en": "Adults aged 20-50 who want a healthy lifestyle",
-        "ja": "健康的な生活を望む20-50代の成人"
-      },
-      "value": {
-        "ko": "과학적 근거에 기반한 개인화된 건강 관리",
-        "en": "Personalized health management based on scientific evidence",
-        "ja": "科学的根拠に基づいたパーソナライズされた健康管理"
       }
     },
     "responsibilities": {
@@ -162,8 +146,8 @@
         "平均運動継続率85%",
         "ユーザー健康改善率78%"
       ]
-    }
-  },
+    },
+  
   "links": {
     "appStore": "https://apps.apple.com/app/id1234567890",
     "googlePlay": "https://play.google.com/store/apps/details?id=com.acon.trainer",
