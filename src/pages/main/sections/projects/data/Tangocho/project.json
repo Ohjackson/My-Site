@@ -5,9 +5,9 @@
     "ja": "単語帳"
   },
   "summary": {
-    "ko": "iOS 일본어 손글씨 단어장 — 단축어로 단어를 즉시 저장하고, SRS와 손글씨 연습으로 과학적으로 복습함.",
-    "en": "An iOS Japanese vocabulary notebook — save unknown words instantly via Shortcuts, review with SRS, and practice handwriting with on-device OCR.",
-    "ja": "iOS日本語単語帳 — ショートカットで未知語を即保存し、SRSで復習、オンデバイスOCRで手書き練習。"
+    "ko": "가장 편안한 일본어 자동 학습 서비스",
+    "en": "The most comfortable automated Japanese learning app.",
+    "ja": "最も快適な日本語自動学習アプリ。"
   },
   "role": {
     "ko": "Full-Cycle Solo Project",
@@ -15,36 +15,9 @@
     "ja": "Full-Cycle Solo Project"
   },
   "tags": {
-    "ko": [
-      "iOS",
-      "ResNet-50",
-      "iCloud",
-      "망각 곡선(SRS)",
-      "Core ML",
-      "Shortcuts",
-      "SwiftUI",
-      "CoreData/SwiftData"
-    ],
-    "en": [
-      "iOS",
-      "ResNet-50",
-      "iCloud",
-      "Ebbinghaus Forgetting Curve (SRS)",
-      "Core ML",
-      "Shortcuts",
-      "SwiftUI",
-      "CoreData/SwiftData"
-    ],
-    "ja": [
-      "iOS",
-      "ResNet-50",
-      "iCloud",
-      "エビングハウスの忘却曲線（SRS）",
-      "Core ML",
-      "ショートカット",
-      "SwiftUI",
-      "CoreData/SwiftData"
-    ]
+    "ko": ["DX", "ResNet", "iCloud", "Core ML", "Shortcuts"],
+    "en": ["DX", "ResNet", "iCloud", "Core ML", "Shortcuts"],
+    "ja": ["DX", "ResNet", "iCloud", "Core ML", "Shortcuts"]
   },
   "platform": {
     "ko": "iPhone, iPad",
@@ -73,18 +46,18 @@
   },
   "features": {
     "ko": [
-      "iOS Shortcuts로 모르는 단어를 즉시 저장(옵션: 사용자 API Key로 예문/후리가나 보강)",
-      "ResNet-50 기반 Core ML 온디바이스 손글씨(OCR) — 상용한자 대응",
-      "망각 곡선 기반 SRS로 복습 간격 자동 스케줄링",
+      "iOS Shortcuts로 학습 단어를 즉시 저장",
+      "ResNet-50 기반 Core ML 온디바이스 손글씨(OCR) — 상용한자 3000개 대응",
+      "SRS 이론을 기반한 학습 스케줄링 알고리즘",
       "iCloud 동기화로 단어/진행도 기기간 공유",
-      "예문 클로즈 테스트 및 쓰기 연습"
+      "예문 기반 클로즈 테스트와 손글씨 연습"
     ],
     "en": [
       "Instant word capture via iOS Shortcuts (optional enrichment with user LLM key: example/furigana)",
       "On-device handwriting OCR with Core ML (ResNet-50) for Joyo kanji",
       "SRS scheduling based on the forgetting curve",
       "iCloud sync for words and learning progress",
-      "Cloze test from example sentences and handwriting practice"
+      "Cloze tests from example sentences and handwriting practice"
     ],
     "ja": [
       "iOSショートカットで未知語を即保存（ユーザーLLMキーで例文/ふりがな補完オプション）",
@@ -95,48 +68,46 @@
     ]
   },
   "links": {
-    "appStore": "https://apps.apple.com/app/id1234567890",
-    "googlePlay": "https://play.google.com/store/apps/details?id=com.acon.trainer",
-    "github": "https://github.com/YourUsername/Acon-AI-Trainer"
+    "appStore": "https://apps.apple.com/kr/app/%EB%8B%A8%EA%B3%A0%EC%B4%88/id6633424018"
   },
   "additionalFeatures": {
-    "ko": "3차 스프린트 진행 중. 상용한자 커리큘럼·클로즈 난이도 튜너·손글씨 피드백 개선 예정.",
-    "en": "Currently in the 3rd sprint. Upcoming: Joyo-kanji curriculum polish, cloze difficulty tuner, improved handwriting feedback.",
-    "ja": "第3スプリント進行中。常用漢字カリキュラム強化、クローズ難易度調整、手書きフィードバック改善を予定。"
+    "ko": "- 3차 스프린트 진행 중.\n- JLPT 시험 대비 LLM 기반 시험 문제 생성 기능 추가 예정",
+    "en": "- Currently in the 3rd sprint.\n- JLPT prep: LLM-based test item generation planned",
+    "ja": "- 第3スプリント進行中。\n- JLPT対策：LLMによる試験問題生成を予定"
   },
   "overviewStory": {
-    "ko": "처음 한국인 일본어 학습자의 ‘봤을 때 즉시 저장→반복→쓰기’ 루틴을 만들기 위해 시작함. 온디바이스 우선과 입력 마찰 최소화를 원칙으로 설계함.",
-    "en": "Started to build a ‘see→save instantly→review→write’ learning loop for Japanese learners. Designed with on-device first and minimal input friction.",
-    "ja": "日本語学習者の「見たら即保存→復習→書く」ループを作るために開始。オンデバイス優先と入力摩擦の最小化を設計原則とした。"
+    "ko": "자신의 문제를 해결할 줄도 모른다면 다른 이의 문제를 해결할 수 없다는 생각 하에 시작한 첫 프로젝트입니다.",
+    "en": "My first project, started from the belief that if I can’t solve my own problems, I can’t solve others’.",
+    "ja": "自分の課題を解決できなければ他人の課題も解決できない──その考えから始めた最初のプロジェクトです。"
   },
   "service": {
     "problem": {
-      "ko": "단어를 봐도 바로 저장/복습/쓰기로 이어지지 않아 금방 잊는 문제.",
-      "en": "Learners quickly forget because seeing a word rarely leads to instant capture, scheduled review, and handwriting practice.",
-      "ja": "見た単語が即保存・計画的復習・書き取りに繋がらず、すぐ忘れてしまう問題。"
+      "ko": "아날로그 중심의 학습은 재사용성과 시스템 통합이 부족해 학습 효과가 떨어진다고 보았습니다.",
+      "en": "Analog-first workflows lack reuse and system integration, reducing learning effectiveness.",
+      "ja": "アナログ中心の学習は再利用性やシステム統合が不足し、学習効果が低下すると考えました。"
     },
     "target": {
-      "ko": "통학/업무 중 짬을 내어 단어를 저장하고 저녁에 10분 루틴으로 복습·쓰기 하고 싶은 학습자.",
-      "en": "Learners who want to capture words on the go and run a 10-minute evening routine for review and writing.",
+      "ko": "통학/업무 중 짬을 내어 단어를 저장하고 저녁에 10분 루틴으로 복습·쓰기를 하고 싶은 학습자.",
+      "en": "Learners who capture words on the go and want a 10-minute evening routine for review and writing.",
       "ja": "移動中に単語を保存し、夜に10分の復習・書き取りルーティンを回したい学習者。"
     },
     "value": {
-      "ko": "Shortcuts 기반 초간편 입력, SRS 자동화, 온디바이스 OCR과 iCloud 동기화를 통해 지속 가능한 학습 루틴 제공.",
-      "en": "Provides a sustainable learning loop with Shortcuts capture, automated SRS, on-device OCR, and iCloud sync.",
-      "ja": "ショートカット入力・SRS自動化・オンデバイスOCR・iCloud同期で継続しやすい学習ループを提供。"
+      "ko": "Shortcuts 기반 초간편 단어 저장, SRS 자동 알림 및 테스트, 온디바이스 OCR과 iCloud 동기화로 iPad에서도 학습 가능.",
+      "en": "A sustainable loop with Shortcuts capture, automated SRS notifications/tests, on-device OCR, and iCloud sync (iPad supported).",
+      "ja": "ショートカット入力・SRS自動通知/テスト・オンデバイスOCR・iCloud同期により、iPadでも学習可能な持続的ループを提供。"
     }
   },
   "detail_features": [
     {
       "title": {
-        "ko": "단축어 기반 단어 캡처",
+        "ko": "Shortcuts 단어 자동 저장",
         "en": "Shortcut-based Word Capture",
         "ja": "ショートカットによる単語保存"
       },
       "description": {
-        "ko": "iOS Shortcuts Intent로 단어를 입력하면 앱 딥링크로 초안 카드 자동 생성(예문/후리가나 보강 옵션).",
-        "en": "Use iOS Shortcuts Intent to create a draft word card via deep link; optionally enrich with example/furigana.",
-        "ja": "iOSショートカットIntentで深いリンクにより単語カードの下書きを自動生成。例文/ふりがなの補完も可能。"
+        "ko": "단어장에 넣고 싶은 일본어 입력 시 히라가나, 예문, 예문 해석까지 자동 저장 후 SRS 알고리즘 즉시 적용",
+        "en": "Use iOS Shortcuts Intent to create a draft word card via deep link; optionally enrich with example/furigana; apply SRS immediately.",
+        "ja": "iOSショートカットIntentでディープリンクから単語カードの下書きを自動生成。例文/ふりがな補完も可能で、SRSを即時適用。"
       },
       "implemented": true
     },
@@ -147,35 +118,35 @@
         "ja": "SRSフラッシュカード"
       },
       "description": {
-        "ko": "쉬움/보통/어려움 피드백에 따라 10m/6h/24h/3d/1w 등 간격으로 자동 재스케줄.",
-        "en": "Reschedules cards based on ease feedback with intervals like 10m/6h/24h/3d/1w.",
-        "ja": "易/普/難の評価に応じて10分/6時間/24時間/3日/1週などの間隔で自動再スケジュール。"
+        "ko": "정답/오답 피드백과 망각 수렴 구간을 반영해 10분/6시간/24시간/3일/1주 등으로 재스케줄 및 알림 제공",
+        "en": "Reschedules based on ease feedback with intervals like 10m/6h/24h/3d/1w and delivers notifications.",
+        "ja": "易度フィードバックに基づき10分/6時間/24時間/3日/1週などで再スケジュールし、通知を送信。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "예문 클로즈 테스트",
-        "en": "Cloze Test from Sentences",
+        "ko": "예문 기반 시험",
+        "en": "Cloze Tests from Sentences",
         "ja": "例文クローズテスト"
       },
       "description": {
-        "ko": "예문에서 빈칸을 자동 생성하고 텍스트 또는 손글씨 입력으로 정답 확인.",
-        "en": "Automatically generates blanks from example sentences; answer via text or handwriting.",
-        "ja": "例文から自動で空所を生成し、テキストまたは手書きで解答。"
+        "ko": "저장된/오답 단어 세트를 선택해 예문 기반 빈칸 시험을 자동 생성, 텍스트 또는 손글씨로 응시",
+        "en": "Auto-generates blanks from example sentences for saved/wrong sets; answer via text or handwriting.",
+        "ja": "保存/誤答セットを選び、例文から自動で空所を生成。テキストまたは手書きで解答。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "온디바이스 손글씨 OCR",
+        "ko": "일본어 손글씨 인식",
         "en": "On-device Handwriting OCR",
         "ja": "オンデバイス手書きOCR"
       },
       "description": {
-        "ko": "ResNet-50 Core ML 모델로 상용한자 손글씨를 간단 판독하여 피드백 제공.",
-        "en": "Core ML ResNet-50 reads Joyo-kanji handwriting on device and provides feedback.",
-        "ja": "Core MLのResNet-50で常用漢字の手書きを端末内で判読し、フィードバック。"
+        "ko": "通商産業省 工業技術院 電子技術総合研究所 ETL 상용한자(일부 인명 한자 포함) 데이터와 ResNet-50로 학습 후 Core ML로 이식",
+        "en": "Trained on ETL datasets (Joyo + some name kanji) with ResNet-50 and deployed via Core ML for on-device feedback.",
+        "ja": "ETLデータセット（常用＋一部人名漢字）でResNet-50を学習し、Core MLで端末内推論・フィードバックを実現。"
       },
       "implemented": true
     },
@@ -186,9 +157,48 @@
         "ja": "iCloud同期"
       },
       "description": {
-        "ko": "단어/진행도를 기기간 자동 동기화, 중단한 지점부터 이어서 학습.",
-        "en": "Automatically sync words/progress across devices and continue where you left off.",
-        "ja": "単語/進捗を端末間で自動同期し、中断箇所から再開可能。"
+        "ko": "단어 및 학습 진행도를 기기간 자동 동기화하여 이어서 학습 가능",
+        "en": "Automatically sync words and progress across devices so you can continue where you left off.",
+        "ja": "単語と進捗を端末間で自動同期し、中断箇所から再開可能。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "학습 대시보드",
+        "en": "Learning Dashboard",
+        "ja": "学習ダッシュボード"
+      },
+      "description": {
+        "ko": "예정 카드, 정오답 추이, 학습 스트릭 등 핵심 지표를 시각화",
+        "en": "Visualizes due cards, right/wrong trends, learning streaks, and other key metrics.",
+        "ja": "予定カード、正誤トレンド、学習ストリークなど主要指標を可視化。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "상용한자 학습 커리큘럼",
+        "en": "Joyo Kanji Curriculum",
+        "ja": "常用漢字学習カリキュラム"
+      },
+      "description": {
+        "ko": "상용한자 2136자 음독/훈독 및 예문 데이터 제공",
+        "en": "Provides 2,136 Joyo kanji with on/kun readings and example sentences.",
+        "ja": "常用漢字2136字の音読み/訓読みと例文データを提供。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "데일리 예문",
+        "en": "Daily Example Sentences",
+        "ja": "デイリー例文"
+      },
+      "description": {
+        "ko": "방문 일자에 따라 난이도를 점진적으로 조정한 예문 제공",
+        "en": "Provides example sentences whose difficulty increases gradually by visit date.",
+        "ja": "訪問日に応じて難易度を段階的に調整した例文を提供。"
       },
       "implemented": true
     }
@@ -199,47 +209,23 @@
       "/assets/tangocho/shot-2.png",
       "/assets/tangocho/shot-3.png",
       "/assets/tangocho/shot-4.png"
-    ],
-    "description": {
-      "ko": "iOS 앱 프리뷰",
-      "en": "iOS App Preview",
-      "ja": "iOSアプリプレビュー"
-    }
+    ]
   },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
-      "backend": "Swift, SwiftUI",
-      "database": "CoreData or SwiftData, CloudKit(iCloud)",
-      "AI": "Core ML(ResNet-50), Vision",
-      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
-      "infra": "iCloud"
+      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit, Core ML",
+      "backend": "Firebase",
+      "database": "CoreData",
+      "AI": "Core ML, ResNet-50",
+      "AITraining": "A100 40GB - elice cloud",
+      "devops": "Xcode Cloud, TestFlight",
+      "infra": "iCloud, Firebase"
     }
-  },
-  "responsibilities": {
-    "ko": [
-      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
-      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
-      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
-      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
-    ],
-    "en": [
-      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
-      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
-      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
-      "Operations: TestFlight releases, notifications, data migration"
-    ],
-    "ja": [
-      "企画：『即保存→SRS→クローズ→書く』ループ定義",
-      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
-      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
-      "運用：TestFlight配信、通知、データ移行"
-    ]
   },
   "metrics": {
     "ko": [
-      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
-        ],
+      "제작자 본인 매일 사용"
+    ],
     "en": [
       "Observed improved completion of evening routine after Shortcut capture in internal alpha",
       "Perceived next-day recall improved when handwriting practice is combined"
@@ -256,18 +242,17 @@
   },
   "results": {
     "achievements": {
-      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
-      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
-      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
+      "ko": "노출당 다운로드 비율 0.1",
+      "en": "Download-to-impression rate: 0.1",
+      "ja": "インプレッション当たりのダウンロード率：0.1"
     },
     "nextSteps": {
-      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
-      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
-      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
+      "ko": "UI 디자인 개선 및 비즈니스 모델 개발 이후 수익화 실현",
+      "en": "Improve UI design, develop the business model, and achieve monetization.",
+      "ja": "UIデザインの改善とビジネスモデルの構築を進め、収益化を実現。"
     }
   },
   "additional_links": {
-    "website": "https://acon.app",
-    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
+    "blog": "https://github.com/Ohjackson/ResLet-JapaneseHandWriting"
   }
 }

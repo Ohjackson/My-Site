@@ -2,10 +2,12 @@ interface TechStackData {
   techStack: {
     frontend?: string;
     backend?: string;
-    ai_ml?: string;
-    devops?: string;
     database?: string;
+    AI?: string;
+    AITraining?: string;
+    devops?: string;
     infra?: string;
+    Tools?: string;
   };
 }
 
@@ -21,30 +23,36 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
   const content = {
     ko: { 
       title: "기술 스택",
-      frontend: "프론트엔드",
-      backend: "백엔드",
-      ai_ml: "AI/ML",
-      database: "데이터베이스",
+      frontend: "Frontend",
+      backend: "Backend",
+      database: "Database",
+      AI: "AI",
+      AITraining: "AI Training",
       devops: "DevOps",
-      infra: "인프라"
+      infra: "Infrastructure",
+      Tools: "Tools"
     },
     en: { 
       title: "Tech Stack",
       frontend: "Frontend",
       backend: "Backend",
-      ai_ml: "AI/ML",
       database: "Database",
+      AI: "AI",
+      AITraining: "AI Training",
       devops: "DevOps",
-      infra: "Infrastructure"
+      infra: "Infrastructure",
+      Tools: "Tools"
     },
     ja: { 
       title: "技術スタック",
-      frontend: "フロントエンド",
-      backend: "バックエンド",
-      ai_ml: "AI/ML",
-      database: "データベース",
+      frontend: "Frontend",
+      backend: "Backend",
+      database: "Database",
+      AI: "AI",
+      AITraining: "AI Training",
       devops: "DevOps",
-      infra: "インフラ"
+      infra: "Infrastructure",
+      Tools: "Tools"
     }
   };
 
@@ -67,16 +75,22 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
               <p className="text-muted">{data.techStack.backend}</p>
             </div>
           )}
-          {data.techStack?.ai_ml && (
-            <div>
-              <h3 className="font-semibold mb-2">{content[language].ai_ml}</h3>
-              <p className="text-muted">{data.techStack.ai_ml}</p>
-            </div>
-          )}
           {data.techStack?.database && (
             <div>
               <h3 className="font-semibold mb-2">{content[language].database}</h3>
               <p className="text-muted">{data.techStack.database}</p>
+            </div>
+          )}
+          {data.techStack?.AI && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].AI}</h3>
+              <p className="text-muted">{data.techStack.AI}</p>
+            </div>
+          )}
+          {data.techStack?.AITraining && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].AITraining}</h3>
+              <p className="text-muted">{data.techStack.AITraining}</p>
             </div>
           )}
           {data.techStack?.devops && (
@@ -89,6 +103,12 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
             <div>
               <h3 className="font-semibold mb-2">{content[language].infra}</h3>
               <p className="text-muted">{data.techStack.infra}</p>
+            </div>
+          )}
+          {data.techStack?.Tools && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].Tools}</h3>
+              <p className="text-muted">{data.techStack.Tools}</p>
             </div>
           )}
         </div>

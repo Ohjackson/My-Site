@@ -16,9 +16,9 @@ export function ResponsibilitiesSection({ data, language, backgroundColor }: Res
   if (!data?.responsibilities || !data.responsibilities[language]) return null;
 
   const content = {
-    ko: { title: "내가 담당한 것" },
+    ko: { title: "담당 요소" },
     en: { title: "My Responsibilities" },
-    ja: { title: "私が担当したこと" }
+    ja: { title: "担当したこと" }
   };
 
   return (
