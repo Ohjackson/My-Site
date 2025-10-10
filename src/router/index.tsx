@@ -17,18 +17,15 @@ const PROJECT_IDS = [
   'healthfinbot'
 ];
 
-// 동적 라우트 생성
-const projectRoutes = PROJECT_IDS.map(projectId => ({
-  path: `/project/${projectId}`,
-  element: <ProjectDetailPage />,
-}));
-
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <MainPage />,
   },
-  ...projectRoutes,
+  {
+    path: '/project/:projectId',
+    element: <ProjectDetailPage />,
+  },
   {
     path: '*',
     element: <div>404 - Page Not Found</div>,

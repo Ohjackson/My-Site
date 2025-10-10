@@ -19,7 +19,20 @@ export const ProjectDetailPage = () => {
   };
 
   if (!projectId) {
-    return <div>Project not found</div>;
+    return (
+      <div className="min-h-screen bg-bg text-text flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold mb-4">Project not found</h1>
+          <p className="text-muted mb-4">The requested project could not be found.</p>
+          <button 
+            onClick={handleBack}
+            className="px-4 py-2 bg-primary text-white rounded hover:bg-primary/80 transition-colors"
+          >
+            Back to Home
+          </button>
+        </div>
+      </div>
+    );
   }
 
   return (
