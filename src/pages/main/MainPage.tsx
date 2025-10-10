@@ -20,6 +20,8 @@ export const MainPage = () => {
 
   const handleProjectClick = (projectId: ProjectId) => {
     console.log('Project clicked:', projectId);
+    // 페이지 상단으로 스크롤
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     navigate(`/project/${projectId}`);
   };
 
