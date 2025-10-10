@@ -14,8 +14,16 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCardProps) => {
+  const handleCardClick = () => {
+    console.log('ProjectCard clicked:', project.id);
+    onSelect(project.id);
+  };
+
   return (
-    <article className="group flex flex-col rounded-3xl border border-border bg-surface p-8 text-text shadow-sm transition hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-2xl">
+    <article 
+      onClick={handleCardClick}
+      className="group flex flex-col rounded-3xl border border-border bg-surface p-8 text-text shadow-sm transition hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-2xl cursor-pointer"
+    >
       <div className="flex-1 space-y-6">
         {/* Project Icon */}
         <div className="flex items-center gap-4">
@@ -93,7 +101,8 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
 
       <button
         type="button"
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation(); // 부모 카드 클릭 이벤트 방지
           console.log('ProjectCard button clicked:', project.id);
           onSelect(project.id);
         }}
