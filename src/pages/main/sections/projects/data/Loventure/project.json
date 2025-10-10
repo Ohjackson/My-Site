@@ -6,71 +6,79 @@
   },
   "summary": {
     "ko": "커플을 위한 맞춤형 AI 데이트 코스 추천 서비스",
-    "en": "Personalized travel planning and recommendation service for couples",
-    "ja": "カップル向けのカスタマイズされた旅行計画と推奨サービス"
+    "en": "A personalized AI date-course recommendation service for couples",
+    "ja": "カップル向けのパーソナライズAIデートコース推薦サービス"
   },
   "role": {
     "ko": "PM, Full-Stack",
-    "en": "Full-stack Developer",
-    "ja": "フルスタック開発者"
+    "en": "PM, Full-Stack",
+    "ja": "PM・フルスタック"
   },
   "tags": {
-    "ko": ["Laggraph", "k8s", "MSA"],
-    "en": ["React", "Node.js", "MongoDB", "AI"],
-    "ja": ["React", "Node.js", "MongoDB", "AI"]
+    "ko": ["AI 추천", "커플 페어링", "지역락", "다이어리", "사진첩", "지표"],
+    "en": ["AI Recommendation", "Couple Pairing", "Region Lock", "Diary", "Photo Album", "Metrics"],
+    "ja": ["AI推薦", "カップルペアリング", "リージョンロック", "日記", "フォトアルバム", "指標"]
   },
   "platform": {
     "ko": "Web",
-    "en": "Web, Mobile",
-    "ja": "Web, Mobile"
+    "en": "Web",
+    "ja": "Web"
   },
   "workPeriod": {
     "ko": "2025.09 - 2025.10",
-    "en": "2023.09 - 2024.02",
-    "ja": "2023.09 - 2024.02"
+    "en": "2025.09 - 2025.10",
+    "ja": "2025.09 - 2025.10"
   },
   "releaseDate": {
     "ko": "배포 진행중",
-    "en": "2024.02.14",
-    "ja": "2024.02.14"
+    "en": "In deployment",
+    "ja": "デプロイ進行中"
   },
   "endDate": {
     "ko": "2025.10",
-    "en": "2024.08.31",
-    "ja": "2024.08.31"
+    "en": "2025.10",
+    "ja": "2025.10"
   },
   "teamSize": {
     "ko": "8",
-    "en": "2 people",
-    "ja": "2人"
+    "en": "8",
+    "ja": "8"
   },
   "additionalFeatures": {
     "ko": "- 8주 스프린트",
-    "en": "Provides personalized travel experiences through AI-based destination recommendations and couple preference analysis. Enables couples to plan special trips together through real-time travel schedule management and social features.",
-    "ja": "AIベースの旅行先推奨とカップル嗜好分析により、カスタマイズされた旅行体験を提供します。リアルタイム旅行スケジュール管理とソーシャル機能により、カップルが一緒に特別な旅行を計画できます。"
+    "en": "- 8-week sprint",
+    "ja": "- 8週間スプリント"
   },
   "features": {
     "ko": [
       "AI 기반 데이트 코스 추천",
-      "MSA 아키텍쳐 도입"
+      "소셜 로그인 & 커플 페어링",
+      "코스 저장 및 다이어리(사진 포함)",
+      "지역락(해금 지역 우선 추천)",
+      "커플 지표(함께한 날, 다이어리 수, 코스 이용 수)",
+      "사진첩(다이어리 사진 모아보기)"
     ],
     "en": [
-      "AI-based destination recommendations",
-      "Couple preference analysis and matching",
-      "Real-time travel itinerary management",
-      "Social features and memory sharing"
+      "AI-based date course recommendations",
+      "Social login & couple pairing",
+      "Course saving and diary with photos",
+      "Region lock (unlocked areas prioritized)",
+      "Couple metrics (days together, diary count, courses used)",
+      "Photo album (centralized diary photos)"
     ],
     "ja": [
-      "AIベースの旅行先推奨",
-      "カップルの好み分析とマッチング",
-      "リアルタイム旅行スケジュール管理",
-      "ソーシャル機能と思い出共有"
+      "AIによるデートコース推薦",
+      "ソーシャルログイン＆カップルペアリング",
+      "コース保存と日記（写真付き）",
+      "リージョンロック（解放エリア優先）",
+      "カップル指標（共に過ごした日数・日記数・コース利用数）",
+      "フォトアルバム（散在写真の一元表示）"
     ]
   },
   "overviewStory": {
-    "ko": "지난 여러 창업팀에서의 팀 경험의 노하우를 pm으로 담아내고, 대규모 트레픽을 가장한 서비스를 위해 새롭게 도전한 아키텍쳐를 사용해 보았습니다.",
-    "en": "AI service that analyzes couples' preferences and situations to provide optimal travel plans",
-    "ja": "カップルの好みと状況を分析して最適な旅行計画を提供するAIサービス"
+    "ko": "대규모 서비스를 가장한 sw아카데미에서의 프로젝트로 출시된 프로젝트입니다.\n지금까지의 창업팀 에서의 경험과 노하우를 pm으로서 녹여보았습니다.",
+    "en": "Planned and built as a web service where AI suggests actionable courses and couples preserve memories via diaries, photos, and shared metrics. It proposes courses tailored to time/budget/mood/weather, unlocks regions with continued use, and accumulates couple-specific indicators.",
+    "ja": "AIが実行可能なコースを提案し、日記・写真・指標で思い出を残せるWebサービスとして企画・開発。時間／予算／雰囲気／天気に合わせてコースを提示し、使うほどエリアが解放され、二人だけの指標が蓄積されるよう設計。"
   },
   "links": {
     "demo": "https://loventure.app",
@@ -78,71 +86,97 @@
   },
   "service": {
     "problem": {
-      "ko": "둘의 취향 조건에 맞는 데이트 코스 작성의 어려움",
-      "en": "Difficulty and time consumption in planning due to differences in travel preferences between couples.",
-      "ja": "カップル間の旅行の好みの違いによる計画立案の困難さと時間消費。"
+      "ko": "둘의 취향과 상황을 모두 반영한 실행 가능한 데이트 코스를 빠르게 고르기 어렵고, 번거로움",
+      "en": "It’s hard to quickly choose an actionable date course reflecting both partners’ tastes and context, and past records are scattered and hard to reuse.",
+      "ja": "二人の嗜好と状況を反映した実行可能なデートコースを素早く選ぶのが難しく、訪問記録も散在して再活用がしにくい。"
     },
     "target": {
-      "ko": "20–34세 커플(연애 1개월~3년), 데이트를 자주 계획하지만 아이디어/동선 설계가 귀찮은 사람들",
-      "en": "Couples in their 20s-40s who struggle with travel planning or desire a special and personalized experience.",
-      "ja": "旅行計画に苦労している、または特別でパーソナライズされた体験を望む20-40代のカップル。"
+      "ko": "즉시 실행 가능한 코스를 원하고, 다녀온 흔적을 사진·지표로 남기며 동기부여 받고 싶은 20–30대 커플.",
+      "en": "Couples in their 20s–30s who want instantly actionable courses and motivation through photos and shared metrics.",
+      "ja": "すぐに実行できるコースを求め、写真や共有指標でモチベーションを得たい20〜30代のカップル。"
     },
     "value": {
-      "ko": "AI가 두 사람의 취향을 모두 만족시키는 최적의 경로와 활동을 제안하여 갈등을 줄이고 만족도를 극대화.",
-      "en": "AI suggests optimal routes and activities that satisfy both partners' preferences, reducing conflict and maximizing satisfaction.",
-      "ja": "AIが二人の好みを両方満たす最適なルートとアクティビティを提案し、対立を減らし満足度を最大化。"
+      "ko": "개인·커플 상황을 반영한 코스 추천, 사용량에 따른 지역 해금과 지표 제공으로 선택 피로를 줄이고 경험을 축적.",
+      "en": "Context-aware course suggestions plus region unlocks and metrics reduce choice fatigue and help accumulate memorable experiences.",
+      "ja": "状況に合わせたコース推薦に加え、エリア解放と指標の提示で選択疲れを軽減し、体験を蓄積できる。"
     }
   },
   "detail_features": [
     {
       "title": {
-        "ko": "AI 기반 여행지 추천",
-        "en": "AI-based Destination Recommendations",
-        "ja": "AIベースの旅行先推奨"
+        "ko": "소셜 로그인 & 커플 페어링",
+        "en": "Social Login & Couple Pairing",
+        "ja": "ソーシャルログイン＆カップルペアリング"
       },
       "description": {
-        "ko": "머신러닝 모델이 개별 사용자 및 커플의 과거 활동, 선호도를 분석하여 맞춤형 여행지, 숙소, 활동을 추천.",
-        "en": "Machine learning model analyzes individual user and couple's past activities and preferences to recommend customized destinations, accommodations, and activities.",
-        "ja": "機械学習モデルが個別ユーザーおよびカップルの過去の活動、好みを分析し、カスタマイズされた旅行先、宿泊施設、アクティビティを推奨。"
+        "ko": "초대 코드로 방을 만들고 승인 과정으로 커플을 연결. 기본 공개 범위는 커플 단위 비공개.",
+        "en": "Create a room via invite code and pair upon approval. Default visibility is private to the couple.",
+        "ja": "招待コードでルーム作成後、承認でペアリング。既定の公開範囲はカップル限定の非公開。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "커플 취향 절충 알고리즘",
-        "en": "Couple Preference Compromise Algorithm",
-        "ja": "カップルの好み妥協アルゴリズム"
+        "ko": "AI 코스 추천",
+        "en": "AI Course Recommendation",
+        "ja": "AIコース推薦"
       },
       "description": {
-        "ko": "두 사용자의 상반된 취향(예: 활동 vs 휴식)을 입력받아, 만족도를 최대화하는 절충안을 계산하여 여행 계획에 반영.",
-        "en": "Receives input on two users' conflicting preferences (e.g., activity vs. relaxation) and calculates a compromise that maximizes satisfaction, reflecting it in the travel plan.",
-        "ja": "二人のユーザーの相反する好み（例：活動 vs 休息）を入力として受け取り、満足度を最大化する妥協案を計算し、旅行計画に反映。"
+        "ko": "시간·예산·분위기·날씨·해금 지역을 입력 받아 2–3개 후보를 제안. ‘저장/다시 추천/세부 보기’ 액션 제공.",
+        "en": "Takes time, budget, mood, weather, and unlocked regions to propose 2–3 candidates. Actions: Save / Recommend Again / View Details.",
+        "ja": "時間・予算・雰囲気・天気・解放エリアを入力し、2～3件の候補を提示。「保存／再推薦／詳細を見る」が可能。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "실시간 협업 일정 관리",
-        "en": "Real-time Collaborative Itinerary Management",
-        "ja": "リアルタイム協力スケジュール管理"
+        "ko": "코스 저장 & 다이어리(사진)",
+        "en": "Course Saving & Diary (Photos)",
+        "ja": "コース保存＆日記（写真）"
       },
       "description": {
-        "ko": "두 사용자가 동시에 여행 일정을 편집하고, 변경 사항이 즉시 반영되는 실시간 동기화 기능 제공 (Socket.io 활용).",
-        "en": "Allows two users to simultaneously edit the travel itinerary, providing real-time synchronization where changes are instantly reflected (using Socket.io).",
-        "ja": "二人のユーザーが同時に旅行日程を編集し、変更が即座に反映されるリアルタイム同期機能を提供（Socket.io活用）。"
+        "ko": "추천 상세에서 ‘저장’하면 오늘의 코스로 마킹. 방문 후 별점·코멘트·사진을 추가해 기록.",
+        "en": "‘Save’ marks a course as today’s plan. After visiting, add rating, comment, and photos to record.",
+        "ja": "推薦詳細から「保存」で本日のコースとしてマーク。訪問後に評価・コメント・写真を追加して記録。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "소셜 기능 및 추억 공유",
-        "en": "Social Features and Memory Sharing",
-        "ja": "ソーシャル機能と思い出共有"
+        "ko": "지역락",
+        "en": "Region Lock",
+        "ja": "リージョンロック"
       },
       "description": {
-        "ko": "여행 후기 작성, 사진 공유, 다른 커플의 추천 경로 탐색 등 소셜 기능 제공.",
-        "en": "Provides social features such as writing travel reviews, sharing photos, and exploring recommended routes from other couples.",
-        "ja": "旅行レビューの作成、写真共有、他のカップルの推奨ルートの探索など、ソーシャル機能を提供。"
+        "ko": "초기 2개 구 자동 해금. 코스 저장 시 하루 1회 추가 해금(자정 리셋). 추천은 기본 해금 지역 우선.",
+        "en": "Initially unlock 2 districts. Each save grants one additional unlock per day (reset at midnight). Recommendations prioritize unlocked areas.",
+        "ja": "初期に2区を自動解放。コース保存で1日1回の追加解放（深夜リセット）。推薦は解放エリアを優先。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "사진첩",
+        "en": "Photo Album",
+        "ja": "フォトアルバム"
+      },
+      "description": {
+        "ko": "여러 다이어리에 흩어진 사진을 최신순 그리드로 모아보기. 썸네일 클릭 시 해당 다이어리로 이동.",
+        "en": "Aggregate photos from diaries into a latest-first grid; clicking a thumbnail opens the source diary.",
+        "ja": "日記に散在する写真を最新順グリッドで集約。サムネイルを押すと該当日記へ遷移。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "커플 지표",
+        "en": "Couple Metrics",
+        "ja": "カップル指標"
+      },
+      "description": {
+        "ko": "함께한 날, 다이어리 수, 코스 이용 수 등 핵심 지표를 마이페이지 상단 카드로 가볍게 제공.",
+        "en": "Surface key metrics—days together, diary count, courses used—via light cards on My Page.",
+        "ja": "共に過ごした日数、日記数、コース利用数などの主要指標をマイページ上部カードで提示。"
       },
       "implemented": true
     }
@@ -152,76 +186,55 @@
       "/assets/loventure/shot-1.png",
       "/assets/loventure/shot-2.png",
       "/assets/loventure/shot-3.png"
-    ],
-    "description": {
-      "ko": "여행 계획 편집기, AI 추천 화면, 소셜 공유 화면 프리뷰",
-      "en": "Travel Plan Editor, AI Recommendation Screen, Social Sharing Screen Preview",
-      "ja": "旅行計画エディタ、AI推奨画面、ソーシャル共有画面のプレビュー"
-    }
+    ]
   },
- 
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
-      "backend": "Swift, SwiftUI",
-      "database": "CoreData or SwiftData, CloudKit(iCloud)",
-      "AI": "Core ML(ResNet-50), Vision",
-      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
-      "infra": "iCloud"
+      "frontend": "react, tailwindcss, vite",
+      "backend": "springboot, fastapi",
+      "database": "PostgreSQL, postgresGis",
+      "AI": "python, langchain",
+      "devops": "argoCD, Github Actions",
+      "infra": "docker, kubernetes, GCP, Kakao Cloud, terraform"
     }
   },
   "responsibilities": {
     "ko": [
-      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
-      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
-      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
-      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
+      "PM으로 8주 스프린트 운영 및 범위 정의",
+      "핵심 플로우 설계(로그인→페어링→추천→저장→다이어리→지표)",
+      "지역락 규칙·지표 산출 방식·빈 상태 UX 가이드 정의",
+      "추천→저장→해금으로 이어지는 리텐션 루프 기획",
+      "course service 개발 - SpringBoot",
+      "ai service 로직 개발 - FastAPI",
+      "Territory service 개발 - SpringBoot",
+      "course List Page 개발 - React",
+      "database 설계 - PostgreSQL, postgresGis",
+      "docker 이미지 빌드 및 배포 - Docker",
+      "QA 전략 수립 및 운영"
     ],
     "en": [
-      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
-      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
-      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
-      "Operations: TestFlight releases, notifications, data migration"
+      "Ran an 8-week sprint as PM and defined scope",
+      "Designed the core flow (login → pairing → recommend → save → diary → metrics)",
+      "Specified region-lock rules, metric calculations, and empty-state UX",
+      "Planned a retention loop: recommend → save → unlock"
     ],
     "ja": [
-      "企画：『即保存→SRS→クローズ→書く』ループ定義",
-      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
-      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
-      "運用：TestFlight配信、通知、データ移行"
-    ]
-  },
-  "metrics": {
-    "ko": [
-      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
-        ],
-    "en": [
-      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
-      "Perceived next-day recall improved when handwriting practice is combined"
-    ],
-    "ja": [
-      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
-      "書き取り練習を併用すると翌日の再想起が向上（体感）"
+      "PMとして8週間スプリントを運用しスコープを定義",
+      "主要フロー設計（ログイン→ペアリング→推薦→保存→日記→指標）",
+      "リージョンロック規則・指標算出・空状態UXを策定",
+      "推薦→保存→解放へつなぐリテンションループを企画"
     ]
   },
   "lessonsLearned": {
-    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
-    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
-    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
+    "ko": "개발자 8명 팀에서 프로젝트를 진행하며 팀원들과 소통하고 커뮤니케이션 하는 방법을 배웠습니다.",
+    "en": "A loop of recommend → save → unlock → check metrics reduces choice fatigue and drives repeat use. Diary, photos, and metrics are central to ‘memory building’.",
+    "ja": "推薦→保存→解放→指標確認というループは選択疲れを抑え、再利用を促進。日記・写真・指標は「思い出の蓄積」に不可欠。"
   },
   "results": {
     "achievements": {
-      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
-      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
-      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
-    },
-    "nextSteps": {
-      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
-      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
-      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
+      "ko": "AI 추천·다이어리·지역락·지표·사진첩을 포함한 MVP 개발",
+      "en": "Completed planning and design of the MVP including AI recommendation, diary, region lock, metrics, and photo album",
+      "ja": "AI推薦・日記・リージョンロック・指標・フォトアルバムを含むMVPの企画・設計を完了"
     }
-  },
-  "additional_links": {
-    "website": "https://acon.app",
-    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
   }
 }

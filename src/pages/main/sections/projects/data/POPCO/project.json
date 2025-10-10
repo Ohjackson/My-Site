@@ -135,7 +135,7 @@
   },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "SwiftUI, UIKit(partial), Combine, WatchConnectivity",
+      "frontend": "SwiftUI, Combine, WatchConnectivity",
       "backend": "FastAPI",
       "database": "SQLite",
       "devops": "TestFlight",

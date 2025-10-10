@@ -15,7 +15,7 @@
     "ja": "Full-Cycle Solo Project"
   },
   "tags": {
-    "ko": ["IoT","Apple Watch", "SwiftUI", "Swift"],
+    "ko": ["IoT", "Apple Watch", "SwiftUI", "WatchConnectivity"],
     "en": ["Apple Watch", "watchOS", "SwiftUI", "Swift", "WatchConnectivity"],
     "ja": ["Apple Watch", "watchOS", "SwiftUI", "Swift", "WatchConnectivity"]
   },
@@ -41,11 +41,11 @@
   },
   "teamSize": {
     "ko": "1",
-    "en": "1 person (Solo)",
-    "ja": "1人（ソロ）"
+    "en": "1",
+    "ja": "1"
   },
   "additionalFeatures": {
-    "ko": "8개국 출시, 아이폰이 옆에 없어도 기록 가능",
+    "ko": "- 8개국 출시- \n - 아이폰이 옆에 없어도 기록 가능",
     "en": "Launched in 8 countries; records workouts even without the iPhone nearby.",
     "ja": "8か国でリリース。iPhoneが近くになくても記録可能。"
   },
@@ -67,17 +67,16 @@
     ]
   },
   "overviewStory": {
-    "ko": "애플워치만으로도 끊김 없이 운동을 기록하고, 아이폰에서 루틴 단위의 통계로 회고할 수 있게 설계함. 기록 마찰을 줄여 ‘매일 10분 루틴’을 꾸준히 이어가도록 돕는 것이 목표임.",
+    "ko": "애플워치만으로도 끊김 없이 운동을 기록하고, 아이폰에서 루틴 단위의 통계로 회고할 수 있는 iOS앱 서비스 부재로 목표가 된 프로젝트입니다.",
     "en": "Designed to capture workouts seamlessly on Apple Watch alone and review routine-level stats on iPhone. The goal is to reduce logging friction and help sustain a daily 10-minute routine.",
     "ja": "Apple Watch単体で途切れなく記録し、iPhoneでルーチン単位の統計を振り返れるよう設計。記録の摩擦を減らし、毎日10分のルーチン継続を支援することが目的。"
   },
   "links": {
-    "demo": "https://routiq.vercel.app",
-    "github": "https://github.com/YourUsername/Routiq-Planner"
+    "appStore": "https://apps.apple.com/kr/app/routiq/id6745335175"
   },
   "service": {
     "problem": {
-      "ko": "운동 기록의 번거로움과 루틴 유지의 어려움으로 인해 꾸준한 습관 형성이 어려움.",
+      "ko": "운동 기록의 번거로움과 종목별 새부 기록의 어려움.",
       "en": "Manual logging and difficulty maintaining routines make consistent habit building hard.",
       "ja": "手動記録の煩雑さとルーチン維持の難しさが、継続的な習慣化を妨げる。"
     },
@@ -100,7 +99,7 @@
         "ja": "Watch単独記録"
       },
       "description": {
-        "ko": "아이폰이 없어도 워치에서 세트/무게/횟수/휴식 시간을 빠르게 입력하고 저장.",
+        "ko": "아이폰이 없어도 워치에서 세트/무게/횟수/휴식 시간을 간단하게 저장.",
         "en": "Log sets/weight/reps/rest quickly on the Watch—no iPhone required.",
         "ja": "iPhoneなしでもWatch上でセット・重量・回数・休憩を素早く入力・保存。"
       },
@@ -131,19 +130,6 @@
         "ja": "種目・セット・休憩に基づく簡易モデルで概算カロリーを算出。"
       },
       "implemented": true
-    },
-    {
-      "title": {
-        "ko": "알림·리마인더",
-        "en": "Reminders",
-        "ja": "リマインダー"
-      },
-      "description": {
-        "ko": "정해둔 시간에 루틴 시작 알림을 제공하여 꾸준한 실행을 돕음.",
-        "en": "Sends start-time reminders to encourage consistent execution.",
-        "ja": "設定時間にルーチン開始を通知し、継続的な実行を促す。"
-      },
-      "implemented": true
     }
   ],
   "preview_screenshots": {
@@ -152,56 +138,16 @@
       "/assets/routiq/shot-2.png",
       "/assets/routiq/shot-3.png",
       "/assets/routiq/shot-4.png"
-    ],
-    "description": {
-      "ko": "워치 기록 화면, 아이폰 통계 대시보드, 루틴 편집 프리뷰",
-      "en": "Watch logging screen, iPhone stats dashboard, routine editor preview",
-      "ja": "Watchの記録画面、iPhone統計ダッシュボード、ルーチン編集プレビュー"
-    }
+    ]
   },
   
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
-      "backend": "Swift, SwiftUI",
-      "database": "CoreData or SwiftData, CloudKit(iCloud)",
-      "AI": "Core ML(ResNet-50), Vision",
-      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
-      "infra": "iCloud"
+      "frontend": "SwiftUI, WatchConnectivity",
+      "database": "SwiftData",
+      "devops": "TestFlight",
+      "loggingMonitoring": "Firebase"
     }
-  },
-  "responsibilities": {
-    "ko": [
-      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
-      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
-      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
-      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
-    ],
-    "en": [
-      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
-      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
-      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
-      "Operations: TestFlight releases, notifications, data migration"
-    ],
-    "ja": [
-      "企画：『即保存→SRS→クローズ→書く』ループ定義",
-      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
-      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
-      "運用：TestFlight配信、通知、データ移行"
-    ]
-  },
-  "metrics": {
-    "ko": [
-      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
-        ],
-    "en": [
-      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
-      "Perceived next-day recall improved when handwriting practice is combined"
-    ],
-    "ja": [
-      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
-      "書き取り練習を併用すると翌日の再想起が向上（体感）"
-    ]
   },
   "lessonsLearned": {
     "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",

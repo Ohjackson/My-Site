@@ -5,9 +5,9 @@
     "ja": "マイサイト"
   },
   "summary": {
-    "ko": "개인 사이트",
-    "en": "AI-based smart planner that analyzes couples' preferences to provide optimal travel plans",
-    "ja": "カップルの好みを分析し、最適な旅行計画を提供するAIベースのスマートプランナー"
+    "ko": "개인 포트폴리오 웹사이트",
+    "en": "Personal portfolio website showcasing modern web development technologies",
+    "ja": "現代的ウェブ開発技術を示す個人ポートフォリオウェブサイト"
   },
   "role": {
     "ko": "Full-Cycle Solo Project",
@@ -15,9 +15,9 @@
     "ja": "Full-Cycle Solo Project"
   },
   "tags": {
-    "ko": ["React", "Vite", "cloudflare"],
-    "en": ["React", "Vite", "Node.js", "MongoDB", "AI/ML", "GCP"],
-    "ja": ["React", "Vite", "Node.js", "MongoDB", "AI/ML", "GCP"]
+    "ko": ["React", "Vite", "TypeScript", "Tailwind", "MUI"],
+    "en": ["React", "Vite", "TypeScript", "Tailwind", "MUI"],
+    "ja": ["React", "Vite", "TypeScript", "Tailwind", "MUI"]
   },
   "platform": {
     "ko": "Web",
@@ -25,14 +25,14 @@
     "ja": "Web"
   },
   "workPeriod": {
-    "ko": "2025.10",
-    "en": "2025.10",
-    "ja": "2025.10"
+    "ko": "2024.12",
+    "en": "2024.12",
+    "ja": "2024.12"
   },
   "releaseDate": {
-    "ko": "2025.10",
-    "en": "2025.10.01",
-    "ja": "2025.10.01"
+    "ko": "2024.12",
+    "en": "2024.12",
+    "ja": "2024.12"
   },
   "endDate": {
     "ko": "진행중",
@@ -45,7 +45,7 @@
     "ja": "1"
   },
   "additionalFeatures": {
-    "ko": "개인 포트폴리오 웹사이트",
+    "ko": "개인 포트폴리오 웹사이트로, React와 Vite를 활용한 현대적인 웹 개발 기술을 보여줍니다. 반응형 디자인과 다국어 지원을 통해 다양한 사용자에게 최적화된 경험을 제공합니다.",
     "en": "Personal portfolio website showcasing modern web development technologies using React and Vite. Provides optimized experience for diverse users through responsive design and multilingual support.",
     "ja": "ReactとViteを活用した現代的ウェブ開発技術を示す個人ポートフォリオウェブサイトです。レスポンシブデザインと多言語サポートにより、多様なユーザーに最適化された体験を提供します。"
   },
@@ -73,13 +73,13 @@
     ]
   },
   "overviewStory": {
-    "ko": "개인 프로젝트·글·레퍼런스를 한 곳에서 빠르게 보여주기 위해 만든 포트폴리오 사이트임. 읽기 편한 아이보리 톤과 간결한 정보 설계를 통해 채용 담당자가 30초 안에 강점을 파악하도록 설계함.",
+    "ko": "개인 프로젝트·글·레퍼런스를 한 곳에서 빠르게 보여주기 위해 만든 포트폴리오 사이트입니다. 읽기 편한 아이보리 톤과 간결한 정보 설계를 통해 채용 담당자가 30초 안에 강점을 파악하도록 설계했습니다.",
     "en": "A portfolio site built to present projects, writings, and references in one place—fast. With an ivory tone and concise information design, recruiters can grasp key strengths in under 30 seconds.",
     "ja": "プロジェクト・文章・リファレンスを一括で素早く見せるためのポートフォリオサイト。読みやすいアイボリートーンと簡潔な情報設計で、採用担当が30秒以内に強みを把握できるよう設計。"
   },
   "links": {
     "demo": "https://mysite.com",
-    "github": "https://github.com/YourUsername/mysite"
+    "github": "https://github.com/Ohjackson/My-Site"
   },
   "service": {
     "problem": {
@@ -137,95 +137,50 @@
         "ja": "Viteのバンドル調整、コード分割、画像遅延読み込みでTTI/CLSを改善。"
       },
       "implemented": true
-    },
-    {
-      "title": {
-        "ko": "SEO/OG 자동 메타",
-        "en": "SEO/OG Auto Meta",
-        "ja": "SEO/OG自動メタ"
-      },
-      "description": {
-        "ko": "페이지별 제목·설명·OG 이미지 자동 생성으로 검색·공유 성과 향상.",
-        "en": "Auto-generates per-page title, description, and OG images to enhance search and sharing.",
-        "ja": "ページごとのタイトル・説明・OG画像を自動生成し、検索/共有効果を向上。"
-      },
-      "implemented": true
     }
   ],
-  "preview_screenshots": {
-    "screenshots": [
-      "/assets/mysite/shot-1.png",
-      "/assets/mysite/shot-2.png",
-      "/assets/mysite/shot-3.png"
-    ],
-    "description": {
-      "ko": "홈(프로젝트 카드), 프로젝트 상세, 다국어 토글 프리뷰",
-      "en": "Home (project cards), project detail, and multilingual toggle preview",
-      "ja": "ホーム（プロジェクトカード）、プロジェクト詳細、多言語トグルのプレビュー"
-    }
-  },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
-      "backend": "Swift, SwiftUI",
-      "database": "CoreData or SwiftData, CloudKit(iCloud)",
-      "AI": "Core ML(ResNet-50), Vision",
-      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
-      "infra": "iCloud"
+      "frontend": "React 18, TypeScript, Vite",
+
+      "devops": "Cloudflare Pages",
+      "infra": "Cloudflare",
+      "loggingMonitoring": "Cloudflare Analytics"
     }
   },
   "responsibilities": {
     "ko": [
-      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
-      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
-      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
-      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
+      "- 전체 아키텍처 설계 및 기술 스택 선택\n- React 컴포넌트 구조화 및 상태 관리\n- 다국어 지원 시스템 구현",
+      "- 반응형 디자인 및 접근성 최적화\n- 성능 최적화 및 SEO 설정\n- 배포 파이프라인 구축"
     ],
     "en": [
-      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
-      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
-      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
-      "Operations: TestFlight releases, notifications, data migration"
+      "- Overall architecture design and technology stack selection\n- React component structuring and state management\n- Multilingual support system implementation",
+      "- Responsive design and accessibility optimization\n- Performance optimization and SEO setup\n- Deployment pipeline construction"
     ],
     "ja": [
-      "企画：『即保存→SRS→クローズ→書く』ループ定義",
-      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
-      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
-      "運用：TestFlight配信、通知、データ移行"
-    ]
-  },
-  "metrics": {
-    "ko": [
-      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
-        ],
-    "en": [
-      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
-      "Perceived next-day recall improved when handwriting practice is combined"
-    ],
-    "ja": [
-      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
-      "書き取り練習を併用すると翌日の再想起が向上（体感）"
+      "- 全体アーキテクチャ設計と技術スタック選択\n- Reactコンポーネント構造化と状態管理\n- 多言語サポートシステム実装",
+      "- レスポンシブデザインとアクセシビリティ最適化\n- パフォーマンス最適化とSEO設定\n- デプロイパイプライン構築"
     ]
   },
   "lessonsLearned": {
-    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
-    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
-    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
+    "ko": "Vite의 빠른 개발 경험과 HMR이 생산성을 크게 향상시킴.\n- TypeScript의 타입 안전성이 런타임 에러를 크게 줄임.\n- 배포 환경에서 이미지 렌더링 문제 해결",
+    "en": "Vite's fast development experience and HMR significantly improved productivity.\n- TypeScript's type safety greatly reduced runtime errors.\n- Resolved image rendering issues in deployment environment",
+    "ja": "Viteの高速開発体験とHMRが生産性を大幅に向上。\n- TypeScriptの型安全性がランタイムエラーを大幅に削減\n- デプロイ環境での画像レンダリング問題を解決"
   },
   "results": {
     "achievements": {
-      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
-      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
-      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
+      "ko": "완전한 포트폴리오 사이트 구축, 다국어 지원 완료, 반응형 디자인 구현",
+      "en": "Built complete portfolio site, implemented multilingual support, achieved responsive design",
+      "ja": "完全なポートフォリオサイト構築、多言語サポート完了、レスポンシブデザイン実装"
     },
     "nextSteps": {
-      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
-      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
-      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
+      "ko": "블로그 기능 추가",
+      "en": "Add blog functionality",
+      "ja": "ブログ機能追加"
     }
   },
   "additional_links": {
-    "website": "https://acon.app",
-    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
+    "website": "https://mysite.com",
+    "github": "https://github.com/YourUsername/mysite"
   }
 }
