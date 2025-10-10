@@ -11,9 +11,9 @@ export const ProjectDetailPage = () => {
   const navigate = useNavigate();
   const { i18n } = useTranslation();
 
-  // 페이지 로드 시 상단으로 스크롤
+  // 페이지 로드 시 상단으로 즉시 이동 (애니메이션 없음)
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }, [projectId]);
 
   const handleBack = () => {
