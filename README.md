@@ -169,7 +169,39 @@ VITE_CONTACT_EMAIL="jack@example.com"
 - VS Code 확장 추천 · ESLint · Tailwind CSS IntelliSense · i18n Ally
 - 테스트 전략 후보 · Storybook · Vitest · React Testing Library
 - 접근성 점검 툴킷 · Lighthouse · axe DevTools
-- 배포 전 체크리스트 · `npm run lint` · `npm run build`
+
+---
+
+## 배포 전 체크리스트
+
+메인 브랜치에 푸시하기 전에 항상 다음 단계를 수행하세요:
+
+### 필수 단계
+```bash
+# 1. 코드 품질 확인
+npm run lint
+
+# 2. 프로덕션 빌드 테스트
+npm run build
+
+# 3. 로컬 테스트 (선택사항)
+npm run dev
+
+# 4. 변경사항 스테이징
+git add .
+
+# 5. 커밋
+git commit -m "설명적인 커밋 메시지"
+
+# 6. 메인 브랜치로 푸시
+git push origin main
+```
+
+### 배포 후 확인사항
+- 배포 완료 후 사이트 접속하여 기능 정상 작동 확인
+- 아이콘, 이미지 등 정적 자산 정상 로드 확인
+- 반응형 디자인 정상 작동 확인
+- 다국어 전환 기능 확인
 
 ---
 
