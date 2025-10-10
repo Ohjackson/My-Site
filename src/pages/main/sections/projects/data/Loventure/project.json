@@ -5,7 +5,7 @@
     "ja": "ラベンチャー"
   },
   "summary": {
-    "ko": "커플을 위한 맞춤형 여행 계획 및 추천 서비스",
+    "ko": "커플을 위한 맞춤형 AI 데이트 코스 추천 서비스",
     "en": "Personalized travel planning and recommendation service for couples",
     "ja": "カップル向けのカスタマイズされた旅行計画と推奨サービス"
   },
@@ -15,7 +15,7 @@
     "ja": "フルスタック開発者"
   },
   "tags": {
-    "ko": ["자체 개발 추천 알고리즘", "Laggraph", "k8s", "MSA"],
+    "ko": ["Laggraph", "k8s", "MSA"],
     "en": ["React", "Node.js", "MongoDB", "AI"],
     "ja": ["React", "Node.js", "MongoDB", "AI"]
   },
@@ -30,7 +30,7 @@
     "ja": "2023.09 - 2024.02"
   },
   "releaseDate": {
-    "ko": "진행중",
+    "ko": "배포 진행중",
     "en": "2024.02.14",
     "ja": "2024.02.14"
   },
@@ -45,16 +45,14 @@
     "ja": "2人"
   },
   "additionalFeatures": {
-    "ko": "",
+    "ko": "- 8주 스프린트",
     "en": "Provides personalized travel experiences through AI-based destination recommendations and couple preference analysis. Enables couples to plan special trips together through real-time travel schedule management and social features.",
     "ja": "AIベースの旅行先推奨とカップル嗜好分析により、カスタマイズされた旅行体験を提供します。リアルタイム旅行スケジュール管理とソーシャル機能により、カップルが一緒に特別な旅行を計画できます。"
   },
   "features": {
     "ko": [
-      "AI 기반 여행지 추천",
-      "커플 취향 분석 및 매칭",
-      "실시간 여행 일정 관리",
-      "소셜 기능 및 추억 공유"
+      "AI 기반 데이트 코스 추천",
+      "MSA 아키텍쳐 도입"
     ],
     "en": [
       "AI-based destination recommendations",
@@ -70,7 +68,7 @@
     ]
   },
   "overviewStory": {
-    "ko": "커플의 취향과 상황을 분석하여 최적의 여행 계획을 제공하는 AI 서비스",
+    "ko": "지난 여러 창업팀에서의 팀 경험의 노하우를 pm으로 담아내고, 대규모 트레픽을 가장한 서비스를 위해 새롭게 도전한 아키텍쳐를 사용해 보았습니다.",
     "en": "AI service that analyzes couples' preferences and situations to provide optimal travel plans",
     "ja": "カップルの好みと状況を分析して最適な旅行計画を提供するAIサービス"
   },
@@ -80,12 +78,12 @@
   },
   "service": {
     "problem": {
-      "ko": "커플 간의 여행 취향 차이로 인한 계획 수립의 어려움과 시간 소모.",
+      "ko": "둘의 취향 조건에 맞는 데이트 코스 작성의 어려움",
       "en": "Difficulty and time consumption in planning due to differences in travel preferences between couples.",
       "ja": "カップル間の旅行の好みの違いによる計画立案の困難さと時間消費。"
     },
     "target": {
-      "ko": "여행 계획에 어려움을 겪거나, 특별하고 개인화된 경험을 원하는 20-40대 커플.",
+      "ko": "20–34세 커플(연애 1개월~3년), 데이트를 자주 계획하지만 아이디어/동선 설계가 귀찮은 사람들",
       "en": "Couples in their 20s-40s who struggle with travel planning or desire a special and personalized experience.",
       "ja": "旅行計画に苦労している、または特別でパーソナライズされた体験を望む20-40代のカップル。"
     },

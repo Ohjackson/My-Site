@@ -1,4 +1,5 @@
 import { ArrowUpRightIcon } from '@/shared/components/icons';
+import { projectIcons } from '@/assets/icons';
 import { useEffect, useRef } from 'react';
 
 interface Project {
@@ -96,7 +97,7 @@ export function OtherProjectsSection({
                   {/* Project Icon */}
                   <div className="w-12 h-12 rounded-xl overflow-hidden shadow-lg border border-gray-200/50 flex-shrink-0">
                     <img 
-                      src={`./src/pages/main/sections/projects/data/${project.id}/icon.png`}
+                      src={projectIcons[project.id as keyof typeof projectIcons]}
                       alt={`${project.name[language]} icon`}
                       className="w-full h-full object-cover"
                       onError={(e) => {

@@ -11,17 +11,7 @@ interface ThemeState {
 const STORAGE_KEY = 'my-site:theme';
 
 const getInitialMode = (): ThemeMode => {
-  if (typeof window === 'undefined') {
-    return 'light';
-  }
-
-  const stored = window.localStorage.getItem(STORAGE_KEY) as ThemeMode | null;
-  if (stored === 'light' || stored === 'dark') {
-    return stored;
-  }
-
-  const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
-  return prefersDark ? 'dark' : 'light';
+  return 'light';
 };
 
 export const useThemeStore = create<ThemeState>((set, get) => ({

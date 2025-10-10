@@ -210,7 +210,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           )}
 
           {/* Additional Features Section */}
-          {project.additionalFeatures && (
+          {project.additionalFeatures && project.additionalFeatures[language] && (
             <div className="mt-6">
               <h3 className="text-sm font-semibold text-text/70 mb-3">{content[language].additionalFeatures}</h3>
               <div className="text-text/80 leading-relaxed">
