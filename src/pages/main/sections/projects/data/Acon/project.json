@@ -62,8 +62,8 @@
     ]
   },
   "links": {
-    "appStore": "",
-    "github": "https://github.com/YourUsername/acon-ios"
+    "appStore": "https://apps.apple.com/kr/app/acon-%EA%B2%80%EC%83%89-%EC%97%86%EB%8A%94-%EB%A7%9B%EC%A7%91-%EC%A7%80%EB%8F%84/id6740120473",
+    "github": "https://github.com/SOPT-all/35-APPJAM-iOS-ACON"
   },
   "overviewStory": {
     "ko": "처음 진행한 비교적 큰 규모의 팀 프로젝트 경험입니다 ",
@@ -139,7 +139,7 @@
   },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "UIKit",
+      "frontend": "UIKit, Combine",
       "database": "UserDefaults",
       "devops": "TestFlight, GitHub Actions (CI)"
     }
@@ -158,9 +158,9 @@
     ]
   },
   "lessonsLearned": {
-    "ko": "대기업 수준의 코드 컨벤션을 엄격히 지키기는 경험으로 협업애서 컨벤션의 중요성을 깨닮음.\n- 컴포넌트 재사용 방법에 대한 경험.",
-    "en": "By strictly adhering to enterprise-level coding conventions, realized how crucial conventions are in collaboration.\n- Gained experience in approaches to component reuse.",
-    "ja": "大企業レベルのコーディング規約を厳守したことで、協働における規約の重要性を実感。\n- コンポーネント再利用の手法について経験を積んだ。"
+  "ko": "- iOS 조직화 팀플 경험: 중앙 enum/모듈로 변경 지점 단일화 → 빠른 반영. 컴포넌트화와 코드리뷰 컨벤션 정착.\n'- 굴러가기만'이 아니라 꼼꼼함의 가치 학습: 한 줄도 이유 있게 작성함.\n- 구현 전 설계 토론의 중요성 체감: 흐름/데이터 계약을 먼저 합의함.\n- 충분히 고민해도 구현 후 드러나는 구조적 문제 경험 → 리팩터링 루프와 실험 플래그로 대응함.",
+  "en": "Organized iOS team play: centralized enums/modules as single sources of change → faster updates; established componentization and code-review conventions.\nLearned rigor over \"it just works\": write every line with intent.\nFelt the importance of pre-implementation design discussions: agree on flows/data contracts first.\nEven with planning, structural issues surfaced post-build → addressed via refactoring loops and feature flags.",
+  "ja": "iOSの組織的チーム開発：変更点を一元化するenum/モジュールを導入し、コンポーネント化とコードレビュー規約を定着。\n「動けばよい」ではなく緻密さの価値を学習：一行にも意図を持って書く。\n実装前の設計ディスカッションの重要性を実感：フロー／データ契約を先に合意。\n十分に検討しても実装後に構造課題が顕在化 → リファクタリングのループと機能フラグで対応。"
   },
   "results": {
     "achievements": {
@@ -170,6 +170,6 @@
     }
   },
   "additional_links": {
-    "website": "https://acon.app"
+    "website": "https://aconinc.netlify.app"
   }
 }

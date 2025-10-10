@@ -7,6 +7,7 @@ interface TechStackData {
     AITraining?: string;
     devops?: string;
     infra?: string;
+    loggingMonitoring?: string;
     Tools?: string;
   };
 }
@@ -30,6 +31,7 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
       AITraining: "AI Training",
       devops: "DevOps",
       infra: "Infrastructure",
+      loggingMonitoring: "Logging & Monitoring",
       Tools: "Tools"
     },
     en: { 
@@ -41,6 +43,7 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
       AITraining: "AI Training",
       devops: "DevOps",
       infra: "Infrastructure",
+      loggingMonitoring: "Logging & Monitoring",
       Tools: "Tools"
     },
     ja: { 
@@ -52,6 +55,7 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
       AITraining: "AI Training",
       devops: "DevOps",
       infra: "Infrastructure",
+      loggingMonitoring: "Logging & Monitoring",
       Tools: "Tools"
     }
   };
@@ -103,6 +107,12 @@ export function TechStackSection({ data, language, backgroundColor }: TechStackS
             <div>
               <h3 className="font-semibold mb-2">{content[language].infra}</h3>
               <p className="text-muted">{data.techStack.infra}</p>
+            </div>
+          )}
+          {data.techStack?.loggingMonitoring && (
+            <div>
+              <h3 className="font-semibold mb-2">{content[language].loggingMonitoring}</h3>
+              <p className="text-muted">{data.techStack.loggingMonitoring}</p>
             </div>
           )}
           {data.techStack?.Tools && (

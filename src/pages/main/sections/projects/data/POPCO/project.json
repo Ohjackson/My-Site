@@ -16,37 +16,37 @@
   },
   "tags": {
     "ko": ["IoT", "Apple Watch", "Swift"],
-    "en": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"],
-    "ja": ["Next.js", "Node.js", "PostgreSQL", "WebRTC"]
+    "en": ["IoT", "Apple Watch", "Swift"],
+    "ja": ["IoT", "Apple Watch", "Swift"]
   },
   "platform": {
     "ko": "Apple Watch, iPhone",
-    "en": "Web",
-    "ja": "Web"
+    "en": "Apple Watch, iPhone",
+    "ja": "Apple Watch、iPhone"
   },
   "workPeriod": {
     "ko": "2025.05 - 2025.09",
-    "en": "2024.05 - 2024.10",
-    "ja": "2024.05 - 2024.10"
+    "en": "2025.05 - 2025.09",
+    "ja": "2025.05 - 2025.09"
   },
   "releaseDate": {
     "ko": "2025.09",
-    "en": "2024.10.15",
-    "ja": "2024.10.15"
+    "en": "2025.09",
+    "ja": "2025.09"
   },
   "endDate": {
     "ko": "업데이트 준비중",
-    "en": "Ongoing",
-    "ja": "進行中"
+    "en": "Preparing updates",
+    "ja": "アップデート準備中"
   },
   "teamSize": {
     "ko": "1",
-    "en": "5 people",
-    "ja": "5人"
+    "en": "1",
+    "ja": "1人"
   },
   "additionalFeatures": {
     "ko": "한일 양국 동시 출시, 서비기반이 아닌 근거리 통신으로 고양이 1대1 배틀 진행",
-    "en": "Simultaneous launch in Korea and Japan; 1v1 cat battles using proximity communications rather than server relays.",
+    "en": "Launched simultaneously in Korea and Japan; 1v1 cat battles via proximity communication instead of server relays.",
     "ja": "韓日同時リリース。サーバー中継ではなく近距離通信で1対1のネコバトルを実現。"
   },
   "features": {
@@ -55,8 +55,8 @@
       "WatchConnectivity를 이용한 애플워치간 통신 배틀"
     ],
     "en": [
-      "Real-time Korea–Japan ladder",
-      "Watch-to-Watch battle via WatchConnectivity"
+      "Real-time Korea–Japan matchup",
+      "Watch-to-Watch battle using WatchConnectivity"
     ],
     "ja": [
       "リアルタイムの日韓対戦",
@@ -65,29 +65,12 @@
   },
   "overviewStory": {
     "ko": "애플워치간 통신이 가능할까? 라는 궁금증으로 실험적 시도가 기획까지 이어져 출시된 케이스입니다.",
-    "en": "Started from a simple question—can two Apple Watches battle directly? An experimental idea evolved into a shipped product.",
+    "en": "It began with a question—can Apple Watches communicate for a direct battle? The experiment grew into a fully shipped product.",
     "ja": "「Apple Watch同士で直接バトルできるのか？」という疑問から始まり、実験が企画・リリースへと発展。"
   },
   "links": {
     "appStore": "https://apps.apple.com/kr/app/popco/id6744177061",
     "github": "https://github.com/YourUsername/POPCO-Platform"
-  },
-  "service": {
-    "problem": {
-      "ko": "간단하게 즐길 근거리 멀티플레이 게임의 부재와 서버 의존으로 인한 지연 문제.",
-      "en": "Lack of ultra-simple nearby multiplayer games and latency caused by server-dependent designs.",
-      "ja": "手軽に遊べる近距離マルチプレイの不足と、サーバー依存設計による遅延問題。"
-    },
-    "target": {
-      "ko": "애플워치로 짧고 가벼운 대전을 즐기고 싶은 사용자, 친구와 즉시 대결하고 싶은 사용자.",
-      "en": "Users who want quick, lightweight wrist battles and instant duels with friends.",
-      "ja": "Apple Watchで手軽に短時間の対戦を楽しみたいユーザー、すぐに友達と勝負したいユーザー。"
-    },
-    "value": {
-      "ko": "아이폰 없이도 워치 단독 플레이 가능, 근거리 P2P 중심으로 지연 최소화, 국가 랭킹으로 동기부여 제공.",
-      "en": "Play on Watch without iPhone nearby, latency minimized via local P2P, and motivation through country rankings.",
-      "ja": "iPhoneなしでもWatch単体でプレイ可能。近距離P2Pで遅延を最小化し、国別ランキングでモチベーションを提供。"
-    }
   },
   "detail_features": [
     {
@@ -98,8 +81,8 @@
       },
       "description": {
         "ko": "고양이를 터치해 입을 여닫으면 점수가 오르는 간단한 기록 모드. 개인 최고 기록 저장.",
-        "en": "Tap to open/close the cat’s mouth and rack up points. Saves personal best.",
-        "ja": "ネコをタップして口の開閉でスコア加算。自己ベストを保存。"
+        "en": "Tap to open/close the cat’s mouth and gain points. Stores your personal best.",
+        "ja": "ネコをタップして口の開閉でスコアを加算。自己ベストを保存。"
       },
       "implemented": true
     },
@@ -111,7 +94,7 @@
       },
       "description": {
         "ko": "아이폰에서 페어링한 뒤 배틀은 워치에서 진행. 터치 카운트를 실시간 동기화해 승패 결정.",
-        "en": "Pair on iPhone, then battle on Watch. Touch counts sync in real time to decide the winner.",
+        "en": "Pair via iPhone, then battle on the Watch. Touch counts sync in real time to decide the winner.",
         "ja": "iPhoneでペアリング後、バトルはWatchで実施。タッチ数をリアルタイム同期して勝敗を決定。"
       },
       "implemented": true
@@ -124,8 +107,8 @@
       },
       "description": {
         "ko": "누적 점수 기반 국가 대항전. 위치 기반 국가 분류 및 주간 리더보드 제공.",
-        "en": "Nation-vs-nation ladder from cumulative scores; location-based country classification and weekly leaderboard.",
-        "ja": "累計スコアによる国別対抗。位置情報で国を判定し、週間リーダーボードを提供。"
+        "en": "Nation vs. nation ladder from cumulative scores; location-based country classification with weekly leaderboards.",
+        "ja": "累計スコアによる国別対抗。位置情報に基づく国判定と週間リーダーボードを提供。"
       },
       "implemented": true
     },
@@ -137,7 +120,7 @@
       },
       "description": {
         "ko": "개인 카운트 누적에 따라 고양이 스킨·이펙트 해금. 업적 배지 제공.",
-        "en": "Unlock skins/effects as your personal count grows. Earn achievement badges.",
+        "en": "Unlock skins and effects as your personal count grows. Earn achievement badges.",
         "ja": "累計カウントに応じてスキンやエフェクトを解放。実績バッジを獲得。"
       },
       "implemented": false
@@ -148,76 +131,20 @@
       "/assets/popco/shot-1.png",
       "/assets/popco/shot-2.png",
       "/assets/popco/shot-3.png"
-    ],
-    "description": {
-      "ko": "워치 배틀 화면, 아이폰 페어링, 국가 랭킹 프리뷰",
-      "en": "Watch battle screen, iPhone pairing, country ranking preview",
-      "ja": "Watchのバトル画面、iPhoneペアリング、国別ランキングのプレビュー"
-    }
+    ]
   },
- 
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
-      "backend": "Swift, SwiftUI",
-      "database": "CoreData or SwiftData, CloudKit(iCloud)",
-      "AI": "Core ML(ResNet-50), Vision",
-      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
-      "infra": "iCloud"
+      "frontend": "SwiftUI, UIKit(partial), Combine, WatchConnectivity",
+      "backend": "FastAPI",
+      "database": "SQLite",
+      "devops": "TestFlight",
+      "loggingMonitoring": "Firebase"
     }
-  },
-  "responsibilities": {
-    "ko": [
-      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
-      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
-      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
-      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
-    ],
-    "en": [
-      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
-      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
-      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
-      "Operations: TestFlight releases, notifications, data migration"
-    ],
-    "ja": [
-      "企画：『即保存→SRS→クローズ→書く』ループ定義",
-      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
-      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
-      "運用：TestFlight配信、通知、データ移行"
-    ]
-  },
-  "metrics": {
-    "ko": [
-      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
-        ],
-    "en": [
-      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
-      "Perceived next-day recall improved when handwriting practice is combined"
-    ],
-    "ja": [
-      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
-      "書き取り練習を併用すると翌日の再想起が向上（体感）"
-    ]
   },
   "lessonsLearned": {
-    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
-    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
-    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
-  },
-  "results": {
-    "achievements": {
-      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
-      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
-      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
-    },
-    "nextSteps": {
-      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
-      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
-      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
-    }
-  },
-  "additional_links": {
-    "website": "https://acon.app",
-    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
+    "ko": "서버리스 근거리 통신에서 양방향 상호작용을 한 코드경로로 다루며, 워치 간 상태 동기화를 ‘초’ 단위로 설계·검증하는 경험.",
+    "en": "In a serverless nearby setup, designed a single code path for two-way interaction and practiced second-level synchronization between watches.",
+    "ja": "サーバーレスの近距離通信において、双方向のやり取りを単一のコードパスで扱い、Watch間同期を秒単位で設計・検証した。"
   }
 }
