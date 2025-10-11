@@ -66,9 +66,9 @@
     "github": "https://github.com/SOPT-all/35-APPJAM-iOS-ACON"
   },
   "overviewStory": {
-    "ko": "처음 진행한 비교적 큰 규모의 팀 프로젝트 경험입니다 ",
-    "en": "My first experience working on a relatively large team project.",
-    "ja": "初めて取り組んだ、比較的規模の大きいチームプロジェクトの経験。"
+    "ko": "SOPT 에서 결성된 초기 창업팀으로, 대기업 방식의 개발 문화를 도입하여, 개발적 배움이 많았던 프로젝트입니다.",
+    "en": "A startup team formed at SOPT, introducing a corporate development culture to facilitate learning. This was my first experience working on a relatively large team project.",
+    "ja": "SOPTで形成された初期スタートアップチームで、企業開発文化を導入し、学習を促進しました。比較的規模の大きいチームプロジェクトの経験。"
   },
   "service": {
     "problem": {
@@ -141,7 +141,7 @@
     "techStack": {
       "frontend": "UIKit, Combine",
       "database": "UserDefaults",
-      "devops": "TestFlight, GitHub Actions (CI)"
+      "devops": "TestFlight"
     }
   },
   "responsibilities": {
@@ -149,12 +149,10 @@
       "- UIKit 온보딩 플로우 구현, \n- alert 모달 구현"
     ],
     "en": [
-      "Implemented UIKit onboarding flow",
-      "Implemented alert modal"
+      "Implemented UIKit onboarding flow, \n- alert modal"
     ],
     "ja": [
-      "UIKitのオンボーディングフローを実装",
-      "アラートモーダルを実装"
+      "UIKitのオンボーディングフローを実装, \n- アラートモーダルを実装"
     ]
   },
   "lessonsLearned": {
