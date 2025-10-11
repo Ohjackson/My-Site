@@ -64,14 +64,6 @@ export const Header = ({ currentView, onNavigateHome }: HeaderProps) => {
               {t('header.backToHome')}
             </Button>
           ) : null}
-          <Button
-            variant="secondary"
-            onClick={toggle}
-            className="h-9 px-3"
-            icon={<MoonIcon className="h-4 w-4" />}
-          >
-            {mode === 'dark' ? 'Light' : 'Dark'}
-          </Button>
 
           <div className="relative" ref={menuRef}>
             <button
@@ -100,6 +92,14 @@ export const Header = ({ currentView, onNavigateHome }: HeaderProps) => {
               </div>
             ) : null}
           </div>
+
+          <button
+            onClick={toggle}
+            className="flex items-center gap-2 rounded-md border border-transparent px-3 py-2 text-sm text-muted transition-colors hover:border-border hover:text-text"
+          >
+            <MoonIcon className="h-4 w-4" />
+            {mode === 'dark' ? 'Light' : 'Dark'}
+          </button>
         </div>
       </div>
     </header>
