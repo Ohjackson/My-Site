@@ -45,10 +45,10 @@ export const ContactSection = () => {
             <ContactLink key={item.label} {...item} />
           ))}
         </div>
-
+{/* 
         <div className="mt-20 text-center text-xs uppercase tracking-[0.3em] text-muted/80">
           {data.description}
-        </div>
+        </div> */}
       </div>
     </section>
   );
