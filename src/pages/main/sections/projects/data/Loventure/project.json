@@ -34,7 +34,7 @@
     "en": "In deployment",
     "ja": "デプロイ進行中"
   },
-  "endDate": {
+  "serviceStatus": {
     "ko": "2025.10",
     "en": "2025.10",
     "ja": "2025.10"

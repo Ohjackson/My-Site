@@ -62,7 +62,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       platform: "플랫폼",
       releaseDate: "출시일자",
       workPeriod: "작업일자",
-      endDate: "서비스종료일자",
+      serviceStatus: "서비스상태",
       role: "역할",
       teamSize: "인원",
       hashtags: "해시태그",
@@ -76,7 +76,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       platform: "Platform",
       releaseDate: "Release Date",
       workPeriod: "Work Period",
-      endDate: "End Date",
+      serviceStatus: "Service Status",
       role: "Role",
       teamSize: "Team Size",
       hashtags: "Hashtags",
@@ -90,7 +90,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       platform: "プラットフォーム",
       releaseDate: "リリース日",
       workPeriod: "作業期間",
-      endDate: "サービス終了日",
+      serviceStatus: "サービス状態",
       role: "役割",
       teamSize: "人数",
       hashtags: "ハッシュタグ",
@@ -148,10 +148,10 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
                 <span><strong>{content[language].teamSize}:</strong> {project.teamSize[language]}</span>
               </div>
             )}
-            {project.endDate && (
+            {project.serviceStatus && (
               <div className="flex items-center gap-3 text-text/90">
                 <CalendarDays className="h-4 w-4 text-primary-500" />
-                <span><strong>{content[language].endDate}:</strong> {project.endDate[language]}</span>
+                <span><strong>{content[language].serviceStatus}:</strong> {project.serviceStatus[language]}</span>
               </div>
             )}
             {project.platform && (

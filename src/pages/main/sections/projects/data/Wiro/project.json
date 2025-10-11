@@ -34,7 +34,7 @@
     "en": "Alpha in progress",
     "ja": "アルファ進行中"
   },
-  "endDate": {
+  "serviceStatus": {
     "ko": "지속 개발",
     "en": "Ongoing",
     "ja": "継続開発"

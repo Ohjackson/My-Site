@@ -34,7 +34,7 @@
     "en": "2025.01",
     "ja": "2025.01"
   },
-  "endDate": {
+  "serviceStatus": {
     "ko": "서버 종료",
     "en": "Service discontinued",
     "ja": "サービス終了"
