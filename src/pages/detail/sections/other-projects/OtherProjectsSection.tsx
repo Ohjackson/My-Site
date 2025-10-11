@@ -40,22 +40,31 @@ export function OtherProjectsSection({
 
   if (otherProjects.length === 0) return null;
 
-  // 무한 루프를 위해 프로젝트들을 복제
-  const duplicatedProjects = [...otherProjects, ...otherProjects];
+  // 무한 루프를 위해 프로젝트들을 3번 복제 (양방향 스크롤 지원)
+  const duplicatedProjects = [...otherProjects, ...otherProjects, ...otherProjects];
 
   // 무한 스크롤 로직
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
     if (!scrollContainer) return;
 
+    // 초기 위치를 중앙 세트의 시작으로 설정
+    const singleSetWidth = scrollContainer.scrollWidth / 3;
+    scrollContainer.scrollLeft = singleSetWidth;
+
     const handleScroll = () => {
       const { scrollLeft, scrollWidth, clientWidth } = scrollContainer;
-      const singleSetWidth = scrollWidth / 2; // 원본 프로젝트들의 너비
+      const singleSetWidth = scrollWidth / 3; // 원본 프로젝트들의 너비
       
-      // 두 번째 세트의 끝에 도달했을 때 (복제된 부분의 끝)
-      if (scrollLeft >= singleSetWidth) {
-        // 첫 번째 세트의 같은 위치로 순간이동 (부드러운 애니메이션 없이)
+      // 우측 끝에 도달했을 때 (세 번째 세트의 끝)
+      if (scrollLeft >= singleSetWidth * 2) {
+        // 두 번째 세트의 같은 위치로 순간이동
         scrollContainer.scrollTo({ left: scrollLeft - singleSetWidth, behavior: 'auto' });
+      }
+      // 좌측 끝에 도달했을 때 (첫 번째 세트의 시작)
+      else if (scrollLeft <= 0) {
+        // 두 번째 세트의 끝으로 순간이동
+        scrollContainer.scrollTo({ left: singleSetWidth * 2 - 1, behavior: 'auto' });
       }
     };
 
