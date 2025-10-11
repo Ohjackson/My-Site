@@ -6,7 +6,7 @@
   src: url('./shared/fonts/fontData/Gowun_Dodum/GowunDodum-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -14,7 +14,7 @@
   src: url('./shared/fonts/fontData/Klee_One/KleeOne-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @tailwind base;
@@ -27,6 +27,8 @@
     background-color: rgb(var(--color-bg));
     color: rgb(var(--color-text));
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* 폰트 로딩 중일 때 부드러운 전환 */
+    transition: font-family 0.1s ease-in-out;
   }
 
   /* 한국어: Gowun Dodum */
@@ -37,6 +39,11 @@
   /* 일본어: Klee One */
   :lang(ja) body {
     font-family: 'Klee One', 'Hiragino Sans', 'ヒラギノ角ゴシック', serif;
+  }
+
+  /* 폰트 로딩 상태 클래스 */
+  .fonts-loading {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
   }
 
   a {

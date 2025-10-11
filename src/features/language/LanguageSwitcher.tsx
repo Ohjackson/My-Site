@@ -1,6 +1,7 @@
 import TranslateOutlined from '@mui/icons-material/TranslateOutlined';
 import { FormControl, InputLabel, MenuItem, Select, SelectChangeEvent, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import { applyLanguageFont } from '@/shared/fonts/fontManager';
 
 const languages = [
   { code: 'en', labelKey: 'language.english' },
@@ -11,9 +12,10 @@ const languages = [
 export const LanguageSwitcher = () => {
   const { i18n, t } = useTranslation();
 
-  const handleChange = (event: SelectChangeEvent<string>) => {
+  const handleChange = async (event: SelectChangeEvent<string>) => {
     const value = event.target.value;
-    void i18n.changeLanguage(value);
+    await i18n.changeLanguage(value);
+    await applyLanguageFont(value);
   };
 
   return (
