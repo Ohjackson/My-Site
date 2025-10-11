@@ -146,10 +146,10 @@
   },
   "responsibilities": {
     "ko": [
-      "- UIKit 온보딩 플로우 구현\n - alert 모달 구현"
+      "- UIKit 온보딩 플로우 구현\n - Alert 모달 구현"
     ],
     "en": [
-      "Implemented UIKit onboarding flow \n- alert modal"
+      "Implemented UIKit onboarding flow \n- Alert modal"
     ],
     "ja": [
       "UIKitのオンボーディングフローを実装 \n- アラートモーダルを実装"
