@@ -28,9 +28,12 @@ const projectData = {
 };
 
 export const useProjectsContent = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   
   console.log('useProjectsContent called');
+  
+  // Get current language
+  const currentLanguage = (i18n.language?.split('-')[0] || 'ko') as 'ko' | 'en' | 'ja';
   
   // Get labels from translation
   const labels = {
@@ -41,15 +44,15 @@ export const useProjectsContent = () => {
   
   const viewDetails = t('sections.projects.viewDetails');
   
-  // Convert project data to the expected format
+  // Convert project data to the expected format with language-specific data
   const projects: Array<ProjectTranslation & { id: ProjectId; flag?: string }> = Object.entries(projectData).map(([id, data]) => ({
     id: id as ProjectId,
-    name: data.name.ko, // Use Korean for now, can be made dynamic later
-    summary: data.summary.ko,
-    period: data.workPeriod.ko, // Use workPeriod instead of period
-    role: data.role.ko,
-    tags: data.tags.ko,
-    features: data.features.ko,
+    name: data.name[currentLanguage],
+    summary: data.summary[currentLanguage],
+    period: data.workPeriod[currentLanguage],
+    role: data.role[currentLanguage],
+    tags: data.tags[currentLanguage],
+    features: data.features[currentLanguage],
     detail: (data as any).detail,
     flag: (data as any).flag, // Include flag information
   }));
@@ -60,12 +63,12 @@ export const useProjectsContent = () => {
     const data = projectData[id];
     if (!data) return null;
     return {
-      name: data.name.ko,
-      summary: data.summary.ko,
-      period: data.workPeriod.ko, // Use workPeriod instead of period
-      role: data.role.ko,
-      tags: data.tags.ko,
-      features: data.features.ko,
+      name: data.name[currentLanguage],
+      summary: data.summary[currentLanguage],
+      period: data.workPeriod[currentLanguage],
+      role: data.role[currentLanguage],
+      tags: data.tags[currentLanguage],
+      features: data.features[currentLanguage],
       detail: (data as any).detail,
     };
   };
