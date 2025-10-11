@@ -169,5 +169,7 @@
   "additional_links": {
     "website": "https://acon.app",
     "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
-  }
+  },
+  "flag": "active"
+
 }

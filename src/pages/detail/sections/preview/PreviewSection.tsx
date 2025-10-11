@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import { PreviewPhoto } from './PreviewPhoto';
+import { PreviewDesktopPhoto } from './PreviewDesktopPhoto';
+import { ImageModal } from './ImageModal';
 
 interface PreviewData {
-  screenshots: string[];
-  description: string | { ko: string; en: string; ja: string };
+  screenshots?: string[];
+  description?: string | { ko: string; en: string; ja: string };
 }
 
 interface PreviewSectionProps {
@@ -12,7 +15,9 @@ interface PreviewSectionProps {
 }
 
 export function PreviewSection({ data, language, backgroundColor }: PreviewSectionProps) {
-  if (!data) return null;
+  const [modalImage, setModalImage] = useState<string | null>(null);
+
+  if (!data || !data.screenshots || data.screenshots.length === 0) return null;
 
   console.log('PreviewSection data:', data);
   console.log('PreviewSection screenshots:', data.screenshots);
@@ -21,6 +26,14 @@ export function PreviewSection({ data, language, backgroundColor }: PreviewSecti
     ko: { title: "미리보기" },
     en: { title: "Preview" },
     ja: { title: "プレビュー" }
+  };
+
+  const handleImageClick = (src: string) => {
+    setModalImage(src);
+  };
+
+  const handleCloseModal = () => {
+    setModalImage(null);
   };
 
   return (
@@ -33,23 +46,49 @@ export function PreviewSection({ data, language, backgroundColor }: PreviewSecti
           {data.screenshots.map((screenshot, idx) => {
             console.log(`Rendering screenshot ${idx + 1}:`, screenshot);
             
-            return (
+            // 파일명을 보고 데스크탑 사진인지 모바일 사진인지 구분
+            const isDesktopPhoto = screenshot.includes('DeskShot-');
+            
+            return isDesktopPhoto ? (
+              <PreviewDesktopPhoto
+                key={idx}
+                src={screenshot}
+                alt={`Desktop Screenshot ${idx + 1}`}
+                onLoad={() => {
+                  console.log(`✅ Desktop image loaded successfully: ${screenshot}`);
+                }}
+                onError={(e) => {
+                  console.error(`❌ Desktop image failed to load: ${screenshot}`);
+                  console.error('Error details:', e);
+                  e.currentTarget.style.display = 'none';
+                }}
+                onClick={() => handleImageClick(screenshot)}
+              />
+            ) : (
               <PreviewPhoto
                 key={idx}
                 src={screenshot}
-                alt={`Screenshot ${idx + 1}`}
+                alt={`Mobile Screenshot ${idx + 1}`}
                 onLoad={() => {
-                  console.log(`Image loaded successfully: ${screenshot}`);
+                  console.log(`Mobile image loaded successfully: ${screenshot}`);
                 }}
                 onError={(e) => {
-                  console.warn(`Image failed to load: ${screenshot} - hiding image`);
+                  console.warn(`Mobile image failed to load: ${screenshot} - hiding image`);
                   e.currentTarget.style.display = 'none';
                 }}
+                onClick={() => handleImageClick(screenshot)}
               />
             );
           })}
         </div>
       </div>
+      
+      <ImageModal
+        isOpen={modalImage !== null}
+        onClose={handleCloseModal}
+        src={modalImage || ''}
+        alt="Preview Image"
+      />
     </section>
   );
 }

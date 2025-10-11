@@ -236,5 +236,6 @@
       "en": "Completed planning and design of the MVP including AI recommendation, diary, region lock, metrics, and photo album",
       "ja": "AI推薦・日記・リージョンロック・指標・フォトアルバムを含むMVPの企画・設計を完了"
     }
-  }
+  },
+  "flag": "active"
 }

@@ -125,10 +125,9 @@
   ],
   "preview_screenshots": {
     "screenshots": [
-      "/assets/ideaverifyprogram/shot-1.png",
-      "/assets/ideaverifyprogram/shot-2.png",
-      "/assets/ideaverifyprogram/shot-3.png",
-      "/assets/ideaverifyprogram/shot-4.png"
+      "/assets/ideaverifyprogram/DeskShot-1.png",
+      "/assets/ideaverifyprogram/DeskShot-2.png",
+      "/assets/ideaverifyprogram/DeskShot-3.png"
     ],
     "description": {
       "ko": "반응형 웹/모바일 프리뷰",
@@ -223,5 +222,5 @@
       "ja": "AIベースのアイデア自動生成機能追加、グローバル市場進出戦略策定"
     }
   },
-  "flag": "active"
+  "flag": "deactive"
 }

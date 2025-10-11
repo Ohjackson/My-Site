@@ -1,70 +1,43 @@
 {
   "name": {
-    "ko": "Wiro",
-    "en": "Wiro",
-    "ja": "Wiro"
+    "ko": "WIRO",
+    "en": "WIRO",
+    "ja": "WIRO"
   },
   "summary": {
-    "ko": "iOS 일본어 손글씨 단어장 — 단축어로 단어를 즉시 저장하고, SRS와 손글씨 연습으로 과학적으로 복습함.",
-    "en": "An iOS Japanese vocabulary notebook — save unknown words instantly via Shortcuts, review with SRS, and practice handwriting with on-device OCR.",
-    "ja": "iOS日本語単語帳 — ショートカットで未知語を即保存し、SRSで復習、オンデバイスOCRで手書き練習。"
+    "ko": "일상 속 감정 기록과 AI 피드백으로 조기 위험 신호를 발견하고, 리포트·상담 연계까지 이어주는 멘탈 케어 앱",
+    "en": "A mental-wellness app that logs emotions, delivers real-time AI feedback, detects early-risk cues, and connects users to reports and counseling.",
+    "ja": "感情記録とAIフィードバックで早期リスクを察知し、レポート作成と相談連携まで行うメンタルケアアプリ。"
   },
   "role": {
-    "ko": "Full-Cycle Solo Project",
-    "en": "Full-Cycle Solo Project",
-    "ja": "Full-Cycle Solo Project"
+    "ko": "기획·PM·iOS",
+    "en": "Planning, PM, iOS",
+    "ja": "企画・PM・iOS"
   },
   "tags": {
-    "ko": [
-      "iOS",
-      "ResNet-50",
-      "iCloud",
-      "망각 곡선(SRS)",
-      "Core ML",
-      "Shortcuts",
-      "SwiftUI",
-      "CoreData/SwiftData"
-    ],
-    "en": [
-      "iOS",
-      "ResNet-50",
-      "iCloud",
-      "Ebbinghaus Forgetting Curve (SRS)",
-      "Core ML",
-      "Shortcuts",
-      "SwiftUI",
-      "CoreData/SwiftData"
-    ],
-    "ja": [
-      "iOS",
-      "ResNet-50",
-      "iCloud",
-      "エビングハウスの忘却曲線（SRS）",
-      "Core ML",
-      "ショートカット",
-      "SwiftUI",
-      "CoreData/SwiftData"
-    ]
+    "ko": ["멘탈헬스", "저널링", "AI 피드백", "조기발견", "상담 연계"],
+    "en": ["Mental Health", "Journaling", "AI Feedback", "Early Detection", "Counseling Link"],
+    "ja": ["メンタルヘルス", "ジャーナリング", "AIフィードバック", "早期発見", "相談連携"]
   },
   "platform": {
-    "ko": "iPhone, iPad",
-    "en": "iPhone, iPad",
-    "ja": "iPhone, iPad"
+    "ko": "iOS",
+    "en": "iOS",
+    "ja": "iOS"
   },
   "workPeriod": {
-    "ko": "2024.06 ~ ",
-    "en": "2024.06 ~ ",
-    "ja": "2024.06 ~ "
+    "ko": "2024.09 ~",
+    "en": "2024.09 ~",
+    "ja": "2024.09 ~"
   },
   "releaseDate": {
-    "ko": "2024.06",
-    "en": "2024.06",
-    "ja": "2024.06"
+    "ko": "알파 진행 중",
+    "en": "Alpha in progress",
+    "ja": "アルファ進行中"
   },
   "endDate": {
-    "ko": "지속적인 업데이트 중",
-    "en": "Ongoing updates",
-    "ja": "進行中更新"
+    "ko": "지속 개발",
+    "en": "Ongoing",
+    "ja": "継続開発"
   },
   "teamSize": {
     "ko": "1",
@@ -73,199 +46,195 @@
   },
   "features": {
     "ko": [
-      "iOS Shortcuts로 모르는 단어를 즉시 저장(옵션: 사용자 API Key로 예문/후리가나 보강)",
-      "ResNet-50 기반 Core ML 온디바이스 손글씨(OCR) — 상용한자 대응",
-      "망각 곡선 기반 SRS로 복습 간격 자동 스케줄링",
-      "iCloud 동기화로 단어/진행도 기기간 공유",
-      "예문 클로즈 테스트 및 쓰기 연습"
+      "감정 저널링 및 실시간 AI 피드백",
+      "개인 상황(시간·예산·날씨 등) 반영 추천",
+      "주간/월간 감정 리포트와 행동 제안",
+      "상담사(민간/공인) 연계 및 정부 혜택 추천",
+      "커뮤니티·가벼운 상담(채팅/음성)"
     ],
     "en": [
-      "Instant word capture via iOS Shortcuts (optional enrichment with user LLM key: example/furigana)",
-      "On-device handwriting OCR with Core ML (ResNet-50) for Joyo kanji",
-      "SRS scheduling based on the forgetting curve",
-      "iCloud sync for words and learning progress",
-      "Cloze test from example sentences and handwriting practice"
+      "Emotion journaling with real-time AI feedback",
+      "Situation-aware suggestions (time, budget, weather, etc.)",
+      "Weekly/monthly emotion reports with action plans",
+      "Counselor linkage (private/licensed) and government benefit tips",
+      "Community & light counseling (chat/voice)"
     ],
     "ja": [
-      "iOSショートカットで未知語を即保存（ユーザーLLMキーで例文/ふりがな補完オプション）",
-      "Core ML（ResNet-50）によるオンデバイス手書きOCR（常用漢字対応）",
-      "忘却曲線に基づくSRSスケジューリング",
-      "iCloud同期で単語/進捗を共有",
-      "例文からのクローズテストと書き取り練習"
+      "感情ジャーナリングとリアルタイムAIフィードバック",
+      "状況連動の提案（時間・予算・天気など）",
+      "週次・月次の感情レポートと行動提案",
+      "相談員連携（民間/公認）と公的支援の案内",
+      "コミュニティ・ライト相談（チャット/音声）"
     ]
   },
   "links": {
-    "github": "https://github.com/YourUsername/Acon-AI-Trainer"
+    "github": ""
   },
   "additionalFeatures": {
-    "ko": "- 3차 스프린트 진행 중. \n -상용한자 커리큘럼·클로즈 난이도 튜너·손글씨 피드백 개선 예정.",
-    "en": "Currently in the 3rd sprint. Upcoming: Joyo-kanji curriculum polish, cloze difficulty tuner, improved handwriting feedback.",
-    "ja": "第3スプリント進行中。常用漢字カリキュラム強化、クローズ難易度調整、手書きフィードバック改善を予定。"
+    "ko": "저널 기반 감정지수 트래킹, 지역/연령대 맞춤 지표, 예방→상담→치료 후 관리까지 잇는 5단계 여정 설계",
+    "en": "Journal-based emotion index tracking, locale/age-tailored metrics, and a 5-stage journey from prevention to post-therapy care.",
+    "ja": "ジャーナル起点の感情指数トラッキング、地域/年齢別の指標、予防から治療後ケアまでの5段階ジャーニー設計。"
   },
   "overviewStory": {
-    "ko": "처음 한국인 일본어 학습자의 ‘봤을 때 즉시 저장→반복→쓰기’ 루틴을 만들기 위해 시작함. 온디바이스 우선과 입력 마찰 최소화를 원칙으로 설계함.",
-    "en": "Started to build a ‘see→save instantly→review→write’ learning loop for Japanese learners. Designed with on-device first and minimal input friction.",
-    "ja": "日本語学習者の「見たら即保存→復習→書く」ループを作るために開始。オンデバイス優先と入力摩擦の最小化を設計原則とした。"
+    "ko": "OECD 최고 수준의 우울·불안 지표와 2030 세대의 급증 데이터를 문제의식으로 삼아, ‘헬스장 가듯 자연스러운 멘탈 케어’를 목표로 시작했습니다. 기록→분석→행동→연계의 가벼우면서도 효과적인 루틴을 제공합니다.",
+    "en": "Triggered by alarming OECD depression/anxiety figures and a sharp rise among people in their 20s–30s, we set out to make mental care as natural as going to the gym. WIRO offers a light yet effective loop: log → analyze → act → connect.",
+    "ja": "OECDの憂うつ・不安指標の高さと20–30代の増加を問題意識として、『ジムに行くように自然なメンタルケア』を目指して開始。記録→分析→行動→連携という軽量で効果的なループを提供します。"
   },
   "service": {
     "problem": {
-      "ko": "단어를 봐도 바로 저장/복습/쓰기로 이어지지 않아 금방 잊는 문제.",
-      "en": "Learners quickly forget because seeing a word rarely leads to instant capture, scheduled review, and handwriting practice.",
-      "ja": "見た単語が即保存・計画的復習・書き取りに繋がらず、すぐ忘れてしまう問題。"
+      "ko": "예방·조기 발견 서비스의 부족, 초기 진료 장벽, 상담 접근성·정보 부재로 악화 후에야 도움을 받는 문제.",
+      "en": "Lack of preventive/early-detection services, high barriers to initial care, and poor access/info lead to help only after conditions worsen.",
+      "ja": "予防・早期発見サービスの不足、初期受診の障壁、相談アクセスや情報不足により、悪化してから支援を受けがちな問題。"
     },
     "target": {
-      "ko": "통학/업무 중 짬을 내어 단어를 저장하고 저녁에 10분 루틴으로 복습·쓰기 하고 싶은 학습자.",
-      "en": "Learners who want to capture words on the go and run a 10-minute evening routine for review and writing.",
-      "ja": "移動中に単語を保存し、夜に10分の復習・書き取りルーティンを回したい学習者。"
+      "ko": "스트레스가 높은 20–30대(직장·학업·관계). 디지털 친화적이며 가볍게 시작할 수 있는 케어를 원하는 사용자.",
+      "en": "Stressed 20s–30s (work, study, relationships), digitally savvy users who want lightweight, approachable care.",
+      "ja": "ストレス負荷の高い20–30代（仕事・学業・人間関係）。気軽に始められるデジタルケアを求めるユーザー。"
     },
     "value": {
-      "ko": "Shortcuts 기반 초간편 입력, SRS 자동화, 온디바이스 OCR과 iCloud 동기화를 통해 지속 가능한 학습 루틴 제공.",
-      "en": "Provides a sustainable learning loop with Shortcuts capture, automated SRS, on-device OCR, and iCloud sync.",
-      "ja": "ショートカット入力・SRS自動化・オンデバイスOCR・iCloud同期で継続しやすい学習ループを提供。"
+      "ko": "실시간 AI 피드백으로 자기이해를 돕고, 맞춤 행동 제안→리포트→상담 연계까지 이어지는 폐루프로 조기 개입을 촉진.",
+      "en": "Real-time AI feedback for self-understanding, with a closed loop—personalized actions, reports, and counselor linkage—for early intervention.",
+      "ja": "リアルタイムAIフィードバックで自己理解を促し、行動提案→レポート→相談連携のクローズドループで早期介入を後押し。"
     }
   },
   "detail_features": [
     {
       "title": {
-        "ko": "단축어 기반 단어 캡처",
-        "en": "Shortcut-based Word Capture",
-        "ja": "ショートカットによる単語保存"
+        "ko": "AI 저널링 & 실시간 피드백",
+        "en": "AI Journaling & Real-time Feedback",
+        "ja": "AIジャーナリング & リアルタイムフィードバック"
       },
       "description": {
-        "ko": "iOS Shortcuts Intent로 단어를 입력하면 앱 딥링크로 초안 카드 자동 생성(예문/후리가나 보강 옵션).",
-        "en": "Use iOS Shortcuts Intent to create a draft word card via deep link; optionally enrich with example/furigana.",
-        "ja": "iOSショートカットIntentで深いリンクにより単語カードの下書きを自動生成。例文/ふりがなの補完も可能。"
+        "ko": "감정·사건을 기록하면 AI가 요약·라벨링·인지재구성 질문·위로 메시지와 함께 즉시 응답.",
+        "en": "Log emotions/events and receive instant summaries, labels, reframing prompts, and supportive messages from AI.",
+        "ja": "感情・出来事を記録すると、AIが要約・ラベリング・再認知の問い・サポートメッセージで即応答。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "SRS 플래시카드",
-        "en": "SRS Flashcards",
-        "ja": "SRSフラッシュカード"
+        "ko": "감정지수 & 장기 리포트",
+        "en": "Emotion Index & Longitudinal Reports",
+        "ja": "感情指数 & 長期レポート"
       },
       "description": {
-        "ko": "쉬움/보통/어려움 피드백에 따라 10m/6h/24h/3d/1w 등 간격으로 자동 재스케줄.",
-        "en": "Reschedules cards based on ease feedback with intervals like 10m/6h/24h/3d/1w.",
-        "ja": "易/普/難の評価に応じて10分/6時間/24時間/3日/1週などの間隔で自動再スケジュール。"
+        "ko": "주/월간 감정 흐름, 빈도·강도, 트리거 분석과 다음 주 행동 제안까지 자동 생성.",
+        "en": "Weekly/monthly trends, frequency/intensity, trigger analysis, and next-week action plans generated automatically.",
+        "ja": "週次・月次の推移、頻度・強度、トリガー分析と翌週の行動提案を自動生成。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "예문 클로즈 테스트",
-        "en": "Cloze Test from Sentences",
-        "ja": "例文クローズテスト"
+        "ko": "맞춤 행동 제안",
+        "en": "Personalized Action Suggestions",
+        "ja": "パーソナライズ行動提案"
       },
       "description": {
-        "ko": "예문에서 빈칸을 자동 생성하고 텍스트 또는 손글씨 입력으로 정답 확인.",
-        "en": "Automatically generates blanks from example sentences; answer via text or handwriting.",
-        "ja": "例文から自動で空所を生成し、テキストまたは手書きで解答。"
+        "ko": "상황(직장·관계·학업 등)과 현재 정서 상태를 반영한 즉시 실행 가능한 루틴·미션 제공.",
+        "en": "Situation-aware routines/missions you can act on immediately, tailored to work/relationships/study context and current mood.",
+        "ja": "状況（仕事・人間関係・学業）と現在の感情状態に合わせ、すぐ実行できるルーティン/ミッションを提示。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "온디바이스 손글씨 OCR",
-        "en": "On-device Handwriting OCR",
-        "ja": "オンデバイス手書きOCR"
+        "ko": "상담 연계 & 혜택 안내",
+        "en": "Counselor Linkage & Benefit Guidance",
+        "ja": "相談連携 & 公的支援案内"
       },
       "description": {
-        "ko": "ResNet-50 Core ML 모델로 상용한자 손글씨를 간단 판독하여 피드백 제공.",
-        "en": "Core ML ResNet-50 reads Joyo-kanji handwriting on device and provides feedback.",
-        "ja": "Core MLのResNet-50で常用漢字の手書きを端末内で判読し、フィードバック。"
+        "ko": "가벼운 채팅/음성 상담(민간)부터 필요 시 공인 상담사 연결, 정부 지원·혜택 추천.",
+        "en": "Light chat/voice counseling (private) and, when needed, linkage to licensed counselors plus government benefit tips.",
+        "ja": "ライトなチャット/音声相談（民間）から、必要に応じて公認相談員へ連携、公的支援や給付も案内。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "iCloud 동기화",
-        "en": "iCloud Sync",
-        "ja": "iCloud同期"
+        "ko": "커뮤니티 & 안전장치",
+        "en": "Community & Safeguards",
+        "ja": "コミュニティ & セーフガード"
       },
       "description": {
-        "ko": "단어/진행도를 기기간 자동 동기화, 중단한 지점부터 이어서 학습.",
-        "en": "Automatically sync words/progress across devices and continue where you left off.",
-        "ja": "単語/進捗を端末間で自動同期し、中断箇所から再開可能。"
+        "ko": "비공개 기본, 익명 보호, 위기 감지 시 안내·연락처 제공 등 안전 중심의 커뮤니티.",
+        "en": "Private-by-default, anonymity protection, and crisis guidance/contacts for a safety-first community.",
+        "ja": "デフォルト非公開・匿名保護・危機検知時の案内/連絡先提示など、安全重視のコミュニティ。"
       },
       "implemented": true
     }
   ],
   "preview_screenshots": {
     "screenshots": [
-      "/assets/tangocho/shot-1.png",
-      "/assets/tangocho/shot-2.png",
-      "/assets/tangocho/shot-3.png",
-      "/assets/tangocho/shot-4.png"
-    ],
-    "description": {
-      "ko": "iOS 앱 프리뷰",
-      "en": "iOS App Preview",
-      "ja": "iOSアプリプレビュー"
-    }
+      "/assets/wiro/shot-1.png",
+      "/assets/wiro/shot-2.png",
+      "/assets/wiro/shot-3.png",
+      "/assets/wiro/shot-4.png"
+    ]
   },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "SwiftUI, UIKit(partial), Combine, PencilKit",
-      "backend": "Swift, SwiftUI",
-      "database": "CoreData or SwiftData, CloudKit(iCloud)",
-      "AI": "Core ML(ResNet-50), Vision",
-      "devops": "Xcode Cloud / Fastlane, TestFlight, Crashlytics(optional)",
-      "infra": "iCloud"
+      "frontend": "iOS (SwiftUI)",
+      "backend": "Firebase",
+      "database": "Firebase/Firestore",
+      "AI": "LLM Orchestration",
+      "devops": "TestFlight",
+      "infra": "Firebase"
     }
   },
   "responsibilities": {
     "ko": [
-      "기획: ‘즉시 저장→SRS→클로즈→쓰기’ 루틴 정의",
-      "설계: 도메인 모델/스케줄러/클로즈 규칙/온디바이스 우선 아키텍처",
-      "구현: SwiftUI 화면, Shortcuts Intent, Core ML 연동, iCloud 동기화",
-      "운영: TestFlight 배포, 알림 스케줄링, 데이터 마이그레이션"
+      "시장·경쟁 분석 및 문제 정의",
+      "페르소나/유저 여정 설계",
+      "저널링→리포트→상담 연계 5단계 플로우 정의",
+      "iOS 프로토타입 제작 및 알파 운영"
     ],
     "en": [
-      "Planning: defined the ‘capture→SRS→cloze→write’ loop",
-      "Design: domain model/scheduler/cloze rules/on-device-first architecture",
-      "Implementation: SwiftUI views, Shortcuts Intent, Core ML integration, iCloud sync",
-      "Operations: TestFlight releases, notifications, data migration"
+      "Market/competition analysis and problem framing",
+      "Persona and user-journey design",
+      "Defined 5-step flow: journaling → report → counseling linkage",
+      "Built iOS prototype and ran alpha operations"
     ],
     "ja": [
-      "企画：『即保存→SRS→クローズ→書く』ループ定義",
-      "設計：ドメインモデル/スケジューラ/クローズ規則/オンデバイス優先設計",
-      "実装：SwiftUI画面、ショートカットIntent、Core ML連携、iCloud同期",
-      "運用：TestFlight配信、通知、データ移行"
+      "市場・競合分析と課題定義",
+      "ペルソナ/ユーザージャーニー設計",
+      "ジャーナリング→レポート→相談連携の5段階フロー定義",
+      "iOSプロトタイプ開発とアルファ運用"
     ]
   },
   "metrics": {
     "ko": [
-      "내부 알파에서 단축어→저녁 루틴 완주율 개선 확인"
-        ],
+      "알파: 저널 작성 당일 행동 실행률·7일 잔존 추적",
+      "리포트 열람 후 행동 완료율, 상담 전환율 지표 설계"
+    ],
     "en": [
-      "Observed improved completion of evening routine after Shortcut capture in internal alpha",
-      "Perceived next-day recall improved when handwriting practice is combined"
+      "Alpha: same-day action rate after journaling and 7-day retention tracking",
+      "Post-report action completion and counseling conversion metrics designed"
     ],
     "ja": [
-      "内部アルファでショートカット保存→夜ルーチンの完走率改善を確認",
-      "書き取り練習を併用すると翌日の再想起が向上（体感）"
+      "アルファ：当日行動率・7日残存のトラッキング",
+      "レポート閲覧後の行動完了率・相談転換率の指標設計"
     ]
   },
   "lessonsLearned": {
-    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
-    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
-    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
+    "ko": "예방·조기개입은 ‘가벼움’이 관건—입력 마찰 최소화와 즉시성 있는 피드백이 습관화를 견인. 또한 데이터 프라이버시와 안전장치 설계가 신뢰의 핵심임을 확인.",
+    "en": "Prevention/early intervention hinges on lightness—low input friction and instant feedback drive habit formation. Privacy and safeguards proved crucial for trust.",
+    "ja": "予防・早期介入の鍵は“軽さ”。入力摩擦の最小化と即時フィードバックが習慣化を促進。プライバシーとセーフガード設計が信頼の要であると確認。"
   },
   "results": {
     "achievements": {
-      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
-      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
-      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
+      "ko": "감정지수 리포트 MVP 및 상담 연계 프로토타입 완성, 알파 사용자 피드백 수집",
+      "en": "Shipped MVP for emotion-index reports and counseling linkage prototype; collected alpha user feedback",
+      "ja": "感情指数レポートMVPと相談連携プロトタイプを完成し、アルファユーザーのフィードバックを取得"
     },
     "nextSteps": {
-      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
-      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
-      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
+      "ko": "리포트 추천행동 정밀도 향상, 위기신호 감지 고도화, 커뮤니티·가벼운 상담 정식 탑재",
+      "en": "Improve action recommendation precision, enhance crisis-signal detection, and launch community/light counseling features",
+      "ja": "行動提案の精度向上、危機シグナル検知の高度化、コミュニティ/ライト相談の正式搭載"
     }
   },
   "additional_links": {
-    "website": "https://acon.app",
-    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
+    "website": "",
+    "blog": ""
   }
 }
