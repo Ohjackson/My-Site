@@ -51,7 +51,12 @@ export function ResponsibilitiesSection({ data, language, backgroundColor }: Res
                       }
                       return (
                         <p key={lineIdx} className="mb-2">
-                          {trimmedLine}
+                          {trimmedLine.split('\n').map((subLine, subIdx) => (
+                            <span key={subIdx}>
+                              {subLine}
+                              {subIdx < trimmedLine.split('\n').length - 1 && <br />}
+                            </span>
+                          ))}
                         </p>
                       );
                     })}

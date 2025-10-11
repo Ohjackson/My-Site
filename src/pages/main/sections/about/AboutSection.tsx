@@ -30,7 +30,14 @@ export const AboutSection = () => {
 
           <div className="space-y-8 text-2xl leading-relaxed text-text/90">
             {paragraphs.map((paragraph, idx) => (
-              <p key={idx}>{paragraph}</p>
+              <p key={idx}>
+                {paragraph.split('\n').map((line, lineIdx) => (
+                  <span key={lineIdx}>
+                    {line}
+                    {lineIdx < paragraph.split('\n').length - 1 && <br />}
+                  </span>
+                ))}
+              </p>
             ))}
           </div>
         </div>
