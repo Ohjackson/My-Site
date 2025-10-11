@@ -12,7 +12,7 @@ export const HeroSection = () => {
   return (
     <section id="hero" className="relative flex min-h-screen flex-col items-center justify-center bg-bg px-8 text-text">
       <div className="max-w-5xl text-center">
-        <h1 className="text-4xl leading-tight tracking-tight text-text md:text-5xl lg:text-6xl">
+        <h1 className="text-4xl leading-tight tracking-tight text-text md:text-5xl lg:text-6xl whitespace-pre-line">
           {t('sections.hero.headline')}
         </h1>
       </div>
