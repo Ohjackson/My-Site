@@ -73,14 +73,15 @@
     "about": {
       "title": "About",
       "paragraphs": [
-        "I love learning and creating new value through collaboration.",
-        "With a deep interest in Japanese culture, I dream of connecting Korean and Japanese youth through technology."
+        "Hello! I'm Jaehyun Ahn, a developer who creates user-centered digital experiences.",
+        "I enjoy bridging the gap between technology and people, solving complex problems with simple and beautiful solutions.",
+        "Currently, I'm focused on AI and mobile technologies, developing services that make users' daily lives more convenient."
       ],
       "actions": {
         "github": "GitHub",
         "resume": "Resume"
       },
-      "imageAlt": "Profile"
+      "imageAlt": "Jaehyun Ahn profile photo"
     },
     "tech": {
       "title": "Tech Stack",
