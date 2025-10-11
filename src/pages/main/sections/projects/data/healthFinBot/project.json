@@ -1,23 +1,23 @@
 {
   "name": {
-    "ko": "핀헬스봇 (FinHealthBot)",
+    "ko": "FinHealthBot",
     "en": "FinHealthBot",
-    "ja": "FinHealthBot（フィンヘルスボット）"
+    "ja": "FinHealthBot"
   },
   "summary": {
-    "ko": "Streamlit 기반 UI 위에서 LangGraph 워크플로우와 RAG를 결합해 일상 대화부터 금융·헬스케어 상담까지 제공하는 멀티 역할 AI 어시스턴트",
-    "en": "A multi-role AI assistant that combines a LangGraph workflow with RAG on a Streamlit UI to handle everything from casual chat to finance and healthcare consultations.",
-    "ja": "StreamlitベースのUI上でLangGraphワークフローとRAGを組み合わせ、日常会話から金融・ヘルスケア相談まで提供するマルチロールAIアシスタント。"
+    "ko": "일상 대화부터 금융·헬스케어 상담까지 제공하는 멀티 역할 AI 어시스턴트",
+    "en": "A multi-role AI assistant that provides everything from casual chat to finance and healthcare consultations.",
+    "ja": "日常会話から金融・ヘルスケア相談まで提供するマルチロールAIアシスタント。"
   },
   "role": {
-    "ko": "AI 서비스·백엔드 개발",
-    "en": "AI service & backend development",
-    "ja": "AIサービス／バックエンド開発"
+    "ko": "Full-Cycle Developer",
+    "en": "Full-Cycle Developer",
+    "ja": "Full-Cycle Developer"
   },
   "tags": {
-    "ko": ["LangGraph", "LangChain", "Streamlit", "Gemini", "MongoDB", "Qdrant", "RAG"],
-    "en": ["LangGraph", "LangChain", "Streamlit", "Gemini", "MongoDB", "Qdrant", "RAG"],
-    "ja": ["LangGraph", "LangChain", "Streamlit", "Gemini", "MongoDB", "Qdrant", "RAG"]
+    "ko": ["LangGraph", "Streamlit", "MongoDB", "Qdrant", "RAG"],
+    "en": ["LangGraph", "Streamlit", "MongoDB", "Qdrant", "RAG"],
+    "ja": ["LangGraph", "Streamlit", "MongoDB", "Qdrant", "RAG"]
   },
   "platform": {
     "ko": "Web (Streamlit)",
@@ -65,32 +65,10 @@
   "links": {
     "github": ""
   },
-  "additionalFeatures": {
-    "ko": "LangChain과 LangGraph를 조합해 프롬프트 선택·검색·품질검사 루프를 한 워크플로우에서 관리하고, LangSmith 연동으로 응답 품질을 자동 점검",
-    "en": "Combines LangChain and LangGraph to manage prompt selection, retrieval, and QA in a single workflow; integrates LangSmith to automatically check response quality.",
-    "ja": "LangChainとLangGraphを組み合わせ、プロンプト選択・検索・品質検査のループを単一ワークフローで管理。LangSmith連携により応答品質を自動チェック。"
-  },
   "overviewStory": {
     "ko": "고객사 요구 챗봇 개발전 연습용 프로젝트입니다.",
     "en": "Practice project for customer-requested chatbot development.",
     "ja": "顧客要望のチャットボット開発前の練習プロジェクト。"
-  },
-  "service": {
-    "problem": {
-      "ko": "일상 대화와 전문 상담을 한 곳에서 지원하는 챗봇이 부족하고, 금융·헬스케어 답변의 신뢰도를 검증할 수단이 제한적임",
-      "en": "Few chatbots support both casual conversation and expert consultations in one place, and tools to validate the reliability of finance/health answers are limited.",
-      "ja": "日常会話と専門相談を1つで賄えるチャットボットが不足し、金融・医療分野の回答信頼性を検証する手段も限られている。"
-    },
-    "target": {
-      "ko": "일상 소통과 전문 지식 상담을 동시에 원하는 사용자, 내부 상담 자동화를 고민하는 금융·헬스케어 조직",
-      "en": "Users who want both casual chat and expert advice, and finance/health organizations seeking to automate internal consultations.",
-      "ja": "日常のやり取りと専門知識の相談を同時に求めるユーザー、内製の相談自動化を検討する金融・ヘルスケア組織。"
-    },
-    "value": {
-      "ko": "LangGraph 기반 역할 전환과 RAG를 통해 맥락감 있는 상담을 제공하고, 대화를 안전하게 저장·백업하는 운영 편의성 제공",
-      "en": "Delivers contextful consultations via LangGraph role switching and RAG, while providing operational convenience with safe storage and backup of conversations.",
-      "ja": "LangGraphのロール切替とRAGで文脈に沿った相談を提供し、会話の安全な保存・バックアップで運用面の利便性も実現。"
-    }
   },
   "detail_features": [
     {
@@ -167,28 +145,8 @@
       "frontend": "Streamlit, streamlit_chat",
       "backend": "Python, LangChain, LangGraph",
       "database": "MongoDB, Qdrant",
-      "AI": "Google Gemini 1.5 Flash, Google Generative AI Embeddings, LangSmith"
+      "AI": "Google Gemini 1.5 Flash, GPT-4o mini Embeddings"
     }
-  },
-  "responsibilities": {
-    "ko": [
-      "LangGraph 상태 그래프를 설계해 역할 전환과 품질 검증 플로우 구현",
-      "Qdrant RAG와 MongoDB 저장소를 연동해 검색 및 기록 파이프라인 구축",
-      "Streamlit UI에서 로그인·채팅방 관리·대화 렌더링 기능 개발",
-      "Tavily Search, LangSmith 등 외부 서비스 예외 처리와 운영 로깅 구성"
-    ],
-    "en": [
-      "Designed LangGraph state graphs to implement role switching and quality-check flows",
-      "Integrated Qdrant RAG with MongoDB to build retrieval and logging pipelines",
-      "Built Streamlit UI for login, room management, and chat rendering",
-      "Handled exceptions for Tavily Search / LangSmith and set up operational logging"
-    ],
-    "ja": [
-      "LangGraphのステートグラフを設計し、ロール切替と品質検証フローを実装",
-      "Qdrant RAGとMongoDBを連携して検索・記録パイプラインを構築",
-      "Streamlitでログイン・ルーム管理・チャット描画を実装",
-      "Tavily Search／LangSmith等の例外処理と運用ログを整備"
-    ]
   },
   "lessonsLearned": {
     "ko": "LangGraph로 여러 역할과 검증 단계를 연결할 때 상태 관리와 예외 처리를 명확히 해야 안정적으로 동작함을 체감",
@@ -206,10 +164,6 @@
       "en": "Add node-level monitoring in LangGraph and user-specific prompt configuration.",
       "ja": "LangGraphのノード監視とユーザー別プロンプト設定機能を追加予定。"
     }
-  },
-  "additional_links": {
-    "website": "",
-    "blog": ""
   },
   "flag": "deactive"
 }

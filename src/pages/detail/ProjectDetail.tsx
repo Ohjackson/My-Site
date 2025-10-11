@@ -347,7 +347,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
 
 
         // Results Section
-        if ((project as any).metrics) {
+        if ((project as any).metrics || (project as any).lessonsLearned || (project as any).achievements || (project as any).nextSteps || (project as any).results?.achievements) {
           sections.push(
             <ResultsSection 
               key="results" 

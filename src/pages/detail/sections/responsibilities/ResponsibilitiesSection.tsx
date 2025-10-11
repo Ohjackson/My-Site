@@ -34,6 +34,32 @@ export function ResponsibilitiesSection({ data, language, backgroundColor }: Res
             const title = parts[0]?.trim();
             const content = parts[1]?.trim();
             
+            // ":"가 없으면 전체 내용을 처리
+            if (!content) {
+              return (
+                <div key={idx} className="space-y-2">
+                  <div className="text-text/80 leading-relaxed">
+                    {responsibility.split('\n').map((line, lineIdx) => {
+                      const trimmedLine = line.trim();
+                      if (trimmedLine.startsWith('-')) {
+                        return (
+                          <div key={lineIdx} className="flex items-start mb-2">
+                            <span className="w-2 h-2 bg-text/60 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span>{trimmedLine.substring(1).trim()}</span>
+                          </div>
+                        );
+                      }
+                      return (
+                        <p key={lineIdx} className="mb-2">
+                          {trimmedLine}
+                        </p>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            }
+            
             return (
               <div key={idx} className="space-y-2">
                 <h3 className="font-bold text-lg text-text">{title}</h3>
@@ -51,12 +77,7 @@ export function ResponsibilitiesSection({ data, language, backgroundColor }: Res
                       }
                       return (
                         <p key={lineIdx} className="mb-2">
-                          {trimmedLine.split('\n').map((subLine, subIdx) => (
-                            <span key={subIdx}>
-                              {subLine}
-                              {subIdx < trimmedLine.split('\n').length - 1 && <br />}
-                            </span>
-                          ))}
+                          {trimmedLine}
                         </p>
                       );
                     })}

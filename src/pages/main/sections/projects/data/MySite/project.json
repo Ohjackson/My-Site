@@ -35,9 +35,9 @@
     "ja": "2025.10"
   },
   "serviceStatus": {
-    "ko": "진행중",
-    "en": "Ongoing",
-    "ja": "進行中"
+    "ko": "운영 중",
+    "en": "In operation",
+    "ja": "運用中"
   },
   "teamSize": {
     "ko": "1",
@@ -65,9 +65,9 @@
     ]
   },
   "overviewStory": {
-    "ko": "개인 프로젝트·글·레퍼런스를 한 곳에서 빠르게 보여주기 위해 만든 포트폴리오 사이트입니다. 읽기 편한 아이보리 톤과 미니멀리즘을 추구하여 깔끔한 디자인을 의도하여 만들어 보았습니다..",
-    "en": "A portfolio site to quickly present personal projects, posts, and references in one place. I aimed for a clean look with an easy-to-read ivory tone and minimalism.",
-    "ja": "個人のプロジェクト・文章・リファレンスを一箇所で素早く見せるために制作したポートフォリオサイト。読みやすいアイボリー調とミニマリズムで、すっきりしたデザインを目指しました。"
+    "ko": "개인 프로젝트·글·레퍼런스를 한 곳에서 빠르게 보여주기 위해 만든 포트폴리오 사이트입니다. \n읽기 편한 아이보리 톤과 미니멀리즘을 추구하여 깔끔한 디자인을 의도하여 만들어 보았습니다..",
+    "en": "A portfolio site to quickly present personal projects, posts, and references in one place.\nI aimed for a clean look with an easy-to-read ivory tone and minimalism.",
+    "ja": "個人のプロジェクト・文章・リファレンスを一箇所で素早く見せるために制作したポートフォリオサイト。\n読みやすいアイボリー調とミニマリズムで、すっきりしたデザインを目指しました。"
   },
   "links": {
     "github": "https://github.com/Ohjackson/My-Site"

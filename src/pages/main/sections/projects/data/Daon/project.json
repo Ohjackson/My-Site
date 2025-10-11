@@ -40,9 +40,9 @@
     "ja": "サービス終了"
   },
   "teamSize": {
-    "ko": "4",
-    "en": "4",
-    "ja": "4"
+    "ko": "5",
+    "en": "5",
+    "ja": "5"
   },
   "features": {
     "ko": [
@@ -58,11 +58,6 @@
   "links": {
     "appStore": "https://apps.apple.com/kr/app/daon-ai-%EC%B1%84%ED%8C%85%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%82%98%EB%8A%94-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EB%82%98/id6741571279",
     "github": "https://github.com/orgs/daonchat/repositories"
-  },
-  "additionalFeatures": {
-    "ko": "- 성격이 다른 현실형 챗봇과 대화하며 자기 이해를 높이는 서비스",
-    "en": "- A service that deepens self-understanding by conversing with realistic chatbots of varied personalities",
-    "ja": "- 性格の異なるリアル志向のチャットボットと対話し、自己理解を深めるサービス"
   },
   "overviewStory": {
     "ko": "WIRO 프로젝트의 연장선에서 새로운 접근으로 전개",
@@ -136,9 +131,8 @@
   "responsibilities": {
     "ko": [
       "- 설계: FastAPI와 LangGraph 기반의 빠른 프로토타입 설계",
-      "- 구현:",
-      "  · iOS: 초기 세팅, 채팅 화면 구현, 출시까지 Connectivity 설정",
-      "  · FastAPI: LangGraph 라우팅 및 데이터베이스 설정",
+      "- iOS: 초기 세팅, 채팅 화면 구현, 출시까지 Connectivity 설정",
+      "- FastAPI: LangGraph 라우팅 및 데이터베이스 설정",
       "- 출시: TestFlight QA 배포 후 App Store 출시",
       "- 운영: App Store Connect 로그 모니터링"
     ],
@@ -157,17 +151,6 @@
       "  · FastAPI：LangGraphルーティングとデータベース設定",
       "- リリース：TestFlightでQA配信後、App Storeで公開",
       "- 運用：App Store Connectのログ監視"
-    ]
-  },
-  "metrics": {
-    "ko": [
-      "잠재고객 채널 배포 후 1주 내 사용자 100명 이상 유입"
-    ],
-    "en": [
-      "Acquired 100+ users within one week after distribution to an early-adopter channel"
-    ],
-    "ja": [
-      "アーリーアダプター向け配信から1週間で100名以上を獲得"
     ]
   },
   "lessonsLearned": {

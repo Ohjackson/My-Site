@@ -50,9 +50,9 @@
     "ja": ["XYZ仮説の策定", "ランディングページ生成", "成功可能性の予測"]
   },
   "overviewStory": {
-    "ko": "초기 비즈니스 아이디어를 가진 사용자가 시장 검증을 위해 거쳐야 하는 복잡하고 비용이 많이 드는 과정을 자동화하고자 했습니다. 특히 'The Right It'에서 영감을 받은 XYZ 가설 수립, 랜딩 페이지 제작, 성공 가능성 예측의 핵심 3단계 과정을 Gemini AI와 Streamlit을 통해 구현하여 누구나 빠르고 쉽게 아이디어를 테스트할 수 있는 도구를 개발했습니다.",
-    "en": "We set out to automate the complex and costly steps early-stage idea owners face for market validation. Inspired by “The Right It,” we implemented the core three steps—XYZ hypothesis setup, landing page creation, and success potential prediction—using Gemini AI and Streamlit, so anyone can test ideas quickly and easily.",
-    "ja": "初期アイデアの市場検証に伴う複雑で高コストなプロセスを自動化することを目指しました。『The Right It』に着想を得て、Gemini AIとStreamlitでXYZ仮説の策定、ランディングページ作成、成功可能性予測という中核の3ステップを実装し、誰でも迅速かつ容易に検証できるツールを開発しました。"
+    "ko": "회사의 홍보를 위해 창업자를 대상으로 진행한 이벤트성 프로젝트입니다.",
+    "en": "An event-based project conducted targeting entrepreneurs for company promotion.",
+    "ja": "会社の広報を目的として、創業家を対象に実施されたイベントベースのプロジェクトです。"
   },
   "service": {
     "problem": {

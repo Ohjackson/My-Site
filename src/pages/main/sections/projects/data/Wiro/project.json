@@ -5,7 +5,7 @@
     "ja": "WIRO"
   },
   "summary": {
-    "ko": "일상 속 감정 기록과 AI 피드백으로 조기 위험 신호를 발견하고, 리포트·상담 연계까지 이어주는 멘탈 케어 앱",
+    "ko": "일상 감정 기록과 AI 피드백으로 조기 위험 신호를 발견하고, 리포트·상담 연계까지 이어주는 멘탈 케어 앱",
     "en": "A mental-wellness app that logs emotions, delivers real-time AI feedback, detects early-risk cues, and connects users to reports and counseling.",
     "ja": "感情記録とAIフィードバックで早期リスクを察知し、レポート作成と相談連携まで行うメンタルケアアプリ。"
   },
@@ -30,9 +30,9 @@
     "ja": "2024.08 - 2024.11"
   },
   "serviceStatus": {
-    "ko": "지속 개발",
-    "en": "Ongoing",
-    "ja": "継続開発"
+    "ko": "서비스 중단",
+    "en": "Service discontinued",
+    "ja": "サービス終了"
   },
   "teamSize": {
     "ko": "3",
@@ -54,7 +54,7 @@
     ]
   },
   "overviewStory": {
-    "ko": "gcs에서 결성된 초기 창업팀입니다. \nOECD 최고 수준의 우울·불안 지표와 2030 세대의 급증 데이터를 문제의식으로 삼아, ‘헬스장 가듯 자연스러운 멘탈 케어’를 목표로 시작했습니다. ",
+    "ko": "gcs에서 결성된 초기 창업팀입니다. \nOECD 최고 수준의 우울·불안 지표와 2030 세대의 급증 데이터를 문제의식으로 삼아, \n‘헬스장 가듯 자연스러운 멘탈 케어’를 목표로 시작했습니다. ",
     "en": "Triggered by alarming OECD depression/anxiety figures and a sharp rise among people in their 20s–30s, we set out to make mental care as natural as going to the gym.",
     "ja": "OECDの憂うつ・不安指標の高さと20–30代の増加を問題意識として、『ジムに行くように自然なメンタルケア』を目指して開始。"
   },
@@ -139,10 +139,10 @@
   },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "iOS (SwiftUI)",
+      "frontend": "SwiftUI",
       "backend": "Firebase",
       "database": "Firebase/Firestore",
-      "AI": "LLM Orchestration",
+      "AI": "LLM",
       "devops": "TestFlight",
       "infra": "Firebase"
     }
@@ -182,20 +182,15 @@
     ]
   },
   "lessonsLearned": {
-    "ko": "예방·조기개입은 ‘가벼움’이 관건—입력 마찰 최소화와 즉시성 있는 피드백이 습관화를 견인. 또한 데이터 프라이버시와 안전장치 설계가 신뢰의 핵심임을 확인.",
-    "en": "Prevention/early intervention hinges on lightness—low input friction and instant feedback drive habit formation. Privacy and safeguards proved crucial for trust.",
-    "ja": "予防・早期介入の鍵は“軽さ”。入力摩擦の最小化と即時フィードバックが習慣化を促進。プライバシーとセーフガード設計が信頼の要であると確認。"
+    "ko": "기획의 변동에따라 개발 방향이 빠뀜에 대한 빠른 대처 경험",
+    "en": "Experience in quickly adapting to changes in development direction due to planning changes.",
+    "ja": "計画変更による開発方向の変更に迅速に適応する経験"
   },
   "results": {
     "achievements": {
       "ko": "감정지수 리포트 MVP 및 상담 연계 프로토타입 완성, 알파 사용자 피드백 수집",
       "en": "Shipped MVP for emotion-index reports and counseling linkage prototype; collected alpha user feedback",
       "ja": "感情指数レポートMVPと相談連携プロトタイプを完成し、アルファユーザーのフィードバックを取得"
-    },
-    "nextSteps": {
-      "ko": "리포트 추천행동 정밀도 향상, 위기신호 감지 고도화, 커뮤니티·가벼운 상담 정식 탑재",
-      "en": "Improve action recommendation precision, enhance crisis-signal detection, and launch community/light counseling features",
-      "ja": "行動提案の精度向上、危機シグナル検知の高度化、コミュニティ/ライト相談の正式搭載"
     }
   }
 }

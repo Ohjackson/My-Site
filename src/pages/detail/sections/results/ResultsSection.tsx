@@ -34,21 +34,21 @@ export function ResultsSection({ data, language, backgroundColor }: ResultsSecti
     ko: { 
       title: "결과 & 배운 점",
       metrics: "측정 기준",
-      achievements: "성과",
+      achievements: "결과",
       learnings: "배운 점",
       nextSteps: "다음 단계"
     },
     en: { 
       title: "Results & Learnings",
       metrics: "Metrics",
-      achievements: "Achievements",
+      achievements: "Results",
       learnings: "Learnings",
       nextSteps: "Next Steps"
     },
     ja: { 
       title: "結果と学び",
       metrics: "測定基準",
-      achievements: "成果",
+      achievements: "結果",
       learnings: "学び",
       nextSteps: "次のステップ"
     }
@@ -91,11 +91,11 @@ export function ResultsSection({ data, language, backgroundColor }: ResultsSecti
           )}
 
           {/* Achievements */}
-          {data.achievements && data.achievements[language] && (
+          {((data.achievements && data.achievements[language]) || ((data as any).results?.achievements && (data as any).results.achievements[language])) && (
             <div>
               <h3 className="font-semibold mb-3">{content[language].achievements}</h3>
               <div className="text-muted">
-                {data.achievements[language].split('\n').map((line, index) => {
+                {(data.achievements?.[language] || (data as any).results?.achievements?.[language])?.split('\n').map((line, index) => {
                   const trimmedLine = line.trim();
                   if (trimmedLine.startsWith('-')) {
                     return (
@@ -132,7 +132,12 @@ export function ResultsSection({ data, language, backgroundColor }: ResultsSecti
                   }
                   return (
                     <p key={index} className="mb-2">
-                      {trimmedLine}
+                      {trimmedLine.split('\n').map((subLine, subIdx) => (
+                        <span key={subIdx}>
+                          {subLine}
+                          {subIdx < trimmedLine.split('\n').length - 1 && <br />}
+                        </span>
+                      ))}
                     </p>
                   );
                 })}

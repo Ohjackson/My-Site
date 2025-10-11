@@ -35,9 +35,9 @@
     "ja": "2025.09"
   },
   "serviceStatus": {
-    "ko": "서비스 운영 중",
-    "en": "Service Running",
-    "ja": "サービス運用中"
+    "ko": "운영 중",
+    "en": "In operation",
+    "ja": "運用中"
   },
   "teamSize": {
     "ko": "1",

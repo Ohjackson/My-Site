@@ -146,17 +146,17 @@
   },
   "responsibilities": {
     "ko": [
-      "- UIKit 온보딩 플로우 구현, \n- alert 모달 구현"
+      "- UIKit 온보딩 플로우 구현\n - alert 모달 구현"
     ],
     "en": [
-      "Implemented UIKit onboarding flow, \n- alert modal"
+      "Implemented UIKit onboarding flow \n- alert modal"
     ],
     "ja": [
-      "UIKitのオンボーディングフローを実装, \n- アラートモーダルを実装"
+      "UIKitのオンボーディングフローを実装 \n- アラートモーダルを実装"
     ]
   },
   "lessonsLearned": {
-  "ko": "- iOS 조직화 팀플 경험: 중앙 enum/모듈로 변경 지점 단일화 → 빠른 반영. 컴포넌트화와 코드리뷰 컨벤션 정착.\n'- 굴러가기만'이 아니라 꼼꼼함의 가치 학습: 한 줄도 이유 있게 작성함.\n- 구현 전 설계 토론의 중요성 체감: 흐름/데이터 계약을 먼저 합의함.\n- 충분히 고민해도 구현 후 드러나는 구조적 문제 경험 → 리팩터링 루프와 실험 플래그로 대응함.",
+  "ko": "- iOS 조직화 팀플 경험: 중앙 enum/모듈로 변경 지점 단일화 → 빠른 반영. 컴포넌트화와 코드리뷰 컨벤션 정착.\n- '굴러가기만'이 아니라 꼼꼼함의 가치 학습: 한 줄도 이유 있게 작성함.\n- 구현 전 설계 토론의 중요성 체감: 흐름/데이터 계약을 먼저 합의함.\n- 충분히 고민해도 구현 후 드러나는 구조적 문제 경험 → 리팩터링 루프와 실험 플래그로 대응함.",
   "en": "Organized iOS team play: centralized enums/modules as single sources of change → faster updates; established componentization and code-review conventions.\nLearned rigor over \"it just works\": write every line with intent.\nFelt the importance of pre-implementation design discussions: agree on flows/data contracts first.\nEven with planning, structural issues surfaced post-build → addressed via refactoring loops and feature flags.",
   "ja": "iOSの組織的チーム開発：変更点を一元化するenum/モジュールを導入し、コンポーネント化とコードレビュー規約を定着。\n「動けばよい」ではなく緻密さの価値を学習：一行にも意図を持って書く。\n実装前の設計ディスカッションの重要性を実感：フロー／データ契約を先に合意。\n十分に検討しても実装後に構造課題が顕在化 → リファクタリングのループと機能フラグで対応。"
   },
