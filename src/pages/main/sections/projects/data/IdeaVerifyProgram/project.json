@@ -1,226 +1,189 @@
 {
   "name": {
-    "ko": "아이디어 검증 프로그램",
-    "en": "IdeaVerifyProgram",
-    "ja": "アイデア検証プログラム"
+    "ko": "비즈니스 아이디어 검증(Pretotyping) 도우미",
+    "en": "Business Idea Validation (Pretotyping) Helper",
+    "ja": "ビジネスアイデア検証（Pretotyping）ヘルパー"
   },
   "summary": {
-    "ko": "창업 아이디어의 시장성과 실현 가능성을 데이터 기반으로 검증하는 종합 분석 플랫폼",
-    "en": "Comprehensive analysis platform that validates the marketability and feasibility of startup ideas based on data",
-    "ja": "スタートアップアイデアの市場性と実現可能性をデータベースで検証する総合分析プラットフォーム"
+    "ko": "Google Gemini AI를 활용하여 비즈니스 아이디어의 시장성을 빠르고 저렴하게 검증(Pretotyping)할 수 있도록 돕는 웹 애플리케이션입니다. XYZ 가설 수립, 랜딩 페이지 생성, 성공 가능성 예측 등의 기능을 제공합니다.",
+    "en": "A web application that helps to quickly and inexpensively validate the marketability of business ideas (Pretotyping) using the Google Gemini AI. It provides features such as establishing XYZ hypotheses, generating landing pages, and predicting success potential.",
+    "ja": "Google Gemini AIを活用し、ビジネスアイデアの市場性を迅速かつ低コストで検証（Pretotyping）するのに役立つWebアプリケーションです。XYZ仮説の策定、ランディングページの生成、成功可能性の予測などの機能を提供します。"
   },
   "role": {
-    "ko": "Full-Stack Developer",
-    "en": "Full-Stack Developer",
-    "ja": "Full-Stack Developer"
+    "ko": "Full-stack 개발 및 AI 프롬프트 엔지니어링",
+    "en": "Full-stack Development and AI Prompt Engineering",
+    "ja": "フルスタック開発およびAIプロンプトエンジニアリング"
   },
   "tags": {
-    "ko": ["React", "Python", "Data Analysis", "Startup", "AI"],
-    "en": ["React", "Python", "Data Analysis", "Startup", "AI"],
-    "ja": ["React", "Python", "Data Analysis", "Startup", "AI"]
+    "ko": ["Pretotyping", "Streamlit", "Python", "Gemini AI", "비즈니스 검증"],
+    "en": ["Pretotyping", "Streamlit", "Python", "Gemini AI", "Business Validation"],
+    "ja": ["Pretotyping", "Streamlit", "Python", "Gemini AI", "ビジネス検証"]
   },
   "platform": {
-    "ko": "Web",
-    "en": "Web",
-    "ja": "Web"
+    "ko": "웹 애플리케이션",
+    "en": "Web Application",
+    "ja": "Webアプリケーション"
   },
   "workPeriod": {
-    "ko": "2024.01 - 2024.06",
-    "en": "2024.01 - 2024.06",
-    "ja": "2024.01 - 2024.06"
+    "ko": "2025년 10월",
+    "en": "October 2025",
+    "ja": "2025年10月"
   },
   "releaseDate": {
-    "ko": "2024.06",
-    "en": "2024.06",
-    "ja": "2024.06"
+    "ko": "",
+    "en": "",
+    "ja": ""
   },
-  "serviceStatus": {
-    "ko": "완료",
-    "en": "Completed",
-    "ja": "完了"
+  "endDate": {
+    "ko": "",
+    "en": "",
+    "ja": ""
   },
   "teamSize": {
-    "ko": "2",
-    "en": "2",
-    "ja": "2"
+    "ko": "1인",
+    "en": "1 person",
+    "ja": "1人"
   },
   "features": {
-    "ko": [
-      "시장 분석 및 경쟁사 조사",
-      "사용자 피드백 수집 및 분석",
-      "비즈니스 모델 검증",
-      "투자 유치 가능성 평가"
-    ],
-    "en": [
-      "Market analysis and competitor research",
-      "User feedback collection and analysis",
-      "Business model validation",
-      "Investment attraction possibility assessment"
-    ],
-    "ja": [
-      "市場分析と競合他社調査",
-      "ユーザーフィードバック収集と分析",
-      "ビジネスモデル検証",
-      "投資誘致可能性評価"
-    ]
+    "ko": ["XYZ 가설 수립", "AI 기반 랜딩 페이지 생성", "아이디어 성공 가능성 예측"],
+    "en": ["XYZ Hypothesis Formulation", "AI-based Landing Page Generation", "Idea Success Potential Prediction"],
+    "ja": ["XYZ仮説の策定", "AIによるランディングページの生成", "アイデアの成功可能性予測"]
   },
   "links": {
-    "demo": "https://ideaverify-demo.vercel.app",
-    "github": "https://github.com/YourUsername/IdeaVerifyProgram"
+    "github": ""
   },
   "additionalFeatures": {
-    "ko": "창업자들이 아이디어의 성공 가능성을 높일 수 있는 데이터 기반 검증 도구",
-    "en": "Data-based validation tool that helps entrepreneurs increase the success probability of their ideas",
-    "ja": "起業家がアイデアの成功可能性を高められるデータベース検証ツール"
+    "ko": "",
+    "en": "",
+    "ja": ""
   },
   "overviewStory": {
-    "ko": "창업자들이 아이디어의 시장성과 실현 가능성을 데이터 기반으로 검증하고, 성공 가능성을 높일 수 있는 종합적인 비즈니스 분석 플랫폼",
-    "en": "Comprehensive business analysis platform that helps entrepreneurs validate the marketability and feasibility of their ideas based on data and increase their chances of success",
-    "ja": "起業家がアイデアの市場性と実現可能性をデータベースで検証し、成功可能性を高められる総合的なビジネス分析プラットフォーム"
+    "ko": "초기 비즈니스 아이디어를 가진 사용자가 시장 검증을 위해 거쳐야 하는 복잡하고 비용이 많이 드는 과정을 자동화하고자 했습니다. 특히 'The Right It'에서 영감을 받은 XYZ 가설 수립, 랜딩 페이지 제작, 성공 가능성 예측의 핵심 3단계 과정을 Gemini AI와 Streamlit을 통해 구현하여 누구나 빠르고 쉽게 아이디어를 테스트할 수 있는 도구를 개발했습니다.",
+    "en": "We wanted to automate the complex and costly process that users with initial business ideas have to go through for market validation. Inspired by 'The Right It', we developed a tool that allows anyone to quickly and easily test their ideas by implementing the core three-step process of XYZ hypothesis formulation, landing page creation, and success potential prediction through Gemini AI and Streamlit.",
+    "ja": "初期のビジネスアイデアを持つユーザーが市場検証のために経験する、複雑でコストのかかるプロセスを自動化したいと考えました。『The Right It』から着想を得て、XYZ仮説の策定、ランディングページの作成、成功可能性の予測という中核的な3ステップのプロセスをGemini AIとStreamlitを通じて実装し、誰もが迅速かつ容易にアイデアをテストできるツールを開発しました。"
   },
   "service": {
     "problem": {
-      "ko": "창업 아이디어의 시장성과 실현 가능성을 객관적으로 검증할 수 있는 도구의 부족",
-      "en": "Lack of tools to objectively validate the marketability and feasibility of startup ideas",
-      "ja": "スタートアップアイデアの市場性と実現可能性を客観的に検証できるツールの不足"
+      "ko": "아이디어를 실제 제품으로 만들기 전, 시장의 반응을 예측하고 검증하는 과정은 시간과 비용이 많이 듭니다.",
+      "en": "The process of predicting and validating market reaction before turning an idea into an actual product is time-consuming and costly.",
+      "ja": "アイデアを実際の製品にする前に、市場の反応を予測し検証するプロセスは時間とコストがかかります。"
     },
     "target": {
-      "ko": "데이터 기반으로 아이디어를 검증하고 싶은 창업자와 투자자",
-      "en": "Entrepreneurs and investors who want to validate ideas based on data",
-      "ja": "データベースでアイデアを検証したい起業家と投資家"
+      "ko": "초기 창업가, 사내 벤처팀, 신사업 기획자 등 자신의 아이디어를 빠르게 검증해보고 싶은 모든 사람",
+      "en": "Early-stage entrepreneurs, in-house venture teams, new business planners, and anyone who wants to quickly validate their ideas.",
+      "ja": "初期の起業家、社内ベンチャーチーム、新規事業企画者など、自身のアイデアを迅速に検証したいすべての人。"
     },
     "value": {
-      "ko": "종합적인 데이터 분석을 통한 아이디어 검증 및 성공 가능성 향상",
-      "en": "Idea validation and success probability improvement through comprehensive data analysis",
-      "ja": "総合的なデータ分析によるアイデア検証と成功可能性向上"
+      "ko": "AI를 통해 가설 수립부터 결과 분석까지의 과정을 자동화하여, 비용과 시간 없이 데이터 기반의 의사결정을 내릴 수 있도록 돕습니다.",
+      "en": "By automating the process from hypothesis formulation to result analysis through AI, we help users make data-driven decisions without significant cost or time.",
+      "ja": "AIを通じて仮説策定から結果分析までのプロセスを自動化し、大きなコストや時間をかけずにデータに基づいた意思決定を行えるよう支援します。"
     }
   },
   "detail_features": [
     {
       "title": {
-        "ko": "시장 분석 엔진",
-        "en": "Market Analysis Engine",
-        "ja": "市場分析エンジン"
+        "ko": "XYZ 가설 수립",
+        "en": "XYZ Hypothesis Formulation",
+        "ja": "XYZ仮説の策定"
       },
       "description": {
-        "ko": "AI 기반 시장 규모 분석, 경쟁사 조사, 트렌드 분석을 통한 시장성 평가",
-        "en": "Marketability assessment through AI-based market size analysis, competitor research, and trend analysis",
-        "ja": "AIベースの市場規模分析、競合他社調査、トレンド分析による市場性評価"
+        "ko": "사용자가 사업 아이템과 고객을 정의하면, 'The Right It' 방법론에 기반하여 구체적인 XYZ 시장 호응 가설을 AI가 생성해줍니다.",
+        "en": "When a user defines a business item and customer, the AI generates a specific XYZ market response hypothesis based on 'The Right It' methodology.",
+        "ja": "ユーザーが事業アイテムと顧客を定義すると、「The Right It」の方法論に基づき、具体的なXYZ市場呼応仮説をAIが生成します。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "사용자 피드백 분석",
-        "en": "User Feedback Analysis",
-        "ja": "ユーザーフィードバック分析"
+        "ko": "랜딩 페이지 생성",
+        "en": "Landing Page Generation",
+        "ja": "ランディングページの生成"
       },
       "description": {
-        "ko": "설문조사, 인터뷰, 소셜미디어 분석을 통한 사용자 니즈 파악",
-        "en": "Understanding user needs through surveys, interviews, and social media analysis",
-        "ja": "アンケート、インタビュー、ソーシャルメディア分析によるユーザーニーズ把握"
+        "ko": "수립된 XYZ 가설을 바탕으로, 잠재 고객의 반응을 측정하기 위한 HTML 랜딩 페이지를 AI가 자동으로 생성합니다.",
+        "en": "Based on the established XYZ hypothesis, the AI automatically generates an HTML landing page to measure the reaction of potential customers.",
+        "ja": "策定されたXYZ仮説に基づき、潜在顧客の反応を測定するためのHTMLランディングページをAIが自動的に生成します。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "될 놈인가 확인하기 (성공 가능성 예측)",
+        "en": "Success Potential Prediction",
+        "ja": "成功可能性の予測"
+      },
+      "description": {
+        "ko": "사용자가 입력한 가설과 검증 결과 데이터를 종합하여, 아이디어의 성공 가능성을 '될 놈 척도'에 따라 AI가 평가하고 다음 단계를 제안합니다.",
+        "en": "The AI evaluates the success potential of an idea according to the 'Right It' scale by synthesizing the user's input hypothesis and validation result data, and proposes the next steps.",
+        "ja": "ユーザーが入力した仮説と検証結果データを総合し、アイデアの成功可能性を「Right It」スケールに従ってAIが評価し、次のステップを提案します。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "반응형 UI",
+        "en": "Responsive UI",
+        "ja": "レスポンシブUI"
+      },
+      "description": {
+        "ko": "Streamlit을 사용하여 개발되었으며, 사용자의 화면 크기에 맞춰 너비와 높이를 조절하는 등 인터랙티브한 UI를 제공합니다.",
+        "en": "Developed using Streamlit, it provides an interactive UI that adjusts width and height according to the user's screen size.",
+        "ja": "Streamlitを使用して開発され、ユーザーの画面サイズに合わせて幅と高さを調整するなど、インタラクティブなUIを提供します。"
       },
       "implemented": true
     }
   ],
   "preview_screenshots": {
     "screenshots": [
-      "/assets/ideaverifyprogram/DeskShot-1.png",
-      "/assets/ideaverifyprogram/DeskShot-2.png",
-      "/assets/ideaverifyprogram/DeskShot-3.png"
+      "/assets/ideaverifyprogram/DeskShot-1.jpg",
+      "/assets/ideaverifyprogram/DeskShot-2.jpg",
+      "/assets/ideaverifyprogram/DeskShot-3.jpg"
     ],
     "description": {
-      "ko": "반응형 웹/모바일 프리뷰",
-      "en": "Responsive Web/Mobile Preview",
-      "ja": "レスポンシブウェブ/モバイルプレビュー"
+      "ko": "데스크톱 애플리케이션 스크린샷",
+      "en": "Desktop Application Screenshots",
+      "ja": "デスクトップアプリケーションスクリーンショット"
     }
   },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "React, TypeScript, Chart.js",
-      "backend": "Python, FastAPI, PostgreSQL",
-      "AI": "Python, pandas, scikit-learn, NLP",
-      "devops": "Docker, AWS, GitHub Actions"
-    },
-    "data": {
-      "ko": "PostgreSQL, Redis, Elasticsearch",
-      "en": "PostgreSQL, Redis, Elasticsearch",
-      "ja": "PostgreSQL, Redis, Elasticsearch"
-    },
-      "backend": {
-        "ko": "Python FastAPI RESTful API, PostgreSQL 데이터베이스, AI 분석 엔진",
-        "en": "Python FastAPI RESTful API, PostgreSQL database, AI analysis engine",
-        "ja": "Python FastAPI RESTful API、PostgreSQLデータベース、AI分析エンジン"
-      },
-      "dataFlow": {
-        "ko": "아이디어 입력 → 데이터 수집 → AI 분석 → 검증 결과 → 리포트 생성",
-        "en": "Idea Input → Data Collection → AI Analysis → Validation Results → Report Generation",
-        "ja": "アイデア入力 → データ収集 → AI分析 → 検証結果 → レポート生成"
-      },
-      "security": {
-        "ko": "JWT 인증, 데이터 암호화, GDPR 준수",
-        "en": "JWT authentication, data encryption, GDPR compliance",
-        "ja": "JWT認証、データ暗号化、GDPR準拠"
-      }
-    },
-  "responsibilities": {
-    "ko": [
-      "린 스타트업 방법론 기반 플랫폼 설계",
-      "시장 조사 및 검증 도구 개발",
-      "사용자 피드백 시스템 구축",
-      "비즈니스 모델 캔버스 구현"
-    ],
-    "en": [
-      "Platform design based on Lean Startup methodology",
-      "Development of market research and validation tools",
-      "User feedback system construction",
-      "Business Model Canvas implementation"
-    ],
-    "ja": [
-      "リーンスタートアップ手法に基づいたプラットフォーム設計",
-      "市場調査および検証ツールの開発",
-      "ユーザーフィードバックシステムの構築",
-      "ビジネスモデルキャンバスの実装"
-    ]
+      "frontend": "Streamlit",
+      "backend": "Python, Streamlit",
+      "database": "MongoDB (초기), 현재 Mock DB로 전환",
+      "AI": "Google Gemini API (gemini-2.5-pro)",
+      "devops": "Docker (초기), 현재 로컬 CLI 실행",
+      "infra": ""
+    }
   },
-  "lessonsLearned": {
-    "ko": "다양한 아이디어의 특성을 고려한 유연한 검증 프레임워크 설계의 어려움",
-    "en": "Difficulty in designing a flexible validation framework that considers the characteristics of various ideas",
-    "ja": "多様なアイデアの特性を考慮した柔軟な検証フレームワークの設計の難しさ"
+  "responsibilities": {
+    "ko": ["요구사항 분석 및 전체 아키텍처 설계", "Docker 환경 설정 및 로컬 실행 환경으로 전환", "Gemini API 연동 및 프롬프트 엔지니어링", "Streamlit을 이용한 UI/UX 개발 및 개선", "지속적인 오류 디버깅 및 기능 수정"],
+    "en": ["Requirements analysis and overall architecture design", "Docker environment setup and transition to local execution environment", "Gemini API integration and prompt engineering", "UI/UX development and improvement using Streamlit", "Continuous error debugging and feature modification"],
+    "ja": ["要件分析および全体アーキテクチャ設計", "Docker環境設定およびローカル実行環境への移行", "Gemini API連携およびプロンプトエンジニアリング", "Streamlitを利用したUI/UX開発および改善", "継続的なエラーデバッグおよび機能修正"]
   },
   "metrics": {
-    "ko": [
-      "월 활성 사용자 8,000명",
-      "검증된 아이디어 2,500개",
-      "투자 유치 성공률 35% 향상"
-    ],
-    "en": [
-      "8,000 monthly active users",
-      "2,500 validated ideas",
-      "35% improvement in investment attraction success rate"
-    ],
-    "ja": [
-      "月間アクティブユーザー8,000人",
-      "検証されたアイデア2,500個",
-      "投資誘致成功率35%向上"
-    ]
+    "ko": [],
+    "en": [],
+    "ja": []
+  },
+  "lessonsLearned": {
+    "ko": "Gemini API 사용 시 모델 이름의 정확성과 버전 호환성이 매우 중요하며, 단순 404 오류 외에도 MAX_TOKENS, SAFETY 등 다양한 종료 이유(finish_reason)에 대한 처리가 필수적임을 배웠습니다. 또한, 사용자의 피드백에 따라 UI(너비, 높이)를 동적으로 수정하는 경험을 통해 Streamlit의 CSS 커스터마이징 방법을 익혔습니다.",
+    "en": "Learned that model name accuracy and version compatibility are crucial when using the Gemini API, and that handling various finish_reasons such as MAX_TOKENS and SAFETY, in addition to simple 404 errors, is essential. Also, learned how to customize Streamlit's CSS by dynamically modifying the UI (width, height) based on user feedback.",
+    "ja": "Gemini APIを使用する際、モデル名の正確性とバージョン互換性が非常に重要であり、単純な404エラー以外にもMAX_TOKENS、SAFETYなど多様な終了理由（finish_reason）への対応が不可欠であることを学びました。また、ユーザーのフィードバックに応じてUI（幅、高さ）を動的に修正する経験を通じて、StreamlitのCSSカスタマイズ方法を習得しました。"
   },
   "results": {
     "achievements": {
-      "ko": "아이디어 검증 시간 50% 단축, 초기 투자 유치 성공률 35% 증가",
-      "en": "50% reduction in idea validation time, 35% increase in initial investment attraction success rate",
-      "ja": "アイデア検証時間50%短縮、初期投資誘致成功率35%増加"
-    },
-    "learnings": {
-      "ko": "모듈형 검증 단계와 커스터마이징 가능한 템플릿 제공을 통한 유연성 확보 경험",
-      "en": "Experience in ensuring flexibility by providing modular validation stages and customizable templates",
-      "ja": "モジュール型検証段階とカスタマイズ可能なテンプレートの提供による柔軟性確保の経験"
+      "ko": "초기 아이디어 구상 단계에서 Docker와 데이터베이스를 포함한 전체 시스템을 구축하였고, 이후 요구사항 변경에 따라 Docker를 제거하고 로컬 실행 환경으로 성공적으로 전환했습니다. 여러 차례의 API 오류를 디버깅하여 안정적인 AI 연동을 구현했으며, 사용자 피드백을 즉각적으로 반영하여 UI 사용성을 개선했습니다.",
+      "en": "Built a complete system including Docker and a database from the initial idea stage, and later successfully transitioned to a local execution environment by removing Docker according to requirement changes. Implemented stable AI integration by debugging multiple API errors, and improved UI usability by immediately reflecting user feedback.",
+      "ja": "初期のアイデア構想段階でDockerとデータベースを含む全体システムを構築し、その後、要件変更に応じてDockerを削除し、ローカル実行環境へ正常に移行しました。数々のAPIエラーをデバッグして安定したAI連携を実現し、ユーザーのフィードバックを即座に反映してUIの使いやすさを改善しました。"
     },
     "nextSteps": {
-      "ko": "AI 기반 아이디어 자동 생성 기능 추가, 글로벌 시장 진출 전략 수립",
-      "en": "Add AI-based idea generation feature, establish global market entry strategy",
-      "ja": "AIベースのアイデア自動生成機能追加、グローバル市場進出戦略策定"
+      "ko": "",
+      "en": "",
+      "ja": ""
     }
   },
-  "flag": "deactive"
+  "additional_links": {
+    "website": "",
+    "blog": ""
+  }
 }
