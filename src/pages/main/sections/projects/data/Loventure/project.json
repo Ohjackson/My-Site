@@ -2,7 +2,7 @@
   "name": {
     "ko": "Loventure",
     "en": "Loventure",
-    "ja": "ラベンチャー"
+    "ja": "Loventure"
   },
   "summary": {
     "ko": "커플을 위한 맞춤형 AI 데이트 코스 추천 서비스",
@@ -12,12 +12,12 @@
   "role": {
     "ko": "PM, Full-Stack",
     "en": "PM, Full-Stack",
-    "ja": "PM・フルスタック"
+    "ja": "PM, Full-Stack"
   },
   "tags": {
-    "ko": ["AI 추천", "커플 페어링", "지역락", "다이어리", "사진첩", "지표"],
-    "en": ["AI Recommendation", "Couple Pairing", "Region Lock", "Diary", "Photo Album", "Metrics"],
-    "ja": ["AI推薦", "カップルペアリング", "リージョンロック", "日記", "フォトアルバム", "指標"]
+    "ko": ["MSA", "K8s", "springboot", "fastapi", "Kakao Cloud"],
+    "en": ["MSA", "K8s", "springboot", "fastapi", "Kakao Cloud"],
+    "ja": ["MSA", "K8s", "springboot", "fastapi", "Kakao Cloud"]
   },
   "platform": {
     "ko": "Web",
@@ -54,51 +54,45 @@
       "AI 기반 데이트 코스 추천",
       "소셜 로그인 & 커플 페어링",
       "코스 저장 및 다이어리(사진 포함)",
-      "지역락(해금 지역 우선 추천)",
-      "커플 지표(함께한 날, 다이어리 수, 코스 이용 수)",
       "사진첩(다이어리 사진 모아보기)"
     ],
     "en": [
       "AI-based date course recommendations",
       "Social login & couple pairing",
-      "Course saving and diary with photos",
-      "Region lock (unlocked areas prioritized)",
-      "Couple metrics (days together, diary count, courses used)",
+      "Course saving and diary (with photos)",
       "Photo album (centralized diary photos)"
     ],
     "ja": [
       "AIによるデートコース推薦",
       "ソーシャルログイン＆カップルペアリング",
       "コース保存と日記（写真付き）",
-      "リージョンロック（解放エリア優先）",
-      "カップル指標（共に過ごした日数・日記数・コース利用数）",
       "フォトアルバム（散在写真の一元表示）"
     ]
   },
   "overviewStory": {
     "ko": "대규모 서비스를 가장한 sw아카데미에서의 프로젝트로 출시된 프로젝트입니다.\n지금까지의 창업팀 에서의 경험과 노하우를 pm으로서 녹여보았습니다.",
-    "en": "Planned and built as a web service where AI suggests actionable courses and couples preserve memories via diaries, photos, and shared metrics. It proposes courses tailored to time/budget/mood/weather, unlocks regions with continued use, and accumulates couple-specific indicators.",
-    "ja": "AIが実行可能なコースを提案し、日記・写真・指標で思い出を残せるWebサービスとして企画・開発。時間／予算／雰囲気／天気に合わせてコースを提示し、使うほどエリアが解放され、二人だけの指標が蓄積されるよう設計。"
+    "en": "A project shipped within a software academy as if operating a large-scale service. I applied my prior startup team experience and know-how as the PM.",
+    "ja": "大規模サービス運用を想定したソフトウェアアカデミーでのプロジェクトとしてリリース。これまでのスタートアップチームでの経験とノウハウをPMとして反映しました。"
   },
   "links": {
-    "demo": "https://loventure.app",
-    "github": "https://github.com/YourUsername/Loventure-Couple-Travel-AI"
+    "demo": "https://loventure.us",
+    "github": "https://github.com/PitterPetter"
   },
   "service": {
     "problem": {
       "ko": "둘의 취향과 상황을 모두 반영한 실행 가능한 데이트 코스를 빠르게 고르기 어렵고, 번거로움",
-      "en": "It’s hard to quickly choose an actionable date course reflecting both partners’ tastes and context, and past records are scattered and hard to reuse.",
-      "ja": "二人の嗜好と状況を反映した実行可能なデートコースを素早く選ぶのが難しく、訪問記録も散在して再活用がしにくい。"
+      "en": "It’s difficult and cumbersome to quickly choose an actionable date course that reflects both partners’ tastes and context.",
+      "ja": "二人の嗜好と状況を反映した実行可能なデートコースを素早く選ぶのが難しく、手間がかかる。"
     },
     "target": {
       "ko": "즉시 실행 가능한 코스를 원하고, 다녀온 흔적을 사진·지표로 남기며 동기부여 받고 싶은 20–30대 커플.",
-      "en": "Couples in their 20s–30s who want instantly actionable courses and motivation through photos and shared metrics.",
+      "en": "Couples in their 20s–30s who want instantly actionable courses and motivation through photos and shared indicators.",
       "ja": "すぐに実行できるコースを求め、写真や共有指標でモチベーションを得たい20〜30代のカップル。"
     },
     "value": {
       "ko": "개인·커플 상황을 반영한 코스 추천, 사용량에 따른 지역 해금과 지표 제공으로 선택 피로를 줄이고 경험을 축적.",
-      "en": "Context-aware course suggestions plus region unlocks and metrics reduce choice fatigue and help accumulate memorable experiences.",
-      "ja": "状況に合わせたコース推薦に加え、エリア解放と指標の提示で選択疲れを軽減し、体験を蓄積できる。"
+      "en": "Context-aware course suggestions plus region unlocks and indicators reduce choice fatigue and help accumulate shared experiences.",
+      "ja": "状況に合わせたコース推薦に加え、利用に応じたエリア解放と指標提示で選択疲れを軽減し、体験を蓄積できる。"
     }
   },
   "detail_features": [
@@ -110,8 +104,8 @@
       },
       "description": {
         "ko": "초대 코드로 방을 만들고 승인 과정으로 커플을 연결. 기본 공개 범위는 커플 단위 비공개.",
-        "en": "Create a room via invite code and pair upon approval. Default visibility is private to the couple.",
-        "ja": "招待コードでルーム作成後、承認でペアリング。既定の公開範囲はカップル限定の非公開。"
+        "en": "Create a room with an invite code and pair upon approval. Default visibility is private to the couple.",
+        "ja": "招待コードでルームを作成し、承認でペアリング。既定の公開範囲はカップル限定の非公開。"
       },
       "implemented": true
     },
@@ -123,8 +117,8 @@
       },
       "description": {
         "ko": "시간·예산·분위기·날씨·해금 지역을 입력 받아 2–3개 후보를 제안. ‘저장/다시 추천/세부 보기’ 액션 제공.",
-        "en": "Takes time, budget, mood, weather, and unlocked regions to propose 2–3 candidates. Actions: Save / Recommend Again / View Details.",
-        "ja": "時間・予算・雰囲気・天気・解放エリアを入力し、2～3件の候補を提示。「保存／再推薦／詳細を見る」が可能。"
+        "en": "Input time, budget, mood, weather, and unlocked regions to get 2–3 candidates. Actions: Save / Recommend Again / View Details.",
+        "ja": "時間・予算・雰囲気・天気・解放エリアを入力し、2～3件の候補を提示。「保存／再推薦／詳細を見る」を提供。"
       },
       "implemented": true
     },
@@ -136,7 +130,7 @@
       },
       "description": {
         "ko": "추천 상세에서 ‘저장’하면 오늘의 코스로 마킹. 방문 후 별점·코멘트·사진을 추가해 기록.",
-        "en": "‘Save’ marks a course as today’s plan. After visiting, add rating, comment, and photos to record.",
+        "en": "Saving from the recommendation detail marks it as today’s course. After visiting, record rating, comments, and photos.",
         "ja": "推薦詳細から「保存」で本日のコースとしてマーク。訪問後に評価・コメント・写真を追加して記録。"
       },
       "implemented": true
@@ -149,7 +143,7 @@
       },
       "description": {
         "ko": "초기 2개 구 자동 해금. 코스 저장 시 하루 1회 추가 해금(자정 리셋). 추천은 기본 해금 지역 우선.",
-        "en": "Initially unlock 2 districts. Each save grants one additional unlock per day (reset at midnight). Recommendations prioritize unlocked areas.",
+        "en": "Initially unlock two districts. Saving a course grants one additional unlock per day (midnight reset). Recommendations prioritize unlocked areas.",
         "ja": "初期に2区を自動解放。コース保存で1日1回の追加解放（深夜リセット）。推薦は解放エリアを優先。"
       },
       "implemented": true
@@ -162,7 +156,7 @@
       },
       "description": {
         "ko": "여러 다이어리에 흩어진 사진을 최신순 그리드로 모아보기. 썸네일 클릭 시 해당 다이어리로 이동.",
-        "en": "Aggregate photos from diaries into a latest-first grid; clicking a thumbnail opens the source diary.",
+        "en": "Aggregate photos from diaries in a latest-first grid; clicking a thumbnail opens the source diary.",
         "ja": "日記に散在する写真を最新順グリッドで集約。サムネイルを押すと該当日記へ遷移。"
       },
       "implemented": true
@@ -175,7 +169,7 @@
       },
       "description": {
         "ko": "함께한 날, 다이어리 수, 코스 이용 수 등 핵심 지표를 마이페이지 상단 카드로 가볍게 제공.",
-        "en": "Surface key metrics—days together, diary count, courses used—via light cards on My Page.",
+        "en": "Show key indicators—days together, diary count, courses used—as lightweight cards on My Page.",
         "ja": "共に過ごした日数、日記数、コース利用数などの主要指標をマイページ上部カードで提示。"
       },
       "implemented": true
@@ -193,48 +187,53 @@
       "frontend": "react, tailwindcss, vite",
       "backend": "springboot, fastapi",
       "database": "PostgreSQL, postgresGis",
-      "AI": "python, langchain",
+      "AI": "langchain",
       "devops": "argoCD, Github Actions",
       "infra": "docker, kubernetes, GCP, Kakao Cloud, terraform"
     }
   },
   "responsibilities": {
     "ko": [
-      "PM으로 8주 스프린트 운영 및 범위 정의",
-      "핵심 플로우 설계(로그인→페어링→추천→저장→다이어리→지표)",
-      "지역락 규칙·지표 산출 방식·빈 상태 UX 가이드 정의",
-      "추천→저장→해금으로 이어지는 리텐션 루프 기획",
-      "course service 개발 - SpringBoot",
-      "ai service 로직 개발 - FastAPI",
-      "Territory service 개발 - SpringBoot",
-      "course List Page 개발 - React",
-      "database 설계 - PostgreSQL, postgresGis",
-      "docker 이미지 빌드 및 배포 - Docker",
-      "QA 전략 수립 및 운영"
+      "- PM으로 8주 스프린트 운영 및 범위 정의",
+      "- 핵심 플로우 설계(로그인→페어링→추천→저장→다이어리→지표) 및 UX 가이드 정의",
+      "- course service 개발 - SpringBoot",
+      "- ai 추천 service 로직 설계 ",
+      "- Territory service 개발 - SpringBoot",
+      "- course List Page 개발 - React",
+      "- database 설계 - PostgreSQL, postgresGis",
+      "- QA 전략 수립"
     ],
     "en": [
-      "Ran an 8-week sprint as PM and defined scope",
-      "Designed the core flow (login → pairing → recommend → save → diary → metrics)",
-      "Specified region-lock rules, metric calculations, and empty-state UX",
-      "Planned a retention loop: recommend → save → unlock"
+      "Operated an 8-week sprint as PM and defined scope",
+      "Designed the core flow (login → pairing → recommendation → save → diary → metrics) and UX guidelines",
+      "Implemented Course Service (Spring Boot)",
+      "Designed AI recommendation service logic",
+      "Built Territory Service (Spring Boot)",
+      "Developed Course List page (React)",
+      "Designed the database schema (PostgreSQL, PostGIS)",
+      "Established the QA strategy"
     ],
     "ja": [
       "PMとして8週間スプリントを運用しスコープを定義",
-      "主要フロー設計（ログイン→ペアリング→推薦→保存→日記→指標）",
-      "リージョンロック規則・指標算出・空状態UXを策定",
-      "推薦→保存→解放へつなぐリテンションループを企画"
+      "主要フロー（ログイン→ペアリング→推薦→保存→日記→指標）とUXガイドを設計",
+      "Course ServiceをSpring Bootで実装",
+      "AI推薦サービスのロジックを設計",
+      "Territory ServiceをSpring Bootで開発",
+      "Course ListページをReactで開発",
+      "データベース設計（PostgreSQL・PostGIS）を担当",
+      "QA戦略を策定"
     ]
   },
   "lessonsLearned": {
     "ko": "개발자 8명 팀에서 프로젝트를 진행하며 팀원들과 소통하고 커뮤니케이션 하는 방법을 배웠습니다.",
-    "en": "A loop of recommend → save → unlock → check metrics reduces choice fatigue and drives repeat use. Diary, photos, and metrics are central to ‘memory building’.",
-    "ja": "推薦→保存→解放→指標確認というループは選択疲れを抑え、再利用を促進。日記・写真・指標は「思い出の蓄積」に不可欠。"
+    "en": "Working with an 8-developer team taught me practical communication and collaboration methods for aligning scope, handoffs, and reviews.",
+    "ja": "8名の開発チームでの推進を通じ、スコープ調整や引き継ぎ、レビューにおける実践的なコミュニケーション手法を学びました。"
   },
   "results": {
     "achievements": {
       "ko": "AI 추천·다이어리·지역락·지표·사진첩을 포함한 MVP 개발",
-      "en": "Completed planning and design of the MVP including AI recommendation, diary, region lock, metrics, and photo album",
-      "ja": "AI推薦・日記・リージョンロック・指標・フォトアルバムを含むMVPの企画・設計を完了"
+      "en": "Developed the MVP including AI recommendation, diary, region lock, metrics, and photo album",
+      "ja": "AI推薦・日記・リージョンロック・指標・フォトアルバムを含むMVPを開発"
     }
   },
   "flag": "active"

@@ -35,9 +35,9 @@
     "ja": "2025.09"
   },
   "serviceStatus": {
-    "ko": "업데이트 준비중",
-    "en": "Preparing updates",
-    "ja": "アップデート準備中"
+    "ko": "서비스 운영 중",
+    "en": "Service Running",
+    "ja": "サービス運用中"
   },
   "teamSize": {
     "ko": "1",
@@ -46,24 +46,24 @@
   },
   "additionalFeatures": {
     "ko": "- 8개국 출시- \n - 아이폰이 옆에 없어도 기록 가능",
-    "en": "Launched in 8 countries; records workouts even without the iPhone nearby.",
-    "ja": "8か国でリリース。iPhoneが近くになくても記録可能。"
+    "en": "Launched in 8 countries\nrecords workouts even without the iPhone nearby.",
+    "ja": "8か国でリリース\niPhoneが近くになくても記録可能"
   },
   "features": {
     "ko": [
       "부위별 운동 기록",
       "루틴별 통계 제공",
-      "칼로리 추정"
+      "칼로리&심박수 추정"
     ],
     "en": [
       "Body-part specific workout logging",
       "Per-routine statistics",
-      "Calorie estimation"
+      "Calorie & Heart Rate estimation"
     ],
     "ja": [
       "部位別ワークアウト記録",
       "ルーチン別の統計提供",
-      "消費カロリー推定"
+      "消費カロリー&心拍数推定"
     ]
   },
   "overviewStory": {
@@ -81,12 +81,12 @@
       "ja": "手動記録の煩雑さとルーチン維持の難しさが、継続的な習慣化を妨げる。"
     },
     "target": {
-      "ko": "애플워치로 가벼운 루틴부터 체계적으로 기록·분석하고 싶은 사용자.",
+      "ko": "체계적으로 기록·분석하고 싶은 사용자.",
       "en": "Users who want structured logging and analysis of workouts via Apple Watch.",
       "ja": "Apple Watchで体系的にワークアウトを記録・分析したいユーザー。"
     },
     "value": {
-      "ko": "워치 단독 기록, 루틴 중심 통계, 간단한 칼로리 추정으로 ‘기록→회고→개선’ 사이클을 쉽게 만듦.",
+      "ko": "워치 단독 기록, 루틴 중심 통계, 간단한 칼로리&심박수 추정으로 ‘기록→회고→개선’ 사이클을 쉽게 만듦.",
       "en": "Watch-only logging, routine-centric stats, and simple calorie estimates make the log→reflect→improve cycle easy.",
       "ja": "Watch単独記録・ルーチン中心の統計・簡易カロリー推定で「記録→振り返り→改善」の循環を容易にする。"
     }
@@ -120,14 +120,14 @@
     },
     {
       "title": {
-        "ko": "간편 칼로리 추정",
-        "en": "Lightweight Calorie Estimation",
-        "ja": "軽量なカロリー推定"
+        "ko": "간편 칼로리&심박수 추정",
+        "en": "Lightweight Calorie & Heart Rate Estimation",
+        "ja": "軽量なカロリー&心拍数推定"
       },
       "description": {
-        "ko": "운동 유형·세트·휴식 기반의 단순 모델로 대략적인 칼로리 소모를 산출.",
-        "en": "A simple model estimates calories from exercise type, sets, and rest.",
-        "ja": "種目・セット・休憩に基づく簡易モデルで概算カロリーを算出。"
+        "ko": "Apple healthkit을 통해 칼로리와 심박수를 추정합니다.",
+        "en": "Estimate calories and heart rate through Apple healthkit.",
+        "ja": "Apple healthkitを通じてカロリーと心拍数を推定。"
       },
       "implemented": true
     }
@@ -140,7 +140,6 @@
       "/assets/routiq/shot-4.png"
     ]
   },
-  
   "stackAndArchitecture": {
     "techStack": {
       "frontend": "SwiftUI, WatchConnectivity",
@@ -149,27 +148,5 @@
       "loggingMonitoring": "Firebase"
     }
   },
-  "lessonsLearned": {
-    "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
-    "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
-    "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
-  },
-  "results": {
-    "achievements": {
-      "ko": "온디바이스 OCR·SRS·Shortcuts 연계 학습 루프 구현, iCloud 동기화 안정화",
-      "en": "Implemented on-device OCR + SRS + Shortcuts learning loop; stabilized iCloud sync",
-      "ja": "オンデバイスOCR・SRS・ショートカット連携の学習ループを実装し、iCloud同期を安定化"
-    },
-    "nextSteps": {
-      "ko": "상용한자 커리큘럼 고도화, 클로즈 난이도 튜너, 손글씨 피드백 곡선 보정",
-      "en": "Enhance Joyo-kanji curriculum, add cloze difficulty tuner, calibrate handwriting feedback curve",
-      "ja": "常用漢字カリキュラム高度化、クローズ難易度チューナー、手書きフィードバック補正"
-    }
-  },
-  "additional_links": {
-    "website": "https://acon.app",
-    "blog": "https://blog.acon-trainer.com/flutter-cv-ai"
-  },
   "flag": "active"
-
 }

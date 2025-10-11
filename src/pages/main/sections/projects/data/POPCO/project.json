@@ -137,7 +137,7 @@
     "techStack": {
       "frontend": "SwiftUI, Combine, WatchConnectivity",
       "backend": "FastAPI",
-      "database": "SQLite",
+      "database": "SwiftData",
       "devops": "TestFlight",
       "loggingMonitoring": "Firebase"
     }

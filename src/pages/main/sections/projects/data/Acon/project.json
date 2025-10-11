@@ -15,9 +15,9 @@
     "ja": "iOS開発者"
   },
   "tags": {
-    "ko": ["UIKit", "SOPT", "MapKit", "CoreLocation", "Glassmorphism"],
-    "en": ["UIKit", "SOPT", "MapKit", "CoreLocation", "Glassmorphism"],
-    "ja": ["UIKit", "SOPT", "MapKit", "CoreLocation", "グラスモーフィズム"]
+    "ko": ["UIKit", "SOPT", "MapKit", "Glassmorphism"],
+    "en": ["UIKit", "SOPT", "MapKit", "Glassmorphism"],
+    "ja": ["UIKit", "SOPT", "MapKit", "グラスモーフィズム"]
   },
   "platform": {
     "ko": "iOS, Android",

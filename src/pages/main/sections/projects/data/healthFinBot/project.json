@@ -1,237 +1,215 @@
 {
   "name": {
-    "ko": "헬스핀봇",
-    "en": "healthFinBot",
-    "ja": "ヘルスフィンボット"
+    "ko": "핀헬스봇 (FinHealthBot)",
+    "en": "FinHealthBot",
+    "ja": "FinHealthBot（フィンヘルスボット）"
   },
   "summary": {
-    "ko": "AI 기반 개인 건강 관리 및 금융 최적화 서비스",
-    "en": "AI-based personal health management and financial optimization service",
-    "ja": "AIベースの個人健康管理と金融最適化サービス"
+    "ko": "Streamlit 기반 UI 위에서 LangGraph 워크플로우와 RAG를 결합해 일상 대화부터 금융·헬스케어 상담까지 제공하는 멀티 역할 AI 어시스턴트",
+    "en": "A multi-role AI assistant that combines a LangGraph workflow with RAG on a Streamlit UI to handle everything from casual chat to finance and healthcare consultations.",
+    "ja": "StreamlitベースのUI上でLangGraphワークフローとRAGを組み合わせ、日常会話から金融・ヘルスケア相談まで提供するマルチロールAIアシスタント。"
   },
   "role": {
-    "ko": "Full-Stack Developer",
-    "en": "Full-Stack Developer",
-    "ja": "Full-Stack Developer"
+    "ko": "AI 서비스·백엔드 개발",
+    "en": "AI service & backend development",
+    "ja": "AIサービス／バックエンド開発"
   },
   "tags": {
-    "ko": ["React", "Node.js", "AI", "Health", "Finance"],
-    "en": ["React", "Node.js", "AI", "Health", "Finance"],
-    "ja": ["React", "Node.js", "AI", "Health", "Finance"]
+    "ko": ["LangGraph", "LangChain", "Streamlit", "Gemini", "MongoDB", "Qdrant", "RAG"],
+    "en": ["LangGraph", "LangChain", "Streamlit", "Gemini", "MongoDB", "Qdrant", "RAG"],
+    "ja": ["LangGraph", "LangChain", "Streamlit", "Gemini", "MongoDB", "Qdrant", "RAG"]
   },
   "platform": {
-    "ko": "Web, Mobile",
-    "en": "Web, Mobile",
-    "ja": "Web, Mobile"
+    "ko": "Web (Streamlit)",
+    "en": "Web (Streamlit)",
+    "ja": "Web（Streamlit）"
   },
   "workPeriod": {
-    "ko": "2024.03 - 2024.08",
-    "en": "2024.03 - 2024.08",
-    "ja": "2024.03 - 2024.08"
+    "ko": "2025.03 - 2025.04",
+    "en": "2025.03 - 2025.04",
+    "ja": "2025.03 - 2025.04"
   },
   "releaseDate": {
-    "ko": "2024.08",
-    "en": "2024.08",
-    "ja": "2024.08"
-  },
-  "serviceStatus": {
-    "ko": "완료",
-    "en": "Completed",
-    "ja": "完了"
+    "ko": "2025.04",
+    "en": "2025.04",
+    "ja": "2025.04"
   },
   "teamSize": {
-    "ko": "3",
-    "en": "3",
-    "ja": "3"
+    "ko": "2",
+    "en": "2",
+    "ja": "2"
   },
   "features": {
     "ko": [
-      "AI 기반 건강 데이터 분석",
-      "개인화된 금융 투자 추천",
-      "실시간 건강 모니터링",
-      "통합 대시보드"
+      "사용자 질문 맥락에 따라 일상 대화·재무·헬스케어 전문가 역할을 자동 전환",
+      "Qdrant 기반 RAG로 금융·헬스케어 문서를 검색해 답변을 보강",
+      "Tavily Search 연동으로 필요한 경우 실시간 외부 정보를 조회",
+      "Streamlit UI에서 로그인, 채팅방 생성, 대화 히스토리 관리 지원",
+      "MongoDB와 Qdrant를 이용해 대화 이력 저장과 오래된 기록 백업 자동화"
     ],
     "en": [
-      "AI-based health data analysis",
-      "Personalized financial investment recommendations",
-      "Real-time health monitoring",
-      "Integrated dashboard"
+      "Auto-switches roles (casual, finance, healthcare) based on user intent and context",
+      "Augments answers with finance/health documents via Qdrant-backed RAG",
+      "Fetches live external info via Tavily Search when needed",
+      "Supports login, room creation, and history management in Streamlit UI",
+      "Stores chats in MongoDB and auto-archives older summaries to Qdrant"
     ],
     "ja": [
-      "AIベースの健康データ分析",
-      "個人化された金融投資推奨",
-      "リアルタイム健康モニタリング",
-      "統合ダッシュボード"
+      "ユーザーの文脈に応じて（日常／金融／ヘルスケア）専門ロールを自動切替",
+      "QdrantベースのRAGで金融・医療文書を検索し回答を補強",
+      "必要に応じてTavily Searchで外部の最新情報を取得",
+      "Streamlit UIでログイン・ルーム作成・会話履歴管理をサポート",
+      "MongoDBに履歴を保存し、古い要約をQdrantへ自動バックアップ"
     ]
   },
   "links": {
-    "demo": "https://healthfinbot-demo.vercel.app",
-    "github": "https://github.com/YourUsername/healthFinBot"
+    "github": ""
   },
   "additionalFeatures": {
-    "ko": "건강과 금융을 연결하는 혁신적인 AI 서비스",
-    "en": "Innovative AI service connecting health and finance",
-    "ja": "健康と金融を繋ぐ革新的なAIサービス"
+    "ko": "LangChain과 LangGraph를 조합해 프롬프트 선택·검색·품질검사 루프를 한 워크플로우에서 관리하고, LangSmith 연동으로 응답 품질을 자동 점검",
+    "en": "Combines LangChain and LangGraph to manage prompt selection, retrieval, and QA in a single workflow; integrates LangSmith to automatically check response quality.",
+    "ja": "LangChainとLangGraphを組み合わせ、プロンプト選択・検索・品質検査のループを単一ワークフローで管理。LangSmith連携により応答品質を自動チェック。"
   },
   "overviewStory": {
-    "ko": "개인의 건강 데이터와 금융 상황을 분석하여 최적의 건강 관리 계획과 투자 전략을 제안하는 AI 기반 서비스",
-    "en": "AI-based service that analyzes personal health data and financial situation to suggest optimal health management plans and investment strategies",
-    "ja": "個人の健康データと金融状況を分析し、最適な健康管理計画と投資戦略を提案するAIベースサービス"
+    "ko": "고객사 요구 챗봇 개발전 연습용 프로젝트입니다.",
+    "en": "Practice project for customer-requested chatbot development.",
+    "ja": "顧客要望のチャットボット開発前の練習プロジェクト。"
   },
   "service": {
     "problem": {
-      "ko": "건강과 금융 관리의 분리로 인한 비효율적인 라이프스타일 관리",
-      "en": "Inefficient lifestyle management due to separation of health and financial management",
-      "ja": "健康と金融管理の分離による非効率的なライフスタイル管理"
+      "ko": "일상 대화와 전문 상담을 한 곳에서 지원하는 챗봇이 부족하고, 금융·헬스케어 답변의 신뢰도를 검증할 수단이 제한적임",
+      "en": "Few chatbots support both casual conversation and expert consultations in one place, and tools to validate the reliability of finance/health answers are limited.",
+      "ja": "日常会話と専門相談を1つで賄えるチャットボットが不足し、金融・医療分野の回答信頼性を検証する手段も限られている。"
     },
     "target": {
-      "ko": "건강과 재정을 종합적으로 관리하고자 하는 30-50대 성인",
-      "en": "Adults aged 30-50 who want to manage health and finances comprehensively",
-      "ja": "健康と財政を総合的に管理したい30-50代の成人"
+      "ko": "일상 소통과 전문 지식 상담을 동시에 원하는 사용자, 내부 상담 자동화를 고민하는 금융·헬스케어 조직",
+      "en": "Users who want both casual chat and expert advice, and finance/health organizations seeking to automate internal consultations.",
+      "ja": "日常のやり取りと専門知識の相談を同時に求めるユーザー、内製の相談自動化を検討する金融・ヘルスケア組織。"
     },
     "value": {
-      "ko": "AI 기반 통합 분석을 통한 최적의 건강-금융 라이프스타일 제안",
-      "en": "Optimal health-financial lifestyle suggestions through AI-based integrated analysis",
-      "ja": "AIベース統合分析による最適な健康-金融ライフスタイル提案"
+      "ko": "LangGraph 기반 역할 전환과 RAG를 통해 맥락감 있는 상담을 제공하고, 대화를 안전하게 저장·백업하는 운영 편의성 제공",
+      "en": "Delivers contextful consultations via LangGraph role switching and RAG, while providing operational convenience with safe storage and backup of conversations.",
+      "ja": "LangGraphのロール切替とRAGで文脈に沿った相談を提供し、会話の安全な保存・バックアップで運用面の利便性も実現。"
     }
   },
   "detail_features": [
     {
       "title": {
-        "ko": "AI 건강 데이터 분석",
-        "en": "AI Health Data Analysis",
-        "ja": "AI健康データ分析"
+        "ko": "LangGraph 기반 멀티 역할 오케스트레이션",
+        "en": "LangGraph-based Multi-role Orchestration",
+        "ja": "LangGraphベースのマルチロール・オーケストレーション"
       },
       "description": {
-        "ko": "웨어러블 기기와 건강 앱 데이터를 통합하여 개인의 건강 상태를 종합적으로 분석",
-        "en": "Comprehensively analyzes personal health status by integrating wearable device and health app data",
-        "ja": "ウェアラブルデバイスと健康アプリデータを統合し、個人の健康状態を総合的に分析"
+        "ko": "LangGraph StateGraph로 선택·검증·응답 노드를 구성해 사용자의 질문에 맞는 역할을 자동으로 선택",
+        "en": "Builds select/validate/respond nodes in a LangGraph StateGraph to auto-select the right role per user query.",
+        "ja": "LangGraphのStateGraphで選択・検証・応答ノードを構成し、質問に応じて最適ロールを自動選択。"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "개인화된 투자 추천",
-        "en": "Personalized Investment Recommendations",
-        "ja": "個人化された投資推奨"
+        "ko": "RAG 지식 검색과 Tavily 통합",
+        "en": "RAG Retrieval with Tavily Integration",
+        "ja": "RAG知識検索とTavily統合"
       },
       "description": {
-        "ko": "건강 상태와 위험 성향을 고려한 맞춤형 투자 포트폴리오 제안",
-        "en": "Customized investment portfolio suggestions considering health status and risk tolerance",
-        "ja": "健康状態とリスク許容度を考慮したカスタマイズされた投資ポートフォリオ提案"
+        "ko": "Qdrant와 Google 임베딩을 사용해 관련 문서를 검색하고, 필요 시 Tavily Search로 실시간 정보를 보강",
+        "en": "Uses Qdrant with Google embeddings to retrieve documents and augments with live info via Tavily Search when needed.",
+        "ja": "QdrantとGoogle埋め込みで関連文書を検索し、必要に応じてTavily Searchで最新情報を補強。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "LangSmith 품질 점검 루프",
+        "en": "LangSmith Quality Check Loop",
+        "ja": "LangSmith品質チェックループ"
+      },
+      "description": {
+        "ko": "LangSmith 프롬프트를 호출해 응답 품질과 안전성을 확인하고, 실패 시 재시도를 유도",
+        "en": "Invokes LangSmith prompts to verify response quality and safety, triggering retries on failure.",
+        "ja": "LangSmithのプロンプトで応答の品質・安全性を確認し、失敗時はリトライを誘発。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "MongoDB 기반 사용자·채팅방 관리",
+        "en": "MongoDB-based User & Room Management",
+        "ja": "MongoDBによるユーザー／チャットルーム管理"
+      },
+      "description": {
+        "ko": "로그인 후 채팅방 생성, 채팅 이력 저장, 방 단위 삭제 기능을 MongoDB 컬렉션으로 구성",
+        "en": "Implements login, room creation, chat history storage, and room-level deletion via MongoDB collections.",
+        "ja": "ログイン後のルーム作成、履歴保存、ルーム単位の削除をMongoDBコレクションで実装。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "Qdrant 대화 백업 파이프라인",
+        "en": "Qdrant Conversation Backup Pipeline",
+        "ja": "Qdrant会話バックアップパイプライン"
+      },
+      "description": {
+        "ko": "대화가 일정 쌍을 넘으면 Qdrant에 요약 조각을 백업하고 MongoDB 이력을 정리해 성능을 유지",
+        "en": "When conversations exceed a threshold, backs up summary chunks to Qdrant and prunes MongoDB to maintain performance.",
+        "ja": "会話が一定数を超えると要約チャンクをQdrantへバックアップし、MongoDB履歴を整理して性能を維持。"
       },
       "implemented": true
     }
   ],
   "preview_screenshots": {
-    "screenshots": [
-      "/assets/healthfinbot/shot-1.png",
-      "/assets/healthfinbot/shot-2.png",
-      "/assets/healthfinbot/shot-3.png",
-      "/assets/healthfinbot/shot-4.png"
-    ],
-    "description": {
-      "ko": "반응형 웹/모바일 프리뷰",
-      "en": "Responsive Web/Mobile Preview",
-      "ja": "レスポンシブウェブ/モバイルプレビュー"
-    }
+    "screenshots": []
   },
   "stackAndArchitecture": {
     "techStack": {
-      "frontend": "React, TypeScript, Tailwind CSS",
-      "backend": "Node.js, Express, MongoDB",
-      "AI": "Python, TensorFlow, scikit-learn",
-      "devops": "Docker, AWS, GitHub Actions"
-    },
-    "data": {
-      "ko": "MongoDB, Redis",
-      "en": "MongoDB, Redis",
-      "ja": "MongoDB, Redis"
-    },
-      "backend": {
-        "ko": "Node.js + Express RESTful API, MongoDB 데이터베이스, Python AI/ML 파이프라인",
-        "en": "Node.js + Express RESTful API, MongoDB database, Python AI/ML pipeline",
-        "ja": "Node.js + Express RESTful API、MongoDBデータベース、Python AI/MLパイプライン"
-      },
-      "dataFlow": {
-        "ko": "사용자 데이터 → AI 분석 엔진 → 개인화 추천 → 대시보드 표시",
-        "en": "User Data → AI Analysis Engine → Personalized Recommendations → Dashboard Display",
-        "ja": "ユーザーデータ → AI分析エンジン → 個人化推奨 → ダッシュボード表示"
-      },
-      "security": {
-        "ko": "JWT 인증, 데이터 암호화, HIPAA 준수",
-        "en": "JWT authentication, data encryption, HIPAA compliance",
-        "ja": "JWT認証、データ暗号化、HIPAA準拠"
-      }
-    },
+      "frontend": "Streamlit, streamlit_chat",
+      "backend": "Python, LangChain, LangGraph",
+      "database": "MongoDB, Qdrant",
+      "AI": "Google Gemini 1.5 Flash, Google Generative AI Embeddings, LangSmith"
+    }
+  },
   "responsibilities": {
     "ko": [
-      "React 프론트엔드 개발",
-      "Node.js 백엔드 API 설계",
-      "AI 모델 통합 및 최적화",
-      "데이터베이스 설계 및 관리"
+      "LangGraph 상태 그래프를 설계해 역할 전환과 품질 검증 플로우 구현",
+      "Qdrant RAG와 MongoDB 저장소를 연동해 검색 및 기록 파이프라인 구축",
+      "Streamlit UI에서 로그인·채팅방 관리·대화 렌더링 기능 개발",
+      "Tavily Search, LangSmith 등 외부 서비스 예외 처리와 운영 로깅 구성"
     ],
     "en": [
-      "React frontend development",
-      "Node.js backend API design",
-      "AI model integration and optimization",
-      "Database design and management"
+      "Designed LangGraph state graphs to implement role switching and quality-check flows",
+      "Integrated Qdrant RAG with MongoDB to build retrieval and logging pipelines",
+      "Built Streamlit UI for login, room management, and chat rendering",
+      "Handled exceptions for Tavily Search / LangSmith and set up operational logging"
     ],
     "ja": [
-      "Reactフロントエンド開発",
-      "Node.jsバックエンドAPI設計",
-      "AIモデル統合と最適化",
-      "データベース設計と管理"
+      "LangGraphのステートグラフを設計し、ロール切替と品質検証フローを実装",
+      "Qdrant RAGとMongoDBを連携して検索・記録パイプラインを構築",
+      "Streamlitでログイン・ルーム管理・チャット描画を実装",
+      "Tavily Search／LangSmith等の例外処理と運用ログを整備"
     ]
   },
   "lessonsLearned": {
-    "ko": "건강과 금융 데이터의 통합 분석을 통해 사용자의 라이프스타일 개선에 실질적인 도움을 제공할 수 있음을 확인",
-    "en": "Confirmed that integrated analysis of health and financial data can provide practical help in improving users' lifestyles",
-    "ja": "健康と金融データの統合分析により、ユーザーのライフスタイル改善に実質的な助けを提供できることを確認"
+    "ko": "LangGraph로 여러 역할과 검증 단계를 연결할 때 상태 관리와 예외 처리를 명확히 해야 안정적으로 동작함을 체감",
+    "en": "Connecting multiple roles and validation stages with LangGraph requires explicit state management and exception handling for stable operation.",
+    "ja": "複数ロールと検証段階をLangGraphで接続するには、明確な状態管理と例外処理が安定動作の鍵であると実感。"
   },
-  "metrics": {
-    "ko": [
-      "월간 활성 사용자 25,000명",
-      "평균 건강 목표 달성률 40% 향상",
-      "투자 수익률 평균 15% 개선"
-    ],
-    "en": [
-      "25,000 monthly active users",
-      "40% improvement in average health goal achievement rate",
-      "Average 15% improvement in investment returns"
-    ],
-    "ja": [
-      "月間アクティブユーザー25,000人",
-      "平均健康目標達成率40%向上",
-      "投資収益率平均15%改善"
-    ]
-  },
-    "signing": "AWS Certificate Manager",
-    "secrets": {
-      "ko": "AWS Secrets Manager를 통한 환경 변수 관리",
-      "en": "Environment variable management via AWS Secrets Manager",
-      "ja": "AWS Secrets Managerによる環境変数管理"
-    },
   "results": {
     "achievements": {
-      "ko": "건강과 금융을 연결하는 혁신적인 AI 서비스로 사용자 만족도 4.7/5.0 달성",
-      "en": "Achieved user satisfaction 4.7/5.0 with innovative AI service connecting health and finance",
-      "ja": "健康と金融を繋ぐ革新的なAIサービスでユーザー満足度4.7/5.0達成"
-    },
-    "learnings": {
-      "ko": "다양한 데이터 소스의 통합과 AI 모델의 실시간 추론 최적화 경험을 얻음",
-      "en": "Gained experience in integrating diverse data sources and optimizing real-time AI model inference",
-      "ja": "多様なデータソースの統合とAIモデルのリアルタイム推論最適化の経験を獲得"
+      "ko": "역할 분기, RAG 검색, 품질 검증을 단일 워크플로우에 통합해 상담 응답 품질을 향상",
+      "en": "Improved consultation quality by unifying role branching, RAG retrieval, and quality checks into a single workflow.",
+      "ja": "ロール分岐・RAG検索・品質検証を単一ワークフローに統合し、相談応答の品質を向上。"
     },
     "nextSteps": {
-      "ko": "웨어러블 기기 연동 확대, 블록체인 기반 투자 추천 시스템 도입",
-      "en": "Expand wearable device integration, introduce blockchain-based investment recommendation system",
-      "ja": "ウェアラブルデバイス連携拡大、ブロックチェーンベース投資推奨システム導入"
+      "ko": "LangGraph 노드 모니터링과 사용자 맞춤형 프롬프트 설정 기능을 추가 예정",
+      "en": "Add node-level monitoring in LangGraph and user-specific prompt configuration.",
+      "ja": "LangGraphのノード監視とユーザー別プロンプト設定機能を追加予定。"
     }
   },
   "additional_links": {
-    "website": "https://healthfinbot.com",
-    "blog": "https://blog.healthfinbot.com/ai-health-finance"
+    "website": "",
+    "blog": ""
   },
-  "flag": "active"
+  "flag": "deactive"
 }

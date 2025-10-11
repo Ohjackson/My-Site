@@ -6,8 +6,8 @@
   },
   "summary": {
     "ko": "개인 포트폴리오 웹사이트",
-    "en": "Personal portfolio website showcasing modern web development technologies",
-    "ja": "現代的ウェブ開発技術を示す個人ポートフォリオウェブサイト"
+    "en": "Personal portfolio website",
+    "ja": "個人ポートフォリオサイト"
   },
   "role": {
     "ko": "Full-Cycle Solo Project",
@@ -15,9 +15,9 @@
     "ja": "Full-Cycle Solo Project"
   },
   "tags": {
-    "ko": ["React", "Vite", "TypeScript", "Tailwind", "MUI"],
-    "en": ["React", "Vite", "TypeScript", "Tailwind", "MUI"],
-    "ja": ["React", "Vite", "TypeScript", "Tailwind", "MUI"]
+    "ko": ["React", "Vite", "Tailwind", "MUI"],
+    "en": ["React", "Vite", "Tailwind", "MUI"],
+    "ja": ["React", "Vite", "Tailwind", "MUI"]
   },
   "platform": {
     "ko": "Web",
@@ -25,14 +25,14 @@
     "ja": "Web"
   },
   "workPeriod": {
-    "ko": "2024.12",
-    "en": "2024.12",
-    "ja": "2024.12"
+    "ko": "2025.10",
+    "en": "2025.10",
+    "ja": "2025.10"
   },
   "releaseDate": {
-    "ko": "2024.12",
-    "en": "2024.12",
-    "ja": "2024.12"
+    "ko": "2025.10",
+    "en": "2025.10",
+    "ja": "2025.10"
   },
   "serviceStatus": {
     "ko": "진행중",
@@ -44,97 +44,45 @@
     "en": "1",
     "ja": "1"
   },
-  "additionalFeatures": {
-    "ko": "개인 포트폴리오 웹사이트로, React와 Vite를 활용한 현대적인 웹 개발 기술을 보여줍니다. 반응형 디자인과 다국어 지원을 통해 다양한 사용자에게 최적화된 경험을 제공합니다.",
-    "en": "Personal portfolio website showcasing modern web development technologies using React and Vite. Provides optimized experience for diverse users through responsive design and multilingual support.",
-    "ja": "ReactとViteを活用した現代的ウェブ開発技術を示す個人ポートフォリオウェブサイトです。レスポンシブデザインと多言語サポートにより、多様なユーザーに最適化された体験を提供します。"
-  },
   "features": {
     "ko": [
       "프로젝트 카드·상세 템플릿화(복붙 배포용)",
       "국/영/일 다국어 토글 및 콘텐츠 동기화",
       "반응형 레이아웃과 접근성(A11y) 준수",
-      "Vite 기반 성능 최적화(코드 스플리팅/지연 로딩)",
-      "SEO/OG 태그 자동 생성(페이지별 메타)"
+      "Vite 기반 성능 최적화(코드 스플리팅/지연 로딩)"
     ],
     "en": [
-      "Project cards and detail templates (ready to ship)",
-      "Korean/English/Japanese multilingual toggle with synchronized content",
+      "Project cards and detail templates (copy-and-ship)",
+      "KR/EN/JA multilingual toggle with synchronized content",
       "Responsive layout and accessibility (A11y) compliance",
-      "Vite-powered performance (code-splitting/lazy loading)",
-      "Automatic SEO/OG tags per page"
+      "Vite-based performance optimization (code splitting/lazy loading)"
     ],
     "ja": [
-      "プロジェクトカードと詳細テンプレート（即配布可）",
+      "プロジェクトカード・詳細テンプレート（コピペ配布用）",
       "韓/英/日の多言語トグルとコンテンツ同期",
-      "レスポンシブ対応とアクセシビリティ(A11y)準拠",
-      "Viteによる高速化（コード分割/遅延読み込み）",
-      "ページ単位のSEO/OGメタ自動生成"
+      "レスポンシブレイアウトとアクセシビリティ（A11y）準拠",
+      "Viteベースの性能最適化（コード分割／遅延読み込み）"
     ]
   },
   "overviewStory": {
-    "ko": "개인 프로젝트·글·레퍼런스를 한 곳에서 빠르게 보여주기 위해 만든 포트폴리오 사이트입니다. 읽기 편한 아이보리 톤과 간결한 정보 설계를 통해 채용 담당자가 30초 안에 강점을 파악하도록 설계했습니다.",
-    "en": "A portfolio site built to present projects, writings, and references in one place—fast. With an ivory tone and concise information design, recruiters can grasp key strengths in under 30 seconds.",
-    "ja": "プロジェクト・文章・リファレンスを一括で素早く見せるためのポートフォリオサイト。読みやすいアイボリートーンと簡潔な情報設計で、採用担当が30秒以内に強みを把握できるよう設計。"
+    "ko": "개인 프로젝트·글·레퍼런스를 한 곳에서 빠르게 보여주기 위해 만든 포트폴리오 사이트입니다. 읽기 편한 아이보리 톤과 미니멀리즘을 추구하여 깔끔한 디자인을 의도하여 만들어 보았습니다..",
+    "en": "A portfolio site to quickly present personal projects, posts, and references in one place. I aimed for a clean look with an easy-to-read ivory tone and minimalism.",
+    "ja": "個人のプロジェクト・文章・リファレンスを一箇所で素早く見せるために制作したポートフォリオサイト。読みやすいアイボリー調とミニマリズムで、すっきりしたデザインを目指しました。"
   },
   "links": {
-    "demo": "https://mysite.com",
     "github": "https://github.com/Ohjackson/My-Site"
-  },
-  "service": {
-    "problem": {
-      "ko": "이력서·깃허브·노션에 흩어진 정보로 전달력이 떨어짐. 초기 진입 속도와 다국어 지원 부족.",
-      "en": "Scattered information across resume, GitHub, and Notion reduces clarity. Slow initial access and limited multilingual support.",
-      "ja": "履歴書・GitHub・Notionに情報が分散し伝達力が低下。初期アクセスの遅さと多言語対応の不足。"
-    },
-    "target": {
-      "ko": "채용 담당자·협업 파트너·클라이언트 등 빠른 판단이 필요한 이해관계자.",
-      "en": "Recruiters, collaborators, and clients who need to make quick decisions.",
-      "ja": "迅速な判断が必要な採用担当者・コラボレーター・クライアント。"
-    },
-    "value": {
-      "ko": "핵심 프로젝트를 구조화해 빠르게 파악 가능, 다국어·반응형으로 글로벌 접근성 확보.",
-      "en": "Structured key projects for rapid understanding, with multilingual and responsive design for global accessibility.",
-      "ja": "主要プロジェクトを構造化して迅速に理解可能。多言語・レスポンシブでグローバルなアクセス性を確保。"
-    }
   },
   "detail_features": [
     {
       "title": {
-        "ko": "프로젝트 템플릿 렌더러",
-        "en": "Project Template Renderer",
-        "ja": "プロジェクトテンプレートレンダラー"
-      },
-      "description": {
-        "ko": "JSON 기반 템플릿을 받아 카드/상세 페이지를 자동으로 생성. 일관된 UI와 빠른 업데이트 지원.",
-        "en": "Consumes JSON templates to generate cards and detail pages automatically, enabling consistent UI and fast updates.",
-        "ja": "JSONテンプレートからカード/詳細ページを自動生成。統一UIと迅速な更新を実現。"
-      },
-      "implemented": true
-    },
-    {
-      "title": {
         "ko": "다국어(i18n) 동기화",
         "en": "Multilingual (i18n) Synchronization",
-        "ja": "多言語(i18n)同期"
+        "ja": "多言語（i18n）同期"
       },
       "description": {
         "ko": "국/영/일 키 동기화와 폴백 전략을 적용해 번역 누락 최소화.",
-        "en": "Synchronizes KR/EN/JA keys with fallback strategy to minimize missing translations.",
-        "ja": "韓/英/日のキーを同期し、フォールバック戦略で翻訳抜けを最小化。"
-      },
-      "implemented": true
-    },
-    {
-      "title": {
-        "ko": "성능 최적화",
-        "en": "Performance Optimization",
-        "ja": "パフォーマンス最適化"
-      },
-      "description": {
-        "ko": "Vite 번들 최적화, 코드 스플리팅, 이미지 지연 로딩으로 TTI/CLS 개선.",
-        "en": "Vite bundle tuning, code-splitting, and image lazy-loading to improve TTI/CLS.",
-        "ja": "Viteのバンドル調整、コード分割、画像遅延読み込みでTTI/CLSを改善。"
+        "en": "Synchronizes KR/EN/JA keys with a fallback strategy to minimize missing translations.",
+        "ja": "韓・英・日のキーを同期し、フォールバック戦略で翻訳抜けを最小化。"
       },
       "implemented": true
     }
@@ -142,45 +90,9 @@
   "stackAndArchitecture": {
     "techStack": {
       "frontend": "React 18, TypeScript, Vite",
-
       "devops": "Cloudflare Pages",
       "infra": "Cloudflare",
       "loggingMonitoring": "Cloudflare Analytics"
     }
-  },
-  "responsibilities": {
-    "ko": [
-      "- 전체 아키텍처 설계 및 기술 스택 선택\n- React 컴포넌트 구조화 및 상태 관리\n- 다국어 지원 시스템 구현",
-      "- 반응형 디자인 및 접근성 최적화\n- 성능 최적화 및 SEO 설정\n- 배포 파이프라인 구축"
-    ],
-    "en": [
-      "- Overall architecture design and technology stack selection\n- React component structuring and state management\n- Multilingual support system implementation",
-      "- Responsive design and accessibility optimization\n- Performance optimization and SEO setup\n- Deployment pipeline construction"
-    ],
-    "ja": [
-      "- 全体アーキテクチャ設計と技術スタック選択\n- Reactコンポーネント構造化と状態管理\n- 多言語サポートシステム実装",
-      "- レスポンシブデザインとアクセシビリティ最適化\n- パフォーマンス最適化とSEO設定\n- デプロイパイプライン構築"
-    ]
-  },
-  "lessonsLearned": {
-    "ko": "Vite의 빠른 개발 경험과 HMR이 생산성을 크게 향상시킴.\n- TypeScript의 타입 안전성이 런타임 에러를 크게 줄임.\n- 배포 환경에서 이미지 렌더링 문제 해결",
-    "en": "Vite's fast development experience and HMR significantly improved productivity.\n- TypeScript's type safety greatly reduced runtime errors.\n- Resolved image rendering issues in deployment environment",
-    "ja": "Viteの高速開発体験とHMRが生産性を大幅に向上。\n- TypeScriptの型安全性がランタイムエラーを大幅に削減\n- デプロイ環境での画像レンダリング問題を解決"
-  },
-  "results": {
-    "achievements": {
-      "ko": "완전한 포트폴리오 사이트 구축, 다국어 지원 완료, 반응형 디자인 구현",
-      "en": "Built complete portfolio site, implemented multilingual support, achieved responsive design",
-      "ja": "完全なポートフォリオサイト構築、多言語サポート完了、レスポンシブデザイン実装"
-    },
-    "nextSteps": {
-      "ko": "블로그 기능 추가",
-      "en": "Add blog functionality",
-      "ja": "ブログ機能追加"
-    }
-  },
-  "additional_links": {
-    "website": "https://mysite.com",
-    "github": "https://github.com/YourUsername/mysite"
   }
 }

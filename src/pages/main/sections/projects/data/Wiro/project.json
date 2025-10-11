@@ -10,14 +10,14 @@
     "ja": "感情記録とAIフィードバックで早期リスクを察知し、レポート作成と相談連携まで行うメンタルケアアプリ。"
   },
   "role": {
-    "ko": "기획·PM·iOS",
-    "en": "Planning, PM, iOS",
-    "ja": "企画・PM・iOS"
+    "ko": "Full-Cycle Developer",
+    "en": "Full-Cycle Developer",
+    "ja": "Full-Cycle Developer"
   },
   "tags": {
-    "ko": ["멘탈헬스", "저널링", "AI 피드백", "조기발견", "상담 연계"],
-    "en": ["Mental Health", "Journaling", "AI Feedback", "Early Detection", "Counseling Link"],
-    "ja": ["メンタルヘルス", "ジャーナリング", "AIフィードバック", "早期発見", "相談連携"]
+    "ko": ["멘탈헬스", "저널링", "AI 피드백", "조기발견"],
+    "en": ["Mental Health", "Journaling", "AI Feedback", "Early Detection"],
+    "ja": ["メンタルヘルス", "ジャーナリング", "AIフィードバック", "早期発見"]
   },
   "platform": {
     "ko": "iOS",
@@ -25,14 +25,9 @@
     "ja": "iOS"
   },
   "workPeriod": {
-    "ko": "2024.09 ~",
-    "en": "2024.09 ~",
-    "ja": "2024.09 ~"
-  },
-  "releaseDate": {
-    "ko": "알파 진행 중",
-    "en": "Alpha in progress",
-    "ja": "アルファ進行中"
+    "ko": "2024.08 - 2024.11",
+    "en": "2024.08 - 2024.11",
+    "ja": "2024.08 - 2024.11"
   },
   "serviceStatus": {
     "ko": "지속 개발",
@@ -40,45 +35,28 @@
     "ja": "継続開発"
   },
   "teamSize": {
-    "ko": "1",
-    "en": "1",
-    "ja": "1"
+    "ko": "3",
+    "en": "3",
+    "ja": "3"
   },
   "features": {
     "ko": [
-      "감정 저널링 및 실시간 AI 피드백",
-      "개인 상황(시간·예산·날씨 등) 반영 추천",
-      "주간/월간 감정 리포트와 행동 제안",
-      "상담사(민간/공인) 연계 및 정부 혜택 추천",
-      "커뮤니티·가벼운 상담(채팅/음성)"
+      "감정 저널링 및 AI 피드백",
+      "주간/월간 감정 리포트와 행동 제안"
     ],
     "en": [
       "Emotion journaling with real-time AI feedback",
-      "Situation-aware suggestions (time, budget, weather, etc.)",
-      "Weekly/monthly emotion reports with action plans",
-      "Counselor linkage (private/licensed) and government benefit tips",
-      "Community & light counseling (chat/voice)"
+      "Weekly/monthly emotion reports with action plans"
     ],
     "ja": [
       "感情ジャーナリングとリアルタイムAIフィードバック",
-      "状況連動の提案（時間・予算・天気など）",
-      "週次・月次の感情レポートと行動提案",
-      "相談員連携（民間/公認）と公的支援の案内",
-      "コミュニティ・ライト相談（チャット/音声）"
+      "週次・月次の感情レポートと行動提案"
     ]
   },
-  "links": {
-    "github": ""
-  },
-  "additionalFeatures": {
-    "ko": "저널 기반 감정지수 트래킹, 지역/연령대 맞춤 지표, 예방→상담→치료 후 관리까지 잇는 5단계 여정 설계",
-    "en": "Journal-based emotion index tracking, locale/age-tailored metrics, and a 5-stage journey from prevention to post-therapy care.",
-    "ja": "ジャーナル起点の感情指数トラッキング、地域/年齢別の指標、予防から治療後ケアまでの5段階ジャーニー設計。"
-  },
   "overviewStory": {
-    "ko": "OECD 최고 수준의 우울·불안 지표와 2030 세대의 급증 데이터를 문제의식으로 삼아, ‘헬스장 가듯 자연스러운 멘탈 케어’를 목표로 시작했습니다. 기록→분석→행동→연계의 가벼우면서도 효과적인 루틴을 제공합니다.",
-    "en": "Triggered by alarming OECD depression/anxiety figures and a sharp rise among people in their 20s–30s, we set out to make mental care as natural as going to the gym. WIRO offers a light yet effective loop: log → analyze → act → connect.",
-    "ja": "OECDの憂うつ・不安指標の高さと20–30代の増加を問題意識として、『ジムに行くように自然なメンタルケア』を目指して開始。記録→分析→行動→連携という軽量で効果的なループを提供します。"
+    "ko": "gcs에서 결성된 초기 창업팀입니다. \nOECD 최고 수준의 우울·불안 지표와 2030 세대의 급증 데이터를 문제의식으로 삼아, ‘헬스장 가듯 자연스러운 멘탈 케어’를 목표로 시작했습니다. ",
+    "en": "Triggered by alarming OECD depression/anxiety figures and a sharp rise among people in their 20s–30s, we set out to make mental care as natural as going to the gym.",
+    "ja": "OECDの憂うつ・不安指標の高さと20–30代の増加を問題意識として、『ジムに行くように自然なメンタルケア』を目指して開始。"
   },
   "service": {
     "problem": {
@@ -148,20 +126,7 @@
         "en": "Light chat/voice counseling (private) and, when needed, linkage to licensed counselors plus government benefit tips.",
         "ja": "ライトなチャット/音声相談（民間）から、必要に応じて公認相談員へ連携、公的支援や給付も案内。"
       },
-      "implemented": true
-    },
-    {
-      "title": {
-        "ko": "커뮤니티 & 안전장치",
-        "en": "Community & Safeguards",
-        "ja": "コミュニティ & セーフガード"
-      },
-      "description": {
-        "ko": "비공개 기본, 익명 보호, 위기 감지 시 안내·연락처 제공 등 안전 중심의 커뮤니티.",
-        "en": "Private-by-default, anonymity protection, and crisis guidance/contacts for a safety-first community.",
-        "ja": "デフォルト非公開・匿名保護・危機検知時の案内/連絡先提示など、安全重視のコミュニティ。"
-      },
-      "implemented": true
+      "implemented": false
     }
   ],
   "preview_screenshots": {
@@ -232,9 +197,5 @@
       "en": "Improve action recommendation precision, enhance crisis-signal detection, and launch community/light counseling features",
       "ja": "行動提案の精度向上、危機シグナル検知の高度化、コミュニティ/ライト相談の正式搭載"
     }
-  },
-  "additional_links": {
-    "website": "",
-    "blog": ""
   }
 }
