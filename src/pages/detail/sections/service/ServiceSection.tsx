@@ -43,24 +43,24 @@ export function ServiceSection({ data, language, backgroundColor }: ServiceSecti
         <div className="space-y-6">
           {data.problem && (
             <div>
-              <h3 className="font-semibold mb-2">{content[language].problem}</h3>
-              <p className="text-muted">
+              <h3 className="font-semibold mb-2 text-text">{content[language].problem}</h3>
+              <p className="text-text/80 leading-relaxed">
                 {typeof data.problem === 'string' ? data.problem : data.problem[language]}
               </p>
             </div>
           )}
           {data.target && (
             <div>
-              <h3 className="font-semibold mb-2">{content[language].target}</h3>
-              <p className="text-muted">
+              <h3 className="font-semibold mb-2 text-text">{content[language].target}</h3>
+              <p className="text-text/80 leading-relaxed">
                 {typeof data.target === 'string' ? data.target : data.target[language]}
               </p>
             </div>
           )}
           {data.value && (
             <div>
-              <h3 className="font-semibold mb-2">{content[language].value}</h3>
-              <p className="text-muted">
+              <h3 className="font-semibold mb-2 text-text">{content[language].value}</h3>
+              <p className="text-text/80 leading-relaxed">
                 {typeof data.value === 'string' ? data.value : data.value[language]}
               </p>
             </div>

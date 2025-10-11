@@ -28,7 +28,7 @@ export function OverviewSection({ data, language, backgroundColor }: OverviewSec
           {content[language].title}
         </h2>
         <div className="space-y-4 text-center">
-          <p className="text-lg text-gray-700 leading-relaxed whitespace-pre-line">
+          <p className="text-lg text-text/90 leading-relaxed whitespace-pre-line">
             {data.overviewStory[language].split('\n').map((line, index) => (
               <span key={index}>
                 {line}

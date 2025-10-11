@@ -36,15 +36,15 @@ export function ResponsibilitiesSection({ data, language, backgroundColor }: Res
             
             return (
               <div key={idx} className="space-y-2">
-                <h3 className="font-bold text-lg text-gray-800">{title}</h3>
+                <h3 className="font-bold text-lg text-text">{title}</h3>
                 {content && (
-                  <div className="text-gray-600 leading-relaxed">
+                  <div className="text-text/80 leading-relaxed">
                     {content.split('\n').map((line, lineIdx) => {
                       const trimmedLine = line.trim();
                       if (trimmedLine.startsWith('-')) {
                         return (
                           <div key={lineIdx} className="flex items-start mb-2">
-                            <span className="w-2 h-2 bg-gray-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                            <span className="w-2 h-2 bg-text/60 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                             <span>{trimmedLine.substring(1).trim()}</span>
                           </div>
                         );
