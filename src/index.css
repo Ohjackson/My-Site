@@ -1,19 +1,42 @@
 @import './styles/tokens.css';
 
+/* 폰트 정의 */
+@font-face {
+  font-family: 'Gowun Dodum';
+  src: url('./shared/fonts/fontData/Gowun_Dodum/GowunDodum-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Klee One';
+  src: url('./shared/fonts/fontData/Klee_One/KleeOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  /* 기본: 시스템 폰트 */
   body {
     background-color: rgb(var(--color-bg));
     color: rgb(var(--color-text));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
+  /* 한국어: Gowun Dodum */
   :lang(ko) body {
+    font-family: 'Gowun Dodum', 'Malgun Gothic', '맑은 고딕', serif;
   }
 
+  /* 일본어: Klee One */
   :lang(ja) body {
+    font-family: 'Klee One', 'Hiragino Sans', 'ヒラギノ角ゴシック', serif;
   }
 
   a {

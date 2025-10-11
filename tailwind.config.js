@@ -4,6 +4,10 @@ export default {
   content: ['index.html', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        'korean': ['Gowun Dodum', 'Malgun Gothic', '맑은 고딕', 'serif'],
+        'japanese': ['Klee One', 'Hiragino Sans', 'ヒラギノ角ゴシック', 'serif'],
+      },
       colors: {
         bg: 'rgb(var(--color-bg) / <alpha-value>)',
         surface: 'rgb(var(--color-surface) / <alpha-value>)',
