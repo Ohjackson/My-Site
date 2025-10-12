@@ -15,9 +15,9 @@
     "ja": "PM, Full-Stack"
   },
   "tags": {
-    "ko": ["MSA", "K8s", "springboot", "fastapi", "Kakao Cloud"],
-    "en": ["MSA", "K8s", "springboot", "fastapi", "Kakao Cloud"],
-    "ja": ["MSA", "K8s", "springboot", "fastapi", "Kakao Cloud"]
+    "ko": ["MSA", "K8s", "spring", "fastapi", "Kakao Cloud"],
+    "en": ["MSA", "K8s", "spring", "fastapi", "Kakao Cloud"],
+    "ja": ["MSA", "K8s", "spring", "fastapi", "Kakao Cloud"]
   },
   "platform": {
     "ko": "Web",

@@ -15,9 +15,9 @@
     "ja": "Full-Cycle Developer"
   },
   "tags": {
-    "ko": ["LangGraph", "Streamlit", "MongoDB", "Qdrant", "RAG"],
-    "en": ["LangGraph", "Streamlit", "MongoDB", "Qdrant", "RAG"],
-    "ja": ["LangGraph", "Streamlit", "MongoDB", "Qdrant", "RAG"]
+    "ko": ["LangGraph", "Qdrant", "RAG"],
+    "en": ["LangGraph", "Qdrant", "RAG"],
+    "ja": ["LangGraph", "Qdrant", "RAG"]
   },
   "platform": {
     "ko": "Web (Streamlit)",
