@@ -1,5 +1,5 @@
 export interface TechCategory {
-  id: 'mobile' | 'frontend' | 'backend' | 'data' | 'infra' | 'ai' | 'tools' | 'design';
+  id: 'mobile' | 'frontend' | 'backend' | 'data' | 'infra' | 'ai' | 'tools' | 'design' | 'experienced';
   badges: string[];
 }
 
@@ -63,13 +63,24 @@ export const TECH_CATEGORIES: readonly TechCategory[] = [
       'https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white',
       'https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white',
       'https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white',
-      'https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white'
+      'https://img.shields.io/badge/LangSmith-FF6B6B?style=for-the-badge&logo=langsmith&logoColor=white'
     ]
   },
   {
     id: 'design',
     badges: [
       'https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white'
+    ]
+  },
+  {
+    id: 'experienced',
+    badges: [
+      'https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white',
+      'https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white',
+      'https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white',
+      'https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white',
+      'https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white',
+      'https://img.shields.io/badge/Qdrant-FF6B6B?style=for-the-badge&logo=qdrant&logoColor=white'
     ]
   }
 ] as const;

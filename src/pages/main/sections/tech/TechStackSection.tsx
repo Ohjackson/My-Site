@@ -30,7 +30,8 @@ export const TechStackSection = () => {
                  category.id === 'infra' ? 'Infra' :
                  category.id === 'ai' ? 'AI' :
                  category.id === 'tools' ? 'Tools' :
-                 category.id === 'design' ? 'Design' : category.id}
+                 category.id === 'design' ? 'Design' :
+                 category.id === 'experienced' ? 'Experienced' : category.id}
               </div>
               <div className="flex flex-wrap gap-2">
                 {category.badges.map((badge, idx) => (
