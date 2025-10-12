@@ -137,6 +137,7 @@
     }
   },
   "additional_links": {
-    "website": "https://github.com/plaid-ai"
+    "team github": "https://github.com/plaid-ai",
+    "team website": "https://plaid.ai.kr"
   }
 }

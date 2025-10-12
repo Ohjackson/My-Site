@@ -1,8 +1,8 @@
 {
   "name": {
-    "ko": "다온",
+    "ko": "Daon",
     "en": "Daon",
-    "ja": "ダオン"
+    "ja": "Daon"
   },
   "summary": {
     "ko": "자기공상법을 이용한 우울증 조기 발견 전문 AI 채팅앱",
@@ -169,5 +169,8 @@
       "en": "Improve crisis-detection precision/recall, refine counselor-matching protocol, and explore on-device inference for stronger privacy",
       "ja": "危機検知の適合率・再現率を改善、カウンセラーマッチングのプロトコル高度化、プライバシー強化のためオンデバイス推論を検討"
     }
+  },
+  "additional_links": {
+    "github": "If you want to see the code, please send me an email"
   }
 }

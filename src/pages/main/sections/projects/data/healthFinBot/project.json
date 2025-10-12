@@ -165,5 +165,9 @@
       "ja": "LangGraphのノード監視とユーザー別プロンプト設定機能を追加予定。"
     }
   },
+  "additional_links": {
+    "team github": "https://github.com/plaid-ai",
+    "team website": "https://plaid.ai.kr"
+  },
   "flag": "deactive"
 }

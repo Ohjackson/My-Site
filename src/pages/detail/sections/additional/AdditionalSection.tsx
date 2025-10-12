@@ -28,17 +28,23 @@ export function AdditionalSection({ data, language, backgroundColor }: Additiona
           {Object.entries(data).map(([key, value]) => {
             if (!value) return null;
             const displayValue = typeof value === 'string' ? value : value?.[language] || '';
+            const isUrl = displayValue.startsWith('https://') || displayValue.startsWith('http://');
+            
             return (
               <div key={key} className="flex items-center gap-4">
                 <span className="font-semibold capitalize">{key}:</span>
-                <a
-                  href={displayValue}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-link hover:text-linkHover underline"
-                >
-                  {displayValue}
-                </a>
+                {isUrl ? (
+                  <a
+                    href={displayValue}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-link hover:text-linkHover underline"
+                  >
+                    {displayValue}
+                  </a>
+                ) : (
+                  <span className="text-text">{displayValue}</span>
+                )}
               </div>
             );
           })}

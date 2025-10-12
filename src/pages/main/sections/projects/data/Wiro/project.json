@@ -192,5 +192,8 @@
       "en": "Shipped MVP for emotion-index reports and counseling linkage prototype; collected alpha user feedback",
       "ja": "感情指数レポートMVPと相談連携プロトタイプを完成し、アルファユーザーのフィードバックを取得"
     }
+  },
+  "additional_links": {
+  "github": "If you want to see the code, please send me an email"
   }
 }

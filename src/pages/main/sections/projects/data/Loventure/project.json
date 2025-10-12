@@ -175,13 +175,6 @@
       "implemented": true
     }
   ],
-  "preview_screenshots": {
-    "screenshots": [
-      "/assets/loventure/shot-1.png",
-      "/assets/loventure/shot-2.png",
-      "/assets/loventure/shot-3.png"
-    ]
-  },
   "stackAndArchitecture": {
     "techStack": {
       "frontend": "react, tailwindcss, vite",
@@ -201,7 +194,8 @@
       "- Territory service 개발 - SpringBoot",
       "- course List Page 개발 - React",
       "- database 설계 - PostgreSQL, postgresGis",
-      "- QA 전략 수립"
+      "- QA 전략 수립",
+      "- api gateway to Territory service api 제작"
     ],
     "en": [
       "Operated an 8-week sprint as PM and defined scope",
@@ -211,7 +205,8 @@
       "Built Territory Service (Spring Boot)",
       "Developed Course List page (React)",
       "Designed the database schema (PostgreSQL, PostGIS)",
-      "Established the QA strategy"
+      "Established the QA strategy",
+      "Created an API gateway to Territory service API"
     ],
     "ja": [
       "PMとして8週間スプリントを運用しスコープを定義",
@@ -221,7 +216,8 @@
       "Territory ServiceをSpring Bootで開発",
       "Course ListページをReactで開発",
       "データベース設計（PostgreSQL・PostGIS）を担当",
-      "QA戦略を策定"
+      "QA戦略を策定",
+      "Territory Service APIへのAPIゲートウェイを作成"
     ]
   },
   "lessonsLearned": {

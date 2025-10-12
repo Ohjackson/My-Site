@@ -69,9 +69,8 @@
     "ja": "「Apple Watch同士で直接バトルできるのか？」という疑問から始まり、実験が企画・リリースへと発展。"
   },
   "links": {
-    "appStore": "https://apps.apple.com/kr/app/popco/id6744177061",
-    "github": "https://github.com/YourUsername/POPCO-Platform"
-  },
+    "appStore": "https://apps.apple.com/kr/app/popco/id6744177061"
+    },
   "detail_features": [
     {
       "title": {
@@ -146,5 +145,8 @@
     "ko": "서버리스 근거리 통신에서 양방향 상호작용을 한 코드경로로 다루며, 워치 간 상태 동기화를 ‘초’ 단위로 설계·검증하는 경험.",
     "en": "In a serverless nearby setup, designed a single code path for two-way interaction and practiced second-level synchronization between watches.",
     "ja": "サーバーレスの近距離通信において、双方向のやり取りを単一のコードパスで扱い、Watch間同期を秒単位で設計・検証した。"
+  },
+  "additional_links": {
+    "github": "If you want to see the code, please send me an email"
   }
 }
