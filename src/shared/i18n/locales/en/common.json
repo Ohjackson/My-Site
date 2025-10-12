@@ -53,18 +53,6 @@
         "showFeatured": "Show featured projects only"
       }
     },
-    "history": {
-      "title": "History",
-      "items": [
-        { "period": "2025.03 – 2025.08", "activity": "inc – PLAID – Founder Developer", "description": "Built multiple B2B prototypes." },
-        { "period": "2025.01", "activity": "inc – Acon – iOS Developer", "description": "Launched MVP." },
-        { "period": "2024.10 – 2024.11", "activity": "inc – Daon – Full-stack Developer, Co-founder", "description": "Developed Daon service MVP." },
-        { "period": "2024.08 – 2024.09", "activity": "inc – Wiro – Full-stack Developer, Co-founder", "description": "Delivered Wiro service." },
-        { "period": "2024.01", "activity": "inc – Docent – Intern", "description": "Built iOS Shortcut features." },
-        { "period": "2023.12", "activity": "Military discharge", "description": "30th Infantry Division - Network Operations System Installer" },
-        { "period": "2021", "activity": "Graduated from Kyungbok High School", "description": "" }
-      ]
-    },
     "achievements": {
       "title": "Achievements & Education",
       "achievementsTitle": "Achievements",
