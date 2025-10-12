@@ -47,7 +47,7 @@
   "features": {
   "ko": [
   "iOS Shortcuts로 학습 단어를 즉시 저장",
-  "ResNet-50 기반 Core ML 온디바이스 손글씨(OCR) — 상용한자 3000개 대응",
+  "ResNet-50 기반 Core ML 온디바이스 손글씨(OCR) — 상용한자 2136+ 대응",
   "SRS 이론을 기반한 학습 스케줄링 알고리즘",
   "iCloud 동기화로 단어/진행도 기기간 공유",
   "예문 기반 클로즈 테스트와 손글씨 연습"
@@ -71,9 +71,9 @@
   "appStore": "[https://apps.apple.com/kr/app/%EB%8B%A8%EA%B3%A0%EC%B4%88/id6633424018](https://apps.apple.com/kr/app/%EB%8B%A8%EA%B3%A0%EC%B4%88/id6633424018)"
   },
   "additionalFeatures": {
-  "ko": "- 3차 스프린트 진행 중.\n- JLPT 시험 대비 LLM 기반 시험 문제 생성 기능 추가 예정",
-  "en": "- Currently in the 3rd sprint.\n- JLPT prep: LLM-based test item generation planned",
-  "ja": "- 第3スプリント進行中。\n- JLPT対策：LLMによる試験問題生成を予定"
+  "ko": "-일본 출시 \n- 4차 스프린트 진행 중.\n- JLPT 시험 대비 LLM 기반 시험 문제 생성 기능 추가 예정",
+  "en": "- Japan release \n- Currently in the 4rd sprint.\n- JLPT prep: LLM-based test item generation planned",
+  "ja": "- 日本でもリリース \n- 第4スプリント進行中。\n- JLPT対策：LLMによる試験問題生成を予定"
   },
   "overviewStory": {
   "ko": "자신의 문제를 해결할 줄도 모른다면 다른 이의 문제를 해결할 수 없다는 생각 하에 시작한 첫 프로젝트입니다.",
@@ -87,14 +87,14 @@
   "ja": "アナログ中心の学習は再利用性やシステム統合が不足し、学習効果が低下すると考えました。"
   },
   "target": {
-  "ko": "통학/업무 중 짬을 내어 단어를 저장하고 저녁에 10분 루틴으로 복습·쓰기를 하고 싶은 학습자.",
-  "en": "Learners who capture words on the go and want a 10-minute evening routine for review and writing.",
-  "ja": "移動中に単語を保存し、夜に10分の復習・書き取りルーティンを回したい学習者。"
+  "ko": "통학/업무 중 짬을 내어 단어를 저장하고 아침 저녁으로 10분 루틴 복습·쓰기를 하고 싶은 학습자.",
+  "en": "Learners who capture words on the go and want a 10-minute morning/evening routine for review and writing.",
+  "ja": "移動中に単語を保存し、朝・夜に10分の復習・書き取りルーティンを回したい学習者。"
   },
   "value": {
-  "ko": "Shortcuts 기반 초간편 단어 저장, SRS 자동 알림 및 테스트, 온디바이스 OCR과 iCloud 동기화로 iPad에서도 학습 가능.",
-  "en": "A sustainable learning loop combining Shortcuts-based capture, automated SRS reminders and tests, on-device OCR, and iCloud sync (iPad supported).",
-  "ja": "ショートカット入力、SRS自動通知・テスト、オンデバイスOCR、iCloud同期により、iPadでも学習できる持続的な学習ループを提供します。"
+  "ko": "Shortcuts 기반 초간편 단어 저장, SRS 자동 알림 및 테스트, iCloud 동기화로 iPad에서도 학습 가능.",
+  "en": "A sustainable learning loop combining Shortcuts-based capture, automated SRS reminders and tests, and iCloud sync (iPad supported).",
+  "ja": "ショートカット入力、SRS自動通知・テスト、iCloud同期により、iPadでも学習できる持続的な学習ループを提供します。"
   }
   },
   "detail_features": [
@@ -118,9 +118,9 @@
   "ja": "SRSフラッシュカード"
   },
   "description": {
-  "ko": "정답/오답 피드백과 망각 수렴 구간을 반영해 10분/6시간/24시간/3일/1주 등으로 재스케줄 및 알림 제공",
-  "en": "Reschedules based on ease feedback with intervals like 10m/6h/24h/3d/1w and delivers notifications.",
-  "ja": "易度フィードバックに基づき、10分/6時間/24時間/3日/1週などの間隔で再スケジュールし、通知を送信します。"
+  "ko": "정답/오답 피드백과 망각 수렴 구간을 반영한 srs 알고리즘이 적용된 재스케줄 및 알림 제공",
+  "en": "Reschedules based on ease feedback with intervals like  and delivers notifications.",
+  "ja": "易度フィードバックに基づき、6時間/24時間/3日/1週などの間隔で再スケジュールし、通知を送信します。"
   },
   "implemented": true
   },
@@ -131,9 +131,9 @@
   "ja": "例文クローズテスト"
   },
   "description": {
-  "ko": "저장된/오답 단어 세트를 선택해 예문 기반 빈칸 시험을 자동 생성, 텍스트 또는 손글씨로 응시",
-  "en": "Auto-generates blanks from example sentences for saved/wrong sets; answer via text or handwriting.",
-  "ja": "保存済み/誤答の単語セットから例文ベースの空所を自動生成し、テキストまたは手書きで解答できます。"
+  "ko": "정답/오답 피드백과 망각 수렴 구간을 반영한 srs 알고리즘이 적용된 재스케줄 및 알림 제공",
+  "en": "Reschedules and sends notifications using an SRS algorithm that incorporates correct/incorrect feedback and forgetting-curve intervals.",
+  "ja": "正解・不正解のフィードバックと忘却曲線の間隔を反映したSRS（間隔反復）アルゴリズムで再スケジュールし、通知を行います。"
   },
   "implemented": true
   },
@@ -222,10 +222,10 @@
   "infra": "iCloud, Firebase"
   }
   },
-  "lessonsLearned": {
-  "ko": "입력 마찰을 줄이는 것이 루틴 시작률을 좌우함. 온디바이스 우선이 신뢰·유지율에 직접 기여. SRS는 틀린 카드의 빠른 재노출이 핵심.",
-  "en": "Reducing input friction drives routine start rate. On-device first improves trust/retention. Fast resurfacing of failed cards is key for SRS.",
-  "ja": "入力摩擦の削減が開始率を左右。オンデバイス優先は信頼・継続に直結。SRSでは誤答カードの早い再提示が要。"
+ "lessonsLearned": {
+  "ko": "- 상업적으로 진행 시에 초기 방향성 잠기의 중요성을 느낌\n - 학습 서비스의 획일화면 ui 디자인 문제 경험\n- AI 학습전 라벨 더블 체크의 중요성",
+  "en": "- Realized the importance of locking in the initial direction when moving toward commercialization\n- Experienced issues with uniform/monotonous UI design in learning services\n- Confirmed the importance of double-checking labels before AI training",
+  "ja": "- 商用展開を進める際、初期方向性を固めることの重要性を実感\n- 学習サービスで画一的なUIデザインの問題を経験\n- AI学習前にラベルを二重チェックすることの重要性を確認"
   },
   "results": {
   "achievements": {
@@ -240,7 +240,8 @@
   }
   },
   "additional_links": {
-  "blog": "https://github.com/Ohjackson/ResLet-JapaneseHandWriting"
+  "ResNet training & to coreML": "https://github.com/Ohjackson/ResLet-JapaneseHandWriting",
+  "blog - I'm readying to publish a blog post about this project": "."
   },
   "flag": "active"
   }
