@@ -1,5 +1,5 @@
 import { ArrowUpRightIcon } from '@/shared/components/icons';
-import { Calendar, User, Smartphone, CalendarDays, Users, Clock } from 'lucide-react';
+import { Calendar, User, Smartphone, CalendarDays, Users, Clock, UserCheck } from 'lucide-react';
 import { projectIcons } from '@/assets/icons';
 import { Button } from "./components/Button";
 import { OverviewSection } from "./sections/overview";
@@ -146,6 +146,12 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
               <div className="flex items-center gap-3 text-text/90">
                 <Users className="h-4 w-4 text-primary-500" />
                 <span><strong>{content[language].teamSize}:</strong> {project.teamSize[language]}</span>
+              </div>
+            )}
+            {project.contribution && (
+              <div className="flex items-center gap-3 text-text/90">
+                <UserCheck className="h-4 w-4 text-primary-500" />
+                <span><strong>{content[language].contribution}:</strong> {project.contribution[language]}</span>
               </div>
             )}
             {project.serviceStatus && (

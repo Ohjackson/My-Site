@@ -44,6 +44,11 @@
     "en": "iOS team: 3 / Total: 18",
     "ja": "iOSチーム3名／全体18名"
   },
+  "contribution": {
+    "ko": "30%",
+    "en": "30%",
+    "ja": "30%"
+  },
   "features": {
     "ko": [
       "취향 기반 맛집 탐색",
