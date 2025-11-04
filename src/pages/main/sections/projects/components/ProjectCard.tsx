@@ -106,7 +106,7 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
           console.log('ProjectCard button clicked:', project.id);
           onSelect(project.id);
         }}
-        className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition hover:border-primary-400 hover:text-primary-500 sm:w-auto"
+        className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition group-hover:bg-primary-500 group-hover:text-white group-hover:border-primary-500 hover:bg-primary-600 sm:w-auto"
       >
         {viewLabel}
         <ArrowUpRightIcon className="h-4 w-4" />
