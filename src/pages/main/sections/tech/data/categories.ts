@@ -1,5 +1,5 @@
 export interface TechCategory {
-  id: 'mobile' | 'frontend' | 'backend' | 'data' | 'infra' | 'ai' | 'tools' | 'design' | 'experienced';
+  id: 'mobile' | 'frontend' | 'backend' | 'data' | 'infra' | 'ai' | 'tools' | 'experienced';
   badges: string[];
 }
 
@@ -63,12 +63,7 @@ export const TECH_CATEGORIES: readonly TechCategory[] = [
       'https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white',
       'https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white',
       'https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white',
-      'https://img.shields.io/badge/LangSmith-FF6B6B?style=for-the-badge&logo=langsmith&logoColor=white'
-    ]
-  },
-  {
-    id: 'design',
-    badges: [
+      'https://img.shields.io/badge/LangSmith-FF6B6B?style=for-the-badge&logo=langsmith&logoColor=white',
       'https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white'
     ]
   },
