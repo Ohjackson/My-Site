@@ -9,6 +9,10 @@ import RoutiqIcon from './Routiq.png';
 import TangochoIcon from './Tangocho.png';
 import WiroIcon from './Wiro.png';
 import HealthFinBotIcon from './healthFinBot.png';
+// TODO: Add icons for new projects
+// import KakaoworkIcon from './Kakaowork.png';
+// import InterNosIcon from './InterNos.png';
+// import NVifyIcon from './NVify.png';
 
 export const projectIcons = {
   acon: AconIcon,
@@ -21,4 +25,8 @@ export const projectIcons = {
   tangocho: TangochoIcon,
   wiro: WiroIcon,
   healthfinbot: HealthFinBotIcon,
+  // TODO: Add icons when available
+  // kakaowork: KakaoworkIcon,
+  // internos: InterNosIcon,
+  // nvify: NVifyIcon,
 } as const;

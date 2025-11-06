@@ -14,7 +14,10 @@ const PROJECT_IDS = [
   'tangocho',
   'loventure',
   'ideaverifyprogram',
-  'healthfinbot'
+  'healthfinbot',
+  'kakaowork',
+  'internos',
+  'nvify'
 ];
 
 export const router = createBrowserRouter([

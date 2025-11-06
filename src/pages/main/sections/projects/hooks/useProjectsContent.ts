@@ -13,6 +13,9 @@ import wiroData from '../data/Wiro/project.json';
 import mysiteData from '../data/MySite/project.json';
 import healthfinbotData from '../data/healthFinBot/project.json';
 import ideaverifyprogramData from '../data/IdeaVerifyProgram/project.json';
+import kakaoworkData from '../data/kakaowork/project.json';
+import internosData from '../data/InterNos/project.json';
+import nvifyData from '../data/NVify/project.json';
 
 const projectData = {
   tangocho: tangochoData,
@@ -25,6 +28,9 @@ const projectData = {
   mysite: mysiteData,
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
+  kakaowork: kakaoworkData,
+  internos: internosData,
+  nvify: nvifyData,
 };
 
 export const useProjectsContent = () => {

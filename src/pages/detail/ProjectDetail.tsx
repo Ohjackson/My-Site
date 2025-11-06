@@ -23,6 +23,9 @@ import wiroData from '../main/sections/projects/data/Wiro/project.json';
 import mySiteData from '../main/sections/projects/data/MySite/project.json';
 import healthfinbotData from '../main/sections/projects/data/healthFinBot/project.json';
 import ideaverifyprogramData from '../main/sections/projects/data/IdeaVerifyProgram/project.json';
+import kakaoworkData from '../main/sections/projects/data/kakaowork/project.json';
+import internosData from '../main/sections/projects/data/InterNos/project.json';
+import nvifyData from '../main/sections/projects/data/NVify/project.json';
 
 const projectData = {
   tangocho: tangochoData,
@@ -35,6 +38,9 @@ const projectData = {
   mysite: mySiteData,
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
+  kakaowork: kakaoworkData,
+  internos: internosData,
+  nvify: nvifyData,
 };
 
 interface ProjectDetailProps {

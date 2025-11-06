@@ -1,0 +1,109 @@
+{
+  "name": {
+    "ko": "InterNos",
+    "en": "InterNos",
+    "ja": "InterNos"
+  },
+  "summary": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "role": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "tags": {
+    "ko": [],
+    "en": [],
+    "ja": []
+  },
+  "platform": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "workPeriod": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "releaseDate": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "serviceStatus": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "teamSize": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "additionalFeatures": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "features": {
+    "ko": [],
+    "en": [],
+    "ja": []
+  },
+  "overviewStory": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "links": {
+    "demo": "",
+    "github": ""
+  },
+  "service": {
+    "problem": {
+      "ko": "",
+      "en": "",
+      "ja": ""
+    },
+    "target": {
+      "ko": "",
+      "en": "",
+      "ja": ""
+    },
+    "value": {
+      "ko": "",
+      "en": "",
+      "ja": ""
+    }
+  },
+  "detail_features": [],
+  "preview_screenshots": {
+    "screenshots": []
+  },
+  "stackAndArchitecture": {
+    "techStack": {}
+  },
+  "responsibilities": {
+    "ko": [],
+    "en": [],
+    "ja": []
+  },
+  "lessonsLearned": {
+    "ko": "",
+    "en": "",
+    "ja": ""
+  },
+  "results": {
+    "achievements": {
+      "ko": "",
+      "en": "",
+      "ja": ""
+    }
+  },
+  "making": true
+}
+
