@@ -225,6 +225,10 @@
     "en": "Working with an 8-developer team taught me practical communication and collaboration methods for aligning scope, handoffs, and reviews.",
     "ja": "8名の開発チームでの推進を通じ、スコープ調整や引き継ぎ、レビューにおける実践的なコミュニケーション手法を学びました。"
   },
+  "preview_screenshots": {
+    "youtubeVideoId": "4flw7mmabKs",
+    "screenshots": []
+  },
   "results": {
     "achievements": {
       "ko": "AI 추천·다이어리·지역락·지표·사진첩을 포함한 MVP 개발",
