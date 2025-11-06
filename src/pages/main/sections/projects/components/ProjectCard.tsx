@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { ProjectId, ProjectTranslation } from '../types';
 import { ArrowUpRightIcon } from '@/shared/components/icons';
 import { projectIcons } from '@/assets/icons';
@@ -14,15 +15,21 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCardProps) => {
+  const { t } = useTranslation();
   const handleCardClick = () => {
+    if ((project as any).making) return; // making 프로젝트는 클릭 비활성화
     console.log('ProjectCard clicked:', project.id);
     onSelect(project.id);
   };
 
+  const isMaking = (project as any).making === true;
+
   return (
     <article 
       onClick={handleCardClick}
-      className="group flex flex-col rounded-3xl border border-border bg-surface p-8 text-text shadow-sm transition hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-2xl cursor-pointer"
+      className={`group flex flex-col rounded-3xl border border-border bg-surface p-8 text-text shadow-sm transition ${
+        isMaking ? '' : 'hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-2xl cursor-pointer'
+      }`}
     >
       <div className="flex-1 space-y-6">
         {/* Project Icon */}
@@ -84,33 +91,45 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
           </div>
         </div>
 
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-widest text-muted/80">
-            {labels.coreFeatures}
+        {!isMaking ? (
+          <>
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-widest text-muted/80">
+                {labels.coreFeatures}
+              </div>
+              <ul className="mt-3 space-y-2 text-sm text-text">
+                {project.features.map((feature, index) => (
+                  <li key={index} className="flex gap-3">
+                    <span aria-hidden className="text-primary-500">—</span>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </>
+        ) : (
+          <div className="flex items-center justify-center py-8">
+            <div className="text-lg font-medium text-muted">
+              {t('sections.projects.making')}
+            </div>
           </div>
-          <ul className="mt-3 space-y-2 text-sm text-text">
-            {project.features.map((feature, index) => (
-              <li key={index} className="flex gap-3">
-                <span aria-hidden className="text-primary-500">—</span>
-                <span>{feature}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        )}
       </div>
 
-      <button
-        type="button"
-        onClick={(e) => {
-          e.stopPropagation(); // 부모 카드 클릭 이벤트 방지
-          console.log('ProjectCard button clicked:', project.id);
-          onSelect(project.id);
-        }}
-        className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition group-hover:bg-[rgb(141,182,246)] group-hover:text-white group-hover:border-[rgb(141,182,246)] hover:bg-[rgb(120,165,235)] sm:w-auto"
-      >
-        {viewLabel}
-        <ArrowUpRightIcon className="h-4 w-4" />
-      </button>
+      {!isMaking && (
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation(); // 부모 카드 클릭 이벤트 방지
+            console.log('ProjectCard button clicked:', project.id);
+            onSelect(project.id);
+          }}
+          className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition group-hover:bg-[rgb(141,182,246)] group-hover:text-white group-hover:border-[rgb(141,182,246)] hover:bg-[rgb(120,165,235)] sm:w-auto"
+        >
+          {viewLabel}
+          <ArrowUpRightIcon className="h-4 w-4" />
+        </button>
+      )}
     </article>
   );
 };

@@ -1,38 +1,38 @@
 {
   "name": {
-    "ko": "KakaoWork",
-    "en": "KakaoWork",
-    "ja": "KakaoWork"
+    "ko": "Kakaowork chatbot",
+    "en": "Kakaowork chatbot",
+    "ja": "kakaowork chatbot"
   },
   "summary": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "카카오워크 챗봇 개발 프로젝트",
+    "en": "KakaoWork chatbot development project",
+    "ja": "カカオワークチャットボット開発プロジェクト"
   },
   "role": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "infrastructure developer",
+    "en": "infrastructure developer",
+    "ja": "infrastructure developer"
   },
   "tags": {
-    "ko": [],
-    "en": [],
-    "ja": []
+    "ko": ["Kakaocloud", "k8s", "jenkins", "gcp", "aws"],
+    "en": ["Kakaocloud", "k8s", "jenkins", "gcp", "aws"],
+    "ja": ["Kakaocloud", "k8s", "jenkins", "gcp", "aws"]
   },
   "platform": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "Web",
+    "en": "Web",
+    "ja": "Web"
   },
   "workPeriod": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "2025.10 - 2025.11",
+    "en": "2025.10 - 2025.11",
+    "ja": "2025.10 - 2025.11"
   },
   "releaseDate": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "2025.11",
+    "en": "2025.11",
+    "ja": "2025.11"
   },
   "serviceStatus": {
     "ko": "",

@@ -51,7 +51,7 @@ export const useProjectsContent = () => {
   const viewDetails = t('sections.projects.viewDetails');
   
   // Convert project data to the expected format with language-specific data
-  const projects: Array<ProjectTranslation & { id: ProjectId; flag?: string }> = Object.entries(projectData).map(([id, data]) => ({
+  const projects: Array<ProjectTranslation & { id: ProjectId; flag?: string; making?: boolean }> = Object.entries(projectData).map(([id, data]) => ({
     id: id as ProjectId,
     name: data.name[currentLanguage],
     summary: data.summary[currentLanguage],
@@ -61,6 +61,7 @@ export const useProjectsContent = () => {
     features: data.features[currentLanguage],
     detail: (data as any).detail,
     flag: (data as any).flag, // Include flag information
+    making: (data as any).making, // Include making flag
   }));
 
   console.log('Projects loaded:', projects.map(p => ({ id: p.id, name: p.name })));

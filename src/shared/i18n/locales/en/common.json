@@ -48,6 +48,7 @@
         "coreFeatures": "Core Features"
       },
       "viewDetails": "View details",
+      "making": "Project in progress",
       "toggle": {
         "showAll": "View all projects",
         "showFeatured": "Show featured projects only"

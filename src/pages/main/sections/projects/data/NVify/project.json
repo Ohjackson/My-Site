@@ -5,34 +5,34 @@
     "ja": "NVify"
   },
   "summary": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "감정기반 머리신러닝 오픈소스 프로젝트",
+    "en": "Emotion-based brain-machine interface open-source project",
+    "ja": "感情ベースの脳機能インターフェースオープンソースプロジェクト"
   },
   "role": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "model developer",
+    "en": "model developer",
+    "ja": "model developer"
   },
   "tags": {
-    "ko": [],
-    "en": [],
-    "ja": []
+    "ko": ["PyTorch", "Hugging Face", "OpenAI", "Coqui", "DeepSeek"],
+    "en": ["PyTorch", "Hugging Face", "OpenAI", "Coqui", "DeepSeek"],
+    "ja": ["PyTorch", "Hugging Face", "OpenAI", "Coqui", "DeepSeek"]
   },
   "platform": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "Web",
+    "en": "Web",
+    "ja": "Web"
   },
   "workPeriod": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "2025.11",
+    "en": "2025.11",
+    "ja": "2025.11"
   },
   "releaseDate": {
-    "ko": "",
-    "en": "",
-    "ja": ""
+    "ko": "2025.11",
+    "en": "2025.11",
+    "ja": "2025.11"
   },
   "serviceStatus": {
     "ko": "",
