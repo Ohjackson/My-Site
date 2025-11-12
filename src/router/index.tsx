@@ -17,7 +17,6 @@ const PROJECT_IDS = [
   'healthfinbot',
   'kakaowork',
   'internos',
-  'nvify'
 ];
 
 export const router = createBrowserRouter([

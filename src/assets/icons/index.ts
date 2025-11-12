@@ -11,7 +11,6 @@ import WiroIcon from './Wiro.png';
 import HealthFinBotIcon from './healthFinBot.png';
 import KakaoworkIcon from './Kakaowork.png';
 import InterNosIcon from './InterNos.png';
-import NVifyIcon from './NVify.png';
 
 export const projectIcons = {
   acon: AconIcon,
@@ -26,5 +25,4 @@ export const projectIcons = {
   healthfinbot: HealthFinBotIcon,
   kakaowork: KakaoworkIcon,
   internos: InterNosIcon,
-  nvify: NVifyIcon,
 } as const;
