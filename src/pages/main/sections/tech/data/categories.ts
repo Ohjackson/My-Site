@@ -18,12 +18,18 @@ export const TECH_CATEGORIES: readonly TechCategory[] = [
   {
     id: 'infra',
     badges: [
-      'https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white',
-      'https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=000000',
-      'https://img.shields.io/badge/iCloud-3693F3?style=for-the-badge&logo=icloud&logoColor=white',
-      'https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white',
+      'https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white',
+      'https://img.shields.io/badge/Helm-0F162D?style=for-the-badge&logo=helm&logoColor=white',
+      'https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white',
       'https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white',
-      'https://img.shields.io/badge/Kakao%20Cloud-FEE500?style=for-the-badge'
+      'https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white',
+      'https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white',
+      'https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white',
+      'https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white',
+      'https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white',
+      'https://img.shields.io/badge/Kakao%20Cloud-FEE500?style=for-the-badge',
+      'https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white',
+      'https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white'
     ]
   },
   {
@@ -70,6 +76,9 @@ export const TECH_CATEGORIES: readonly TechCategory[] = [
   {
     id: 'experienced',
     badges: [
+      'https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black',
+      'https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white',
+      'https://img.shields.io/badge/Shell_Script-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white',
       'https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white',
       'https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white',
       'https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white',
