@@ -23,7 +23,7 @@ import wiroData from '../main/sections/projects/data/Wiro/project.json';
 import mySiteData from '../main/sections/projects/data/MySite/project.json';
 import healthfinbotData from '../main/sections/projects/data/healthFinBot/project.json';
 import ideaverifyprogramData from '../main/sections/projects/data/IdeaVerifyProgram/project.json';
-import kakaoworkData from '../main/sections/projects/data/kakaowork/project.json';
+import cocoData from '../main/sections/projects/data/coco/project.json';
 import internosData from '../main/sections/projects/data/InterNos/project.json';
 
 const projectData = {
@@ -37,7 +37,7 @@ const projectData = {
   mysite: mySiteData,
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
-  kakaowork: kakaoworkData,
+  coco: cocoData,
   internos: internosData,
 };
 
@@ -50,7 +50,7 @@ interface ProjectDetailProps {
 
 export function ProjectDetail({ projectId, language, onBack, onProjectClick }: ProjectDetailProps) {
   console.log('ProjectDetail rendered with:', { projectId, language });
-  
+
   const project = projectData[projectId as keyof typeof projectData] || projectData.tangocho;
   console.log('Selected project:', project);
   console.log('Project keys:', Object.keys(project));
@@ -116,7 +116,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           </button>
 
           <div className="flex items-center gap-8 mb-8">
-            <img 
+            <img
               src={projectIcons[projectId as keyof typeof projectIcons]}
               alt={project.name[language]}
               className="w-20 h-20 rounded-2xl object-cover shadow-2xl border border-gray-200/50"
@@ -124,19 +124,19 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
                 e.currentTarget.style.display = 'none';
               }}
             />
-              <div>
+            <div>
               <h1 className="text-4xl font-bold mb-2">{project.name[language]}</h1>
               <p className="text-lg text-muted">{project.summary[language]}</p>
             </div>
-              </div>
+          </div>
 
           {/* Project Details Grid */}
           <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="flex items-center gap-3 text-text/90">
+            <div className="flex items-center gap-3 text-text/90">
               <Clock className="h-4 w-4 text-primary-500" />
               <span><strong>{content[language].workPeriod}:</strong> {project.workPeriod?.[language]}</span>
-                </div>
-                <div className="flex items-center gap-3 text-text/90">
+            </div>
+            <div className="flex items-center gap-3 text-text/90">
               <User className="h-4 w-4 text-primary-500" />
               <span><strong>{content[language].role}:</strong> {project.role[language]}</span>
             </div>
@@ -183,13 +183,13 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
               </Button>
             )}
             {project.links?.github && (
-                <Button
+              <Button
                 variant="secondary"
                 icon={<ArrowUpRightIcon className="h-4 w-4" />}
                 onClick={() => window.open(project.links?.github, '_blank')}
-                >
-                  {content[language].github}
-                </Button>
+              >
+                {content[language].github}
+              </Button>
             )}
             {(project.links as any)?.website && (
               <Button
@@ -201,7 +201,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
               </Button>
             )}
           </div>
-          
+
           {/* Tags Section */}
           {project.tags && (
             <div className="mt-6">
@@ -216,7 +216,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
                   </span>
                 ))}
               </div>
-          </div>
+            </div>
           )}
 
           {/* Additional Features Section */}
@@ -254,10 +254,10 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         // Overview Section
         if (project.overviewStory) {
           sections.push(
-            <OverviewSection 
-              key="overview" 
-              data={project} 
-              language={language} 
+            <OverviewSection
+              key="overview"
+              data={project}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );
@@ -267,20 +267,20 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         // Service Section
         if ((project as any).danggocho?.service) {
           sections.push(
-            <ServiceSection 
-              key="service" 
-              data={(project as any).danggocho.service} 
-              language={language} 
+            <ServiceSection
+              key="service"
+              data={(project as any).danggocho.service}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );
           sectionIndex++;
         } else if ((project as any).service) {
           sections.push(
-            <ServiceSection 
-              key="service" 
-              data={(project as any).service} 
-              language={language} 
+            <ServiceSection
+              key="service"
+              data={(project as any).service}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );
@@ -289,10 +289,10 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
 
         // Features Section (always render)
         sections.push(
-          <FeaturesSection 
-            key="features" 
-            data={project as any} 
-            language={language} 
+          <FeaturesSection
+            key="features"
+            data={project as any}
+            language={language}
             backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
           />
         );
@@ -304,14 +304,14 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           direct: (project as any).preview_screenshots,
           projectId
         });
-        
+
         if ((project as any).danggocho?.preview_screenshots) {
           console.log('Using danggocho preview_screenshots:', (project as any).danggocho.preview_screenshots);
           sections.push(
-            <PreviewSection 
-              key="preview" 
-              data={(project as any).danggocho.preview_screenshots} 
-              language={language} 
+            <PreviewSection
+              key="preview"
+              data={(project as any).danggocho.preview_screenshots}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );
@@ -319,10 +319,10 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         } else if ((project as any).preview_screenshots) {
           console.log('Using direct preview_screenshots:', (project as any).preview_screenshots);
           sections.push(
-            <PreviewSection 
-              key="preview" 
-              data={(project as any).preview_screenshots} 
-              language={language} 
+            <PreviewSection
+              key="preview"
+              data={(project as any).preview_screenshots}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );
@@ -332,10 +332,10 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         // TechStack Section
         if ((project as any).stackAndArchitecture?.techStack) {
           sections.push(
-            <TechStackSection 
-              key="techstack" 
-              data={(project as any).stackAndArchitecture} 
-              language={language} 
+            <TechStackSection
+              key="techstack"
+              data={(project as any).stackAndArchitecture}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );
@@ -345,10 +345,10 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         // Responsibilities Section
         if ((project as any).responsibilities) {
           sections.push(
-            <ResponsibilitiesSection 
-              key="responsibilities" 
-              data={project as any} 
-              language={language} 
+            <ResponsibilitiesSection
+              key="responsibilities"
+              data={project as any}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );
@@ -359,10 +359,10 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         // Results Section
         if ((project as any).metrics || (project as any).lessonsLearned || (project as any).achievements || (project as any).nextSteps || (project as any).results?.achievements) {
           sections.push(
-            <ResultsSection 
-              key="results" 
-              data={project as any} 
-              language={language} 
+            <ResultsSection
+              key="results"
+              data={project as any}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );
@@ -372,20 +372,20 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         // Additional Section
         if ((project as any).danggocho?.additional_links) {
           sections.push(
-            <AdditionalSection 
-              key="additional" 
-              data={(project as any).danggocho.additional_links} 
-              language={language} 
+            <AdditionalSection
+              key="additional"
+              data={(project as any).danggocho.additional_links}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );
           sectionIndex++;
         } else if ((project as any).additional_links) {
           sections.push(
-            <AdditionalSection 
-              key="additional" 
-              data={(project as any).additional_links} 
-              language={language} 
+            <AdditionalSection
+              key="additional"
+              data={(project as any).additional_links}
+              language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
           );

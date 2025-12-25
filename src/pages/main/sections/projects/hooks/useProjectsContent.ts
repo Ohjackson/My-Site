@@ -13,7 +13,7 @@ import wiroData from '../data/Wiro/project.json';
 import mysiteData from '../data/MySite/project.json';
 import healthfinbotData from '../data/healthFinBot/project.json';
 import ideaverifyprogramData from '../data/IdeaVerifyProgram/project.json';
-import kakaoworkData from '../data/kakaowork/project.json';
+import cocoData from '../data/coco/project.json';
 import internosData from '../data/InterNos/project.json';
 
 const projectData = {
@@ -27,27 +27,27 @@ const projectData = {
   mysite: mysiteData,
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
-  kakaowork: kakaoworkData,
+  coco: cocoData,
   internos: internosData,
 };
 
 export const useProjectsContent = () => {
   const { t, i18n } = useTranslation();
-  
+
   console.log('useProjectsContent called');
-  
+
   // Get current language
   const currentLanguage = (i18n.language?.split('-')[0] || 'ko') as 'ko' | 'en' | 'ja';
-  
+
   // Get labels from translation
   const labels = {
     period: t('sections.projects.labels.period'),
     role: t('sections.projects.labels.role'),
     coreFeatures: t('sections.projects.labels.coreFeatures'),
   };
-  
+
   const viewDetails = t('sections.projects.viewDetails');
-  
+
   // Convert project data to the expected format with language-specific data
   const projects: Array<ProjectTranslation & { id: ProjectId; flag?: string; making?: boolean }> = Object.entries(projectData).map(([id, data]) => ({
     id: id as ProjectId,

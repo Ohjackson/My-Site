@@ -6,7 +6,7 @@ import { ProjectDetailPage } from '@/pages/detail/ProjectDetailPage';
 // 프로젝트 ID 목록
 const PROJECT_IDS = [
   'acon',
-  'daon', 
+  'daon',
   'wiro',
   'mysite',
   'routiq',
@@ -15,7 +15,7 @@ const PROJECT_IDS = [
   'loventure',
   'ideaverifyprogram',
   'healthfinbot',
-  'kakaowork',
+  'coco',
   'internos',
 ];
 

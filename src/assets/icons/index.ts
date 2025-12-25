@@ -9,7 +9,7 @@ import RoutiqIcon from './Routiq.png';
 import TangochoIcon from './Tangocho.png';
 import WiroIcon from './Wiro.png';
 import HealthFinBotIcon from './healthFinBot.png';
-import KakaoworkIcon from './Kakaowork.png';
+import CocoIcon from './Coco.png';
 import InterNosIcon from './InterNos.png';
 
 export const projectIcons = {
@@ -23,6 +23,6 @@ export const projectIcons = {
   tangocho: TangochoIcon,
   wiro: WiroIcon,
   healthfinbot: HealthFinBotIcon,
-  kakaowork: KakaoworkIcon,
+  coco: CocoIcon,
   internos: InterNosIcon,
 } as const;
