@@ -4,13 +4,17 @@ import { projectIcons } from '@/assets/icons';
 import { Button } from "./components/Button";
 import { OverviewSection } from "./sections/overview";
 import { ServiceSection } from "./sections/service";
+import { ArchitectureSection } from "./sections/architecture";
+import { DataModelSection } from "./sections/data-model";
 import { FeaturesSection } from "./sections/features";
 import { PreviewSection } from "./sections/preview";
+import { SecuritySection } from "./sections/security";
 import { TechStackSection } from "./sections/techstack";
 import { ResponsibilitiesSection } from "./sections/responsibilities";
 import { ResultsSection } from "./sections/results";
 import { AdditionalSection } from "./sections/additional";
 import { OtherProjectsSection } from "./sections/other-projects";
+import { ContactSection } from '@/pages/main/sections/contact';
 
 // Import project data
 import tangochoData from '../main/sections/projects/data/Tangocho/project.json';
@@ -24,7 +28,7 @@ import mySiteData from '../main/sections/projects/data/MySite/project.json';
 import healthfinbotData from '../main/sections/projects/data/healthFinBot/project.json';
 import ideaverifyprogramData from '../main/sections/projects/data/IdeaVerifyProgram/project.json';
 import cocoData from '../main/sections/projects/data/coco/project.json';
-import internosData from '../main/sections/projects/data/InterNos/project.json';
+import uritomoData from '../main/sections/projects/data/Uritomo/project.json';
 
 const projectData = {
   tangocho: tangochoData,
@@ -38,7 +42,7 @@ const projectData = {
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
   coco: cocoData,
-  internos: internosData,
+  uritomo: uritomoData,
 };
 
 interface ProjectDetailProps {
@@ -287,6 +291,32 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           sectionIndex++;
         }
 
+        // Architecture Section
+        if ((project as any).architectureFlow) {
+          sections.push(
+            <ArchitectureSection
+              key="architecture"
+              data={project as any}
+              language={language}
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // Data Model Section
+        if ((project as any).dataModelPoints) {
+          sections.push(
+            <DataModelSection
+              key="data-model"
+              data={project as any}
+              language={language}
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
         // Features Section (always render)
         sections.push(
           <FeaturesSection
@@ -329,6 +359,19 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           sectionIndex++;
         }
 
+        // Security Section
+        if ((project as any).securityDesign) {
+          sections.push(
+            <SecuritySection
+              key="security"
+              data={project as any}
+              language={language}
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
         // TechStack Section
         if ((project as any).stackAndArchitecture?.techStack) {
           sections.push(
@@ -354,7 +397,6 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           );
           sectionIndex++;
         }
-
 
         // Results Section
         if ((project as any).metrics || (project as any).lessonsLearned || (project as any).achievements || (project as any).nextSteps || (project as any).results?.achievements) {
@@ -409,6 +451,8 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         language={language}
         onProjectClick={onProjectClick}
       />
+
+      <ContactSection compactTop />
     </div>
   );
 }

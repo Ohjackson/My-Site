@@ -10,10 +10,15 @@ export const ProjectDetailPage = () => {
   const { projectId } = useParams<{ projectId: string }>();
   const navigate = useNavigate();
   const { i18n } = useTranslation();
+  const resolvedLanguage = (i18n.resolvedLanguage ?? i18n.language ?? 'en').split('-')[0];
+  const language: 'ko' | 'en' | 'ja' =
+    resolvedLanguage === 'ko' || resolvedLanguage === 'ja' || resolvedLanguage === 'en'
+      ? resolvedLanguage
+      : 'en';
 
   // 페이지 로드 시 상단으로 즉시 이동 (애니메이션 없음)
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
   }, [projectId]);
 
   const handleBack = () => {
@@ -49,7 +54,7 @@ export const ProjectDetailPage = () => {
       />
       <ProjectDetail
         projectId={projectId as ProjectId}
-        language={i18n.language as 'ko' | 'en' | 'ja'}
+        language={language}
         onBack={handleBack}
         onProjectClick={handleProjectClick}
       />

@@ -16,7 +16,7 @@ const PROJECT_IDS = [
   'ideaverifyprogram',
   'healthfinbot',
   'coco',
-  'internos',
+  'uritomo',
 ];
 
 export const router = createBrowserRouter([

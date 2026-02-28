@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 import { Header } from '@/shared/components/header';
@@ -16,12 +15,11 @@ const HEADER_OFFSET = 96;
 
 export const MainPage = () => {
   const navigate = useNavigate();
-  const { i18n } = useTranslation();
 
   const handleProjectClick = (projectId: ProjectId) => {
     console.log('Project clicked:', projectId);
     // 페이지 상단으로 즉시 이동 (애니메이션 없음)
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    window.scrollTo({ top: 0, behavior: 'auto' });
     navigate(`/project/${projectId}`);
   };
 

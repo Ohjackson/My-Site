@@ -42,6 +42,48 @@ export function FeaturesSection({ data, language, backgroundColor }: FeaturesSec
     }
   };
 
+  const renderDescription = (description: string) => {
+    const lines = description.split('\n');
+    return (
+      <div className="space-y-1 text-muted text-sm leading-relaxed whitespace-pre-line">
+        {lines.map((line, index) => {
+          const trimmed = line.trim();
+          if (!trimmed) return null;
+
+          if (trimmed.startsWith('-')) {
+            return (
+              <div key={index} className="flex items-start">
+                <span className="mt-2 mr-3 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-muted" />
+                <span className="whitespace-pre-line">{trimmed.substring(1).trim()}</span>
+              </div>
+            );
+          }
+
+          const isLabelLine =
+            trimmed.startsWith('정의:') ||
+            trimmed.startsWith('설명:') ||
+            trimmed.startsWith('Definition:') ||
+            trimmed.startsWith('Description:') ||
+            trimmed.startsWith('定義:') ||
+            trimmed.startsWith('説明:');
+
+          if (isLabelLine) {
+            const [label, ...rest] = trimmed.split(':');
+            const restText = rest.join(':').trim();
+            return (
+              <p key={index}>
+                <span className="font-semibold text-text/90">{label}:</span>{' '}
+                <span className="text-muted">{restText}</span>
+              </p>
+            );
+          }
+
+          return <p key={index}>{trimmed}</p>;
+        })}
+      </div>
+    );
+  };
+
   return (
     <section className={`py-16 px-8 ${backgroundColor}`}>
       <div className="max-w-4xl mx-auto">
@@ -53,13 +95,13 @@ export function FeaturesSection({ data, language, backgroundColor }: FeaturesSec
             data.detail_features.map((feature, idx) => (
               <div
                 key={idx}
-                className="rounded-xl border border-border bg-card text-card-foreground shadow p-6 h-24 flex items-center"
+                className="rounded-xl border border-border bg-card text-card-foreground shadow p-6"
               >
                 <div className="flex items-start gap-4">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold mb-1">{feature.title[language]}</h3>
-                    <p className="text-muted text-sm">{feature.description[language]}</p>
+                    {renderDescription(feature.description[language])}
                   </div>
                 </div>
               </div>
@@ -68,7 +110,7 @@ export function FeaturesSection({ data, language, backgroundColor }: FeaturesSec
             data.features?.[language]?.map((feature, idx) => (
               <div
                 key={idx}
-                className="rounded-xl border border-border bg-card text-card-foreground shadow p-6 h-24 flex items-center"
+                className="rounded-xl border border-border bg-card text-card-foreground shadow p-6"
               >
                 <div className="flex items-start gap-4">
                   <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />

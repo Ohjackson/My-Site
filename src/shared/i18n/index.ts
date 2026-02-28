@@ -19,6 +19,9 @@ i18n
     fallbackLng: 'en',
     supportedLngs: ['en', 'ja', 'ko'],
     defaultNS: 'translation',
+    react: {
+      useSuspense: false
+    },
     interpolation: {
       escapeValue: false
     },

@@ -10,7 +10,7 @@ import TangochoIcon from './Tangocho.png';
 import WiroIcon from './Wiro.png';
 import HealthFinBotIcon from './healthFinBot.png';
 import CocoIcon from './Coco.png';
-import InterNosIcon from './InterNos.png';
+import UritomoIcon from './Uritomo.png';
 
 export const projectIcons = {
   acon: AconIcon,
@@ -24,5 +24,5 @@ export const projectIcons = {
   wiro: WiroIcon,
   healthfinbot: HealthFinBotIcon,
   coco: CocoIcon,
-  internos: InterNosIcon,
+  uritomo: UritomoIcon,
 } as const;

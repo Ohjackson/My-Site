@@ -88,19 +88,19 @@ export function OtherProjectsSection({
   };
 
   return (
-    <section className="py-16 pb-24 bg-bg">
+    <section className="py-16 pb-20 bg-bg">
       <div className="w-full">
         <h2 className="text-3xl font-bold mb-8 text-center">
           {content[language].title}
         </h2>
         
-        <div className="overflow-x-auto px-8 scrollbar-hide" ref={scrollContainerRef}>
-          <div className="flex gap-6 py-4" style={{ width: 'max-content' }}>
+        <div className="overflow-x-auto px-8 pb-8 scrollbar-hide" ref={scrollContainerRef}>
+          <div className="flex gap-6 py-4 pb-8" style={{ width: 'max-content' }}>
             {duplicatedProjects.map((project, index) => (
               <div
                 key={`${project.id}-${index}`}
                 onClick={() => handleProjectClick(project.id)}
-                className="group cursor-pointer flex-shrink-0 w-80 bg-surface rounded-2xl border border-border p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-2xl"
+                className="group cursor-pointer flex-shrink-0 w-80 bg-surface rounded-2xl border border-border p-6 shadow-[0_6px_18px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-primary-400/80 hover:shadow-[0_16px_40px_rgba(37,99,235,0.20)]"
               >
                 <div className="space-y-4">
                   {/* Project Icon */}

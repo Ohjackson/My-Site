@@ -127,3 +127,11 @@ export const ArrowRightIcon = (props: SVGProps<SVGSVGElement>) => (
     <path d="m12 5 7 7-7 7" />
   </svg>
 );
+
+export const AppStoreIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...baseProps(props)}>
+    <rect x={3} y={3} width={18} height={18} rx={4} />
+    <path d="m8 16 4-8 4 8" />
+    <path d="M10 12h4" />
+  </svg>
+);

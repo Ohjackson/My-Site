@@ -4,7 +4,10 @@ import { ImageWithFallback } from '@/shared/components/image';
 
 export const AboutSection = () => {
   const { t } = useTranslation();
-  const paragraphs = t('sections.about.paragraphs', { returnObjects: true }) as string[];
+  const rawParagraphs = t('sections.about.paragraphs', { returnObjects: true });
+  const paragraphs = Array.isArray(rawParagraphs)
+    ? rawParagraphs
+    : [String(rawParagraphs)].filter(Boolean);
 
   return (
     <section id="about" className="bg-surface py-32 px-8 text-text">
@@ -31,10 +34,10 @@ export const AboutSection = () => {
           <div className="space-y-8 text-2xl leading-relaxed text-text/90">
             {paragraphs.map((paragraph, idx) => (
               <p key={idx}>
-                {paragraph.split('\n').map((line, lineIdx) => (
+                {paragraph.split('\n').map((line, lineIdx, lines) => (
                   <span key={lineIdx}>
                     {line}
-                    {lineIdx < paragraph.split('\n').length - 1 && <br />}
+                    {lineIdx < lines.length - 1 && <br />}
                   </span>
                 ))}
               </p>

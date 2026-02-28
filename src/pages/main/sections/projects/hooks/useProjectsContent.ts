@@ -14,7 +14,7 @@ import mysiteData from '../data/MySite/project.json';
 import healthfinbotData from '../data/healthFinBot/project.json';
 import ideaverifyprogramData from '../data/IdeaVerifyProgram/project.json';
 import cocoData from '../data/coco/project.json';
-import internosData from '../data/InterNos/project.json';
+import uritomoData from '../data/Uritomo/project.json';
 
 const projectData = {
   tangocho: tangochoData,
@@ -28,7 +28,7 @@ const projectData = {
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
   coco: cocoData,
-  internos: internosData,
+  uritomo: uritomoData,
 };
 
 export const useProjectsContent = () => {
