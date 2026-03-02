@@ -10,14 +10,16 @@ export const achievementsData: Record<string, AchievementsData> = {
     achievementsTitle: "수상 및 실적",
     educationTitle: "학력 및 교육",
     achievements: [
-      "GCS – 4기 전액 장학생 선발",
+      "GCS – 4기 전액 장학생 선정",
+      "SW중심대학사업 장학생 선정 (2025)",
       "아르테크네 – 제1회 창업 연계 지원 사업 대상 (2024)"
     ],
     education: [
       "가천대학교 인공지능학과(本) 2기 (2026년 졸업 예정)",
       "가천대학교 창업대학 GCS(複) 4기",
       "SOPT 35기 – iOS 트랙",
-      "카카오엔터프라이즈 SW아카데미 7기 – 재학 중"
+      "카카오엔터프라이즈 SW아카데미 7기",
+      "OIT Cyber Life Design Laboratory 인턴쉽"
     ]
   },
   en: {

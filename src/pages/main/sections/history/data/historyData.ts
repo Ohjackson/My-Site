@@ -6,6 +6,8 @@ export interface HistoryEntry {
 
 export const historyData: Record<string, HistoryEntry[]> = {
   ko: [
+    { period: "2025.12 ~ 2026.02", activity: "인턴쉽 – OIT Cyber Life Design Laboratory", description: "" },
+    { period: "2025.09 ~ 2025.12", activity: "카카오엔터프라이즈 SW아카데미 7기", description: "" },
     { period: "2025.03 ~ 2025.08", activity: "Founder Developer – Plaid .inc (現)", description: "B2B 프로토타입 개발" },
     { period: "2025.01",           activity: "iOS Developer – Acon .inc (現)",       description: "MVP 개발 및 출시" },
     { period: "2024.10 ~ 2024.11", activity: "Full-stack Developer / Cofounder – Daon(초기 창업팀)", description: "서비스 MVP 총괄 개발" },
@@ -33,4 +35,3 @@ export const historyData: Record<string, HistoryEntry[]> = {
     { period: "2021",               activity: "景福高等學校 卒業",                               description: "" }
   ]
 };
-
