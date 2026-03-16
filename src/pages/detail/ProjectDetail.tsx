@@ -3,15 +3,12 @@ import { Calendar, User, Smartphone, CalendarDays, Users, Clock, UserCheck } fro
 import { projectIcons } from '@/assets/icons';
 import { Button } from "./components/Button";
 import { OverviewSection } from "./sections/overview";
-import { ServiceSection } from "./sections/service";
 import { ArchitectureSection } from "./sections/architecture";
 import { DataModelSection } from "./sections/data-model";
 import { FeaturesSection } from "./sections/features";
 import { PreviewSection } from "./sections/preview";
 import { SecuritySection } from "./sections/security";
 import { TechStackSection } from "./sections/techstack";
-import { ResponsibilitiesSection } from "./sections/responsibilities";
-import { ResultsSection } from "./sections/results";
 import { AdditionalSection } from "./sections/additional";
 import { OtherProjectsSection } from "./sections/other-projects";
 import { ContactSection } from '@/pages/main/sections/contact';
@@ -29,6 +26,8 @@ import healthfinbotData from '../main/sections/projects/data/healthFinBot/projec
 import ideaverifyprogramData from '../main/sections/projects/data/IdeaVerifyProgram/project.json';
 import cocoData from '../main/sections/projects/data/coco/project.json';
 import uritomoData from '../main/sections/projects/data/Uritomo/project.json';
+import perariData from '../main/sections/projects/data/Perari/project.json';
+import inkdueData from '../main/sections/projects/data/InkDue/project.json';
 
 const projectData = {
   tangocho: tangochoData,
@@ -43,6 +42,8 @@ const projectData = {
   ideaverifyprogram: ideaverifyprogramData,
   coco: cocoData,
   uritomo: uritomoData,
+  perari: perariData,
+  inkdue: inkdueData,
 };
 
 interface ProjectDetailProps {
@@ -279,16 +280,6 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
             />
           );
           sectionIndex++;
-        } else if ((project as any).service) {
-          sections.push(
-            <ServiceSection
-              key="service"
-              data={(project as any).service}
-              language={language}
-              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
-            />
-          );
-          sectionIndex++;
         }
 
         // Architecture Section
@@ -378,32 +369,6 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
             <TechStackSection
               key="techstack"
               data={(project as any).stackAndArchitecture}
-              language={language}
-              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
-            />
-          );
-          sectionIndex++;
-        }
-
-        // Responsibilities Section
-        if ((project as any).responsibilities) {
-          sections.push(
-            <ResponsibilitiesSection
-              key="responsibilities"
-              data={project as any}
-              language={language}
-              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
-            />
-          );
-          sectionIndex++;
-        }
-
-        // Results Section
-        if ((project as any).metrics || (project as any).lessonsLearned || (project as any).achievements || (project as any).nextSteps || (project as any).results?.achievements) {
-          sections.push(
-            <ResultsSection
-              key="results"
-              data={project as any}
               language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />

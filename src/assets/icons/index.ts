@@ -11,6 +11,8 @@ import WiroIcon from './Wiro.png';
 import HealthFinBotIcon from './healthFinBot.png';
 import CocoIcon from './Coco.png';
 import UritomoIcon from './Uritomo.png';
+import PerariIcon from './Perari.png';
+import InkDueIcon from './InkDue.png';
 
 export const projectIcons = {
   acon: AconIcon,
@@ -25,4 +27,6 @@ export const projectIcons = {
   healthfinbot: HealthFinBotIcon,
   coco: CocoIcon,
   uritomo: UritomoIcon,
+  perari: PerariIcon,
+  inkdue: InkDueIcon,
 } as const;
