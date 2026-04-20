@@ -211,7 +211,17 @@
       "iac": "Terraform",
       "security": "Bastion Host, Private Registry"
     },
-    "architectureImage": "/assets/coco-architecture.png"
+    "architectureImage": "/assets/coco/architecture-v1.png",
+    "architectureImageAlt": {
+      "ko": "COCO 인프라 아키텍처 다이어그램",
+      "en": "COCO infrastructure architecture diagram",
+      "ja": "COCO インフラアーキテクチャ図"
+    },
+    "architectureNotes": {
+      "ko": "- DNS를 통해 사용자는 ALB, 개발자는 Bastion 경로로 진입\n- Kakao Cloud VPC 내부 K8s 클러스터에서 Ingress, AI, Dashboard, Socket, Monitoring, DevOps 구성요소 운영\n- Database 영역은 MySQL, Redis, MongoDB와 백업 구성을 분리\n- NAT를 통해 AWS S3와 Bedrock, 외부 관리자/GitHub와 통신",
+      "en": "- Users enter through ALB via DNS, while developers access through Bastion\n- The Kakao Cloud VPC hosts a K8s cluster with Ingress, AI, Dashboard, Socket, Monitoring, and DevOps components\n- The database zone separates MySQL, Redis, MongoDB, and backup components\n- NAT handles connectivity to AWS S3, Bedrock, external managers, and GitHub",
+      "ja": "- DNS を通じてユーザーは ALB、開発者は Bastion 経路で進入\n- Kakao Cloud VPC 内の K8s クラスターで Ingress、AI、Dashboard、Socket、Monitoring、DevOps を運用\n- Database 領域では MySQL、Redis、MongoDB、Backup を分離構成\n- NAT を通じて AWS S3 / Bedrock / 外部管理者 / GitHub と通信"
+    }
   },
   "responsibilities": {
     "ko": [

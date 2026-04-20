@@ -254,7 +254,12 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       {(() => {
         const sections = [];
         let sectionIndex = 0;
-        const useUnifiedSections = projectId === 'uritomo';
+        const hasArchitectureSection =
+          Boolean((project as any).architectureImage) ||
+          Boolean((project as any).architectureNotes?.[language]?.trim()) ||
+          Boolean((project as any).stackAndArchitecture?.architectureImage) ||
+          Boolean((project as any).stackAndArchitecture?.architectureNotes?.[language]?.trim()) ||
+          Boolean((project as any).architectureFlow?.[language]?.length);
         // Overview Section
         if (project.overviewStory) {
           sections.push(
@@ -282,7 +287,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         }
 
         // Architecture Section
-        if (!useUnifiedSections && (project as any).architectureFlow) {
+        if (hasArchitectureSection) {
           sections.push(
             <ArchitectureSection
               key="architecture"
