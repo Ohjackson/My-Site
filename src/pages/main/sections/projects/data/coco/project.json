@@ -5,9 +5,9 @@
     "ja": "COCO"
   },
   "summary": {
-    "ko": "AI 기반 업무 효율화 챗봇 인프라 구축",
-    "en": "AI-Powered Enterprise Chatbot Infrastructure",
-    "ja": "AI駆動エンタープライズチャットボットインフラ構築"
+    "ko": "고객사 메신저 기반 B2B 사내 챗봇 Fortune의 인프라 및 운영 대시보드 구축",
+    "en": "Infrastructure and Ops Dashboard for Fortune, a KakaoWork-based B2B internal chatbot",
+    "ja": "KakaoWorkベース B2B 社内チャットボット Fortune のインフラおよび運用ダッシュボード構築"
   },
   "role": {
     "ko": "Infrastructure Engineer (100%)",
@@ -17,10 +17,8 @@
   "tags": {
     "ko": [
       "Kubernetes",
-      "Hybrid Cloud",
-      "CI/CD",
-      "Terraform",
-      "AWS"
+      "Cloud",
+      "DevOps"
     ],
     "en": [
       "Kubernetes",
@@ -38,14 +36,14 @@
     ]
   },
   "platform": {
-    "ko": "Web (Enterprise)",
-    "en": "Web (Enterprise)",
-    "ja": "Web (Enterprise)"
+    "ko": "B2B - KakaoWork Bot, Web Dashboard",
+    "en": "B2B - KakaoWork Bot, Web Dashboard",
+    "ja": "B2B - KakaoWork Bot, Web Dashboard"
   },
   "workPeriod": {
-    "ko": "2025.10 - 2025.12",
-    "en": "Oct 2025 - Dec 2025",
-    "ja": "2025年10月 - 2025年12月"
+    "ko": "2025.11 - 2025.12",
+    "en": "Nov 2025 - Dec 2025",
+    "ja": "2025年11月 - 2025年12月"
   },
   "releaseDate": {
     "ko": "2025.12",
@@ -53,47 +51,42 @@
     "ja": "2025年12月"
   },
   "serviceStatus": {
-    "ko": "운영 중",
-    "en": "In Production",
-    "ja": "運用中"
+    "ko": "종료",
+    "en": "Ended",
+    "ja": "終了"
   },
   "teamSize": {
     "ko": "6명",
     "en": "6 members",
     "ja": "6名"
   },
-  "additionalFeatures": {
-    "ko": "- 하이브리드 클라우드 (Kakao Cloud + AWS)\n- 100% 쿠버네티스 기반 인프라\n- GitOps 기반 자동화 배포",
-    "en": "- Hybrid Cloud (Kakao Cloud + AWS)\n- 100% Kubernetes-based Infrastructure\n- GitOps-driven Automated Deployment",
-    "ja": "- ハイブリッドクラウド（Kakao Cloud + AWS）\n- 100% Kubernetes基盤インフラ\n- GitOps駆動の自動デプロイ"
-  },
   "features": {
     "ko": [
-      "하이브리드 클라우드 아키텍처 설계",
-      "Kubernetes 클러스터 구축 및 운영",
-      "CI/CD 파이프라인 자동화",
-      "마이크로서비스 오케스트레이션",
-      "보안 네트워크 설계"
+      "고객사 메신저 사내 챗봇 인프라 구축",
+      "Kubernetes 클러스터 및 운영 환경 구성",
+      "관측/모니터링 대시보드 구축",
+      "CI/CD 및 GitOps 자동화",
+      "보안 네트워크 및 문서 기반 운영 지원"
     ],
     "en": [
-      "Hybrid Cloud Architecture Design",
+      "Internal Chatbot Infrastructure on KakaoWork",
       "Kubernetes Cluster Setup & Operations",
-      "CI/CD Pipeline Automation",
-      "Microservices Orchestration",
-      "Secure Network Design"
+      "Observability Dashboard Setup",
+      "CI/CD and GitOps Automation",
+      "Secure Network and Document-Driven Operations"
     ],
     "ja": [
-      "ハイブリッドクラウドアーキテクチャ設計",
+      "KakaoWork 社内チャットボット基盤構築",
       "Kubernetesクラスター構築・運用",
-      "CI/CDパイプライン自動化",
-      "マイクロサービスオーケストレーション",
-      "セキュアネットワーク設計"
+      "観測/モニタリングダッシュボード構築",
+      "CI/CD と GitOps 自動化",
+      "セキュアネットワークと文書ベース運用支援"
     ]
   },
   "overviewStory": {
-    "ko": "AI 기반 업무 효율화 챗봇 서비스의 전체 인프라를 100% 단독으로 설계하고 구축했습니다. Kakao Cloud와 AWS를 연동한 하이브리드 클라우드 환경에서 Kubernetes를 활용하여 고가용성과 확장성을 갖춘 프로덕션급 인프라를 완성했습니다.\n\n특히 Public/Private 서브넷 분리, Bastion Host를 통한 보안 접근, NAT Gateway를 활용한 아웃바운드 트래픽 관리 등 엔터프라이즈급 보안 아키텍처를 구현했습니다.",
-    "en": "I single-handedly designed and built the entire infrastructure for an AI-powered enterprise chatbot service. Leveraged Kubernetes in a hybrid cloud environment connecting Kakao Cloud and AWS to deliver a production-grade infrastructure with high availability and scalability.\n\nImplemented enterprise-grade security architecture including Public/Private subnet separation, secure access through Bastion Host, and outbound traffic management via NAT Gateway.",
-    "ja": "AI駆動の業務効率化チャットボットサービスのインフラ全体を100%単独で設計・構築しました。Kakao CloudとAWSを連携したハイブリッドクラウド環境でKubernetesを活用し、高可用性とスケーラビリティを備えた本番グレードのインフラを実現しました。\n\nPublic/Privateサブネット分離、Bastion Hostによるセキュアアクセス、NAT Gatewayを活用したアウトバウンドトラフィック管理など、エンタープライズグレードのセキュリティアーキテクチャを実装しました。"
+    "ko": "고객사 메신저에서 휴가·규정·FAQ·용어를 즉답하고, 관리자는 웹 대시보드에서 품질·보안·비용을 추적하는 B2B 사내 챗봇 Fortune의 인프라를 100% 단독으로 설계·구축했습니다. Kakao Cloud와 AWS를 연동한 하이브리드 클라우드 환경 위에 Kubernetes 클러스터, DB 서버, 백업 서버, CI/CD 및 관측 도구를 배치해 운영 가능한 구조를 만들었습니다.\n\n특히 Public/Private 서브넷 분리, Bastion Host 강제 경유, NAT 기반 아웃바운드 통신, ALB/Ingress/TLS 구성, Prometheus·Grafana·Alertmanager 기반 모니터링까지 문서화와 운영 흐름을 함께 정리했습니다.",
+    "en": "I single-handedly designed and built the infrastructure for Fortune, a B2B internal chatbot that answers leave, policy, FAQ, and terminology questions in KakaoWork while giving admins a web dashboard to track quality, security, and cost. On top of a Kakao Cloud + AWS hybrid cloud environment, I set up a Kubernetes cluster, database server, backup server, CI/CD pipeline, and observability stack for real operations.\n\nThe work included Public/Private subnet separation, Bastion-only access, NAT-based outbound traffic, ALB/Ingress/TLS configuration, and monitoring with Prometheus, Grafana, and Alertmanager, along with the corresponding operational documentation.",
+    "ja": "KakaoWork で休暇・規程・FAQ・用語に即答し、管理者は Web ダッシュボードで品質・セキュリティ・コストを追跡できる B2B 社内チャットボット Fortune のインフラを 100% 単独で設計・構築しました。Kakao Cloud と AWS を連携したハイブリッドクラウド環境の上に、Kubernetes クラスター、DB サーバー、バックアップサーバー、CI/CD、観測基盤を配置し、運用可能な構成を整えました。\n\n特に Public/Private サブネット分離、Bastion 強制経由、NAT ベースのアウトバウンド通信、ALB/Ingress/TLS 構成、Prometheus・Grafana・Alertmanager による監視まで、文書化と運用フローを合わせて整理しました。"
   },
   "links": {
     "demo": "",
@@ -124,9 +117,9 @@
         "ja": "ハイブリッドクラウドアーキテクチャ"
       },
       "description": {
-        "ko": "Kakao Cloud VPC와 AWS VPC를 NAT Gateway로 연동하여 내부 서비스는 Kakao Cloud에서, AI 처리(AWS Bedrock)와 오브젝트 스토리지는 AWS에서 처리하는 최적화된 아키텍처 구현",
-        "en": "Integrated Kakao Cloud VPC and AWS VPC via NAT Gateway. Internal services run on Kakao Cloud while AI processing (AWS Bedrock) and object storage are handled on AWS for optimized architecture",
-        "ja": "Kakao Cloud VPCとAWS VPCをNAT Gatewayで連携。内部サービスはKakao Cloud、AI処理（AWS Bedrock）とオブジェクトストレージはAWSで処理する最適化アーキテクチャを実装"
+        "ko": "- Kakao Cloud VPC(172.16.0.0/16)를 기준으로 Public/Private 구역을 분리하고, 외부 AI/스토리지는 AWS Bedrock/S3와 연동\n- 사용자 트래픽은 DNS와 ALB를 거쳐 Ingress로 진입하고, 내부 운영/배포 흐름은 Bastion 및 NAT 경로를 통해 통제\n- 챗봇 서비스 운영은 KakaoWork 연동과 웹 대시보드 요구사항을 기준으로 설계",
+        "en": "- Split the Kakao Cloud VPC (172.16.0.0/16) into public/private zones and connected external AI/storage to AWS Bedrock/S3\n- User traffic enters through DNS and ALB into Ingress, while internal ops/deploy flows are controlled through Bastion and NAT paths\n- The infrastructure was designed around KakaoWork chatbot usage and admin web dashboard requirements",
+        "ja": "- Kakao Cloud VPC (172.16.0.0/16) を Public/Private に分離し、外部 AI/ストレージは AWS Bedrock/S3 と連携\n- ユーザートラフィックは DNS と ALB を経て Ingress に入り、内部運用/デプロイは Bastion と NAT 経路で統制\n- KakaoWork チャットボット利用と管理 Web ダッシュボード要件を基準に基盤を設計"
       },
       "implemented": true
     },
@@ -137,9 +130,9 @@
         "ja": "Kubernetesクラスター設計・構築"
       },
       "description": {
-        "ko": "Control Plane과 Worker Node 분리, Nginx Ingress Controller를 통한 트래픽 라우팅, 네임스페이스 기반 서비스 격리(AI, Dashboard, Socket, Monitoring, DevOps) 구현",
-        "en": "Separated Control Plane and Worker Nodes, implemented traffic routing via Nginx Ingress Controller, and namespace-based service isolation (AI, Dashboard, Socket, Monitoring, DevOps)",
-        "ja": "Control PlaneとWorker Nodeの分離、Nginx Ingress Controllerによるトラフィックルーティング、名前空間ベースのサービス分離（AI、Dashboard、Socket、Monitoring、DevOps）を実装"
+        "ko": "- kubeadm 기반 Kubernetes v1.30.14 클러스터를 구성하고 containerd v1.7.28, Calico v3.27.2를 적용\n- Control Plane / Worker 역할을 분리하고, Nginx Ingress Controller로 외부 요청을 라우팅\n- AI, Dashboard, Socket, Monitoring, DevOps 성격의 구성요소를 클러스터 내부 운영 구조에 맞게 분리",
+        "en": "- Built a kubeadm-based Kubernetes v1.30.14 cluster with containerd v1.7.28 and Calico v3.27.2\n- Separated Control Plane and Worker roles and routed external requests through Nginx Ingress Controller\n- Organized AI, Dashboard, Socket, Monitoring, and DevOps components into an operational cluster structure",
+        "ja": "- kubeadm ベースの Kubernetes v1.30.14 クラスターを構築し、containerd v1.7.28 と Calico v3.27.2 を適用\n- Control Plane / Worker の役割を分離し、Nginx Ingress Controller で外部リクエストをルーティング\n- AI、Dashboard、Socket、Monitoring、DevOps を運用構成に合わせてクラスター内で分離"
       },
       "implemented": true
     },
@@ -150,9 +143,9 @@
         "ja": "ネットワークセキュリティ設計"
       },
       "description": {
-        "ko": "Public/Private 서브넷 분리, Bastion Host를 통한 개발자 SSH 접근 제어, ALB(Application Load Balancer)를 통한 외부 트래픽 관리, Cloudflare DNS 연동",
-        "en": "Public/Private subnet separation, developer SSH access control via Bastion Host, external traffic management through ALB (Application Load Balancer), Cloudflare DNS integration",
-        "ja": "Public/Privateサブネット分離、Bastion Hostによる開発者SSHアクセス制御、ALB（Application Load Balancer）による外部トラフィック管理、Cloudflare DNS連携"
+        "ko": "- Public 서브넷에는 ALB, Bastion, NAT 인스턴스를 두고 Private 구역에는 클러스터/DB/백업 서버를 배치\n- SSH 접근은 Bastion Host 경유만 허용하고, 보안 그룹으로 plain/worker/database 역할별 포트를 분리\n- Ingress 레벨 TLS 종료와 cert-manager 기반 인증서 운영 흐름을 적용",
+        "en": "- Placed ALB, Bastion, and NAT instances in public subnets, with cluster/DB/backup servers isolated in private zones\n- Allowed SSH access only through the Bastion Host and split role-based ports with security groups for plain/worker/database\n- Applied ingress-level TLS termination and a cert-manager-based certificate flow",
+        "ja": "- Public サブネットに ALB・Bastion・NAT インスタンスを置き、Private 側にクラスター/DB/バックアップサーバーを分離配置\n- SSH は Bastion Host 経由のみ許可し、plain/worker/database ごとにセキュリティグループでポートを分離\n- Ingress レベルの TLS 終端と cert-manager ベースの証明書運用を適用"
       },
       "implemented": true
     },
@@ -163,35 +156,35 @@
         "ja": "CI/CDパイプライン構築"
       },
       "description": {
-        "ko": "GitHub Actions와 Jenkins를 활용한 자동화 빌드, Private Container Registry 구축, ArgoCD 기반 GitOps 배포 자동화로 개발팀의 배포 시간 90% 단축",
-        "en": "Automated builds with GitHub Actions and Jenkins, private Container Registry setup, GitOps deployment automation with ArgoCD reducing team deployment time by 90%",
-        "ja": "GitHub ActionsとJenkinsによる自動ビルド、プライベートContainer Registry構築、ArgoCD基盤GitOpsデプロイ自動化でチームのデプロイ時間を90%短縮"
+        "ko": "- Jenkins LTS(2.440.x)와 GitHub Actions를 연계하고, Kaniko 기반 무데몬 이미지 빌드 파이프라인 구성\n- Kakao Container Registry를 사용해 이미지를 관리하고, ArgoCD v3.2.0으로 GitOps 배포 자동화\n- Kustomize Base/Overlay 구조와 Kubernetes Agent 기반 동적 빌드 흐름을 정리",
+        "en": "- Connected Jenkins LTS (2.440.x) with GitHub Actions and built a daemonless image pipeline using Kaniko\n- Managed images with Kakao Container Registry and automated GitOps deployments through ArgoCD v3.2.0\n- Organized the workflow around Kustomize base/overlay structure and Kubernetes-agent-based dynamic builds",
+        "ja": "- Jenkins LTS (2.440.x) と GitHub Actions を連携し、Kaniko ベースのデーモンレスイメージビルドを構成\n- Kakao Container Registry でイメージを管理し、ArgoCD v3.2.0 で GitOps デプロイを自動化\n- Kustomize Base/Overlay 構成と Kubernetes Agent ベースの動的ビルドフローを整理"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "모니터링 및 로깅 시스템",
-        "en": "Monitoring & Logging System",
-        "ja": "モニタリング・ロギングシステム"
+        "ko": "모니터링 및 운영 대시보드",
+        "en": "Monitoring & Ops Dashboard",
+        "ja": "モニタリングと運用ダッシュボード"
       },
       "description": {
-        "ko": "Prometheus + Grafana 기반 메트릭 수집 및 시각화, 실시간 알림 시스템 구축으로 장애 대응 시간 최소화",
-        "en": "Prometheus + Grafana-based metric collection and visualization, real-time alerting system to minimize incident response time",
-        "ja": "Prometheus + Grafana基盤のメトリクス収集・可視化、リアルタイムアラートシステムで障害対応時間を最小化"
+        "ko": "- Prometheus v2.45.x, Grafana v10.x, Alertmanager v0.26.x를 구성해 메트릭 수집/시각화/알림 체계 구축\n- Grafana 대시보드에서 ingress API RPS, p95 latency, 5xx 비율, CPU/Memory, 네트워크 대역폭을 추적\n- prometheus / grafana / alert / argo / jenkins 전용 접근 주소를 운영 문서에 정리",
+        "en": "- Set up Prometheus v2.45.x, Grafana v10.x, and Alertmanager v0.26.x for metrics, visualization, and alerting\n- Tracked ingress API RPS, p95 latency, 5xx rate, CPU/memory, and network bandwidth in Grafana dashboards\n- Documented dedicated access endpoints for prometheus / grafana / alert / argo / jenkins",
+        "ja": "- Prometheus v2.45.x、Grafana v10.x、Alertmanager v0.26.x を構成し、メトリクス収集・可視化・アラートを整備\n- Grafana ダッシュボードで ingress API RPS、p95 latency、5xx rate、CPU/Memory、ネットワーク帯域を追跡\n- prometheus / grafana / alert / argo / jenkins の専用アクセス先を運用文書に整理"
       },
       "implemented": true
     },
     {
       "title": {
-        "ko": "데이터베이스 고가용성",
-        "en": "Database High Availability",
-        "ja": "データベース高可用性"
+        "ko": "데이터 저장소 및 백업 운영",
+        "en": "Data Stores & Backup Operations",
+        "ja": "データストアとバックアップ運用"
       },
       "description": {
-        "ko": "MySQL과 MongoDB 이중화 구성, 자동 백업 시스템 구축, Private 서브넷 내 보안 배치로 데이터 안정성 확보",
-        "en": "MySQL and MongoDB redundancy configuration, automated backup system, secure placement within Private subnet for data reliability",
-        "ja": "MySQLとMongoDBの冗長構成、自動バックアップシステム構築、Privateサブネット内のセキュア配置でデータ安定性を確保"
+        "ko": "- database 인스턴스 내부에 MySQL 8.0, MongoDB 7.0, Redis 7.0 컨테이너를 구성\n- backup 서버로 매일 03:00 KST 백업을 수행하고 7일 보관 정책을 운영\n- DB 포트는 내부망만 허용해 서비스 데이터와 백업 경로를 분리 관리",
+        "en": "- Ran MySQL 8.0, MongoDB 7.0, and Redis 7.0 containers inside the database instance\n- Executed daily 03:00 KST backups to a dedicated backup server with a 7-day retention policy\n- Limited DB ports to the internal network and separated service data from backup paths",
+        "ja": "- database インスタンス内で MySQL 8.0、MongoDB 7.0、Redis 7.0 コンテナを運用\n- 専用バックアップサーバーへ毎日 03:00 KST にバックアップし、7日保持ポリシーを適用\n- DB ポートは内部ネットワークのみに制限し、サービスデータとバックアップ経路を分離管理"
       },
       "implemented": true
     }
@@ -199,17 +192,22 @@
   "preview_screenshots": {
     "screenshots": []
   },
+  "additionalFeatures": {
+    "ko": "- 고객사 메신저 슬래시 명령 기반 사내 챗봇 사용 시나리오를 기준으로 인프라를 설계\n- 문서 업로드 → 전처리/분할 → 임베딩 → 검색/재순위 → 출처 포함 답변 흐름을 운영 관점에서 지원\n- 관리자 대시보드에서 이용량, 피드백, 가드레일, 토큰/비용, 질문 주제 모니터링이 가능하도록 관측 지표를 설계\n- 응답 지연 시 선응답, 실패 시 표준 에러 응답 등 운영 UX 요구사항을 고려해 배포/모니터링 구조를 정리",
+    "en": "- Designed the infrastructure around KakaoWork slash-command-based internal chatbot usage\n- Supported the document upload -> preprocessing/chunking -> embedding -> retrieval/reranking -> cited answer flow from an operational perspective\n- Structured observability so admins can monitor usage, feedback, guardrails, token cost, and topic trends from the dashboard\n- Considered operational UX requirements such as provisional responses on delay and standard error responses on failure",
+    "ja": "- KakaoWork のスラッシュコマンド型社内チャットボット利用を前提にインフラを設計\n- 文書アップロード -> 前処理/分割 -> 埋め込み -> 検索/再ランキング -> 出典付き回答の流れを運用観点で支援\n- 管理ダッシュボードで利用量、フィードバック、ガードレール、トークンコスト、質問トピックを監視できるよう観測設計を整理\n- 遅延時の先行応答や失敗時の標準エラー応答など、運用 UX 要件も踏まえて配備/監視構成を整備"
+  },
   "stackAndArchitecture": {
     "techStack": {
       "container": "Docker, Kubernetes (K8s), Helm",
       "cloud": "Kakao Cloud, AWS (Bedrock, S3)",
       "networking": "Nginx Ingress, ALB, NAT Gateway, VPC Peering",
-      "cicd": "GitHub Actions, Jenkins, ArgoCD (GitOps)",
-      "monitoring": "Prometheus, Grafana",
+      "cicd": "GitHub Actions, Jenkins, Kaniko, ArgoCD (GitOps)",
+      "monitoring": "Prometheus, Grafana, Alertmanager",
       "testing": "k6 (Load Testing)",
-      "database": "MySQL, MongoDB",
+      "database": "MySQL, MongoDB, Redis",
       "iac": "Terraform",
-      "security": "Bastion Host, Private Registry"
+      "security": "Bastion Host, Security Group, Cert-manager TLS"
     },
     "architectureImage": "/assets/coco/architecture-v1.png",
     "architectureImageAlt": {
@@ -218,9 +216,9 @@
       "ja": "COCO インフラアーキテクチャ図"
     },
     "architectureNotes": {
-      "ko": "- DNS를 통해 사용자는 ALB, 개발자는 Bastion 경로로 진입\n- Kakao Cloud VPC 내부 K8s 클러스터에서 Ingress, AI, Dashboard, Socket, Monitoring, DevOps 구성요소 운영\n- Database 영역은 MySQL, Redis, MongoDB와 백업 구성을 분리\n- NAT를 통해 AWS S3와 Bedrock, 외부 관리자/GitHub와 통신",
-      "en": "- Users enter through ALB via DNS, while developers access through Bastion\n- The Kakao Cloud VPC hosts a K8s cluster with Ingress, AI, Dashboard, Socket, Monitoring, and DevOps components\n- The database zone separates MySQL, Redis, MongoDB, and backup components\n- NAT handles connectivity to AWS S3, Bedrock, external managers, and GitHub",
-      "ja": "- DNS を通じてユーザーは ALB、開発者は Bastion 経路で進入\n- Kakao Cloud VPC 内の K8s クラスターで Ingress、AI、Dashboard、Socket、Monitoring、DevOps を運用\n- Database 領域では MySQL、Redis、MongoDB、Backup を分離構成\n- NAT を通じて AWS S3 / Bedrock / 外部管理者 / GitHub と通信"
+      "ko": "- KakaoWork 및 웹 진입 트래픽은 DNS와 ALB를 거쳐 Kakao Cloud VPC 내부 Ingress로 유입\n- Public 영역에는 ALB, Bastion, NAT 인스턴스를 두고 Private 영역에는 K8s Cluster, DB, Backup 서버를 분리 배치\n- 클러스터 내부에는 Ingress, AI, Dashboard, Socket, Monitoring, DevOps, Registry 구성요소를 운영\n- 외부 AI/스토리지는 NAT 경유로 AWS Bedrock/S3와 연동하고, 운영 관측은 Grafana/Prometheus/Alertmanager로 확인",
+      "en": "- KakaoWork and web-entry traffic flows through DNS and ALB into the Ingress inside the Kakao Cloud VPC\n- ALB, Bastion, and NAT instances stay in the public zone, while the K8s cluster, DB, and backup server are isolated in private zones\n- The cluster internally runs Ingress, AI, Dashboard, Socket, Monitoring, DevOps, and Registry components\n- External AI/storage connects to AWS Bedrock/S3 through NAT, while operations are observed through Grafana/Prometheus/Alertmanager",
+      "ja": "- KakaoWork と Web 流入トラフィックは DNS と ALB を経て Kakao Cloud VPC 内の Ingress に入る構成\n- Public 領域には ALB・Bastion・NAT インスタンスを置き、Private 領域に K8s Cluster・DB・Backup サーバーを分離配置\n- クラスター内部では Ingress、AI、Dashboard、Socket、Monitoring、DevOps、Registry を運用\n- 外部 AI/ストレージは NAT 経由で AWS Bedrock/S3 と連携し、運用観測は Grafana/Prometheus/Alertmanager で確認"
     }
   },
   "responsibilities": {
@@ -262,15 +260,15 @@
     ]
   },
   "lessonsLearned": {
-    "ko": "프로덕션급 쿠버네티스 인프라를 처음부터 끝까지 단독으로 구축하면서 컨테이너 오케스트레이션의 본질을 이해하게 되었습니다. 특히 하이브리드 클라우드 환경에서의 네트워크 설계와 보안 아키텍처 구현 경험은 엔터프라이즈급 시스템 설계 역량을 크게 향상시켰습니다. 또한 GitOps 기반 배포 자동화를 통해 DevOps 문화의 핵심인 '코드로서의 인프라' 개념을 실전에서 체득했습니다.",
-    "en": "Building production-grade Kubernetes infrastructure from scratch single-handedly gave me a deep understanding of container orchestration fundamentals. The experience of designing networks and implementing security architecture in a hybrid cloud environment significantly enhanced my enterprise-grade system design capabilities. Additionally, I gained practical knowledge of 'Infrastructure as Code,' a core DevOps concept, through GitOps-based deployment automation.",
-    "ja": "プロダクショングレードのKubernetesインフラを一から単独で構築することで、コンテナオーケストレーションの本質を理解しました。特にハイブリッドクラウド環境でのネットワーク設計とセキュリティアーキテクチャ実装の経験は、エンタープライズグレードのシステム設計能力を大きく向上させました。また、GitOps基盤のデプロイ自動化を通じて、DevOps文化の核心である「Infrastructure as Code」の概念を実践で体得しました。"
+    "ko": "문서 기반 요구사항과 실제 인프라 산출물을 연결해보면서, 인프라는 단순히 서버를 띄우는 일이 아니라 제품의 사용 흐름과 운영 흐름을 구조화하는 일이라는 점을 더 분명히 이해했습니다. 특히 KakaoWork 챗봇, 관리자 대시보드, 관측 지표, 보안 경계, 백업 정책을 하나의 운영 체계로 묶는 경험이 컸습니다.",
+    "en": "Connecting requirement documents with actual infrastructure deliverables clarified that infrastructure is not just about provisioning servers, but about structuring product usage and operational flows together. The project was especially valuable in tying KakaoWork chatbot usage, admin dashboards, observability, security boundaries, and backup policies into one operating model.",
+    "ja": "要件文書と実際のインフラ成果物をつなげていく過程で、インフラは単にサーバーを立てる作業ではなく、製品の利用フローと運用フローを構造化する仕事だとより明確に理解しました。特に KakaoWork チャットボット、管理ダッシュボード、観測指標、セキュリティ境界、バックアップ方針を一つの運用体系として結び付けた経験が大きかったです。"
   },
   "results": {
     "achievements": {
-      "ko": "• 100% 쿠버네티스 기반 프로덕션 인프라 구축 완료\n• CI/CD 자동화로 배포 시간 90% 단축 (수동 2시간 → 자동 10분)\n• 하이브리드 클라우드로 월 인프라 비용 30% 절감\n• 99.9% 서비스 가용성 달성\n• Zero-downtime 배포 환경 구현",
-      "en": "• Completed 100% Kubernetes-based production infrastructure\n• Reduced deployment time by 90% through CI/CD automation (manual 2hrs → automated 10min)\n• Cut monthly infrastructure costs by 30% with hybrid cloud\n• Achieved 99.9% service availability\n• Implemented zero-downtime deployment environment",
-      "ja": "• 100% Kubernetes基盤本番インフラ構築完了\n• CI/CD自動化でデプロイ時間90%短縮（手動2時間 → 自動10分）\n• ハイブリッドクラウドで月額インフラコスト30%削減\n• 99.9%サービス可用性達成\n• ゼロダウンタイムデプロイ環境の実装"
+      "ko": "• Kubernetes 기반 클러스터, DB, 백업, 모니터링, CI/CD 구성을 문서화와 함께 정리\n• Public/Private 서브넷, Bastion, NAT, ALB, TLS까지 포함한 보안 경계 설계\n• Grafana 대시보드에서 ingress RPS, p95, 5xx, CPU/Memory/Bandwidth 지표를 운영 관점으로 확인 가능\n• MySQL / MongoDB / Redis 백업 정책(매일 03:00 KST, 7일 보관)을 운영 기준으로 수립",
+      "en": "• Organized a Kubernetes-based cluster, DB, backup, monitoring, and CI/CD setup together with infrastructure documentation\n• Designed security boundaries covering Public/Private subnets, Bastion, NAT, ALB, and TLS\n• Enabled operational monitoring of ingress RPS, p95, 5xx, CPU/memory, and bandwidth through Grafana dashboards\n• Defined backup policies for MySQL / MongoDB / Redis (daily at 03:00 KST with 7-day retention)",
+      "ja": "• Kubernetes ベースのクラスター、DB、バックアップ、監視、CI/CD 構成を文書と合わせて整理\n• Public/Private サブネット、Bastion、NAT、ALB、TLS を含むセキュリティ境界を設計\n• Grafana ダッシュボードで ingress RPS、p95、5xx、CPU/Memory/Bandwidth を運用観点で確認可能に構成\n• MySQL / MongoDB / Redis のバックアップ方針（毎日 03:00 KST、7日保持）を定義"
     }
   },
   "flag": "active"
