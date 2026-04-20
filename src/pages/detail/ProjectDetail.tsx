@@ -255,6 +255,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       {(() => {
         const sections = [];
         let sectionIndex = 0;
+        const useUnifiedSections = projectId === 'uritomo';
         // Overview Section
         if (project.overviewStory) {
           sections.push(
@@ -282,7 +283,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         }
 
         // Architecture Section
-        if ((project as any).architectureFlow) {
+        if (!useUnifiedSections && (project as any).architectureFlow) {
           sections.push(
             <ArchitectureSection
               key="architecture"
@@ -295,7 +296,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         }
 
         // Data Model Section
-        if ((project as any).dataModelPoints) {
+        if (!useUnifiedSections && (project as any).dataModelPoints) {
           sections.push(
             <DataModelSection
               key="data-model"

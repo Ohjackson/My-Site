@@ -17,9 +17,9 @@ export function ArchitectureSection({ data, language, backgroundColor }: Archite
   if (!steps?.length) return null;
 
   const content = {
-    ko: { title: '아키텍처 요약 (Data Flow)' },
-    en: { title: 'Architecture Summary (Data Flow)' },
-    ja: { title: 'アーキテクチャ概要（Data Flow）' }
+    ko: { title: 'Architecture' },
+    en: { title: 'Architecture' },
+    ja: { title: 'Architecture' }
   };
 
   return (
@@ -43,4 +43,3 @@ export function ArchitectureSection({ data, language, backgroundColor }: Archite
     </section>
   );
 }
-
