@@ -5,6 +5,8 @@ import type { ProjectId, ProjectTranslation, ProjectsContent } from '../types';
 // Import project data
 import tangochoData from '../data/Tangocho/project.json';
 import loventureData from '../data/Loventure/project.json';
+import cocoData from '../data/coco/project.json';
+import uritomoData from '../data/Uritomo/project.json';
 import routiqData from '../data/Routiq/project.json';
 import aconData from '../data/Acon/project.json';
 import popcoData from '../data/POPCO/project.json';
@@ -13,14 +15,14 @@ import wiroData from '../data/Wiro/project.json';
 import mysiteData from '../data/MySite/project.json';
 import healthfinbotData from '../data/healthFinBot/project.json';
 import ideaverifyprogramData from '../data/IdeaVerifyProgram/project.json';
-import cocoData from '../data/coco/project.json';
-import uritomoData from '../data/Uritomo/project.json';
-import perariData from '../data/Perari/project.json';
-import inkdueData from '../data/InkDue/project.json';
+// import perariData from '../data/Perari/project.json';
+// import inkdueData from '../data/InkDue/project.json';
 
 const projectData = {
   tangocho: tangochoData,
   loventure: loventureData,
+  coco: cocoData,
+  uritomo: uritomoData,
   routiq: routiqData,
   acon: aconData,
   popco: popcoData,
@@ -29,10 +31,8 @@ const projectData = {
   mysite: mysiteData,
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
-  coco: cocoData,
-  uritomo: uritomoData,
-  perari: perariData,
-  inkdue: inkdueData,
+  // perari: perariData,
+  // inkdue: inkdueData,
 };
 
 export const useProjectsContent = () => {

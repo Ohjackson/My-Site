@@ -26,8 +26,8 @@ import healthfinbotData from '../main/sections/projects/data/healthFinBot/projec
 import ideaverifyprogramData from '../main/sections/projects/data/IdeaVerifyProgram/project.json';
 import cocoData from '../main/sections/projects/data/coco/project.json';
 import uritomoData from '../main/sections/projects/data/Uritomo/project.json';
-import perariData from '../main/sections/projects/data/Perari/project.json';
-import inkdueData from '../main/sections/projects/data/InkDue/project.json';
+// import perariData from '../main/sections/projects/data/Perari/project.json';
+// import inkdueData from '../main/sections/projects/data/InkDue/project.json';
 
 const projectData = {
   tangocho: tangochoData,
@@ -42,8 +42,8 @@ const projectData = {
   ideaverifyprogram: ideaverifyprogramData,
   coco: cocoData,
   uritomo: uritomoData,
-  perari: perariData,
-  inkdue: inkdueData,
+  // perari: perariData,
+  // inkdue: inkdueData,
 };
 
 interface ProjectDetailProps {
@@ -255,7 +255,6 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       {(() => {
         const sections = [];
         let sectionIndex = 0;
-
         // Overview Section
         if (project.overviewStory) {
           sections.push(
