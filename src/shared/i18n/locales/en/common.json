@@ -22,7 +22,7 @@
   },
   "sections": {
     "hero": {
-      "headline": "Hi, I'm Jaehyun Ahn — a developer\nwho builds technology\nwith empathy and purpose.",
+      "headline": "I'm Jaehyun Ahn, a developer who finds answers by tackling problems head-on.",
       "subheadline": "Designing multilingual products that feel intentional, inclusive, and fast.",
       "primaryCta": "View projects",
       "secondaryCta": "Get in touch",
@@ -31,8 +31,7 @@
     "about": {
       "title": "About",
       "paragraphs": [
-        "I look at problems from a human point of view, holding on to complexity until it becomes simple.",
-        "I enjoy learning and collaborating, continually expanding into new domains such as product, design, and languages."
+        "I have grown by learning through direct experience, even in uncertain situations.\nWhen I face a new problem, I first focus on understanding its structure,\nand then I keep iterating through execution and improvement to find an answer.\nEven now, I aim to be a developer who uses technology to reduce friction for people and teams."
       ],
       "actions": {
         "github": "GitHub",
