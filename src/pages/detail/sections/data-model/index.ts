@@ -1,2 +1,0 @@
-export { DataModelSection } from './DataModelSection';
-

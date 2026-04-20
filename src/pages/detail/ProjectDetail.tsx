@@ -4,7 +4,6 @@ import { projectIcons } from '@/assets/icons';
 import { Button } from "./components/Button";
 import { OverviewSection } from "./sections/overview";
 import { ArchitectureSection } from "./sections/architecture";
-import { DataModelSection } from "./sections/data-model";
 import { FeaturesSection } from "./sections/features";
 import { PreviewSection } from "./sections/preview";
 import { SecuritySection } from "./sections/security";
@@ -287,19 +286,6 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           sections.push(
             <ArchitectureSection
               key="architecture"
-              data={project as any}
-              language={language}
-              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
-            />
-          );
-          sectionIndex++;
-        }
-
-        // Data Model Section
-        if (!useUnifiedSections && (project as any).dataModelPoints) {
-          sections.push(
-            <DataModelSection
-              key="data-model"
               data={project as any}
               language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
