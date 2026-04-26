@@ -15,9 +15,9 @@
   "ja": "Full-Cycle Solo Project"
   },
   "tags": {
-  "ko": ["DX", "ResNet", "iCloud", "Core ML", "Shortcuts"],
-  "en": ["DX", "ResNet", "iCloud", "Core ML", "Shortcuts"],
-  "ja": ["DX", "ResNet", "iCloud", "Core ML", "Shortcuts"]
+  "ko": ["ResNet", "iCloud", "Core ML", "Shortcuts"],
+  "en": ["ResNet", "iCloud", "Core ML", "Shortcuts"],
+  "ja": ["ResNet", "iCloud", "Core ML", "Shortcuts"]
   },
   "platform": {
   "ko": "iPhone, iPad",
