@@ -9,14 +9,18 @@ interface ProjectsSectionProps {
   onProjectClick: (id: ProjectId) => void;
 }
 
+const FEATURED_PROJECT_IDS: ProjectId[] = ['tangocho', 'loventure', 'coco', 'uritomo'];
+
 export const ProjectsSection = ({ onProjectClick }: ProjectsSectionProps) => {
   const { content, projects } = useProjectsContent();
-  const [showActiveOnly, setShowActiveOnly] = useState(false);
+  const [showFeaturedOnly, setShowFeaturedOnly] = useState(false);
   const { t } = useTranslation();
 
   // Filter projects based on toggle state
-  const filteredProjects = showActiveOnly 
-    ? projects.filter(project => project.flag === 'active')
+  const filteredProjects = showFeaturedOnly
+    ? FEATURED_PROJECT_IDS
+        .map((projectId) => projects.find((project) => project.id === projectId))
+        .filter((project): project is NonNullable<typeof project> => Boolean(project))
     : projects;
 
   return (
@@ -31,14 +35,14 @@ export const ProjectsSection = ({ onProjectClick }: ProjectsSectionProps) => {
           {/* Toggle Button */}
           <div className="mt-8">
             <button
-              onClick={() => setShowActiveOnly(!showActiveOnly)}
+              onClick={() => setShowFeaturedOnly(!showFeaturedOnly)}
               className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 ${
-                showActiveOnly
+                showFeaturedOnly
                   ? 'bg-primary text-white shadow-lg'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
-              {showActiveOnly ? t('sections.projects.toggle.showAll') : t('sections.projects.toggle.showFeatured')}
+              {showFeaturedOnly ? t('sections.projects.toggle.showAll') : t('sections.projects.toggle.showFeatured')}
             </button>
           </div>
         </div>

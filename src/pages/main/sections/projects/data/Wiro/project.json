@@ -181,11 +181,6 @@
       "レポート閲覧後の行動完了率・相談転換率の指標設計"
     ]
   },
-  "lessonsLearned": {
-    "ko": "기획의 변동에따라 개발 방향이 빠뀜에 대한 빠른 대처 경험",
-    "en": "Experience in quickly adapting to changes in development direction due to planning changes.",
-    "ja": "計画変更による開発方向の変更に迅速に適応する経験"
-  },
   "results": {
     "achievements": {
       "ko": "감정지수 리포트 MVP 및 상담 연계 프로토타입 완성, 알파 사용자 피드백 수집",

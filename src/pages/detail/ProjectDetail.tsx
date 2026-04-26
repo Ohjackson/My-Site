@@ -8,6 +8,7 @@ import { FeaturesSection } from "./sections/features";
 import { PreviewSection } from "./sections/preview";
 import { SecuritySection } from "./sections/security";
 import { TechStackSection } from "./sections/techstack";
+import { ResultsSection } from "./sections/results";
 import { AdditionalSection } from "./sections/additional";
 import { OtherProjectsSection } from "./sections/other-projects";
 import { ContactSection } from '@/pages/main/sections/contact';
@@ -360,6 +361,19 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
             <TechStackSection
               key="techstack"
               data={(project as any).stackAndArchitecture}
+              language={language}
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        // Results Section
+        if ((project as any).results) {
+          sections.push(
+            <ResultsSection
+              key="results"
+              data={project as any}
               language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />

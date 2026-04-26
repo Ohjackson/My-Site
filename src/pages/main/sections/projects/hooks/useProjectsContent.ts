@@ -35,6 +35,14 @@ const projectData = {
   // inkdue: inkdueData,
 };
 
+const getStartPeriodValue = (period?: string) => {
+  const match = period?.match(/(\d{4})\.(\d{2})/);
+  if (!match) return Number.POSITIVE_INFINITY;
+
+  const [, year, month] = match;
+  return Number(year) * 100 + Number(month);
+};
+
 export const useProjectsContent = () => {
   const { t, i18n } = useTranslation();
 
@@ -53,18 +61,21 @@ export const useProjectsContent = () => {
   const viewDetails = t('sections.projects.viewDetails');
 
   // Convert project data to the expected format with language-specific data
-  const projects: Array<ProjectTranslation & { id: ProjectId; flag?: string; making?: boolean }> = Object.entries(projectData).map(([id, data]) => ({
-    id: id as ProjectId,
-    name: data.name[currentLanguage],
-    summary: data.summary[currentLanguage],
-    period: data.workPeriod[currentLanguage],
-    role: data.role[currentLanguage],
-    tags: data.tags[currentLanguage],
-    features: data.features[currentLanguage],
-    detail: (data as any).detail,
-    flag: (data as any).flag, // Include flag information
-    making: (data as any).making, // Include making flag
-  }));
+  const projects: Array<ProjectTranslation & { id: ProjectId; flag?: string; making?: boolean }> =
+    Object.entries(projectData)
+      .map(([id, data]) => ({
+        id: id as ProjectId,
+        name: data.name[currentLanguage],
+        summary: data.summary[currentLanguage],
+        period: data.workPeriod[currentLanguage],
+        role: data.role[currentLanguage],
+        tags: data.tags[currentLanguage],
+        features: data.features[currentLanguage],
+        detail: (data as any).detail,
+        flag: (data as any).flag,
+        making: (data as any).making,
+      }))
+      .sort((a, b) => getStartPeriodValue(b.period) - getStartPeriodValue(a.period));
 
   console.log('Projects loaded:', projects.map(p => ({ id: p.id, name: p.name })));
 

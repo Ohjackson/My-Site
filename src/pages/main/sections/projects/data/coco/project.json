@@ -259,11 +259,6 @@
       "- Terraformを活用したIaC導入によりインフラ構成管理と再現性を確保"
     ]
   },
-  "lessonsLearned": {
-    "ko": "문서 기반 요구사항과 실제 인프라 산출물을 연결해보면서, 인프라는 단순히 서버를 띄우는 일이 아니라 제품의 사용 흐름과 운영 흐름을 구조화하는 일이라는 점을 더 분명히 이해했습니다. 특히 사내 챗봇, 관리자 대시보드, 관측 지표, 보안 경계, 백업 정책을 하나의 운영 체계로 묶는 경험이 컸습니다.",
-    "en": "Connecting requirement documents with actual infrastructure deliverables clarified that infrastructure is not just about provisioning servers, but about structuring product usage and operational flows together. The project was especially valuable in tying internal chatbot usage, admin dashboards, observability, security boundaries, and backup policies into one operating model.",
-    "ja": "要件文書と実際のインフラ成果物をつなげていく過程で、インフラは単にサーバーを立てる作業ではなく、製品の利用フローと運用フローを構造化する仕事だとより明確に理解しました。特に社内チャットボット、管理ダッシュボード、観測指標、セキュリティ境界、バックアップ方針を一つの運用体系として結び付けた経験が大きかったです。"
-  },
   "results": {
     "achievements": {
       "ko": "• Kubernetes 기반 클러스터, DB, 백업, 모니터링, CI/CD 구성을 문서화와 함께 정리\n• Public/Private 서브넷, Bastion, NAT, ALB, TLS까지 포함한 보안 경계 설계\n• Grafana 대시보드에서 ingress RPS, p95, 5xx, CPU/Memory/Bandwidth 지표를 운영 관점으로 확인 가능\n• MySQL / MongoDB / Redis 백업 정책(매일 03:00 KST, 7일 보관)을 운영 기준으로 수립",

@@ -222,11 +222,6 @@
   "infra": "iCloud, Firebase"
   }
   },
- "lessonsLearned": {
-  "ko": "- 상업적으로 진행 시에 초기 방향성 잠기의 중요성을 느낌\n - 학습 서비스의 획일화면 ui 디자인 문제 경험\n- AI 학습전 라벨 더블 체크의 중요성",
-  "en": "- Realized the importance of locking in the initial direction when moving toward commercialization\n- Experienced issues with uniform/monotonous UI design in learning services\n- Confirmed the importance of double-checking labels before AI training",
-  "ja": "- 商用展開を進める際、初期方向性を固めることの重要性を実感\n- 学習サービスで画一的なUIデザインの問題を経験\n- AI学習前にラベルを二重チェックすることの重要性を確認"
-  },
   "results": {
   "achievements": {
   "ko": "노출당 다운로드 비율 0.1",

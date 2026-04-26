@@ -148,11 +148,6 @@
       "AI": "Google Gemini 1.5 Flash, GPT-4o mini Embeddings"
     }
   },
-  "lessonsLearned": {
-    "ko": "LangGraph로 여러 역할과 검증 단계를 연결할 때 상태 관리와 예외 처리를 명확히 해야 안정적으로 동작함을 체감",
-    "en": "Connecting multiple roles and validation stages with LangGraph requires explicit state management and exception handling for stable operation.",
-    "ja": "複数ロールと検証段階をLangGraphで接続するには、明確な状態管理と例外処理が安定動作の鍵であると実感。"
-  },
   "results": {
     "achievements": {
       "ko": "역할 분기, RAG 검색, 품질 검증을 단일 워크플로우에 통합해 상담 응답 품질을 향상",

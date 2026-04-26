@@ -153,11 +153,6 @@
       "- 運用：App Store Connectのログ監視"
     ]
   },
-  "lessonsLearned": {
-    "ko": "- 사업적 인사이트: B2C AI 챗봇 서비스는 도메인 선정이 핵심\n- 기술적 인사이트: FastAPI와 LangGraph로 신속히 프로토타입을 출시",
-    "en": "- Business: Domain selection is critical for B2C AI chatbot services.\n- Technical: Rapid prototyping and release with FastAPI and LangGraph.",
-    "ja": "- ビジネス：B2C向けAIチャットボットではドメイン選定が重要。\n- 技術：FastAPIとLangGraphで迅速にプロトタイプを公開。"
-  },
   "results": {
     "achievements": {
       "ko": "26명 사용자, 106회 앱 활동",

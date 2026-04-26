@@ -9,11 +9,6 @@ interface ResultsData {
     en: string;
     ja: string;
   };
-  lessonsLearned?: {
-    ko: string;
-    en: string;
-    ja: string;
-  };
   nextSteps?: {
     ko: string;
     en: string;
@@ -30,26 +25,44 @@ interface ResultsSectionProps {
 export function ResultsSection({ data, language, backgroundColor }: ResultsSectionProps) {
   if (!data) return null;
 
+  const renderBulletList = (value: string | string[]) => {
+    const lines = (Array.isArray(value) ? value : [value])
+      .flatMap((item) => item.split('\n'))
+      .map((line) => line.trim())
+      .filter(Boolean)
+      .map((line) => (line.startsWith('-') ? line.substring(1).trim() : line));
+
+    if (lines.length === 0) return null;
+
+    return (
+      <div className="space-y-2 text-muted">
+        {lines.map((line, index) => (
+          <div key={index} className="flex items-start">
+            <span className="mt-2 mr-3 h-2 w-2 flex-shrink-0 rounded-full bg-muted"></span>
+            <span>{line}</span>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   const content = {
     ko: { 
-      title: "결과 & 배운 점",
+      title: "결과",
       metrics: "측정 기준",
       achievements: "결과",
-      learnings: "배운 점",
       nextSteps: "다음 단계"
     },
     en: { 
-      title: "Results & Learnings",
+      title: "Results",
       metrics: "Metrics",
       achievements: "Results",
-      learnings: "Learnings",
       nextSteps: "Next Steps"
     },
     ja: { 
-      title: "結果と学び",
+      title: "結果",
       metrics: "測定基準",
       achievements: "結果",
-      learnings: "学び",
       nextSteps: "次のステップ"
     }
   };
@@ -65,28 +78,7 @@ export function ResultsSection({ data, language, backgroundColor }: ResultsSecti
           {data.metrics && data.metrics[language] && (
             <div>
               <h3 className="font-semibold mb-3">{content[language].metrics}</h3>
-              <div className="space-y-2">
-                {data.metrics[language].map((metric, idx) => (
-                  <div key={idx} className="text-muted">
-                    {metric.split('\n').map((line, lineIdx) => {
-                      const trimmedLine = line.trim();
-                      if (trimmedLine.startsWith('-')) {
-                        return (
-                          <div key={lineIdx} className="flex items-start mb-2">
-                            <span className="w-2 h-2 bg-muted rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>{trimmedLine.substring(1).trim()}</span>
-                          </div>
-                        );
-                      }
-                      return (
-                        <p key={lineIdx} className="mb-2">
-                          {trimmedLine}
-                        </p>
-                      );
-                    })}
-                  </div>
-                ))}
-              </div>
+              {renderBulletList(data.metrics[language])}
             </div>
           )}
 
@@ -94,54 +86,7 @@ export function ResultsSection({ data, language, backgroundColor }: ResultsSecti
           {((data.achievements && data.achievements[language]) || ((data as any).results?.achievements && (data as any).results.achievements[language])) && (
             <div>
               <h3 className="font-semibold mb-3">{content[language].achievements}</h3>
-              <div className="text-muted">
-                {(data.achievements?.[language] || (data as any).results?.achievements?.[language])?.split('\n').map((line, index) => {
-                  const trimmedLine = line.trim();
-                  if (trimmedLine.startsWith('-')) {
-                    return (
-                      <div key={index} className="flex items-start mb-2">
-                        <span className="w-2 h-2 bg-muted rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{trimmedLine.substring(1).trim()}</span>
-                      </div>
-                    );
-                  }
-                  return (
-                    <p key={index} className="mb-2">
-                      {trimmedLine}
-                    </p>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* Lessons Learned */}
-          {data.lessonsLearned && data.lessonsLearned[language] && (
-            <div>
-              <h3 className="font-semibold mb-3">{content[language].learnings}</h3>
-              <div className="text-muted">
-                {data.lessonsLearned[language].split('\n').map((line, index) => {
-                  const trimmedLine = line.trim();
-                  if (trimmedLine.startsWith('-')) {
-                    return (
-                      <div key={index} className="flex items-start mb-2">
-                        <span className="w-2 h-2 bg-muted rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{trimmedLine.substring(1).trim()}</span>
-                      </div>
-                    );
-                  }
-                  return (
-                    <p key={index} className="mb-2">
-                      {trimmedLine.split('\n').map((subLine, subIdx) => (
-                        <span key={subIdx}>
-                          {subLine}
-                          {subIdx < trimmedLine.split('\n').length - 1 && <br />}
-                        </span>
-                      ))}
-                    </p>
-                  );
-                })}
-              </div>
+              {renderBulletList(data.achievements?.[language] || (data as any).results?.achievements?.[language])}
             </div>
           )}
 
@@ -149,24 +94,7 @@ export function ResultsSection({ data, language, backgroundColor }: ResultsSecti
           {data.nextSteps && data.nextSteps[language] && (
             <div>
               <h3 className="font-semibold mb-3">{content[language].nextSteps}</h3>
-              <div className="text-muted">
-                {data.nextSteps[language].split('\n').map((line, index) => {
-                  const trimmedLine = line.trim();
-                  if (trimmedLine.startsWith('-')) {
-                    return (
-                      <div key={index} className="flex items-start mb-2">
-                        <span className="w-2 h-2 bg-muted rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>{trimmedLine.substring(1).trim()}</span>
-                      </div>
-                    );
-                  }
-                  return (
-                    <p key={index} className="mb-2">
-                      {trimmedLine}
-                    </p>
-                  );
-                })}
-              </div>
+              {renderBulletList(data.nextSteps[language])}
             </div>
           )}
         </div>
