@@ -7,5 +7,36 @@ export default defineConfig({
     alias: {
       '@': '/src'
     }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('/src/pages/main/sections/projects/data/')) {
+            return 'project-data';
+          }
+
+          if (id.includes('node_modules')) {
+            if (id.includes('@mui') || id.includes('@emotion')) {
+              return 'mui';
+            }
+
+            if (id.includes('react-i18next') || id.includes('i18next')) {
+              return 'i18n';
+            }
+
+            if (id.includes('@tanstack/react-query')) {
+              return 'query';
+            }
+
+            if (id.includes('lucide-react')) {
+              return 'icons';
+            }
+
+            return 'vendor';
+          }
+        }
+      }
+    }
   }
 });

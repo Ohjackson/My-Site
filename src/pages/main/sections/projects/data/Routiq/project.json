@@ -25,9 +25,9 @@
     "ja": "Apple Watch, iPhone"
   },
   "workPeriod": {
-    "ko": "2025.05 - 2024.09",
-    "en": "2025.05 - 2025.09",
-    "ja": "2025.05 - 2025.09"
+    "ko": "2025.05 ~",
+    "en": "2025.05 ~",
+    "ja": "2025.05 ~"
   },
   "releaseDate": {
     "ko": "2025.09",
@@ -149,7 +149,11 @@
     }
   },
   "additional_links": {
-    "github": "If you want to see the code, please send me an email"
+    "github": {
+      "ko": "코드를 보고 싶으시면 이메일을 보내주세요",
+      "en": "If you want to see the code, please send me an email",
+      "ja": "コードをご覧になりたい場合は、メールをお送りください"
+    }
   },
   "flag": "active"
 }

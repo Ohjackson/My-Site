@@ -241,8 +241,16 @@
   },
   "additional_links": {
   "ResNet training & to coreML": "https://github.com/Ohjackson/ResLet-JapaneseHandWriting",
-  "blog": "I'm readying to publish a blog post about this project",
-  "github": "If you want to see the code, please send me an email"
+  "blog": {
+  "ko": "이 프로젝트에 대한 블로그 글을 발행할 준비 중입니다",
+  "en": "I'm preparing to publish a blog post about this project",
+  "ja": "このプロジェクトに関するブログ記事を公開する準備を進めています"
+  },
+  "github": {
+  "ko": "코드를 보고 싶으시면 이메일을 보내주세요",
+  "en": "If you want to see the code, please send me an email",
+  "ja": "コードをご覧になりたい場合は、メールをお送りください"
+  }
   },
   "flag": "active"
   }

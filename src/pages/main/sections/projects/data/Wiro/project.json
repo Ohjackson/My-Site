@@ -194,6 +194,10 @@
     }
   },
   "additional_links": {
-  "github": "If you want to see the code, please send me an email"
+  "github": {
+    "ko": "코드를 보고 싶으시면 이메일을 보내주세요",
+    "en": "If you want to see the code, please send me an email",
+    "ja": "コードをご覧になりたい場合は、メールをお送りください"
+  }
   }
 }

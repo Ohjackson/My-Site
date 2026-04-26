@@ -27,9 +27,15 @@ export function AdditionalSection({ data, language, backgroundColor }: Additiona
   };
 
   const toDisplayLabel = (key: string) =>
-    key
-      .replace(/[_-]+/g, ' ')
-      .replace(/\b\w/g, (c) => c.toUpperCase());
+    ({
+      blog: 'Blog',
+      github: 'GitHub',
+      'team github': 'Team GitHub',
+      'team website': 'Team Website'
+    }[key] ||
+      key
+        .replace(/[_-]+/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase()));
 
   return (
     <section className={`py-16 px-8 ${backgroundColor}`}>
