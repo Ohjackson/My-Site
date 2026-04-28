@@ -3,12 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahn Jaehyun</title>
+    <script>
+      (() => {
+        const supported = ['ko', 'ja', 'en'];
+        const normalize = (value) => {
+          const language = value?.split('-')[0];
+          return supported.includes(language) ? language : null;
+        };
+        const getStoredLanguage = () => {
+          try {
+            return window.localStorage.getItem('i18nextLng');
+          } catch {
+            return null;
+          }
+        };
+        const params = new URLSearchParams(window.location.search);
+        const language =
+          normalize(params.get('lng')) ||
+          normalize(getStoredLanguage()) ||
+          normalize(window.navigator.language) ||
+          'en';
+        document.documentElement.lang = language;
 
-    <!-- 폰트 프리로드 (빌드 시 경로 문제로 인해 주석 처리)
-    <link rel="preload" href="/src/shared/fonts/fontData/Gowun_Dodum/GowunDodum-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/src/shared/fonts/fontData/Klee_One/KleeOne-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    -->
+        const fontHref =
+          language === 'ko'
+            ? '/fonts/gowun-dodum-korean-400-normal.woff2'
+            : language === 'ja'
+              ? '/fonts/klee-one-japanese-400-normal.woff2'
+              : null;
+
+        if (fontHref) {
+          const preload = document.createElement('link');
+          preload.rel = 'preload';
+          preload.href = fontHref;
+          preload.as = 'font';
+          preload.type = 'font/woff2';
+          preload.crossOrigin = 'anonymous';
+          document.head.appendChild(preload);
+        }
+      })();
+    </script>
+    <title>Ahn Jaehyun</title>
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   </head>
