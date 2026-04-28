@@ -15,7 +15,7 @@ interface ContactSectionProps {
 
 export const ContactSection = ({ compactTop = false }: ContactSectionProps) => {
   const { i18n, t } = useTranslation();
-  const currentLanguage = i18n.language;
+  const currentLanguage = i18n.language.split('-')[0];
   const data = contactData[currentLanguage] || contactData.ko;
   const emailLabel = data.emailCta;
   const appStoreLabel = currentLanguage.startsWith('ko') ? '앱 스토어' : 'App Store';

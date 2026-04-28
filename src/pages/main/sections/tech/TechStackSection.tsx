@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { SectionHeading } from '@/shared/components/section-heading';
 import { TECH_CATEGORIES } from './data/categories';
 
 export const TechStackSection = () => {
@@ -11,7 +10,7 @@ export const TechStackSection = () => {
       <div className="mx-auto max-w-6xl">
         <div className="mb-20 text-center">
           <h2 className="text-4xl font-semibold tracking-tight md:text-6xl">
-            Tech Used in Projects
+            {t('sections.tech.title')}
           </h2>
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
         </div>
@@ -23,14 +22,7 @@ export const TechStackSection = () => {
               className="space-y-4 p-6"
             >
               <div className="text-1.5xl font-semibold uppercase tracking-widest text-muted">
-                {category.id === 'mobile' ? 'Mobile' :
-                 category.id === 'frontend' ? 'Frontend' :
-                 category.id === 'backend' ? 'Backend' :
-                 category.id === 'data' ? 'Data' :
-                 category.id === 'infra' ? 'Infra' :
-                 category.id === 'ai' ? 'AI' :
-                 category.id === 'tools' ? 'Tools' :
-                 category.id === 'experienced' ? 'Experienced' : category.id}
+                {labels[category.id] ?? category.id}
               </div>
               <div className="flex flex-wrap gap-2">
                 {category.badges.map((badge, idx) => (

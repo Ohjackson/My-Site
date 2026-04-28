@@ -49,8 +49,12 @@
         "infra": "인프라",
         "ai": "AI / ML",
         "tools": "협업 도구",
-        "design": "디자인"
+        "design": "디자인",
+        "experienced": "사용 경험"
       }
+    },
+    "history": {
+      "title": "History"
     },
     "projects": {
       "title": "Featured Projects",
@@ -68,23 +72,25 @@
     },
     "achievements": {
       "title": "Achievements & Education",
-      "achievementsTitle": "성과",
-      "educationTitle": "교육",
+      "achievementsTitle": "수상 및 실적",
+      "educationTitle": "학력 및 교육",
       "achievements": [
-        "GCS - 4기 우수 전액장학생",
-        "아르테크네 - 금상"
+        "GCS – 4기 전액 장학생 선정",
+        "SW중심대학사업 장학생 선정 (2025)",
+        "아르테크네 – 제1회 창업 연계 지원 사업 대상 (2024)"
       ],
       "education": [
-        "가천대학교 인공지능학과 2기",
-        "GCS 4기",
-        "SOPT 35기 - iOS",
-        "카카오 엔터프라이즈 SW 아카데미 7기 - 진행 중"
+        "가천대학교 인공지능학과(本) 2기 (2026년 졸업 예정)",
+        "가천대학교 창업대학 GCS(複) 4기",
+        "SOPT 35기 – iOS 트랙",
+        "카카오엔터프라이즈 SW아카데미 7기",
+        "OIT Cyber Life Design Laboratory 인턴십"
       ]
     },
     "contact": {
       "title": "Contact",
       "thanks": "감사합니다",
-      "description": "사람 중심의 제품을 함께 만들어가요",
+      "description": "사람을 중심으로 생각한 프로덕트를 함께 만들어보세요.",
       "emailCta": "이메일 보내기",
       "footer": "© 2025 JAEHYUN AHN"
     }

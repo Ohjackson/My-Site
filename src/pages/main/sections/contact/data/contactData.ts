@@ -17,9 +17,9 @@ export const contactData: Record<string, ContactData> = {
   en: {
     title: "Contact",
     thanks: "Thank you",
-    description: "Let's talk about building thoughtful products together.",
+    description: "Let's build people-centered products together.",
     emailCta: "Send email",
-    footer: "© 2025 Jaehyun Ahn. All rights reserved."
+    footer: "© 2025 JAEHYUN AHN"
   },
   ja: {
     title: "Contact",

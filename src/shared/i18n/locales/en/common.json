@@ -11,7 +11,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "tech": "Tech Used in Projects",
+    "tech": "Tech Stack",
     "projects": "Projects",
     "history": "History",
     "achievements": "Achievements",
@@ -23,7 +23,7 @@
   "sections": {
     "hero": {
       "headline": "I'm Jaehyun Ahn, a developer who finds answers by tackling problems head-on.",
-      "subheadline": "Designing multilingual products that feel intentional, inclusive, and fast.",
+      "subheadline": "Designing intentional and fast experiences for multilingual users.",
       "primaryCta": "View projects",
       "secondaryCta": "Get in touch",
       "scrollHint": "Scroll down"
@@ -31,13 +31,30 @@
     "about": {
       "title": "About",
       "paragraphs": [
-        "I have grown by learning through direct experience, even in uncertain situations.\nWhen I face a new problem, I first focus on understanding its structure,\nand then I keep iterating through execution and improvement to find an answer.\nEven now, I aim to be a developer who uses technology to reduce friction for people and teams."
+        "I have grown by learning through direct experience, even in uncertain situations.\n\nWhen I encounter a new problem, I first understand its structure,\nand then build answers through repeated execution and improvement.\n\nEven now, I aim to be a developer who reduces friction for people and teams through technology."
       ],
       "actions": {
         "github": "GitHub",
         "resume": "Resume"
       },
       "imageAlt": "Jaehyun Ahn profile photo"
+    },
+    "tech": {
+      "title": "Tech Stack",
+      "categoryLabels": {
+        "mobile": "Mobile",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "data": "Data",
+        "infra": "Infra",
+        "ai": "AI / ML",
+        "tools": "Collaboration Tools",
+        "design": "Design",
+        "experienced": "Experienced"
+      }
+    },
+    "history": {
+      "title": "History"
     },
     "projects": {
       "title": "Featured Projects",
@@ -55,25 +72,27 @@
     },
     "achievements": {
       "title": "Achievements & Education",
-      "achievementsTitle": "Achievements",
-      "educationTitle": "Education",
+      "achievementsTitle": "Awards & Results",
+      "educationTitle": "Education & Training",
       "achievements": [
         "GCS – 4th cohort full scholarship recipient",
-        "Artechné – Gold prize"
+        "Selected as SW-Centered University Project scholarship recipient (2025)",
+        "Artechné – Grand Prize, 1st Startup Support Program (2024)"
       ],
       "education": [
-        "Gachon University – AI major (2nd cohort)",
-        "GCS 4th cohort",
-        "SOPT 35th – iOS",
-        "Kakao Enterprise SW Academy 7th – In progress"
+        "Gachon University, Department of Artificial Intelligence (Main Major, 2nd Cohort, Expected 2026)",
+        "Gachon University, Startup College – GCS (Double Major, 4th Cohort)",
+        "SOPT 35th – iOS Track",
+        "Kakao Enterprise SW Academy 7th",
+        "OIT Cyber Life Design Laboratory internship"
       ]
     },
     "contact": {
       "title": "Contact",
       "thanks": "Thank you",
-      "description": "Let’s talk about building thoughtful products together.",
+      "description": "Let's build people-centered products together.",
       "emailCta": "Send email",
-      "footer": "© 2025 Jaehyun Ahn. All rights reserved."
+      "footer": "© 2025 JAEHYUN AHN"
     }
   },
   "projectDetail": {

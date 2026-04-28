@@ -3,8 +3,8 @@ import { AchievementList } from './components/AchievementList';
 import { achievementsData } from './data/achievementsData';
 
 export const AchievementsSection = () => {
-  const { i18n } = useTranslation();
-  const currentLanguage = i18n.language;
+  const { i18n, t } = useTranslation();
+  const currentLanguage = i18n.language.split('-')[0];
   const data = achievementsData[currentLanguage] || achievementsData.ko;
   const achievements = data.achievements;
   const education = data.education;
@@ -14,7 +14,7 @@ export const AchievementsSection = () => {
       <div className="mx-auto max-w-6xl">
         <div className="mb-20 text-center">
           <h2 className="text-5xl font-semibold tracking-tight md:text-6xl">
-            Achievements & Education
+            {t('sections.achievements.title')}
           </h2>
           <div className="mt-6 h-px w-16 bg-text mx-auto" />
         </div>
