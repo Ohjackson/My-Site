@@ -142,7 +142,7 @@
       "frontend": "SwiftUI",
       "backend": "Firebase",
       "database": "Firebase/Firestore",
-      "AI": "LLM",
+      "AI": "LLM - gpt-4o-mini-2024-07-18",
       "devops": "TestFlight",
       "infra": "Firebase"
     }

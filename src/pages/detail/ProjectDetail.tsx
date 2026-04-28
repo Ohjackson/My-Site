@@ -74,6 +74,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       serviceStatus: "서비스상태",
       role: "역할",
       teamSize: "인원",
+      contribution: "기여율",
       hashtags: "해시태그",
       additionalFeatures: "특징"
     },
@@ -88,6 +89,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       serviceStatus: "Service Status",
       role: "Role",
       teamSize: "Team Size",
+      contribution: "Contribution",
       hashtags: "Hashtags",
       additionalFeatures: "AdditioFeatures"
     },
@@ -102,6 +104,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
       serviceStatus: "サービス状態",
       role: "役割",
       teamSize: "人数",
+      contribution: "貢献度",
       hashtags: "ハッシュタグ",
       additionalFeatures: "その他の特徴"
     }

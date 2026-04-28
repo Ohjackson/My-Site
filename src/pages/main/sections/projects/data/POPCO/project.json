@@ -45,9 +45,9 @@
     "ja": "1人"
   },
   "additionalFeatures": {
-    "ko": "한일 양국 동시 출시, 서비기반이 아닌 근거리 통신으로 고양이 1대1 배틀 진행",
-    "en": "Launched simultaneously in Korea and Japan; 1v1 cat battles via proximity communication instead of server relays.",
-    "ja": "韓日同時リリース。サーバー中継ではなく近距離通信で1対1のネコバトルを実現。"
+    "ko": "- 한일 양국 동시 출시\n- 근거리 통신으로 고양이 1대1 배틀 진행",
+    "en": "- Simultaneous launch in Korea and Japan\n- 1v1 cat battles through proximity communication",
+    "ja": "- 韓日同時リリース\n- 近距離通信による1対1のネコバトル"
   },
   "features": {
     "ko": [

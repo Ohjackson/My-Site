@@ -33,9 +33,9 @@
     ]
   },
   "platform": {
-    "ko": "Web(React SPA, 팀 별도 레포) + LiveKit RTC 클라이언트",
-    "en": "Web (React SPA, separate repo) + LiveKit RTC client",
-    "ja": "Web（React SPA・別レポ）+ LiveKit RTCクライアント"
+    "ko": "Windows",
+    "en": "Windows",
+    "ja": "Windows"
   },
   "workPeriod": {
     "ko": "2025.12 ~ 2026.02",
@@ -67,7 +67,7 @@
     ]
   },
   "overviewStory": {
-    "ko": "OIT Prof. Kashihara Lab에서 진행한 한↔일 프로젝트로, 국제 회의 툴을 주제로 실시간 통역·자막·채팅을 지원하는 MVP를 구현했습니다.",
+    "ko": "OIT Prof. Kashihara Lab에서 진행한 한↔일 프로젝트로, 국제 회의 툴을 주제로 실시간 통역·자막·채팅을 지원하는 \n 서비스를 구현했습니다.",
     "en": "A KR-JP project carried out at OIT Prof. Kashihara's Lab under the theme of an international meeting tool.",
     "ja": "OITのKashihara教授の研究室で進めた日韓プロジェクトで、国際会議ツールをテーマに開発しました。"
   },
@@ -88,9 +88,9 @@
         "ja": "リアルタイム会議セッションのオーケストレーション"
       },
       "description": {
-        "ko": "정의: LiveKit 토큰 발급, 룸 멤버 검증, 라이브 세션 자동 생성/참가 기록을 하나의 흐름으로 통합한 실시간 회의 백엔드입니다.\n설명: 사용자/워커를 분리 인증하고 room membership을 확인한 뒤 토큰을 발급하며, 세션·참가자 상태를 DB에 영속화해 재접속과 이력 추적을 안정화했습니다.",
-        "en": "Definition: A real-time meeting backend that unifies LiveKit token issuance, room member validation, and automatic live-session creation/join logging in one flow.\nDescription: It separates user and worker authentication, verifies room membership before issuing tokens, and persists session/participant states in the DB to stabilize reconnection and history tracking.",
-        "ja": "定義: LiveKitトークン発行、ルームメンバー検証、ライブセッションの自動作成・参加記録を1つのフローに統合したリアルタイム会議バックエンドです。\n説明: ユーザー/ワーカーを分離認証し、room membership確認後にトークンを発行。セッション・参加者状態をDBに永続化して再接続と履歴追跡を安定化しました。"
+        "ko": "LiveKit 토큰 발급, 룸 멤버 검증, 세션·참가자 기록을 하나의 실시간 회의 흐름으로 통합했습니다.",
+        "en": "Unified LiveKit token issuance, room member validation, and session/participant records into one realtime meeting flow.",
+        "ja": "LiveKitトークン発行、ルームメンバー検証、セッション・参加者記録を1つのリアルタイム会議フローに統合しました。"
       },
       "implemented": true
     },
@@ -101,9 +101,9 @@
         "ja": "Redis Pub/Sub + WebSocketベースのSTTリアルタイム配信"
       },
       "description": {
-        "ko": "정의: 워커가 발행한 STT 이벤트를 Redis 채널에서 수신해 해당 룸의 WebSocket 연결 전체로 저지연 브로드캐스트하는 이벤트 파이프라인입니다.\n설명: 서버 시작 시 리스너를 구독 상태로 유지하고 room_id 단위 fan-out을 수행해 자막/번역 UI를 실시간으로 동기화합니다.",
-        "en": "Definition: An event pipeline that receives worker-published STT events from Redis channels and low-latency broadcasts them to all WebSocket connections in the target room.\nDescription: On server startup, listeners remain subscribed and fan-out by room_id to synchronize caption/translation UIs in real time.",
-        "ja": "定義: ワーカーが発行したSTTイベントをRedisチャネルで受信し、対象ルームのWebSocket接続全体へ低遅延でブロードキャストするイベントパイプラインです。\n説明: サーバー起動時にリスナーを購読状態で維持し、room_id単位のfan-outで字幕/翻訳UIをリアルタイム同期します。"
+        "ko": "Redis Pub/Sub으로 STT 이벤트를 수신하고 WebSocket으로 룸 단위 자막·번역 UI를 실시간 동기화했습니다.",
+        "en": "Received STT events through Redis Pub/Sub and synchronized room-level captions and translations via WebSocket.",
+        "ja": "Redis Pub/SubでSTTイベントを受信し、WebSocketでルーム単位の字幕・翻訳UIをリアルタイム同期しました。"
       },
       "implemented": true
     },
@@ -114,9 +114,9 @@
         "ja": "二重翻訳エンジンのフォールバック（DeepL優先、OpenAI補助）"
       },
       "description": {
-        "ko": "정의: DeepL을 기본으로 사용하되, 실패/품질 조건에서 OpenAI로 폴백하여 한↔일 번역 안정성을 확보\n설명:\n- 채팅 번역(REST): 번역 결과가 원문과 동일/언어 혼합 등 품질 조건에 걸리면 재시도/폴백하여 “그럴듯한 실패”를 줄임\n- STT 번역(워커): DeepL 사용 가능 시 우선 적용, 불가(미설정/모크/실패) 시 OpenAI로 폴백",
-        "en": "Definition: DeepL is used by default; on failure or quality conditions it falls back to OpenAI to improve KR↔JP translation stability.\nDescription:\n- Chat translation (REST): retries/fallbacks when results equal the source, contain mixed languages, or fail quality checks.\n- STT translation (worker): uses DeepL when available; falls back to OpenAI when unavailable (unset/mock/failure).",
-        "ja": "定義: DeepLを基本としつつ、失敗/品質条件ではOpenAIへフォールバックして日韓翻訳の安定性を確保。\n説明:\n- チャット翻訳（REST）: 原文と同一/言語混在など品質条件に該当する場合は再試行/フォールバック。\n- STT翻訳（ワーカー）: DeepLが利用可能なら優先し、不可（未設定/モック/失敗）の場合はOpenAIへフォールバック。"
+        "ko": "DeepL 우선 번역에 OpenAI 폴백을 더해 채팅과 STT 번역의 안정성을 높였습니다.",
+        "en": "Improved chat and STT translation reliability with DeepL-first translation and OpenAI fallback.",
+        "ja": "DeepL優先翻訳にOpenAIフォールバックを加え、チャットとSTT翻訳の安定性を高めました。"
       },
       "implemented": true
     },
@@ -127,9 +127,9 @@
         "ja": "JWT + ワーカーサービスキーに基づく多層セキュリティ構成"
       },
       "description": {
-        "ko": "정의: 사용자 인증과 운영 워커 인증을 분리한 Access/Refresh JWT + Service Key 구조로 API 및 실시간 채널 보안을 강화했습니다.\n설명: bcrypt 비밀번호 해시, 리프레시 토큰 해시 저장, 보호 라우트 의존성 검증, room-scoped worker token 제한을 함께 적용했습니다.",
-        "en": "Definition: API and realtime channel security is strengthened with an Access/Refresh JWT + Service Key structure that separates user auth from operator-worker auth.\nDescription: Applied bcrypt password hashing, hashed refresh-token storage, protected-route dependency checks, and room-scoped worker-token restrictions together.",
-        "ja": "定義: ユーザー認証と運用ワーカー認証を分離したAccess/Refresh JWT + Service Key構成で、APIとリアルタイムチャネルのセキュリティを強化しました。\n説明: bcryptパスワードハッシュ、リフレッシュトークンのハッシュ保存、保護ルート依存性検証、room-scoped worker token制限を合わせて適用しました。"
+        "ko": "Access/Refresh JWT와 워커 서비스 키를 분리해 사용자 API와 실시간 채널 보안을 강화했습니다.",
+        "en": "Separated Access/Refresh JWT and worker service keys to secure user APIs and realtime channels.",
+        "ja": "Access/Refresh JWTとワーカーサービスキーを分離し、ユーザーAPIとリアルタイムチャネルのセキュリティを強化しました。"
       },
       "implemented": true
     },
@@ -140,9 +140,9 @@
         "ja": "協業ドメインワークフロー自動化（フレンド/招待/DM）"
       },
       "description": {
-        "ko": "정의: 친구 요청, 방 초대, DM 스레드 생성·참여 검증을 도메인 규칙으로 통합해 협업 흐름을 일관되게 처리하는 백엔드입니다.\n설명: pending/accepted/rejected 상태 전이와 권한 체크를 서버에서 강제하고, DM 메시지는 저장 후 WebSocket으로 즉시 전파됩니다.",
-        "en": "Definition: A backend that consistently handles collaboration flows by unifying friend requests, room invites, and DM-thread creation/join validation with domain rules.\nDescription: The server enforces pending/accepted/rejected state transitions and permission checks, and DM messages are stored then instantly propagated via WebSocket.",
-        "ja": "定義: フレンド申請、ルーム招待、DMスレッド作成・参加検証をドメインルールで統合し、協業フローを一貫処理するバックエンドです。\n説明: pending/accepted/rejectedの状態遷移と権限チェックをサーバー側で強制し、DMメッセージは保存後にWebSocketで即時配信されます。"
+        "ko": "친구 요청, 방 초대, DM 생성·검증을 도메인 규칙으로 통합해 협업 흐름을 일관되게 처리했습니다.",
+        "en": "Unified friend requests, room invites, and DM creation/validation under domain rules for consistent collaboration flows.",
+        "ja": "フレンド申請、ルーム招待、DM作成・検証をドメインルールに統合し、協業フローを一貫して処理しました。"
       },
       "implemented": true
     }
@@ -167,10 +167,10 @@
   "stackAndArchitecture": {
     "techStack": {
       "frontend": "React",
-      "backend": "FastAPI, SQLAlchemy 2, Pydantic v2, Uvicorn",
-      "AI": "OpenAI Realtime (gpt-4o-mini-transcribe), DeepL",
-      "infra": "Docker, docker-compose",
-      "database": "MySQL 8, Redis 7",
+      "backend": "FastAPI",
+      "AI": "OpenAI Realtime, DeepL",
+      "infra": "Docker",
+      "database": "MySQL, Redis",
       "Tools": "LiveKit"
     }
   },
@@ -178,17 +178,17 @@
     "ko": [
       "설계(Architecture / Data):\n- LiveKit 토큰 발급 플로우 설계(룸 멤버십 검증 + 세션/참가 이력 영속화 기준)\n- MySQL 스키마/인덱스 설계(메시지·STT seq 유니크, 세션/참가 테이블 분리, 조회 인덱스)\n- Redis 채널 기반 이벤트 fan-out 구조 설계(방 단위 브로드캐스트)",
       "구현(Backend / Realtime):\n- FastAPI 모듈 구조, 의존성/에러 핸들링, 요청 로깅/요청ID(Web) 미들웨어 구성\n- JWT Access/Refresh 발급 + Refresh 토큰 해시(SHA-256) 저장\n- 워커 운영 인증: X-Worker-Key 기반 room-scoped worker token 발급\n- STT 이벤트 리스너(Redis Pub/Sub 구독 유지) + WebSocket 브로드캐스트 구현\n- 번역 계층(DeepL/OpenAI) + 폴백/품질 조건(채팅 번역) 적용",
-      "운영/데모(DevOps / Demo):\n- docker-compose로 API/MySQL/Redis/대시보드/에이전트 구동 플로우 정리\n- Streamlit 대시보드로 테이블 조회/운영 확인 루틴 구성(데모/디버깅 속도 향상)"
+      "운영/데모(DevOps / Demo):\n- Docker로 API/MySQL/Redis/대시보드/에이전트 구동 플로우 정리\n- Streamlit 대시보드로 테이블 조회/운영 확인 루틴 구성(데모/디버깅 속도 향상)"
     ],
     "en": [
       "Architecture / Data:\n- Designed LiveKit token issuance flow (room membership validation + persistence criteria for sessions/participants)\n- Designed MySQL schema/indexes (unique seq for message/STT, session/member separation, query indexes)\n- Designed Redis channel-based room fan-out broadcast",
       "Backend / Realtime:\n- FastAPI module structure, dependency/error handling, request logging/request-id middleware\n- JWT Access/Refresh issuance + SHA-256 hashed refresh token storage\n- Worker ops auth: X-Worker-Key and room-scoped worker token issuance\n- Redis Pub/Sub STT listener + room WebSocket broadcast\n- Translation layer (DeepL/OpenAI) with fallback & quality checks",
-      "DevOps / Demo:\n- docker-compose runbook for API/MySQL/Redis/dashboard/agent\n- Streamlit dashboard routines for demo/debugging"
+      "DevOps / Demo:\n- Docker runbook for API/MySQL/Redis/dashboard/agent\n- Streamlit dashboard routines for demo/debugging"
     ],
     "ja": [
       "設計（Architecture / Data）:\n- LiveKitトークン発行フロー設計（メンバーシップ検証 + セッション/参加者永続化基準）\n- MySQLスキーマ/インデックス設計（message・STTのseqユニーク、テーブル分離、検索インデックス）\n- Redisチャネルによるroom単位fan-out配信設計",
       "実装（Backend / Realtime）:\n- FastAPI構成、依存性/エラーハンドリング、リクエストログ/リクエストIDミドルウェア\n- JWT Access/Refresh発行 + RefreshトークンSHA-256ハッシュ保存\n- ワーカー運用認証: X-Worker-Key + room-scoped worker token発行\n- Redis Pub/Sub STTリスナー + WebSocketブロードキャスト\n- 翻訳レイヤー（DeepL/OpenAI）フォールバック/品質条件",
-      "運用/デモ（DevOps / Demo）:\n- docker-composeでAPI/MySQL/Redis/ダッシュボード/エージェント起動フロー整備\n- Streamlitでテーブル確認・運用確認（デモ/デバッグ高速化）"
+      "運用/デモ（DevOps / Demo）:\n- DockerでAPI/MySQL/Redis/ダッシュボード/エージェント起動フロー整備\n- Streamlitでテーブル確認・運用確認（デモ/デバッグ高速化）"
     ]
   },
   "architectureFlow": {

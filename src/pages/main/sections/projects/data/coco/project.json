@@ -193,21 +193,18 @@
     "screenshots": []
   },
   "additionalFeatures": {
-    "ko": "- 고객사 메신저 슬래시 명령 기반 사내 챗봇 사용 시나리오를 기준으로 인프라를 설계\n- 문서 업로드 → 전처리/분할 → 임베딩 → 검색/재순위 → 출처 포함 답변 흐름을 운영 관점에서 지원\n- 관리자 대시보드에서 이용량, 피드백, 가드레일, 토큰/비용, 질문 주제 모니터링이 가능하도록 관측 지표를 설계\n- 응답 지연 시 선응답, 실패 시 표준 에러 응답 등 운영 UX 요구사항을 고려해 배포/모니터링 구조를 정리",
-    "en": "- Designed the infrastructure around slash-command-based internal chatbot usage in enterprise messenger\n- Supported the document upload -> preprocessing/chunking -> embedding -> retrieval/reranking -> cited answer flow from an operational perspective\n- Structured observability so admins can monitor usage, feedback, guardrails, token cost, and topic trends from the dashboard\n- Considered operational UX requirements such as provisional responses on delay and standard error responses on failure",
-    "ja": "- エンタープライズメッセンジャー上のスラッシュコマンド型社内チャットボット利用を前提にインフラを設計\n- 文書アップロード -> 前処理/分割 -> 埋め込み -> 検索/再ランキング -> 出典付き回答の流れを運用観点で支援\n- 管理ダッシュボードで利用量、フィードバック、ガードレール、トークンコスト、質問トピックを監視できるよう観測設計を整理\n- 遅延時の先行応答や失敗時の標準エラー応答など、運用 UX 要件も踏まえて配備/監視構成を整備"
+    "ko": "- 8중 스프린트",
+    "en": "- 8-week sprint",
+    "ja": "- 8週間スプリント"
   },
   "stackAndArchitecture": {
     "techStack": {
-      "container": "Docker, Kubernetes (K8s), Helm",
-      "cloud": "Kakao Cloud, AWS (Bedrock, S3)",
-      "networking": "Nginx Ingress, ALB, NAT Gateway, VPC Peering",
-      "cicd": "GitHub Actions, Jenkins, Kaniko, ArgoCD (GitOps)",
-      "monitoring": "Prometheus, Grafana, Alertmanager",
-      "testing": "k6 (Load Testing)",
+      "frontend": "React",
+      "backend": "Spring, FastAPI",
       "database": "MySQL, MongoDB, Redis",
-      "iac": "Terraform",
-      "security": "Bastion Host, Security Group, Cert-manager TLS"
+      "devops": "Jenkins · ArgoCD",
+      "infra": "KakaoCloud(prod) · AWS(prod) · GCP(dev) · Docker · Kubernetes",
+      "loggingMonitoring": "Prometheus · Grafana · k6"
     },
     "architectureImage": "/assets/coco/architecture-v1.png",
     "architectureImageAlt": {
@@ -261,9 +258,9 @@
   },
   "results": {
     "achievements": {
-      "ko": "• Kubernetes 기반 클러스터, DB, 백업, 모니터링, CI/CD 구성을 문서화와 함께 정리\n• Public/Private 서브넷, Bastion, NAT, ALB, TLS까지 포함한 보안 경계 설계\n• Grafana 대시보드에서 ingress RPS, p95, 5xx, CPU/Memory/Bandwidth 지표를 운영 관점으로 확인 가능\n• MySQL / MongoDB / Redis 백업 정책(매일 03:00 KST, 7일 보관)을 운영 기준으로 수립",
-      "en": "• Organized a Kubernetes-based cluster, DB, backup, monitoring, and CI/CD setup together with infrastructure documentation\n• Designed security boundaries covering Public/Private subnets, Bastion, NAT, ALB, and TLS\n• Enabled operational monitoring of ingress RPS, p95, 5xx, CPU/memory, and bandwidth through Grafana dashboards\n• Defined backup policies for MySQL / MongoDB / Redis (daily at 03:00 KST with 7-day retention)",
-      "ja": "• Kubernetes ベースのクラスター、DB、バックアップ、監視、CI/CD 構成を文書と合わせて整理\n• Public/Private サブネット、Bastion、NAT、ALB、TLS を含むセキュリティ境界を設計\n• Grafana ダッシュボードで ingress RPS、p95、5xx、CPU/Memory/Bandwidth を運用観点で確認可能に構成\n• MySQL / MongoDB / Redis のバックアップ方針（毎日 03:00 KST、7日保持）を定義"
+      "ko": "- KakaoCloud + AWS 기반 하이브리드 인프라 구성\n- Public / Private Subnet, Bastion, NAT, LB, TLS 기반 보안 네트워크 구조 설계\n- Kubernetes Cluster, DB, Backup 서버를 분산 배치해 운영 리스크 완화\n- Jenkins + ArgoCD 기반 GitOps 배포 흐름 구축\n- Prometheus / Grafana / Alertmanager 기반 관측 환경 구축",
+      "en": "- Built KakaoCloud + AWS hybrid infrastructure\n- Designed a secure network with Public / Private Subnet, Bastion, NAT, LB, and TLS\n- Distributed Kubernetes Cluster, DB, and Backup servers to reduce operational risk\n- Built a Jenkins + ArgoCD GitOps deployment flow\n- Built observability with Prometheus / Grafana / Alertmanager",
+      "ja": "- KakaoCloud + AWS ベースのハイブリッドインフラを構成\n- Public / Private Subnet、Bastion、NAT、LB、TLS ベースのセキュアネットワーク構造を設計\n- Kubernetes Cluster、DB、Backup サーバーを分散配置して運用リスクを緩和\n- Jenkins + ArgoCD ベースの GitOps デプロイフローを構築\n- Prometheus / Grafana / Alertmanager ベースの観測環境を構築"
     }
   },
   "flag": "active"

@@ -34,6 +34,11 @@
     "en": "2025.04",
     "ja": "2025.04"
   },
+  "serviceStatus": {
+    "ko": "종료",
+    "en": "Ended",
+    "ja": "終了"
+  },
   "teamSize": {
     "ko": "2",
     "en": "2",

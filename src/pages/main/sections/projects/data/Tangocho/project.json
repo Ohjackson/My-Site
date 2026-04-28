@@ -222,18 +222,6 @@
   "infra": "iCloud, Firebase"
   }
   },
-  "results": {
-  "achievements": {
-  "ko": "노출당 다운로드 비율 0.1",
-  "en": "Download-to-impression ratio: 0.1",
-  "ja": "インプレッションあたりのダウンロード率：0.1"
-  },
-  "nextSteps": {
-  "ko": "UI 디자인 개선 및 비즈니스 모델 개발 이후 수익화 실현",
-  "en": "Improve UI/UX design, develop a business model, and achieve monetization.",
-  "ja": "UIデザインの改善とビジネスモデルの構築を進め、収益化を実現します。"
-  }
-  },
   "additional_links": {
   "ResNet training & to coreML": "https://github.com/Ohjackson/ResLet-JapaneseHandWriting",
   "blog": {

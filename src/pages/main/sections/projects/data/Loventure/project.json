@@ -178,9 +178,9 @@
   "stackAndArchitecture": {
     "techStack": {
       "frontend": "react, tailwindcss, vite",
-      "backend": "springboot, fastapi",
-      "database": "PostgreSQL, postgresGis",
-      "AI": "langchain",
+      "backend": "Spring Boot, Spring API Gateway, FastAPI",
+      "database": "PostgreSQL, postgresGis, Redis",
+      "AI": "langchain, LangSmith",
       "devops": "argoCD, Github Actions",
       "infra": "docker, kubernetes, GCP, Kakao Cloud, terraform"
     }
@@ -223,13 +223,6 @@
   "preview_screenshots": {
     "youtubeVideoId": "4flw7mmabKs",
     "screenshots": []
-  },
-  "results": {
-    "achievements": {
-      "ko": "AI 추천·다이어리·지역락·지표·사진첩을 포함한 MVP 개발",
-      "en": "Developed the MVP including AI recommendation, diary, region lock, metrics, and photo album",
-      "ja": "AI推薦・日記・リージョンロック・指標・フォトアルバムを含むMVPを開発"
-    }
   },
   "flag": "active"
 }

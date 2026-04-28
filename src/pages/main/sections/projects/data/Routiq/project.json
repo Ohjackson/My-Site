@@ -45,9 +45,9 @@
     "ja": "1"
   },
   "additionalFeatures": {
-    "ko": "- 8개국 출시- \n - 아이폰이 옆에 없어도 기록 가능",
-    "en": "Launched in 8 countries\nrecords workouts even without the iPhone nearby.",
-    "ja": "8か国でリリース\niPhoneが近くになくても記録可能"
+    "ko": "- 8개국 출시",
+    "en": "- Launched in 8 countries",
+    "ja": "- 8か国でリリース"
   },
   "features": {
     "ko": [
@@ -67,7 +67,7 @@
     ]
   },
   "overviewStory": {
-    "ko": "애플워치만으로도 끊김 없이 운동을 기록하고, 아이폰에서 루틴 단위의 통계로 회고할 수 있는 iOS앱 서비스 부재로 목표가 된 프로젝트입니다.",
+    "ko": "애플워치만으로도 끊김 없이 운동을 기록하고, 아이폰에서 루틴 단위의 통계로 회고할 수 있는 iOS앱 서비스 부재로 \n 목표가 된 프로젝트입니다.",
     "en": "Designed to capture workouts seamlessly on Apple Watch alone and review routine-level stats on iPhone. The goal is to reduce logging friction and help sustain a daily 10-minute routine.",
     "ja": "Apple Watch単体で途切れなく記録し、iPhoneでルーチン単位の統計を振り返れるよう設計。記録の摩擦を減らし、毎日10分のルーチン継続を支援することが目的。"
   },
