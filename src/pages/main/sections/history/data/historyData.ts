@@ -14,7 +14,7 @@ export const historyData: Record<string, HistoryEntry[]> = {
     { period: "2024.08 ~ 2024.09", activity: "Full-stack Developer – Wiro(초기 창업팀)", description: "서비스 MVP 총 개발" },
     { period: "2024.01",           activity: "Docent .inc (前)",                      description: "iOS Shortcut 기능 개발" },
     { period: "2023.12",           activity: "병장 만기 전역",               description: "30사단 - 네트워크 운용 체계 설치병" },
-    { period: "2021",              activity: "경복고 졸업",                  description: "" }
+    { period: "2021",              activity: "서울 경복고등학교 졸업",        description: "" }
   ],
   en: [
     { period: "2025.12 ~ 2026.02", activity: "Internship – OIT Cyber Life Design Laboratory", description: "" },
@@ -25,7 +25,7 @@ export const historyData: Record<string, HistoryEntry[]> = {
     { period: "2024.08 ~ 2024.09", activity: "Full-stack Developer – Wiro(Early Startup Team)", description: "Developed the overall service MVP" },
     { period: "2024.01",           activity: "Docent .inc (Former)",                      description: "Developed iOS Shortcut features" },
     { period: "2023.12",           activity: "Completed military service as Sergeant",    description: "30th Infantry Division - Network Operations System Installer" },
-    { period: "2021",              activity: "Graduated from Kyungbok High School",     description: "" }
+    { period: "2021",              activity: "Graduated from Kyungbok High School in Seoul", description: "" }
   ],
   ja: [
     { period: "2025.12 ~ 2026.02", activity: "インターンシップ – OIT Cyber Life Design Laboratory", description: "" },
@@ -36,6 +36,6 @@ export const historyData: Record<string, HistoryEntry[]> = {
     { period: "2024.08 ~ 2024.09", activity: "フルスタック開発 – Wiro(初期スタートアップチーム)", description: "サービスMVP全体を開発" },
     { period: "2024.01",           activity: "Docent .inc (前)",                  description: "iOS Shortcut機能を開発" },
     { period: "2023.12",           activity: "兵長満期除隊",                      description: "第30師団 - ネットワーク運用体系設置兵" },
-    { period: "2021",              activity: "景福高校 卒業",                      description: "" }
+    { period: "2021",              activity: "ソウル景福高等学校 卒業",        description: "" }
   ]
 };
