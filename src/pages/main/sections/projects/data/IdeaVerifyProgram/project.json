@@ -52,7 +52,7 @@
   "overviewStory": {
     "ko": "회사의 홍보를 위해 창업자를 대상으로 진행한 이벤트성 프로젝트입니다.",
     "en": "An event-based project conducted targeting entrepreneurs for company promotion.",
-    "ja": "会社の広報を目的として、創業家を対象に実施されたイベントベースのプロジェクトです。"
+    "ja": "会社の広報を目的として、起業家を対象に実施されたイベント型プロジェクトです。"
   },
   "service": {
     "problem": {
@@ -67,8 +67,8 @@
     },
     "value": {
       "ko": "AI를 통해 가설 수립부터 랜딩 페이지, 결과 분석까지의 과정을 쉽게 확인 할 수 있음.",
-      "en": "AI makes it easy to go from hypothesis setup to landing page and results analysis, enabling quick, low-cost, data-driven decisions.",
-      "ja": "AIにより仮説策定からLP作成、結果分析までを簡便化し、低コストでデータに基づく意思決定を可能にする。"
+      "en": "AI makes it easy to check the flow from hypothesis setup to landing page creation and results analysis.",
+      "ja": "AIにより、仮説策定からランディングページ作成、結果分析までの流れを簡単に確認できます。"
     }
   },
   "detail_features": [
@@ -79,7 +79,7 @@
         "ja": "XYZ仮説の策定"
       },
       "description": {
-        "ko": "사용자가 사업 아이템과 고객을 정의하면, 'The Right It' 방법론에 기반하여 구체적인 XYZ 시장 호응 가설을 생성해합니다.",
+        "ko": "사용자가 사업 아이템과 고객을 정의하면, 'The Right It' 방법론에 기반하여 구체적인 XYZ 시장 호응 가설을 생성합니다.",
         "en": "When the user defines the business item and customer, the AI generates a concrete XYZ market-response hypothesis based on “The Right It.”",
         "ja": "事業アイテムと顧客を定義すると、『The Right It』に基づく具体的なXYZ市場反応仮説をAIが生成。"
       },

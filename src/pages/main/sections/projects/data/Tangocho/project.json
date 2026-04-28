@@ -54,14 +54,14 @@
   ],
   "en": [
   "Instant word capture via iOS Shortcuts",
-  "On-device handwriting OCR with Core ML (ResNet-50) for Joyo kanji",
+  "On-device handwriting OCR with Core ML (ResNet-50) for 2,136+ Joyo kanji",
   "SRS scheduling based on the forgetting curve",
   "iCloud sync for words and learning progress",
   "Cloze tests from example sentences and handwriting practice"
   ],
   "ja": [
   "iOSショートカットで学習単語を即時保存",
-  "Core ML（ResNet-50）によるオンデバイス手書きOCR（常用漢字対応）",
+  "Core ML（ResNet-50）によるオンデバイス手書きOCR（常用漢字2,136字以上に対応）",
   "忘却曲線に基づくSRSスケジューリング",
   "iCloud同期で単語と進捗を端末間で共有",
   "例文に基づくクローズテストと書き取り練習"
@@ -72,7 +72,7 @@
   },
   "additionalFeatures": {
   "ko": "-일본 출시 \n- 4차 스프린트 진행 중.\n- JLPT 시험 대비 LLM 기반 시험 문제 생성 기능 추가 예정",
-  "en": "- Japan release \n- Currently in the 4rd sprint.\n- JLPT prep: LLM-based test item generation planned",
+  "en": "- Japan release \n- Currently in the 4th sprint.\n- JLPT prep: LLM-based test item generation planned",
   "ja": "- 日本でもリリース \n- 第4スプリント進行中。\n- JLPT対策：LLMによる試験問題生成を予定"
   },
   "overviewStory": {
@@ -119,8 +119,8 @@
   },
   "description": {
   "ko": "정답/오답 피드백과 망각 수렴 구간을 반영한 srs 알고리즘이 적용된 재스케줄 및 알림 제공",
-  "en": "Reschedules based on ease feedback with intervals like  and delivers notifications.",
-  "ja": "易度フィードバックに基づき、6時間/24時間/3日/1週などの間隔で再スケジュールし、通知を送信します。"
+  "en": "Provides rescheduling and notifications through an SRS algorithm that reflects correct/incorrect feedback and forgetting-curve intervals.",
+  "ja": "正解・不正解のフィードバックと忘却曲線の間隔を反映したSRSアルゴリズムで再スケジュールし、通知を提供します。"
   },
   "implemented": true
   },

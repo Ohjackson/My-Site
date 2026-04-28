@@ -6,13 +6,13 @@
   },
   "summary": {
     "ko": "한↔일 실시간 미팅/통역 서비스 백엔드",
-    "en": "A real-time KR↔JP meeting service with URI-TOMO",
-    "ja": "URI-TOMOとともに使う日韓リアルタイムミーティングサービス"
+    "en": "Backend for a real-time KR↔JP meeting and interpreting service",
+    "ja": "日韓リアルタイムミーティング・通訳サービスのバックエンド"
   },
   "role": {
     "ko": "Tech Lead (Backend/Realtime)",
-    "en": "Tech Lead",
-    "ja": "テックリード"
+    "en": "Tech Lead (Backend/Realtime)",
+    "ja": "Tech Lead（Backend/Realtime）"
   },
   "flag": "active",
   "tags": {
@@ -68,8 +68,8 @@
   },
   "overviewStory": {
     "ko": "OIT Prof. Kashihara Lab에서 진행한 한↔일 프로젝트로, 국제 회의 툴을 주제로 실시간 통역·자막·채팅을 지원하는 \n 서비스를 구현했습니다.",
-    "en": "A KR-JP project carried out at OIT Prof. Kashihara's Lab under the theme of an international meeting tool.",
-    "ja": "OITのKashihara教授の研究室で進めた日韓プロジェクトで、国際会議ツールをテーマに開発しました。"
+    "en": "A KR-JP project carried out at OIT Prof. Kashihara Lab. We implemented a service for an international conference tool that supports real-time interpretation, captions, and chat.",
+    "ja": "OITのKashihara教授の研究室で進めた日韓プロジェクトで、国際会議ツールをテーマに、リアルタイム通訳・字幕・チャットを支援するサービスを実装しました。"
   },
   "links": {
     "github": "https://github.com/URI-TOMO/URITOMO-Backend"

@@ -22,17 +22,13 @@
     ],
     "en": [
       "Kubernetes",
-      "Hybrid Cloud",
-      "CI/CD",
-      "Terraform",
-      "AWS"
+      "Cloud",
+      "DevOps"
     ],
     "ja": [
       "Kubernetes",
-      "Hybrid Cloud",
-      "CI/CD",
-      "Terraform",
-      "AWS"
+      "Cloud",
+      "DevOps"
     ]
   },
   "platform": {
@@ -193,7 +189,7 @@
     "screenshots": []
   },
   "additionalFeatures": {
-    "ko": "- 8중 스프린트",
+    "ko": "- 8주 스프린트",
     "en": "- 8-week sprint",
     "ja": "- 8週間スプリント"
   },

@@ -16,8 +16,8 @@
   },
   "tags": {
     "ko": ["IoT", "Apple Watch", "SwiftUI", "WatchConnectivity"],
-    "en": ["Apple Watch", "watchOS", "SwiftUI", "Swift", "WatchConnectivity"],
-    "ja": ["Apple Watch", "watchOS", "SwiftUI", "Swift", "WatchConnectivity"]
+    "en": ["IoT", "Apple Watch", "SwiftUI", "WatchConnectivity"],
+    "ja": ["IoT", "Apple Watch", "SwiftUI", "WatchConnectivity"]
   },
   "platform": {
     "ko": "Apple Watch, iPhone",
@@ -68,8 +68,8 @@
   },
   "overviewStory": {
     "ko": "애플워치만으로도 끊김 없이 운동을 기록하고, 아이폰에서 루틴 단위의 통계로 회고할 수 있는 iOS앱 서비스 부재로 \n 목표가 된 프로젝트입니다.",
-    "en": "Designed to capture workouts seamlessly on Apple Watch alone and review routine-level stats on iPhone. The goal is to reduce logging friction and help sustain a daily 10-minute routine.",
-    "ja": "Apple Watch単体で途切れなく記録し、iPhoneでルーチン単位の統計を振り返れるよう設計。記録の摩擦を減らし、毎日10分のルーチン継続を支援することが目的。"
+    "en": "This project was driven by the lack of an iOS app service that lets users log workouts seamlessly with only Apple Watch and review routine-level stats on iPhone.",
+    "ja": "Apple Watchだけで途切れなくワークアウトを記録し、iPhoneでルーチン単位の統計を振り返れるiOSアプリサービスがなかったことから目標となったプロジェクトです。"
   },
   "links": {
     "appStore": "https://apps.apple.com/kr/app/routiq/id6745335175"

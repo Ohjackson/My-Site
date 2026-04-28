@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { ChevronLeft } from 'lucide-react';
 
 import { useThemeStore } from '@/features/theme/theme.store';
 import { SITE_OWNER } from '@/shared/config/site';
@@ -55,13 +56,22 @@ export const Header = ({ currentView, onNavigateHome }: HeaderProps) => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/60 bg-surface/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6 text-text">
-        <div className="text-sm font-medium tracking-[0.4em]">{SITE_OWNER.toUpperCase()}</div>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 text-text sm:px-8">
+        <div className="text-xs font-medium tracking-[0.25em] sm:text-sm sm:tracking-[0.4em]">
+          {SITE_OWNER.toUpperCase()}
+        </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           {shouldShowBack ? (
-            <Button variant="secondary" onClick={onNavigateHome} className="h-9 px-3">
-              {t('header.backToHome')}
+            <Button
+              variant="secondary"
+              onClick={onNavigateHome}
+              className="h-9 w-9 flex-shrink-0 !px-0 sm:w-auto sm:!px-3"
+              aria-label={t('header.backToHome')}
+              title={t('header.backToHome')}
+            >
+              <ChevronLeft className="h-4 w-4 sm:hidden" />
+              <span className="hidden sm:inline">{t('header.backToHome')}</span>
             </Button>
           ) : null}
 
@@ -96,9 +106,11 @@ export const Header = ({ currentView, onNavigateHome }: HeaderProps) => {
           <button
             onClick={toggle}
             className="flex items-center gap-2 rounded-md border border-transparent px-3 py-2 text-sm text-muted transition-colors hover:border-border hover:text-text"
+            aria-label={mode === 'dark' ? 'Light' : 'Dark'}
+            title={mode === 'dark' ? 'Light' : 'Dark'}
           >
             <MoonIcon className="h-4 w-4" />
-            {mode === 'dark' ? 'Light' : 'Dark'}
+            <span className="hidden sm:inline">{mode === 'dark' ? 'Light' : 'Dark'}</span>
           </button>
         </div>
       </div>

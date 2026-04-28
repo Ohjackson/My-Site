@@ -143,17 +143,15 @@
     ],
     "en": [
       "- Design: Rapid prototyping architecture using FastAPI and LangGraph",
-      "- Implementation:",
-      "  · iOS: initial setup, chat UI, Connectivity configuration through release",
-      "  · FastAPI: LangGraph routing and database setup",
+      "- iOS: initial setup, chat screen implementation, and Connectivity setup through release",
+      "- FastAPI: LangGraph routing and database setup",
       "- Release: TestFlight QA distribution followed by App Store launch",
       "- Operations: App Store Connect log monitoring"
     ],
     "ja": [
       "- 設計：FastAPIとLangGraphによる迅速なプロトタイピング設計",
-      "- 実装：",
-      "  · iOS：初期セットアップ、チャット画面実装、リリースまでのConnectivity設定",
-      "  · FastAPI：LangGraphルーティングとデータベース設定",
+      "- iOS：初期セットアップ、チャット画面実装、リリースまでのConnectivity設定",
+      "- FastAPI：LangGraphルーティングとデータベース設定",
       "- リリース：TestFlightでQA配信後、App Storeで公開",
       "- 運用：App Store Connectのログ監視"
     ]

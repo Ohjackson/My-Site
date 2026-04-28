@@ -6,8 +6,8 @@
   },
   "summary": {
     "ko": "귀여운 고양이가 내 손목에",
-    "en": "A cute cat battle game on your wrist.",
-    "ja": "手首で楽しむかわいいネコのバトルゲーム。"
+    "en": "A cute cat on your wrist.",
+    "ja": "かわいいネコが手首に。"
   },
   "role": {
     "ko": "Full-Cycle Solo Project",
@@ -65,8 +65,8 @@
   },
   "overviewStory": {
     "ko": "애플워치간 통신이 가능할까? 라는 궁금증으로 실험적 시도가 기획까지 이어져 출시된 케이스입니다.",
-    "en": "It began with a question—can Apple Watches communicate for a direct battle? The experiment grew into a fully shipped product.",
-    "ja": "「Apple Watch同士で直接バトルできるのか？」という疑問から始まり、実験が企画・リリースへと発展。"
+    "en": "It began with the question of whether Apple Watches could communicate with each other, and the experiment led to planning and a shipped product.",
+    "ja": "「Apple Watch同士で通信できるのか？」という疑問から始まり、実験的な試みが企画につながってリリースされたケースです。"
   },
   "links": {
     "appStore": "https://apps.apple.com/kr/app/popco/id6744177061"
