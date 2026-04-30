@@ -11,7 +11,7 @@
   "nav": {
     "home": "홈",
     "about": "소개",
-    "tech": "기술 스택",
+    "tech": "Tech in project",
     "projects": "프로젝트",
     "history": "연혁",
     "achievements": "성과",
@@ -40,17 +40,17 @@
       "imageAlt": "안재현 프로필 사진"
     },
     "tech": {
-      "title": "기술 스택",
+      "title": "Tech in project",
       "categoryLabels": {
-        "mobile": "모바일",
-        "frontend": "프론트엔드",
-        "backend": "백엔드",
-        "data": "데이터",
-        "infra": "인프라",
+        "mobile": "Mobile",
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "data": "Data",
+        "infra": "Infra",
         "ai": "AI / ML",
-        "tools": "협업 도구",
-        "design": "디자인",
-        "experienced": "사용 경험"
+        "tools": "Collaboration Tools",
+        "design": "Design",
+        "experienced": "Experienced"
       }
     },
     "history": {
