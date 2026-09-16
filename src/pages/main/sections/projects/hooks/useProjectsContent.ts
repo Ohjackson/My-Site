@@ -6,6 +6,7 @@ import type { ProjectId, ProjectTranslation, ProjectsContent } from '../types';
 import tangochoData from '../data/Tangocho/project.json';
 import loventureData from '../data/Loventure/project.json';
 import cocoData from '../data/coco/project.json';
+import fedstockData from '../data/FedStock/project.json';
 import uritomoData from '../data/Uritomo/project.json';
 import routiqData from '../data/Routiq/project.json';
 import aconData from '../data/Acon/project.json';
@@ -15,13 +16,14 @@ import wiroData from '../data/Wiro/project.json';
 import mysiteData from '../data/MySite/project.json';
 import healthfinbotData from '../data/healthFinBot/project.json';
 import ideaverifyprogramData from '../data/IdeaVerifyProgram/project.json';
-// import perariData from '../data/Perari/project.json';
+import perariData from '../data/Perari/project.json';
 // import inkdueData from '../data/InkDue/project.json';
 
 const projectData = {
   tangocho: tangochoData,
   loventure: loventureData,
   coco: cocoData,
+  fedstock: fedstockData,
   uritomo: uritomoData,
   routiq: routiqData,
   acon: aconData,
@@ -31,7 +33,7 @@ const projectData = {
   mysite: mysiteData,
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
-  // perari: perariData,
+  perari: perariData,
   // inkdue: inkdueData,
 };
 
@@ -42,6 +44,8 @@ const getStartPeriodValue = (period?: string) => {
   const [, year, month] = match;
   return Number(year) * 100 + Number(month);
 };
+
+const THIRD_ROW_PROJECT_IDS: ProjectId[] = ['fedstock', 'perari'];
 
 export const useProjectsContent = () => {
   const { t, i18n } = useTranslation();
@@ -61,7 +65,7 @@ export const useProjectsContent = () => {
   const viewDetails = t('sections.projects.viewDetails');
 
   // Convert project data to the expected format with language-specific data
-  const projects: Array<ProjectTranslation & { id: ProjectId; flag?: string; making?: boolean }> =
+  const sortedProjects: Array<ProjectTranslation & { id: ProjectId; flag?: string; making?: boolean }> =
     Object.entries(projectData)
       .map(([id, data]) => ({
         id: id as ProjectId,
@@ -76,6 +80,14 @@ export const useProjectsContent = () => {
         making: (data as any).making,
       }))
       .sort((a, b) => getStartPeriodValue(b.period) - getStartPeriodValue(a.period));
+
+  const thirdRowProjects = sortedProjects.filter((project) => THIRD_ROW_PROJECT_IDS.includes(project.id));
+  const remainingProjects = sortedProjects.filter((project) => !THIRD_ROW_PROJECT_IDS.includes(project.id));
+  const projects = [
+    ...remainingProjects.slice(0, 4),
+    ...thirdRowProjects,
+    ...remainingProjects.slice(4),
+  ];
 
   console.log('Projects loaded:', projects.map(p => ({ id: p.id, name: p.name })));
 

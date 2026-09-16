@@ -1,0 +1,213 @@
+{
+  "name": {
+    "ko": "FedStock",
+    "en": "FedStock",
+    "ja": "FedStock"
+  },
+  "summary": {
+    "ko": "판매 원본 데이터를 공유하지 않고 수요를 예측하는 연합학습 서비스",
+    "en": "Federated demand forecasting without sharing raw sales data",
+    "ja": "販売の元データを共有せずに需要を予測する連合学習サービス"
+  },
+  "role": {
+    "ko": "Backend · MLOps · AWS Cloud Engineering",
+    "en": "Backend · MLOps · AWS Cloud Engineering",
+    "ja": "Backend · MLOps · AWS Cloud Engineering"
+  },
+  "tags": {
+    "ko": [
+      "MLOps",
+      "Federated Learning",
+      "AWS",
+      "Terraform"
+    ],
+    "en": [
+      "MLOps",
+      "Federated Learning",
+      "AWS",
+      "Terraform"
+    ],
+    "ja": [
+      "MLOps",
+      "Federated Learning",
+      "AWS",
+      "Terraform"
+    ]
+  },
+  "platform": {
+    "ko": "windows, Linux",
+    "en": "windows, Linux",
+    "ja": "windows, Linux"
+  },
+  "workPeriod": {
+    "ko": "2026.03 - 2026.06",
+    "en": "Mar 2026 - Jun 2026",
+    "ja": "2026年3月 - 2026年6月"
+  },
+  "serviceStatus": {
+    "ko": "연구·클라우드 검증 완료",
+    "en": "Research and cloud validation completed",
+    "ja": "研究・クラウド検証完了"
+  },
+  "teamSize": {
+    "ko": "6명",
+    "en": "6 members",
+    "ja": "6名"
+  },
+  "contribution": {
+    "ko": "백엔드·AWS 인프라 100%, MLOps 담당",
+    "en": "100% of backend and AWS infrastructure; MLOps",
+    "ja": "バックエンド・AWSインフラ100%、MLOps担当"
+  },
+  "features": {
+    "ko": [
+      "70개 클라이언트 연합학습 실험과 전략 비교",
+      "클러스터 단위 모델 집계·평가 파이프라인",
+      "S3 기반 모델 아티팩트 생애주기 설계",
+      "Terraform으로 재현한 AWS 실행 환경"
+    ],
+    "en": [
+      "Federated-learning experiments across 70 clients",
+      "Cluster-level model aggregation and evaluation",
+      "S3-based model artifact lifecycle",
+      "Reproducible AWS runtime built with Terraform"
+    ],
+    "ja": [
+      "70クライアントの連合学習実験と戦略比較",
+      "クラスタ単位のモデル集約・評価パイプライン",
+      "S3 ベースのモデルアーティファクト運用",
+      "Terraform で再現可能にした AWS 実行環境"
+    ]
+  },
+  "overviewStory": {
+    "ko": "FedStock은 매장들이 판매 원본 데이터를 한곳에 모으지 않고도 함께 수요 예측 모델을 개선할 수 있는지 탐구한 6인 팀 프로젝트입니다. 저는 백엔드와 AWS 인프라를 맡고, 학습 결과를 서비스에서 사용할 수 있도록 모델 전달·집계 흐름을 구성했습니다.\n\nSpring Boot에서 인증과 요청 검증, 라운드별 배치 전송을 처리하고 FastAPI의 모델 집계 기능과 연결했습니다. Terraform으로 실행 환경을 정의하고, 모델 파일은 S3에서 관리해 애플리케이션 이미지와 분리했습니다.",
+    "en": "FedStock is a six-person team project exploring how retailers can improve demand forecasts together without pooling raw sales data. I handled the backend and AWS infrastructure, and built the model transfer and aggregation flow needed to connect learning experiments to the service.\n\nSpring Boot handles authentication, request validation, and round-based batch forwarding to FastAPI. I defined the runtime with Terraform and kept model artifacts in S3, separate from application images.",
+    "ja": "FedStockは、店舗の販売元データを一か所に集めずに需要予測モデルを共同で改善できるかを探った6人のチームプロジェクトです。私はバックエンドとAWSインフラを担当し、学習結果をサービスにつなぐモデル転送・集約の流れを構築しました。\n\nSpring Bootで認証、リクエスト検証、ラウンド単位のバッチ転送を処理し、FastAPIのモデル集約機能と連携しました。実行環境はTerraformで定義し、モデルファイルはアプリケーションイメージから分離してS3で管理しました。"
+  },
+  "detail_features": [
+    {
+      "title": {
+        "ko": "인증과 라운드별 배치 처리",
+        "en": "Authentication and round-based batches",
+        "ja": "認証とラウンド単位のバッチ処理"
+      },
+      "description": {
+        "ko": "Spring Boot에서 JWT 인증과 클라이언트 요청을 검증합니다. 단일 요청은 AI 서버로 전달하고, 전체 클라이언트 요청은 PostgreSQL 큐에 모아 같은 라운드의 요청이 준비되면 배치로 전송합니다.",
+        "en": "Spring Boot validates JWTs and client requests. Individual requests are forwarded to the AI service; multi-client requests wait in a PostgreSQL queue until the round is ready for batch forwarding.",
+        "ja": "Spring BootでJWT認証とクライアントのリクエストを検証します。単独リクエストはAIサーバーに転送し、全クライアントのリクエストはPostgreSQLのキューに集め、ラウンドが揃うとバッチで送信します。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "모델 파일과 버전 관리",
+        "en": "Model artifact management",
+        "ja": "モデルファイルの管理"
+      },
+      "description": {
+        "ko": "클라이언트 업데이트, 집계 모델, 평가 결과의 S3 저장 규칙을 정의했습니다. 모델 파일을 Git·컨테이너 이미지와 분리하고, AI 서버가 필요한 파일을 내려받아 처리한 뒤 결과를 다시 저장하도록 구성했습니다.",
+        "en": "Defined S3 storage conventions for client updates, aggregated models, and evaluation reports. Model files stay separate from Git and container images; the AI service downloads required artifacts and uploads its outputs.",
+        "ja": "クライアント更新、集約モデル、評価結果のS3保存規約を定義しました。モデルをGitやコンテナイメージから分離し、AIサーバーが必要なファイルを取得・処理して結果を保存する構成にしました。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "Terraform 기반 AWS 인프라",
+        "en": "AWS infrastructure with Terraform",
+        "ja": "TerraformによるAWSインフラ"
+      },
+      "description": {
+        "ko": "VPC의 공개·비공개 서브넷을 나누고 ALB, ECS Fargate, RDS를 구성했습니다. ECR 이미지 빌드·업로드와 ECS 재배포 스크립트를 작성하고, CloudWatch Logs로 컨테이너 로그를 확인하도록 연결했습니다.",
+        "en": "Defined public and private VPC subnets with ALB, ECS Fargate, and RDS. Added scripts for image builds, ECR pushes, and ECS redeployment, with container logs sent to CloudWatch Logs.",
+        "ja": "VPCのパブリック・プライベートサブネットを分け、ALB、ECS Fargate、RDSを構成しました。イメージのビルド・ECRへの送信・ECS再配備スクリプトを用意し、CloudWatch Logsでログを確認できるようにしました。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "접근 범위와 자격 증명 관리",
+        "en": "Access and credentials",
+        "ja": "アクセスと認証情報の管理"
+      },
+      "description": {
+        "ko": "ECS 태스크에 공인 IP를 할당하지 않고 RDS를 비공개 서브넷에 배치했습니다. DB 비밀번호는 Secrets Manager에서 주입하고, S3는 공개 접근 차단·암호화·버전 관리를 설정했습니다.",
+        "en": "ECS tasks have no public IP, and RDS sits in private subnets. Database passwords are injected from Secrets Manager; S3 uses public-access blocking, encryption, and versioning.",
+        "ja": "ECSタスクにパブリックIPを割り当てず、RDSをプライベートサブネットに配置しました。DBパスワードはSecrets Managerから注入し、S3には公開アクセスのブロック、暗号化、バージョン管理を設定しました。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "연구 코드를 반복 가능한 실험으로",
+        "en": "From research code to repeatable experiments",
+        "ja": "研究コードから反復可能な実験へ"
+      },
+      "description": {
+        "ko": "- Local, Global FedAvg, PA-CFL을 같은 평가 조건에서 비교\n- 70개 클라이언트와 60라운드 실험 기록을 결과 리포트로 남김\n- 데이터 분할과 스케일러·특성 선택의 누수를 방지하도록 실험 정책을 명시",
+        "en": "- Compared Local, Global FedAvg, and PA-CFL under the same evaluation policy\n- Recorded a 70-client, 60-round experiment as a reproducible report\n- Defined split, scaling, and feature-selection policies to prevent leakage",
+        "ja": "- Local・Global FedAvg・PA-CFL を同じ評価条件で比較\n- 70クライアント・60ラウンドの実験をレポート化\n- 分割・スケーリング・特徴選択でリークを防ぐ方針を明記"
+      },
+      "implemented": true
+    }
+  ],
+  "metrics": {
+    "ko": [
+      "70개 시뮬레이션 클라이언트 · 60 federated rounds",
+      "PA-CFL이 Local·Global FedAvg 대비 RMSE, SMAPE, MAE, WMAPE 모두 최우수",
+      "당시 PA-CFL 결과: RMSE 23.58 · MAE 15.92"
+    ],
+    "en": [
+      "70 simulated clients · 60 federated rounds",
+      "PA-CFL led Local and Global FedAvg across RMSE, SMAPE, MAE, and WMAPE",
+      "PA-CFL snapshot: RMSE 23.58 · MAE 15.92"
+    ],
+    "ja": [
+      "70シミュレーションクライアント · 60 federated rounds",
+      "PA-CFL が Local・Global FedAvg より RMSE・SMAPE・MAE・WMAPE で最良",
+      "当時の PA-CFL 結果: RMSE 23.58 · MAE 15.92"
+    ]
+  },
+  "results": {
+    "achievements": {
+      "ko": "연합학습 실험을 서비스에서 다루기 위한 인증·배치 전송·모델 저장 흐름을 구현했습니다.\n백엔드와 AWS 인프라를 함께 맡으며, 모델 처리와 서비스 운영 사이의 책임을 나누고 실행 환경을 코드로 관리하는 경험을 쌓았습니다.",
+      "en": "Implemented authentication, batch forwarding, and artifact storage to support federated-learning experiments in a service.\nOwning both the backend and AWS infrastructure gave me experience separating model-processing responsibilities from service operations and managing the runtime as code.",
+      "ja": "連合学習実験をサービスで扱うための認証・バッチ転送・モデル保存を実装しました。\nバックエンドとAWSインフラを担当し、モデル処理とサービス運用の責務を分け、実行環境をコードで管理する経験を積みました。"
+    }
+  },
+  "nextSteps": {
+    "ko": "- 실매장 데이터와 장기 운영 환경에서는 원격 Terraform state, 모델 승인 게이트, 자동 모니터링을 보강할 수 있습니다.",
+    "en": "- A production pilot could add remote Terraform state, model approval gates, and automated monitoring for real store data.",
+    "ja": "- 実店舗での長期運用では、Terraform のリモート state、モデル承認ゲート、自動監視を強化できます。"
+  },
+  "additionalFeatures": {
+    "ko": "6인 팀 프로젝트 · 백엔드·MLOps·AWS 클라우드 엔지니어링 담당",
+    "en": "Six-person team · Backend, MLOps, and AWS cloud engineering",
+    "ja": "6人チーム · バックエンド・MLOps・AWSクラウドエンジニアリング担当"
+  },
+  "stackAndArchitecture": {
+    "techStack": {
+      "frontend": "React prototype dashboard",
+      "backend": "Java · Spring Boot · Spring Security · FastAPI",
+      "database": "PostgreSQL",
+      "AI": "PyTorch LSTM · XGBoost · PA-CFL · FedAvg",
+      "devops": "Docker · Terraform",
+      "infra": "AWS ECS Fargate · ALB · ECR · RDS · S3 · Secrets Manager",
+      "loggingMonitoring": "CloudWatch Logs"
+    }
+  },
+  "links": {
+    "github": "https://github.com/Fedstock/Fedstock-Infra"
+  },
+  "architectureImage": "/assets/fedstock/infra-architecture.png",
+  "architectureImageAlt": {
+    "ko": "FedStock AWS 아키텍처: ALB, ECS Fargate, RDS와 모델 저장·운영 서비스",
+    "en": "FedStock AWS architecture: ALB, ECS Fargate, RDS, model storage and operational services",
+    "ja": "FedStock AWS構成：ALB、ECS Fargate、RDS、モデル保存・運用サービス"
+  },
+  "architectureNotes": {
+    "ko": "요청은 ALB를 거쳐 ECS Fargate에서 처리됩니다. Spring Boot는 인증과 라운드별 요청을 관리하고, FastAPI는 모델 집계와 결과 처리를 맡습니다. RDS에는 요청·라운드 상태를, S3에는 모델 파일을 저장합니다.\n다이어그램은 Terraform 정의를 기준으로 했으며, AI 서비스와 DynamoDB는 선택 구성입니다.",
+    "en": "Requests pass through the ALB to ECS Fargate. Spring Boot manages authentication and round-based requests, while FastAPI handles model aggregation and results. RDS stores request and round state; S3 stores model artifacts.\nThe diagram follows the Terraform definitions, with AI and DynamoDB shown as optional components.",
+    "ja": "リクエストはALBを経由してECS Fargateで処理します。Spring Bootは認証とラウンド単位のリクエストを管理し、FastAPIはモデルの集約と結果処理を担います。RDSにはリクエストとラウンドの状態を、S3にはモデルファイルを保存します。\n図はTerraformの定義を基準にしており、AIサービスとDynamoDBは選択構成です。"
+  }
+}

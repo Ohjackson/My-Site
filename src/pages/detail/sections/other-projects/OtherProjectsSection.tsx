@@ -79,6 +79,7 @@ function getVisibleTagCount(tagWidths: number[], containerWidth: number) {
 
 function OtherProjectCard({ project, language, onClick }: OtherProjectCardProps) {
   const tags = project.tags[language];
+  const projectIcon = projectIcons[project.id as keyof typeof projectIcons];
   const tagsContainerRef = useRef<HTMLDivElement>(null);
   const tagMeasureRefs = useRef<Array<HTMLSpanElement | null>>([]);
   const [visibleTagCount, setVisibleTagCount] = useState(tags.length);
@@ -110,20 +111,20 @@ function OtherProjectCard({ project, language, onClick }: OtherProjectCardProps)
     >
       <div className="flex h-full w-full flex-col">
         <div className="mb-4 h-12 w-12 flex-shrink-0 overflow-hidden rounded-xl border border-gray-200/50 shadow-lg">
-          <img
-            src={projectIcons[project.id as keyof typeof projectIcons]}
-            alt={`${project.name[language]} icon`}
-            className="h-full w-full object-cover"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-              const parent = target.parentElement;
-              if (parent) {
-                parent.className = 'mb-4 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border border-gray-200/50 bg-gradient-to-br from-primary-500 to-primary-600 shadow-lg';
-                parent.innerHTML = `<span class="text-lg font-bold text-white">${project.name[language].charAt(0)}</span>`;
-              }
-            }}
-          />
+          {projectIcon ? (
+            <img
+              src={projectIcon}
+              alt={`${project.name[language]} icon`}
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <div
+              aria-hidden
+              className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary-500 to-primary-800 text-lg font-bold text-white"
+            >
+              {project.name[language].charAt(0)}
+            </div>
+          )}
         </div>
 
         <div className="flex-1">

@@ -16,6 +16,7 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCardProps) => {
   const { t } = useTranslation();
+  const projectIcon = projectIcons[project.id as keyof typeof projectIcons];
   const handleCardClick = () => {
     if ((project as any).making) return; // making 프로젝트는 클릭 비활성화
     console.log('ProjectCard clicked:', project.id);
@@ -35,21 +36,20 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
         {/* Project Icon */}
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-2xl border border-gray-200/50 flex-shrink-0">
-            <img 
-              src={projectIcons[project.id as keyof typeof projectIcons]}
-              alt={`${project.name} icon`}
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                // Fallback to gradient background if image fails to load
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                const parent = target.parentElement;
-                if (parent) {
-                  parent.className = 'w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center shadow-2xl border border-gray-200/50 flex-shrink-0';
-                  parent.innerHTML = `<span class="text-xl font-bold text-white">${project.name.charAt(0)}</span>`;
-                }
-              }}
-            />
+            {projectIcon ? (
+              <img
+                src={projectIcon}
+                alt={`${project.name} icon`}
+                className="w-full h-full object-cover"
+              />
+            ) : (
+              <div
+                aria-hidden
+                className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary-500 to-primary-800 text-xl font-bold text-white"
+              >
+                {project.name.charAt(0)}
+              </div>
+            )}
           </div>
           <div>
             <h3 className="text-2xl font-semibold text-text transition group-hover:text-primary-500">

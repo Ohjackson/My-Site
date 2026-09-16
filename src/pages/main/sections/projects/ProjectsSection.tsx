@@ -9,7 +9,7 @@ interface ProjectsSectionProps {
   onProjectClick: (id: ProjectId) => void;
 }
 
-const FEATURED_PROJECT_IDS: ProjectId[] = ['tangocho', 'loventure', 'coco', 'uritomo'];
+const FEATURED_PROJECT_IDS: ProjectId[] = ['fedstock', 'tangocho', 'loventure', 'coco', 'uritomo'];
 
 export const ProjectsSection = ({ onProjectClick }: ProjectsSectionProps) => {
   const { content, projects } = useProjectsContent();

@@ -1,1 +1,242 @@
-{}
+{
+  "name": {
+    "ko": "Perari",
+    "en": "Perari",
+    "ja": "Perari"
+  },
+  "summary": {
+    "ko": "앱 디자인부터 홈서버 구축·운영까지 혼자 맡아 전 세계 App Store에 출시한 개인 생산성 툴",
+    "en": "A personal productivity tool released worldwide on the App Store, with app design, home server setup, and operations handled solo",
+    "ja": "アプリのデザインからホームサーバーの構築・運用まで一人で手がけ、世界のApp Storeで公開した個人生産性ツール"
+  },
+  "role": {
+    "ko": "Full-Cycle Solo Project",
+    "en": "Full-Cycle Solo Project",
+    "ja": "Full-Cycle Solo Project"
+  },
+  "flag": "🇰🇷",
+  "tags": {
+    "ko": [
+      "iOS",
+      "Home Server",
+      "Self-Hosted"
+    ],
+    "en": [
+      "iOS",
+      "Home Server",
+      "Self-Hosted"
+    ],
+    "ja": [
+      "iOS",
+      "Home Server",
+      "Self-Hosted"
+    ]
+  },
+  "platform": {
+    "ko": "iPhone, Mac",
+    "en": "iPhone, Mac",
+    "ja": "iPhone, Mac"
+  },
+  "workPeriod": {
+    "ko": "2026.08.29 ~ 운영 중",
+    "en": "2026.08.29 ~ Operating",
+    "ja": "2026.08.29 ~ 運用中"
+  },
+  "releaseDate": {
+    "ko": "2026.08.29",
+    "en": "August 29, 2026",
+    "ja": "2026年8月29日"
+  },
+  "serviceStatus": {
+    "ko": "전 세계 App Store 출시·운영 중",
+    "en": "Available worldwide on the App Store",
+    "ja": "世界のApp Storeで公開・運用中"
+  },
+  "teamSize": {
+    "ko": "1인",
+    "en": "Solo",
+    "ja": "1名"
+  },
+  "contribution": {
+    "ko": "100%",
+    "en": "100%",
+    "ja": "100%"
+  },
+  "features": {
+    "ko": [
+      "오늘의 포커스와 완료 시 종이 찢기 인터랙션",
+      "계층형 Todo·백로그·반복 루틴 통합 관리",
+      "오프라인 우선 저장과 iPhone·Mac 동기화",
+      "집중 타이머, 리마인더, 위젯·Live Activity 연동"
+    ],
+    "en": [
+      "Today Focus with a paper-tearing completion interaction",
+      "Unified hierarchical todos, backlog, and recurring routines",
+      "Offline-first storage with iPhone–Mac synchronization",
+      "Focus timer, reminders, widgets, and Live Activities"
+    ],
+    "ja": [
+      "今日のフォーカスと完了時の紙を破るインタラクション",
+      "階層型Todo・バックログ・繰り返しルーティンの一元管理",
+      "オフラインファースト保存とiPhone・Mac同期",
+      "集中タイマー、リマインダー、ウィジェット・Live Activity連携"
+    ]
+  },
+  "overviewStory": {
+    "ko": "개발자라면 자신만의 할 일 관리 도구 하나쯤은 있어야 한다는 생각으로 시작했습니다. 매일 직접 쓸 생산성 툴을 기획하고 디자인해, 앱과 백엔드를 개발하고 전 세계 App Store에 출시했습니다.\n\nRaspberry Pi 홈서버를 구축해 기기 간 동기화를 운영하고 있습니다. 작은 서비스라도 꾸준히 쓸 수 있도록, 로그 확인과 오류 알림부터 서버의 접근 범위까지 직접 챙기고 있습니다.",
+    "en": "I started with the belief that every developer should build a task tool of their own. I planned and designed a productivity tool for daily use, built the app and backend, and released it worldwide on the App Store.\n\nI run cross-device synchronization on a Raspberry Pi home server. Keeping a small service dependable means looking after its logs, error alerts, and server access as well as its features.",
+    "ja": "開発者なら自分だけのタスク管理ツールを一つは作りたい、という思いから始めました。毎日使う生産性ツールを企画・デザインし、アプリとバックエンドを開発して世界のApp Storeで公開しました。\n\nRaspberry Piでホームサーバーを構築し、端末間同期を運用しています。小さなサービスでも使い続けられるよう、ログ確認やエラー通知、サーバーのアクセス範囲まで自ら管理しています。"
+  },
+  "detail_features": [
+    {
+      "title": {
+        "ko": "오프라인 우선 저장과 다기기 동기화",
+        "en": "Offline-first, multi-device synchronization",
+        "ja": "オフラインファーストとマルチデバイス同期"
+      },
+      "description": {
+        "ko": "SwiftData에 변경 사항을 먼저 저장해 오프라인에서도 사용할 수 있습니다. 연결되면 직접 개발한 Fastify 백엔드와 PostgreSQL을 통해 iPhone과 Mac의 데이터를 동기화합니다.",
+        "en": "Changes are saved to SwiftData first so the app remains usable offline. Once connected, the custom Fastify backend and PostgreSQL synchronize data between iPhone and Mac.",
+        "ja": "変更をまずSwiftDataに保存し、オフラインでも使えるようにしました。接続後は独自のFastifyバックエンドとPostgreSQLを通じてiPhoneとMacのデータを同期します。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "홈서버 운영",
+        "en": "Home server operations",
+        "ja": "ホームサーバーの運用"
+      },
+      "description": {
+        "ko": "Raspberry Pi 5에서 백엔드와 DB를 Docker Compose로 운영합니다. Portainer로 컨테이너를 관리하고, Dozzle로 로그를 확인하며, Metabase로 데이터를 조회합니다.",
+        "en": "I run the backend and database on a Raspberry Pi 5 with Docker Compose. Portainer manages containers, Dozzle provides logs, and Metabase supports data queries.",
+        "ja": "Raspberry Pi 5上でバックエンドとDBをDocker Composeで運用。Portainerでコンテナを管理し、Dozzleでログを確認、Metabaseでデータを参照しています。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "보안 설계",
+        "en": "Security design",
+        "ja": "セキュリティ設計"
+      },
+      "description": {
+        "ko": "API는 localhost에만 연결하고 DB 포트는 호스트에 공개하지 않았습니다. 사용하지 않는 rpcbind의 실행과 자동 시작을 해제했으며, 오류 수집 시 요청 본문과 인증 정보를 제외합니다.",
+        "en": "The API binds only to localhost, and the database port is not published to the host. I stopped and disabled the unused rpcbind service and exclude request bodies and credentials from error reports.",
+        "ja": "APIはlocalhostのみに接続し、DBのポートはホストに公開していません。未使用のrpcbindを停止して自動起動も無効化し、エラー収集からリクエスト本文と認証情報を除外しています。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "오류 알림과 배포 확인",
+        "en": "Error alerts and deployment checks",
+        "ja": "エラー通知とデプロイ確認"
+      },
+      "description": {
+        "ko": "서버 내부 오류와 처리되지 않은 예외를 Sentry로 수집하고 Gmail로 알림을 받습니다. 배포 시 DB·Apple 인증 관련 준비 상태를 확인하고, 이상이 생기면 이전 이미지로 복구할 수 있도록 구성했습니다.",
+        "en": "Sentry collects server-side failures and unhandled exceptions, with alerts delivered to Gmail. Deployment checks cover database connectivity and Apple authentication prerequisites, with the previous image retained for rollback.",
+        "ja": "サーバー内部のエラーと未処理の例外をSentryに収集し、Gmailで通知を受け取ります。デプロイ時にはDB接続とApple認証関連の準備状態を確認し、問題があれば以前のイメージに戻せる構成にしています。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "오늘의 포커스와 완료 경험",
+        "en": "Today Focus and a meaningful finish",
+        "ja": "今日のフォーカスと完了体験"
+      },
+      "description": {
+        "ko": "오늘 할 일만 골라 집중하고 완료 기록을 남깁니다. 모두 마치면 종이를 찢는 인터랙션으로 하루를 마무리합니다.",
+        "en": "Choose today’s tasks and keep a completion history. A paper-tearing interaction marks the end when everything is done.",
+        "ja": "今日取り組むタスクを選び、完了を記録します。すべて終えると紙を破る演出で一日を締めくくります。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "계층형 Todo·백로그·반복 루틴",
+        "en": "Hierarchical todos, backlog, and routines",
+        "ja": "階層型Todo・バックログ・繰り返しルーティン"
+      },
+      "description": {
+        "ko": "큰 일을 하위 항목으로 나누고, 나중에 할 일은 백로그로 보관합니다. 반복하는 일은 루틴으로 관리합니다.",
+        "en": "Break larger tasks into smaller steps, keep future work in a backlog, and manage recurring tasks as routines.",
+        "ja": "大きなタスクを小さな項目に分け、後で行うことはバックログに保存。繰り返す作業はルーティンとして管理します。"
+      },
+      "implemented": true
+    },
+    {
+      "title": {
+        "ko": "집중 타이머와 Apple 시스템 연동",
+        "en": "Focus timer across Apple system surfaces",
+        "ja": "集中タイマーとAppleシステム連携"
+      },
+      "description": {
+        "ko": "집중 타이머와 리마인더를 제공하고, 위젯·Live Activity·Mac 메뉴 막대에서 진행 상태를 확인할 수 있습니다.",
+        "en": "Use a focus timer and reminders, and check progress through widgets, Live Activities, and the Mac menu bar.",
+        "ja": "集中タイマーとリマインダーを提供し、ウィジェット・Live Activity・Macのメニューバーで進行状況を確認できます。"
+      },
+      "implemented": true
+    }
+  ],
+  "preview_screenshots": {
+    "screenshots": [
+      "/assets/perari/shot-1.png",
+      "/assets/perari/shot-2.png",
+      "/assets/perari/shot-3.png"
+    ]
+  },
+  "architectureNotes": {
+    "ko": "앱은 기기에 먼저 저장하고, 홈서버를 통해 iPhone과 Mac의 변경 사항을 동기화합니다. 서비스 접속은 Cloudflare Tunnel을 거치고, 서버 관리에는 Tailscale을 사용합니다.",
+    "en": "The app saves locally first and synchronizes changes between iPhone and Mac through the home server. Service traffic goes through Cloudflare Tunnel; server administration uses Tailscale.",
+    "ja": "アプリはまず端末に保存し、ホームサーバーを通じてiPhoneとMacの変更を同期します。サービスへの接続にはCloudflare Tunnel、サーバー管理にはTailscaleを使用しています。"
+  },
+  "stackAndArchitecture": {
+    "techStack": {
+      "frontend": "Swift, SwiftUI, WidgetKit, ActivityKit",
+      "backend": "TypeScript, Node.js, Fastify",
+      "database": "PostgreSQL, SwiftData",
+      "infra": "Raspberry Pi 5, Debian, Cloudflare Tunnel, Tailscale",
+      "devops": "Docker Compose, Portainer",
+      "loggingMonitoring": "Sentry, Dozzle",
+      "Tools": "Xcode, Git, XCTest, Metabase"
+    }
+  },
+  "responsibilities": {
+    "ko": [
+      "기획·디자인 및 iPhone·Mac 앱 개발",
+      "Fastify 백엔드와 PostgreSQL 기반 동기화 구현",
+      "Raspberry Pi 홈서버 구축·배포·보안 점검",
+      "운영 도구와 Sentry 오류 알림 구성",
+      "전 세계 App Store 출시 및 운영"
+    ],
+    "en": [
+      "Product planning, design, and iPhone/Mac development",
+      "Synchronization with Fastify and PostgreSQL",
+      "Raspberry Pi server setup, deployment, and security reviews",
+      "Operational tools and Sentry error alerts",
+      "Worldwide App Store release and ongoing operations"
+    ],
+    "ja": [
+      "企画・デザインとiPhone・Macアプリ開発",
+      "FastifyとPostgreSQLによる同期の実装",
+      "Raspberry Piサーバーの構築・デプロイ・セキュリティ点検",
+      "運用ツールとSentryのエラー通知設定",
+      "世界のApp Storeでの公開と運用"
+    ]
+  },
+  "results": {
+    "achievements": {
+      "ko": "기획·디자인부터 앱과 서버 개발, 전 세계 App Store 출시와 운영까지 혼자 맡았습니다.\n직접 사용하는 서비스를 운영하며 동기화, 오류 대응, 배포 후 점검까지 책임지는 경험을 쌓고 있습니다.",
+      "en": "I independently handled planning, design, app and server development, worldwide App Store release, and operations.\nRunning a service I use myself has meant taking responsibility for synchronization, error response, and post-deployment checks.",
+      "ja": "企画・デザインからアプリとサーバーの開発、世界のApp Storeでの公開・運用まで一人で担当しました。\n自分でも使うサービスを運用しながら、同期・エラー対応・デプロイ後の確認まで責任を持つ経験を積んでいます。"
+    }
+  },
+  "architectureImage": "/assets/perari/architecture.png",
+  "architectureImageAlt": {
+    "ko": "Perari 시스템 아키텍처: iPhone·Mac, Cloudflare Tunnel, Raspberry Pi의 Fastify·PostgreSQL, 운영 도구와 오류 알림",
+    "en": "Perari system architecture: iPhone and Mac, Cloudflare Tunnel, Fastify and PostgreSQL on Raspberry Pi, operational tools and error alerts",
+    "ja": "Perariのシステム構成：iPhone・Mac、Cloudflare Tunnel、Raspberry Pi上のFastify・PostgreSQL、運用ツールとエラー通知"
+  }
+}

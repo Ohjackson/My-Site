@@ -12,6 +12,7 @@ import HealthFinBotIcon from './healthFinBot.png';
 import CocoIcon from './Coco.png';
 import UritomoIcon from './Uritomo.png';
 import PerariIcon from './Perari.png';
+import FedStockIcon from '@/pages/main/sections/projects/data/FedStock/icon.png';
 import InkDueIcon from './InkDue.png';
 
 export const projectIcons = {
@@ -28,5 +29,6 @@ export const projectIcons = {
   coco: CocoIcon,
   uritomo: UritomoIcon,
   perari: PerariIcon,
+  fedstock: FedStockIcon,
   inkdue: InkDueIcon,
 } as const;

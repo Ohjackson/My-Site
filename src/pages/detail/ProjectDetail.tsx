@@ -3,12 +3,14 @@ import { Calendar, User, Smartphone, CalendarDays, Users, Clock, UserCheck } fro
 import { projectIcons } from '@/assets/icons';
 import { Button } from "./components/Button";
 import { OverviewSection } from "./sections/overview";
+import { ServiceSection } from "./sections/service";
 import { ArchitectureSection } from "./sections/architecture";
 import { FeaturesSection } from "./sections/features";
 import { PreviewSection } from "./sections/preview";
 import { SecuritySection } from "./sections/security";
 import { TechStackSection } from "./sections/techstack";
 import { ResultsSection } from "./sections/results";
+import { MLOpsStorySection } from "./sections/mlops-story";
 import { AdditionalSection } from "./sections/additional";
 import { OtherProjectsSection } from "./sections/other-projects";
 import { ContactSection } from '@/pages/main/sections/contact';
@@ -25,8 +27,9 @@ import mySiteData from '../main/sections/projects/data/MySite/project.json';
 import healthfinbotData from '../main/sections/projects/data/healthFinBot/project.json';
 import ideaverifyprogramData from '../main/sections/projects/data/IdeaVerifyProgram/project.json';
 import cocoData from '../main/sections/projects/data/coco/project.json';
+import fedstockData from '../main/sections/projects/data/FedStock/project.json';
 import uritomoData from '../main/sections/projects/data/Uritomo/project.json';
-// import perariData from '../main/sections/projects/data/Perari/project.json';
+import perariData from '../main/sections/projects/data/Perari/project.json';
 // import inkdueData from '../main/sections/projects/data/InkDue/project.json';
 
 const projectData = {
@@ -41,8 +44,9 @@ const projectData = {
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
   coco: cocoData,
+  fedstock: fedstockData,
   uritomo: uritomoData,
-  // perari: perariData,
+  perari: perariData,
   // inkdue: inkdueData,
 };
 
@@ -56,7 +60,9 @@ interface ProjectDetailProps {
 export function ProjectDetail({ projectId, language, onBack, onProjectClick }: ProjectDetailProps) {
   console.log('ProjectDetail rendered with:', { projectId, language });
 
-  const project = projectData[projectId as keyof typeof projectData] || projectData.tangocho;
+  // Project JSON files intentionally expose slightly different optional sections.
+  const project = (projectData[projectId as keyof typeof projectData] || projectData.tangocho) as any;
+  const projectIcon = projectIcons[projectId as keyof typeof projectIcons];
   console.log('Selected project:', project);
   console.log('Project keys:', Object.keys(project));
   console.log('Project overviewStory:', project.overviewStory);
@@ -124,14 +130,20 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           </button>
 
           <div className="flex items-center gap-8 mb-8">
-            <img
-              src={projectIcons[projectId as keyof typeof projectIcons]}
-              alt={project.name[language]}
-              className="w-20 h-20 rounded-2xl object-cover shadow-2xl border border-gray-200/50"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
-            />
+            {projectIcon ? (
+              <img
+                src={projectIcon}
+                alt={project.name[language]}
+                className="w-20 h-20 rounded-2xl object-cover shadow-2xl border border-gray-200/50"
+              />
+            ) : (
+              <div
+                aria-hidden
+                className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl border border-primary-300/40 bg-gradient-to-br from-primary-500 to-primary-800 text-2xl font-bold text-white shadow-2xl"
+              >
+                {project.name[language].charAt(0)}
+              </div>
+            )}
             <div>
               <h1 className="text-4xl font-bold mb-2">{project.name[language]}</h1>
               <p className="text-lg text-muted">{project.summary[language]}</p>
@@ -270,6 +282,18 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
             <OverviewSection
               key="overview"
               data={project}
+              language={language}
+              backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
+            />
+          );
+          sectionIndex++;
+        }
+
+        if ((project as any).mlopsStory) {
+          sections.push(
+            <MLOpsStorySection
+              key="mlops-story"
+              data={(project as any).mlopsStory}
               language={language}
               backgroundColor={sectionIndex % 2 === 0 ? 'bg-bg' : 'bg-surface'}
             />
