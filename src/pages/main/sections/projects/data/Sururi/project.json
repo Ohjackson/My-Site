@@ -1,8 +1,8 @@
 {
   "name": {
-    "ko": "Perari",
-    "en": "Perari",
-    "ja": "Perari"
+    "ko": "스르리",
+    "en": "Sururi",
+    "ja": "スルリ"
   },
   "summary": {
     "ko": "앱 디자인부터 홈서버 구축·운영까지 혼자 맡아 전 세계 App Store에 출시한 개인 생산성 툴",
@@ -182,9 +182,9 @@
   ],
   "preview_screenshots": {
     "screenshots": [
-      "/assets/perari/shot-1.png",
-      "/assets/perari/shot-2.png",
-      "/assets/perari/shot-3.png"
+      "/assets/sururi/shot-1.png",
+      "/assets/sururi/shot-2.png",
+      "/assets/sururi/shot-3.png"
     ]
   },
   "architectureNotes": {
@@ -233,10 +233,10 @@
       "ja": "企画・デザインからアプリとサーバーの開発、世界のApp Storeでの公開・運用まで一人で担当しました。\n自分でも使うサービスを運用しながら、同期・エラー対応・デプロイ後の確認まで責任を持つ経験を積んでいます。"
     }
   },
-  "architectureImage": "/assets/perari/architecture.png",
+  "architectureImage": "/assets/sururi/architecture.png",
   "architectureImageAlt": {
-    "ko": "Perari 시스템 아키텍처: iPhone·Mac, Cloudflare Tunnel, Raspberry Pi의 Fastify·PostgreSQL, 운영 도구와 오류 알림",
-    "en": "Perari system architecture: iPhone and Mac, Cloudflare Tunnel, Fastify and PostgreSQL on Raspberry Pi, operational tools and error alerts",
-    "ja": "Perariのシステム構成：iPhone・Mac、Cloudflare Tunnel、Raspberry Pi上のFastify・PostgreSQL、運用ツールとエラー通知"
+    "ko": "스르리 시스템 아키텍처: iPhone·Mac, Cloudflare Tunnel, Raspberry Pi의 Fastify·PostgreSQL, 운영 도구와 오류 알림",
+    "en": "Sururi system architecture: iPhone and Mac, Cloudflare Tunnel, Fastify and PostgreSQL on Raspberry Pi, operational tools and error alerts",
+    "ja": "スルリのシステム構成：iPhone・Mac、Cloudflare Tunnel、Raspberry Pi上のFastify・PostgreSQL、運用ツールとエラー通知"
   }
 }

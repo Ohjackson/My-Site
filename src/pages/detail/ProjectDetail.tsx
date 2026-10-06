@@ -29,7 +29,7 @@ import ideaverifyprogramData from '../main/sections/projects/data/IdeaVerifyProg
 import cocoData from '../main/sections/projects/data/coco/project.json';
 import fedstockData from '../main/sections/projects/data/FedStock/project.json';
 import uritomoData from '../main/sections/projects/data/Uritomo/project.json';
-import perariData from '../main/sections/projects/data/Perari/project.json';
+import sururiData from '../main/sections/projects/data/Sururi/project.json';
 // import inkdueData from '../main/sections/projects/data/InkDue/project.json';
 
 const projectData = {
@@ -46,7 +46,7 @@ const projectData = {
   coco: cocoData,
   fedstock: fedstockData,
   uritomo: uritomoData,
-  perari: perariData,
+  sururi: sururiData,
   // inkdue: inkdueData,
 };
 

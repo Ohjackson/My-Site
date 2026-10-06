@@ -18,7 +18,7 @@ const PROJECT_IDS = [
   'coco',
   'fedstock',
   'uritomo',
-  'perari',
+  'sururi',
 ];
 
 export const router = createBrowserRouter([

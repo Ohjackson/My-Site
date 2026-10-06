@@ -16,7 +16,7 @@ import wiroData from '../data/Wiro/project.json';
 import mysiteData from '../data/MySite/project.json';
 import healthfinbotData from '../data/healthFinBot/project.json';
 import ideaverifyprogramData from '../data/IdeaVerifyProgram/project.json';
-import perariData from '../data/Perari/project.json';
+import sururiData from '../data/Sururi/project.json';
 // import inkdueData from '../data/InkDue/project.json';
 
 const projectData = {
@@ -33,7 +33,7 @@ const projectData = {
   mysite: mysiteData,
   healthfinbot: healthfinbotData,
   ideaverifyprogram: ideaverifyprogramData,
-  perari: perariData,
+  sururi: sururiData,
   // inkdue: inkdueData,
 };
 
@@ -45,7 +45,7 @@ const getStartPeriodValue = (period?: string) => {
   return Number(year) * 100 + Number(month);
 };
 
-const THIRD_ROW_PROJECT_IDS: ProjectId[] = ['fedstock', 'perari'];
+const THIRD_ROW_PROJECT_IDS: ProjectId[] = ['fedstock', 'sururi'];
 
 export const useProjectsContent = () => {
   const { t, i18n } = useTranslation();
