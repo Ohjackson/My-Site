@@ -87,6 +87,9 @@
     "en": "I started with the belief that every developer should build a task tool of their own. I planned and designed a productivity tool for daily use, built the app and backend, and released it worldwide on the App Store.\n\nI run cross-device synchronization on a Raspberry Pi home server. Keeping a small service dependable means looking after its logs, error alerts, and server access as well as its features.",
     "ja": "開発者なら自分だけのタスク管理ツールを一つは作りたい、という思いから始めました。毎日使う生産性ツールを企画・デザインし、アプリとバックエンドを開発して世界のApp Storeで公開しました。\n\nRaspberry Piでホームサーバーを構築し、端末間同期を運用しています。小さなサービスでも使い続けられるよう、ログ確認やエラー通知、サーバーのアクセス範囲まで自ら管理しています。"
   },
+  "links": {
+    "appStore": "https://apps.apple.com/kr/app/sururi/id6775358118"
+  },
   "detail_features": [
     {
       "title": {
