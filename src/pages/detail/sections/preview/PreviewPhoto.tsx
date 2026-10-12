@@ -1,3 +1,5 @@
+import { ImageWithFallback } from '@/shared/components/image';
+
 interface PreviewPhotoProps {
   src: string;
   alt: string;
@@ -12,10 +14,12 @@ export function PreviewPhoto({ src, alt, onLoad, onError, onClick }: PreviewPhot
       className="w-[187.5px] h-[406px] rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition-transform duration-200"
       onClick={onClick}
     >
-      <img 
-        src={src} 
+      <ImageWithFallback
+        src={src}
         alt={alt}
         className="w-full h-full object-cover"
+        loading="lazy"
+        decoding="async"
         onLoad={onLoad}
         onError={onError}
       />

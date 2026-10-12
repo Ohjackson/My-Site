@@ -61,24 +61,14 @@ export function PreviewSection({ data, language, backgroundColor }: PreviewSecti
         {data.screenshots && data.screenshots.length > 0 && (
           <div className="flex gap-6 justify-center flex-wrap">
             {data.screenshots.map((screenshot, idx) => {
-              console.log(`Rendering screenshot ${idx + 1}:`, screenshot);
-              
               // 파일명을 보고 데스크탑 사진인지 모바일 사진인지 구분
               const isDesktopPhoto = screenshot.includes('DeskShot-');
-              
+
               return isDesktopPhoto ? (
                 <PreviewDesktopPhoto
                   key={idx}
                   src={screenshot}
                   alt={`Desktop Screenshot ${idx + 1}`}
-                  onLoad={() => {
-                    console.log(`✅ Desktop image loaded successfully: ${screenshot}`);
-                  }}
-                  onError={(e) => {
-                    console.error(`❌ Desktop image failed to load: ${screenshot}`);
-                    console.error('Error details:', e);
-                    e.currentTarget.style.display = 'none';
-                  }}
                   onClick={() => handleImageClick(screenshot)}
                 />
               ) : (
@@ -86,13 +76,6 @@ export function PreviewSection({ data, language, backgroundColor }: PreviewSecti
                   key={idx}
                   src={screenshot}
                   alt={`Mobile Screenshot ${idx + 1}`}
-                  onLoad={() => {
-                    console.log(`Mobile image loaded successfully: ${screenshot}`);
-                  }}
-                  onError={(e) => {
-                    console.warn(`Mobile image failed to load: ${screenshot} - hiding image`);
-                    e.currentTarget.style.display = 'none';
-                  }}
                   onClick={() => handleImageClick(screenshot)}
                 />
               );
