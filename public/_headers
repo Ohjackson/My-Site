@@ -1,0 +1,11 @@
+# Vite 빌드 결과물 (파일명에 해시 포함)
+/assets/:file
+  Cache-Control: public, max-age=31536000, immutable
+
+# 서브셋 폰트 (파일명에 해시 포함)
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# 프로젝트 스크린샷 (파일명에 해시 없음)
+/assets/:project/:file
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
