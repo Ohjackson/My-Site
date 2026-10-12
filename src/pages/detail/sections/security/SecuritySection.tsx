@@ -5,7 +5,7 @@ interface SecurityItem {
   tradeoff: string;
 }
 
-interface SecurityData {
+export interface SecurityData {
   securityDesign?: {
     ko: SecurityItem[];
     en: SecurityItem[];

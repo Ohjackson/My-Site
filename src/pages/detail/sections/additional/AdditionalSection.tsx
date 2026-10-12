@@ -1,4 +1,4 @@
-interface AdditionalData {
+export interface AdditionalData {
   blog?: string | { ko: string; en: string; ja: string };
   [key: string]: string | { ko: string; en: string; ja: string } | undefined;
 }

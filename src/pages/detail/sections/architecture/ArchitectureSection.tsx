@@ -6,7 +6,7 @@ type LocalizedText = {
   ja: string;
 };
 
-interface ArchitectureData {
+export interface ArchitectureData {
   architectureFlow?: {
     ko: string[];
     en: string[];

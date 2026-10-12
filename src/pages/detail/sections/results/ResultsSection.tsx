@@ -1,4 +1,4 @@
-interface ResultsData {
+export interface ResultsData {
   metrics?: {
     ko: string[];
     en: string[];
@@ -13,6 +13,13 @@ interface ResultsData {
     ko: string;
     en: string;
     ja: string;
+  };
+  results?: {
+    achievements?: {
+      ko: string;
+      en: string;
+      ja: string;
+    };
   };
 }
 
@@ -83,10 +90,10 @@ export function ResultsSection({ data, language, backgroundColor }: ResultsSecti
           )}
 
           {/* Achievements */}
-          {((data.achievements && data.achievements[language]) || ((data as any).results?.achievements && (data as any).results.achievements[language])) && (
+          {((data.achievements && data.achievements[language]) || (data.results?.achievements?.[language])) && (
             <div>
               <h3 className="font-semibold mb-3">{content[language].achievements}</h3>
-              {renderBulletList(data.achievements?.[language] || (data as any).results?.achievements?.[language])}
+              {renderBulletList(data.achievements?.[language] || data.results?.achievements?.[language] || '')}
             </div>
           )}
 

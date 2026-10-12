@@ -1,4 +1,4 @@
-interface OverviewData {
+export interface OverviewData {
   overviewStory: {
     ko: string;
     en: string;

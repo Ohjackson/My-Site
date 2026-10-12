@@ -11,7 +11,7 @@ type Language = 'ko' | 'en' | 'ja';
 
 type LocalizedText = Record<Language, string>;
 
-interface MLOpsStoryData {
+export interface MLOpsStoryData {
   eyebrow: LocalizedText;
   title: LocalizedText;
   description: LocalizedText;

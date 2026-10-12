@@ -1,6 +1,6 @@
 import { CheckCircle } from 'lucide-react';
 
-interface FeaturesData {
+export interface FeaturesData {
   detail_features?: Array<{
     title: {
       ko: string;

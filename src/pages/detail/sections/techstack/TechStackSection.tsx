@@ -1,4 +1,4 @@
-interface TechStackData {
+export interface TechStackData {
   techStack: {
     frontend?: string;
     backend?: string;

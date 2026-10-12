@@ -4,7 +4,7 @@ import { PreviewDesktopPhoto } from './PreviewDesktopPhoto';
 import { ImageModal } from './ImageModal';
 import { YouTubeVideo } from './YouTubeVideo';
 
-interface PreviewData {
+export interface PreviewData {
   screenshots?: string[];
   youtubeVideoId?: string;
   description?: string | { ko: string; en: string; ja: string };
