@@ -4,7 +4,7 @@ import { ArrowUpRightIcon } from '@/shared/components/icons';
 import { projectIcons } from '@/assets/icons';
 
 interface ProjectCardProps {
-  project: ProjectTranslation & { id: ProjectId };
+  project: ProjectTranslation & { id: ProjectId; making?: boolean };
   labels: {
     period: string;
     role: string;
@@ -18,11 +18,11 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
   const { t } = useTranslation();
   const projectIcon = projectIcons[project.id as keyof typeof projectIcons];
   const handleCardClick = () => {
-    if ((project as any).making) return; // making 프로젝트는 클릭 비활성화
+    if (project.making) return; // making 프로젝트는 클릭 비활성화
     onSelect(project.id);
   };
 
-  const isMaking = (project as any).making === true;
+  const isMaking = project.making === true;
 
   return (
     <article 

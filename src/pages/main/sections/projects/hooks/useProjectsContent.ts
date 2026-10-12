@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import type { ProjectId, ProjectTranslation } from '../types';
+import type { ProjectDetailContent, ProjectId, ProjectTranslation } from '../types';
 
 // Import project data
 import tangochoData from '../data/Tangocho/project.json';
@@ -36,6 +36,10 @@ const projectData = {
   sururi: sururiData,
   // inkdue: inkdueData,
 };
+
+// 일부 프로젝트 JSON에만 있는 선택 필드
+type ProjectMeta = { detail?: ProjectDetailContent; flag?: string; making?: boolean };
+const getMeta = (data: object) => data as ProjectMeta;
 
 const getStartPeriodValue = (period?: string) => {
   const match = period?.match(/(\d{4})\.(\d{2})/);
@@ -74,9 +78,9 @@ export const useProjectsContent = () => {
         role: data.role[currentLanguage],
         tags: data.tags[currentLanguage],
         features: data.features[currentLanguage],
-        detail: (data as any).detail,
-        flag: (data as any).flag,
-        making: (data as any).making,
+        detail: getMeta(data).detail as ProjectDetailContent,
+        flag: getMeta(data).flag,
+        making: getMeta(data).making,
       }))
       .sort((a, b) => getStartPeriodValue(b.period) - getStartPeriodValue(a.period));
 
@@ -99,7 +103,7 @@ export const useProjectsContent = () => {
       role: data.role[currentLanguage],
       tags: data.tags[currentLanguage],
       features: data.features[currentLanguage],
-      detail: (data as any).detail,
+      detail: getMeta(data).detail as ProjectDetailContent,
     };
   };
 
