@@ -50,7 +50,6 @@ const THIRD_ROW_PROJECT_IDS: ProjectId[] = ['fedstock', 'sururi'];
 export const useProjectsContent = () => {
   const { t, i18n } = useTranslation();
 
-  console.log('useProjectsContent called');
 
   // Get current language
   const currentLanguage = (i18n.language?.split('-')[0] || 'ko') as 'ko' | 'en' | 'ja';
@@ -89,7 +88,6 @@ export const useProjectsContent = () => {
     ...remainingProjects.slice(4),
   ];
 
-  console.log('Projects loaded:', projects.map(p => ({ id: p.id, name: p.name })));
 
   const getProjectById = (id: ProjectId) => {
     const data = projectData[id];

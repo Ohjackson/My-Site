@@ -19,7 +19,6 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
   const projectIcon = projectIcons[project.id as keyof typeof projectIcons];
   const handleCardClick = () => {
     if ((project as any).making) return; // making 프로젝트는 클릭 비활성화
-    console.log('ProjectCard clicked:', project.id);
     onSelect(project.id);
   };
 
@@ -121,7 +120,6 @@ export const ProjectCard = ({ project, labels, viewLabel, onSelect }: ProjectCar
           type="button"
           onClick={(e) => {
             e.stopPropagation(); // 부모 카드 클릭 이벤트 방지
-            console.log('ProjectCard button clicked:', project.id);
             onSelect(project.id);
           }}
           className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-text transition group-hover:bg-[rgb(141,182,246)] group-hover:text-white group-hover:border-[rgb(141,182,246)] hover:bg-[rgb(120,165,235)] sm:w-auto"

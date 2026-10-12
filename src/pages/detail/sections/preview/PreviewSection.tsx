@@ -22,9 +22,6 @@ export function PreviewSection({ data, language, backgroundColor }: PreviewSecti
   // 데이터가 없거나 스크린샷과 YouTube 비디오가 모두 없으면 null 반환
   if (!data || (!data.screenshots?.length && !data.youtubeVideoId)) return null;
 
-  console.log('PreviewSection data:', data);
-  console.log('PreviewSection screenshots:', data.screenshots);
-  console.log('PreviewSection youtubeVideoId:', data.youtubeVideoId);
 
   const content = {
     ko: { title: "미리보기" },

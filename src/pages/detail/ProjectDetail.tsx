@@ -58,15 +58,10 @@ interface ProjectDetailProps {
 }
 
 export function ProjectDetail({ projectId, language, onBack, onProjectClick }: ProjectDetailProps) {
-  console.log('ProjectDetail rendered with:', { projectId, language });
 
   // Project JSON files intentionally expose slightly different optional sections.
   const project = (projectData[projectId as keyof typeof projectData] || projectData.tangocho) as any;
   const projectIcon = projectIcons[projectId as keyof typeof projectIcons];
-  console.log('Selected project:', project);
-  console.log('Project keys:', Object.keys(project));
-  console.log('Project overviewStory:', project.overviewStory);
-  console.log('Project danggocho:', (project as any).danggocho);
 
   const content = {
     ko: {
@@ -339,14 +334,7 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
         sectionIndex++;
 
         // Preview Section
-        console.log('Checking preview_screenshots:', {
-          danggocho: (project as any).danggocho?.preview_screenshots,
-          direct: (project as any).preview_screenshots,
-          projectId
-        });
-
         if ((project as any).danggocho?.preview_screenshots) {
-          console.log('Using danggocho preview_screenshots:', (project as any).danggocho.preview_screenshots);
           sections.push(
             <PreviewSection
               key="preview"
@@ -357,7 +345,6 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           );
           sectionIndex++;
         } else if ((project as any).preview_screenshots) {
-          console.log('Using direct preview_screenshots:', (project as any).preview_screenshots);
           sections.push(
             <PreviewSection
               key="preview"
@@ -431,8 +418,6 @@ export function ProjectDetail({ projectId, language, onBack, onProjectClick }: P
           sectionIndex++;
         }
 
-        console.log('Rendered sections count:', sections.length);
-        console.log('Section keys:', sections.map(s => s.key));
         return sections;
       })()}
 
