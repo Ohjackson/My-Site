@@ -202,7 +202,7 @@
       "infra": "KakaoCloud(prod) · AWS(prod) · GCP(dev) · Docker · Kubernetes",
       "loggingMonitoring": "Prometheus · Grafana · k6"
     },
-    "architectureImage": "/assets/coco/architecture-v1.png",
+    "architectureImage": "/assets/coco/architecture-v1.webp",
     "architectureImageAlt": {
       "ko": "COCO 인프라 아키텍처 다이어그램",
       "en": "COCO infrastructure architecture diagram",

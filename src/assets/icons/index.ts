@@ -1,19 +1,19 @@
 // Import all project icons
-import AconIcon from './Acon.png';
-import DaonIcon from './Daon.png';
-import IdeaVerifyProgramIcon from './IdeaVerifyProgram.png';
-import LoventureIcon from './Loventure.png';
-import MySiteIcon from './MySite.png';
-import POPCOIcon from './POPCO.png';
-import RoutiqIcon from './Routiq.png';
-import TangochoIcon from './Tangocho.png';
-import WiroIcon from './Wiro.png';
-import HealthFinBotIcon from './healthFinBot.png';
-import CocoIcon from './Coco.png';
-import UritomoIcon from './Uritomo.png';
-import SururiIcon from './Sururi.png';
-import FedStockIcon from '@/pages/main/sections/projects/data/FedStock/icon.png';
-import InkDueIcon from './InkDue.png';
+import AconIcon from './Acon.webp';
+import DaonIcon from './Daon.webp';
+import IdeaVerifyProgramIcon from './IdeaVerifyProgram.webp';
+import LoventureIcon from './Loventure.webp';
+import MySiteIcon from './MySite.webp';
+import POPCOIcon from './POPCO.webp';
+import RoutiqIcon from './Routiq.webp';
+import TangochoIcon from './Tangocho.webp';
+import WiroIcon from './Wiro.webp';
+import HealthFinBotIcon from './healthFinBot.webp';
+import CocoIcon from './Coco.webp';
+import UritomoIcon from './Uritomo.webp';
+import SururiIcon from './Sururi.webp';
+import FedStockIcon from '@/pages/main/sections/projects/data/FedStock/icon.webp';
+import InkDueIcon from './InkDue.webp';
 
 export const projectIcons = {
   acon: AconIcon,

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import profileImage from '@/shared/photos/IMG_0586.jpg';
+import profileImage from '@/shared/photos/IMG_0586.webp';
 import { ImageWithFallback } from '@/shared/components/image';
 
 export const AboutSection = () => {

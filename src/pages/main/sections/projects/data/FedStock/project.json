@@ -199,7 +199,7 @@
   "links": {
     "github": "https://github.com/Fedstock/Fedstock-Infra"
   },
-  "architectureImage": "/assets/fedstock/infra-architecture.png",
+  "architectureImage": "/assets/fedstock/infra-architecture.webp",
   "architectureImageAlt": {
     "ko": "FedStock AWS 아키텍처: ALB, ECS Fargate, RDS와 모델 저장·운영 서비스",
     "en": "FedStock AWS architecture: ALB, ECS Fargate, RDS, model storage and operational services",

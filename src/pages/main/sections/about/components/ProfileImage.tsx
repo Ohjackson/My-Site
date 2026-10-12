@@ -1,4 +1,4 @@
-import profileImage from '@/shared/photos/IMG_0586.jpg';
+import profileImage from '@/shared/photos/IMG_0586.webp';
 
 interface ProfileImageProps {
   alt: string;
