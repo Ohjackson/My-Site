@@ -70,6 +70,8 @@ export const useProjectsContent = () => {
   // Convert project data to the expected format with language-specific data
   const sortedProjects: Array<ProjectTranslation & { id: ProjectId; flag?: string; making?: boolean }> =
     Object.entries(projectData)
+      // 표시 언어와 상관없이 숫자 형식인 한국어 기간으로 정렬한다
+      .sort(([, a], [, b]) => getStartPeriodValue(b.workPeriod.ko) - getStartPeriodValue(a.workPeriod.ko))
       .map(([id, data]) => ({
         id: id as ProjectId,
         name: data.name[currentLanguage],
@@ -81,8 +83,7 @@ export const useProjectsContent = () => {
         detail: getMeta(data).detail as ProjectDetailContent,
         flag: getMeta(data).flag,
         making: getMeta(data).making,
-      }))
-      .sort((a, b) => getStartPeriodValue(b.period) - getStartPeriodValue(a.period));
+      }));
 
   const thirdRowProjects = sortedProjects.filter((project) => THIRD_ROW_PROJECT_IDS.includes(project.id));
   const remainingProjects = sortedProjects.filter((project) => !THIRD_ROW_PROJECT_IDS.includes(project.id));
