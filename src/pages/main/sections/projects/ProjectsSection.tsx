@@ -1,4 +1,3 @@
-import { SectionHeading } from '@/shared/components/section-heading';
 import { ProjectCard } from './components/ProjectCard';
 import { useProjectsContent } from './hooks/useProjectsContent';
 import type { ProjectId } from './types';

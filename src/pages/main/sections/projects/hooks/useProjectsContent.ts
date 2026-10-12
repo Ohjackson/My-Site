@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import type { ProjectId, ProjectTranslation, ProjectsContent } from '../types';
+import type { ProjectId, ProjectTranslation } from '../types';
 
 // Import project data
 import tangochoData from '../data/Tangocho/project.json';

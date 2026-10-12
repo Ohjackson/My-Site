@@ -3,11 +3,10 @@ import type { ComponentType, SVGProps } from 'react';
 interface ContactLinkProps {
   href: string;
   label: string;
-  value: string;
   icon: ComponentType<SVGProps<SVGSVGElement>>;
 }
 
-export const ContactLink = ({ href, label, value, icon: Icon }: ContactLinkProps) => (
+export const ContactLink = ({ href, label, icon: Icon }: ContactLinkProps) => (
   <a
     href={href}
     target={href.startsWith('http') ? '_blank' : undefined}
