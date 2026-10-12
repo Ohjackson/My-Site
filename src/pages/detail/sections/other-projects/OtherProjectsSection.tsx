@@ -194,8 +194,6 @@ export function OtherProjectsSection({
   const otherProjects = projects.filter(project => project.id !== currentProjectId);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-  if (otherProjects.length === 0) return null;
-
   // 무한 루프를 위해 프로젝트들을 3번 복제 (양방향 스크롤 지원)
   const duplicatedProjects = [...otherProjects, ...otherProjects, ...otherProjects];
 
@@ -209,7 +207,7 @@ export function OtherProjectsSection({
     scrollContainer.scrollLeft = singleSetWidth;
 
     const handleScroll = () => {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainer;
+      const { scrollLeft, scrollWidth } = scrollContainer;
       const singleSetWidth = scrollWidth / 3; // 원본 프로젝트들의 너비
       
       // 우측 끝에 도달했을 때 (세 번째 세트의 끝)
@@ -226,7 +224,9 @@ export function OtherProjectsSection({
 
     scrollContainer.addEventListener('scroll', handleScroll);
     return () => scrollContainer.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [otherProjects.length]);
+
+  if (otherProjects.length === 0) return null;
 
   const content = {
     ko: { title: "다른 프로젝트" },
