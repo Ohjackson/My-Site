@@ -7,3 +7,8 @@ dist/
 .vscode/
 *.log
 docs/
+
+# tsc build output
+vite.config.js
+vite.config.d.ts
+*.tsbuildinfo
