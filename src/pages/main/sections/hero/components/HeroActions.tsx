@@ -10,6 +10,10 @@ export const HeroActions = ({ primaryLabel, secondaryLabel }: HeroActionsProps) 
     <div className="flex flex-col gap-3 sm:flex-row">
       <a
         href="#projects"
+        onClick={(event) => {
+          event.preventDefault();
+          document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+        }}
         className="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-700"
       >
         {primaryLabel}

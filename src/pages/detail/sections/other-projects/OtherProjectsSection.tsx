@@ -234,15 +234,6 @@ export function OtherProjectsSection({
     ja: { title: "他のプロジェクト" }
   };
 
-  const handleProjectClick = (projectId: string) => {
-    // 프로젝트 클릭 핸들러 먼저 호출
-    onProjectClick(projectId);
-    // 약간의 지연 후 상단으로 스크롤 (페이지 전환 후)
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
-  };
-
   return (
     <section className="py-16 pb-20 bg-bg">
       <div className="w-full">
@@ -257,7 +248,7 @@ export function OtherProjectsSection({
                 key={`${project.id}-${index}`}
                 project={project}
                 language={language}
-                onClick={() => handleProjectClick(project.id)}
+                onClick={() => onProjectClick(project.id)}
               />
             ))}
           </div>

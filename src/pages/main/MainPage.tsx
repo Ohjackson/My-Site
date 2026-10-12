@@ -17,8 +17,6 @@ export const MainPage = () => {
   const navigate = useNavigate();
 
   const handleProjectClick = (projectId: ProjectId) => {
-    // 페이지 상단으로 즉시 이동 (애니메이션 없음)
-    window.scrollTo({ top: 0, behavior: 'auto' });
     navigate(`/project/${projectId}`);
   };
 

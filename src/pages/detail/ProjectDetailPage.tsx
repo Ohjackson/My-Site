@@ -1,4 +1,3 @@
-import { useLayoutEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -15,26 +14,6 @@ export const ProjectDetailPage = () => {
     resolvedLanguage === 'ko' || resolvedLanguage === 'ja' || resolvedLanguage === 'en'
       ? resolvedLanguage
       : 'en';
-
-  // 페이지 렌더 전에 상단으로 즉시 이동해서 이전 화면의 스크롤 위치가 보이지 않게 한다.
-  useLayoutEffect(() => {
-    const previousScrollRestoration = window.history.scrollRestoration;
-    window.history.scrollRestoration = 'manual';
-
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-      document.documentElement.scrollTop = 0;
-      document.body.scrollTop = 0;
-    };
-
-    scrollToTop();
-    const animationFrameId = requestAnimationFrame(scrollToTop);
-
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-      window.history.scrollRestoration = previousScrollRestoration;
-    };
-  }, [projectId]);
 
   const handleBack = () => {
     navigate('/');
